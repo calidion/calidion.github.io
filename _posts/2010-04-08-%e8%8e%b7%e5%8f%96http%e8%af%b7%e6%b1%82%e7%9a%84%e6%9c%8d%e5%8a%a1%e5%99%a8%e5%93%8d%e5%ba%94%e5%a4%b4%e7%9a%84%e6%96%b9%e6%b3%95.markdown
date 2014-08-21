@@ -1,0 +1,116 @@
+---
+layout: post
+status: publish
+published: true
+title: 获取HTTP请求的服务器响应头的方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 428
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=428
+date: !binary |-
+  MjAxMC0wNC0wOCAxMzoyMjo1MyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0wOCAwNToyMjo1MyArMDgwMA==
+categories:
+- 编程技术
+- WEB开发
+tags:
+- Chrome
+- firebug
+- firefox
+- HTTP
+comments: []
+---
+<p>我们有很多种可以不用自己写程序得到HTTP响应头的办法。<br />
+下面是我常用到的办法：<br />
+1.通过浏览器插件得到HTTP头：<br />
+a) firefox的插件 firebug<br />
+b) chrome 开发人员工具<br />
+2.Windows下面的小工具，HTTPDebug<br />
+http:&#47;&#47;emouze.com&#47;httpdebug.htm<br />
+3.Linux 下面的wget<br />
+wget功能很强大，得到响应头的方式<br />
+wget -S --spider [server domain]  #得到响应头并自动重定向<br />
+wget -S --spider -E --max-redirect 0 [server domain] #得到响应头但不自动重定向<br />
+示例：<br />
+1）<br />
+eric@eric-laptop:~&#47;Documents&#47;python$ wget -S --spider -E --max-redirect 0 www.google.com<br />
+Spider mode enabled. Check if remote file exists.<br />
+--2010-04-08 13:20:00--  http:&#47;&#47;www.google.com&#47;<br />
+正在解析主机 www.google.com... 64.233.189.104<br />
+正在连接 www.google.com|64.233.189.104|:80... 已连接。<br />
+已发出 HTTP 请求，正在等待回应...<br />
+HTTP&#47;1.1 302 Found<br />
+Via: 1.1 GOOGLE-ISA<br />
+Connection: Keep-Alive<br />
+Proxy-Connection: Keep-Alive<br />
+Content-Length: 445<br />
+Date: Thu, 08 Apr 2010 05:20:00 GMT<br />
+Location: http:&#47;&#47;www.google.com.hk&#47;url?sa=p&amp;cki=PREF%3DID%3D2319aa0b1214c31d:FF%3D2:LD%3Dzh-CN:NW%3D1:TM%3D1270704000:LM%3D1270704000:S%3D79hIXkdlD8VAV97u&amp;q=http:&#47;&#47;www.google.com.hk&#47;&amp;ust=1270704030555252&amp;usg=AFQjCNHCeuxtlXUpuAEHWO-OEgdkz0rAhg<br />
+Content-Type: text&#47;html; charset=UTF-8<br />
+Server: gws<br />
+Cache-Control: private<br />
+Set-Cookie: PREF=ID=2319aa0b1214c31d:NW=1:TM=1270704000:LM=1270704000:S=_UJ9V-1ckhKWoD7b; expires=Sat, 07-Apr-2012 05:20:00 GMT; path=&#47;; domain=.google.com<br />
+Set-Cookie: NID=33=GulJPSHv80-fIemwCRTBzkwTjZphsfhO2Xe1L4txr890PbNeb2KiUmmYi5UL83Cb_Ffo7DGumKV3FO-k-tvBq-HaP8FaH79zzwXr8hSCVPJnBwp-0W3nry7UmtbtmvTv; expires=Fri, 08-Oct-2010 05:20:00 GMT; path=&#47;; domain=.google.com; HttpOnly<br />
+位置：http:&#47;&#47;www.google.com.hk&#47;url?sa=p&amp;cki=PREF%3DID%3D2319aa0b1214c31d:FF%3D2:LD%3Dzh-CN:NW%3D1:TM%3D1270704000:LM%3D1270704000:S%3D79hIXkdlD8VAV97u&amp;q=http:&#47;&#47;www.google.com.hk&#47;&amp;ust=1270704030555252&amp;usg=AFQjCNHCeuxtlXUpuAEHWO-OEgdkz0rAhg [跟随至新的 URL]<br />
+已超过 0 次重定向。</p>
+<p>2）<br />
+eric@eric-laptop:~&#47;Documents&#47;python$ wget -S --spider www.google.com<br />
+Spider mode enabled. Check if remote file exists.<br />
+--2010-04-08 13:21:13--  http:&#47;&#47;www.google.com&#47;<br />
+正在解析主机 www.google.com... 64.233.189.104<br />
+正在连接 www.google.com|64.233.189.104|:80... 已连接。<br />
+已发出 HTTP 请求，正在等待回应...<br />
+HTTP&#47;1.1 302 Found<br />
+Via: 1.1 GOOGLE-ISA<br />
+Connection: Keep-Alive<br />
+Proxy-Connection: Keep-Alive<br />
+Content-Length: 445<br />
+Date: Thu, 08 Apr 2010 05:21:13 GMT<br />
+Location: http:&#47;&#47;www.google.com.hk&#47;url?sa=p&amp;cki=PREF%3DID%3Df78beea3e41bc59e:FF%3D2:LD%3Dzh-CN:NW%3D1:TM%3D1270704073:LM%3D1270704073:S%3DiiZR2XqZVdFUI-bo&amp;q=http:&#47;&#47;www.google.com.hk&#47;&amp;ust=1270704103279594&amp;usg=AFQjCNH-eCwSn9dDanA4duv5NFE09uh-HQ<br />
+Content-Type: text&#47;html; charset=UTF-8<br />
+Server: gws<br />
+Cache-Control: private<br />
+Set-Cookie: PREF=ID=f78beea3e41bc59e:NW=1:TM=1270704073:LM=1270704073:S=Dh7dpIOjBsgRYVDQ; expires=Sat, 07-Apr-2012 05:21:13 GMT; path=&#47;; domain=.google.com<br />
+Set-Cookie: NID=33=CJVX8tBCrfovzaVc1zKEakjAlUjOnOnuYZC5bBLE4KqLLEzybsuEpizVdy4iKiOTxqXmsRMa2sV6f_wRCAJ6Gtgihy8qCVng-Z56Ei3B7B9fOVVAByafIBr5u7d-yTLP; expires=Fri, 08-Oct-2010 05:21:13 GMT; path=&#47;; domain=.google.com; HttpOnly<br />
+位置：http:&#47;&#47;www.google.com.hk&#47;url?sa=p&amp;cki=PREF%3DID%3Df78beea3e41bc59e:FF%3D2:LD%3Dzh-CN:NW%3D1:TM%3D1270704073:LM%3D1270704073:S%3DiiZR2XqZVdFUI-bo&amp;q=http:&#47;&#47;www.google.com.hk&#47;&amp;ust=1270704103279594&amp;usg=AFQjCNH-eCwSn9dDanA4duv5NFE09uh-HQ [跟随至新的 URL]<br />
+Spider mode enabled. Check if remote file exists.<br />
+--2010-04-08 13:21:13--  http:&#47;&#47;www.google.com.hk&#47;url?sa=p&amp;cki=PREF%3DID%3Df78beea3e41bc59e:FF%3D2:LD%3Dzh-CN:NW%3D1:TM%3D1270704073:LM%3D1270704073:S%3DiiZR2XqZVdFUI-bo&amp;q=http:&#47;&#47;www.google.com.hk&#47;&amp;ust=1270704103279594&amp;usg=AFQjCNH-eCwSn9dDanA4duv5NFE09uh-HQ<br />
+正在解析主机 www.google.com.hk... 64.233.189.104<br />
+正在连接 www.google.com.hk|64.233.189.104|:80... 已连接。<br />
+已发出 HTTP 请求，正在等待回应...<br />
+HTTP&#47;1.1 302 Found<br />
+Via: 1.1 GOOGLE-ISA<br />
+Connection: Keep-Alive<br />
+Proxy-Connection: Keep-Alive<br />
+Content-Length: 222<br />
+Date: Thu, 08 Apr 2010 05:21:13 GMT<br />
+Location: http:&#47;&#47;www.google.com.hk&#47;<br />
+Content-Type: text&#47;html; charset=UTF-8<br />
+Server: gws<br />
+Cache-Control: private<br />
+Set-Cookie: PREF=ID=f78beea3e41bc59e:FF=2:LD=zh-CN:NW=1:TM=1270704073:LM=1270704073:S=iiZR2XqZVdFUI-bo; expires=Sat, 07-Apr-2012 05:21:13 GMT; path=&#47;; domain=.google.com.hk<br />
+位置：http:&#47;&#47;www.google.com.hk&#47; [跟随至新的 URL]<br />
+Spider mode enabled. Check if remote file exists.<br />
+--2010-04-08 13:21:13--  http:&#47;&#47;www.google.com.hk&#47;<br />
+正在连接 www.google.com.hk|64.233.189.104|:80... 已连接。<br />
+已发出 HTTP 请求，正在等待回应...<br />
+HTTP&#47;1.1 200 OK<br />
+Via: 1.1 GOOGLE-ISA<br />
+Connection: close<br />
+Proxy-Connection: close<br />
+Expires: -1<br />
+Date: Thu, 08 Apr 2010 05:21:13 GMT<br />
+Content-Type: text&#47;html; charset=GB2312<br />
+Server: gws<br />
+Cache-Control: private, max-age=0<br />
+Set-Cookie: NID=33=AqGQjsAr_jks5PM94Ubo-jhh5rZvK8QPhSgb40PglSXeynlaIpoqWf7Fr-cCc0eUkc-7MzQM9fE2Als2LDwI6mSe4S5aVJoE49NmgtpOzsF9Le7xUB3PJIJ4n0Ce2-ND; expires=Fri, 08-Oct-2010 05:21:13 GMT; path=&#47;; domain=.google.com.hk; HttpOnly<br />
+长度： 未指定 [text&#47;html]<br />
+Remote file exists and could contain further links,<br />
+but recursion is disabled -- not retrieving.</p>
+<p>可以看到如果没有禁止重定向次数，对google的请求将会得到很多次HTTP头</p>

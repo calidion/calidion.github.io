@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 黑莓行货正式进入中国市场
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1187
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1187
+date: !binary |-
+  MjAxMC0wNi0xMyAwOTo1Mjo1NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0xMyAwMTo1Mjo1NCArMDgwMA==
+categories:
+- 新闻
+tags:
+- 黑莓
+comments: []
+---
+<p>欧美市场在售的第一商务智能手机&mdash;&mdash;黑莓将在6月18日正式登陆中国市场，消费者可以在国内购买到行货&ldquo;黑莓&rdquo;了。苏宁作为全国家电连锁的独销渠道，将在 北京、上海等22个城市开设体验店，对黑莓进行重点销售。<br />
+黑莓从去年年底开始和国内运营商达成了一系列的合作协议，不过中国电信等定制的黑莓机均面向政企集团客户，而非个人用户。在国内市场上，个人用户使用的黑 莓手机，仍以水货为主。</p>
+<p>目前，苏宁与黑莓签下战略协议，在全国家电连锁渠道由苏宁独销。首批上市的两款机型分别为黑莓8310和8910，其中，8310定价3680 元，8910定价4880元。目前有两款黑莓旗舰机型在苏宁各大门店已开始接受预订。</p>
+<p>中国IT消费市场潜力巨大，全球各大IT品牌商都在努力提高在中国的市场份额。</p>

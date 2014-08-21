@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: 我们是不是太容易接受别人的观点了？
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1206
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1206
+date: !binary |-
+  MjAxMC0wNi0yNSAxNzo0NDozNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0yNSAwOTo0NDozNiArMDgwMA==
+categories:
+- 民工观点
+tags:
+- Web
+- Web标准
+comments: []
+---
+<p style="text-align: right;">------看WEB技术变迁有感<&#47;p><br />
+在软件开发领域，似乎中国的软件开发者总是处于跟从属者的位置，因此也很少会有源于中国软件开发人员的观点。</p>
+<p>但是一个有趣的现象是中国的软件开发人员特别容易接受新的观点，不管它是不是经过时间的考验，不管它是不是对的。</p>
+<p>下面我想举几个WEB开发中的观点，</p>
+<p>1. CSS布局优于表格布局</p>
+<p>---实际上很多时候表格布局可以有很好的实际意义，CSS布局会导致你很多布局无法实现，特别是你想动态的变化单元的面积却保持内容不丢失时，并且不还要保持多行的列宽相同时，这个类型的布局时，table基本无可替代。目前的CSS无法实现这个需求。所以既使说我们尽量不使用Table布局但并不意味着table布局就是不好的，不对的，table布局是有实际的现实意义的。</p>
+<p>这个问题在国外始终处于争论当中，而在国内却基本没有人敢公开说table布局是不可或缺的了</p>
+<p>2. XHTML是HTML的替换</p>
+<p>---XHTML上去很美，WEB标准化的人也一度认为XHTML应该是HTML的终结。</p>
+<p>在XHTML 2草案制订前，我们看到了99.99%的网站是过时的宣布口号。</p>
+<p>这个口号的强大至今令人无法忘记，以至于很多人不加思索的全盘接受了WEB标准化的这些人的看法。</p>
+<p>但现实中，我们很容易碰到很多问题，如果我们强行转化到XHTML，我们会发现绝对大部分的网站会变的无法识别。</p>
+<p>这是一个多么巨大的代价，所以我想极端的路线在很多时候是行不通的。</p>
+<p>而现实的情况是，HTML5替代XHTML 2, 并且XHTML 2永远不会去实现</p>
+<p>总之，我觉得中国人真的太会学习了，中国人缺少点独立的思考。或者许与我们对互联网的历史与发展没有太多的控制力或者影响力有关，</p>
+<p>我们习惯于学习与接受，却很少提出我们的意见与思考，这也就是中国的WEB开发者的现状吧？</p>

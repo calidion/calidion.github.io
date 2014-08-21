@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 王立群读史记--汉武帝
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 155
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=155
+date: !binary |-
+  MjAxMC0wMS0yNiAxNTo0NTo1OCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNzo0NTo1OCArMDgwMA==
+categories:
+- 杂谈
+tags:
+- 史记
+- 汉武帝
+- 王立群
+comments: []
+---
+<p>http:&#47;&#47;v.youku.com&#47;v_playlist&#47;f3900629o1p0.html</p>

@@ -1,0 +1,64 @@
+---
+layout: post
+status: publish
+published: true
+title: PHP的一些性能调优方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1073
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1073
+date: !binary |-
+  MjAxMC0wNS0yNyAxNDo0MDozOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0yNyAwNjo0MDozOSArMDgwMA==
+categories:
+- php
+tags:
+- PHP
+- 优化
+comments: []
+---
+<p>后端的性能与很多因素有关，这里主要介绍与程序有关系的一些优化策略。<br />
+首先需要确定PHP性能瓶颈在那里<br />
+我们可以通过XDebug+KCacheGrind来分析性能占用情况</p>
+<p>安装XDebug 和 KCacheGrind</p>
+<p>XDebug在ybsd的安装:：yinst i yphp_xdebug &#47; apt-get install xdebug</p>
+<p>KCacheGrind需要KDE的支持，在Unbuntu与Debian的安装命令：<br />
+sudo apt-get install kcachegrind</p>
+<p>Xdebug:<br />
+http:&#47;&#47;xdebug.org&#47;<br />
+KcacheGrind:<br />
+http:&#47;&#47;kcachegrind.sourceforge.net&#47;cgi&#47;bin&#47;</p>
+<p>设置XDebug</p>
+<p>sudo vim &#47;home&#47;y&#47;etc&#47;php&#47;xdebug.ini</p>
+<p>xdebug.profiler_append=0<br />
+;是否覆盖上次产生的文件<br />
+xdebug.profiler_enable=1<br />
+;打开效能监测器。<br />
+xdebug.profiler_enable_trigger=0</p>
+<p>xdebug.profiler_output_dir=&#47;tmp</p>
+<p>通过KCacheGrind查看</p>
+<p>在xdebug.profiler_output_dir指定的目录里。会产生类似于cachegrind.out.xxxxx的一串数字的文件。</p>
+<p>用kCacheGrind打开就可以看到如下的界面了。</p>
+<p>这个页面上包含了各个函数执行占用的时间与比例的详细分布情况。<br />
+通过这个方法可以很快找到性能的瓶颈。</p>
+<p>通过microtime来定位<br />
+ＸDebug+KCacheGrind能很直观的反映一些函数的调用情况，对于有环境，并且有条件的情况时，很方便总体的了解性能分布情况。<br />
+使用microtime则可以随心所欲的对各个细节与总体建立分析，不受其它环境的限制，只要装了PHP的环境就可以用。<br />
+定义一个专门用于时间记录的数组。假设为$ts = array();<br />
+用microtime()得到系统各个执行的时间戳，$ts[i] = microtime();<br />
+然后通过对$ts进行处理，找出相邻的执行时间最长的，及比较长的。<br />
+通过对$ts的处理，可以确定所有逻辑模块占用的时间，或者占用的比例。<br />
+土方法，很实用。</p>
+<p>PHP性能优化的工具与方式介绍<br />
+对PHP的性能优化的方法可以包含有缓存，优化代码，重写服务器程序等一些技术。<br />
+将PHP编译的代码进行缓存：<br />
+这一类的缓存工具目前有很多，包括有:</p>
+<p>PHP代码的优化经验：<br />
+初始化变量后再使用。避免php解析器报错。<br />
+对于引用两次以上的全局变量或者类的属性，将它赋值给局部变量。</p>

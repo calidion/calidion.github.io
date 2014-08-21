@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: PHP笔试题
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1160
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1160
+date: !binary |-
+  MjAxMC0wNi0wOCAxMzoyNjo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wOCAwNToyNjo0MiArMDgwMA==
+categories:
+- php
+tags:
+- PHP
+comments: []
+---
+<p>1、按"2002-10-20 24:22:03"的格式打印当前时间的代码(2分)</p>
+<p>2、echo 与 print 那个更快？为什么?(2分)</p>
+<p>3、print_r与var_dump有什么区别？(1分)<br />
+print_r(Array());<br />
+与<br />
+var_dump(Array());<br />
+的结果分别是什么？(3分)</p>
+<p>4、语句include和require的区别是什么?(1分)<br />
+为避免多次包含同一文件，可用什么语句代替它们? (1分)</p>
+<p>5、通过PHP服务器信息可以通过那个全局变量得到？(1分)</p>
+<p>6、$_GET, $_POST, $_REQUEST分别有什么区别？(3分)</p>
+<p>7、SESSION与COOKIE的区别是什么？(2分)</p>
+<p>8、请写出得到客户端IP的语句</p>
+<p>9、如何修改SESSION的存活时间?</p>
+<p>10、要修改HTTP上的MIME类型可以使用什么函数?</p>
+<p>11、用于中文字符串长度计算的函数叫什么？</p>
+<p>12、PHP中设定错误等级的函数？除了使用函数，还可以在那里设定？</p>
+<p>13、foo()与@foo()之间有什么区别？</p>
+<p>14、__autoload的作用是什么？</p>
+<p>15、设置session失效时间的函数与保存路径的函数分别是什么？</p>
+<p>16、static的函数与一般的函数有什么区别？那个更快？</p>

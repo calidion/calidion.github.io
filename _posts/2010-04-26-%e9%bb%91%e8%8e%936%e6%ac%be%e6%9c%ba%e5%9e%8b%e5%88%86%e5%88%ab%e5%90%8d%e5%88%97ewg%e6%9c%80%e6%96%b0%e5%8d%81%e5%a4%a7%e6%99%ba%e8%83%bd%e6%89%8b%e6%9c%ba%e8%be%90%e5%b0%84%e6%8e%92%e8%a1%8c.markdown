@@ -1,0 +1,46 @@
+---
+layout: post
+status: publish
+published: true
+title: 黑莓6款机型分别名列EWG最新十大智能手机辐射排行榜
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 788
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=788
+date: !binary |-
+  MjAxMC0wNC0yNiAxMzozODoxMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNiAwNTozODoxMiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>目前国际上对手机发射功率与人体辐射之间是否有必然联系尚无定论，但可以肯定的是，发射功率是手机辐射的主要来源，手机的发射功率越小，手机的寿命越长、 耗电越少。也就是说手机的发射功率越大，手机的辐射也就越大。关于手机辐射与人体健康近期越来越引起人们的关注，到底辐射会不会造成人体的病变或者导致其 他方便的不利因素，由于手机面世也仅短短十几年，没有人知道会出现什么样的结果，也许在未来这将会让我们买单。</p>
+<p><strong>首先让我们来了解下各类网络发射功率<&#47;strong></p>
+<p>此类资料太过复杂，大家可以查看PCHOME专门为此制作的专栏《<a href="http:&#47;&#47;www1.pconline.com.cn&#47;mobile&#47;zt&#47;315fs&#47;">手机发射 功率大揭秘<&#47;a>》。</p>
+<p><strong>各类手机辐射排行榜<&#47;strong></p>
+<p>国际上，手机辐射排行榜中最有名的是美国研究机构&ldquo;环境工作组&rdquo;(Environmental Working Group，以下简称&ldquo;EWG&rdquo;)，此工作组实时关注各种手机的辐射问题，数据也非常齐全，可以登录<a href="http:&#47;&#47;www.ewg.org&#47;">www.ewg.org<&#47;a>查看自己手机的辐射资料。</p>
+<p><strong>黑莓手机辐射<&#47;strong></p>
+<p>在EWG的最新智能手机排名单中，黑莓手机榜上有名，辐射最大的为BlackBerry 8820，其最大辐射可至1.58 W&#47;kg，可谓是手机中的&rdquo;王者&rdquo;，我们也看到了黑莓的其他3款机型黑莓Bold 9700，8703e，8330都名列榜上，希望RIM公司能够在此方面引起更多的关注，同时有4款机型排在智能手机最大辐射排行榜上，希望能引起反思。 不过我们也能够看到好的一面，黑莓9500,9530也分别排在最小辐射排行榜中的2,3名。</p>
+<p><img title="Best and Worst PDAsSmartphones" src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100426&#47;1119010721016787.png" alt="" width="404" height="526" &#47;></p>
+<p><strong>EWG最新智能手机辐射十大排行榜<&#47;strong></p>
+<p><img title="Best and Worst PDAsSmartphones1" src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100426&#47;1119011274610619.gif" alt="" width="420" height="1539" &#47;></p>
+<p><strong>EWG最新黑莓手机辐射<&#47;strong></p>
+<p><strong>如何尽量避免手机辐射带来的危害<&#47;strong></p>
+<p>在测试中我们发现如果场强仪越靠近手机，那么所测得的数字就越大，换句话说就是辐射越大。另外在测试的时候我们还发现手机的电话接通的前10秒，手 机的发射功率一般是处于最大状态，不论是在室内还是户外，辐射量都是最大的，只有在通话正常稳定之后手机自动调整且降低发射功率，在保证通话质量的前提下 将发射功率降到最低。</p>
+<p>为此我们要把手机辐射降到最低的话需要做到以下几点：</p>
+<ol>
+<li>尽量到空旷或者靠近窗户无遮挡的地方打电话<&#47;li>
+<li>在电话拨号但未接通对方电话的过程中尽量不要把手机靠近头部<&#47;li>
+<li>远离手机，利用耳机或者蓝牙耳机进行通话<&#47;li>
+<li>晚上睡觉手机尽量不要放于床头，因为待机也有一定的辐射量<&#47;li>
+<li>选择正规大品牌有质量保证的手机，许多国产机没有经过功率调试<&#47;li>
+<li>选择小灵通替换手机以降低辐射的影响<&#47;li>
+<li>尽量的少用手机，多用固定电话<&#47;li><br />
+<&#47;ol></p>

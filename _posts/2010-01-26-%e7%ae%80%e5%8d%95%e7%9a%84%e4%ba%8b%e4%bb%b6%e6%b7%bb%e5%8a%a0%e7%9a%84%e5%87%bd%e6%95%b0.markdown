@@ -1,0 +1,47 @@
+---
+layout: post
+status: publish
+published: true
+title: 简单的事件添加的函数
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 146
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=146
+date: !binary |-
+  MjAxMC0wMS0yNiAxNTozODowMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNzozODowMyArMDgwMA==
+categories:
+- Javascript
+tags:
+- javascript
+- 事件
+- 函数
+comments: []
+---
+<pre name="code" class="js">
+var addEvent = function(e, type, fn){<br />
+    if (e.length){<br />
+      for(var i = 0; i < e.length; i++){<br />
+        addEvent(e[i], type, fn);<br />
+      }<br />
+      return;<br />
+    }</p>
+<p>    if (e.addEventListener) {<br />
+      if( type && fn){<br />
+        e.addEventListener(type, fn, false);<br />
+      }<br />
+    } else {<br />
+      e.attachEvent('on' + type, function(){<br />
+        if (typeof fn === 'function'){<br />
+          fn.call(e, e);<br />
+        }<br />
+      });<br />
+    }<br />
+}<br />
+<&#47;pre></p>

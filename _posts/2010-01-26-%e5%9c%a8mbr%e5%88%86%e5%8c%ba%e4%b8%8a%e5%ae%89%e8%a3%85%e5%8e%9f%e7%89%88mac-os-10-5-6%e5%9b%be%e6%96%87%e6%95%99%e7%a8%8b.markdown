@@ -1,0 +1,85 @@
+---
+layout: post
+status: publish
+published: true
+title: 在MBR分区上安装原版Mac OS 10.5.6图文教程
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 105
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=105
+date: !binary |-
+  MjAxMC0wMS0yNiAxNDo0Nzo1NSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNjo0Nzo1NSArMDgwMA==
+categories:
+- 操作系统
+tags:
+- Mac OS
+- MBR
+comments: []
+---
+<p>在MBR分区上安装原版Mac OS 10.5.6图文教程</p>
+<div>因为原版Mac OS只可以在GUID分区上面安装，而PC上的分区是MBR格式不能直接安装。<br />
+因此，我们需要修改原版DMG安装镜像里的OSINSTALL.MPKG这个安装文件为可以安装在MBR分区里。（如何修改这个文件很复杂，大家直接下载我贴出的附件就可以）。<br />
+安装条件是你的PC上已经有了一个破解版的MAC系统。<br />
+安装所需文件和破解驱动<br />
+软件：<br />
+DSDTPatcherGUI，UInstaller_1，OSinstall.mpkg，Mac_OS_X_Leopard_10_5_6_FULL_Retail零售版原版镜像，ShowAllFiles<br />
+破解驱动</p>
+<blockquote>
+<div>引用<&#47;div></p>
+<div>AppleIntelPIIXATA.pkg<br />
+JMicronATA.pkg作用：IDE硬盘驱动<br />
+OpenHaltRestart.pkg作用：重启关机补丁，注意会休眠唤不醒<br />
+AppleACPIPlatform.kext作用：PS2键盘<br />
+AppleACPIPS2Nub.kext作用：同上<br />
+ApplePS2Controller.kext作用：同上<br />
+AppleDecrypt.kext作用：核心破解驱动（必须安装）<br />
+Disabler.kext作用：屏蔽掉不能正常启动的原版驱动<br />
+AppleSMBIOSEFI.kext作用：显示系统信息<&#47;div><&#47;blockquote><br />
+<&#47;div></p>
+<div>
+3．安装步骤<br />
+3.1先在windows下面分出一个空白分区并格式化为FAT32格式，容量最好大些，因为原版DMG镜像都有6.7G，以后安装软件分区容量过小不方便。<br />
+3.2第一步完工后重启，进入破解版mac，打开磁盘工具。抹掉已经那个空白分区，格式是Mac OS扩展日志式。<br />
+3.3加载（双击原版DMG文件），把里面的把里面的&#47;system&#47;installation&#47;packages目录拖到桌面上。这个目录是个隐藏文件，需要用ShowAllFiles工具开启。<br />
+3.4把下载来的OSinstall.mpkg覆盖到目录里的相同文件。然后双击OSintall.mpkg安装Mac到已抹好的分区上（这里点选自定义安装）安装时间大概10分钟左右。安装完以后先不要重启。<br />
+3.5接着用DSDTPatcherGUI和UInstaller安装引导程序及破解驱动。如图1，图2<br />
+图1</p>
+<p><img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;images.weiphone.com&#47;attachments&#47;day_090515&#47;20090515_c426ca61e60a37f73870jLFpnITdYb8D.png" border="0" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" &#47;><br />
+左边选择Darwin&#47;Mac OS X，右边 方框选择Apply DSDT Patch To，右下角是选择你要安装原版的分区，选好后点击左下角的Install。</p>
+<p>图2</p>
+<p><img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;images.weiphone.com&#47;attachments&#47;day_090515&#47;20090515_8c4689d91161202dddc6ntWWX66DtAeu.png" border="0" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" &#47;><br />
+第一项选你已安装原版的分区，<br />
+第二以默认OSX86 Essentials，只需在Apply Kext Package打勾，<br />
+在SetBootTimeoutTo打勾（随你设定几秒），<br />
+SET Native Boot Resolution To不选，<br />
+在InstallPCEFIV9 CHameleon Edition1。0.11打勾，<br />
+在AppluEFI String（TimeMachineFix）打勾，<br />
+Apply EFI String For Video Card不选，<br />
+在Install Custom Kext From HD打勾，<br />
+点击在右下边的Browse分别选择已经下载的破解驱动，在Apply Kext Package里已经默认安装了AppleDecrypt.kext，Disabler.kext，OpenHaltRestart.kext的不用再选了。</p>
+<p>点Chose选择，最后点击左下边的Install，等待。。。。。完成退出。</p>
+<p>4.退出破解版Mac系统，重启用WinPE或xp，vista系统盘修复引导进入windows系统，激活C盘。</p>
+<p>5.用tboot或eayzbcd添加启动项，具体操作参考此贴教程：<a href="http:&#47;&#47;www.weiphone.com&#47;thread-305297-1-1.html" target="_blank">http:&#47;&#47;www.weiphone.com&#47;thread-305297-1-1.html<&#47;a><br />
+6.再次重启，在启动菜单选择Mac启动项，选已安装原版的硬盘，可以看到Mac注册页了，进入系统后慢慢安装自己的其他驱动。</p>
+<p>[<em> 本帖最后由 twinway 于 2009-5-15 20:34 编辑 <&#47;em>]<&#47;div></p>
+<div><&#47;div><br />
+附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424068" target="_blank"><span style="color: red;">AppleIntelPIIXATA.pkg.rar<&#47;span><&#47;a> (36 K) 下载次数:130</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424069" target="_blank"><span style="color: red;">ps2键盘.rar<&#47;span><&#47;a> (395 K) 下载次数:108</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424070" target="_blank"><span style="color: red;">usb.rar<&#47;span><&#47;a> (1586 K) 下载次数:95</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424071" target="_blank"><span style="color: red;">声卡.rar<&#47;span><&#47;a> (274 K) 下载次数:84</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424072" target="_blank"><span style="color: red;">屏蔽原核启动.rar<&#47;span><&#47;a> (24 K) 下载次数:97</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424073" target="_blank"><span style="color: red;">显示系统用.rar<&#47;span><&#47;a> (112 K) 下载次数:100</p>
+<p>描述：已修改好的安装包<br />
+附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424100" target="_blank"><span style="color: red;">OSinstall.mpkg<&#47;span><&#47;a> (1662 K) 下载次数:119</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424101" target="_blank"><span style="color: red;">DSDTPatcherGUI.zip<&#47;span><&#47;a> (1475 K) 下载次数:123</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424102" target="_blank"><span style="color: red;">UInstaller_1.zip<&#47;span><&#47;a> (2163 K) 下载次数:108</p>
+<p>附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424103" target="_blank"><span style="color: red;">ShowAllFiles.zip<&#47;span><&#47;a> (39 K) 下载次数:116</p>
+<p>描述：10.5.6原版种子下载<br />
+附件：&nbsp;<img title="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" src="http:&#47;&#47;bbs.weiphone.com&#47;images&#47;weiphone&#47;file&#47;zip.gif" alt="在MBR分区上安装原版Mac OS 10.5.6图文教程 - 糊涂虫3000 - 糊涂虫3000的博客" align="absmiddle" &#47;> <a href="http:&#47;&#47;bbs.weiphone.com&#47;job.php?act<wbr>ion=download&amp;pid=tpc&amp;tid=359306&amp;aid=424104" target="_blank"><span style="color: red;">Mac_OS_X_Leopard_10_5_6_FULL_Retail.torrent<&#47;span><&#47;a> (537 K) 下载次数:140</p>

@@ -1,0 +1,498 @@
+---
+layout: post
+status: publish
+published: true
+title: 100个程序员必须知道的Vim命令
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 218
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=218
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoyMjoyNCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToyMjoyNCArMDgwMA==
+categories:
+- 杂谈
+- 编程技术
+tags:
+- Vim
+- 命令
+comments: []
+---
+<h2>100 Vim commands every programmer should know<&#47;h2></p>
+<h2>Search&#47;搜索<&#47;h2></p>
+<table style="height: 248px;" border="0" width="609">
+<tbody>
+<tr>
+<td>&#47;word<&#47;td></p>
+<td>Search &ldquo;word&rdquo; from top to bottom 从上向下搜索'word'<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>?word<&#47;td></p>
+<td>Search &ldquo;word&rdquo; from bottom to top 从上向下搜索'word'<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;jo[ha]n<&#47;td></p>
+<td>Search &ldquo;john&rdquo; or &ldquo;joan&rdquo; 搜索"john"或"joan"<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;< the<&#47;td></p>
+<td>Search &ldquo;the&rdquo;, &ldquo;theatre&rdquo; or &ldquo;then&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;the><&#47;td></p>
+<td>Search &ldquo;the&rdquo; or &ldquo;breathe&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;< the><&#47;td></p>
+<td>Search &ldquo;the&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;< &hellip;.><&#47;td></p>
+<td>Search all words of 4 letters<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;&#47;<&#47;td></p>
+<td>Search &ldquo;fred&rdquo; but not &ldquo;alfred&rdquo; or &ldquo;frederick&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;fred|joe<&#47;td></p>
+<td>Search &ldquo;fred&rdquo; or &ldquo;joe&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;
+<dddd><&#47;td></p>
+<td>Search exactly 4 digits<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&#47;^n{3}<&#47;td></p>
+<td>Find 3 empty lines<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:bufdo &#47;searchstr&#47;<&#47;td></p>
+<td>Search in all open files<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Replace<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:%s&#47;old&#47;new&#47;g<&#47;td></p>
+<td>Replace all occurences of &ldquo;old&rdquo; by &ldquo;new&rdquo; in file<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;old&#47;new&#47;gw<&#47;td></p>
+<td>Replace all occurences with confirmation<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:2,35s&#47;old&#47;new&#47;g<&#47;td></p>
+<td>Replace all occurences between lines 2 and 35<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:5,$s&#47;old&#47;new&#47;g<&#47;td></p>
+<td>Replace all occurences from line 5 to EOF<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;^&#47;hello&#47;g<&#47;td></p>
+<td>Replace the begining of each line by &ldquo;hello&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;$&#47;Harry&#47;g<&#47;td></p>
+<td>Replace the end of each line by &ldquo;Harry&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;onward&#47;forward&#47;gi<&#47;td></p>
+<td>Replace &ldquo;onward&rdquo; by &ldquo;forward&rdquo; , case unsensitive<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47; *$&#47;&#47;g<&#47;td></p>
+<td>Delete all white spaces<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:g&#47;string&#47;d<&#47;td></p>
+<td>Delete all lines containing &ldquo;string&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:v&#47;string&#47;d<&#47;td></p>
+<td>Delete all lines containing which didn't contain &ldquo;string&rdquo;<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:s&#47;Bill&#47;Steve&#47;<&#47;td></p>
+<td>Replace the first occurence of &ldquo;Bill&rdquo; by &ldquo;Steve&rdquo; in current line<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:s&#47;Bill&#47;Steve&#47;g<&#47;td></p>
+<td>Replace &ldquo;Bill&rdquo; by &ldquo;Steve&rdquo; in current line<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;Bill&#47;Steve&#47;g<&#47;td></p>
+<td>Replace &ldquo;Bill&rdquo; by &ldquo;Steve&rdquo; in all the file<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;r&#47;&#47;g<&#47;td></p>
+<td>Delete DOS carriage returns (^M)<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;r&#47;r&#47;g<&#47;td></p>
+<td>Transform DOS carriage returns in returns<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s#<[^>]+>##g<&#47;td></p>
+<td>Delete HTML tags but keeps text<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;^(.*)n1$&#47;1&#47;<&#47;td></p>
+<td>Delete lines which appears twice<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>Ctrl+a<&#47;td></p>
+<td>Increment number under the cursor<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>Ctrl+x<&#47;td></p>
+<td>Decrement number under cursor<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ggVGg?<&#47;td></p>
+<td>Change text to Rot13<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Case<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>Vu<&#47;td></p>
+<td>Lowercase line<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>VU<&#47;td></p>
+<td>Uppercase line<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>g~~<&#47;td></p>
+<td>Invert case<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>vEU<&#47;td></p>
+<td>Switch word to uppercase<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>vE~<&#47;td></p>
+<td>Modify word case<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ggguG<&#47;td></p>
+<td>Set all text to lowercase<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set ignorecase<&#47;td></p>
+<td>Ignore case in searches<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set smartcase<&#47;td></p>
+<td>Ignore case in searches excepted if an uppercase letter is used<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;<.&#47;u&amp;&#47;g<&#47;td></p>
+<td>Sets first letter of each word to uppercase<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;<.&#47;l&amp;&#47;g<&#47;td></p>
+<td>Sets first letter of each word to lowercase<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;.*&#47;u&amp;<&#47;td></p>
+<td>Sets first letter of each line to uppercase<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:%s&#47;.*&#47;l&amp;<&#47;td></p>
+<td>Sets first letter of each line to lowercase<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Read&#47;Write files<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:1,10 w outfile<&#47;td></p>
+<td>Saves lines 1 to 10 in&nbsp;<em>outfile<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:1,10 w >> outfile<&#47;td></p>
+<td>Appends lines 1 to 10 to&nbsp;<em>outfile<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:r infile<&#47;td></p>
+<td>Insert the content of&nbsp;<em>infile<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:23r infile<&#47;td></p>
+<td>Insert the content of&nbsp;<em>infile<&#47;em> under line 23<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>File explorer<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:e .<&#47;td></p>
+<td>Open integrated file explorer<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:Sex<&#47;td></p>
+<td>Split window and open integrated file explorer<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:browse e<&#47;td></p>
+<td>Graphical file explorer<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:ls<&#47;td></p>
+<td>List buffers<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:cd ..<&#47;td></p>
+<td>Move to parent directory<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:args<&#47;td></p>
+<td>List files<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:args *.php<&#47;td></p>
+<td>Open file list<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:grep expression *.php<&#47;td></p>
+<td>Returns a list of .php files contening&nbsp;<em>expression<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>gf<&#47;td></p>
+<td>Open file name under cursor<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Interact with Unix<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:!pwd<&#47;td></p>
+<td>Execute the &ldquo;pwd&rdquo; unix command, then returns to Vi<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>!!pwd<&#47;td></p>
+<td>Execute the &ldquo;pwd&rdquo; unix command and insert output in file<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:sh<&#47;td></p>
+<td>Temporary returns to Unix<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>$exit<&#47;td></p>
+<td>Retourns to Vi<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Alignment<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:%!fmt<&#47;td></p>
+<td>Align all lines<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>!}fmt<&#47;td></p>
+<td>Align all lines at the current position<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>5!!fmt<&#47;td></p>
+<td>Align the next 5 lines<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Tabs<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:tabnew<&#47;td></p>
+<td>Creates a new tab<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>gt<&#47;td></p>
+<td>Show next tab<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:tabfirst<&#47;td></p>
+<td>Show first tab<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:tablast<&#47;td></p>
+<td>Show last tab<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:tabm n(position)<&#47;td></p>
+<td>Rearrange tabs<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:tabdo %s&#47;foo&#47;bar&#47;g<&#47;td></p>
+<td>Execute a command in all tabs<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:tab ball<&#47;td></p>
+<td>Puts all open files in tabs<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Window spliting<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:e filename<&#47;td></p>
+<td>Edit&nbsp;<em>filename<&#47;em> in current window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:split filename<&#47;td></p>
+<td>Split the window and open&nbsp;<em>filename<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ctrl-w up arrow<&#47;td></p>
+<td>Puts cursor in top window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ctrl-w ctrl-w<&#47;td></p>
+<td>Puts cursor in next window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ctrl-w_<&#47;td></p>
+<td>Maximise current window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ctrl-w=<&#47;td></p>
+<td>Gives the same size to all windows<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>10 ctrl-w+<&#47;td></p>
+<td>Add 10 lines to current window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:vsplit file<&#47;td></p>
+<td>Split window vertically<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:sview file<&#47;td></p>
+<td>Same as&nbsp;<strong>:split<&#47;strong> in readonly mode<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:hide<&#47;td></p>
+<td>Close current window<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:only<&#47;td></p>
+<td>Close all windows, excepted current<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:b 2<&#47;td></p>
+<td>Open #2 in this window<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Auto-completion<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>Ctrl+n Ctrl+p (in insert mode)<&#47;td></p>
+<td>Complete word<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>Ctrl+x Ctrl+l<&#47;td></p>
+<td>Complete line<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set dictionary=dict<&#47;td></p>
+<td>Define&nbsp;<em>dict<&#47;em> as a dictionnary<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>Ctrl+x Ctrl+k<&#47;td></p>
+<td>Complete with dictionnary<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Marks<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>mk<&#47;td></p>
+<td>Marks current position as&nbsp;<em>k<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>&lsquo;k<&#47;td></p>
+<td>Moves cursor to mark&nbsp;<em>k<&#47;em><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>d&rsquo;k<&#47;td></p>
+<td>Delete all until mark&nbsp;<em>k<&#47;em><&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Abbreviations<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:ab mail mail@provider.org<&#47;td></p>
+<td>Define&nbsp;<em>mail<&#47;em> as abbreviation of&nbsp;<em>mail@provider.org<&#47;em><&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Text indent<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:set autoindent<&#47;td></p>
+<td>Turn on auto-indent<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set smartindent<&#47;td></p>
+<td>Turn on intelligent auto-indent<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set shiftwidth=4<&#47;td></p>
+<td>Defines 4 spaces as indent size<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>ctrl-t, ctrl-d<&#47;td></p>
+<td>Indent&#47;un-indent in insert mode<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>>><&#47;td></p>
+<td>Indent<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><<<&#47;td></p>
+<td>Un-indent<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>
+<h2>Syntax highlighting<&#47;h2></p>
+<table border="0">
+<tbody>
+<tr>
+<td>:syntax on<&#47;td></p>
+<td>Turn on syntax highlighting<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:syntax off<&#47;td></p>
+<td>Turn off syntax highlighting<&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td>:set syntax=perl<&#47;td></p>
+<td>Force syntax highlighting<&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>

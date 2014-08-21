@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 诺基亚N8换电池需用螺丝刀 用户体验差
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 981
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=981
+date: !binary |-
+  MjAxMC0wNS0xMCAwOTo1ODo1NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xMCAwMTo1ODo1NCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>根据国外网 站最新消息，原来诺 基亚N8的内置电池并非不可更换，但想要把电池取出来，可不是一件容易事，需要先拆去摄像头边上的螺丝，然后下掉后盖下端的外壳<&#47;strong>，其实HTC Legend也是从这个部位取出电池，只是相对方便许多，用户可不会随身携带一个 螺丝刀。</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100510&#47;07073501987188369.jpg" alt="诺基亚N8换电池需用螺丝刀 用户体验差" &#47;></p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100510&#47;0707351120588469.jpg" alt="诺基亚N8换电池需用螺丝刀 用户体验差" &#47;></p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100510&#47;0707352776158788.jpg" alt="诺基亚N8换电池需用螺丝刀 用户体验差" &#47;></p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100510&#47;0707353120476696.jpg" alt="诺基亚N8换电池需用螺丝刀 用户体验差" &#47;></p>

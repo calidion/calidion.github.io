@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: Vim下修改文件的编码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 214
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=214
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoxODo1NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToxODo1NCArMDgwMA==
+categories:
+- 编程技术
+tags:
+- Vim
+- 编码
+comments: []
+---
+<p>:set fileencoding=utf-8<br />
+:set fileencoding=cp936  #gbk</p>
+<p>如果是要修改成utf-8,最好加上一句<br />
+:set bomb</p>
+<p>这样可以方便编辑器来识别文件编码。<br />
+否则一些编辑器会识别不了。出来乱码。</p>

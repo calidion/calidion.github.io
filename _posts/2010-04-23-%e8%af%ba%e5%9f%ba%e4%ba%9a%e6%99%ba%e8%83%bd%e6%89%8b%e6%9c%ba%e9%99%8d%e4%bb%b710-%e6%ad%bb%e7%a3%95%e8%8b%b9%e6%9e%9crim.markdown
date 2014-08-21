@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 诺基亚智能手机降价10% 死磕苹果RIM
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 702
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/04/23/%e8%af%ba%e5%9f%ba%e4%ba%9a%e6%99%ba%e8%83%bd%e6%89%8b%e6%9c%ba%e9%99%8d%e4%bb%b710-%e6%ad%bb%e7%a3%95%e8%8b%b9%e6%9e%9crim/
+date: !binary |-
+  MjAxMC0wNC0yMyAxMDoyODowOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwMjoyODowOSArMDgwMA==
+categories:
+- 新闻
+tags:
+- Nokia
+- RIM
+- 苹果
+comments: []
+---
+<p><strong>路透社周四获得的一份数据显示，诺基亚本周对旗下手机产品进行了降价，部分智能手机的降幅达到了10%。<&#47;strong><br />
+本周，诺基亚对旗下部分手机产品进行了降 价，一些智能手机最高降幅为10%。对此，有分析人士称，面对苹果和RIM在智能手机市场的强劲挑战，降价可能是诺基亚维系市场份额最有力武器。</p>
+<p>此外，诺基亚还将Symbian系统的更新日期从原计划的第二季度推迟到下半年。更新Symbian系统有助于提升诺基亚在高端手机市场的竞争力，而此次延迟可能影响到诺基亚第二季度的表现。</p>
+<p>对此，诺基亚发芽人尚未发表任何评论。但诺基亚此前曾表示，降价是一种正常的商业行为，诺基亚每年都会有几次降价行动。</p>

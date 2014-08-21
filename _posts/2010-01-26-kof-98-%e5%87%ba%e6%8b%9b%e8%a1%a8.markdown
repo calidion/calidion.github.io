@@ -1,0 +1,506 @@
+---
+layout: post
+status: publish
+published: true
+title: kof 98 出招表
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 101
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=101
+date: !binary |-
+  MjAxMC0wMS0yNiAxNDozNjowNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNjozNjowNyArMDgwMA==
+categories:
+- 游戏
+tags:
+- kof
+- 拳皇
+comments: []
+---
+<p>KOF'98出招表<br />
+厂商：SNK 类型：FIG<br />
+主人公队<br />
+草雉京 外式&middot;轰斧阳 &rarr;+B<br />
+外式&middot;奈落落 （跳跃中）&darr;+C<br />
+八拾八式 ↘+D<br />
+百式&middot;鬼燃烧 &rarr;&darr;↘&middot;A或C<br />
+R.E.D.Kick（七百七式&middot;独乐屠） &larr;&darr;↙&middot;B或D<br />
+贰百拾贰式&middot;琴月阳 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+七拾五式改 &darr;↘&rarr;&middot;B&middot;B或D&middot;D<br />
+百拾四式&middot;荒咬 &darr;↘&rarr;&middot;A<br />
+百贰拾八式&middot;九伤 荒咬动作中&darr;↘&rarr;&middot;A或C<br />
+百贰拾七式&middot;八锖 荒咬动作中&rarr;↘&darr;↙&larr;A或C<br />
+荒咬&rarr;九伤动作中A或C<br />
+百贰拾五式&middot;七濑 荒咬&rarr;九伤动作中B或D<br />
+外式&middot;砌穿 荒咬&rarr;八锖动作中A或C<br />
+百拾五式&middot;毒咬 &darr;↘&rarr;&middot;C<br />
+四百壹式&middot;罪咏 毒咬动作中&rarr;↘&darr;↙&larr;A或C<br />
+四百贰式&middot;罚咏 罪咏动作中&rarr;A或C<br />
+九百拾式&middot;鹤摘（外式&middot;虎伏&#47;龙射） &darr;↙&larr;A或C<br />
+秘奥义 里百八式&middot;大蛇雉 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+最终决战奥义"无式"（三神技之一） &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>二阶堂红丸</p>
+<p>旋转膝落 &uarr;以外&middot;C或D<br />
+杰克小刀踢 &rarr;+B<br />
+飞之技巧 （跳跃中）&darr;+D<br />
+雷韧拳 &darr;↘&rarr;&middot;A或C<br />
+空中雷韧拳 （跳跃中）&darr;↘&rarr;&middot;A或C<br />
+真空片手驹 &darr;↙&larr;&middot;A或C<br />
+超级闪电踢 &rarr;&darr;↘&middot;B或D<br />
+居合蹴 &darr;↘&rarr;&middot;B或D<br />
+反动三段蹴 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+红丸投 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+雷光拳 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+大发电者 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C</p>
+<p>大门五郎</p>
+<p>玉溃 &rarr;+A<br />
+头上拂 ↘+C<br />
+地雷震 &rarr;&darr;↘&middot;A或C<br />
+超受身 &darr;↙&larr;&middot;B或D<br />
+出云投 &larr;↙&darr;↘&rarr;&middot;A<br />
+切株返 &larr;↙&darr;↘&rarr;&middot;C<br />
+天地返 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+超大外割 （近身）&rarr;&darr;↘&middot;B或D<br />
+根返 &darr;↘&rarr;&middot;B或D<br />
+里投 &rarr;↘&darr;↙&larr;&rarr;&middot;B或D<br />
+地狱极乐落 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+岚之山 （近身）&larr;↙&darr;↘&rarr;&larr;↙&darr;↘&rarr;&middot;B或D<br />
+续&middot;切株返 岚之山中&larr;↙&darr;↘&rarr;&middot;B或D<br />
+根拔里投（正常态） 续&middot;切株返中&rarr;&darr;↘&middot;B或D<br />
+续&middot;天地返（最大能量态） 续&middot;切株返中&rarr;&darr;↘&middot;B或D</p>
+<p>饿狼传说队<br />
+安迪</p>
+<p>上鳄 &rarr;+B<br />
+上面 ↘+A<br />
+斩影拳 ↙&rarr;&middot;A或C<br />
+我弹幸 斩影拳击中后&darr;↘&rarr;&middot;A或C<br />
+飞翔拳 &darr;↙&larr;&middot;A或C<br />
+升龙拳 &rarr;&darr;↘&middot;A或C<br />
+空破弹 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+击臂背水掌 （近身）&larr;↙&darr;↘&rarr;&middot;A或C<br />
+幻影不知火 （跳跃中）&darr;↘&rarr;&middot;B或D<br />
+幻影不知火（下颚） 幻影不知火着地中&rarr;&middot;A或C<br />
+幻影不知火（上颚） 幻影不知火着地中&rarr;&middot;B或D<br />
+超裂破弹 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D<br />
+飞翔流星拳 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>东丈</p>
+<p>低踢 &rarr;+B<br />
+滑步 ↘+B<br />
+旋风拳 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+爆烈拳 A或C连按<br />
+爆烈拳终结 爆烈拳中&darr;↘&rarr;&middot;A或C<br />
+虎破脚 &rarr;&darr;↘&middot;B或D<br />
+电光踢 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+黄金之踵落 &darr;↙&larr;&middot;B或D<br />
+死亡龙卷风 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+爆烈飓风猛虎踢 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C</p>
+<p>特瑞</p>
+<p>后打 &rarr;+A<br />
+步步高 ↘+C<br />
+火焰冲拳 &darr;↙&larr;&middot;A或C<br />
+能量波 &darr;↘&rarr;&middot;A或C<br />
+碎石踢 &darr;↙&larr;&middot;B或D<br />
+倒跃踢 &rarr;&darr;↘&middot;A或C<br />
+灌篮强击 &rarr;&darr;↘&middot;B或D<br />
+能量补充 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+能量喷泉 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+高轨喷泉 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>龙虎之拳队<br />
+坂崎良</p>
+<p>冰柱割 &rarr;+A<br />
+虎煌拳 &darr;↘&rarr;&middot;A或C<br />
+虎炮 &rarr;&darr;↘&middot;A或C<br />
+猛虎雷神刚跳跃中&rarr;&darr;↘&middot;A或C<br />
+飞燕疾风脚 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+极限流连舞拳 （近身）&larr;↙&darr;↘&rarr;&middot;A或C<br />
+猛虎雷神刚 &darr;↙&larr;&middot;A或C<br />
+猛虎雷神刹 &darr;↘&rarr;&middot;B或D<br />
+龙虎乱舞 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+霸王翔吼拳 &rarr;&larr;↙&darr;↘&rarr;&middot;A或C<br />
+天地霸王拳 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>罗伯特</p>
+<p>龙翻蹴 &rarr;+B<br />
+姣龙降脚蹴 &rarr;+A<br />
+龙击拳 &darr;↘&rarr;&middot;A或C<br />
+龙牙 &rarr;&darr;↘&middot;A或C<br />
+飞燕旋风脚 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+极限流连舞脚 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+龙斩翔 &rarr;&darr;↘&middot;B或D<br />
+飞燕龙神脚 （跳跃中）&darr;↙&larr;&middot;B或D<br />
+龙虎乱舞 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+霸王翔吼拳 &rarr;&larr;↙&darr;↘&rarr;&middot;A或C<br />
+无影疾风重段脚 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>坂崎由莉</p>
+<p>燕落 &uarr;以外&middot;C或D<br />
+燕翼 &rarr;+B<br />
+虎煌拳 &darr;↘&rarr;&middot;A或C<br />
+空牙 &rarr;&darr;↘&middot;A或C<br />
+里空牙 空牙着地时&rarr;&darr;↘&middot;A或C<br />
+雷煌拳 &darr;↘&rarr;&middot;B或D<br />
+百烈掌击 &rarr;↘&darr;↙&larr;&middot;A或C<br />
+飞燕疾风拳 &darr;↙&larr;&middot;B或D<br />
+飞燕旋风脚 &darr;↙&larr;&middot;A或C<br />
+霸王翔吼拳 &rarr;&larr;↙&darr;↘&rarr;&middot;A或C<br />
+飞燕凤凰脚 &darr;↘&rarr;↘&darr;↙&larr;&middot;B或D<br />
+飞燕烈孔 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>怒之队<br />
+拉尔夫</p>
+<p>机炮拳 A或C连打<br />
+格林机关炮 &larr;（蓄）&rarr;&middot;A或C<br />
+急降下爆弹 &darr;（蓄）&uarr;&middot;A或C<br />
+（跳跃中）&darr;↘&rarr;&middot;A或C<br />
+超级阿根廷攻击 （近身）&larr;↙&darr;↘&rarr;&middot;B或D<br />
+拉尔夫踢 &larr;（蓄）&rarr;&middot;B或D<br />
+超级机炮拳 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+乘马机炮拳 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D<br />
+宇宙幻影 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>莉安娜</p>
+<p>黑登摔 &uarr;以外&middot;C或D<br />
+打击 &rarr;+B<br />
+月光锯 &darr;（蓄）&uarr;&middot;A或C<br />
+威武军刀 &larr;（蓄）&rarr;&middot;B或D<br />
+粉碎者 重威武军刀中&rarr;+D<br />
+X口径炮 &darr;（蓄）&uarr;&middot;B或D<br />
+涡旋发射器 &larr;（蓄）&rarr;&middot;A或C<br />
+眼之斩 &darr;↙&larr;&middot;A或C<br />
+耳环爆弹 &darr;↙&larr;&middot;B或D<br />
+V字金锯 （跳跃中）&darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+旋转的火花 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D<br />
+重力风暴 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>克拉克</p>
+<p>跳入死亡湖 &uarr;以外&middot;C或D<br />
+断踢 &rarr;+B<br />
+机炮拳 A或C连打<br />
+凝固汽油弹（投） &rarr;&darr;↘&middot;A或C<br />
+旋转摇篮（投） &larr;↙&darr;↘&rarr;&middot;C<br />
+超级阿拉伯拉力赛阻止者（投） &larr;↙&darr;↘&rarr;&middot;A<br />
+弗兰肯必杀投（投） &rarr;&darr;↘&middot;B或D<br />
+超级阿根廷阻挠者（投） （近身）&larr;↙&darr;↘&rarr;&middot;B或D<br />
+烈火闪光肘 （指令投中）&darr;↘&rarr;&middot;A或C<br />
+终结阿根廷攻击 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+奔袭投掷 ↙&darr;↘&rarr;&larr;↙&darr;↘&rarr;&middot;B或D</p>
+<p>超能力战士队<br />
+镇元斋</p>
+<p>醉步飘箪袭 &rarr;+A<br />
+瓢箪袭 &darr;↙&larr;&middot;A或C<br />
+柳磷蓬莱 &rarr;&darr;↘&middot;A或C<br />
+回转的空突拳 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+醉管卷翁中&rarr;&middot;B或D<br />
+望月醉中&rarr;&middot;B或D<br />
+醉管卷翁 &darr;&darr;&middot;A或C<br />
+蝶袭鲑鱼 醉管卷翁中&rarr;&middot;A或C<br />
+望月醉 &darr;&darr;&middot;B或D<br />
+龙蛇反蹦 望月醉中&uarr;B<br />
+鲤鱼反蹦 望月醉中&uarr;D<br />
+鬼醉酒 &darr;↘&rarr;&middot;A或C<br />
+轰栏炎炮 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+轰栏招来 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C</p>
+<p>椎拳崇</p>
+<p>虎扑手 &rarr;+A<br />
+后旋腿 &rarr;+B<br />
+超球弹 &darr;↙&larr;&middot;A或C<br />
+龙颚碎 &larr;&darr;↙&middot;B或D<br />
+龙连牙&middot;地龙 &larr;↙&darr;↘&rarr;&middot;A<br />
+龙连牙&middot;天龙 &larr;↙&darr;↘&rarr;&middot;C<br />
+龙爪袭 （跳跃中）&darr;↙&larr;&middot;A或C<br />
+龙连打 （近身）&rarr;&darr;↘&middot;A或C连按<br />
+神龙凄煌裂脚 &darr;↘&rarr;↘&darr;↙&larr;&middot;B<br />
+神龙天舞脚 &darr;↘&rarr;↘&darr;↙&larr;&middot;D<br />
+仙气发动 （近身）&darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+食肉馒 &darr;↙&larr;&darr;↙&larr;&middot;A或C</p>
+<p>麻宫雅典娜</p>
+<p>精神射击 &uarr;以外&middot;C或D<br />
+连环腿 &rarr;+B<br />
+凤凰弹 （跳跃中）&darr;+B<br />
+精神力球 &darr;↙&larr;&middot;A或C<br />
+凤凰箭 （跳跃中）&darr;↙&larr;&middot;A或C<br />
+精神力反射波 &rarr;↘&darr;↙&larr;&middot;B<br />
+伽玛精神反射 &rarr;↘&darr;↙&larr;&middot;D<br />
+划空光剑 &rarr;&darr;↘&middot;A或C<br />
+空中光剑 （跳跃中）&rarr;&darr;↘&middot;A或C<br />
+心灵传送术 &darr;↘&rarr;&middot;B或D<br />
+超级精神穿透 （近身）&larr;↙&darr;↘&rarr;&middot;C<br />
+闪光水晶波 &larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+水晶超射 闪光水晶波中&darr;↙&larr;&middot;A或C<br />
+空中闪光水晶波 （跳跃中）&larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+空中水晶超射 空中闪光水晶波中&darr;↙&larr;&middot;A或C<br />
+凤凰FANG箭 （跳跃中）&darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>新女性格斗家队<br />
+京</p>
+<p>滑步踢 ↘+D<br />
+毒蛇击 &darr;↘&rarr;&middot;B或D<br />
+双毒蛇击 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D<br />
+落地击 &rarr;&darr;↘&middot;B或D<br />
+龙卷踢 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+惊异玫瑰 &rarr;&darr;↘&middot;A或C<br />
+妄想踢 &rarr;↘&darr;↙&larr;&middot;A或C<br />
+幻想之舞 &darr;↘&rarr;↘&darr;↙&larr;&middot;B或D<br />
+沉默闪光 &darr;↙&larr;&darr;↙&larr;&middot;B或D</p>
+<p>神乐千鹤</p>
+<p>除活&middot;铮铮 &rarr;+A<br />
+除活&middot;瑜瑜 &rarr;+B<br />
+除活&middot;淙淙 ↘+B<br />
+百活&middot;天神之理 &rarr;&darr;↘&middot;A或C<br />
+贰百式贰活&middot;神速之祝词 &rarr;↘&darr;↙&larr;&middot;A或C或B或D<br />
+贰百式贰活&middot;神速之祝词&middot;天瑞 神速之祝词动作中&darr;↙&larr;&middot;A或C或B或D<br />
+百八活&middot;玉响之瑟音 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+贰百拾贰活乙式顶门之一针 &darr;&darr;&middot;任一键<br />
+里面八拾伍活零技之楚 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+里而壹活三籁之布阵 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>不知火舞</p>
+<p>梦樱 &uarr;以外&middot;C或D<br />
+红鹤之舞 ↘+B<br />
+黑燕之舞 &rarr;+B<br />
+大轮风车落 &darr;+A<br />
+花蝶扇 &darr;↘&rarr;&middot;A或C<br />
+龙炎舞 &darr;↙&larr;&middot;A或C<br />
+飞翔龙炎舞 &rarr;&darr;↘&middot;B或D<br />
+必杀忍蜂 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+飞鼠之舞 &darr;（蓄）&uarr;&middot;A或C<br />
+（跳跃中）&darr;↙&larr;&middot;A或C<br />
+白鹭之舞 &rarr;&darr;↘&middot;A或C<br />
+超必杀忍蜂 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D<br />
+凤凰之舞 &darr;↙&larr;&darr;↙&larr;&middot;A或C<br />
+水鸟之舞 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>金家藩队<br />
+金家藩</p>
+<p>多拉打击 &rarr;+A<br />
+定位打击 &rarr;+B<br />
+飞燕斩 &darr;（蓄）&uarr;&middot;B或D<br />
+半月斩 &darr;↙&larr;&middot;B或D<br />
+飞翔脚 （跳跃中）&darr;↘&rarr;&middot;B或D<br />
+流星落 &larr;（蓄）&rarr;&middot;B或D<br />
+空砂尘 &darr;（蓄）&uarr;&middot;A或C<br />
+霸气脚 &darr;&darr;&middot;B或D<br />
+三连击 &darr;↙&larr;&middot;A或C （可三次）<br />
+凤凰脚 &darr;↙&larr;↙&rarr;&middot;B或D<br />
+（跳跃中）&darr;↙&larr;↙&rarr;&middot;B或D<br />
+凤凰天舞脚 （跳跃中）&darr;↘&rarr;↘&darr;↙&larr;&middot;B或D</p>
+<p>陈可汉</p>
+<p>轮逃 ↘+A<br />
+铁球粉碎击 &larr;（蓄）&rarr;&middot;A或C<br />
+铁球大回转 A或C连打<br />
+铁球飞燕斩 &darr;（蓄）&uarr;&middot;B或D<br />
+大破坏投掷 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+铁球大暴走 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+铁球大压杀 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>蔡宝健 二段斩 &rarr;+A<br />
+通魔蹴 &rarr;+B<br />
+龙卷疾风斩 &darr;（蓄）&uarr;&middot;A或C<br />
+飞翔空裂斩 &darr;（蓄）&uarr;&middot;B或D<br />
+旋风飞燕刺突 &larr;（蓄）&rarr;&middot;B或D<br />
+方向转换 飞翔空裂斩、旋风飞燕刺突中方向键加攻击键<br />
+飞翔脚 （跳跃中）&darr;↘&rarr;&middot;B或D<br />
+疾走飞翔斩 &larr;（蓄）&rarr;&middot;A或C<br />
+回转飞猿斩 &darr;↙&larr;&middot;A或C<br />
+奇袭飞猿斩 回转飞猿斩动作中&middot;A或C<br />
+真！超绝龙卷疾风斩 &rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+凤凰斩 &darr;↘&rarr;↘&darr;↙&larr;&middot;B或D</p>
+<p>特别参赛队<br />
+玛丽</p>
+<p>大锤击 &rarr;+A<br />
+上升之箭 ↘+B<br />
+双滚 &rarr;+B<br />
+旋转下落 &darr;↘&rarr;&middot;B或D<br />
+玛丽蜘蛛固 &darr;↘&rarr;&middot;A或C<br />
+指天回旋脚 &larr;（蓄）&rarr;&middot;B或D<br />
+俱乐部飞标 指天回旋脚击中后&darr;↘&rarr;&middot;B或D<br />
+垂直之箭 &rarr;&darr;↘&middot;B或D<br />
+玛丽攫夺 垂直之箭击中后&rarr;&darr;↘&middot;B或D<br />
+玛丽翻脸 &darr;↙&larr;&middot;B<br />
+头部飞弹 &darr;↙&larr;&middot;D<br />
+回身真落 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+玛丽台风 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;B或D<br />
+玛丽野玫瑰 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+动感闪光 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>山崎龙二</p>
+<p>打刺 &rarr;+A<br />
+蛇拳上段 &darr;↙&larr;&middot;A<br />
+蛇拳中段 &darr;↙&larr;&middot;B<br />
+蛇拳下段 &darr;↙&larr;&middot;C<br />
+蛇拳CANCEL 蛇拳储劲中D<br />
+SADOMASOCHISM &larr;↙&darr;↘&rarr;&middot;B或D<br />
+倍返 &darr;↘&rarr;&middot;A或C<br />
+制裁之首 &rarr;&darr;↘&middot;A或C<br />
+爆弹 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+踢砂 &rarr;&darr;↘&middot;D<br />
+淬火 &rarr;&darr;↘&middot;B<br />
+断头台 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+射杀 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C</p>
+<p>比利</p>
+<p>大回转蹴 &rarr;+A<br />
+棒高跳蹴 &rarr;+B<br />
+三节棍中段打 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+火炎三节棍中段打 三节棍中段打中&darr;↘&rarr;&middot;A或C<br />
+旋风棍 A键连打<br />
+集点连破棍 C键连打<br />
+强袭飞翔棍 &rarr;&darr;↘&middot;B或D<br />
+火龙追击棍 &darr;↙&larr;&middot;B<br />
+水龙追击棍 &darr;↙&larr;&middot;D<br />
+旋元杀棍 &rarr;&darr;↘&middot;A或C<br />
+超火炎旋风棍 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+大旋风 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>大蛇队<br />
+七枷社</p>
+<p>标准大锤 &rarr;+A<br />
+滑步踢 &rarr;+B<br />
+飞弹强力锤 &rarr;↘&darr;↙&larr;&middot;A或C<br />
+升龙决斗 &rarr;&darr;↘&middot;A或C<br />
+敲大锤 &darr;↙&larr;&middot;B或D<br />
+喷气反击 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+喷气反击&middot;钢 喷气反击击中后&darr;↘&rarr;&middot;A或C<br />
+百万大锤蒸汽 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+最终冲击 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>夏尔米</p>
+<p>SHERMIE站立 &rarr;+B<br />
+SHERMIE螺旋打 （近身）&larr;↙&darr;↘&rarr;&middot;A或C（必杀投）<br />
+SHERMIE鞭答 &darr;↙&larr;&middot;A或C （必杀投）<br />
+SHERMIE重炮 &larr;↙&darr;↘&rarr;&middot;B或D （必杀投）<br />
+SHERMIE旋转踢 &darr;↙&larr;&middot;B或D<br />
+SHERMIE叠加 &rarr;&darr;↘&middot;B或D （必杀投）<br />
+SHERMIE的天真 必杀投动作中&darr;↘&rarr;&middot;B或D<br />
+SHERMIE大闪耀 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;A或C<br />
+SHERMIE狂欢 （近身）&larr;↙&darr;↘&rarr;&larr;↙&darr;↘&rarr;&middot;A或C</p>
+<p>克丽丝</p>
+<p>针刺 &rarr;+A<br />
+颠倒混乱踢 &rarr;+B<br />
+卸下踢 ↘+B<br />
+滑触 &darr;↘&rarr;&middot;A或C<br />
+猎杀的空气 &rarr;&darr;↘&middot;B或D<br />
+射杀舞者之突刺 &rarr;↘&darr;↙&larr;&middot;A或C<br />
+射杀舞者之舞步 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+舞者之章 （跳跃中）&darr;↘&rarr;&middot;B或D<br />
+乱冲 &darr;↘&rarr;&middot;B或D<br />
+方向变换 &rarr;&darr;↘&middot;A或C<br />
+滑行者的踩踏 &darr;↙&larr;&darr;↙&larr;&middot;B或D<br />
+连续滑触 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>八神庵队<br />
+八神庵</p>
+<p>外式&middot;梦弹 &rarr;+A&middot;A<br />
+外式&middot;轰斧阴死神 &rarr;+B<br />
+外式&middot;百合折 （跳跃中）&larr;+B<br />
+百式&middot;鬼燃烧 &rarr;&darr;↘&middot;A或C<br />
+贰百拾贰式&middot;琴月阴 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+百贰拾七式&middot;葵花 &darr;↙&larr;&middot;A或C(可三回连续输入)<br />
+屑风 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+百八式&middot;暗勾手 &darr;↘&rarr;&middot;A或C<br />
+叁百拾壹式&middot;抓节 &rarr;&darr;↘&middot;B或D<br />
+禁千贰百拾壹式&middot;八稚女 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+里百八式&middot;八酒杯 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C</p>
+<p>麦卓</p>
+<p>CREMATORY &rarr;+B<br />
+死亡之爪 &darr;↙&larr;&middot;A或C(可三回连续输入)<br />
+大金属 &darr;↙&larr;&middot;B或D<br />
+秘书决定 &darr;↘&rarr;&middot;A或C<br />
+秘书支出 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+SACRILEGE &rarr;&darr;↘&middot;A或C<br />
+晶莹的眼泪 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+天堂之门 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D<br />
+死亡之光 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>薇思</p>
+<p>魔式攻击 &rarr;+A<br />
+大外割 &darr;↙&larr;&middot;B或D<br />
+狂波怒吼 （跳跃中）&darr;↙&larr;&middot;B或D<br />
+鹿典之舞 （近身）&rarr;↘&darr;↙&larr;&rarr;&middot;A或C<br />
+DACIDE &larr;↙&darr;↘&rarr;&middot;B或D<br />
+侧面袭击 （近身）&larr;↙&darr;↘&rarr;&middot;A或C<br />
+MEIHEM &darr;↙&larr;&middot;A或C<br />
+悲观厌世者 上面二式动作中&darr;↘&rarr;&middot;A或C<br />
+不屑赚取 （近身）&rarr;↘&darr;↙&larr;&rarr;↘&darr;↙&larr;&middot;B或D<br />
+环面攻击 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>老爸队<br />
+哈迪伦</p>
+<p>垂直驱动 &uarr;以外&middot;C或D<br />
+妙打 &rarr;+B<br />
+除草者 &larr;（蓄）&rarr;&middot;A或C<br />
+月光 &darr;（蓄）&uarr;&middot;A或C<br />
+颈部错位 &darr;（蓄）&uarr;&middot;B或D<br />
+风暴制造者 （近身）&rarr;↘&darr;↙&larr;&middot;A或C<br />
+谋杀制造者 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+终结者 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+黑登谢幕 &darr;↙&larr;↙&darr;↘&rarr;&middot;B或D</p>
+<p>草雉柴舟</p>
+<p>外式&middot;轰槌 &rarr;+A<br />
+外式&middot;头椎 &rarr;+B<br />
+百八式&middot;暗勾手 &darr;↘&rarr;&middot;A或C<br />
+百式&middot;鬼烧 &rarr;&darr;↘&middot;A或C<br />
+四百贰拾七式&middot;神悬 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+百拾式&middot;铊车 &rarr;&darr;↘&middot;B或D<br />
+七百贰拾式&middot;炎重 &darr;↙&larr;&middot;A或C(可二回连续输入)<br />
+里百八式&middot;大蛇雉 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+千百贰拾七式&middot;都牟割 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>坂崎琢磨</p>
+<p>鬼车 &rarr;+A<br />
+瓦割 &rarr;+B<br />
+虎煌拳 &darr;↘&rarr;&middot;A或C<br />
+斩烈拳 &rarr;&larr;&rarr;&middot;A或C<br />
+飞燕疾风脚 ↙蓄&rarr;&middot;B或D<br />
+翔乱脚 &rarr;↘&darr;↙&larr;&middot;B或D<br />
+霸王至高拳 &rarr;&larr;↙&darr;↘&rarr;&middot;A或C（可按键蓄劲）<br />
+猛虎舞赖岩 &darr;↙&larr;&middot;A或C<br />
+真&middot;神鬼击 （近身）&darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+龙虎乱舞 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C</p>
+<p>运动员队<br />
+拜仁&middot;巴特勒</p>
+<p>秃鹰击 （跳跃中）&darr;+A<br />
+布莱恩飓风 &larr;↙&darr;↘&rarr;&middot;A或C<br />
+超级打击 &larr;↙&darr;↘&rarr;&middot;B或D<br />
+残酷身躯压 （跳跃中）&darr;↘&rarr;&middot;A或C<br />
+布莱恩锤 &darr;↙&larr;&middot;A或C<br />
+老虎出山 布莱恩锤击中后&larr;↙&darr;↘&rarr;&middot;A或C<br />
+侍魂炸弹 老虎出山中&darr;&darr;&middot;A或C<br />
+肩顶 老虎出山中&darr;&darr;&darr;&middot;B或D<br />
+打击者与炸弹 肩顶中&darr;&uarr;&middot;A或C<br />
+双锤 布莱恩锤击中时&darr;↙&larr;&middot;A或C<br />
+敌敌畏 双锤中&darr;↙&larr;&middot;A或C<br />
+摇滚打击 &rarr;&darr;↘&middot;B或D<br />
+老大出手 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D<br />
+美式足球击 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>洛奇&middot;古洛巴</p>
+<p>扣篮落地 （跳跃中）&darr;+A<br />
+洛奇踢 &rarr;+B<br />
+死亡跳跃 &darr;↘&rarr;&middot;A或C<br />
+洛奇景象 &darr;↘&rarr;&middot;B或D<br />
+回转急停 &darr;↙&larr;&middot;B或D<br />
+死亡灌篮 &darr;↙&larr;&middot;A或C<br />
+死亡投 &darr;&darr;&middot;任意键<br />
+死亡回合 &rarr;&darr;↘&middot;B或D<br />
+地狱爆弹 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+洛奇超杀 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>哈维D</p>
+<p>铁锁冲 &rarr;+A<br />
+R.S.D &darr;↘&rarr;&middot;A或C<br />
+勾拳 &darr;↘&rarr;&middot;B或D<br />
+花儿的灵魂 &darr;↙&larr;&middot;B或D<br />
+阴影 &darr;&darr;&middot;A或C<br />
+组合上篮 &darr;↙&larr;&middot;A或C(可二回连续输入)<br />
+投手攻击 （近身）&rarr;&darr;↘&middot;A或C<br />
+我疯了 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
+银弹终结 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
+<p>编队角色<br />
+卢卡尔</p>
+<p>双秃鹰 &rarr;+B<br />
+烈风拳 &darr;↘&rarr;&middot;A或C<br />
+凯撒波 &rarr;&larr;↙&darr;↘&rarr;&middot;A或C<br />
+裁剪者 &rarr;&darr;↘&middot;B或D<br />
+黑暗制裁 &darr;↘&rarr;&middot;B或D<br />
+上帝保佑 &rarr;↘&darr;↙&larr;&middot;A或C<br />
+巨人压杀 &darr;↘&rarr;↘&darr;↙&larr;&middot;A或C<br />
+死亡尖叫 &darr;↘&rarr;&darr;↘&rarr;&middot;B或D</p>
+<p>矢吹真吾</p>
+<p>外式&middot;轰斧造型 &rarr;&middot;B<br />
+百式&middot;鬼燃烧未完成 &rarr;&darr;↘&middot;A或C<br />
+百拾四式&middot;荒咬未完成 &darr;↘&rarr;&middot;A<br />
+百拾五式&middot;毒咬未完成 &darr;↘&rarr;&middot;C<br />
+百壹式&middot;胧车未完成 &darr;↙&larr;&middot;B或D(三回连续输入)<br />
+真吾KICK &larr;↙&darr;↘&rarr;&middot;B或D<br />
+肘落 &darr;↙&larr;&middot;A或C<br />
+真吾版&middot;吾式&middot;花研 （近身）&rarr;&darr;↘&middot;B或D<br />
+外式&middot;丘凤鳞 &darr;↘&rarr;&darr;↘&rarr;&middot;A或C<br />
+燃烧真吾 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C</p>

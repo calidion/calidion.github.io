@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: 严格的发布计划将会葬送Ubuntu？
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 708
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=708
+date: !binary |-
+  MjAxMC0wNC0yMyAxMDozMzoxOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwMjozMzoxOCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>新闻来源:net moose<br />
+离Ubuntu 10.04 Lucid Lynx 的最终发布仅一周之遥了， 但最近新加入的一个X.org server的补丁导致的的重大内存泄漏需要Ubuntu开发者进行&ldquo;紧急&rdquo;测试。<br />
+这个bug&ldquo;会使得几个小时后电脑变得越来越慢，最终导致完全反应迟钝&rdquo;， 一名Ubuntu开发者，Martin Pitt，在Ubuntu开发邮件列表中把这个问题定义为紧急，昨天这样写道：</p>
+<p>&ldquo;周五我们会根据收集到的用户反馈来决定我们是否会把它放到Lucid的最终版本中还是简单做一个稳定的系统升级。&ldquo;</p>
+<p>能否把版本 发布推迟到所有问题都解决完？</p>
+<p>短暂还是漫长？</p>
+<p>一个较短的发布周期的好处是显而易见的。 Ubuntu 新版本发布伴随着以Ubuntu为标题的评论、新闻以及各种类型的宣传铺天盖地，这正好表现了用户期待一个更好的操作系统。<br />
+Canonical公 司的前任CEO Mark Shuttleworth 就是六个月短发布周期的坚定支持者：</p>
+<p>&rdquo;它令人兴奋并使得贡献者感到振奋&ldquo;， 并且它遵循了久经考验的原则&lsquo;臭虫在众人的眼皮下将无处遁形&rsquo;和&lsquo;尽早发布， 经常发布&rsquo;&rdquo;<br />
+到底有多少Ubuntu的开发者能够牺牲这些营销利 益？ 推迟几天发布日期问题真的就那么大？</p>
+<p>毫无疑问，Canonical在把Linux带入到主流操作系统中功不可没。每次发布会有越来 越多的人在尝试Ubuntu，而且从2005年起，它就一直占据Distrowatch的头把交椅。但是Ubuntu是否只是一个给新手尝试最新最好软件 的Linux发行版？Linux备受赞誉的稳定性与安全性呢？<br />
+有很多Linux用户投入到Ubuntu &ldquo;unstable&rdquo;的怀抱， 部分用户会坚持版本发布2-3周后再选择升级，因为这时不稳定的因素已经消除。</p>
+<p>Ubuntu vs Debian 方式</p>
+<p>Debian 的项目经理， Steve McIntyre在解释为什么Debian5.0的发布比计划晚了4个月时说：</p>
+<p>&ldquo;基本上，最近几个版本，比如 Etch和Lenny，计划一直都是18个月， 但是有可能拖到24个月。我们的预计计划可能会失误，毕竟我们是志愿从事这项工作的， 如果我们宣称18个月而实际释出能控制在24个月以下， 每个人都会感到愉悦的。&ldquo;</p>
+<p>&rdquo;到目前为止， 在Debian中我们对&rdquo;当它已经可以了再发布&ldquo;的方式感到很满意。我们更倾向于稳定的版本，它对于我们以及其他用户来说是非常重要的， 我们只是想确保它是正确的。 我们可以把目标定在一个具体的日期， 但除非我们得到多数人的认可并且得知了这一项事实：即它已经准备完毕，我们才会很高兴在几个月后释出以确保它确实很棒。&rdquo;</p>
+<p>我非常尊重 Linux 的开发者和贡献者。但是当每个人都在期待一个稳定的发布计划时， 涉及到到这些大的项目尤其是开源软件时， 发布日期只能够作为计划。Ubuntu 开发者和Canonical 最好能改变他们对于发布日期的看法并且向Debian 的方式靠拢&mdash;&mdash;&ldquo;当它已经可以了&rdquo;，因为（我认为）使用没有臭虫的软件稳定性及可用性的好处更胜过一个短暂且严格的发布周期的营销利益。</p>

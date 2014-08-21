@@ -1,0 +1,34 @@
+---
+layout: post
+status: publish
+published: true
+title: python下GB2312&#47;GBK编码的问题解决
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 208
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=208
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoxNDo0NiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToxNDo0NiArMDgwMA==
+categories:
+- 杂谈
+- 编程技术
+tags:
+- GB2312
+- GBK
+- ptyhon
+- 编码
+comments: []
+---
+<p>如果你想在python的源文件里使用GBK&#47;GB2312那么在保证你的源文件的编码本身是GB2312外，<br />
+还需要在文件首加上<br />
+#encoding=gb2312<br />
+这样的一句提示。<br />
+其中的gb2312可以更换成相应的你所使用的编码，如果GBK，UTF-8。<br />
+前提是你的文件编码与它是一致的。</p>

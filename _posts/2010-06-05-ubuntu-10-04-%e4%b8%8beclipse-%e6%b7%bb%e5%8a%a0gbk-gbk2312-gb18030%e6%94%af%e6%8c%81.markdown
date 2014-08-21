@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 10.04 下Eclipse 添加GBK&#47;GBK2312&#47;GB18030支持
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1150
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1150
+date: !binary |-
+  MjAxMC0wNi0wNSAyMzo0MjoyOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wNSAxNTo0MjoyOSArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Eclipse
+- Ubuntu
+- 编码
+comments: []
+---
+<p>1.首先是要添加locale的支持</p>
+<pre class="code" name="sh">
+sudo locale-gen zh_CN.GBK<br />
+sudo locale-gen zh_CN.GB2312<br />
+sudo locale-gen zh_CN.GB18030<br />
+<&#47;pre></p>
+<p>2.更新一下locale(不更新应该也没有问题，没有测试):</p>
+<pre class="code" name="sh">
+sudo dpkg-reconfigure locales<br />
+<&#47;pre></p>
+<p>3.重启Eclipse, 然后再打开项目的属性，直接输入<br />
+GBK&#47;GB2312&#47;GBK18030<br />
+即可。<br />
+你会发现原来的乱码消失了。<br />
+由于这种方法使用的是OpenJDK,你不用安装Sun的JDK就可以使用GBK&#47;GB2312了。</p>

@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: DIVEINTOHTML5翻译系列-你已知的关于XHTML的事情都是错的
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1008
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1008
+date: !binary |-
+  MjAxMC0wNS0xMyAxNjo0ODoxNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xMyAwODo0ODoxNSArMDgwMA==
+categories:
+- HTML
+- 民工翻译
+- WEB前端技术
+tags:
+- DOCTYPE
+- HTML5
+- MIME
+- XHTML
+- XML
+comments: []
+---
+<div id="_mcePaste">原文：<a href="http:&#47;&#47;diveintohtml5.org&#47;past.html#xhtml">http:&#47;&#47;diveintohtml5.org&#47;past.html#xhtml<&#47;a><&#47;div></p>
+<div>为什么MIME类型如此重要？为什么我总是会提到它们？一句话： 严厉的错误处理。浏览器一直在&ldquo;原谅&rdquo;着HTML。如果你创建了一个HTML页面但是忘记了给一个<title>，浏览器还是会显示这个页面，尽管每个HTML版本中都要求有<title>标签。有一些特定的标签是不允许被放在其它标签里的，但是如果你创建了一个页面将它们放到了其它标签下，浏览器还是会处理它（某种程度上）并且继续执行不提供任何错误信息。<&#47;div></p>
+<div id="_mcePaste">你可以想象，由于不合规范的HTML标记仍能在浏览器里工作的事实，导到了很多网页编写人员创建了各种非规范HTML的页面。大量非规范HTML页面。根据相关的估计，超过99%的现存HTML页面至少有一个错误。由于这些错误并没有导致浏览器显示可见的错误信息，从来没有人修复过他们。<&#47;div></p>
+<div id="_mcePaste">W3C把它当成是WEB的一个根本问题，并且决定修正这个问题。XML，发布于1997年，打破了原谅客户端的传统，强制所有处理XML的程序必须把所谓的&ldquo;好格式&rdquo;错误当成是致命错误。从希腊领袖Draco在他的法律里对较轻的违法行为也使用死刑后，不能容忍一个错误的概念开始被称为Draco错误处理。当W3C将HTML重新公式化成XML时，他们强制所有的MIME类型是application&#47;xhtml+xml的文档必须遵守Draco错误处理。如果你的XHTML页面里那怕只有一个错误，网页浏览器除了停止处理和显示一个错误消息给最终用户外，没有别的选择。<&#47;div></p>
+<div id="_mcePaste">这个想法并非到处受欢迎。伴随着已存页面估计的99%的错误率，一直存在着的显示错误给最终用户的可能性，和验证成本的XHTML 1.0和1.1新特性的死去，网页制作者基本上忽略了application&#47;xhtml+xml。但这并不意味着他们把XHML也一起忽略了。噢，可以相当肯定的说，不是。附录C的XHTML 1.0规范留给了全球的网页制作者一个空子：&ldquo;使用一些看起来象XHTML的语法，但是保持MIME类型是text&#47;html&ldquo;。这也是事实上很多网页开发者过去所做的：他们&ldquo;升级&rdquo;到了XHTML的语法，但是却还在使用text&#47;html这个MIME类型。<&#47;div></p>
+<div id="_mcePaste">即使在今天，仍有不少网页声称它是XHTML。 它们在第一行使用XHTML的doctype，标签名小写，属性使用引号，并在象<br &#47;>和<br />
+<hr &#47;>这样的空元素上添加结尾斜杠。但是只有部分非常少的页面的MIME类型是application&#47;xhtml+xml，这个可能引起Draco错误处理的类型。任何页面使用text&#47;html的MIME类型，不管是什么doctype，语法和编码类型，都会被一个&rdquo;原谅&ldquo;的HTML分析器分析，安静的忽略任何标记错误，永不向最终用户或者任何人报警，即使页面在技术上已经崩溃。<&#47;div></p>
+<div id="_mcePaste">XHTML 1.0 给了这个空子，但是XHTML 1.1关闭了，并且永远无法完成的XHTML 2.0继续了Draco错误处理的传统。这也是为什么上亿的页面说他们是XHTML 1.0，而只有少数声称他是XHTML 1.1（或者XTHML 2.0）的原因。所以你真的是在用XHTML吗？检查一下你的MIME类型看看。（实际上，如果你不知道你正在用的MIME类型是什么，那我可以非常确定你还是用的text&#47;html）除非你的MIME类型是application&#47;xhtml+xml，否则你所谓的&ldquo;XHTML&rdquo;不过是名称上的XML而已。<&#47;div></p>

@@ -1,0 +1,72 @@
+---
+layout: post
+status: publish
+published: true
+title: Epoll 水平触发和边缘触发
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1238
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1238
+date: !binary |-
+  MjAxMC0wNy0yMiAxMzowOTozMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNy0yMiAwNTowOTozMCArMDgwMA==
+categories:
+- WEB服务器技术
+- 民工翻译
+tags:
+- epoll
+comments:
+- id: 128
+  author: herodot
+  author_email: yanghuashuai@126.com
+  author_url: ''
+  date: !binary |-
+    MjAxMy0wOS0yNSAxNDo0NDo1MyArMDgwMA==
+  date_gmt: !binary |-
+    MjAxMy0wOS0yNSAwNjo0NDo1MyArMDgwMA==
+  content: ! "1. The file descriptor that represents the read side of a pipe ( RFD
+    ) is added inside the epoll device.\r\n2. Pipe writer writes 2Kb of data on the
+    write side of the pipe.\r\n==\r\n1. 表示管道读取端的文件描述符（rfd）在epoll上注册成功\r\n2. 在管道写入端写入2Kb的数据\r\n\r\n这样翻译是不是更好些？"
+- id: 129
+  author: 北漂IT民工
+  author_email: calidion@gmail.com
+  author_url: ''
+  date: !binary |-
+    MjAxMy0wOS0yNSAxNjozNTozNCArMDgwMA==
+  date_gmt: !binary |-
+    MjAxMy0wOS0yNSAwODozNTozNCArMDgwMA==
+  content: ! "谢谢。\r\n第一个建议接受。\r\n第二个感觉还是可以再讨论。"
+---
+<p>下面是对man epoll的英文的部分翻译。</p>
+<p>水平触发和边缘触发(Level-Triggered and Edge-Triggered)</p>
+<p>epoll事件分发接口能在边缘触发（ET）或者水平触发（LT）两种模式下工作。他们的区别如下所述。</p>
+<p>假设有这样一个场景：<br />
+1. 表示管道读取端的文件描述符（rfd）在epoll上注册成功<br />
+2. 在管道上写入了2Kb的数据<br />
+3. epoll_wait(2)调用完成，返回rfd表示这个描述符已经准备好<br />
+4. 从rfd上读取1kb数据<br />
+5. 调用epoll_wait(2)</p>
+<p>如果rfd是使用EPOLLET(边缘触发)标记注册的epoll接口<br />
+那么在第5步调用epoll_wait(2)时可能会被挂起，<br />
+尽管数据仍可从文件输入缓冲取到，远程主机也在等待它的回应。<br />
+但是因为边缘触发模式只派发所管辖的文件描述符上的变化事件，<br />
+所以可能会导致第5步的调用者一直等待已经在输入缓冲的数据。</p>
+<p>(注，原因应该是这样，由于没有读取完所有的数据，也没有写数据，所以两边都在等，因为新的事件就一直不能产生。）</p>
+<p>在上面的例子里，一个rfd上的事件可能在第2步写入完成后产生，然后在第3步被消耗掉。<br />
+由于第4步的读取操作没有处理完所有的缓存数据，第5步的epoll_wait调用可能会被无限的阻塞。</p>
+<p>一个使用EPOLLET标记的应用应该使用非阻塞的文件描述符以避免读&#47;写的阻塞引起处理多个文件描述符的任务的饥饿。<br />
+作为边缘触发接口时，epoll建议的使用方式如下：<br />
+i 使用非阻塞文件描述符，<br />
+ii 只在read(2)或者write(2)返回EAGAIN后才等待一个事件。</p>
+<p>相反，当用作水平触发接口时(默认方式，如果EPOLLET没有指定)，epoll仅仅是一个更快的poll(2)，并且可以用于任何poll(2)使用的地方，因为他们的语义是一样的。</p>
+<p>但是即使使用边缘触发的epoll，接收到多块数据时还是会产生多个事件。<br />
+调用者这时可以使用EPOLLONESHOT标记，<br />
+它告诉epoll在用epoll_wait(2)接到一个事件后禁用关联的文件描述符.<br />
+如果EPOLLONESHOT标记指定后，<br />
+那么怎样使用epoll_ctl(2)和EPOLL_CTL_MOD来调整文件描述符就成了调用者的责任。</p>

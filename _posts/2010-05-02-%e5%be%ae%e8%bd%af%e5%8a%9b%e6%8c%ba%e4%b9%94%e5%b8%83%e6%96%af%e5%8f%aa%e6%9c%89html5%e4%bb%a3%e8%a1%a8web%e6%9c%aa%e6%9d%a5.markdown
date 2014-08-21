@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: 微软力挺乔布斯只有HTML5代表Web未来
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 848
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=848
+date: !binary |-
+  MjAxMC0wNS0wMiAyMjo0OToxNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wMiAxNDo0OToxNiArMDgwMA==
+categories:
+- 新闻
+tags:
+- HTML5
+- Web
+- 乔布斯
+- 微软
+comments: []
+---
+<p>继苹果老大史蒂夫&bull;乔布斯周四指责Flash不适合移动设备后，微软也发表观点称HTML5才是互联网的未来。<br />
+今日早间Adobe已正式发售万众期待的大作Photoshop CS5，不过同属该公司的Flash目前却是备受争议，许多网络用户都非常关注它在未来网络世界中的前途和命运。<br />
+继苹果老大史蒂夫&bull;乔布斯周四指责Flash不适合移动设备后，微软也发表观点称HTML5才是互联网的未来。</p>
+<p>今日早间Adobe已正式发售万众期待的大作Photoshop CS5，不过同属该公司的Flash目前却是备受争议，许多网络用户都非常关注它在未来网络世界中的前途和命运。<br />
+<img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100502&#47;2115470264800841.jpg" alt="" &#47;></p>
+<p>对此问题，微软IE浏览器总经理Dean Hachamovitch在IE官方博客上发帖称HTML5代表未来的互联网应用，IE9将只会提供H.264视频标签支持。</p>
+<p>他在文中写道：&ldquo;Web的未来属于HTML5。微软正与万维网联盟（W3C）一道对HTML5进行深入开发。对于过渡预览内容丰富、交互性强的应用以及网站设计而言，HTML5将至关重要。尽管HTML5视频支持的规范描述中并没有指定视频格式，但我们决定选择表现出色的H.264，因此整合HTML5的IE9将只支持H.264视频。</p>
+<p>随着两大业内巨人相继站出与Flash划清界限，我们可以想象Adobe现在所承受的压力。不过压力可能也会转化为动力，促使Adobe在稳定性、安全性以及系统性能上作出改进，或是提高兼容性，向更多平台移植。</p>

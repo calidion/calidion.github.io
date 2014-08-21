@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: iPad让99岁老妇人改变阅读习惯 并为其作诗
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 704
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=704
+date: !binary |-
+  MjAxMC0wNC0yMyAxMDoyOTo1MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwMjoyOTo1MiArMDgwMA==
+categories:
+- 新闻
+tags:
+- iPad
+comments: []
+---
+<p><strong>苹果iPad又有免费广告了，媒体报道，一个自称99岁的俄勒冈波特兰老妇正在试用iPad来克服生活中的困境。<&#47;strong><br />
+她患有青光眼，但却喜欢阅读和协作，有热心人士给他送去了一台iPad，他的女儿在接受采访时告诉记者，这完全改变了她的生活，它利用iPad阅读调整文字大小后的书籍，还可以调整亮度，这相当有用，从来没有用过电脑的99岁老妇还给苹果公司写去一首诗：</p>
+<p>"To this technology-ninny it's clear<br />
+In my compromised 100th year,<br />
+That to read and to write<br />
+Are again within sight<br />
+Of this Apple iPad pioneer."</p>

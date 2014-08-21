@@ -1,0 +1,51 @@
+---
+layout: post
+status: publish
+published: true
+title: Vim快捷键
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 226
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=226
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoyNzo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToyNzo0MiArMDgwMA==
+categories:
+- 编程技术
+tags:
+- Vim
+- 快捷键
+comments: []
+---
+<p>1、ggvG<br />
+选择全部<br />
+2、:e<br />
+更新文件，从磁盘里重新读取新文件<br />
+3、x<br />
+删除文字<br />
+4、gg<br />
+跳到文章最开头<br />
+5、G<br />
+跳到文章最结尾<br />
+6、［N］G<br />
+跳到第文章第几行<br />
+7. 0<br />
+跳到行首<br />
+8、^<br />
+跳到第一个非空白字母。<br />
+9、＄<br />
+跳到行的结尾</p>
+<p>10、g0<br />
+跳到当前行屏幕行的首字符<br />
+11、g^<br />
+跳到当前行屏幕行的第一个非空字符上<br />
+12、g$<br />
+跳到当前行的屏幕行最后一个字符 </p>
+<p>注：g开发的几个屏幕行的意思在一个行长度超过幕屏的字符长度时会有所不同，这时屏幕行将会比真实的行的数字更多。也多是当前屏幕长度下，你所看到的行。而不是字符串里是否带&ldquo;n"的行。</p>
+<p>不断更新中。。。。</p>

@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: Android Market 应用数量突破50000大关
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 758
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=758
+date: !binary |-
+  MjAxMC0wNC0yNSAwMDowMjoyNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNCAxNjowMjoyNiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>就在Google官方宣布38000个应用后，AndroLib的最新统计数据，Android的应用数量已经突破50000个。<br />
+即便具有如此之快的增长速度，Android对比苹果的18.5万个应用依然极为落后，并且从质量和使用率来看也有明显劣势。</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100424&#47;1059240566341102.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100424&#47;1059240566341102.jpg" &#47;></p>

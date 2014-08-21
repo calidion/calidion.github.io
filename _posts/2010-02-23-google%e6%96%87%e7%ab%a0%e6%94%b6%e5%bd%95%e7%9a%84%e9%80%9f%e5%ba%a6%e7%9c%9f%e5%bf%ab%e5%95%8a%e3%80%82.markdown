@@ -1,0 +1,25 @@
+---
+layout: post
+status: publish
+published: true
+title: Google文章收录的速度真快啊。
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 375
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=375
+date: !binary |-
+  MjAxMC0wMi0yMyAxOTo1NzoyMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMi0yMyAxMTo1NzoyMCArMDgwMA==
+categories:
+- 杂谈
+tags: []
+comments: []
+---
+<p>不到一天，就被收录了。马上有人通过搜索引擎访问过来。</p>
+<p>太快了。呵呵。</p>

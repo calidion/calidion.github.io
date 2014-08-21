@@ -1,0 +1,55 @@
+---
+layout: post
+status: publish
+published: true
+title: jquery mobile 下打开一个提示框的代码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1610
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1610
+date: !binary |-
+  MjAxMy0xMC0xMiAyMTo0MDowOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0xMC0xMiAxMzo0MDowOCArMDgwMA==
+categories:
+- Javascript
+tags: []
+comments: []
+---
+<p>献给所有跟我一样学习jquery mobile并在api里找不到合适的dialog使用办法的同仁们。<br />
+代码如下：</p>
+<p>对于1.4.2新版本：</p>
+<pre name="code" language="js">
+function alert(message, time, text) {<br />
+  message = message || '';<br />
+  time = time ? time * 1000 : 1000;<br />
+  text = text || true;<br />
+  $.mobile.loading( "show", {<br />
+	  text: message,<br />
+	  textVisible: true,<br />
+	  theme: "z"<br />
+	});</p>
+<p>  &#47;&#47; Do your ajax call and processing here<br />
+  setTimeout(function() {<br />
+	  $.mobile.loading( "hide" );<br />
+  }, time);<br />
+}<br />
+<&#47;pre></p>
+<p>对于1.3.2或者之前的版本：</p>
+<pre name="code" language="js">
+function alert(message, time, text) {<br />
+  message = message || '';<br />
+  time = time || 1000;<br />
+  text = text || true;<br />
+  $.mobile.showPageLoadingMsg("b", message, text);</p>
+<p>  &#47;&#47; Do your ajax call and processing here<br />
+  setTimeout(function() {<br />
+    $.mobile.hidePageLoadingMsg();<br />
+  }, time);<br />
+}<br />
+<&#47;pre></p>

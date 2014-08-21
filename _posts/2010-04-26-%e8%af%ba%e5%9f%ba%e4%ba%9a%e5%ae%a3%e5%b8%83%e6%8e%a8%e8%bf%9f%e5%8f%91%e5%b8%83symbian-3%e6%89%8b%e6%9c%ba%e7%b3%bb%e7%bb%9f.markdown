@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 诺基亚宣布推迟发布Symbian ^3手机系统
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 791
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=791
+date: !binary |-
+  MjAxMC0wNC0yNiAxMzo0Mzo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNiAwNTo0Mzo0MiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>诺基亚首席执行官康培凯（Olli-Pekka Kallasvuo）今日在电话会议上表示，为进一步提高质量，诺基亚将推迟发布人们热切期盼的Symbian 3操作系统。诺基亚将在高端手机上使用该操作系统。<&#47;strong><br />
+康培凯说：&ldquo;在质量不能达到终端用户要求之前，我们是不会推出这种产品的。&rdquo;他还承诺 说，Symbian 3将更直观，更有趣，速度也更快，诺基亚年底前会推出多款采用该操作系统的手机。</p>
+<p>不过，他也表示，诺基亚仍会推出运行老版本操作系统的手机，特别是在新兴市场上更是如此。</p>
+<p>康培凯还指出，鉴于Symbian 3强大的功能，诺基亚今年将不会推出Symbian 4操作系统。</p>

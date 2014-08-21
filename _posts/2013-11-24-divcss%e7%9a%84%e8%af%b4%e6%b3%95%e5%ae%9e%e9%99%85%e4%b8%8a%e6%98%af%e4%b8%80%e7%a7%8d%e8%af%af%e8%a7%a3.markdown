@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: DIV+CSS的说法实际上是一种误解
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1624
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1624
+date: !binary |-
+  MjAxMy0xMS0yNCAxMDo1OTozMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0xMS0yNCAwMjo1OTozMiArMDgwMA==
+categories:
+- HTML
+tags: []
+comments: []
+---
+<p>DIV+CSS这个在国内流传了多年的说法，本身不全面，不正确，给人以误解，也违反了Web标准化与语义化的趋势与原则，但是到今天一直没有人站出来指明它的错误。所以为了更好的说明这是一个错误的提法，我今天结合历史与趋势，讨论一下DIV+CSS的提法错误在那里。</p>
+<p>首先、HTML里专门用于布局的元素一开始有2种一种是table,一种是div。table用于布局主要是历史原因，并将会慢慢退出。div是在HTML语义不够发达以及CSS作用不是非常深入被接受的情况下引入的专门用于页面结构构建的元素。HTML布局元素主要的作用是布局里内容结构的划分，并不是展示的布局效果。</p>
+<p>其次、真正的布局的功能是通过CSS实现的。所谓的DIV+CSS是一种对Web布局的偏见，特别是现今强调语义化的今天。DIV是原先WEB标准化组织提出来要求更好的页面结构以取代table布局而被强调的。但是到了国内就被放大，被误解了。宣传DIV取代的目的在于让网页更加的简洁，易懂，而不是说div+css是一体的。</p>
+<p>第三、DIV+CSS的意义不定。DIV+CSS如果表达的是布局，那么布局的工作是CSS的工作，不需要通过DIV来说明。绝大多数HTML元素都可以通过CSS来实现DIV的功能。如果强调结构，那么只需要HTML，因为DIV只能表达不明确的结构，无法表达HTML文档的组织意义。无论从那个方面讲都是错误的组合。</p>
+<p>第四、HTML的语义化越来越要求降低DIV的使用，在追求HTML语义化的今天，对于DIV的需求是越来越少的。而DIV+CSS的说法，不但越来越无法成立，而且会给人以矛盾感觉。特别是HTML5里推出各种取代DIV的标签，比如header, footer, article,section等，按div+css来理解的话，是不是表明HTML5的方向是错误的？当然我们不能否认DIV单个元素作为主要布局元素是有优势的。人们可以不必去记太多的标签元素。但是这与web语义化的趋势并不一致，也是对web开发的误解，这是需要强调的。</p>
+<p>第五、正确的说法应该是什么呢？作为web内容，结构，展示，行为等几个重要的元素，实际上就是由HTML，CSS, javascript来负责扮演的。对于DIV+CSS的想表示的意思正确的表达应该是HTML + CSS。</p>
+<ul>
+<li>HTML: 负责数据与内容的结构<&#47;li>
+<li>CSS： 负责动态效果与展示的结构<&#47;li>
+<li>JS：负责各种动态事件与用户的交互与数据交互<&#47;li><br />
+<&#47;ul><br />
+他们之间实际上有很多相互重叠的地方，但这就是现实世界，关系永远是需要耦断丝连的。并不可能完全分裂他们。但是各自又有很明确的重点。</p>
+<p>第六、我们可以出去看看老外是如何理解的？下面的内容是搜索div+css在amazon.com的结果：</p>
+<p><a href="http:&#47;&#47;www.amazon.com&#47;s&#47;ref=sr_pg_2?rh=i%3Aaps%2Ck%3Adiv+css&amp;page=2&amp;keywords=div+css&amp;ie=UTF8&amp;qid=1385259455">http:&#47;&#47;www.amazon.com&#47;s&#47;ref=sr_pg_2?rh=i%3Aaps%2Ck%3Adiv+css&amp;page=2&amp;keywords=div+css&amp;ie=UTF8&amp;qid=1385259455<&#47;a></p>
+<p>很遗憾我们没有发现一本介绍 DIV+CSS的书。</p>
+<p>而大部分都是HTML, CSS, JAVASCRIPT之类的相信书集。</p>
+<p>总结：希望错误的能及时得到纠正，正确的能得到及时的传播。不要以讹传讹，传播错误的文化与知识。否则将是害人不浅。</p>
+<p>本文如有不当之处，欢迎批评指正。</p>

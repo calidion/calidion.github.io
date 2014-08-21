@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 科幻分离式手机 富士通F-04B详细图解
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 781
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=781
+date: !binary |-
+  MjAxMC0wNC0yNiAxMzoyNDo0OSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNiAwNToyNDo0OSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>●<strong>1220像素实拍样片展示及小结<&#47;strong></p>
+<p>实拍照片要跟大家说抱歉，因为忘记它预设640x480拍摄，而手机又已经还了，所以只有VGA解析度可看。F-04B拍摄功力可以从缩图略窥一二，相 片容易过曝并不够锐利，但1220万像素真实力，得等入手用户回报了。</p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;26&#47;15&#47;502&#47;32646401.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;25&#47;15&#47;502&#47;32646400.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;24&#47;15&#47;502&#47;32646399.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;23&#47;15&#47;502&#47;32646398.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;22&#47;15&#47;502&#47;32646397.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;21&#47;15&#47;502&#47;32646396.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;20&#47;15&#47;502&#47;32646395.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p><strong>小结<&#47;strong></p>
+<p><img src="http:&#47;&#47;img1.gtimg.com&#47;digi&#47;pics&#47;hv1&#47;19&#47;15&#47;502&#47;32646394.jpg" alt="科幻分离式手机 富士通F-04B详细图解" &#47;></p>
+<p>其实有好一阵子没玩到这麽威的手机了，高规格、创意佳，而且没有曲高和寡，设计还是由实用面出发。当然说实话，要这麽优闲地拆开手机，再摆到桌上用的机 会一定不高，但至少F-04B已经将概念手机才出现的功能，率先实践商化推出，相信也可以激发更多创意火花，还是值得鼓励的对吧！</p>
+<p>文&#47;ePrice(台湾)</p>

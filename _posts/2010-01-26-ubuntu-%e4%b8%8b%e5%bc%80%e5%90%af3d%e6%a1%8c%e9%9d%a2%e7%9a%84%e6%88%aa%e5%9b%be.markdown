@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 下开启3D桌面的截图
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 66
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=66
+date: !binary |-
+  MjAxMC0wMS0yNiAxMDo1ODoyOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwMjo1ODoyOSArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- 3D
+- 桌面
+comments: []
+---
+<p style="text-align: center;"><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747795.jpg"><&#47;a><&#47;p></p>
+<p style="text-align: center;"><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747797.jpg"><img class="aligncenter size-full wp-image-71" title="4229724475032747797" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747797.jpg" alt="" width="1400" height="1050" &#47;><&#47;a><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;42297244750327477951.jpg"><img class="aligncenter size-full wp-image-72" title="4229724475032747795" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;42297244750327477951.jpg" alt="" width="1280" height="960" &#47;><&#47;a><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;42297244750327477961.jpg"><img class="aligncenter size-full wp-image-73" title="4229724475032747796" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;42297244750327477961.jpg" alt="" width="1400" height="1050" &#47;><&#47;a><&#47;p></p>

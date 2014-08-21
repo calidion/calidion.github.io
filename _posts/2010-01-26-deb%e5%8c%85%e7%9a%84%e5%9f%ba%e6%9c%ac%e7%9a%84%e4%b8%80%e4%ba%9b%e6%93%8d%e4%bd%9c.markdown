@@ -1,0 +1,57 @@
+---
+layout: post
+status: publish
+published: true
+title: deb包的基本的一些操作
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 241
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=241
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzozOToyOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOTozOToyOSArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- deb
+- Debian
+- deb包
+comments: []
+---
+<p>deb包的缓冲目录是<br />
+&#47;var&#47;cache&#47;apt&#47;archives,<br />
+在这个目录下可以找到所有的apt-get install的包。</p>
+<p>包含了下面的一些命令：</p>
+<p>-b, --build directory [archive|directory]<br />
+编译一个deb包<br />
+-c, --contents archive<br />
+显示包的目录&#47;文件结构<br />
+-e, --control filename [directory]<br />
+解压控制信息<br />
+-x, --extract archive directory<br />
+解压文件<br />
+-X, --vextract archive directory<br />
+解压并显示文件名<br />
+-f, --field  archive [control-field...]<br />
+显示控制字段<br />
+-I, --info archive [control-file...]<br />
+显示包信息</p>
+<p>dpkg-query actions<br />
+See dpkg-query(1) for more information about the following actions.</p>
+<p>-l, --list package-name-pattern...<br />
+显示匹配的包信息.<br />
+-s, --status package-name...<br />
+显示包的安装信息<br />
+-L, --listfiles package-name...<br />
+显示安装包的文件信息<br />
+-S, --search filename-search-pattern...<br />
+从安装的包里查找指定文件名<br />
+-p, --print-avail package-name...<br />
+显示在下面地址里找到的指定包名的详细信息<br />
+&#47;var&#47;lib&#47;dpkg&#47;available.</p>

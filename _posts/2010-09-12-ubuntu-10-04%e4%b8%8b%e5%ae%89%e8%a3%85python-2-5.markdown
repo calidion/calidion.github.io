@@ -1,0 +1,40 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 10.04下安装python 2.5
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1366
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1366
+date: !binary |-
+  MjAxMC0wOS0xMiAyMTowMzoxMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOS0xMiAxMzowMzoxMiArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Ubuntu 10.04 python2.5
+comments: []
+---
+<p>有时候我们总是喜欢打破体制的束缚，Ubuntu 10.04默认不再提供Python 2.5的支持了。<br />
+但是一些软件却没有升级他的意思。而这些软件往往是公司挣钱的。或者非常重要的。</p>
+<p>所以我们还必须得让Ubuntu能支持他，否则我们就不能用Ubuntu了。</p>
+<p>经过Google与测试。下面的几个步骤应该能解决你的问题。</p>
+<pre name="code" class="python">
+sudo apt-get install build-essential gcc<br />
+cd Downloads<br />
+wget http:&#47;&#47;www.python.org&#47;ftp&#47;python&#47;2.5.5&#47;Python-2.5.5.tgz<br />
+tar -xvzf Python-2.5.5.tgz<br />
+cd Python-2.5.5<br />
+.&#47;configure --prefix=&#47;usr&#47;local&#47;python2.5<br />
+make<br />
+make test<br />
+sudo make install<br />
+sudo ln -s &#47;usr&#47;local&#47;python2.5&#47;bin&#47;python &#47;usr&#47;bin&#47;python2.5<br />
+<&#47;pre></p>

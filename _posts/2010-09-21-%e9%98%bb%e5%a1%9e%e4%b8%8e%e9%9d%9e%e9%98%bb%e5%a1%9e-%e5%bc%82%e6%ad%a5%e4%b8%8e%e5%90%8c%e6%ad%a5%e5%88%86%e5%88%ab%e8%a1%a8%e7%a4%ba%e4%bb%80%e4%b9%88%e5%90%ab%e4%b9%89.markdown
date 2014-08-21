@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 阻塞与非阻塞, 异步与同步分别表示什么含义?
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1381
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1381
+date: !binary |-
+  MjAxMC0wOS0yMSAxMzo1MzoxMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOS0yMSAwNTo1MzoxMiArMDgwMA==
+categories:
+- WEB服务器技术
+tags: []
+comments: []
+---
+<p>阻塞与非阻塞是相对于某个操作对OS的进程或者线程的影响来讲的,<br />
+    阻塞是指某个操作因为使用同步方式会导致进程的阻塞.<br />
+    非阻塞是指某个操作因为使用异步方式不会导致进程的阻塞.<br />
+同步与异步是指某个操作的返回性质来讲的.<br />
+    同步是指某个操作必须执行完成后才会返回.<br />
+    异步是指某个操作立即返回,然后再去执行.<br />
+同步不一定导到阻塞,只有同步操作的对象是互斥对象时,才会发生阻塞.</p>

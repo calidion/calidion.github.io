@@ -1,0 +1,65 @@
+---
+layout: post
+status: publish
+published: true
+title: 将tornado的模板用jinja2代替
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1298
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1298
+date: !binary |-
+  MjAxMC0wOC0wOCAwMTozNjozNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wNyAxNzozNjozNyArMDgwMA==
+categories:
+- Python
+tags:
+- jinja2
+- tornado
+comments: []
+---
+<p>tornado的模板对路径的支持不好。<br />
+在Windows平台下面就没有办法用了。<br />
+所以需要第三方的模板来支持，同时由于Django是python目前最流行的框架。<br />
+考虑到方便移植，我选择了jinja2。<br />
+这个与django类似的模板系统。<br />
+它的好处是不用象django那样需要将django的整个栈都加进来。<br />
+下面是它的基本使用方法：</p>
+<pre name="code" class="python">
+from jinja2 import Environment, FileSystemLoader<br />
+_TEMPLATE_DIR_ = 'res&#47;html'<br />
+file = 'index.html'</p>
+<p>env = Environment(loader = FileSystemLoader(_TEMPLATE_DIR_))<br />
+template = env.get_template(file)<br />
+content = template.render(params)<br />
+<&#47;pre><br />
+然后将content输出既可。<br />
+但这个时候还不行。<br />
+如果你使用了GBK的页面模板。</p>
+<p>注:本人特别喜欢用GBK编码。<br />
+即使在UTF-8统一了很多程序员的思维的时期，<br />
+因为我坚信大部分的程序用UTF-8并没有意义，<br />
+除非他要支持多种语言，<br />
+但对于大部分WEB网站来讲，<br />
+支持多语言基本上是神话。<br />
+即使当你需要国际化时，转化也是相当容易的事情。<br />
+所以为什么不从GBK开始？<br />
+一个更加轻量的编码。</p>
+<p>言归正传，要支持GBK，你需要做一定的修改,代码如下：</p>
+<pre name="code" class="python">
+from jinja2 import Environment, FileSystemLoader<br />
+_TEMPLATE_DIR_ = 'res&#47;html'<br />
+file = 'index.html'<br />
+encoding = 'gbk'<br />
+params = {}</p>
+<p>env = Environment(loader = FileSystemLoader(_TEMPLATE_DIR_, encoding=encoding))<br />
+template = env.get_template(file) #这个时候的编辑又变成了内码（unicode）<br />
+content = template.render(params).encode(encoding)<br />
+<&#47;pre><br />
+这样就可以实现编码的统一了。<br />
+当然其它保证HTTP各处的编码统一的事情我就不细说了。</p>

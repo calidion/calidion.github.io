@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 谷歌Chrome让IE浏览器难堪的5大理由
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 974
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=974
+date: !binary |-
+  MjAxMC0wNS0wOCAxMzo0MzowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wOCAwNTo0MzowNiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>在当前的浏览器大战中，微软IE市场份额每况愈下，而风头最盛的莫过于谷歌Chrome浏览器。<&#47;strong><br />
+调研公司 NetMarketShare最新数据显示，今年4月份，IE市场份额降至59.95%，这是微软浏览器市场份额首次跌破60%。谷歌Chrome是最大 赢家，市场份额从3月份的6.13%增至6.73%，而去年4月仅为1.79%。</p>
+<p>以下为Chrome迅速盛行的5大原因：</p>
+<p>1. 速度快</p>
+<p>PC World测试结果显示，Chrome的页面加载速度快于IE、Firefox、Safari和Opera等主要竞争对手。</p>
+<p>2. 简单易用</p>
+<p>Chrome体积小巧，简单易用。</p>
+<p>3. 安全</p>
+<p>与IE浏览器相比，谷歌Chrome 更安全。</p>
+<p>4. 适于"老爷机"</p>
+<p>Chrome对硬件需求低，可用于"老爷机"。</p>
+<p>5. 广告效应</p>
+<p>谷歌专门为Chrome进行了电视宣传，效果显著。</p>

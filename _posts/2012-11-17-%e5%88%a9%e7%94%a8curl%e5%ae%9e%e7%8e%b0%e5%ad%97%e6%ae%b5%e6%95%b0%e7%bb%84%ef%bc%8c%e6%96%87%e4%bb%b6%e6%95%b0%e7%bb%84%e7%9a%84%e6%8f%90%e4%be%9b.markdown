@@ -1,0 +1,70 @@
+---
+layout: post
+status: publish
+published: true
+title: 利用curl实现字段数组，文件数组的提供
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1501
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1501
+date: !binary |-
+  MjAxMi0xMS0xNyAxMDoxNjozOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMi0xMS0xNyAxMDoxNjozOSArMDgwMA==
+categories:
+- WEB服务器技术
+- php
+tags: []
+comments: []
+---
+<p>最近在公司一直忙于开发测试平台来满足各种程序测试需求，<br />
+这些需求中就包含有对多字段数组与文件数组的提供的需求。<br />
+我采用的方法最先想到的当然是使用curl.<br />
+于是一个能将字段数组与文件上传的curl很快就产生了。<br />
+然后发给其他的同事测试。<br />
+结果反映都是无法使用。<br />
+后来发现php5.3以下的版本不能支持文件上传。</p>
+<p>于是更新到5.3后curl文件上传功能就可以用了。</p>
+<p>但是这时的curl还是无法上传文件数组的。</p>
+<p>于是我通过调试完成了下面的代码：</p>
+<pre name='code' class="php">
+  private function  generate_file_array() {<br />
+    $files = array();<br />
+    $tmpdir = sys_get_temp_dir();<br />
+    foreach($_FILES as $k => $v) {<br />
+      if (is_array($v['name'])) {<br />
+        foreach($v['name'] as $k1 => $v1) {<br />
+          $file = $tmpdir . DIRECTORY_SEPARATOR . $v1;<br />
+            if (move_uploaded_file($_FILES[$k]['tmp_name'][$k1], $file)) {<br />
+              $files[$k. '[' . $k1 . ']'] = '@' . $file . ';type=' . $v['type'][$k1];<br />
+            } else {<br />
+            echo "Possible file upload attack!n";<br />
+            }<br />
+        }<br />
+        continue;<br />
+      }<br />
+      $file = $tmpdir . DIRECTORY_SEPARATOR . $v['name'];<br />
+      if (move_uploaded_file($_FILES[$k]['tmp_name'], $file)) {<br />
+        $files[$k] = '@' . $file . ';type=' . $v['type'];<br />
+      } else {<br />
+        echo "Possible file upload attack!n";<br />
+      }<br />
+    }<br />
+    return $files;<br />
+  }<br />
+<&#47;pre><br />
+对于文件数组来讲最重要的是如下使用方法:</p>
+<pre name='code' class="php">
+$files[$k. '[' . $k1 . ']'] = '@' . $file . ';type=' . $v['type'][$k1];<br />
+<&#47;pre><br />
+$k要转化成$k. '['<br />
+又一个数组<br />
+也就是<br />
+key[0], key[1]的形式。<br />
+这样通过set_opt_array<br />
+就可以直接上传文件数组了。</p>

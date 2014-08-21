@@ -1,0 +1,47 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 10.04 下Thinkpad小红点的配置更新
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1169
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1169
+date: !binary |-
+  MjAxMC0wNi0xMCAwMzo1OToxMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wOSAxOTo1OToxMCArMDgwMA==
+categories:
+- Ubuntu
+- Thinkpad
+tags:
+- Thinkpad
+- Ubuntu
+comments: []
+---
+<p>虽然Ubuntu的升级带来很多新的功能，但是同时它也影响了原来配置好的一些设备。<br />
+Thinkpad的小红点就是经常被踢来踢去的一个东西。<br />
+下面我们要让我们喜欢的小红点尽快的工作起来。<br />
+不过这次的配置还是很简单。<br />
+1. 创建文件<br />
+ &#47;usr&#47;lib&#47;X11&#47;xorg.conf.d&#47;20-thinkpad.conf<br />
+2.添加下面的内容:</p>
+<pre>
+Section "InputClass"<br />
+    Identifier "Trackpoint Wheel Emulation"<br />
+    MatchProduct "TrackPoint"<br />
+    MatchDevicePath "&#47;dev&#47;input&#47;event*"<br />
+    Driver "evdev"<br />
+    Option "EmulateWheel" "true"<br />
+    Option "EmulateWheelButton" "2"<br />
+    Option "Emulate3Buttons" "false"<br />
+    Option "XAxisMapping" "6 7"<br />
+    Option "YAxisMapping" "4 5"<br />
+EndSection<br />
+<&#47;pre><br />
+3.重启X系统(实际上只要注销一下就可以了）</p>

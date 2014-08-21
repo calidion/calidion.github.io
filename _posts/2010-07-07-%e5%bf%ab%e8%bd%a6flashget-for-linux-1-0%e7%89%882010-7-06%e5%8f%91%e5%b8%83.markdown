@@ -1,0 +1,58 @@
+---
+layout: post
+status: publish
+published: true
+title: 快车(FlashGet) for Linux 1.0版(2010.7.06)发布!
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1220
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/07/07/%e5%bf%ab%e8%bd%a6flashget-for-linux-1-0%e7%89%882010-7-06%e5%8f%91%e5%b8%83/
+date: !binary |-
+  MjAxMC0wNy0wNyAxNToyMTozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNy0wNyAwNzoyMTozOCArMDgwMA==
+categories:
+- 新闻
+tags:
+- FlashGet
+- Linux
+comments: []
+---
+<p>FlashGet 网际快车 for Linux,Linux下面的多源下载工具.<br />
+- 下载功能与windows快车一样（bt稍后加入）<br />
+- 多线程<br />
+- 下载速度快</p>
+<p><img id="aimg_1310" src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100707&#47;09442902011503456.jpg" alt="linuxFlashget截图.jpg" width="600" &#47;></p>
+<p>- 无广告,精简<br />
+- 支持快车专用链<br />
+- 支持FireFox浏览器</p>
+<p>测试环境<br />
+========<br />
+Ubuntu 10.04<br />
+Red Hat Enterprise Linux AS4.0</p>
+<p>安装<br />
+====</p>
+<p>$tar zxvf wxFlashget-1.0.tar.gz<br />
+$cd wxFlashget-1.0<br />
+$sudo make install<br />
+wxFlashget就会安装在您的&#47;usr&#47;loca&#47;bin目录下面名称为wxFlashget<br />
+配置文件目录位置: ~&#47;.flashget<br />
+默认下载保存地址: ~&#47;Download</p>
+<p>Bug&nbsp;List<br />
+========<br />
+1,Ubunt 10.04下面无法启动,提示找不到libexpat.so.0<br />
+error while loading shared libraries: libexpat.so.0: cannot open shared object file: No such file or directory<br />
+原因,编译flashget使用的是libexpat.so.0版本,系统默认为libexpat.so.1.5.2,做软连 接即可.<br />
+$cd &#47;usr&#47;lib<br />
+$sudo ln -s libexpat.so.1.5.2 libexpat.so.0<br />
+$sudo ldconfig</p>
+<p>问题反馈<br />
+========<br />
+<a href="http:&#47;&#47;bbs.flashget.com&#47;forumdisplay.php?fid=31" target="_blank">http:&#47;&#47;bbs.flashget.com&#47;forumdisplay.php?fid=31<&#47;a></p>
+<p>下载地址<br />
+<a href="http:&#47;&#47;bbs.flashget.com&#47;attachment.php?aid=MTMxN3w0N2NjNmE4N3wxMjc4NDY3MDE1fDY0MDVNM3dGb1FNY21hd1pJZzdXWmNUVmFKeGp6b3oxall6cHlqaWg5NWZvWklN" target="_blank"><strong>wxFlashget-1.0.tar.gz<&#47;strong><&#47;a> (1.9 MB)</p>

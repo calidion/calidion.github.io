@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 天下乌鸦一般黑啊
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1430
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1430
+date: !binary |-
+  MjAxMC0xMi0wNyAxOTo0Mzo0NyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0xMi0wNyAxMTo0Mzo0NyArMDgwMA==
+categories:
+- 杂谈
+tags: []
+comments: []
+---
+<p>本站被Google屏幕了，还好这个博客一般情况下是个人使用的。</p>
+<p>但是我想不明白为什么。我这样的博客还有什么可屏蔽的？</p>
+<p>不是政治，不是商业。</p>

@@ -1,0 +1,39 @@
+---
+layout: post
+status: publish
+published: true
+title: 无耻的北京联通
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1141
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1141
+date: !binary |-
+  MjAxMC0wNi0wNCAyMTozMjo0MCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wNCAxMzozMjo0MCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>昨天莫名其妙打开网站看到广告，<br />
+奇怪在Linux下面难道也能中毒，<br />
+今天看到网上有人在讨论，才知道又是中国联通这个不要脸的东西搞的。<br />
+内容是京城时讯，这是联通这个脑残在继DNS截持后的又一次抢钱行动。<br />
+但我可以肯定它搞不成功。<br />
+下面是广告图：<br />
+<img class="aligncenter size-full wp-image-1142" title="未命名" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;06&#47;未命名.jpg" alt="" width="335" height="181" &#47;><br />
+祝北京联通不得好死。</p>
+<p>虽然我们没有办法让联通值入。但是我们有办法不让这个广告出现：<br />
+办法是修改hosts文件:<br />
+在windows下面:<br />
+C:WINDOWSsystem32driversetchosts<br />
+在Linux下面:<br />
+&#47;etc&#47;hosts<br />
+在最后一行加上：<br />
+0.0.0.0         www.jcxinxi.com</p>

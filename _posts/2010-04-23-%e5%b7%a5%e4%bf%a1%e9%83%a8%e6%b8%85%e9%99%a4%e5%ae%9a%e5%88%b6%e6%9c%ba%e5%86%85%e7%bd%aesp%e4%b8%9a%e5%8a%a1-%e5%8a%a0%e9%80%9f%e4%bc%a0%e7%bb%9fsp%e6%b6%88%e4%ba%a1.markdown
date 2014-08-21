@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: 工信部清除定制机内置SP业务 加速传统SP消亡
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 732
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=732
+date: !binary |-
+  MjAxMC0wNC0yMyAxNjo1MDowOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwODo1MDowOCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>继运营商纷纷发文要求SP撤出&ldquo;山寨机&rdquo;后，工信部日前下发《移动电话机定制管理规定》（下称《规定》），对手机内置的SP业务给出更严格要求，&ldquo;定制话机不得内置固化的SP代码、SP服务链接以及SP客户端软件。&rdquo;<br />
+资深电信专家付亮认为，该《规定》表面看主要是针对运营商，实际对产业链各环节都有不小影响，特别是会加速传统SP的消亡。<br />
+今年&ldquo;3&middot;15&rdquo;期间，手机内置SP业务并暗中扣费的现象被媒体曝光，随后三大运营商都展开了整治行动。据中国移动上个月发布的规定，暂定3个月之内，SP业务要全部退出没有入网许可证的山寨机（包括水货手机），否则一律停止业务。<br />
+此次工信部的《规定》主要针对的是运营商定制手机。而且对于SP而言，通过在手机里内置可覆盖更多有效客户，因此寻求与手机厂商的合作，也成为不少SP的推广策略之一。以手机QQ为例，由于用户非常欢迎，几乎所有手机厂商都会主动寻求与腾讯的合作，并从中获得分成。<br />
+增值业务已成为运营商增速最快的收入增长点。据运营商财报，中国移动2009年增值收入为1315.6亿元，在总收入中的占比达到29.1%，中国联通的GSM增值收入为195.3亿元，在GSM收入中的占比为27.3%。目前无法统计，通过内置的推广方式，能给相关SP带来多少收益。<br />
+不过，由于该《规定》主要针对的是运营商定制机型，并没有对非定制机型做出更多限制，也给市场监管留下了一定空间。<br />
+一位SP内部人士说，能将业务内置到运营商定制机型的只是非常少的SP，需要有强大的运营商资源作为支撑，更多中小SP还是将目光盯向包括山寨机在内的非定制机型，而这一块主要依靠相关运营商出台更多管理政策。<br />
+Frost & Sullivan中国总裁王煜全也指出，将监管对象限定为运营商的定制机型会导致该政策无法真正打击到违规SP，不过这是监管部门加强治理SP的信号，不排除出台更多政策。</p>

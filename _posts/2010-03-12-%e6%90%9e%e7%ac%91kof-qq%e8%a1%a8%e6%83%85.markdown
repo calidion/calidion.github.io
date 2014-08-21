@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 搞笑KOF QQ表情
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 401
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=401
+date: !binary |-
+  MjAxMC0wMy0xMiAxMzowNDowMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMy0xMiAwNTowNDowMiArMDgwMA==
+categories:
+- 杂谈
+tags: []
+comments: []
+---
+<p><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;a.gif"><img class="aligncenter size-full wp-image-402" title="a" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;a.gif" alt="" width="300" height="200" &#47;><&#47;a></p>

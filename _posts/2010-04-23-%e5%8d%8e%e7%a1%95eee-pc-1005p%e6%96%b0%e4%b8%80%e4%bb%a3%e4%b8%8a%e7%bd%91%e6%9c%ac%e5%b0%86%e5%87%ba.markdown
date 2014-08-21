@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 华硕Eee PC 1005P新一代上网本将出
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 721
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=721
+date: !binary |-
+  MjAxMC0wNC0yMyAxMzoyMzowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwNToyMzowNiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>宏碁公司基于下代Atom平台的上网本之前已经有过介绍，国外媒体今日报道称，华硕也将推出基于新Atom平台的上网本产品，分别由Eee PC 1005P和1005PE型号，外观有黑色和白色选择。Eee PC 1005P和1005PE上网本的不同之处在于，前者可搭配160GB硬盘，后者则最高可配250GB硬盘。</p>
+<p><img src="http:&#47;&#47;www.pcbeta.com&#47;attachments&#47;2009&#47;12&#47;520_200912221034531HYML.jpg" alt="华硕EeePC1005P新一代上网本将出(图)" &#47;><br />
+Eee PC 1005P上网本</p>
+<p>Eee PC 1005P和1005PE上网本均采用10英寸显示屏，搭配1.66GHz主频Atom N450处理器，配置1GB内存。运行Windows 7 Starter系统。具体3个USB2.0、SD&#47;MMC、VGA等接口。带有30万像素摄像头，6芯锂离子电池。</p>
+<p><img src="http:&#47;&#47;www.pcbeta.com&#47;attachments&#47;2009&#47;12&#47;520_200912221034532doaI.jpg" alt="华硕EeePC1005P新一代上网本将出(图)" &#47;><br />
+Eee PC 1005PE上网本</p>
+<p>英特尔公司已经公布了新款Atom N450处理器，下月的CES上公布会有更多上网本产品展示。</p>

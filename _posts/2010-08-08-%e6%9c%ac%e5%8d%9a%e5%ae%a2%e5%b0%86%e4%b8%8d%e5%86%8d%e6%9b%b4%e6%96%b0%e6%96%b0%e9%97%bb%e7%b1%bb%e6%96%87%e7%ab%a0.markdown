@@ -1,0 +1,25 @@
+---
+layout: post
+status: publish
+published: true
+title: 本博客将不再更新新闻类文章
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1336
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1336
+date: !binary |-
+  MjAxMC0wOC0wOCAxODoyMToxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wOCAxMDoyMToxMSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>新闻将被转移到论坛的IT资讯板块,<br />
+本博客将不会转载任何其它网站的非原创的内容。</p>

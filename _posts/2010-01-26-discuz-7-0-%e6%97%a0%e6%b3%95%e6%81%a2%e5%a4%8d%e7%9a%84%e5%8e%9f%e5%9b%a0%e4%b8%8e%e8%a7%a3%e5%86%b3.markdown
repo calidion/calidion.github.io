@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: Discuz 7.0 无法恢复的原因与解决
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 161
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=161
+date: !binary |-
+  MjAxMC0wMS0yNiAxNTo1ODozMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNzo1ODozMSArMDgwMA==
+categories:
+- WEB服务器技术
+tags:
+- Discuz!
+comments: []
+---
+<p>在ucenter恢复的过程中，使用tools.php恢复会<br />
+出现了&ldquo;数据非 Discuz! 分卷备份格式,无法恢复&rdquo;的提示。<br />
+经过测试发现原因是程序员把位置弄到了。<br />
+解决的办法如下：</p>
+<p>将tools.php文件200行的<br />
+    $volume = $identify[2];<br />
+修改成:<br />
+    $volume = $identify[4];</p>

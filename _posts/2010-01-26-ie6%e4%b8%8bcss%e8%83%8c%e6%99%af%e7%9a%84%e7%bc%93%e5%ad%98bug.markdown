@@ -1,0 +1,37 @@
+---
+layout: post
+status: publish
+published: true
+title: IE6下CSS背景的缓存BUG
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 283
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=283
+date: !binary |-
+  MjAxMC0wMS0yNiAxOTozOTowNCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAxMTozOTowNCArMDgwMA==
+categories:
+- WEB开发
+tags:
+- CSS
+- IE6
+- 缓存
+comments: []
+---
+<p>默认情况下，IE6不会对相同的背景地址进行缓存。<br />
+这样在一些情况下，会非常影响性能。<br />
+所以在为了让IE6可以达到更好的性能。我们可以通过javascript来解决IE6的这一个BUG。</p>
+<p>var isOpera = (navigator.userAgent.indexOf('opera') != -1);<br />
+var isIE = &#47;msie&#47;i.test(navigator.userAgent) && !isOpera;</p>
+<p>if (isIE) {<br />
+    var version = parseFloat(navigator.appVersion.split("MSIE")[1]);<br />
+      if(version == 6){<br />
+        document.execCommand('BackgroundImageCache', false, true);<br />
+      }<br />
+}</p>

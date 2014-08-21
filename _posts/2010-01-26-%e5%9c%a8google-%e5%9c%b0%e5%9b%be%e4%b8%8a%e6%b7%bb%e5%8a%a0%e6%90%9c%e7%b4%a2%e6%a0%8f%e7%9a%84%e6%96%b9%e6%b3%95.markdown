@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 在google 地图上添加搜索栏的方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 298
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=298
+date: !binary |-
+  MjAxMC0wMS0yNiAxOTo1OTozMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAxMTo1OTozMiArMDgwMA==
+categories:
+- WEB开发
+tags:
+- Google Maps API
+comments: []
+---
+<p>只需要加上一句：<br />
+map.enableGoogleBar()</p>

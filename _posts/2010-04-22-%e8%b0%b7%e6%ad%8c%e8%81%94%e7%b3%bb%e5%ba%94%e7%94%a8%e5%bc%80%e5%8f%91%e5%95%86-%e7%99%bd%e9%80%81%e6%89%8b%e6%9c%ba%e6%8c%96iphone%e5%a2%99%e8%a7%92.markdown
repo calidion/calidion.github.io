@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: 谷歌联系应用开发商 白送手机挖iPhone墙角
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 665
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/04/22/%e8%b0%b7%e6%ad%8c%e8%81%94%e7%b3%bb%e5%ba%94%e7%94%a8%e5%bc%80%e5%8f%91%e5%95%86-%e7%99%bd%e9%80%81%e6%89%8b%e6%9c%ba%e6%8c%96iphone%e5%a2%99%e8%a7%92/
+date: !binary |-
+  MjAxMC0wNC0yMiAxNDo0ODoxMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMiAwNjo0ODoxMyArMDgwMA==
+categories:
+- 新闻
+tags:
+- iPhone
+- 白送
+- 谷歌
+comments: []
+---
+<p>据国外媒体报道，谷歌正在和 iPhone应用程序开发商接触，询问他们是否在将应用程序开发平台从iPhone OS系统转向Android系统时需要帮助。<br />
+iPhone应用程序开发商大卫&middot;波格（David Pogue）在博客中的邮件内容摘要如下：</p>
+<p>&ldquo;我是一个iPhone应用程序Texts From Last Night的开发商，不管怎么说，我在昨天收到了一封自称是来自谷歌Android Advocacy Group小组的邮件，他们坦白的跟我交流，如果我选择Android系统，他会提供给我免费的Nexus One。这些情况表明，谷歌正在积极地利用免费的硬件来吸引开发者到他们的平台上。&rdquo;</p>
+<p>这名开发者还称，在与苹果合作的数月里，他还没有接到来自苹果的咨询，并和其它任何人联系过。</p>
+<p>但是，专家称，如果谷歌真的要想争取应用程序开发商，它应该调整Android市场，使得 Android市场成为一个能够让开发商更好的赚钱的地方。</p>

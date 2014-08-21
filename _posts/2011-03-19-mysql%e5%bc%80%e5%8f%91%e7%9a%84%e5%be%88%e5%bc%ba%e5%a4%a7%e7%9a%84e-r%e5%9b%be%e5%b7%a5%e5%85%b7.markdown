@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: Mysql开发的很强大的E-R图工具
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1451
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1451
+date: !binary |-
+  MjAxMS0wMy0xOSAwMDozOTo1OSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMS0wMy0xOCAxNjozOTo1OSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<h1>MySQL Workbench<&#47;h1><br />
+下载地址：</p>
+<p><a href="http:&#47;&#47;www.mysql.com&#47;downloads&#47;workbench&#47;">http:&#47;&#47;www.mysql.com&#47;downloads&#47;workbench&#47;<&#47;a></p>
+<p>操作很直观，很容易上手</p>
+<p>&nbsp;</p>

@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 谷歌Android 2.2版系统即将发布 特性曝光
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 984
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=984
+date: !binary |-
+  MjAxMC0wNS0xMCAxMDowMjozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xMCAwMjowMjozOCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>目前来说大部分的Android手机都还运行着Android 1.5和Android1.6固件，慢慢等待Android 2.1的升级，但这不能让Google停止继续推动Android系统的升级发展的步伐，预计Android 2.2版系统不久之后将会公布。来自Androidandme网站的报道，他们已经在一份报告的数据表中发现了Google已经开始测试下一个固件：Android 2.2。<strong>虽然Google去年已经决定不再公布未来版本的Android公共路线图，目前Android 2.2版系统的信息不是很多，但是从收集到的信息仍然可以看到Android 2.2的一些主要特性。<&#47;strong></p>
+<p>- 全新的JIT编译器<br />
+- 额外的可用RAM：2.2将使用新的Linux内核（从2.6.29升级至2.6.32），可存取更大的RAM内存<br />
+- 增强支持OpenGL ES 2.0：增加新的API接口让开发者更容易使用OpenGL ES 2.0<br />
+- 支持Flash 10.1：Android版Flash将会在今年上半年正式发布，新版本Android系统将会直接内置，或者通过固件升级获得<br />
+- 支持APP2SD将支持软件安装到存储卡<br />
+- 修复多点触摸传感器的问题<br />
+- 激活轨迹球闪光色彩设置：在Google推出的Nexus One广告中曾经出现过，但是最终并没有在Android 2.1版系统中开启。<br />
+- 修复FM收音机支持：内置FM芯片的Desire和Incredible将获得FM收音机功能</p>
+<p>不过目前第一代的Android设备还在等待2.1版系统升级，像Dream、Magic能否支持Android 2.2仍是个问题，这两款手机只有192MB的RAM空间。5月19日 Google I&#47;O大会开幕当天有可能是Android 2.2的一个发布时间，也有可能会是Flash 10.1 beta，大家坐看Google用什么来对抗苹果的iPhone OS 4.0吧。</p>

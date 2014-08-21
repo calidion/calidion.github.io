@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 北漂IT民工祝您新年快乐！
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 368
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=368
+date: !binary |-
+  MjAxMC0wMi0xMyAxNzo0ODozNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMi0xMyAwOTo0ODozNSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>祝大家在新的一年里奏出新的<a href="http:&#47;&#47;www.google.com" target="_blank"><span style="color: #339966;">谷歌<&#47;span><&#47;a>，建设起更加美好的<a href="http:&#47;&#47;baike.baidu.com&#47;view&#47;1952662.htm" target="_blank"><span style="color: #0000ff;">凤巢<&#47;span><&#47;a>，成为一个快乐的<a href="http:&#47;&#47;www.google.com&#47;aclk?sa=L&amp;ai=CrqPJxHN2S6v2Ipiy7APV-ricBMrXyJsBitOs3g-OgIiCAQgAEAFQ5LSHxv3_____AWCdudaBuAXIAQGpAl40VwhipYM-qgQZT9DFO2kVc_XDL6ZLR_wz_ZHN-84wsq4Row&amp;sig=AGiWqtxs26o6Mc06cUhDrLzqkXzfC-oP_Q&amp;q=http:&#47;&#47;view.china.alibaba.com&#47;cms&#47;promotion&#47;bd&#47;branding.html%3Fcosite%3Dgooglejjbranding%26location%3Dkw_branding0120_%25B0%25A2%25C0%25EF%25B0%25CD%25B0%25CD"><span style="color: #ff6600;">阿里巴巴<&#47;span><&#47;a>，一起<a href="http:&#47;&#47;www.taobao.com" target="_blank"><span style="color: #ff9900;">淘宝<&#47;span><&#47;a>，<span style="color: #3366ff;">讯雷<&#47;span>般的升职，<span style="color: #ff0000;">快车<&#47;span>一样的加工资，单身的同志们都能找到自己的<span style="color: #ff99cc;">世纪佳缘<&#47;span>。不管是在<span style="color: #99ccff;">天涯<&#47;span>还是<span style="color: #99ccff;"><span style="color: #333399;">海<&#47;span><span style="color: #333399;">内<&#47;span><&#47;span>，<span style="color: #666699;">人人<&#47;span>都是<span style="color: #800080;">安居客<&#47;span>，什么都<span style="color: #008000;">有啊<&#47;span>，<span style="color: #808000;">去哪儿<&#47;span>都<span style="color: #993366;">开心<&#47;span>。并送<span style="color: #800080;">雅虎<&#47;span>一只，祝您虎年吉祥。</p>

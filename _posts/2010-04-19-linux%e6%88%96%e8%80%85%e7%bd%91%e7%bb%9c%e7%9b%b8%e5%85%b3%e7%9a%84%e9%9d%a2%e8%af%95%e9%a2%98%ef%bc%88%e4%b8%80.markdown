@@ -1,0 +1,53 @@
+---
+layout: post
+status: publish
+published: true
+title: Linux或者网络相关的面试题（一）
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 448
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=448
+date: !binary |-
+  MjAxMC0wNC0xOSAxNDozNjoyNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0xOSAwNjozNjoyNSArMDgwMA==
+categories:
+- 编程技术
+tags:
+- HTTP
+- Linux
+- 面试
+comments: []
+---
+<p>1.HTTP常见状态码与意义<br />
+   404:请求网页不存在<br />
+   200:服务器成功返回网页<br />
+   502:服务器暂不可用<br />
+   500:服务器内部错误</p>
+<p>2.浏览器访问网页时网络上大约要经历那些步骤来实现<br />
+  1.域名解析<br />
+  2.链路建立<br />
+  3.数据传输<br />
+  4.链路断开</p>
+<p>3.如何确定网页的编码格式<br />
+   1.通过HTTP响应头上Content-Type的信息。<br />
+	Content-Type: text&#47;html; charset=UTF-8<br />
+   2.HTML页面上的<meta>标签所指定的Content-Type信息</p>
+<p>4.常用Linux命令<br />
+   a） 查看当前shell所有变量的命令(set)<br />
+   b) 查看磁盘的分区与使用情况的命令(df)<br />
+   c) 查看当前目录 (pwd)<br />
+   d) 如何统计文件里的单词数(wc -w 文件)<br />
+   e) 对文件进行排序的命令(sort 文件)<br />
+   f) 得到文件所有的相同行的行数的命令(uniq -c 文件)</p>
+<p>5.TCP&#47;IP分几层，他们分别是什么？HTTP协议是那一层,各种层分别有那些主要的协议，各举一例。<br />
+  分四层：分别是链接层（Link),互联层（Internet),传输层(Transport),应用层（Application).</p>
+<p>链接层（Link):ARP, RARP, OSPF<br />
+网际互联层（Internet):IP,ICMP<br />
+传输层(Transport): TCP, UDP<br />
+应用层（Application)： DNS， SMTP， SSH， Telnet, HTTP, FTP, IMAP</p>

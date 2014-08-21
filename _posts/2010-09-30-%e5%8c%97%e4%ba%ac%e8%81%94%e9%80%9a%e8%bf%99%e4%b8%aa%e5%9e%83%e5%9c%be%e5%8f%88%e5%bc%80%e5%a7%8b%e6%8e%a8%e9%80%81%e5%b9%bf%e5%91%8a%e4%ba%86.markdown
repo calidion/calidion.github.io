@@ -1,0 +1,37 @@
+---
+layout: post
+status: publish
+published: true
+title: 北京联通这个垃圾又开始推送广告了
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1386
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1386
+date: !binary |-
+  MjAxMC0wOS0zMCAwMzoyMTo1MSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOS0yOSAxOToyMTo1MSArMDgwMA==
+categories:
+- 杂谈
+tags: []
+comments: []
+---
+<p>在无法无天的中国，国企就是臭不可闻的屎。<br />
+时不是让你恶心一阵子。</p>
+<p>目前找到解决联通垃圾提供的广告的办法。<br />
+针对WINDOWS：<br />
+开始-》运行<br />
+然后输入cmd<br />
+打开控制台窗口<br />
+然后在窗口里输入下面的信息:<br />
+C:Documents and SettingsAdministrator>route -p add <span style="color: #ff0000;">60.190.105.7<&#47;span> mask 255.255.255.255 127.0.0.1</p>
+<p>针对Linux:</p>
+<p>[sudo] route add -host 60.190.105.7 reject</p>
+<p>（Ubuntu上测试通过）</p>
+<p>其中<span style="color: #ff0000;">60.190.105.7 <&#47;span>是广告的IP。<br />
+你可以根本你的情况进行修改。</p>

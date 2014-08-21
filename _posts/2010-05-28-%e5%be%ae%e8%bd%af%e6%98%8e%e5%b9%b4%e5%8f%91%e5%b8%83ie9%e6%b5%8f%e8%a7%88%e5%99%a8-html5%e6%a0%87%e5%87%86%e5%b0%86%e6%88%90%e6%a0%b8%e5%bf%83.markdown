@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 微软明年发布IE9浏览器 HTML5标准将成核心
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1096
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1096
+date: !binary |-
+  MjAxMC0wNS0yOCAxMzoxNDoyMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0yOCAwNToxNDoyMyArMDgwMA==
+categories:
+- 新闻
+tags:
+- HTML5
+comments: []
+---
+<p>微软IE浏览器总监瑞恩&middot;加文（Ryan Gavin）周四表示，在明年发布新一代浏览器IE9之后，微软将会重拾与谷歌和Mozilla火狐浏览器之间的竞争优势。<br />
+加文表示，微软新一代浏览器IE9已引起外部软件开发者的高度兴趣，这些外部软件开发者将成为 IE9成功的关键。加文称，IE9将向第三方开发者更为开放。苹果在周三取代微软，成为全球市值最高的科技公司。自本世纪初IE浏览器的市场份额达到 95%之后，该产品的份额便开始不断下滑。目前，IE的市场份额仅为60%左右。</p>
+<p>微软认为，IE9将会比当前市场中的各种浏览器提供更优的视觉体验。IE9将通过Windows操作系统，来提升计算机图形处理器的运算能力，从而提高软件的运行速度。此外，微软IE9还将会支持HTML5标准，简化开发者的工作，并改善用户体验。HTML5是一种网页标准语言，用户在不需要安装其它插件如 Flash播放器插件的条件下，直接使用支持HTML5的浏览器就能观看在线视频。由于苹果公开支持HTML5而拒绝Flash，已引发了该公司与 Adobe之间的冲突。</p>
+<p>加文表示，&ldquo;我们将把HTML5作为IE9的核心。我们全力投入HTML5。&rdquo; 他说，&ldquo;如果开发者想要使用完全一样的标示语言，他们会使用Silverlight及Flash等插件来达成其目的。未来HTML5将让开发者有能力处理图像及视频等工作。&rdquo;加文还表示，HTML5不会废黜Flash和Silverlight，&ldquo;我想未来标准插件将会与HTML5共存。&rdquo;</p>
+<p>微软已决定准许开发者较以往更早的对IE9进行测试，以激起市场兴奋情绪，并提早修补IE9中的漏洞。他说，&ldquo;我们将为IE9开启新模式，这种模式我们此前从未体验过。&rdquo;基本上将，这种模式是要让了开发者见到我们拥有高度安全并进行完整测试的环境，以及我们正在打造的新功能。</p>
+<p>加文还表示，自今年3月IE9测试平台发布以来，下载次数已经超过了100万次。微软每8周对IE9进行一次更新。对于开发者指出的IE9漏洞问题，微软能够进行快速的修复。但是许多开发者抱怨称，IE9需要在Windows 7或 Vista操作系统运营，并不支持Windows XP。根据互联网流量监测机构Net Applications的统计，已上市9年的Windows XP市场份额为63%，Windows 7和Vista的份额为28%。</p>

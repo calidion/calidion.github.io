@@ -1,0 +1,137 @@
+---
+layout: post
+status: publish
+published: true
+title: 一个不错的私有代码托管服务器
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 50
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=50
+date: !binary |-
+  MjAxMC0wMS0yNiAwOTo0NDo0MSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwMTo0NDo0MSArMDgwMA==
+categories:
+- WEB服务器技术
+tags: []
+comments: []
+---
+<p><span style="font-family: Courier;">http:&#47;&#47;bitbucket.org&#47;<&#47;span></p>
+<p><span style="font-family: Courier;">可以提供私有代码的托管。<&#47;span></p>
+<p><span style="font-family: Courier;">免费用户可以有1个私有的代码托管。<&#47;span></p>
+<p><span style="font-family: Courier;">下面是这个托管服务器的信息。<&#47;span></p>
+<p><span style="font-family: Courier;"><span style="color: #808000;">Plans<&#47;span><&#47;span></p>
+<table>
+<tbody>
+<tr>
+<th><&#47;th></p>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Team<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Large<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Pro<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Amateur<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Free<&#47;span><&#47;span><&#47;span><&#47;th><br />
+<&#47;tr></p>
+<tr>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Disk space<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">25.0 GB<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">5.0 GB<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">1.0 GB<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">500.0 MB<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">150.0 MB<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Private<br />
+repositories<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">150<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">25<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">15<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">5<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">1<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Public repositories<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Unlimited<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Unlimited<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Unlimited<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Unlimited<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Unlimited<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">HTTP push&#47;pull<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">SSH push&#47;pull<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Wiki<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Issue tracker<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Services integration*<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Email support<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">CNAME**<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;tick.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;"><img title="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" src="http:&#47;&#47;bitbucket.org&#47;m&#47;img&#47;icons&#47;fugue&#47;cross.png" border="0" alt="一个不错的私有代码托管服务器 - 北漂IT民工 - 北漂IT民工的博客" &#47;><&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<th><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><span style="color: #808000;">Suited for<&#47;span><&#47;span><&#47;span><&#47;th></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Teams<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Small business<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Professional<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">For one person<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Free plan<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr></p>
+<tr>
+<td><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">$100&#47;month<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">$50&#47;month<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">$12&#47;month<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">$5&#47;month<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td></p>
+<td><span style="font-family: 楷体_GB2312;"><span style="font-family: Courier;"><strong><span style="color: #808000;">Free!<&#47;span><&#47;strong><&#47;span><&#47;span><&#47;td><br />
+<&#47;tr><br />
+<&#47;tbody><br />
+<&#47;table></p>

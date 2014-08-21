@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: IE6下面实现PNG的透明背景
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 281
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=281
+date: !binary |-
+  MjAxMC0wMS0yNiAxOTozNjoxNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAxMTozNjoxNiArMDgwMA==
+categories:
+- WEB开发
+tags:
+- CSS
+- 透明
+comments: []
+---
+<p>原文链接:<br />
+http:&#47;&#47;bradkuo.spaces.live.com&#47;blog&#47;cns!BCED278316CF5F98!2882.entry?sa=165037715</p>
+<p>注意点是,</p>
+<p>1. 在设定了其它浏览器背景后,IE6下面一定要先将background-image设置成none</p>
+<p>2.加滤镜的元素的css不能包含relative, absolute的定位属性</p>
+<p>3.透明的背景内的链接是有效果的，但是不透明的地方链接就没有效果。</p>
+<p>然后再添加滤镜(filter)</p>
+<p>正常的:<br />
+#KyArtSet{<br />
+background: url(images&#47;bg_kyart.png) no-repeat left 0px;<br />
+}<br />
+IE6下:</p>
+<p>#KyArtSet{<br />
+background-image: none;<br />
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images&#47;bg_kyart.png', sizingMethod='scale');<br />
+}</p>

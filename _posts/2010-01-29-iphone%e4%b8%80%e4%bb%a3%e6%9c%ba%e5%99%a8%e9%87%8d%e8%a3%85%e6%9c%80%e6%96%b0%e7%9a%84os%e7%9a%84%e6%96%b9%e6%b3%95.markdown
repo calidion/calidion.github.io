@@ -1,0 +1,52 @@
+---
+layout: post
+status: publish
+published: true
+title: iPhone一代机器重装破解最新的OS的方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 325
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=325
+date: !binary |-
+  MjAxMC0wMS0yOSAxNDoyMjoyNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yOSAwNjoyMjoyNyArMDgwMA==
+categories:
+- 杂谈
+tags:
+- iPhone
+- redsn0w
+- 重装
+comments: []
+---
+<p>1. 第一步下载iPhone的系统安装包(iPhone1,1_3.1.2_7D11_Restore.ipsw)</p>
+<p>点击&nbsp;<a style="text-decoration: none;" title="下载iPhone" href="http:&#47;&#47;appldnld.apple.com.edgesuite.net&#47;content.info.apple.com&#47;iPhone&#47;061-7265.20091008.Xsd32&#47;iPhone1,2_3.1.2_7D11_Restore.ipsw" target="_blank">下载<&#47;a></p>
+<p>2. 下载redsn0w 0.9beta3<br />
+<a title="http:&#47;&#47;iphwn.org&#47;redsn0w-mac_0.9beta3_gsfix.zip" rel="nofollow" href="http:&#47;&#47;iphwn.org&#47;redsn0w-mac_0.9beta3_gsfix.zip">Mac OSX x86<&#47;a><br />
+<a title="http:&#47;&#47;iphwn.org&#47;redsn0w-win_0.9beta3_gsfix.zip" rel="nofollow" href="http:&#47;&#47;iphwn.org&#47;redsn0w-win_0.9beta3_gsfix.zip">Windows<&#47;a></p>
+<p>4.下载39, 46 BootLoader 两个都需要下</p>
+<p><a href="http:&#47;&#47;cid-07e51db788bf0866.skydrive.live.com&#47;self.aspx&#47;iPhone&#47;BootLoaders&#47;BL-39.bin">iPhone BootLoader Version 3.9( BL-39.bin )<&#47;a><br />
+<a href="http:&#47;&#47;cid-07e51db788bf0866.skydrive.live.com&#47;self.aspx&#47;iPhone&#47;BootLoaders&#47;BL-46.bin">iPhone BootLoader Version 4.6( BL-46.bin )<&#47;a></p>
+<p>4. 运行redsn0w，</p>
+<p>5. 根据提示选择ipsw文件，</p>
+<p>选择安装Cydia.选择unLock</p>
+<p>根据提示选择39,46 BootLoader</p>
+<p>6. 根据提示进入恢复模式。</p>
+<p>方法程序有提示：</p>
+<p>1）先按住开关键3秒钟</p>
+<p>2）再同时按住开关键和HOME键7秒钟</p>
+<p>2) &nbsp;松开开关键, 继续按住HOME键25秒。</p>
+<p>成功后才能继续向下走.</p>
+<p>7. 直接选择安装，就可以不用管了。直到手机重启完成。</p>
+<p>8.这时手机就已经破解成功了。</p>
+<p>重启后直接进入Cydia安装程序。</p>
+<p>连接91的iphone程序也没有问题了。</p>
+<p>jailbreak(越狱）已经完成。</p>
+<p>需要提醒的是Deb包的程序最好是通过Cydia安装。</p>
+<p>通过91的软件安装可能会产生错误，导致手机程序无法启动。</p>
+<p>还有这个方法重装的好处是不需要再从网上下载东西破解，一步到位，非常方便。</p>

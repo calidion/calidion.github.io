@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 微软在智能手机市场已败 Linux能挑战苹果
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1181
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1181
+date: !binary |-
+  MjAxMC0wNi0xMyAwOTozMTowMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0xMyAwMTozMTowMyArMDgwMA==
+categories:
+- 新闻
+tags:
+- Linux
+- 苹果
+comments: []
+---
+<p>Linux基金会常务董事吉姆&middot;泽姆林(Jim Zemlin)日前表示，微软在智能手机市场已经失败，只剩下Linxu能够成为苹果的强有力挑战者。<br />
+泽姆林说：&ldquo;在移动计算市场，微软已经失败，而Linux已成为苹果的主要挑战者。&rdquo;泽姆林举例道，谷歌Android、英特尔Meego和惠普Palm webOS都是苹果的主要挑战者，这些系统均基于Linux。</p>
+<p>泽姆林称，苹果iPhone确实树立了较高的标准，但Linux有过战胜市场领头羊的经验。泽姆林说：&ldquo;20世纪90年代末期，Sun的高端服务器是IT公司、互联网创业公司和华尔街投资者的宠儿，当时Linux还无所作为。&rdquo;</p>
+<p>泽姆林接着说：&ldquo;而10年之后，Sun已经不存在了，剩下Linux和 Windows统治着数据中心市场。&rdquo;</p>
+<p>泽姆林同时承认，当前的Linux移动操作系统仍需要完善，尤其是在用户体验方面，如启动时间和图形性能等。</p>

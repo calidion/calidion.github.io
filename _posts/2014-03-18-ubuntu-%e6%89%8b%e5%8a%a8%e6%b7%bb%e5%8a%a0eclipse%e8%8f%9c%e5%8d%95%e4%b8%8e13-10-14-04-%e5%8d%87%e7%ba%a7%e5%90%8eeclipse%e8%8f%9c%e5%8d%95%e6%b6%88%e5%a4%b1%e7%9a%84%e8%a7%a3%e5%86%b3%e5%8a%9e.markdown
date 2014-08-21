@@ -1,0 +1,66 @@
+---
+layout: post
+status: publish
+published: true
+title: ubuntu 手动添加eclipse菜单与13.10 &#47; 14.04 升级后eclipse菜单消失的解决办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1687
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1687
+date: !binary |-
+  MjAxNC0wMy0xOCAxNDoyMjowNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxNC0wMy0xOCAwNjoyMjowNSArMDgwMA==
+categories:
+- eclipse
+tags: []
+comments: []
+---
+<p>因为eclipse的强大的功能，支持几乎所有的开发语言与环境，<br />
+最近越来越往eclipse平台上靠了。eclipse + emacs的按键模式可以产生很好的编辑效率。<br />
+但是eclipse这么强大的平台，仍会在ubuntu平台上出点状况。</p>
+<p>1、ubuntu平台的自带模块因为eclipse的机制关系会产生一些不可控的脏文件数据，导致升级会很麻烦。所以一般都是采用自行下载的方式使用eclipse</p>
+<p>平台自带的eclipse会提供一个桌面菜单，而自行下载的eclipse则没有这个福利。<br />
+所以需要自行制作桌面菜单。<br />
+创建一个eclipse.desktop文件到<br />
+~&#47;.local&#47;share&#47;applications&#47;eclipse.desktop<br />
+或者<br />
+cp &#47;usr&#47;share&#47;applications&#47;eclipse.desktop ~&#47;.local&#47;share&#47;applications&#47;<br />
+如果路径上存在的话。</p>
+<p>文件的内容如下：<br />
+[Desktop Entry]<br />
+Type=Application<br />
+Name=Eclipse<br />
+Comment=Eclipse Integrated Development Environment<br />
+Icon=&#47;home&#47;[USER]&#47;Program Files&#47;eclipse&#47;icon.xpm<br />
+Exec=&#47;home&#47;[USER]&#47;Program\ Files&#47;eclipse&#47;eclipse<br />
+Terminal=false<br />
+Categories=Development;IDE;Java;<br />
+StartupWMClass=Eclipse</p>
+<p>注意：<br />
+[USER]是你用户名<br />
+如果你保存的目录类似于Program Files这样带空格的，注意在Exec上带上反斜扛\。具体效果根本自已的测试结果而定。<br />
+不过不建议目录带空格。</p>
+<p>2、ubuntu最近升级到13.10与14.04后会出现菜单消失的情况。<br />
+解决的办法是在Exec加上：</p>
+<p>env UBUNTU_MENUPROXY=0</p>
+<p>即：</p>
+<p>Exec=env UBUNTU_MENUPROXY=0 &#47;home&#47;eric&#47;Program\ Files&#47;eclipse&#47;eclipse</p>
+<p>最终的效果是：</p>
+<p>[Desktop Entry]<br />
+Type=Application<br />
+Name=Eclipse<br />
+Comment=Eclipse Integrated Development Environment<br />
+Icon=&#47;home&#47;[USER]&#47;Program Files&#47;eclipse&#47;icon.xpm<br />
+Exec=env UBUNTU_MENUPROXY=0 &#47;home&#47;[USER]&#47;Program\ Files&#47;eclipse&#47;eclipse<br />
+Terminal=false<br />
+Categories=Development;IDE;Java;<br />
+StartupWMClass=Eclipse</p>
+<p>所有的内容最初来源于：<br />
+http:&#47;&#47;askubuntu.com&#47;questions&#47;80013&#47;how-to-pin-eclipse-to-the-unity-launcher</p>
+<p>对于英语掌握的比较好的同学可以自己查看英文原文。</p>

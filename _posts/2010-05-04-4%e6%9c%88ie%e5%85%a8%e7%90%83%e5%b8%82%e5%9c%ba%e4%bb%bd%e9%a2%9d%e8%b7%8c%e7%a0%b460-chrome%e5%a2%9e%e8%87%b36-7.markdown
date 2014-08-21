@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: 4月IE全球市场份额跌破60% Chrome增至6.7%
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 880
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=880
+date: !binary |-
+  MjAxMC0wNS0wNCAwOTo0ODo0NSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wNCAwMTo0ODo0NSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>美国互联网流量监测机构Net Applications今天发布的最新统计数据显示，今年4月期间，微软IE浏览器全球市场份额首次跌破60%大关，跌至59.95%；与此同时，当月 谷歌Chrome浏览器全球市场份额增至6.7%。<br />
+Net Applications称，今年4月期间，仅谷歌Chrome全球市场份额增幅较大，当月其市场份额增长0.6个百分点，增至6.7%。这也是自谷歌 Chrome于2008年9月发布以来，其市场增幅第二高的月份。</p>
+<p>今年4月，微软 IE浏览器全球市场份额下降了0.7个百分点，降至59.95%。这也是IE全球市场份额首次跌破60%大关。今年3月期间，IE全球市场份额曾下降了1 个百分点。</p>
+<p>今年4月Mozilla所开发的火狐(Firefox)全球市场份额增长了0.07个百分点，增至24.6%。虽然其增幅并不高，但已经止住了该浏览器市场份额自去年11月以来持续下滑的趋势。</p>
+<p>火狐全球市场份额曾一度突破25%，目前仍在25%之下。Net Applications执行副总裁文斯&middot;维扎卡罗(Vince Vizzaccaro)上月曾表示，目前火狐市场份额只能算是&ldquo;稳住了脚跟&rdquo;，而没能像谷歌Chrome一样获得更多市场份额。</p>
+<p>今年1月，Mozilla发布了火狐3.6版。此后Mozilla向火狐老用户发出提醒，要求他们尽快向火狐3.6版升级。截至4月底，62.3%火狐用户已经在使用火狐3.6版，23.6%使用火狐3.5版，11.2%仍在使用火狐3.0版。 Mozilla此前宣布，将不再向火狐3.0版提供技术支持。</p>
+<p>具体到微软IE浏览器的不同版本，IE8今年4月全球市场份额有所增长，增至27.6%；IE6和IE7皆有所下降，分别降至17.6%和12.5%。但IE7市场份额下降幅度已有所放缓，其最近3个月的平均下滑幅度低于过去12个月的下滑平均值。IE6市场份额则持续下滑，如果按照目前发展趋势，到2012年夏季时，IE6 全球市场份额有望跌破10%大关。</p>
+<p>今年4月，苹果Safari浏览器全球市场份额亦稍有增长，为4.7%。挪威Opera台式机浏览器当月相应份额有所下降，降至2.3%。</p>
+<p>Net Applications上述统计数据来自对全球4万家网站的实时监测，以记录访问这些网站的PC机使用了何种浏览器，每月所统计全球独立用户访问量约为 1.6亿户左右。除统计不同浏览器的市场份额外，Net Applications还通过这种方式统计各类操作系统(如Windows、Linux等)的全球市场份额。</p>
+<p>文&#47;腾讯科技</p>

@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 14.04升级后字体变难看解决办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1759
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1759
+date: !binary |-
+  MjAxNC0wNi0yNSAwODo1Nzo1NiArMDgwMA==
+date_gmt: !binary |-
+  MjAxNC0wNi0yNSAwMDo1Nzo1NiArMDgwMA==
+categories:
+- 其它
+tags: []
+comments: []
+---
+<p>sudo apt-get remove fonts-arphic-ukai fonts-arphic-uming</p>

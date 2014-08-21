@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 常用的浏览器渲染引擎
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1288
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1288
+date: !binary |-
+  MjAxMC0wOC0wMyAxNjo1OTozOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wMyAwODo1OTozOSArMDgwMA==
+categories:
+- WEB开发
+- WEB前端技术
+tags: []
+comments: []
+---
+<p>IE： Trident(MSHTML)<br />
+Firefox: Gecko<br />
+Chrome: WebKit(KHTML)<br />
+Safari: WebKit(KHTML)</p>

@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 阿里巴巴与PayPal正式达成合作
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 811
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=811
+date: !binary |-
+  MjAxMC0wNC0yNyAyMDoyODozNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNyAxMjoyODozNyArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>阿里巴巴网络有限公司（1688.HK）与PayPal今日宣布，全球速卖通平台用户将可通过PayPal付款。自4月26号正式推出之后，全球速卖通让 用户可按本身小本经营的需要下单，并提供小批量订单、实时网上交易及保障买卖双方利益的第三方信用担保服务。<&#47;strong>PayPal是全球领先的网上支付平台之一，于全球190个市场有逾8,400多万个活跃账户和约800万名商户，使用货币多达24种。</p>
+<p>阿里巴巴首席执行官卫哲表示：&ldquo;全球速卖通是为了帮助小企业提高竞争力，即使是规模最小的企业亦可借助全球贸易以更优惠的价格为客户提供更具特色的产品。我们希望尽可能提供快速、安全和简便的付款方式，确保满足用户的需求，因此与像PayPal这样的公司合作至关重要。&rdquo;</p>
+<p>PayPal总裁Scott Thompson表示：&ldquo;PayPal在全球190个市场有数以百万计的用户，选择PayPal就意味着向全世界敞开商业大门。PayPal与阿里巴巴共享同一愿景，就是要为小企业提供通往成功的各个途径，包括快速安全的网上支付功能。为此，我们非常荣幸可与全球速卖通携手合作。&rdquo;</p>
+<p>2009年9月，阿里巴巴推出全球速卖通测试版。截止目前，已有40多个消费产品类别逾300万种产品在全球速卖通平台上销售。</p>

@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: Linux 下批量替换的命令
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1473
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1473
+date: !binary |-
+  MjAxMS0xMC0xOCAxNjoxNzo0OCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMS0xMC0xOCAwODoxNzo0OCArMDgwMA==
+categories:
+- Shell
+tags: []
+comments: []
+---
+<p>将下面的代码放到一个shell文件a.sh里，</p>
+<p>sed -i "s&#47;$2&#47;$3&#47;g" `grep -rl $2 $1`</p>
+<p>然后执行:<br />
+sh a.sh path param1 param2</p>
+<p>path是路径名,<br />
+param1是要替换的内容<br />
+param2是替换后的内容</p>

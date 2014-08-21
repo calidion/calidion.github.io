@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: 很不喜欢python的缩进
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 206
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=206
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoxMTozNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToxMTozNSArMDgwMA==
+categories:
+- 编程技术
+- Python
+tags:
+- python
+- 缩进
+comments: []
+---
+<p>python作为一个脚本语言具有非常强大的社区支持。<br />
+语言本身也是简单易学。<br />
+还可以用于google的appengine的开发。<br />
+并且基于python开发的douban也是一个非常成功的网站之一。<br />
+从语言本身我觉得没有什么可以指责的。<br />
+但是作为个人来讲，我对于python的缩进来区分代码段的做法不以为然。<br />
+首先，现在很多语言的工具提供了代码的格式化能力，不需要程序员自己来做格式化这样重复并且没有意义的活动。如果javascript有IDEA，apatana, netbeans支持代码格式化， java之类的格式化工具也是非常的多。<br />
+但是python的代码的格式化将是非常困难的。<br />
+因为python这个语言特定的语法本身将代码的格式化工作交给了程序员，而不是通过语法块描述符（如果C里的"{", "}"等)来对程序进行划分。</p>
+<p>就象很多年前的FORTRAN程序一样，你必须在7－60之间写程序代码。</p>
+<p>这样的代码编辑起来将是非常费时费事的。</p>
+<p>但愿下个版本,python对加上程序块语法字符。</p>

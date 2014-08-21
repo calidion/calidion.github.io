@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: sqlite下查找表名是否存在的语句
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 27
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=27
+date: !binary |-
+  MjAxMC0wMS0yMSAwOTo1MDowMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yMSAwMTo1MDowMCArMDgwMA==
+categories:
+- 数据库技术
+tags:
+- sql
+- sqlite
+comments: []
+---
+<pre name="code" class="sql">
+select name from sqlite_master where type = 'table' and name = 'table_name'<br />
+<&#47;pre></p>

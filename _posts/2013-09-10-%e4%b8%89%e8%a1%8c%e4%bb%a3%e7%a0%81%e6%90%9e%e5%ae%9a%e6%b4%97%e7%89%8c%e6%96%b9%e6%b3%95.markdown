@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 三行代码搞定洗牌方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1590
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1590
+date: !binary |-
+  MjAxMy0wOS0xMCAwMDowMjowNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0wOS0wOSAxNjowMjowNyArMDgwMA==
+categories:
+- Javascript
+tags: []
+comments: []
+---
+<p>经典的洗牌问题。<br />
+一般来讲洗牌的牌都是固定的。<br />
+所以一开始可以顺序存放好各种牌。<br />
+然后取总牌总的一半的长度来执行随机交换。<br />
+交换掉前面的N&#47;2个牌，基本上这个牌的随机性就已经可以了。</p>
+<pre name="code" language="js">
+var cards = [];<br />
+for (var i = 1; i <= 54; i++) { cards.push(i); }     &#47;&#47;这个就是顺序保存数据的过程<br />
+for(var i = 0; i <= 54 &#47; 2; i ++) { var id1 = parseInt(Math.random(1, 53) * 53), tmp = null; tmp = cards[id1]; cards[id1] = cards[i]; cards[i] = tmp; }</p>
+<p>&#47;&#47;chrome 执行结果<br />
+>  cards<br />
+  [5, 15, 9, 18, 1, 39, 11, 50, 10, 21, 54, 31, 35, 27, 13, 22, 43, 51, 2, 53, 14, 24, 48, 20, 26, 37, 33, 44, 29, 30, 12, 32, 3, 34, 19, 36, 25, 38, 6, 40, 41, 42, 17, 28, 45, 46, 47, 23, 49, 8, 4, 52, 16, 7]<br />
+<&#47;pre></p>

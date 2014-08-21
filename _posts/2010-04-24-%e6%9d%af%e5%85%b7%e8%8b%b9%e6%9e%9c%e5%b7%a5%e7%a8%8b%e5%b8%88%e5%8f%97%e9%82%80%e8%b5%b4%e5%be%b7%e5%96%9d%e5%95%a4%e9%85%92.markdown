@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 杯具苹果工程师受邀赴德喝啤酒
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 752
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=752
+date: !binary |-
+  MjAxMC0wNC0yNCAyMzo0NDo1MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNCAxNTo0NDo1MiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>某位不小心把一台<&#47;strong><a href="http:&#47;&#47;cnbeta.com&#47;articles&#47;109211.htm"><strong>非常敏感的 iPhone 落在酒吧<&#47;strong><&#47;a><strong> 的杯具苹果工程师刚刚获得了一个免费游德国的机会 - 汉莎航空发出邀请, 免费为他提供飞往慕尼黑的机票.<&#47;strong>这个公关项目始于 iPhone 4G 丢失的新闻, 该工程师在 Facebook 上的一句状态更新: "我低估了德国啤酒有多好", 以及他对德国啤酒和文化的热衷. 由此, 汉莎航空决定发出一份邀请:</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100424&#47;06534301410429102.jpg" alt="" &#47;></p>
+<p>Dear Mr. Gray Powell,</p>
+<p>我最近在新闻里读到您在加州一间德国啤酒馆里丢了一个非常特别的手机. 我们都知道丢东西多难受, 尤其是丢掉的是很独特贵重的东西的时候.</p>
+<p>不过我们, 作为汉莎员工也注意到了您对德国啤酒和文化的热情. 我们觉得您应该不久就可以休息一下 - 也因此我们愿意为您提供一张免费的飞往慕尼黑的商务舱机票, 这样您可以从上次结束的地方开始接着做. 当您到了慕尼黑之后, 请您来体验一下我们新的巴伐利亚啤酒花园商务休息室, 并且尝尝德国最好的特产.</p>
+<p>我们静待您登机.</p>
+<p>请您在最早有空的时候通过 Twitter (twitter.com&#47;Lufthansa_USA) 联系我的团队.</p>
+<p>一切顺利,<br />
+(签名)</p>
+<p>Nicola C. Lange<br />
+德国汉莎航空<br />
+营销与客户关系主管, 美洲地区</p>
+<p>目前, 尚不知道这位工程师将对这份邀请作何回应.</p>

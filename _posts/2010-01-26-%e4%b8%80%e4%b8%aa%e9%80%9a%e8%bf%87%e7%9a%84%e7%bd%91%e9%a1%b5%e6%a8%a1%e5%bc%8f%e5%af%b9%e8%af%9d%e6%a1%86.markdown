@@ -1,0 +1,77 @@
+---
+layout: post
+status: publish
+published: true
+title: 一个通过的网页模式对话框
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 149
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=149
+date: !binary |-
+  MjAxMC0wMS0yNiAxNTo0MDoxMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNzo0MDoxMCArMDgwMA==
+categories:
+- Javascript
+tags:
+- 对框
+- 模式
+comments: []
+---
+<p>说明：<br />
+msg:对话框显示的消息<br />
+callbackOK:正确时调用的函数<br />
+callbackCancel: 取消时调用的函数<br />
+dom:绑定的DOM元素</p>
+<pre name="code" class="js">
+<p>          var iMessageBox = function(msg, callbackOk, callbackCancel, dom){<br />
+            var mask = document.createElement('div');<br />
+            var pop = document.createElement('div');<br />
+            var message = document.createElement('h4');<br />
+            var ok = document.createElement('input');<br />
+            ok.type = "button";<br />
+            ok.value = "__MSG_ok__";<br />
+            ok.__dom = dom;<br />
+            ok.__func = callbackOk;<br />
+            ok.__mask = mask;<br />
+            ok.__pop = pop;<br />
+            ok.onclick = function(){<br />
+              if(this.__func)<br />
+                this.__func.call(this.__dom);<br />
+              document.body.removeChild(this.__mask);<br />
+              document.body.removeChild(this.__pop);<br />
+            }<br />
+            message.innerHTML = msg;<br />
+            var cancel = document.createElement('input');<br />
+            cancel.type = "button";<br />
+            cancel.value = '__MSG_cancel__';<br />
+            cancel.__dom = dom;<br />
+            cancel.__mask = mask;<br />
+            cancel.__pop = pop;<br />
+            cancel.__func = callbackCancel;<br />
+            cancel.onclick = function(){<br />
+              if(this.__func)<br />
+                this.__func.call(this.__dom);<br />
+              document.body.removeChild(this.__mask);<br />
+              document.body.removeChild(this.__pop);<br />
+            }<br />
+            pop.appendChild(message);<br />
+            pop.appendChild(ok);<br />
+            pop.appendChild(cancel);<br />
+            document.body.appendChild(mask);<br />
+            document.body.appendChild(pop);<br />
+            mask.style.cssText = 'position:absolute;background:#000;opacity:.3;width:100%;*filter: Alpha(Opacity=30);top:0;left:0';<br />
+            mask.style.display = 'block';<br />
+            mask.style.height = document.body.clientHeight +document.body.scrollTop+ 'px';<br />
+            document.body.style.overflow = 'hidden';<br />
+            pop.style.cssText = 'position:absolute;width:200;padding:8px;background:#fff;border:2px solid #000;text-align:center';<br />
+            pop.style.display = 'block';<br />
+            pop.style.left =document.body.offsetWidth &#47; 2 - pop.offsetWidth &#47; 2 + 'px';<br />
+            pop.style.top = document.body.offsetHeight &#47; 2 - pop.offsetHeight &#47; 2 + 'px';<br />
+          }<br />
+<&#47;pre></p>

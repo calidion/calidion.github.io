@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 全键盘旋屏设计再现 诺基亚C2曝光
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 814
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=814
+date: !binary |-
+  MjAxMC0wNC0yNyAxODozNDozMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNyAxMDozNDozMiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>几天前诺基亚C系列新品手机C1在印尼被发现之后，该系列又一款新机C2今天曝光，Ciaomondo网站放出了该机的照片。<&#47;strong><br />
+目前并没有关于C2 的详细规格信息，图片仅显示了该手机将内置200万像素卡尔蔡司镜头，使用一块240&times;320像素分辨率屏幕，配有QWERTY 全键盘。</p>
+<p>从照片看，C2将采用独特的&ldquo;T字&rdquo;旋屏设计，正常使用时屏幕下方露出5排QWERTY全键盘的一半，作为按键使用，用户可以将屏幕竖起然后使用分体式的全键盘，苹果左右各有三列键盘可用，这和诺基亚之前曾推出的6820有些神似。另外屏幕右上方配有前置摄像头，这款新机预计将支持视频通话。</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100427&#47;1729060148983144.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100427&#47;1729060148983144.jpg" &#47;><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100427&#47;172906133360193.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100427&#47;172906133360193.jpg" &#47;></p>
+<p>诺基亚C系列定位于低端消费群体，其中C3、C5、C6均已发布，C1也已经被证实即将推出，C2预计售价将不会很高。</p>

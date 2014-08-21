@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: mysql管理员密码的管理
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 125
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=125
+date: !binary |-
+  MjAxMC0wMS0yNiAxNToxMTo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNzoxMTo0MiArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Mysql
+comments: []
+---
+<p>1）新建管理员密码：<br />
+mysqladmin -u root password 新密码<br />
+2）修改管理员密码：<br />
+mysqladmin -u root -p'旧密码' password 新密码<br />
+假设原来的密码是'abc',新的密码是'123456',那么命令是：<br />
+mysqladmin -u root -p'abc' password '123456'</p>
+<p>3）修改其它用户的密码：<br />
+mysqladmin -u 用户名 -p 旧密码 password 新密码</p>

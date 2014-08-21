@@ -1,0 +1,42 @@
+---
+layout: post
+status: publish
+published: true
+title: 试用了一下emacs
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 172
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=172
+date: !binary |-
+  MjAxMC0wMS0yNiAxNjozODowMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwODozODowMiArMDgwMA==
+categories:
+- 新闻
+- 编程技术
+tags:
+- Emacs
+- Vim
+comments: []
+---
+<p>感觉文本编辑上，Emacs没有Vim方便。<br />
+Emacs的优势更多的在于比较方便的与系统集成在一起，调试与开发。</p>
+<p>下面是几位网友的体会，感觉与我的比较类似，复制过来归档。呵呵。</p>
+<p>jetking<br />
+05-05-01, 15:23<br />
+两者的思想理念不同<br />
+emacs是集大成者，整合的概念，w3m,irc,mp3,gdb,dired，ide，无论你在系统下要干什么，在一个emacs就可以搞定，集大成 者意味这包容一切，从这点讲，emacs决不是一个编辑器那么简单，它甚至可以称的上一个系统，但集大成者也需要付出一点代价，代价就是过大的体形，当然 所谓的体形巨大是为功能服务的，而不是&ldquo;虚胖&rdquo;。还有过多的命令（M-x后你不知道该用什么)和快捷键(C-)，有人说emacs好多快捷键，记不住，不 过，常用emacs的朋友一般都会习惯他们惯用的击键，其实，用啊用啊的就习惯了，就用不着记了，有可能刚开始的时候，需要你的一些记忆。<br />
+相比之下，vi&#47;vim就是小巧而不失功能的编辑器，我记得vim的manual还是howto里说：vim不像emacs一样什么都干，而是配合其他程 序，把自己的本分做好（大概是这么个意思，原话忘记了）。因为vi&#47;vim专注于编辑，所以它的编辑效率是很高的。最近在公司写单片机汇编，感觉用vim 比ultraedit效率高很多啊！</p>
+<p>我两个编辑器都用过，虽然说都不是很精，但也算是用过一段时间的，我不是任何一方的fans<br />
+单纯的从编辑器上讲，vi&#47;vim比emacs更加好；而在一些扩展功能（扩展功能并不是无关紧要的功能，比如ide，debug等等）下，emacs比vi&#47;vim强大的多。</p>
+<p>我写这些不是为了做一个和事老，让vim和emacs的fans如何如何，只是说出自己的一些想法，让一些刚进入linux&#47;unix的朋友们弄清楚一些情况，unix like os下的编辑器。<br />
+pupilzeng<br />
+05-05-01, 16:52<br />
+呵呵，我也是两个都用<br />
+编辑简单的文件就用vim,主要是移动方便<br />
+做其他的，如使用gdb调试，阅读源代码emacs-ecb，emacs-wiki的时候，就用emacs</p>

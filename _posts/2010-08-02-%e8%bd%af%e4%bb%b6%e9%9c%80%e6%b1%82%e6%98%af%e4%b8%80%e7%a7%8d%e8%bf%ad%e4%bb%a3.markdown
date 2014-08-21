@@ -1,0 +1,54 @@
+---
+layout: post
+status: publish
+published: true
+title: 软件需求是一种迭代
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1286
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1286
+date: !binary |-
+  MjAxMC0wOC0wMiAxODoxMjoyMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wMiAxMDoxMjoyMyArMDgwMA==
+categories:
+- 民工观点
+- 架构
+tags:
+- 架构
+- 需求
+comments: []
+---
+<p>首先，需求的产生过程来源于不明确。<br />
+需求的产生是因为某种愿景下，要实现一定的功能，来满足一定的要求。<br />
+所以需求并不一定在一开始就能完全确定。<br />
+第二，需求的可行性并不能在前期得到验证上。<br />
+需求并不是软件开发人员所提出来的，<br />
+并没有经过软件开发人员的技术实力与当前软件的开发进展验证，<br />
+所以需求的可行性达不到100%。<br />
+所以需求必须改变。<br />
+第三，需求处于不断的变更之中。<br />
+由于外部环境与内部的环境都多种因素的影响，<br />
+需求的实现与实际的期望必定存在一定的差异，<br />
+这种差异会导致需求的变更，以达到需求与实际效果之间的妥协。<br />
+第四，需求的理解存在误差。<br />
+任何交流都是存在误差的，误差的多少，将会导致需求与实际之间的不一致性，<br />
+而当这种不一致性，无法克服时，需求的变更就在所难免。<br />
+需求将被强奸。<br />
+第四，需求的实现需要时间。<br />
+很多的项目在初期制定了非常多的需求目标。<br />
+然后开发人员开发执行开发。<br />
+开发的过程中，我们发现需求已经明确的情况下，<br />
+在架构非常成熟的情况下，加足了马力的拼，<br />
+开发人员仍无法完成这些需求。<br />
+但是上线的时间在即，那么这时唯一的可行办法是削减需求，<br />
+需求再次变更。<br />
+综上所述，需求也好，开发也好。<br />
+都是一种动态的迭代过程,他们是不断的变更的。<br />
+这也是软件开发的最显著的特点。<br />
+动态的迭代升级。</p>

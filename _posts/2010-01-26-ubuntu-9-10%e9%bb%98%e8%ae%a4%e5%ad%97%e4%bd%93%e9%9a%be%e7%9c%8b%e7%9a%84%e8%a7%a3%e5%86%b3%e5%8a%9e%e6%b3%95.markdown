@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 9.10默认字体难看的解决办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 237
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=237
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzozNzoxOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOTozNzoxOSArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Ubuntu
+- 字体
+comments: []
+---
+<p>sudo rm -rf &#47;etc&#47;fonts&#47;conf.d&#47;66-wqy-zenhei-sharp.conf</p>

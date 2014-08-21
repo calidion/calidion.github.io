@@ -1,0 +1,39 @@
+---
+layout: post
+status: publish
+published: true
+title: 指定python源文件的编码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 195
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=195
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzowNjoxMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOTowNjoxMSArMDgwMA==
+categories:
+- 编程技术
+- Python
+tags:
+- python
+- 编码
+comments: []
+---
+<p>根据pep 0263,<br />
+http:&#47;&#47;www.python.org&#47;dev&#47;peps&#47;pep-0263&#47;<br />
+有下面三种写法:<br />
+1.<br />
+# coding=<encoding name></p>
+<p>2.<br />
+#!&#47;usr&#47;bin&#47;python<br />
+# -*- coding: <encoding name> -*-<br />
+3.<br />
+#!&#47;usr&#47;bin&#47;python<br />
+# vim: set fileencoding=<encoding name> :</p>
+<p>更准确的说是源文件的第一行或者第二行需要符合下面的正则:<br />
+"coding[:=]s*([-w.]+)"</p>

@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 13.04 经常读硬盘而变的非常慢的解决办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1555
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1555
+date: !binary |-
+  MjAxMy0wNi0wMiAwMjoxMDowOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0wNi0wMSAxODoxMDowOSArMDgwMA==
+categories:
+- 操作系统
+- Linux
+tags: []
+comments: []
+---
+<p>最近使用Ubuntu是发现经常读硬盘，导致速度非常的慢的。搜索了一下发现在可以调整内存的交换设置来改善这种情况。<br />
+代码如下，值可以是0～100，当我们把swappiness设置成0后，基本上就没有什么交换的情况发生了。<br />
+速度就非常快了，真正的感觉到使用Linux快感了。</p>
+<pre name="code" language="sh">
+sudo sysctl vm.swappiness=0<br />
+<&#47;pre></p>
+<p>当然要想把这个设置保存下了，需要把这个值保存到文件<br />
+&#47;etc&#47;sysctl.conf<br />
+中，添加如下的语句：</p>
+<pre name="code" language="sh">
+vm.swappiness=0<br />
+<&#47;pre></p>
+<p>下面我把wiki上的内容复制一下，</p>
+<p>http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Swappiness</p>
+<p>Swappiness is a property for the Linux kernel that changes the balance between swapping out runtime memory, as opposed to dropping pages from the system page cache. Swappiness can be set to values between 0 and 100 inclusive. A low value means the kernel will try to avoid swapping as much as possible where a higher value instead will make the kernel aggressively try to use swap space. The default value is 60, and for most desktop systems, setting it to 100 may affect the overall performance, whereas setting it lower (even 0) may improve interactivity (by decreasing response latency.)[1]<br />
+In short:<br />
+vm.swappiness = 0 - it will swap only to avoid an out of memory condition<br />
+vm.swappiness = 60 - default value<br />
+vm.swappiness = 100 - it will swap aggressively<br />
+To temporarily set the swappiness in Linux, write the desired value (e.g. 10) to &#47;proc&#47;sys&#47;vm&#47;swappiness using the following command, running as root user: echo 10 > &#47;proc&#47;sys&#47;vm&#47;swappiness<br />
+Permanent changes are made in &#47;etc&#47;sysctl.conf via the following configuration line (inserted if not present previously): vm.swappiness = 10</p>

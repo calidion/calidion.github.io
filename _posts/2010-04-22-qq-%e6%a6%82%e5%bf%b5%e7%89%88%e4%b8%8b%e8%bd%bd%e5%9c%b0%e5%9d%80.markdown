@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: QQ 概念版下载地址
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 670
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/04/22/qq-%e6%a6%82%e5%bf%b5%e7%89%88%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80/
+date: !binary |-
+  MjAxMC0wNC0yMiAxNDo1NzoyMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMiAwNjo1NzoyMiArMDgwMA==
+categories:
+- 新闻
+tags:
+- QQ
+comments: []
+---
+<p>QQ 概念版应用微软最新一代客户端展现层技术（WPF），实现多点触摸操作，是腾讯首款NUI（自然用户交互）产品，推出了动感相框、动态背景、多Tab聊天窗口、3D交互、桌面好友等一系列新功能,为您打造完美尊贵的新体验。在此，我们诚邀您报名参与QQ 概念版的优先体验。</p>
+<p>QQ 概念版推出以下功能特性：<br />
+1、个性化登录界面 悠悠飘动的白云，随风摇摆的叶子，极富生命力；<br />
+2、头像动感相框 多款富有动感的相框，给自己的头像增添新的趣味；<br />
+3、动态背景 清新自然的竹叶，活力四射的霓虹灯，好友列表不再单调；<br />
+4、好友动态滚动显示 个性签名、音乐状态、QZone 等更新信息滚动显示，随时随地了解好友动态；<br />
+5、桌面好友 把好友拖放到桌面，实时关注好友的最新状态，即时快聊，实现无缝沟通和互动；<br />
+6.好友管理 富有质感的界面，好友卡片自由拖放，支持多点触摸，好友男女比例统计，给您全新的好友管理体验；<br />
+7.多TAB聊天功能 拖拽会话窗口上的头像可以合并和拆分会话窗口，管理会话更方便；<br />
+8.表情选择器 圆盘卡片式的表情选择器，自动排列常用表情；<br />
+9.超级表情 给好友发送特殊的表情，让您的心情跃然好友屏幕之上，与好友一起感受不一样的互动形式；<br />
+10.全新的聊天记录查看体验 带有加速度和富有弹性的滚动及翻页体验，操作更自然；<br />
+11.系统设置 系统设置位于主面板背面，可用鼠标右键手势进行3D翻转，修改设置更快捷。</p>
+<p><img src="http:&#47;&#47;www.cnbeta.com&#47;articles&#47;pic&#47;down.gif" alt="" &#47;><strong>下载:<&#47;strong><a href="http:&#47;&#47;dl_dir.qq.com&#47;qqfile&#47;qq&#47;QQ2010&#47;QQConceptBeta1.1_chs.exe" target="_blank">QQ 概念版<&#47;a><a rel="attachment wp-att-669" href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;04&#47;22&#47;qq-%e6%a6%82%e5%bf%b5%e7%89%88%e4%b8%8b%e8%bd%bd%e5%9c%b0%e5%9d%80&#47;qq&#47;"><img class="aligncenter size-full wp-image-669" title="qq" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;04&#47;qq.png" alt="" width="79" height="90" &#47;><&#47;a></p>

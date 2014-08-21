@@ -1,0 +1,38 @@
+---
+layout: post
+status: publish
+published: true
+title: http的三种交互模式
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1346
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1346
+date: !binary |-
+  MjAxMC0wOC0xMSAyMDowNDo0MyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0xMSAxMjowNDo0MyArMDgwMA==
+categories:
+- WEB服务器技术
+- WEB前端技术
+- WEB应用
+tags: []
+comments: []
+---
+<p>from: <a href="http:&#47;&#47;meteorserver.org&#47;interaction-modes&#47;">http:&#47;&#47;meteorserver.org&#47;interaction-modes&#47;<&#47;a></p>
+<p><img src="http:&#47;&#47;meteorserver.org&#47;interaction-modes&#47;stream.png" alt="Network traffic diagram demonstrating streaming" width="528" height="132" &#47;></p>
+<p>To stream data, a client initiates a request, the server's response begins immediately, and continues indefinitely until the client closes the connection. This would seem to be the ideal method of interaction - events can be pushed out as they happen on a pre-established connection, the resources spent opening and closing sockets are minimised, and since the connection has already been negoitiated, no additional headers or wrapper content are required so the use of bandwidth is also very efficient.</p>
+<p>The problems with streaming are evident when the connection is routed to, or via, hosts that are not willing to play ball with this style of interaction. First, web browsers often wait for the entire response to complete before processing it. Second, proxy servers often wait for a response to complete before passing it on to the client, so streaming connections may never get received.</p>
+<p>On the server side there are issues as well. By having no timeout on connections, it's possible for lots of zombie connections to slowly build up, particularly if the client has failed to disconnect but is no longer listening to the response. This is particularly the case with proxy caches that try to finish downloading files even when their client has disconencted, so that it's cached for the next request. And even assuming no zombie connections, there is still the issue of conccurrency - thousands of open sockets with not very much happening on most of them at any given moment.</p>
+<p>Overall, streaming connections are still a very compelling choice where the browser can cope with reading a partially downloaded response, and there are no buffers in the way.</p>
+<p><img src="http:&#47;&#47;meteorserver.org&#47;interaction-modes&#47;shortpoll.png" alt="Network traffic diagram demonstrating short polling" width="528" height="132" &#47;></p>
+<p>Short polling cannot pretend to even emulate pushing data to the client, but it is one step up from refreshing an entire page. Using AJAX, the client connects to the server and requests new events. The server sends an immediate response containing the events that have occured since the client last requested an update, and closes the connection. The client waits a predetermined interval and initiates another request.</p>
+<p>Using this method, client and server spent the majority of their time not connected to each other, with the regular periodic polling connections being answered and closed by the server within a few milliseconds. This reduces the number of concurrent connections required of the server, but if there are lots of subscribers and the updates being requested by each one require an expensive but repetitive backend operation (like a database query), the server can rapidly become overloaded doing unnecessary tasks over and over again. Meteor addresses this by storing the events in memory and answering polling requests directly from the memory cache, avoiding repetitive database or disk access. This means that even though Meteor is designed to deal with long-lived connections, it is still worth using for polling as well.</p>
+<p>Short polling is the most reliable way of updating data that will generally survive most browser and connection setups, but it's hardly ideal as it's not particularly scalable and the client is by no means receiving updates as they happen.</p>
+<p><img src="http:&#47;&#47;meteorserver.org&#47;interaction-modes&#47;longpoll.png" alt="Network traffic diagram demonstrating long polling" width="528" height="132" &#47;></p>
+<p>Sounds like it's time for a happy middle ground between streaming and short polling, doesn't it? Well, long polling may well fit the bill. The client initiates a request, and if the server has events pending, it sends them and closes the connection, much like short polling. But if the server does not have any events waiting, it holds the connection open until an event occurs, at which point it send the event and closes the connection. The client can then initiate a new connection immediately, since all the waiting is done at the server end.</p>
+<p>The obvious benefit to this is that the client can treat the interaction as a simple 'request-response' and wait for it to complete before processing it rather than having to sniff the response as it loads. It works through proxies and is more resilient to connections dropping. And since the server is actively closing connections all the time, the chance of long-lived zombie connections is much reduced. On the negative side, there is a need to create and close many more connections than for a stream, one for each event that is sent (but far fewer than for short polling, because the server no longer has the thankless task of responding to millions of repeated requests with "no updated events available"). Also events may be slightly delayed if they occur in rapid succession while the client is reinitiating a new connection after the last update.</p>

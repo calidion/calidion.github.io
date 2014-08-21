@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: ln创建目录链接所出现的问题。
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1410
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1410
+date: !binary |-
+  MjAxMC0xMC0yMiAxNDozODo0NSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0xMC0yMiAwNjozODo0NSArMDgwMA==
+categories:
+- Linux
+tags: []
+comments: []
+---
+<p>在当前非root用户下,使用命令<br />
+ln&nbsp;-s&nbsp;dir1&nbsp;dir2<br />
+能进入dir2<br />
+但是<br />
+不同的用户时ln&nbsp;-s&nbsp;dir1&nbsp;dir2&nbsp;就无法进入dir2</p>
+<p>解决的办法是将两个目录的用户属性设置成一致。<br />
+a. 对于root账号的目录，我们可以将本地(非root)的目录修改成root.root属性, 同时让目录可以为其它用户所修改<br />
+chown -R root.root localdir<br />
+chmod -R 777 localdir<br />
+b. 对于非root的目录,可以尝试<br />
+chown -R eric.eric localdir<br />
+chmod -R 777 localdir</p>

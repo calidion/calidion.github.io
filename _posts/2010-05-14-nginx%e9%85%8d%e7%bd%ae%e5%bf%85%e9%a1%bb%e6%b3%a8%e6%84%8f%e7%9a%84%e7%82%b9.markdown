@@ -1,0 +1,52 @@
+---
+layout: post
+status: publish
+published: true
+title: nginx配置必须注意的点
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1027
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1027
+date: !binary |-
+  MjAxMC0wNS0xNCAyMjo0NDo1NyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xNCAxNDo0NDo1NyArMDgwMA==
+categories:
+- nginx
+tags:
+- nginx
+comments: []
+---
+<p>1. 必须添加默认的处理过程，代码如下：</p>
+<p>http {</p>
+<p>server {</p>
+<p>server_name _;</p>
+<p>location &#47; {<br />
+index index.html;<br />
+root  &#47;var&#47;www&#47;nginx-default&#47;;<br />
+}</p>
+<p>}</p>
+<p>}</p>
+<p>这是参考DEBIAN包的打包与配置方式进行设置</p>
+<p>2.然后再添加域名解析过程</p>
+<p>在上面的http段里再添加上新的server 内容,如下例：</p>
+<p>http {</p>
+<p>server1 {</p>
+<p>...</p>
+<p>}</p>
+<p>server {</p>
+<p>server_name domain.com www.domain.com;</p>
+<p>location &#47; {<br />
+index index.html;<br />
+root &#47;var&#47;www&#47;nginx-default&#47;domain.com;<br />
+}</p>
+<p>}</p>
+<p>}</p>
+<p>3.这种处理方式的好处是在nginx下，你的域名对应的网址是唯一的，</p>
+<p>可以有效的避免你的域名被别人恶意绑定，导致搜索引导的收录情况变坏。</p>
+<p>4. 在第一个默认项中，你可以任意的添加你想处理的方式，非常灵活。</p>

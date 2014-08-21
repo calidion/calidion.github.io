@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 三星表示旗下的智能手机将有50%采用Android
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 850
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=850
+date: !binary |-
+  MjAxMC0wNS0wMiAyMjo1Mjo0NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wMiAxNDo1Mjo0NCArMDgwMA==
+categories:
+- 新闻
+- 3G资讯
+tags: []
+comments: []
+---
+<p>这不是开玩笑，三星高管承诺2010年三星旗下的智能手机将有50%的采用Android操作系统，33%的采用bada操作系统(bada系统是三星自有智能系统)。三星作为全球第二大手机生产商，第一季度全球出货量在6430万，其智能手机领域，有3分之1的手机采用Linux操作系统。</p>
+<p>虽然产品销量达到6430万件，同比大增40%，但是净利润仅为1.1万亿韩元，较去年同期的1.12万亿韩元略有减少。三星表示，它今年计划将智能手机销量在去年的600万部的基础上提高两倍。</p>

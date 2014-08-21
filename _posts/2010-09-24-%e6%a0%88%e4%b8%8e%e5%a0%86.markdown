@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: 栈与堆
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1384
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1384
+date: !binary |-
+  MjAxMC0wOS0yNCAxNzoxMzozNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOS0yNCAwOToxMzozNyArMDgwMA==
+categories:
+- 民工观点
+tags: []
+comments: []
+---
+<p>栈与堆是经常被放在一起比较的两个名词。<br />
+但是栈与堆在没有设定范围时，内涵是不一样的。</p>
+<p>在数据结构中：<br />
+栈是一种选进后出的数据结构，<br />
+堆是一种完全二叉树序列，满足对于任意的K,有Heap(k) <= Heap(2k + 1)  并且Heap(k) <= Heap(2k + 2), 或可将<=号换成>=.</p>
+<p>在操作系统中:<br />
+栈是一种存放临时变量与指令等相对小块的数据的结构，用来保证进程执行的正确性的一种机制，是以数据结构的栈为基础的OS组成<br />
+堆是一种对相对自由的OS内存空间，可以按照一定的方法来组织对堆空间的分配，也就是OS的内存管理，一般用于较大块的数据的存放。</p>

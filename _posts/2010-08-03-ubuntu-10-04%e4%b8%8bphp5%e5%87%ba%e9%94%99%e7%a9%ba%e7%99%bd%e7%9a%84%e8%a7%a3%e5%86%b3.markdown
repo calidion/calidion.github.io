@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: ubuntu 10.04下php5出错空白的解决
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1290
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1290
+date: !binary |-
+  MjAxMC0wOC0wMyAxNzozMToyMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wMyAwOTozMToyMiArMDgwMA==
+categories:
+- php
+tags: []
+comments: []
+---
+<p>在新发布的ububntu 10.04里，php5的apache环境配置的报错是被关闭的。<br />
+这样会一定程序上影响调试的快速性。<br />
+虽然可以在error log上可以查到。但是显然没有在前端直接显示出来来的方便。</p>
+<p>所以要让他能直接显示在页面上。<br />
+我们需要将参数修改成：<br />
+display_errors = On</p>
+<p>这样就可以显示常见的错误信息了。</p>

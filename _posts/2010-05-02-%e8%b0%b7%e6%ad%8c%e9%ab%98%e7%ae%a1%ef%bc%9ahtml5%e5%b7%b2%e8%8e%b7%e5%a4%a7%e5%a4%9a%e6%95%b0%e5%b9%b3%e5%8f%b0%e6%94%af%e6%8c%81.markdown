@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: 谷歌高管：HTML5已获大多数平台支持
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 855
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=855
+date: !binary |-
+  MjAxMC0wNS0wMiAyMjo1NjowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wMiAxNDo1NjowNiArMDgwMA==
+categories:
+- WEB前沿
+tags:
+- Android
+- Chrome
+- H.264
+- HTML5
+- iPhone
+- Opera
+- Safari
+comments: []
+---
+<p><strong>谷歌开发者业务部门高管马克&middot;皮尔格雷姆(Mark Pilgrim)在WWW2010会议上表示，尽管还需要进一步完善，HTML5已经获得大多数平台支持，适合完成大多数任务。<&#47;strong><br />
+但并非所有人都认 为HTML5已经发展成熟。市场研究公司Forrester分析师杰弗里&middot;哈蒙德 (Jeffrey Hammond)上周发表报告称，&ldquo;从长期来看，HTML5可能取代部分富互联网应用(以下简称&ldquo;RIM&rdquo;)平台，但现在还没有。HTML5将对Web应 用的开发产生重大影响，但它只是领先RIA平台的互补性而非替代性技术。&rdquo;</p>
+<p>皮尔格雷姆表示，&beta;版IE 9、Safari、Chrome、火狐和Opera都在不同程度上支持HTML5，苹果iPhone和谷歌Android也支持HTML5的许多功能。尽管并非全部HTML5功能都得到了浏览器支持，但许多主要功能都得到了支持，其中包括语义标签、表单、多媒体、地理位置和离线Web应用等。</p>
+<p>皮尔格雷姆承认，浏览器厂商在HTML5支持的视频技术方面还存在分歧。Safari只支持 H.264格式，火狐和Opera只支持Ogg Theora，Chrome同时支持这两种视频格式。微软当地时间周五发表博客文章称，IE 9将只支持H.264，这意味着IE 9不支持Ogg Theora。</p>
+<p>谷歌在 iPhone和Android版搜索应用中使用了地理位置功能，Twitter也使用了该功能。另外，谷歌在iPhone版Gmail应用中使用了离线 Web应用功能。</p>
+<p>皮尔格雷姆表示，Web开发者应当开始学习HTML5的新功能。</p>

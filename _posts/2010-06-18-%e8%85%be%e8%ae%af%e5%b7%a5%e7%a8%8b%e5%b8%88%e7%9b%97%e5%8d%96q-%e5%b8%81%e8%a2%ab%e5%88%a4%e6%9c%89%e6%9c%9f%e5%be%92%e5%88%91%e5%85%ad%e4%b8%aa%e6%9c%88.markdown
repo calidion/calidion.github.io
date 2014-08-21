@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 腾讯工程师盗卖Q 币被判有期徒刑六个月
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1189
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1189
+date: !binary |-
+  MjAxMC0wNi0xOCAwOTo1MjozMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0xOCAwMTo1MjozMCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>轻点一下鼠标，修改几个数据，或许就能得到荣华富贵，腾讯的电脑工程师蔡某最终难以控制自己伸出犯罪的手。近日，南山区人民法院对南山区人民检察院起诉的 蔡某职务侵占案作出了一审判决，判处蔡某有期徒刑六个月，缓刑一年。</p>
+<p>案情显示，蔡某是深圳市腾讯计算机信息系统有限公司数据平台部工程师，主要负责声讯、发行系统的维护，同时也是QQ数据卡系统备份的负责人。 2009年11月底，蔡某利用自己能登录QQ卡数据系统并进行操作的职务便利，使用自己的操作权限更改过期的QQ卡的使用期限及余额，然后将QQ卡按其所含Q币的价值以7.8或8折的价格在淘宝网进行销售，共售出Q币约4万元，非法获利人民币35234.23元。</p>
+<p>《广州日报》</p>

@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: 给Ubuntu另一种色彩
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 96
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=96
+date: !binary |-
+  MjAxMC0wMS0yNiAxNDozMToyNyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNjozMToyNyArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Blubuntu
+comments: []
+---
+<p>我想很多人不喜欢Ubuntu默认的土黄色。<br />
+包括我，也很不喜欢。<br />
+我更喜欢蓝色。<br />
+我因此寻找了很久。<br />
+不过工夫不负有心人，还真让我找到了。<br />
+并且这个主题还是Ubuntu官方支持的。<br />
+官方链接：https:&#47;&#47;wiki.ubuntu.com&#47;Artwork&#47;Incoming&#47;Blubuntu</p>
+<p>1.首先安装<br />
+sudo apt-get install gtk2-engines-ubuntulooks</p>
+<p>2.然后<br />
+sudo apt-get install blubuntu-look<br />
+或者<br />
+sudo apt-get install blubuntu-*</p>
+<p>这样你就可以享受美丽的Ubuntu蓝色界面了。<br />
+3.然后分别点击菜单上的<br />
+系统->首选项->外观</p>
+<p>4. 在[主题]栏下面会多出来一个Blubuntu外观.并原来的Human主题已经被删除.<br />
+选中Blubuntu就可以体验新的Ubuntu风格了.<br />
+选后会提示你有一个背景,选择应用就可以得到下面的桌面效果了.</p>
+<p>无图无真相，上图了。<br />
+<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747800.jpg"><img src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747800.jpg" alt="" title="4229724475032747800" width="1400" height="1050" class="aligncenter size-full wp-image-97" &#47;><&#47;a></p>

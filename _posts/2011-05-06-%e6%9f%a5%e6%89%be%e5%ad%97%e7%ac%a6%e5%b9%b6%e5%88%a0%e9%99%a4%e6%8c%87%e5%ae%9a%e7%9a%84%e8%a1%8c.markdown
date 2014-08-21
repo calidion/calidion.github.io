@@ -1,0 +1,32 @@
+---
+layout: post
+status: publish
+published: true
+title: 查找字符并删除指定的行
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1460
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1460
+date: !binary |-
+  MjAxMS0wNS0wNiAxMDo1NDo1NiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMS0wNS0wNiAwMjo1NDo1NiArMDgwMA==
+categories:
+- Shell
+- Linux
+tags: []
+comments: []
+---
+<p>file="a.txt"<br />
+pattern=$1<br />
+repalcement=$2<br />
+lineNumber=$3<br />
+li=`cat $file | grep -n $pattern | sed s&#47;:&#47; &#47; | awk '{print$1}' | sed -n ${lineNumber}p`<br />
+li2=$((li))<br />
+echo $li2<br />
+sed "$li,${li}s&#47;${pattern}&#47;${repalcement}&#47;" $file</p>

@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: fcitx 面板消失的解决办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1034
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1034
+date: !binary |-
+  MjAxMC0wNS0xNyAxNjo0ODo1NiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xNyAwODo0ODo1NiArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- fcitx
+- Linux
+- Ubuntu
+- 输入法
+comments: []
+---
+<p>目前的Linux下面的输入法软件最好的用的感觉还是fcitx.</p>
+<p>不管是拼音，还是五笔，切换非常方便。</p>
+<p>但是他有一个问题就是经常会隐藏掉状态条。</p>
+<p>而这对于初用fcitx的人会造成一定的困扰。</p>
+<p>下面我说明一下调用显示回fcitx的办法：</p>
+<p>1.选择需要输入的地点</p>
+<p>2.用 [ctrl+空格] 调出输入文字的框</p>
+<p>3.这时再按下[ctrl+alt+H]就可以设置状态条的显示还是隐藏了</p>
+<p>注意: 经过测试，在fcitx的输入框没有打开时，不能调节状态框。</p>

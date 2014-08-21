@@ -1,0 +1,57 @@
+---
+layout: post
+status: publish
+published: true
+title: js实现的快速排序
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1586
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1586
+date: !binary |-
+  MjAxMy0wOS0wNiAwMzo0MToyMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0wOS0wNSAxOTo0MToyMSArMDgwMA==
+categories:
+- 其它
+tags: []
+comments: []
+---
+<p>快速排序是一种平均性能非常优秀的排序算法，在很多场合都会应用到他。<br />
+了解快速排序于对开放高效率的软件有很重要的作用。</p>
+<p>但是有不少的书本讲得并不是很清楚，而且不同的教材的实现方式也不尽相同，<br />
+我这里将最简单的快速排序的思路写出来供大家参考。</p>
+<p>希望不管是使用什么语言都能从这个简单的代码里很方便的掌握快排思路与编写方式</p>
+<pre name="code" language="js">
+<p>function quick_sort(list, start, end) {<br />
+  if (start < end) {<br />
+    var pivotpos = partition(list, start, end);   &#47;&#47;找出快排的基数<br />
+    quick_sort(list, start, pivotpos - 1);        &#47;&#47;将左边的快排一次<br />
+    quick_sort(list, pivotpos + 1, end);          &#47;&#47;将右边的快排一次<br />
+  }<br />
+}</p>
+<p>&#47;&#47;将一个序列调整成以基数为分割的两个区域，一边全都不小于基数，一边全都不大于基数<br />
+function partition(list, start, end) {<br />
+  var pivotpos = start;<br />
+  var pivot = list[start];<br />
+  var tmp;<br />
+  for(var i = start + 1; i <= end; i ++) {<br />
+    if (list[i] < pivot) {<br />
+      tmp = list[i];<br />
+      pivotpos += 1;<br />
+      list[i] = list[pivotpos];<br />
+      list[pivotpos] = tmp;<br />
+    }<br />
+  }</p>
+<p>  tmp = list[start];<br />
+  list[start] = list[pivotpos];<br />
+  list[pivotpos] = tmp;<br />
+  return pivotpos;<br />
+}</p>
+<p>var list = [8,2,4,65,2,4,7,1,9,0,2,34,12];</p>
+<p>quick_sort(list, 0, list.length);<br />
+<&#47;pre></p>

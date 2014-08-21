@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: 日本家电连锁巨头网上商城全面停售苹果产品
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 812
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=812
+date: !binary |-
+  MjAxMC0wNC0yNyAxODozMzoxMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNyAxMDozMzoxMCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>继26日爆出淀桥相机、 BIC相机两大相机系巨头旗下网上商城停售苹果产品之后，山田电机、小岛电器等家电连锁巨头加入停售行列。据悉，目前家电连锁等大半网络营销网站，已经开始停售苹果公司iPod、iMac等产品，但苹果及 关联方网站均未公布具体停售原因。<&#47;strong>淀桥相机邮购网站发布通告称称，据&ldquo;苹果公司的意 向&rdquo;，23日后将全面停售苹果产品，并表示：&ldquo;敬请顾客光临店铺购买&rdquo;。山田电机在线购物网站则表示苹果产品已全部售完，目前正在开展收尾工作。BIC 相机也表示：&ldquo;苹果产品将转向店铺零售。&rdquo;已经终止苹果产品网上销售的小岛电器商品本部则表示：&ldquo;本公司什么都不能说。&rdquo;上新电机自27日开始也将全面停 售苹果产品在线零售。</p>
+<p>27日上午时，苹果产品被限定在美国亚马逊日本网站等部分在线 店铺销售。</p>
+<p>另一方面，苹果公司日本法人则表示：&ldquo;负责人不在，无法作出评论。&rdquo;但 是，有关方面表示，苹果此举基于对网络邮购将其产品低价销售，可能对其销售及品牌形象产生不利影响的判断，因而对网购采取限制措施。</p>
+<p><strong>新闻链接：日本两大连锁巨头网店停售苹果产品<&#47;strong></p>
+<p>日前日本第一大相机系家电连锁(行业第3位)，旗下仅21家门店年销售规模达7000多亿日元(约 合RMB500亿元)的淀桥相机发布公告称，根据苹果公司要求，该公司网络营销网站Yodobashi.com及电话购物&ldquo;HiYodobashi&rdquo;将停 售苹果iPad、iPhone、iPod、MacBook、iMac等全线产品，仅在其全日本21家实体门店销售。</p>
+<p>同时，日本第二大相机系家电连锁(行业第5位)的BIC相机旗下邮购网站Bic Camera.com，则iPad、Mac等产品页面则显示：苹果产品未在网络销售。该公司旗下Sofmap网购页面上则显示：苹果产品均在店内销售，请 直接光临店铺后购买。</p>
+<p>另外，苹果Apple Store、Amazon.co.jP以及苹果产品专卖店的Kitcut(奇巧)网上商店，自26日开始则可以直接在线购买iPad、iPod、Mac、 iPhone等苹果产品。</p>
+<p>再者，在线的Apple Store，Amazon.co.jp，在作为苹果产品专卖店的kitcut(奇巧)的网上商店，iPod和Mac等26日现在也变成购买可能。 其他家电连锁及消费电子零售商在线购物网站是否将受要停售苹果产品，有待进一步观察。</p>

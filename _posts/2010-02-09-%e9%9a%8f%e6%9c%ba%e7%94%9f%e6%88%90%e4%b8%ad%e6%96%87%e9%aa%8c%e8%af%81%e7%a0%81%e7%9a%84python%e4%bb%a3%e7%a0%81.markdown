@@ -1,0 +1,100 @@
+---
+layout: post
+status: publish
+published: true
+title: 随机生成中文验证码的python代码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 354
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=354
+date: !binary |-
+  MjAxMC0wMi0wOSAxMTozMzo1MyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMi0wOSAwMzozMzo1MyArMDgwMA==
+categories:
+- 编程技术
+tags: []
+comments: []
+---
+<p>随机生成中文验证码的python代码<br />
+需要准备字体文件，或者通过fontPath参数指定。<br />
+默认是我用的字体wqy.ttc.<br />
+代码如下:</p>
+<pre name="code" class="py">
+# -*- coding: utf-8 -*-<br />
+import Image,ImageDraw,ImageFont<br />
+import random<br />
+import math, string</p>
+<p>class RandomChar():<br />
+  """用于随机生成汉字"""<br />
+  @staticmethod<br />
+  def Unicode():<br />
+    val = random.randint(0x4E00, 0x9FBF)<br />
+    return unichr(val)</p>
+<p>  @staticmethod<br />
+  def GB2312():<br />
+    head = random.randint(0xB0, 0xCF)<br />
+    body = random.randint(0xA, 0xF)<br />
+    tail = random.randint(0, 0xF)<br />
+    val = ( head << 8 ) | (body << 4) | tail<br />
+    str = "%x" % val<br />
+    return str.decode('hex').decode('gb2312')</p>
+<p>class ImageChar():<br />
+  def __init__(self, fontColor = (0, 0, 0),<br />
+                     size = (100, 40),<br />
+                     fontPath = 'wqy.ttc',<br />
+                     bgColor = (255, 255, 255),<br />
+                     fontSize = 20):<br />
+    self.size = size<br />
+    self.fontPath = fontPath<br />
+    self.bgColor = bgColor<br />
+    self.fontSize = fontSize<br />
+    self.fontColor = fontColor<br />
+    self.font = ImageFont.truetype(self.fontPath, self.fontSize)<br />
+    self.image = Image.new('RGB', size, bgColor)</p>
+<p>  def rotate(self):<br />
+    self.image.rotate(random.randint(0, 30), expand=0)</p>
+<p>  def drawText(self, pos, txt, fill):<br />
+    draw = ImageDraw.Draw(self.image)<br />
+    draw.text(pos, txt, font=self.font, fill=fill)<br />
+    del draw</p>
+<p>  def randRGB(self):<br />
+    return (random.randint(0, 255),<br />
+           random.randint(0, 255),<br />
+           random.randint(0, 255))</p>
+<p>  def randPoint(self):<br />
+    (width, height) = self.size<br />
+    return (random.randint(0, width), random.randint(0, height))</p>
+<p>  def randLine(self, num):<br />
+    draw = ImageDraw.Draw(self.image)<br />
+    for i in range(0, num):<br />
+      draw.line([self.randPoint(), self.randPoint()], self.randRGB())<br />
+    del draw</p>
+<p>  def randChinese(self, num):<br />
+    gap = 5<br />
+    start = 0<br />
+    for i in range(0, num):<br />
+      char = RandomChar().GB2312()<br />
+      x = start + self.fontSize * i + random.randint(0, gap) + gap * i<br />
+      self.drawText((x, random.randint(-5, 5)), RandomChar().GB2312(), self.randRGB())<br />
+      self.rotate()<br />
+    self.randLine(18)</p>
+<p>  def save(self, path):<br />
+    self.image.save(path)<br />
+<&#47;pre><br />
+调用方法：</p>
+<pre class="py">
+ic = ImageChar(fontColor=(100,211, 90),<br />
+   fontPath='&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc')<br />
+ic.randChinese(4)<br />
+ic.save("1.jpeg")<br />
+<&#47;pre><br />
+效果图：<br />
+<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;02&#47;11.jpeg"><img class="aligncenter size-full wp-image-358" title="1" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;02&#47;11.jpeg" alt="" width="100" height="40" &#47;><&#47;a><br />
+注意需要保证：<br />
+fontPath所指定的中文字体文件是存在的</p>

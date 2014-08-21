@@ -1,0 +1,31 @@
+---
+layout: post
+status: publish
+published: true
+title: Android用户版本分布更新 2.1版领先
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1043
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/05/19/android%e7%94%a8%e6%88%b7%e7%89%88%e6%9c%ac%e5%88%86%e5%b8%83%e6%9b%b4%e6%96%b0-2-1%e7%89%88%e9%a2%86%e5%85%88/
+date: !binary |-
+  MjAxMC0wNS0xOSAwOTo1Nzo1NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0xOSAwMTo1Nzo1NCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>来Android开发者网站的消息，Google更新了Android系统平台版本分布统计，截止到 5月17日，<strong>Android 2.1版<&#47;strong>系统已经占据<strong>37.2%<&#47;strong>的终端量，排名第 一。直到今年四月，Google都是每隔数个月才更新发布一次版本分布统计。由于版本的增多，特别是即将发布的Android 2.2版系统，会让Android平台系统版本分裂说重现，Google现在开始每隔几个星期就会张贴新的分布统计图。</p>
+<p><a href="http:&#47;&#47;news.mydrivers.com&#47;Img&#47;20100519&#47;09043401.jpg" target="_blank"><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100519&#47;09294801265475988.jpg" alt="Android用户版本分布更新  2.1版领先" width="550" height="213" &#47;><&#47;a></p>
+<p>之前Android 1.5和1.6一直占据着Android手机系统版本的绝大多数份额，但是最新的数字显示Android 2.1版系统已经开始领先，这说明有不少用户已经选择了官方推出的升级包，或者自行使用第三方ROM进行了版本升级。</p>
+<p>Google此前曾表示，Android 2.2版系统的主要目标是帮助所有的设备提升速度，尽量让<strong>所有的设备都得到升级<&#47;strong>， 以让Android设备形成统一体系。</p>
+<p>但是大家应该注意到，目前Android设备更新2.1版系统的进程中，设备制造商和运营商到底起了多大的推动作用。尽管Google会面临版本更 新所带来的繁琐的BUG修复完善等工作，但是很明显，用户手机能否升级还要<strong>取决于制造商和运营商<&#47;strong>。</p>
+<p>像HTC和索尼爱立信生产的Android手机，这种情况会更加突出，<strong>HTC的Sense界面<&#47;strong>和<strong>索 尼爱立信的Skin Android界面<&#47;strong>需要构建在操作系统的框架内部，一旦有新版本的系统，移植皮肤就需要花费大量的时间。这也是<strong>HTC 多次推迟旗下手机升级<&#47;strong>新版Android系统的原因。同时这种情况也导致了国内外第三方ROM制作的兴起。</p>
+<p>期待本周开幕的I&#47;O大会中，Google将会发布新版冻酸奶系统，同时会就Android版本过多的问题进行讨论。</p>
+<p>编译&#47;驱动之家</p>

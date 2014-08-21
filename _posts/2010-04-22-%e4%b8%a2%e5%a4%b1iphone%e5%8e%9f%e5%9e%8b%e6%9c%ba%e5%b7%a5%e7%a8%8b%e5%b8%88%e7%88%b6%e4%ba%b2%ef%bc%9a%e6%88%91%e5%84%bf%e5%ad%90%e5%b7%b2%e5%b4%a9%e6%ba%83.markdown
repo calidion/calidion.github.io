@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: 丢失iPhone原型机工程师父亲：我儿子已崩溃
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 650
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=650
+date: !binary |-
+  MjAxMC0wNC0yMiAxNDoxODo1NyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMiAwNjoxODo1NyArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100422&#47;1125350703984341.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100422&#47;1125350703984341.jpg" &#47;></p>

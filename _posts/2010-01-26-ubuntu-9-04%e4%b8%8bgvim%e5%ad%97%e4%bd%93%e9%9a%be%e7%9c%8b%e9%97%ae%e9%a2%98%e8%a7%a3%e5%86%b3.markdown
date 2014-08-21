@@ -1,0 +1,34 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 9.04下Gvim字体难看问题解决
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 222
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=222
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzoyNTo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOToyNTo0MiArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Gvim
+- Ubuntu
+- Vim
+- 字体
+comments: []
+---
+<p>在gvimrc里添加</p>
+<p>if has('gui_gtk2')<br />
+set guifont=Monospace 12<br />
+set guifontwide=WenQuanYi_ZenHei 12<br />
+else<br />
+set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1<br />
+endif</p>

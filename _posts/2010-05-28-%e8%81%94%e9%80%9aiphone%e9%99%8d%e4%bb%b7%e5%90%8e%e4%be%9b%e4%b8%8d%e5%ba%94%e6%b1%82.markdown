@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: 联通iPhone降价后供不应求
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1079
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1079
+date: !binary |-
+  MjAxMC0wNS0yOCAxMDo1MTo1MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0yOCAwMjo1MTo1MiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>昨日，联通渠道商透露，经过&ldquo;五一&rdquo;开始实施的iPhone合约计划资费下调后，目前市面上iPhone手机缺货，尤其是16G产品。中国联通方面表示， 已经对有购买意向的用户进行预售登记。<br />
+该渠道商负责人表示，价格下调还不到1个月，联通iPhone的销量环比增长已近100%，首次出现供不应求局面。据了解，中国联通5月1日开始执行新的 3G资费，与iPhone的合约计划也将同时变更，最低档月费由126元降至96元，以预存话费方式参与的合约价格也下降1000元左右。</p>
+<p>联通iPhone&ldquo;24个月合约计划&rdquo;调整后，总体降价幅度达20%。从中国联通各地营业厅和代理渠道的销售点可看到，许多地方iPhone缺货，用户签约后要过一段时间才能拿到iPhone手机，目前尤其是16G版本的iPhone手机严重缺货。</p>
+<p>昨日，记者从中国联通获悉，该公司一方面对有购买意向的用户进行预售登记，这样可以保证用户在新品到货的第一时间拿到手机。另一方面，联通正在向生产商积极申请货源，预计缺货情况过一段时间将缓解。</p>
+<p>最近一段时间，市场上关于&ldquo;WiFi版iPhone今年6月份上市&rdquo;的传言很多，中国联通相关负责人表示，目前尚无法证实上述信息。</p>

@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: 移动TD用户数爆炸性剧增的原因
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 768
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=768
+date: !binary |-
+  MjAxMC0wNC0yNSAyMDoyNToyMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNSAxMjoyNToyMSArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>近期，中国移动在其官方网站上公布了2010年3月新增的3G用户人数，数据显示，截止到3月31日，中国移动TD用户已达769万户，其中3月净增341万户，是2月份新增TD用户数的将近9倍，与之前相比，TD用户在一个月间呈现迅猛增长，比起其他两家运行商要高出很多。如此大的变化，是因为中国移动3G比其他两家运行商有着显著优势，使3G发展迈上了一个新台阶，还是这数字背后另有隐情呢？<br />
+中国移动官网显示：&ldquo;2010年3月，本公司使用3G终端的G3客户数为769万户。&rdquo;有心的人可能会发现，此处的字眼与之前是不同的。之前两个月中国移动公布数据的口径，是&ldquo;使用3G网络服务&rdquo;的人数，而到了3月则改为了&ldquo;本公司使用3G终端&rdquo;的人数，&ldquo;终端&rdquo;二字不同寻常。<br />
+其实对于中国移动3G公布的数字的真实性，早之前就有人质疑。2010年年初，北京邮电大学教授阚凯力曾经直言：&ldquo;3G用户数据有水分，中移动在吹牛。&rdquo;&ldquo;中国移动为了推广3G，曾提出三不政策：不换号、不换卡、不登记，也就是说从电信运营商这端，根本不知道这个号码到底是2G用户，还是3G用户，统计数据怎么出来的呢?&rdquo;&ldquo;更有趣的是，三家电信运营商分别公布的数据，加总后与工信部公布的数据也不一致，说明3G用户的数字根本不可信。&rdquo;<br />
+而且他认为，如果卖出一个终端就算一个用户的话，那还统计什么用户数呢？直接统计终端出货量就好了。<br />
+而不幸被其言中，今年3月中国移动官网的3G数据还真的采用了&ldquo;终端&rdquo;这个字眼&mdash;&mdash;&ldquo;2010年3月，本公司使用3G终端的G3客户数为769万户。&rdquo;<br />
+著名电信分析师付亮在接受相关媒体采访时曾表示，&ldquo;中国移动在TD用户统计上的口径有些模糊，如果按照&lsquo;本月使用G3服务的用户&rsquo;来看，TD用户不仅包括TD&#47;GSM双模手机用户，还有TD信息机、TD固话的用户，这些用户都可以算作是使用G3服务&rdquo;。</p>
+<p>根据中国移动官方网站公布的数据。<br />
+<strong><span style="color: blue;">2010年1月，本公司本月使用3G网络服务的G3客戶数为389.8万户。<br />
+2010年2月，本公司使用3G网络服务的G3客戶数为428.0万户。<br />
+2010年3月，本公司使用3G终端的G3客户数为769万户。<br />
+3个月，3句不同的表述，口径从1月的&ldquo;本公司本月使用3G网络服务&rdquo;，到2月的&ldquo;本公司使用3G网络服务&rdquo;，再到3月的&ldquo;本公司使用3G终端&rdquo;，变化太明显了吧。<br />
+3月用户数为什么剧增，再明白不过了吧<&#47;span>？<&#47;strong></p>

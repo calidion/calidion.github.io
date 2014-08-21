@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: 一些有用的HTTP相关的网站
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 190
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=190
+date: !binary |-
+  MjAxMC0wMS0yNiAxNjo1OTo0NCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwODo1OTo0NCArMDgwMA==
+categories:
+- WEB开发
+tags:
+- HTTP
+comments: []
+---
+<p>一些有用的地址：<br />
+HTTP协议：http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc2616.txt<br />
+URI规范：http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc3986.txt</p>
+<div>
+<ul>
+<li><a href="http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc2616.txt">Hypertext Transfer Protocol -- HTTP&#47;1.1<&#47;a>
+<div>RFC 2616, published by IETF<&#47;div><&#47;li></p>
+<li><a href="http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc2617.txt">HTTP Authentication: Basic and Digest Access Authentication<&#47;a>
+<div>RFC 2617, published by IETF<&#47;div><&#47;li></p>
+<li><a href="http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc2518.txt">HTTP Extensions for Distributed Authoring -- WEBDAV<&#47;a>
+<div>RFC 2518, published by IETF<&#47;div><&#47;li></p>
+<li><a href="http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc3253.txt">Versioning Extensions to WebDAV<&#47;a>
+<div>RFC 3253, published by IETF<&#47;div><&#47;li></p>
+<li><a href="http:&#47;&#47;www.ietf.org&#47;rfc&#47;rfc3986.txt">Uniform Resource Identifier (URI): Generic Syntax<&#47;a>
+<div>RFC 3986, published by IETF<&#47;div><&#47;li><br />
+<&#47;ul><br />
+<&#47;div></p>

@@ -1,0 +1,118 @@
+---
+layout: post
+status: publish
+published: true
+title: 修改Ubuntu 10.04默认字体的办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1154
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1154
+date: !binary |-
+  MjAxMC0wNi0wNiAwMTowOTozNSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wNSAxNzowOTozNSArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Ubuntu
+comments: []
+---
+<p>1.首先要将avail里的文件创建软连接到conf.d目录下</p>
+<pre name="code" class="bash">
+cd &#47;etc&#47;fonts&#47;conf.d&#47;<br />
+sudo ln -s ..&#47;conf.avail&#47;69-language-selector-zh-cn.conf<br />
+<&#47;pre><br />
+2.然后编译这个软连接过来的文件</p>
+<pre name="code" class="bash">
+sudo gedit 69-language-selector-zh-cn.conf<br />
+<&#47;pre><br />
+3. 这个时候你就可以根据自己的需要添加或者删除字体配置，<br />
+下面是我的字体配置，<br />
+我在这里重新配置了一下Sans字体：</p>
+<pre name="code" class="xml">
+<?xml version="1.0"?><br />
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd"><br />
+<fontconfig></p>
+<p>	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>Sans<&#47;string><br />
+		<&#47;test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans<&#47;string><br />
+			<string>Bitstream Vera Sans<&#47;string><br />
+			<string>WenQuanYi Micro Hei<&#47;string><br />
+			<string>WenQuanYi Zen Hei<&#47;string><br />
+			<string>HYSong<&#47;string><br />
+			<string>AR PL UMing CN<&#47;string><br />
+			<string>AR PL UMing HK<&#47;string><br />
+			<string>AR PL ShanHeiSun Uni<&#47;string><br />
+			<string>AR PL New Sung<&#47;string><br />
+			<string>WenQuanYi Bitmap Song<&#47;string><br />
+			<string>AR PL UKai CN<&#47;string><br />
+			<string>AR PL ZenKai Uni<&#47;string><br />
+		<&#47;edit><br />
+	<&#47;match> </p>
+<p>	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>serif<&#47;string><br />
+		<&#47;test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Serif<&#47;string><br />
+			<string>Bitstream Vera Serif<&#47;string><br />
+			<string>WenQuanYi Micro Hei<&#47;string><br />
+			<string>WenQuanYi Zen Hei<&#47;string><br />
+			<string>HYSong<&#47;string><br />
+			<string>AR PL UMing CN<&#47;string><br />
+			<string>AR PL UMing HK<&#47;string><br />
+			<string>AR PL ShanHeiSun Uni<&#47;string><br />
+			<string>AR PL New Sung<&#47;string><br />
+			<string>WenQuanYi Bitmap Song<&#47;string><br />
+			<string>AR PL UKai CN<&#47;string><br />
+			<string>AR PL ZenKai Uni<&#47;string><br />
+		<&#47;edit><br />
+	<&#47;match><br />
+	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>sans-serif<&#47;string><br />
+		<&#47;test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans<&#47;string><br />
+			<string>Bitstream Vera Sans<&#47;string><br />
+			<string>WenQuanYi Micro Hei<&#47;string><br />
+			<string>WenQuanYi Zen Hei<&#47;string><br />
+			<string>Droid Sans Fallback<&#47;string><br />
+			<string>HYSong<&#47;string><br />
+			<string>AR PL UMing CN<&#47;string><br />
+			<string>AR PL UMing HK<&#47;string><br />
+			<string>AR PL ShanHeiSun Uni<&#47;string><br />
+			<string>AR PL New Sung<&#47;string><br />
+			<string>AR PL UKai CN<&#47;string><br />
+			<string>AR PL ZenKai Uni<&#47;string><br />
+		<&#47;edit><br />
+	<&#47;match><br />
+	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>monospace<&#47;string><br />
+		<&#47;test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans Mono<&#47;string><br />
+			<string>Bitstream Vera Sans Mono<&#47;string><br />
+			<string>WenQuanYi Micro Hei Mono<&#47;string><br />
+			<string>WenQuanYi Zen Hei Mono<&#47;string><br />
+			<string>Droid Sans Fallback<&#47;string><br />
+			<string>HYSong<&#47;string><br />
+			<string>AR PL UMing CN<&#47;string><br />
+			<string>AR PL UMing HK<&#47;string><br />
+			<string>AR PL ShanHeiSun Uni<&#47;string><br />
+			<string>AR PL New Sung<&#47;string><br />
+			<string>AR PL UKai CN<&#47;string><br />
+			<string>AR PL ZenKai Uni<&#47;string><br />
+		<&#47;edit><br />
+	<&#47;match> </p>
+<p><&#47;fontconfig><br />
+<&#47;pre></p>

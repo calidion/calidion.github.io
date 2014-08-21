@@ -1,0 +1,30 @@
+---
+layout: post
+status: publish
+published: true
+title: 李彦宏看好互联网技术创业 目前环境很适合
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1075
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1075
+date: !binary |-
+  MjAxMC0wNS0yOCAxMDo0ODoyMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0yOCAwMjo0ODoyMCArMDgwMA==
+categories:
+- 新闻
+tags:
+- 李彦宏
+- 百度
+comments: []
+---
+<p>昨日，百度CEO李彦宏应在做客中关村创业讲坛时向在座的青年创业者还海外留学生讲述创业历程、分享创业经验。<br />
+李彦宏谈到，中国目前所处的时代非常适合创业，中关村为创业者提供了成功的沃土，而互联网也将是更多技术创业者的舞台。中国互联网的发展和活力不仅要靠大 的互联网企业，也离不开众多中小创业者不断的技术创新。</p>
+<p>李彦宏表示，希望看到更多技术出身的人能够真正通过技术实现创业成功，百度也将通过框计算开放平台以及百度联盟平台帮助更多技术创业者实现梦想。</p>
+<p>在谈及创业实践问题时，李彦宏送给与会者简单凝练的十二字箴言&ldquo;认准了，就去做；不跟风，不动摇&rdquo;。他指出创业不是一个很轻松的事情，而是一个高风险高回报的事情，就像&ldquo;百慕大三角&rdquo;虽然很神秘漂亮，但也被誉为魔鬼三角，充满危险。</p>
+<p>他将创业中最容易出现致命问题的三大因素&ldquo;团队、融资、商业模式&rdquo;形象的比喻为&ldquo;创业的百慕大三角&rdquo;，并结合自身经验就如何逾越这个危险三角提出了创业七招。他同时鼓励青年创业者在这个最好的时代肩负起责任，做出有世界级影响力的企业。</p>

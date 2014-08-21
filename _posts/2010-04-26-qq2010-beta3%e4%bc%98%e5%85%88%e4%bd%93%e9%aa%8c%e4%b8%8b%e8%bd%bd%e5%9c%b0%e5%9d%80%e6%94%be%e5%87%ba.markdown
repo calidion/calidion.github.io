@@ -1,0 +1,25 @@
+---
+layout: post
+status: publish
+published: true
+title: QQ2010 Beta3优先体验下载地址放出
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 804
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=804
+date: !binary |-
+  MjAxMC0wNC0yNiAxNTo1NDo1OCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yNiAwNzo1NDo1OCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>QQ2010&nbsp;Beta3即将与广大QQ用户见面，我们真诚地邀请您优先参与最新版本的体验。该版本新增腾讯微博面板，腾讯微博用户将可以使用该功能方便的发表微博，分享身边的一切。还增加了拍拍彩钻图标。您在使用的过程中有任何意见和建议，欢迎及时反馈给我们，您反映的每个问题都会有专人跟进。</p>
+<p><img src="http:&#47;&#47;www.cnbeta.com&#47;articles&#47;pic&#47;down.gif" alt="" &#47;><strong>下载:<&#47;strong><a href="http:&#47;&#47;dl_dir.qq.com&#47;qqfile&#47;qq&#47;QQ2010Beta3_Trial.exe" target="_blank">QQ2010 Beta3<&#47;a></p>

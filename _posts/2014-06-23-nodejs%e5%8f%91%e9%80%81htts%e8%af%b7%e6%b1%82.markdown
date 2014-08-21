@@ -1,0 +1,59 @@
+---
+layout: post
+status: publish
+published: true
+title: nodejs发送HTTS请求
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1755
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1755
+date: !binary |-
+  MjAxNC0wNi0yMyAxNDowMjozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxNC0wNi0yMyAwNjowMjozOCArMDgwMA==
+categories:
+- WEB服务器技术
+- nodejs
+tags: []
+comments: []
+---
+<p>nodejs的https请求如何不加以配置会出来很多错误。</p>
+<p>下面是经过测试的一段nodejs发送HTTPS请求的代码，主要是要注意Options里的几个参数的内容。</p>
+<pre name="code" language="js">
+<p>    var data = {<br />
+    };</p>
+<p>    var options = {<br />
+      host: serverHost,<br />
+      port: serverPort,<br />
+      method: 'POST',<br />
+      path: "&#47;",<br />
+      headers: {</p>
+<p>      },<br />
+      rejectUnauthorized: false,<br />
+      requestCert: true,<br />
+      agent: false,<br />
+      secureProtocol: 'SSLv3_method'<br />
+    };</p>
+<p>    var https = require('https');<br />
+    var req = https.request(options, function (res) {<br />
+      console.log("init request");<br />
+      console.log(res.statusCode);<br />
+      res.on('data', function (data) {<br />
+        try {<br />
+          console.log(data);<br />
+        } catch(e) {<br />
+          console.log(e)<br />
+        }<br />
+      });<br />
+    });<br />
+    req.write(JSON.stringify(data));<br />
+    req.end();</p>
+<p>    req.on('error', function (e) {<br />
+      console.error(e);<br />
+    });</p>
+<p><&#47;pre></p>

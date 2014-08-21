@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 美国国会要求谷歌对收集无线数据作出澄清
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1090
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1090
+date: !binary |-
+  MjAxMC0wNS0yOCAxMTowMjoyMSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0yOCAwMzowMjoyMSArMDgwMA==
+categories:
+- 新闻
+tags:
+- 谷歌
+comments: []
+---
+<p>美国国会一委员会已经致函谷歌，要求该公司提供有关其&ldquo;街景&rdquo;(Street View)摄影车如何意外收集到未加密无线网络私人数据的细节。<br />
+美国众议院能源和商业委员会(Committee on Energy and Commerce) 5月26日发出的上述信函中提出了12个问题，要求谷歌澄清其数据搜集的范围以及该公司对所收集私人信息进行了何种处理。</p>
+<p>谷歌在5月14日承认，该公司为建立在线地图服务而部署的&ldquo;街景&rdquo;摄影车无意间收集到了WiFi用户的上网信息。美国国会发出的这一信函表明这一事件给谷歌带来的公关危机正在恶化。</p>

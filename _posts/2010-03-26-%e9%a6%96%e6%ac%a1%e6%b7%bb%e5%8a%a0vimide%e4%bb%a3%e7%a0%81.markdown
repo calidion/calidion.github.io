@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: 在Ubuntu 9.04下面一个指令将vim打造成功能强大的IDE
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 414
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=414
+date: !binary |-
+  MjAxMC0wMy0yNiAxNzo1ODo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMy0yNiAwOTo1ODo0MiArMDgwMA==
+categories:
+- Ubuntu
+- 编程技术
+tags:
+- code
+- Google
+- ide
+- Linux
+- plugin
+- Vim
+comments: []
+---
+<p>这是一个基于shell的自动化脚本，<br />
+将很多的插件自动的添加进来，自动放到相应的目录下，<br />
+不用用户自己去添加搜索相关的插件。<br />
+安装也非常的简单。只要几行命令就能搞定。<br />
+安装方式请进入下面的项目地址查看。<br />
+项目地址： https:&#47;&#47;code.google.com&#47;p&#47;vimide&#47;<br />
+效果图：<br />
+<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-install.sh-+-Temp-VIM.png"><img src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-install.sh-+-Temp-VIM.png" alt="" title="Screenshot-install.sh + (~-Temp) - VIM" width="1392" height="970" class="aligncenter size-full wp-image-417" &#47;><&#47;a></p>
+<p>最新的效果图：<br />
+<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-transitfeed.py-Documents-scheduleeditor-demo-GVIM.png"><img src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-transitfeed.py-Documents-scheduleeditor-demo-GVIM.png" alt="" title="Screenshot-transitfeed.py (~-Documents-scheduleeditor-demo) - GVIM" width="1392" height="970" class="aligncenter size-full wp-image-419" &#47;><&#47;a><br />
+<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-transit.js-+-Documents-scheduleeditor-demo-gtfsscheduleviewer-files-GVIM.png"><img src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-transit.js-+-Documents-scheduleeditor-demo-gtfsscheduleviewer-files-GVIM.png" alt="" title="Screenshot-transit.js + (~-Documents-scheduleeditor-demo-gtfsscheduleviewer-files) - GVIM" width="1392" height="970" class="aligncenter size-full wp-image-420" &#47;><&#47;a></p>

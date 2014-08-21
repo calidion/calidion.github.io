@@ -1,0 +1,37 @@
+---
+layout: post
+status: publish
+published: true
+title: 联发科加入Android联盟 手机成本降低2&#47;3
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1235
+wordpress_url: http://www.3gcnbeta.com/wordpress/2010/07/14/%e8%81%94%e5%8f%91%e7%a7%91%e5%8a%a0%e5%85%a5android%e8%81%94%e7%9b%9f-%e6%89%8b%e6%9c%ba%e6%88%90%e6%9c%ac%e9%99%8d%e4%bd%8e23/
+date: !binary |-
+  MjAxMC0wNy0xNCAxNzozMjowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNy0xNCAwOTozMjowNiArMDgwMA==
+categories:
+- 新闻
+tags:
+- Android
+- 联发科
+comments: []
+---
+<p>　　本报讯 （记者张奕）记者昨日从联发科确认，该公司已于7月12日正式加入由谷歌为推广Android操作系统而发起的&ldquo;开放手机联盟&rdquo;，并将打造联发科&ldquo;专属的 Android智能型手机解决方案&rdquo;。分析认为，联发科的加盟，有望让Android系统智能手机成本降低2&#47;3。<br />
+　　将复制&ldquo;一揽子解决方案&rdquo;<br />
+　　联发科无线通讯事业部总经理朱尚祖表示，通过Android创新平台，可向用户提供绝佳的网络多媒体、服务与社群网络使用经验，联发科将与联盟一起推动Android平台的普及。<br />
+　　据了解，联发科将会把此前在山寨手机上大获成功的&ldquo;一揽子解决方案&rdquo;复制到Android智能手机上来。该公司表示这种整合芯片系统解决方案可大幅降低手机厂商的技术门槛以及缩短产品的上市时间。<br />
+　　有利Android占领亚洲市场<br />
+　　&ldquo;开放手机联盟&rdquo;目前已在全球有71家合作伙伴，其中台湾厂商就包括了宏达电、华硕、宏碁等，此外，知名手机厂商三星、LG、摩托罗拉、索尼爱立信等也是联盟成员。联发科的加入可能会使智能手机的价格发生变化，全球技术研究和咨询公司Gartner的分析师认为，采用联发科芯片的Android设备成本可低至每台70美元，而目前售价最低的Android手机成本也在200美元左右。<br />
+　　本月初，谷歌工程副总裁安迪&middot;鲁宾(Andy Rubin)在接受媒体采访时表示，联发科加盟&ldquo;开放手机联盟&rdquo;，将有利于谷歌Android操作系统在亚洲占领市场。<br />
+　　从&ldquo;山寨之父&rdquo;到&ldquo;大厂伙伴&rdquo;<br />
+　　联发科全称联发科技股份有限公司，成立于1997年。自2007年起，由联发科提供的整合芯片系统解决方案大大降低了手机厂商的技术门槛和成本，也使其成为山寨手机神话的缔造者。随着实力的壮大，该公司逐渐成为摩托罗拉、LG等知名厂商的合作伙伴，并一跃而成为全球第二大手机芯片设计公司。该公司目前在无线通讯、高清数字、光储存、DVD及蓝光等相关产品领域，均处于市场领导地位。<br />
+　　目前，智能手机操作系统主要包括诺基亚的Symbian系统，苹果iOS和谷歌 Android系统。根据美国市场研究公司ABI Research的数据，今年第一季度，全球智能手机出货量中有41%采用了Symbian系统，而苹果iOS和谷歌 Android的市场份额分别为16%和10%。<br />
+　　<br />
+(责任编辑：胡涛)</p>

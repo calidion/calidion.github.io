@@ -1,0 +1,46 @@
+---
+layout: post
+status: publish
+published: true
+title: 一个检测日期正确与否的javascript代码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 25
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=25
+date: !binary |-
+  MjAxMC0wMS0yMSAwOTo0NjowMiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yMSAwMTo0NjowMiArMDgwMA==
+categories:
+- Javascript
+tags:
+- javascript
+comments: []
+---
+<pre name="code" class="js">
+function checkData(str) {<br />
+var year = &#47;^(19|20|21)[0-9]{2}$&#47;;<br />
+var month = &#47;^(0[1-9])|(1[0-2])$&#47;;<br />
+var date = &#47;^(0[1-9])|([1-2][0-9])|(3[0-1])$&#47;;</p>
+<p>var ystr = str.substring(0, str.length - 4);<br />
+var mstr = str.substring(str.length - 4, str.length - 2);<br />
+var dstr = str.substring(str.length - 2, str.length);</p>
+<p>if(mstr == '02') {<br />
+  if ((ystr - 0) % 4 == 0) {<br />
+    if(dstr - 0 > 29) return false;<br />
+  } else {<br />
+    if (dstr - 0 > 28) return false;<br />
+  }<br />
+} else if ((mstr - 0) % 2 == 0) {<br />
+  &#47;&#47;只需要验证不大于31天的月份<br />
+  if (dstr - 0 > 30) return false;<br />
+}</p>
+<p>return year.test(ystr) && month.test(mstr) && date.test(dstr);<br />
+}</p>
+<p>checkData("20120229");<br />
+<&#47;pre></p>

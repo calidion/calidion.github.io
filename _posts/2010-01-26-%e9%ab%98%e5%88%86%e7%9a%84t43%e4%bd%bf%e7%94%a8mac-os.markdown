@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: 高分的T43使用Mac OS
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 109
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=109
+date: !binary |-
+  MjAxMC0wMS0yNiAxNDo1MjoyMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNjo1MjoyMCArMDgwMA==
+categories:
+- 操作系统
+tags:
+- Mac OS
+- T43
+- 高分
+comments: []
+---
+<p>在高分的T43下运行MAC，需要修改分辨率以达到最佳显示效果，修改如下文件即可：<br />
+&#47;Library&#47;Preferences&#47;SystemConfiguration&#47;com.apple.Boot.plist</p>
+<p>我的T43下该文件如下：</p>
+<pre name="code" class="xml">
+<?xml version="1.0" encoding="UTF-8"?><br />
+<!DOCTYPE plist PUBLIC "-&#47;&#47;Apple Computer&#47;&#47;DTD PLIST 1.0&#47;&#47;EN" "http:&#47;&#47;www.apple.com&#47;DTDs&#47;PropertyList-1.0.dtd"></p>
+<plist version="1.0">
+<dict><br />
+<key>Kernel<&#47;key><br />
+<string>mach_kernel<&#47;string><br />
+<key>Kernel Flags<&#47;key><br />
+<string><&#47;string><br />
+<key>Boot Graphics<&#47;key><br />
+<string>Yes<&#47;string><br />
+ <key>Graphics Mode<&#47;key><br />
+<string>1440x1050x32<&#47;string><br />
+<&#47;dict><br />
+<&#47;plist><br />
+<&#47;pre></p>

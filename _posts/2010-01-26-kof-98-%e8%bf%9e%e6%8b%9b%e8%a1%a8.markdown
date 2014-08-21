@@ -1,0 +1,248 @@
+---
+layout: post
+status: publish
+published: true
+title: kof 98 连招表
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 84
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=84
+date: !binary |-
+  MjAxMC0wMS0yNiAxMToyMzo0MiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwMzoyMzo0MiArMDgwMA==
+categories:
+- 游戏
+tags:
+- kof
+- 拳皇
+comments: []
+---
+<p>草雉京 下 B>> 下A>> 八拾八式<br />
+下 B>> 立 C>> 毒咬>> 罪脉>> 罚脉<br />
+中跳跃 + C>> 立 C ==>> [里百八式.大蛇雉] 或 [无式]<br />
+中跳跃 + C>> 立 C ==>> [毒咬>> 罪脉>> 罚脉] 或 [荒咬>> 九伤>> 八锖]<br />
+中跳跃 + C>> 下 B>> 下A>> 无式<br />
+中跳跃 + C>> 立 C>> 轰斧阳 ==>> [里百八式.大蛇雉] 或 [琴月阳] 或 [毒咬>> 罪脉>> 罚脉]<br />
+中跳跃 + C>> 立 C>> 七拾五式.改（重）>> 七拾五式.改（轻）>> 鬼烧<br />
+中跳跃 + C>> 立 C>> 七拾五式.改 ==>> [里百八式.大蛇雉] 或 [荒咬>> 八锖>> 砌穿] 或 [琴月阳] 或 [R.E.D.KICK]<br />
+EXTRA MODE 前回避>> 奈落落>> 前回避>> 奈落落>> 前回避>> 奈落落>>......</p>
+<p>二阶堂红丸 下 B>> 下A ==>> [居合蹴] 或 [超级闪电踢]<br />
+下 B>> 下 B>> 下 B>> 超级闪电踢<br />
+JACK KNIFE KICK ==>> 任意必杀技或超必杀技<br />
+中跳跃 + D>> 立 C>> ==>> 任意必杀技或超必杀技<br />
+中跳跃 + D（打背）>> 下 B>> 下 B>> 下 B>> 雷光拳[MAX]</p>
+<p>大门五郎 头上拂>> 超受身>> 地雷震<br />
+[下 D] 或 [玉溃]>> 切株返<br />
+立 D>> 头上拂>> 天地返<br />
+跳 + D>> 立 C ==>> [天地返] 或 [切株返]<br />
+跳 + D>> 立 C>> 地狱极乐落<br />
+跳 + D>> 立 C>> 头上拂>> 地狱极乐落<br />
+反击出现COUNTER>> 头上拂>> 超受身>> 地雷震>> 切株返（对手靠墙）</p>
+<p>龙虎拳队 坂崎良&nbsp;&nbsp; 暂缺<br />
+罗伯特 暂缺<br />
+坂崎由莉 暂缺<br />
+女性格斗家队 不知火舞 中跳跃 + CorD>> 立 C>> 白鷺之舞(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + CorD>> 立 C>> 龙炎舞(&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> 红鹤之舞(↘ + B)<br />
+中跳跃 + CorD>> 立 C>> 必杀忍峰(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> 飞翔龙炎阵(&rarr;&darr;↘ + BorD)<br />
+中跳跃 + CorD>> 立 C>> 超必杀忍峰(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+黑燕之舞(&rarr; + B)>> 立 C>> 龙炎舞(&darr;↙&larr; + AorC)</p>
+<p>神乐千鹤<br />
+中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 玉响之琴音(&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 天神之理(&rarr;&darr;↘+ AorC)<br />
+中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 神速之祝词(&rarr;↘&darr;↙&larr; + A&#47;B&#47;C&#47;D)>> 天瑞(&darr;↙&larr;+A&#47;B&#47;C&#47;D)<br />
+中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 顶门之一针(&darr;&darr; + A&#47;B&#47;C&#47;D)<br />
+中跳跃 + D>> 下 A>> 下 A>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
+中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
+超重击 出现COUNTER>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
+下 C>> 錚錚(&rarr; + A)>> 三籁之布阵(&darr;↘&rarr;&darr;↘&rarr; + BorD)<br />
+三籁之布阵(&darr;↘&rarr;&darr;↘&rarr; + BorD)[MAX]>> 下 A>> 下 A>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
+[对手靠墙] 中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 神速之祝词(&rarr;↘&darr;↙&larr; + A)>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
+[对手靠墙] 涼涼(↘ + B)>> 立 C>> 錚錚(&rarr; + A)>> 神速之祝词(&rarr;↘&darr;↙&larr; + A)>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)</p>
+<p>京 中跳跃 + CorD>> 立 D(2its)>> VENOM STRIKE(&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 D(2its)>> TORNADO KICK(&rarr;↘&darr;↙&larr; + BorD)<br />
+中跳跃 + CorD>> 立 D(2its)>> MIRAGE KICK(&rarr;↘&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 立 B>> TRAP SHOOT(&rarr;&darr;↘ + BorD)<br />
+[对手靠墙] 中跳跃 + D>> 立 B>> SURPRISE ROSE(&rarr;&darr;↘ + AorC)>> TORNADO KICK(&rarr;↘&darr;↙&larr; + D)<br />
+[对手靠墙] 中跳跃 + C>> 立 D>> SILENT FLASH(&darr;↙&larr;&darr;↙&larr; + BorD)</p>
+<p>饿狼传说队 特瑞 下 B>> 下A>> RISING UPPER(↘+C)>> POWER GEYSER(&darr;↙&larr;↙&rarr; + AorC)<br />
+下 B>> 下A>> RISING UPPER(↘+C)>> HIGH ANGLE GEYSER(&darr;↘&rarr;&darr;↘&rarr; +BorD)<br />
+中跳跃 + CorD>> 立 C(2Hits)>> RISING UPPER(↘+C)>> 任意必杀技或超必杀技<br />
+中跳跃 + CorD>> 立 C(2Hits)>> RISING UPPER(↘+C)>> POWER CHARGE(&larr;↙&darr;↘&rarr; + BorD)>> RISING TACKLE(&rarr;&darr;↘ + AorC)<br />
+中 跳跃 + CorD>> 下 B>> 下A>> RISING UPPER(↘+C)>> POWER CHARGE(&larr;↙&darr;↘&rarr; + BorD)>> RISING TACKLE(&rarr;&darr;↘ + AorC)<br />
+POWER CHARGE(&larr;↙&darr;↘&rarr; + BorD)[counter]>> POWER GEYSER(&darr;↙&larr;↙&rarr; + AorC)</p>
+<p>安迪<br />
+中跳跃 + CorD>> 立 C>> 任意必杀技或超必杀技<br />
+中跳跃 + CorD>> 立 C(1Hits)>> 击壁背水掌(近敌时&larr;↙&darr;↘&rarr; + AorC)>> 上面(↘+A)>> 空破弹(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C(1Hits)>> 击壁背水掌(近敌时&larr;↙&darr;↘&rarr; + AorC)>>上面(↘+A)>> 升龙弹(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + CorD>> 下 B>> 下A>> 上面(↘+A)>> 斩影拳(↙储&rarr; + AorC)>> 我弹幸(斩影拳中&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C(1Hits)>> 击壁背水掌(近敌时&larr;↙&darr;↘&rarr; + AorC)>> 超裂破弹(&darr;↙&larr;↙&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> 上颚(&rarr;+B)>> （空中cancel）幻影不知火(跳跃中&darr;↘&rarr; + BorD)>>不知火上颚(幻影不知火着地后 BorD)</p>
+<p>东丈 中跳跃 + CorD>> 立 C>> 任意必杀技或超必杀技<br />
+中跳跃 + CorD>> 立 C>> LOW KICK(&rarr;+B)>> SLASH KICK(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> >> SCREW UPPER(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 下 B>> 下A>> SCREW UPPER(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> LOW KICK(&rarr;+B)>> 爆裂HURRICANE TIGER踵(&darr;↘&rarr;↘&darr;↙&larr; + AorC)</p>
+<p>超能力战士队 麻宫雅典娜 中跳跃 + CorD>> 立 C>> PSYCHO SWORD(&rarr;&darr;↘ + AorC)<br />
+立 B>> SUPER PSYCHIC THROUGH(近敌时&larr;↙&darr;↘&rarr;+ AorC)>> PSYCHO BALL ATTACK(&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + B(1Hit)>> PHOENIX ARROW(空中&darr;↙&larr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + B(1Hit)>> PSYCHO SWORD(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + B(1Hit)>> SHINING CRYSTAL(&rarr;↘&darr;↙&larr;*2 + AorC)<br />
+立 B>> SUPER PSYCHIC THROUGH(近敌时&larr;↙&darr;↘&rarr;+ AorC)>> SHINING CRYSTAL(&rarr;↘&darr;↙&larr;*2 + AorC)</p>
+<p>椎拳崇 中跳跃 + CorD>> 立 D>> 龙连牙 地龙(&larr;↙&darr;↘&rarr; + A)<br />
+中跳跃 + CorD>> 下 D>> 龙连击(近敌时&rarr;&darr;↘ + AorC)>> 龙连牙 地龙(&larr;↙&darr;↘&rarr; + A)<br />
+[对手靠墙] 中跳跃 + CorD>> 立 D>> 龙连击(近敌时&rarr;&darr;↘ + AorC)>> 龙颚碎(&larr;&darr;↙ + BorD)<br />
+中跳跃 + CorD>> 立 D>> 神龙天舞脚(&darr;↘&rarr;↘&darr;↙&larr; + D)<br />
+中跳跃 + CorD>> 立 D>> 仙气发劲(近敌时&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+跳跃 + D(打背）>> 下 A>> 下 A>> 龙连击(近敌时&rarr;&darr;↘ + AorC)>> 龙连牙 天龙(&larr;↙&darr;↘&rarr; + C)<br />
+[对手靠墙] 超球弹(&darr;↙&larr; + AorC)>> 冲前>> 立 C>> &rarr; + B>> 仙气发劲(近敌时&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>镇元斋 中跳跃 + C(2its)>> 立 C>> 瓢箪击(&darr;↙&larr; + AorC)<br />
+中跳跃 + C(2its)>> 立 C>> 柳磷蓬莱(&rarr;&darr;↘ + AorC)<br />
+下 C>> 醉管卷翁(&darr;&darr;+ AorC)>> 蝶袭鯥鱼(醉管卷翁中&rarr; + AorC)<br />
+中跳跃 + C(2its)>> 立 C>> 轰栏炎炮(&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>怒之队 拉尔夫<br />
+中跳跃 + CorD>> 立 C>> 近敌时(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 下 C>> GATLING ATTACK(&larr;储&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> BARI BARI VULCAN PUNCH(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 下 C>> 骑马VULCAN PUNCH(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+[对手靠墙] RALF KICK(&larr;储&rarr; + BorD)>> 骑马VULCAN PUNCH(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+RALF KICK(&larr;储&rarr; + BorD)[对手同时出招形成COUNTER]>> 骑马VULCAN PUNCH(&darr;↙&larr;↙&darr;↘&rarr; + BorD)</p>
+<p>克拉克 STOMPING(&rarr; + B)>> 近敌时(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> 近敌时(&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> STOMPING(&rarr; + B)<br />
+中跳跃 + CorD>> 立 C>> ROLLING CRADLE(&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> ULTRA ARGENTINA BACK BREAKER(&rarr;↘&darr;↙&larr; *2 + AorC)</p>
+<p>莉欧娜 中跳跃 + CorD>> 下 C>> MOON SLASHER(&darr;储&uarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> REVOLVE SPARK(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+BACTIC LAUNCHER(&larr;储&rarr; + C)>> MOON SLASHER(&darr;储&uarr; + AorC)<br />
+垂直大跳跃 + D>> V SLASHER(空中&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+GROUND SABER(&larr;储&rarr; + BorD)>> GRAVITY STORM(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+EAR RING爆弹(&darr;↙&larr; + BorD)>> 跳起>> V SLASHER(空中&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+中跳跃 + D>> 立 D(2Hits)>> &rarr;+B>> V SLASHER(空中&darr;↘&rarr;↘&darr;↙&larr; + AorC)</p>
+<p>韩国队 金家藩 中跳跃 + D>> 立 C>> 流星落(&larr;储&rarr; + BorD)<br />
+下 B>> 下 B>> 下 A>> 空砂尘(&darr;储&uarr;+ AorC) 或 飞燕斩(&darr;储&uarr; + BorD)<br />
+下 B>> 下 A>> 凤凰脚(&darr;↙&larr;↙&rarr; + BorD)<br />
+中跳跃 + D>> 立 C>> 半月斩(&darr;↙&larr; + BorD)<br />
+中跳跃 + D>> 立 C>> 三连击(&darr;↙&larr; + AorC)三次输入<br />
+中跳跃 + D>> 立 C(1Hit)>> &rarr; + B>> 凤凰脚(&darr;↙&larr;↙&rarr; + BorD)<br />
+中跳跃 + D>> 立 C(1Hit)>> 霸气脚(&darr;&darr; + B)>> 凤凰脚(&darr;↙&larr;↙&rarr; + BorD)<br />
+[对手靠墙] 飞翔脚(跳跃中&darr;↘&rarr; + BorD)在空中击中对手>> 飞翔脚&times;N>> 任何必杀技或超必杀<br />
+飞翔脚(跳跃中&darr;↘&rarr; + BorD)(打背)>> 下 B>> 下 B>> 下 A>> 空砂尘(&darr;储&uarr;+ AorC)</p>
+<p>陈可汉 下 C>> 鑠逃(↘ + A)<br />
+中跳跃 + CorD>> 立 A>> 大破坏投(近敌时&rarr;↘&darr;↙&larr;&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 A>> 铁球大回转(AorC 键连打)<br />
+中跳跃 + CorD>> 立 C>> 铁球大扑杀(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+铁球大暴走(&darr;↘&rarr;↘&darr;↙&larr; + AorC)>> 铁球大扑杀(&darr;↘&rarr;&darr;↘&rarr; +AorC) *铁球大暴走必须最后一击出脚，铁球大扑杀才能连到</p>
+<p>蔡宝健 二段斩(1Hit)>> 回转飞猿斩(&darr;↙&larr; + AorC)<br />
+中跳跃 + C>> 飞翔脚(跳跃中&darr;↘&rarr; + BorD)<br />
+中跳跃 + C(2its)打背>> 立 A>> &rarr; + B>> 立 B>> 凤凰脚(&darr;↘&rarr;↘&darr;↙&larr; + BorD)<br />
+飞翔空裂斩(&darr;储&uarr; + BorD)在空中击中对手>> 奇袭飞猿突(AorC)&times;4>> 龙卷疾风斩(&darr;储&uarr;+ AorC)<br />
+中跳跃 + C>> 立 C>> &rarr; + B>> 立 A<br />
+[对手靠墙] 下 C>> 飞翔空裂斩(&darr;储&uarr; + BorD)>> 奇袭飞猿突(AorC)&times;4<br />
+超重击 出现COUNTER>> 真！超绝龙卷真空(&rarr;↘&darr;↙&larr;&times;2 + AorC)</p>
+<p>特别参赛队 玛莉 中跳跃 + D>> 立 C(2Hits)>> &rarr; + A>> 回身真落(近敌时&rarr;↘&darr;↙&larr;&rarr; + AorC)<br />
+中跳跃 + D>> 立 C(2Hits)>> &rarr; + A>> 垂直之剑(&rarr;&darr;↘ + BorD)>> 前招中(&rarr;&darr;↘ + BorD)<br />
+中跳跃 + D>> 立 C(2Hits)>> 指天回旋脚(&larr;储&rarr; + BorD)>> 前招中(&darr;↘&rarr; + BorD)<br />
+中跳跃 + D>> 立 C(2Hits)>> &rarr; + A>> 玛丽台风(&rarr;↘&darr;↙&larr;&times;2 + BorD)<br />
+中跳跃 + D>> 立 C(2Hits)>> &rarr; + A>> 野玫瑰(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+[对手靠墙] 中跳跃 + D>> 立 C(2Hits)>> &rarr; + A>> 动感闪光(&darr;↘&rarr;&darr;↘&rarr; + BorD)<br />
+[对手靠墙] 近身 立 B&times;2>> 立 A>> 下 A>> 动感闪光(&darr;↘&rarr;&darr;↘&rarr; + BorD)<br />
+[对手靠墙起跳] 动感闪光(&darr;↘&rarr;&darr;↘&rarr; + BorD)>> 玛丽台风(&rarr;↘&darr;↙&larr;&times;2 + BorD)</p>
+<p>山崎龙二 中跳跃 + CorD>> 立 C>> &rarr; + A>> 蛇使(&darr;↙&larr; + BorC)<br />
+中跳跃 + CorD>> 立 C>> 制裁之匕首(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + CorD>> 立 C>> 踢砂(&rarr;&darr;↘ + BorD)<br />
+中跳跃 + CorD>> 立 C>> 爆弹(近敌时&rarr;↘&darr;↙&larr;&rarr; + AorC)<br />
+踢砂(&rarr;&darr;↘ + D)>> 蛇使(&darr;↙&larr; + BorC) CANCEL>> 下C>> 蛇使(&darr;↙&larr; + BorC) 或 爆弹(近敌时&rarr;↘&darr;↙&larr;&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> 断头台(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> 射杀(近敌时&rarr;↘&darr;↙&larr;&times;2 + AorC)>> AC连按<br />
+[对手靠墙] 踢砂(&rarr;&darr;↘ + D)>> 蛇使(&darr;↙&larr; + BorC) CANCEL>> 冲前>> 踢砂(&rarr;&darr;↘ + B)>> 蛇使(&darr;↙&larr; + BorC)</p>
+<p>比利 中跳跃 + C>> 立 C>> 大回转蹴(&rarr; + B)<br />
+中跳跃 + C>> 立 C>> 三节棍中段打(&larr;↙&darr;↘&rarr; + AorC)>> 三节棍中段打中&darr;↘&rarr; + AorC<br />
+中跳跃 + C>> 立 C>> 旋风棍(A 键连打)<br />
+中跳跃 + C>> 立 C>> 大旋风(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+[对手靠墙] 中跳跃 + C>> 立 C>> 强袭飞翔棍(&rarr;&darr;↘ + BorD)>> 超火炎旋风棍(&darr;↘&rarr;↘&darr;↙&larr; + AorC)</p>
+<p>大蛇队 七枷社 中跳跃 + CorD>> 立 C>> UPPER<br />
+DUEL(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + A>> MIGHT MISSILE BUSH(&rarr;↘&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + AorB>> JET COUNTER(&larr;↙&darr;↘&rarr; + AorC)>> STEEL JET COUNTER(&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + AorB>> FINAL IMPACT(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> &rarr; + A>> MILLION BUSHES STREAM(&darr;↙&larr;↙&darr;↘&rarr; + AorC)<br />
+[对手靠墙] 中跳跃 + CorD>> 立 A>> 立 C>> &rarr; + A>> FINAL IMPACT(&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>夏尔米 中跳跃 + CorD>> 立 C>> SHERMIE SPIRAL(近敌时&larr;↙&darr;↘&rarr; + AorC)>> SHERMIE CUTE(&darr;↘&rarr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> SHERMIE STAND(&rarr; + B)<br />
+中跳跃 + CorD(打背)>> 立 B(2its)>> SHERMIE WHINP(&darr;↙&larr;+ AorC)<br />
+中跳跃 + CorD>> 立 C>> SHERMIE FLASH(近敌时&rarr;↘&darr;↙&larr;&times;2 + AorC)</p>
+<p>克丽丝 下 B>> 下 A>> SPIN ARRAY(&rarr; + A)>> SLIDE TOUCH(&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> SPIN ARRAY(&rarr; + A)>> SLIDE TOUCH(&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> SPIN ARRAY(&rarr; + A)>> SHOOT DANCER THRUST(&rarr;↘&darr;↙&larr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> SPIN ARRAY(&rarr; + A)>> TWISTER DRIVE(&darr;↙&larr;&darr;↙&larr; + BorD)<br />
+中跳跃 + CorD>> 立 C>> SPIN ARRAY(&rarr; + A)>> CHAIN SLIDE TOUCH(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + D(打背)>> 下 A>> 下 C>> SPIN ARRAY(&rarr; + A)>> CHAIN SLIDE TOUCH(&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>八神庵队 八神庵 爪節(&rarr;&darr;↘ + BorD)>> 葵花(&darr;↙&larr; + C&times;3)<br />
+中跳跃 + CorD>> 立 C>> 梦弹(&rarr; + A)>> 葵花(&darr;↙&larr; + C&times;3)<br />
+中跳跃 + CorD>> 立 C>> 梦弹(&rarr; + A)>> 暗勾手(&darr;↘&rarr; + AorC)<br />
+中跳跃 + CorD>> 立 C>> 琴月阴(&rarr;↘&darr;↙&larr; + BorD)<br />
+下 B>> 下 A>> 梦弹(&rarr; + A)>> 葵花(&darr;↙&larr; + C&times;3)<br />
+下 B>> 下 A>> 梦弹(&rarr; + A)>> 八稚女(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+[对手靠墙起跳] 葵花(&darr;↙&larr; + C)&times;2第二击击中空中对手>> 八稚女(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+百合折(空中反方向 + B)>> 立 B>> 梦弹(&rarr; + A)>> 八稚女(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+[对手靠墙一个身位] 百合折(空中反方向 + B)>> 立 B>> 屑风>> 下 A>> 屑风>> 冲前 立 C>> 梦弹>> 八稚女</p>
+<p>麦卓 中跳跃 + C>> 立 C>>DEATH GLAW(&darr;↙&larr; + AorC&times;3)<br />
+中跳跃 + C>> 立 C>> DESPIRE(&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 立 C>> SACRILEGE(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + C>> 立 D(2Hits)>> HEAVEN'S GATE(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+中跳跃 + B>> 下 B>> 下 A>> NOCTURNAL LIGHTS(&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>薇思 中跳跃 + C>> 立 C>> MEIHEM(&darr;↙&larr; + AorC)>> MISANTHROPE(击中后&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 立 C>> 三节棍中段打(&larr;↙&darr;↘&rarr; + AorC)>> 三节棍中段打中&darr;↘&rarr; + AorC<br />
+中跳跃 + C>> 立 C>> &rarr; + A>> DACIDE(&larr;↙&darr;↘&rarr; + BorD)<br />
+下 B>> 下 B>> 下 A>> MEIHEM(&darr;↙&larr; + AorC)>> MISANTHROPE(击中后&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 下 A>> GORE FEST<br />
+中跳跃 + C>> 立 D(2Hits)>> NEGATIVE GAIN(近敌时&rarr;↘&darr;↙&larr; &times;2 + BorD)<br />
+[POWER MAX状态] MEIHEM(&darr;↙&larr; + AorC)[COUNTER]>> RAVE FEST(空中&darr;↙&larr; + BorD)>> 下 C<br />
+MEIHEM(&darr;↙&larr; + AorC)[COUNTER]>> MEIHEM(&darr;↙&larr; + AorC)>> MISANTHROPE(击中后&darr;↘&rarr; + AorC)<br />
+[POWER MAX状态] RAVE FEST(空中&darr;↙&larr; + BorD)击中空中对手>> RAVE FEST>> MEIHEM(&darr;↙&larr; + AorC)>> 空中超重击</p>
+<p>老爸队 哈迪伦 中跳跃 + D>> 下 A>> MOON SLASHER(&darr;储&uarr;+ AorC)<br />
+近身 下 A>> STORM BRINGER(&rarr;↘&darr;↙&larr; + AorC)<br />
+立 C(2Hits)>> &rarr; + B>> HEIDERN END(&darr;↙&larr;↙&darr;↘&rarr; + BorD)<br />
+[对手靠墙] 中跳跃 + D>> 立 C(2Hits)>> &rarr; + B>> FINAL BRINGER(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+CROSS CUTTER(&larr;储&rarr; + AorC)>> FINAL BRINGE 或 NECK ROLLING(&darr;储&uarr;+ BorD)</p>
+<p>草雉柴舟 中跳跃 + C>> 立 C>> 鬼烧(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + C>> 立 C>> 轰鎚(&rarr; + A)>> 閻拂(&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 立 C>> 轰鎚(&rarr; + A)>> 鉈车(&rarr;&darr;↘ + BorD)<br />
+中跳跃 + C>> 下 B>> 立 C>> 炎重(&darr;↙&larr; + C C)>> 鬼烧(&rarr;&darr;↘ + AorC)<br />
+中跳跃 + C>> 立 C>> 轰鎚(&rarr; + A)>> 大蛇雉(&darr;↙&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + C>> 立 C>> 轰鎚(&rarr; + A)>> 都牵割(&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + B(打背)>> 下 B>> 立 C>> 轰鎚(&rarr; + A)>> 都牵割(&darr;↘&rarr;&darr;↘&rarr; + AorC)</p>
+<p>坂崎琢磨 下 B>> 下 A>> 真鬼神击(近敌时&darr;↘&rarr;&darr;↘&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> 虎煌拳(&darr;↘&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> 飞燕疾风脚(↙储&rarr; + BorD)>> 暂烈拳(&rarr;&larr;&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> 鬼车(&rarr; + A)>> 龙虎乱舞(&darr;↘&rarr;↘&darr;↙&larr; + AorC)<br />
+[对手靠墙] 中跳跃 + D>> 立 A>> 立 C>> 鬼车(&rarr; + A)>> 龙虎乱舞(&darr;↘&rarr;↘&darr;↙&larr; + AorC)</p>
+<p>运动员队 拜仁&middot;巴特勒 SCREW BODY PRESS(空中&darr;↘&rarr; + AorC)>> 立 C>> BRIAN TORNADO(&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> BRIAN TORNADO(&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> BIG VAN TACKLE(&darr;↘&rarr; &darr;↘&rarr; + BorD)<br />
+中跳跃 + D>> 立 C>> BRIAN HAMMER(&darr;↙&larr; + AorC)>> DOUBLE HAMMER(&darr;↙&larr; + AorC)>> DDT(&darr;↙&larr; + A or C)<br />
+中跳跃 + D>> 立 C>> BRIAN HAMMER(&darr;↙&larr; + AorC)>> TIGER DRIVER(&larr;↙&darr;↘&rarr; + AorC)>> SAMURAI BOMB(&darr;&darr; + AorC)</p>
+<p>洛奇&middot;古洛巴 立 C>> &rarr; + B>> CYCLE BREAK(&darr;↙&larr; + BorD)<br />
+下 B>> 下 A>> HELL BOUND(&darr;↘&rarr; &darr;↘&rarr; + AorC)<br />
+中跳跃 + D>> 立 C>> CYCLE BREAK(&darr;↙&larr; + BorD)<br />
+中跳跃 + D>> 立 C>> DEATH HELL(&rarr;&darr;↘ + BorD)<br />
+DEATH BOUND(&darr;↘&rarr; + AorC)>> 立 C>> CYCLE BREAK(&darr;↙&larr; + BorD)<br />
+DEATH SHOOT(&darr;&darr; + A)>> 立 C>> CYCLE BREAK(&darr;↙&larr; + BorD)<br />
+DEATH SHOOT(&darr;&darr; + A)>> 立 C>> HELL BOUND(&darr;↘&rarr; &darr;↘&rarr; + AorC)<br />
+DEATH SHOOT(&darr;&darr; + A)>> 立 C>> &rarr; + B>> LUCKY DRIVER(&darr;↘&rarr; &darr;↘&rarr; + BorD</p>
+<p>哈维D 中跳跃 + C(2Hits)>> 立 C>> &rarr; + A>> R S D(&darr;↘&rarr; + AorC)<br />
+[对手靠墙] 中跳跃 + C(2Hits)>> 立 C>> BLAST UPPER(&darr;↘&rarr; + BorD)<br />
+[对手靠墙] 中跳跃 + C(2Hits)>> 立 C>> DANCING BIT(接近对手&rarr;&darr;↘ + AorC)>> SOUL FLOWER(&darr;↙&larr; + BorD)<br />
+下 B>> 下 B>> 下 B>> &rarr; + A>> D CRAZY(&darr;↙&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + C(2Hits)>> 立 C>> &rarr; + A>> D CRAZY(&darr;↙&larr;↙&darr;↘&rarr; + AorC)<br />
+中跳跃 + A(打背)>> 立 C>> DANCING BIT(接近对手&rarr;&darr;↘ + AorC)>> D MAGNUM(&darr;↘&rarr; &darr;↘&rarr; + AorC)</p>
+<p>编队角色 卢卡尔 暂缺<br />
+矢吹真吾 暂缺</p>

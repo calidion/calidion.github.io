@@ -1,0 +1,26 @@
+---
+layout: post
+status: publish
+published: true
+title: 软件开发历史上的几大谎言
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1412
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1412
+date: !binary |-
+  MjAxMC0xMC0yMyAxNjoxNzo0MyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0xMC0yMyAwODoxNzo0MyArMDgwMA==
+categories:
+- 民工观点
+tags: []
+comments: []
+---
+<p>1.暴布开发（试图在开发前确定全部需求）<br />
+2.UML（试图用一个图形化语言代替真实的代码）<br />
+3.XHTML (试图让设计人员写出完全正确的HTML代码）</p>

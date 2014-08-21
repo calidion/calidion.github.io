@@ -1,0 +1,23 @@
+---
+layout: nav_menu_item
+status: publish
+published: true
+title: 北漂IT民工的博客
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1536
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1536
+date: !binary |-
+  MjAxMy0wNS0xNiAwNzowNzo0MSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0wNS0xNSAyMzowNzo0MSArMDgwMA==
+categories: []
+tags: []
+comments: []
+---
+

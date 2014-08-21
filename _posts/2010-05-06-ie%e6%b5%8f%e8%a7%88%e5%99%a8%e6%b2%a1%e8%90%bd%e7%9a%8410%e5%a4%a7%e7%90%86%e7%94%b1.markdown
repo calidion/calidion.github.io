@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: IE浏览器没落的10大理由
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 956
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=956
+date: !binary |-
+  MjAxMC0wNS0wNiAxMDoyMzo1MCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wNiAwMjoyMzo1MCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>业内分析师日前指出，尽管IE在浏览器市场仍拥有最多的市场份额，但其垄断地位即将结束。<&#47;strong><br />
+调研公司NetMarketShare最新数据显示，今 年4月份，IE市场份额降至 59.95%，这是微软浏览器市场份额首次跌破60%。相比之下，竞争对手的市场份额整体呈上升势头。对此，有分析师认为，尽管IE仍拥有最多的市场份 额，但其垄断地位正在逐渐丧失，最终将失去主导地位。以下为IE正结束其垄断地位的10大理由：</p>
+<p>1. 欧盟制裁</p>
+<p>为避免遭受欧盟制裁，微软同意在欧洲市场提供&ldquo;浏览器安全选项&rdquo;，允许用户安装IE 以外的其他浏览器。该服务推出后，竞争对手的浏览器市场份额显著提升。</p>
+<p>2. 微软的傲慢</p>
+<p>多年来，微软一直对IE的成功沾沾自喜，几乎没有在意Firefox和Chrome 等竞争对手的崛起。因此，微软没有投入太多资金提升IE，也没有听取用户的心声。</p>
+<p>3. IE的安全问题</p>
+<p>IE浏览器是微软当前最令人不安的一款软件，可以说是漏洞百出。</p>
+<p>4. 从IE6就埋下祸根</p>
+<p>当前，IE浏览器的大部分安全问题都始于IE6。除了安全问题，IE在设计和功能上都不能令人满意。</p>
+<p>5. 功能欠缺</p>
+<p>作为一款主流浏览器，IE不支持用户所需要的许多功能。例如，多标签浏览功能，较竞争对手晚了好几年。</p>
+<p>6. 谷歌Chrome浏览器的迅猛发展</p>
+<p>尽管市场份额与IE仍相距甚远，但Chrome的发展速度有目共睹，距离第二大浏览器已为时不远。</p>
+<p>7. 竞争对手联合发难</p>
+<p>不仅谷歌，Mozilla、Opera和苹果等均发力浏览器市场，且市场份额均有提升。</p>
+<p>8. 用户越来越精明</p>
+<p>用户对各大浏览器越来越了解，选择也越来越明智。</p>
+<p>9. 非知名厂商的崛起</p>
+<p>与微软和谷歌相比，Mozilla和Opera的知名度可能并不高，但他们的产品却成为了稳定、安全的代名词。</p>
+<p>10. 微软没有明确的Web战略</p>
+<p>IE没落的原因之一是微软仍没有明确的Web战略，到目前为止，微软的在线业务仍处于亏损状态。</p>

@@ -1,0 +1,29 @@
+---
+layout: post
+status: publish
+published: true
+title: 程序员感悟
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1261
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1261
+date: !binary |-
+  MjAxMC0wNy0yMyAxNjo1MzowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNy0yMyAwODo1MzowNiArMDgwMA==
+categories:
+- 杂谈
+- 民工观点
+tags: []
+comments: []
+---
+<p>1. 10小时< 8小时<br />
+2. 代码第一次迭代=屎，第二次迭代=土，第三次=砖，第四次=瓷，...., 第N次=玉, 第N+1次金<br />
+3. codereview + 迭代=良好的结构代码<br />
+4. 注释永远无法跟上代码，只有有钱的公司才能花时间完善注释<br />
+5. 架构来源于迭代，架构相关于业务，不同的业务对应于不相同的架构</p>

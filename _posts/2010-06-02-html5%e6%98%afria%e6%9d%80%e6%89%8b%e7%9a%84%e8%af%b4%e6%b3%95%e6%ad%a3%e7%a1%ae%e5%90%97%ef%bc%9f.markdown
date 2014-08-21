@@ -1,0 +1,58 @@
+---
+layout: post
+status: publish
+published: true
+title: ! '&rdquo;HTML5是RIA杀手&rdquo;的说法正确吗？'
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1123
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1123
+date: !binary |-
+  MjAxMC0wNi0wMiAwMjo1ODozOCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0wMSAxODo1ODozOCArMDgwMA==
+categories:
+- 民工观点
+tags:
+- HTML5
+- RIA
+comments: []
+---
+<p>[<br />
+发现中国特色的转载与一群垃圾编辑是传播这个错误认识的始作佣者,<br />
+缺少基本的分辨能力，将错就错，是中国IT编辑们的特色。<br />
+]</p>
+<p>每个新事物的产生都是有其背景的。<br />
+在IT领域，很多词汇来自于英语，这就造成了一定的语言理解障碍，<br />
+导致很多人根据自己的理解将某些词的范围扩大或者缩小。<br />
+结果有时会让自己难圆其说。<br />
+比如<br />
+http:&#47;&#47;www.oschina.net&#47;bbs&#47;thread&#47;1614<br />
+指出HTML5与RIA是平台与插件的关系，结果发现他所承认的RIA里的Ajax不是插件。</p>
+<p>那我们来明确一样，到底什么是RIA。<br />
+RIA 是Rich Internet Application的缩写，意思是富互联网应用，从这个意思理解，只要不是简单的互联网应用都是富互联网应用。<br />
+他不是特定的一种技术或者方案，也没有限定了只有Adobe的Flash, M$的Silverlight或者ORACLE的JavaFX才是RIA.<br />
+只要不是最原始的FORM表单加上GET请求的基本都可以称为是富互联网应用。差异只在于富的程度。</p>
+<p>根据文章观点，既然Ajax是一种RIA，那HTML5为什么不是RIA呢？<br />
+HTML5里即有HTML的方面，也有JAVASCRIPT的部分，同时有很多为RIA准备的新的特性。<br />
+这里显然又是矛盾的。</p>
+<p>如果说HTML5是RIA杀手，那就是说HTML5出来后富互联网的应用会越来越少，如果这样HTML5有出来的必要吗？</p>
+<p>下面是维基百科里RIA词条的部分原文：</p>
+<p>Rich Internet Applications (RIAs) are web applications that have many of the characteristics of desktop applications, typically delivered either by way of a site-specific browser, via a browser plug-in, or independently via sandboxes or virtual machines.[1] Adobe Flash, Java and Microsoft Silverlight are currently the three top frameworks, with penetration rates around 95%, 80% and 45% respectively.[2]. Apple has consistently not allowed the use of the top three RIAs in its iPhone, iPod or iPad devices and has instead delivered the applications through its own software and is now promoting HTML5, while developing a standards based Gianduia framework.<br />
+Users generally need to install a software framework using the computer's operating system before launching the application, which typically downloads, updates, verifies and executes the RIA.[3] This is the main differentiator from JavaScript-based alternatives like Ajax which use built-in browser functionality to implement comparable interfaces. While some consider such interfaces to be RIAs, some consider them competitors to RIAs and others, including Gartner, treat them as similar but separate technologies.[4][5]<br />
+RIAs dominate in online gaming as well as applications which require access to video capture (with the notable exception of Gmail, which uses its own task-specific browser plug-in[6]). As web standards such as HTML5 have developed and the compliance of web browsers with those standards has improved, <del datetime="2010-06-01T18:16:18+00:00">the need for plug-in based RIAs has diminished<&#47;del>[citation needed]. The emergence of a range of JavaScript-based desktop-like widget sets have continued this trend.[citation needed]</p>
+<p>从最后一句话，我们可以看出来，HTML5的出现应该是导致基于插件的RIA消失，而不是RIA本身消失。</p>
+<p>如果你用Google搜索HTML5 VS 你会发现下面是flash, silverlight, xhtml，但是你找不到<br />
+HTML5 VS RIA，为什么？ 因为英语国家的人不会这样思考，因为他们不是对等的事物。</p>
+<p>如果你强行搜索HTML5 VS RIA你会得到第一个页面的第一个结果，它的标题是：Flex vs. HTML5 for RIAS<br />
+什么意思呢？就是比较Flex与HTML5作为RIA那个更强？</p>
+<p>同时你会看到这样的提问：Is there an HTML5 RIA toolkit already available?<br />
+http:&#47;&#47;stackoverflow.com&#47;questions&#47;1508473&#47;is-there-an-html5-ria-toolkit-already-available<br />
+什么意思？就是问HTML5 RIA的功具包是不是可用了。</p>
+<p>这样我想事情的答案就会非常的清楚了。</p>
+<p>所以说，如果把HTML5与RIA进行比较，那么与把iPhone与手机进行有什么区别呢？</p>

@@ -1,0 +1,44 @@
+---
+layout: post
+status: publish
+published: true
+title: T61 光盘安装成功ideneb 10.5.5 Mac OS
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 114
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=114
+date: !binary |-
+  MjAxMC0wMS0yNiAxNDo1OTo1NSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwNjo1OTo1NSArMDgwMA==
+categories:
+- 操作系统
+tags:
+- ideneb
+- T61
+comments: []
+---
+<p>我下载的版本是 ideneb 10.5版。<br />
+下面我要将安装的重点介绍一下：<br />
+1.首先硬盘的分区必须将C盘格式成FAT32，MAC分区必须是第二个分区。否则无法启动。<br />
+2.你应该先安装好XP<br />
+3.用MAC OS安装到第二个分区。</p>
+<p>这时会发现在进入系统时停止了。<br />
+这里你需要重启一下<br />
+并进入MAC系统，应该是第二个启动项。</p>
+<p>1.这是在boot:提示后输入-s，然后回车<br />
+2. 然后进入提示后输入：<br />
+&#47;sbin&#47;mount -uw &#47;</p>
+<p>3. 然后<br />
+cd &#47;System&#47;Library&#47;Extensions</p>
+<p>4. 然后<br />
+rm -rf NVDAResman.kext<br />
+5.然后<br />
+exit<br />
+这时就可以成功进入图形界面了。<br />
+下面就慢慢折腾吧。</p>

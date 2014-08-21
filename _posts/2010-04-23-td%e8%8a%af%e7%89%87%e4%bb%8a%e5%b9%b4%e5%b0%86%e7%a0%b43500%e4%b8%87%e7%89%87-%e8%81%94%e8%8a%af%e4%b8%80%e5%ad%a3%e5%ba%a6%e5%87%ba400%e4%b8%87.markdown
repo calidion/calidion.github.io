@@ -1,0 +1,28 @@
+---
+layout: post
+status: publish
+published: true
+title: TD芯片今年将破3500万片 联芯一季度出400万
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 730
+wordpress_url: http://3gcnbeta.ap01.aws.af.cm/wordpress/?p=730
+date: !binary |-
+  MjAxMC0wNC0yMyAxNjo0OToxMyArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNC0yMyAwODo0OToxMyArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p><strong>腾讯科技讯<&#47;strong>（郭晓峰）4月22日消息，联芯科技总裁孙玉望今日在接受媒体采访时表示，联芯科技2010年第一季度TD芯片出货量近400万片，该量已快接近联芯科技去年TD芯片总出货量。同时，他还预测2010年，整个行业TD芯片总量将超过3500万片。</p>
+<p>孙玉望表示，&ldquo;2010年TD-SCDMA终端市场会有很大的增长，因为相比2009年，今年整个网络覆盖更加好，终端的款式、价格也更加丰富。此外，经过去年一年的3G宣传，消费者对3G认识也更加深刻，我们判断今年行业TD芯片出货可能会超过3500万片。&rdquo;</p>
+<p>TD-SCDMA芯片在过去的一年内，性能得到快速提升，终端产业化能力也得到增强。据悉，TD-SCDMA芯片工艺从2008年的130nm提升到90nm，65nm的解决方案已陆续推向市场，45nm方案也开始研发。</p>
+<p>孙玉望透露，目前，联芯科技芯片已大部分基于65纳米工艺，并会继续保持对65纳米的支持，而基于45纳米工艺芯片预计在2012年年底商用。</p>
+<p>相关资料显示，2009年TD-SCDMA芯片出货量达到1200万片。终端方面，已有130多个终端厂家266款不同档次的TD-SCDMA终端投入市场。</p>

@@ -1,0 +1,45 @@
+---
+layout: post
+status: publish
+published: true
+title: 想装个摄象头的驱动。结果没有机会让装
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 253
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=253
+date: !binary |-
+  MjAxMC0wMS0yNiAxNzo0ODoxNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wMS0yNiAwOTo0ODoxNiArMDgwMA==
+categories:
+- Ubuntu
+tags:
+- Ubuntu
+- 摄象头
+- 驱动
+comments: []
+---
+<p>在我的Ubuntu 9.04下面。想看一看我的摄象头是不是可以在Linux下面正常工作。<br />
+然后我开始google。<br />
+最后来到官方。<br />
+https:&#47;&#47;help.ubuntu.com&#47;community&#47;Webcam<br />
+看到上面那个 Linux-UVC，再一看UVC的说明。<br />
+看到这一句<br />
+Linux 2.6.26 and newer includes the Linux UVC driver natively.<br />
+然后执行了一下：<br />
+uname -r<br />
+得到<br />
+2.6.28-15-generic<br />
+已经超过了。<br />
+然后我再打开skype, 点选项-》视频设置-》测试。<br />
+结果我的摄像头主亮了。马上显示出来了视频。<br />
+想想现在的Linux真的很强大啊。<br />
+还不用象Windows那样一个一个的装驱动。<br />
+结果被各大厂家弄N多没有用的垃圾。<br />
+再一次支持一下Linux.<br />
+赞！！</p>

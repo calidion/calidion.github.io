@@ -1,0 +1,35 @@
+---
+layout: post
+status: publish
+published: true
+title: 腾讯收购discuz的六大用意
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1193
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1193
+date: !binary |-
+  MjAxMC0wNi0xOCAwOTo1NTowNiArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNi0xOCAwMTo1NTowNiArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>[导读]在阿里巴巴收购phpwind之后，腾讯1000万美元收购康盛创想。至此中国两大建站工具phpwind和discuz分别从个人创业公司进入了中国最大的两大互联网公司，互联网巨头为何要收购建站工具呢？</p>
+<p>　　在阿里巴巴收购phpwind之后，腾讯1000万美元收购康盛创想。至此中国两大建站工具phpwind和discuz分别从个人创业公司进入了中国最大的两大互联网公司，互联网巨头为何要收购建站工具呢？</p>
+<p>　　对于阿里巴巴收购phpwind，我曾做过分析，阿里巴巴主要是为了借助phpwind在个人站上的优势，实现大淘宝战略，为淘宝增加入口的同时也为阿里妈妈广告联盟寻找投放平台。Phpwind会加入电子商务功能，并与淘宝网和支付宝实现完美对接。</p>
+<p>　　现在腾讯选择收购康盛创想，用意何在？</p>
+<p>　　第一， 腾讯要发力SOSO，需要为SOSO找内容，找流量;同时也需要为搜索广告联盟的发展铺路，目前多数站长用的是google adsense和百度广告联盟。李彦宏在前不久的广告联盟大会上，曾宣布要支持站长发展，拉拢站长。腾讯这次收购discuz直接断了百度广告联盟的后路。</p>
+<p>　　第二， 一直以来站长们对腾讯的印象不是很好，被认为是&ldquo;公敌&rdquo;。腾讯要通过收购扭转口碑。</p>
+<p>　　第三， 腾讯发展的终极目标是&ldquo;在线生活&rdquo;，腾讯的发展轨迹是社交化。而且现在腾讯在做微博，马化腾很关注这个产品，微博对腾讯社区化，抵御竞争对手攻击，意义重大。通过收购康盛创想，可以让discuz论坛也成为腾讯微博的入口，从而带来庞大的流量。</p>
+<p>　　第四， QQ号码与论坛ID捆绑，这无疑让QQ打通了腾讯内部与外部的壁垒，这也会大大增加腾讯产品的粘性。</p>
+<p>　　第五， 目前，部分论坛和个人站被腾讯竞争对手利用来打击腾讯，诽谤腾讯，通过收购可以很好的解决竞争对手的恶意攻击，维护腾讯品牌形象。</p>
+<p>　　第六， 和阿里巴巴一样，打造一个庞大的电子商务帝国，将拍拍和财付通与discuz完美对接。阿里巴巴要用Phpwind打造大淘宝，腾讯通过discuz和拍拍打造大拍拍。</p>
+<p>　　让人不解的问题是互联网的未来是开放的，但是巨头们通过收购又在构建一个更大的围墙，将更多的用户圈在自己的平台之上。其实，微博这类社交产品是最好的粘合剂。目前，新浪微博通过&ldquo;新浪微博代码&rdquo;可以加入到个人博客wordpress上，可以加到一些论坛上，新浪也在构建自己的领地，微博是一个绳，可以捆绑在一起。</p>
+<p>　　都说互联网的未来是开放的，可是我们看到的却是一个又一个更高大的围墙，这真的让人难以理解。</p>

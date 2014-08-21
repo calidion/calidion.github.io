@@ -1,0 +1,44 @@
+---
+layout: post
+status: publish
+published: true
+title: 一段HTML图片上传前显示图片的代码
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1519
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1519
+date: !binary |-
+  MjAxMy0wMi0xOCAxMDo1MDo0OSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMy0wMi0xOCAwMjo1MDo0OSArMDgwMA==
+categories:
+- HTML
+- WEB开发
+- WEB前端技术
+- Javascript
+tags: []
+comments: []
+---
+<p>一段使用jquery图片上传前显示图片的代码，来源：<br />
+http:&#47;&#47;stackoverflow.com&#47;questions&#47;4459379&#47;preview-an-image-before-it-is-uploaded</p>
+<p>一般情况下，javascript无法直接获取本地图片的地址，所以需要利用FileReader里的readAsDataURL读取隐藏的文件地址。<br />
+并在加载完文件后通过访问e.target.result显示出来。</p>
+<pre name=code language="javascript">
+&#47;&#47;Image show on change input file<br />
+	if ($('input[type=file]').length > 0) {<br />
+		$('input[type=file]').change(function() {<br />
+			if (this.files && this.files[0]) {<br />
+				var reader = new FileReader();<br />
+				reader.onload = function(e) {<br />
+					$('ul li a img').attr('src', e.target.result).width(90).height(90);<br />
+				};<br />
+				reader.readAsDataURL(this.files[0]);<br />
+			}<br />
+		});<br />
+	}<br />
+<&#47;pre></p>

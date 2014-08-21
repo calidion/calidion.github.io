@@ -1,0 +1,27 @@
+---
+layout: post
+status: publish
+published: true
+title: 双LED闪光灯 摩托罗拉Droid 2六月发布
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 866
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=866
+date: !binary |-
+  MjAxMC0wNS0wMyAxNjowMzozMCArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wNS0wMyAwODowMzozMCArMDgwMA==
+categories:
+- 新闻
+tags: []
+comments: []
+---
+<p>此前，我们曾报道过一款型号为MB810的手机可能是传说中的手机Shadow，<strong>但是最新的一则消息显示，其实Shadow并不带侧滑全键盘设计，而是跟另外一款新近曝光的摩托罗拉Droid 2有些类似。<&#47;strong>摩托罗拉Droid 2将会采用一块4.3英寸的854&times;480像素的屏幕，采用Android 2.1系统，并搭载摩托罗拉的MotoBlur，支持GPS、HDMI、USB接口、FM收音机，搭载一枚800万像素的摄像头，带有双LED闪光灯，并支持720P视频录制，采用德州仪器的TI OMAP 3630处理器，并有一个PowerVR SGX530图形处理器，配备512MB的RAM。</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100503&#47;06535501164825542.jpg" alt="双LED闪光灯 摩托罗拉Droid 2六月发布" &#47;></p>
+<p>如果顺利的话，这款手机将会在今年6月份正式发布，由运营商Verizon推出，但以上信息并没有得到 证实，只是由一些小道消息综合而来，我们希望都是真的。</p>
+<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100503&#47;0653551802883460.jpg" alt="双LED闪光灯 摩托罗拉Droid 2六月发布" &#47;></p>

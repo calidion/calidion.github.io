@@ -1,0 +1,34 @@
+---
+layout: post
+status: publish
+published: true
+title: python 2.6 无法确定得到当前文件的路径
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1294
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1294
+date: !binary |-
+  MjAxMC0wOC0wNSAxNjowMzoxOSArMDgwMA==
+date_gmt: !binary |-
+  MjAxMC0wOC0wNSAwODowMzoxOSArMDgwMA==
+categories:
+- Python
+tags:
+- Linux
+- python
+comments: []
+---
+<p>1. os.getcwd()跟当前的环境有关系。返回值并不一定是你想要的。<br />
+2. os.path.dirname(__file__)可能为空<br />
+3. 解决的办法是创建一个下级包，比如abc<br />
+import abc<br />
+path = os.path.dirname(abc.__file__)</p>
+<p>这样可以得到包含 abc的路径。<br />
+去掉abc就可以得到当前执行文件的路径。<br />
+Linux下面可以这样实现：</p>
+<p>path = path[0:path.rfind('&#47;')] </p>
