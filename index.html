@@ -1,56 +1,30 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-<!--
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
--->
-    <!-- This loops through the paginated posts -->
-        {% for post in paginator.posts %}
-        <h1><a href="/wordpress{{ post.url }}">{{ post.title }}</a></h1>
-        <p class="author">
-            <span class="date">{{ post.date }}</span>
-        </p>
-        <div class="content">
-            {{ post.content | strip_html | truncatewords:5}}<br>
-            <a href="/wordpress{{ post.url }}">详情...</a><br><br>
+{% for post in paginator.posts %}
+    <div class="article">
+        <h3 class="title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+        <article class="rexp">
+            <p>{{ post.excerpt }}</p>
+        </article>
+        <a href="{{ site.url }}{{ post.url }}" class="more"><i class="icon-link"></i></a>
+        <div class="info">
+            <span class="info-title"><i class="icon-calendar"></i> 发布于: </span>
+            <span class="info-date">{{ post.date | date_to_iso }}</span>
         </div>
-        {% endfor %}
-
-
-    <!-- Pagination links -->
-    <div class="pagination">
-        {% if paginator.previous_page > 1 %}
-        <a href="/wordpress/index.html" class="previous">&laquo;</a>
-        <a href="/wordpress/blogs/page/{{ paginator.previous_page }}" class="previous">上一页</a>
-        {% elsif paginator.previous_page == 1 %}
-        <a href="/wordpress/index.html" class="previous">上一页</a>
-        {% else %}
-        {% endif %}
-        <span class="page_number ">第{{ paginator.page }}页/共{{ paginator.total_pages }}页</span>
-        {% if (paginator.total_pages - paginator.next_page) > 1%}
-        <a href="/wordpress/blogs/page/{{ paginator.next_page }}" class="next">下一页</a>
-        <a href="/wordpress/blogs/page/{{ paginator.total_pages }}" class="next">&raquo;</a>
-
-        {% elsif paginator.next_page %}
-        <a href="/wordpress/blogs/page/{{ paginator.next_page }}" class="next">&raquo;</a>
-        {% else %}
-        {% endif %}
     </div>
-
-  <p class="rss-subscribe">通过<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>订阅本站</p>
-
-</div>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+    <nav class="pagination fn-clear">
+        <span class="pagination-icon"><i class=" icon-copy"></i></span>
+        <ul class="pagination-list">
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                    <li class="current"><a href="javascript:void(0);">{{ page }}</a></li>
+                {% else %}
+                    <li><a href="{{ site.url }}/{%if page > 1 %}/blogs/page/{{ page }}/{% endif %}">{{ page }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+{% endif %}

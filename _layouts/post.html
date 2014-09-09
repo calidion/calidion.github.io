@@ -1,15 +1,31 @@
 ---
 layout: default
+comment: true
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}{% if page.author %} • {{ page.author.display_name }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
+<div class="article article-post">
+    <h2 class="title">{{ page.title }}</h2>
+    <div class="info">
+        <span class="info-title"><i class="icon-calendar"></i> 发布于: </span>
+        <span class="info-date">{{ page.date | date_to_iso }}</span>
+        <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
+        <span class="info-link"><a href="{{ site.url }}/categories.html#{{ page.category }}-ref" >{{ page.category }}</a></span>
+    </div>
     {{ content }}
-  </article>
-
+    <nav class="article-previous fn-clear">
+        {% if page.previous %}
+        <a class="prev" href="{{site.url}}{{ page.previous.url }}" rel="bookmark">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a>
+        {% endif %}
+        {% if page.next %}
+        <a class="next" href="{{site.url}}{{ page.next.url }}" rel="bookmark">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a>
+        {% endif %}
+    </nav>
+    <div class="comment">
+        {% if site.disqus.config %}
+        <div id="disqus_thread"></div>
+        {% else %}
+            {% if site.duoshuo.config %}
+            <div class="ds-thread"></div>
+            {% endif %}
+        {% endif %}
+    </div>
 </div>
