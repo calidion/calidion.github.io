@@ -1,11 +1,7 @@
-markdown: redcarpet
-pygments: true
-paginate: 8
-
 safe:  false
 # Site settings
 title: 北漂IT民工
-keywords: Jekyll Theme
+keywords: 北漂IT民工,Web,javascript,HTML,HTTP,W3C,Mysql,Sails
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
 url: "/wordpress"
@@ -27,7 +23,7 @@ nav:
 author:
     name: 北漂IT民工
     email: calidion@gmail.com
-    imageLink: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
+    imageLink: http://tp4.sinaimg.cn/2344087443/180/5622386331/1
     simpleIntro: 关于IT技术的新闻，技术，感悟，交流，分享
 baseurl: "/wordpress" # the subpath of your site, e.g. /blog/
 
@@ -49,16 +45,16 @@ follow:
 #Links
 customLinks:
   - item:
-    - text: 掌心
-      url: http://www.zhanxin.info
+    - text: 北漂IT民工
+      url: http://www.3gcnbeta.com/wordpress
     - text: Jekyll
       url: http://jekyllrb.com
-    - text: Jekyll Theme
-      url: http://www.zhanxin.info/themes.html
-    message: Friends
+    - text: 校长的博客
+      url: http://phped.sinaapp.com/
+    message: 好友
   - item:
-    - text: Font Awesome
-      url: http://fortawesome.github.io/Font-Awesome/
+    - text: sailsjs
+      url: http://sailsjs.org
     - text: Google Font
       url: http://www.google.com/fonts/
     - text: jQuery
@@ -68,7 +64,7 @@ customLinks:
 #googleAnaly, your id link UA-12345678-X
 googleAnaly:
   config: true
-  id: UA-12680566-3
+  id: UA-11293547-1
 
 #comment config
 disqus:
@@ -77,7 +73,7 @@ disqus:
 
 duoshuo:
   config: true
-  id: zhanxin
+  id: 3gcnbeta
 
 twitter_username: htc3000
 github_username:  calidion

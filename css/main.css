@@ -51,6 +51,7 @@ a         { color: #91736b; text-decoration: none; }
     width: 960px;
     height: 120px;
     margin: 0 auto;
+    position: relative;
 }
 .logo {
     display: block;
@@ -75,6 +76,16 @@ a         { color: #91736b; text-decoration: none; }
     -o-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;
 }
+
+.header > h2.title {
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    font-size: 2em;
+    color: #333;
+}
+
+
 .logo a:hover {
     color: rgba(255, 255, 255, 0.7);
     background-position: 0 0;
@@ -105,9 +116,9 @@ a         { color: #91736b; text-decoration: none; }
     border-bottom: 3px double rgba(255, 255, 255, 0.3);
 }
 .follow {
-    float: left;
-    width: 270px;
-    padding-top: 80px;
+    position: absolute;
+    right: 0px;
+    width: 280px;
     height: 30px;
     text-align: center;
 }
@@ -118,12 +129,12 @@ a         { color: #91736b; text-decoration: none; }
     height: 30px;
     line-height: 30px;
     background: #496661;
-    display: block;
-    float: left;
+    display: inline-block;
+    /* float: left; */
     font-size: 16px;
     border-radius: 60px;
-    vertical-align: middle;
-    margin-right: 10px;
+    vertical-align: top;
+    margin: 5px;
 }
 .follow a:hover {
     color: rgba(255, 255, 255, 0.98);
@@ -623,7 +634,7 @@ a         { color: #91736b; text-decoration: none; }
     list-style-type: none;
     background: #99b9c4;
     color: #fff;
-    margin-right: 10px;
+    margin: 2px;
     padding: 3px 20px;
     float: left;
 }
@@ -633,8 +644,9 @@ a         { color: #91736b; text-decoration: none; }
 
 .aside {
     padding: 20px 20px 40px 20px;
-    margin-top: 26px;
-    float: left;
+    margin-top: -75px;
+    position: absolute;
+    right: 0px;
     background: #f2eeec url(../images/aside-bg.jpg) no-repeat 0px 0px;
     width: 240px;
     min-height: 500px;
