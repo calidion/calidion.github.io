@@ -85,3 +85,4 @@ paginate_path: "blogs/page/:num"
 markdown: kramdown
 kramdown:
   input: GFM
+highlighter: pygments
