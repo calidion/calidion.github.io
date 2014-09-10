@@ -23,127 +23,226 @@ categories:
 tags: []
 comments: []
 ---
-<p>javascript技术是最近几年最活跃的技术之一，不但创造了非常好用的nodejs,<br />
-还基于nodejs产生了一堆非常好用的包机制，类库，web框架，还有就是项目集成与管理工具。<br />
-本文要介绍的是如何使用grunt 给前端代码打包。<br />
-这里的前端代码包括javascript代码，css代码，html代码。</p>
-<p>grunt是基于nodejs的，所以在使用gruntjs之前，一定要确定你的nodejs环境已经可以工作。</p>
-<p>grunt打包的机制非常的简单，主要是分成以下几步：<br />
-1、全局安装gruntjs</p>
-<pre name="code" language="js">
-npm install -g grunt-cli<br />
-<&#47;pre></p>
-<p>2、创建基于nodejs npm的package.json文件，用以明确当前目录下的打包信息：</p>
-<pre name="code" language="js">
-{<br />
-  "name": "projectname",   &#47;&#47;你的项目名<br />
-  "version": "0.1.0",      &#47;&#47;给这个项目一个版本<br />
-  "description": "Open E-book project", &#47;&#47;项目描述<br />
-  "homepage": "http:&#47;&#47;book.t1bao.com",   &#47;&#47;项目的主页<br />
-  "repository": {                        &#47;&#47;代码库的位置<br />
-    "type": "git",<br />
-    "url": "https:&#47;&#47;github.com&#47;user&#47;projectname"<br />
-  },<br />
-  "author": "北漂IT民工",    &#47;&#47;作者名称<br />
-  "devDependencies": {      &#47;&#47;依赖关系<br />
-  }<br />
-}<br />
-<&#47;pre><br />
+javascript技术是最近几年最活跃的技术之一，不但创造了非常好用的nodejs,
+
+还基于nodejs产生了一堆非常好用的包机制，类库，web框架，还有就是项目集成与管理工具。
+
+本文要介绍的是如何使用grunt 给前端代码打包。
+
+这里的前端代码包括javascript代码，css代码，html代码。
+
+grunt是基于nodejs的，所以在使用gruntjs之前，一定要确定你的nodejs环境已经可以工作。
+
+grunt打包的机制非常的简单，主要是分成以下几步：
+
+1、全局安装gruntjs
+
+```
+npm install -g grunt-cli
+```
+
+2、创建基于nodejs npm的package.json文件，用以明确当前目录下的打包信息：
+
+```
+{
+
+  "name": "projectname",   //你的项目名
+
+  "version": "0.1.0",      //给这个项目一个版本
+
+  "description": "Open E-book project", //项目描述
+
+  "homepage": "http://book.t1bao.com",   //项目的主页
+
+  "repository": {                        //代码库的位置
+
+    "type": "git",
+
+    "url": "https://github.com/user/projectname"
+
+  },
+
+  "author": "北漂IT民工",    //作者名称
+
+  "devDependencies": {      //依赖关系
+
+  }
+
+}
+```
+
 2、在package.json目录下安装grunt组件</p>
-<pre name="code" language="js">
-npm install grunt --save-dev<br />
-<&#47;pre><br />
-注意：一定要加上--save-dev，这样在package.json里就能自动的更新grunt的最新版本到devDependencies里面<br />
+```
+npm install grunt --save-dev
+```
+
+注意：一定要加上--save-dev，这样在package.json里就能自动的更新grunt的最新版本到devDependencies里面
+
 3、安装相关的grunt插件</p>
-<pre name="code" language="js">
-npm install grunt-contrib-cssmin --save-dev<br />
-npm install grunt-contrib-requirejs --save-dev<br />
-npm install grunt-contrib-htmlmin --save-dev<br />
-<&#47;pre></p>
-<p>执行完这些命令后：<br />
-package.json的devDependencies将会变成是这样的：</p>
-<pre name="code" language="js">
-  "devDependencies": {<br />
-    "grunt": "~0.4.2",<br />
-    "grunt-contrib-cssmin": "~0.7.0",<br />
-    "grunt-contrib-htmlmin": "~0.1.3",<br />
-    "grunt-contrib-requirejs": "~0.4.1"<br />
-  }<br />
-<&#47;pre><br />
-4、编写Gruntfile.js文件</p>
-<pre name="code" language="js">
-<p>module.exports = function(grunt) {<br />
-  grunt.initConfig({</p>
-<p>      pkg: grunt.file.readJSON('package.json'),      &#47;&#47;指定包的信息</p>
-<p>      htmlmin: {                                     &#47;&#47; html打包<br />
-        dist: {                                      &#47;&#47;<br />
-          options: {                                 &#47;&#47; Target options<br />
-            removeComments: true,<br />
-            collapseWhitespace: true<br />
-          },<br />
-          files: {                                   &#47;&#47; 文件<br />
-            'dest&#47;index.html': 'index.html',     &#47;&#47; '目标html': '源html'<br />
-          }<br />
-        },<br />
-      },<br />
-      cssmin: {                                        &#47;&#47;css打包<br />
-        styles: {<br />
-            src: ["a&#47;b.css", 'styles&#47;*.css'],<br />
-            dest: 'dest&#47;styles&#47;<%= pkg.name %>.min.css'<br />
-        },<br />
-      },<br />
-      requirejs: {<br />
-        compile: {<br />
-          options: {<br />
-              baseUrl: "scripts",                     &#47;&#47;js根目录<br />
-              name: 'main',                           &#47;&#47;执行的第一个requirejs包<br />
-              optimize: 'uglify',<br />
-              mainConfigFile: "scripts&#47;config&#47;global.js",                 &#47;&#47;requirejs的配置文件<br />
-              out: "dest&#47;scripts&#47;<%= pkg.name %>.min.js",                 &#47;&#47;输出的压缩文件<br />
-              findNestedDependencies: true,                               &#47;&#47;必须指定让requirejs能找到嵌套的文件<br />
-              include: ['..&#47;Library&#47;require.js']                          &#47;&#47;指定requirejs所在的位置。<br />
-          }<br />
-        }<br />
-      }<br />
-  });</p>
-<p>  &#47;&#47;加载所需要的库<br />
-  grunt.loadNpmTasks('grunt-contrib-requirejs');<br />
-  grunt.loadNpmTasks("grunt-contrib-cssmin");<br />
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');</p>
-<p>  &#47;&#47;注册相应的类库<br />
-  grunt.registerTask('default', ['requirejs', 'cssmin', 'htmlmin']);</p>
-<p><&#47;pre></p>
-<p>5、在真正打包前，hmlt文件也是需要有所变化的。<br />
-在打包前的开发版的js里，可能会存在很多的css,在打包的版本里只有一个css文件了。<br />
-js也是一样的。所以发布的html也需要做相应的调整。</p>
-<p>变化如下：<br />
-css:<br />
-前</p>
-<pre name="code" language="html">
-<link rel="stylesheet" href="styles&#47;a.css" &#47;>
-<link rel="stylesheet" href="styles&#47;b.css" &#47;>
-<link rel="stylesheet" href="styles&#47;c.css" &#47;>
-<&#47;pre><br />
-后</p>
-<pre name="code" language="html">
-<link rel="stylesheet" href="styles&#47;packagename.min.css" &#47;>
-<&#47;pre><br />
-js:<br />
-前</p>
-<pre name="code" language="html">
-<script data-main="scripts&#47;config&#47;global" src="Library&#47;require.js"><&#47;script><br />
-<&#47;pre><br />
-后</p>
-<pre name="code" language="html">
-<script src="scripts&#47;packagename.min.js"><&#47;script><br />
-<&#47;pre></p>
-<p>6、完成上述步骤，我们的环境与配置就已经写好了，现在就可以通过在控制台下面执行以下代码实现打包了。</p>
-<pre name="code" language="js">
->grunt<br />
-<&#47;pre></p>
-<p>正常情况下，会出现如下的图片：<br />
-<img src="http:&#47;&#47;res.cloudinary.com&#47;dawjytvkn&#47;image&#47;upload&#47;v1390809495&#47;QQ%E5%9B%BE%E7%89%8720140127155722_zf7wwo.jpg" class="alignnone wp-image-1680" width="597" height="698"></p>
-<p>注意最后的:<br />
-Done, without errors.</p>
-<p>如果没有出现这个，表明你的程序出错了。需要进一步的调试。</p>
-<p>成功后，在你指定的对应的文档路径下面就会出现html, css, js, 在js一定要注册打包前后，css与他所使用的资源的位置文化，一定要将资源（如图片也复制到对应的目录下，保持相对位置的不变）。</p>
+```
+npm install grunt-contrib-cssmin --save-dev
+
+npm install grunt-contrib-requirejs --save-dev
+
+npm install grunt-contrib-htmlmin --save-dev
+
+```
+
+执行完这些命令后：
+
+package.json的devDependencies将会变成是这样的：
+
+```
+  "devDependencies": {
+
+    "grunt": "~0.4.2",
+
+    "grunt-contrib-cssmin": "~0.7.0",
+
+    "grunt-contrib-htmlmin": "~0.1.3",
+
+    "grunt-contrib-requirejs": "~0.4.1"
+
+  }
+```
+
+4、编写Gruntfile.js文件
+
+```
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+
+      pkg: grunt.file.readJSON('package.json'),      //指定包的信息
+
+      htmlmin: {                                     // html打包
+
+        dist: {                                      //
+
+          options: {                                 // Target options
+
+            removeComments: true,
+
+            collapseWhitespace: true
+
+          },
+
+          files: {                                   // 文件
+
+            'dest/index.html': 'index.html',     // '目标html': '源html'
+
+          }
+
+        },
+
+      },
+
+      cssmin: {                                        //css打包
+
+        styles: {
+
+            src: ["a/b.css", 'styles/*.css'],
+
+            dest: 'dest/styles/<%= pkg.name %>.min.css'
+
+        },
+
+      },
+
+      requirejs: {
+
+        compile: {
+
+          options: {
+
+              baseUrl: "scripts",                     //js根目录
+
+              name: 'main',                           //执行的第一个requirejs包
+
+              optimize: 'uglify',
+
+              mainConfigFile: "scripts/config/global.js",                 //requirejs的配置文件
+
+              out: "dest/scripts/<%= pkg.name %>.min.js",                 //输出的压缩文件
+
+              findNestedDependencies: true,                               //必须指定让requirejs能找到嵌套的文件
+
+              include: ['../Library/require.js']                          //指定requirejs所在的位置。
+
+          }
+
+        }
+
+      }
+
+  });
+
+  //加载所需要的库
+
+  grunt.loadNpmTasks('grunt-contrib-requirejs');
+
+  grunt.loadNpmTasks("grunt-contrib-cssmin");
+
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+
+  //注册相应的类库
+
+  grunt.registerTask('default', ['requirejs', 'cssmin', 'htmlmin']);
+
+```
+
+5、在真正打包前，hmlt文件也是需要有所变化的。
+
+在打包前的开发版的js里，可能会存在很多的css,在打包的版本里只有一个css文件了。
+
+js也是一样的。所以发布的html也需要做相应的调整。
+
+变化如下：
+
+css:
+
+前
+
+```
+
+<link rel="stylesheet" href="styles/a.css" />
+<link rel="stylesheet" href="styles/b.css" />
+<link rel="stylesheet" href="styles/c.css" />
+```
+
+后
+```
+<link rel="stylesheet" href="styles/packagename.min.css" />
+```
+
+js:
+
+前
+
+```
+<script data-main="scripts/config/global" src="Library/require.js"></script>
+```
+
+后
+```
+<script src="scripts/packagename.min.js"></script>
+```
+
+6、完成上述步骤，我们的环境与配置就已经写好了，现在就可以通过在控制台下面执行以下代码实现打包了。
+
+```
+>grunt
+
+```
+
+正常情况下，会出现如下的图片：
+
+![](http://res.cloudinary.com/dawjytvkn/image/upload/v1390809495/QQ%E5%9B%BE%E7%89%8720140127155722_zf7wwo.jpg)
+
+注意最后的:
+
+Done, without errors.
+
+如果没有出现这个，表明你的程序出错了。需要进一步的调试。
+
+成功后，在你指定的对应的文档路径下面就会出现html, css, js, 在js一定要注册打包前后，css与他所使用的资源的位置文化，一定要将资源（如图片也复制到对应的目录下，保持相对位置的不变）。

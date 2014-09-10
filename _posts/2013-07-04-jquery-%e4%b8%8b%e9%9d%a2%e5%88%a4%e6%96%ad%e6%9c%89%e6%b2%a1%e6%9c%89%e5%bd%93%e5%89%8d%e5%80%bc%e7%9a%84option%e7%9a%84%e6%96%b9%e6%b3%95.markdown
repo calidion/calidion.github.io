@@ -24,29 +24,50 @@ categories:
 tags: []
 comments: []
 ---
-<p>前端开发时经常需要判断是不是当前的值已经有Option了，如果有就将当前值的Option选中。</p>
-<p>下面的代码就是让你如何找到值为val的option，并选中它。</p>
-<p>1、如何判断是不是有当前值为val的Option?</p>
-<pre class="code" language="js">
-    $('option[value=' + val + ']', node.__last).length > 0<br />
-<&#47;pre></p>
-<p>2、如何将找到的Option选中呢？</p>
-<pre class="code" language="js">
-$('option[value=' + val + ']', node.__last).attr('selected', 'selected');<br />
-<&#47;pre></p>
-<p>3、所以合起来的代码：</p>
-<pre class="code" language="js">
-          if ($('option[value=' + val + ']', node.__last).length > 0) {<br />
-            $('option[value=' + val + ']', node.__last).attr('selected', 'selected');<br />
-          }<br />
-<&#47;pre></p>
-<p>4、如何需要创建新的Option呢？</p>
-<p>node为select对应的jquery对象</p>
-<pre class="code" language="js">
-            var option = $('<br />
-<option>');<br />
-            option.html(text);<br />
-            option.val(val);<br />
-            option.attr('selected', 'selected');<br />
-            node.append(option);<br />
-<&#47;pre></p>
+前端开发时经常需要判断是不是当前的值已经有Option了，如果有就将当前值的Option选中。
+
+下面的代码就是让你如何找到值为val的option，并选中它。
+
+1、如何判断是不是有当前值为val的Option?
+
+```
+    $('option[value=' + val + ']', node.__last).length > 0
+
+```
+
+2、如何将找到的Option选中呢？
+
+```
+$('option[value=' + val + ']', node.__last).attr('selected', 'selected');
+
+```
+
+3、所以合起来的代码：
+
+~~~javascript
+          if ($('option[value=' + val + ']', node.__last).length > 0) {
+
+            $('option[value=' + val + ']', node.__last).attr('selected', 'selected');
+
+          }
+
+~~~
+
+4、如何需要创建新的Option呢？
+
+node为select对应的jquery对象
+
+```
+            var option = $('
+
+<option>');
+
+            option.html(text);
+
+            option.val(val);
+
+            option.attr('selected', 'selected');
+
+            node.append(option);
+
+```

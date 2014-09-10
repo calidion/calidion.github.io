@@ -21,31 +21,56 @@ categories:
 tags: []
 comments: []
 ---
-<p>由于最近心血来潮，将PC的桌面OS从UBUNTU 13.04升级到了13.10的Beta。发现apache也从2.2.X升级到了2.4.X了。<br />
-从而导致我们的配置都失效了。<br />
-所有的虚拟主机的配置与相应虚拟主机的配置都失效。<br />
-通过一段时间的google，终于让我解决了这个问题。<br />
-升级总共遇到两个问题。<br />
-1、找不到虚拟主机。<br />
-2、虚拟主机对应的网站无法访问。</p>
-<p>第一个问题的原因是修改了apache2.conf文件<br />
-要求配置文件的扩展名变成是 .conf才能被识别。<br />
-这个改进感觉是不错的。<br />
-所以将原来没有后缀的配置文件修改成www.domain.com.conf就可以了</p>
-<p>一个老外提供了另一种方法，对英文阅读没有障碍的同学可以看一下：<br />
-http:&#47;&#47;lyemium.com&#47;content&#47;virtual-host-issues-when-upgrading-apache-22-24</p>
-<p>不过我还是建议按新的apache2.4的思路走。这样非conf文件就可以心安理得的放在配置目录下面了。也方便备份，修改。</p>
-<p>第二个问题是指令变动引起的。<br />
-得到的错误信息是这样的：</p>
-<p>AH01630: client denied by server configuration</p>
-<p>之前的版本是通过：<br />
-Allow来控制访问权限的，但是新的2.4则是通过require指令来实现的。<br />
-所以原来的指令</p>
-<pre name=code lauguage=apache>
-    Order allow,deny<br />
+由于最近心血来潮，将PC的桌面OS从UBUNTU 13.04升级到了13.10的Beta。发现apache也从2.2.X升级到了2.4.X了。
+
+从而导致我们的配置都失效了。
+
+所有的虚拟主机的配置与相应虚拟主机的配置都失效。
+
+通过一段时间的google，终于让我解决了这个问题。
+
+升级总共遇到两个问题。
+
+1、找不到虚拟主机。
+
+2、虚拟主机对应的网站无法访问。
+
+第一个问题的原因是修改了apache2.conf文件
+
+要求配置文件的扩展名变成是 .conf才能被识别。
+
+这个改进感觉是不错的。
+
+所以将原来没有后缀的配置文件修改成www.domain.com.conf就可以了
+
+一个老外提供了另一种方法，对英文阅读没有障碍的同学可以看一下：
+
+http://lyemium.com/content/virtual-host-issues-when-upgrading-apache-22-24
+
+不过我还是建议按新的apache2.4的思路走。这样非conf文件就可以心安理得的放在配置目录下面了。也方便备份，修改。
+
+第二个问题是指令变动引起的。
+
+得到的错误信息是这样的：
+
+AH01630: client denied by server configuration
+
+之前的版本是通过：
+
+Allow来控制访问权限的，但是新的2.4则是通过require指令来实现的。
+
+所以原来的指令
+
+```
+    Order allow,deny
+
     Allow from all</p>
-<p><&#47;pre><br />
-需要改为</p>
-<pre name=code lauguage=apache>
-   require all granted<br />
-<&#47;pre></p>
+
+```
+
+需要改为
+
+```
+   require all granted
+
+```

@@ -22,7 +22,7 @@ layout: default
                 {% if page == paginator.page %}
                     <li class="current"><a href="javascript:void(0);">{{ page }}</a></li>
                 {% else %}
-                    <li><a href="{{ site.url }}/{%if page > 1 %}/blogs/page/{{ page }}/{% endif %}">{{ page }}</a></li>
+                    <li><a href="{{ site.url }}{%if page > 1 %}/blogs/page/{{ page }}/{% endif %}">{{ page }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>

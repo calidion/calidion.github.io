@@ -26,7 +26,7 @@ nodejs的https请求如何不加以配置会出来很多错误。
 
 下面是经过测试的一段nodejs发送HTTPS请求的代码，主要是要注意Options里的几个参数的内容。
 
-```
+```javascript
     var data = {
 
     };

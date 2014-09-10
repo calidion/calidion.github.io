@@ -21,12 +21,14 @@ categories:
 tags: []
 comments: []
 ---
-<p>
-使用Open shift hot deploy 加速应用的启动。代码如下：</p>
-<pre name="code" language="shell">
-$ cd applicationName&#47;.openshift&#47;markers<br />
-$ touch hot_deploy<br />
-$ git add hot_deploy<br />
-$ git commit -m "Adding hot deployment marker"<br />
-$ git push<br />
-<&#47;pre></p>
+
+使用Open shift hot deploy 加速应用的启动。代码如下：
+
+```
+$ cd applicationName/.openshift/markers
+$ touch hot_deploy
+$ git add hot_deploy
+$ git commit -m "Adding hot deployment marker"
+$ git push
+```
+

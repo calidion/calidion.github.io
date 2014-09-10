@@ -21,56 +21,108 @@ categories:
 tags: []
 comments: []
 ---
-<p>汉诺塔是一个比较经典的递归问题。由于其包含两层递归，所以相对来讲比较难理解。<br />
-同时一些书本上只给出来算法。并没有真正的可以运行并且包含数据处理的例子。<br />
-今天兴趣一来，就写了一个。<br />
-放在博客上，留做纪念。</p>
-<p>汉诺塔问题描述：</p>
-<p>共有3根杆子，在初始的杆子上，有n个圆盘，这些圆盘从下至上按照从大到小的顺序排列。</p>
-<p>现在要把这些原盘移动到第三根杆子上，<br />
-要求，每次移动只能移动一个圆盘，而且大的圆盘不能放到小的圆盘上面。</p>
-<pre language="js" name="code">
-var namespace = {};<br />
+汉诺塔是一个比较经典的递归问题。由于其包含两层递归，所以相对来讲比较难理解。
+
+同时一些书本上只给出来算法。并没有真正的可以运行并且包含数据处理的例子。
+
+今天兴趣一来，就写了一个。
+
+放在博客上，留做纪念。
+
+汉诺塔问题描述：
+
+共有3根杆子，在初始的杆子上，有n个圆盘，这些圆盘从下至上按照从大到小的顺序排列。
+
+现在要把这些原盘移动到第三根杆子上，
+
+要求，每次移动只能移动一个圆盘，而且大的圆盘不能放到小的圆盘上面。
+
+```
+
+var namespace = {};
+
 (function(namespace) {</p>
-<p>var a = [], b = [], c = [];</p>
-<p>function hanoi(x, y, z, n) {<br />
-	if (n === 1) {<br />
-		move(x, z);<br />
-	} else {<br />
-		console.log("move n -1 from x to y , level " + n);<br />
-		hanoi(x, z, y, n - 1);<br />
-		console.log(a);<br />
-		console.log(b);<br />
-		console.log(c);<br />
-		console.log("move x to y , level " + n);<br />
-		move(x, z);<br />
-		console.log(a);<br />
-		console.log(b);<br />
-		console.log(c);<br />
-		console.log("move n - 1 from y to z , level " + n);<br />
-		hanoi(y, x, z, n - 1);<br />
-		console.log(a);<br />
-		console.log(b);<br />
-		console.log(c);<br />
-	}<br />
-}</p>
-<p>function move(x, y) {<br />
-	var v = x.pop();<br />
-	console.log(v);<br />
-	y.push(v);<br />
-}</p>
-<p>function start_hanoi(n) {<br />
-	a = [];<br />
-	b = [];<br />
-	c = [];</p>
-<p>	for ( var i = n; i > 0; i--) {<br />
-		a.push(i);<br />
-	}<br />
-	console.log(a);</p>
-<p>	hanoi(a, b, c, n);</p>
-<p>	console.log(c);<br />
-}</p>
-<p>namespace.hanoi = start_hanoi;</p>
-<p>})(namespace);</p>
-<p>namespace.hanoi(1);<br />
-<&#47;pre></p>
+
+var a = [], b = [], c = [];
+
+function hanoi(x, y, z, n) {
+
+	if (n === 1) {
+
+		move(x, z);
+
+	} else {
+
+		console.log("move n -1 from x to y , level " + n);
+
+		hanoi(x, z, y, n - 1);
+
+		console.log(a);
+
+		console.log(b);
+
+		console.log(c);
+
+		console.log("move x to y , level " + n);
+
+		move(x, z);
+
+		console.log(a);
+
+		console.log(b);
+
+		console.log(c);
+
+		console.log("move n - 1 from y to z , level " + n);
+
+		hanoi(y, x, z, n - 1);
+
+		console.log(a);
+
+		console.log(b);
+
+		console.log(c);
+
+	}
+
+}
+
+function move(x, y) {
+
+	var v = x.pop();
+
+	console.log(v);
+
+	y.push(v);
+
+}
+
+function start_hanoi(n) {
+
+	a = [];
+
+	b = [];
+
+	c = [];
+
+	for ( var i = n; i > 0; i--) {
+
+		a.push(i);
+
+	}
+
+	console.log(a);
+
+	hanoi(a, b, c, n);
+
+	console.log(c);
+
+}
+
+namespace.hanoi = start_hanoi;
+
+})(namespace);
+
+namespace.hanoi(1);
+
+```

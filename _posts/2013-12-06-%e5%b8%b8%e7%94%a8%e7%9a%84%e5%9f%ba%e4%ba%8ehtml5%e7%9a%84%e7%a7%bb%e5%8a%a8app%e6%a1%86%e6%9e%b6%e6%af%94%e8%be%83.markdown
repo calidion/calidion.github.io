@@ -21,278 +21,272 @@ categories:
 tags: []
 comments: []
 ---
-<p>原文：<a href="http:&#47;&#47;www.gajotres.net&#47;top-7-mobile-application-html5-frameworks&#47;">http:&#47;&#47;www.gajotres.net&#47;top-7-mobile-application-html5-frameworks&#47;<&#47;a></p>
-<p>【一手痒，翻译了一下，原文错字有几处，已经在译文中已经修正，如果中文有错误，也请留言指正，谢谢。】</p>
-<p>上个星期我写了一个文章，讨论了jQuery Mobile和Sencha Touch的不同。那篇文章主题的限制，我忽略掉了其它的框架。</p>
-<p>但在继续本文之前，我得提醒下你，这个文章是讨论HTML5在混合移动应用上的框架的，不会讨论象Bootstrap这样的前端框架的，这些不是本文要讨论的点。</p>
-<p>回归主题，不管如何，jQuery Mobile和Sencha Touch并不是移动领域的中心，事实上他们根本不算。移动市场非常巨大，对于满意的HTML5的框架的需求也是如此。此文的意义在于看到每个我们要讨论的框架都有一个完全不同的架构和开发方式。有些为了某些特定的目的而建立，有些则是为了成全通用的框架。很少数不要求特定的原生环境，但大部分都是要求的。</p>
-<p>&nbsp;</p>
-<p>介绍</p>
-<p>&nbsp;</p>
-<p>对于不知道混合应用开发的，可以了解一下它是原生应用概念与移动互联网应用概念的混合。通常原生代码由一个封装框架提供（例如Phonegap），这种框架是连接原生代码与Javascript API的桥梁。这样通过这个框架，应用就可以通过javascript代码执行原生代码才能执行的功能，比如用摄象头拍照。</p>
-<div><&#47;div></p>
-<div>同传统的将源文件保存在服务器端的移动Web App不同的是，混合移动App将HMLT, Javascript和CSS文件存在本地(当然在相同的情况下，他们一样可以保存在服务器端)，所以不一定需要Internet的访问。<&#47;div><br />
+原文：[http://www.gajotres.net/top-7-mobile-application-html5-frameworks/](http://www.gajotres.net/top-7-mobile-application-html5-frameworks/)
+
+【一手痒，翻译了一下，原文错字有几处，已经在译文中已经修正，如果中文有错误，也请留言指正，谢谢。】
+
+上个星期我写了一个文章，讨论了jQuery Mobile和Sencha Touch的不同。那篇文章主题的限制，我忽略掉了其它的框架。
+
+但在继续本文之前，我得提醒下你，这个文章是讨论HTML5在混合移动应用上的框架的，不会讨论象Bootstrap这样的前端框架的，这些不是本文要讨论的点。
+
+回归主题，不管如何，jQuery Mobile和Sencha Touch并不是移动领域的中心，事实上他们根本不算。移动市场非常巨大，对于满意的HTML5的框架的需求也是如此。此文的意义在于看到每个我们要讨论的框架都有一个完全不同的架构和开发方式。有些为了某些特定的目的而建立，有些则是为了成全通用的框架。很少数不要求特定的原生环境，但大部分都是要求的。
+
+&nbsp;
+
+介绍
+
+&nbsp;
+
+对于不知道混合应用开发的，可以了解一下它是原生应用概念与移动互联网应用概念的混合。通常原生代码由一个封装框架提供（例如Phonegap），这种框架是连接原生代码与Javascript API的桥梁。这样通过这个框架，应用就可以通过javascript代码执行原生代码才能执行的功能，比如用摄象头拍照。
+
+<div></div></p>
+<div>同传统的将源文件保存在服务器端的移动Web App不同的是，混合移动App将HMLT, Javascript和CSS文件存在本地(当然在相同的情况下，他们一样可以保存在服务器端)，所以不一定需要Internet的访问。</div>
+
 在本文中，我将尽可能的做到客观。我先说明一下我的情况，我是一个jQuery Mobile和Sencha Touch的开发者。我在选择这两个框架前，我花了很多时间了解各种框架。但是这并不表示其它的框架不好或者不满足需求。正如你将会看到的一样，我的决定也是很艰难的，并且也花了很长时间。他们都很优秀，但是正如滚石乐队所唱那样：&ldquo;你不可能总得到你想要的&rdquo;.</p>
-<div>在开始之前，我们看一下我所选择的7个框架，他们按字母排序如下：<&#47;div></p>
-<ul>
-<li><a href="http:&#47;&#47;app-framework-software.intel.com&#47;"><strong>Intel App Framework &ndash; ex jQMoby<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;jquerymobile.com&#47;"><strong>jQuery Mobile<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;jqtjs.com&#47;"><strong>jQT &ndash; jQuery Touch<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;www.kendoui.com&#47;"><strong>Kendo UI<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;www.sencha.com&#47;products&#47;touch"><strong>Sencha Touch<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;www.appcelerator.com&#47;"><strong>Titanium Appcelerator<&#47;strong><&#47;a><&#47;li>
-<li><a href="http:&#47;&#47;zeptojs.com&#47;"><strong>Zepto.js<&#47;strong><&#47;a><&#47;li><br />
-<&#47;ul><br />
+<div>在开始之前，我们看一下我所选择的7个框架，他们按字母排序如下：</div></p>
+
+*   [**Intel App Framework &ndash; ex jQMoby**](http://app-framework-software.intel.com/)
+*   [**jQuery Mobile**](http://jquerymobile.com/)
+*   [**jQT &ndash; jQuery Touch**](http://jqtjs.com/)
+*   [**Kendo UI**](http://www.kendoui.com/)
+*   [**Sencha Touch**](http://www.sencha.com/products/touch)
+*   [**Titanium Appcelerator**](http://www.appcelerator.com/)
+*   [**Zepto.js**](http://zeptojs.com/)
+
 &nbsp;</p>
-<div><&#47;div></p>
+<div></div></p>
 <div>
-<div>1. Intel的应用框架 &ndash; ex jQMoby<&#47;div><br />
-<&#47;div></p>
-<div><&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;JQMobi.jpg" width="615" height="300" &#47;></p>
-<div><&#47;div><br />
+<div>1. Intel的应用框架 &ndash; ex jQMoby</div>
+
+</div></p>
+<div></div>
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/JQMobi.jpg)</p>
+<div></div>
+
 这个框架是一个睡美人。非常快，就象Sencha Touch一样，为Android和IOS平台做了优化。</p>
-<p><strong style="font-size: 1em;">优点<&#47;strong></p>
-<div><&#47;div></p>
-<ul>
-<li>很快也很可靠，可能是单就这种类型的来说最快的，性能只比Sencha Touch差点。<&#47;li>
-<li>很小，很轻<&#47;li>
-<li>基于HTML，并用javascript来增加HTML<&#47;li>
-<li>很好的原生封方案，不需要再用PhoneGap了<&#47;li>
-<li>有MVC的支持，但是第三方的MVC框架也可以独立的使用<&#47;li><br />
-<&#47;ul><br />
+
+**优点**
+
+<div></div></p>
+
+*   很快也很可靠，可能是单就这种类型的来说最快的，性能只比Sencha Touch差点。
+*   很小，很轻
+*   基于HTML，并用javascript来增加HTML
+*   很好的原生封方案，不需要再用PhoneGap了
+*   有MVC的支持，但是第三方的MVC框架也可以独立的使用
+
 &nbsp;</p>
-<div><&#47;div></p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>文档很恐怖，跟其它框架对比<&#47;li>
-<li>浏览器支持有限，这并不是很坏的情况，但是他的限制了桌面的使用<&#47;li>
-<li>并不是基于jQuery，不管它的旧名想说明什么。个人不喜欢使用一些错误的信息来吸引开发者。这个框架是对jQuery的重写。这个听起来不错，直到你发现有些东西没有了，或者有些跟你期待的不一样。<&#47;li>
-<li>它可以用更好的UI，不过你可以自定义。在第二版时用原生的主题进行了重新设计<&#47;li><br />
-<&#47;ul><br />
+<div></div></p>
+
+#### **缺点**
+</p>
+<div></div></p>
+
+*   文档很恐怖，跟其它框架对比
+*   浏览器支持有限，这并不是很坏的情况，但是他的限制了桌面的使用
+*   并不是基于jQuery，不管它的旧名想说明什么。个人不喜欢使用一些错误的信息来吸引开发者。这个框架是对jQuery的重写。这个听起来不错，直到你发现有些东西没有了，或者有些跟你期待的不一样。
+*   它可以用更好的UI，不过你可以自定义。在第二版时用原生的主题进行了重新设计
+
 &nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>如果他们能改进他们的文档，我可能会转到这个框架上去。我已经在我的另一个<strong><a href="http:&#47;&#47;www.gajotres.net&#47;switching-from-a-jquery-mobile-to-appframework&#47;">文章<&#47;a><&#47;strong>里讨论过这个主题。不管如何，这是一个值得关注的框架。<&#47;div><br />
+<div></div></p>
+
+#### 作者提示
+</p>
+<div>如果他们能改进他们的文档，我可能会转到这个框架上去。我已经在我的另一个**[文章](http://www.gajotres.net/switching-from-a-jquery-mobile-to-appframework/)**里讨论过这个主题。不管如何，这是一个值得关注的框架。</div>
+
 &nbsp;</p>
-<h4><&#47;h4></p>
-<div><&#47;div></p>
+
+####
+</p>
+<div></div></p>
 <div>
-<div>2. jQuery Mobile<&#47;div><br />
-<&#47;div></p>
-<div><&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;jquery_mobile.jpg" width="480" height="230" &#47;></p>
-<div><&#47;div><br />
+<div>2. jQuery Mobile</div>
+
+</div></p>
+<div></div>
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/jquery_mobile.jpg)</p>
+<div></div>
+
 这是一个最常用的移动应用HTML5框架。但不要被这点所愚弄，这并不表示它是最好的解决方案，大部分对他的关注来源于他的大哥jQuery。</p>
-<p>&nbsp;</p>
-<h4><strong>优点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>最常用，意味着有很多第三方的资源<&#47;li>
-<li>非常易用，基于HTML，就象是一个应用框架<&#47;li>
-<li>不错的官方文档，但是可以更好，根据相关消息，jQM的开发者们正在不断的工作让它变的更好<&#47;li>
-<li>支持所有你可以想到的HTML5浏览器，这样可以很好的支持桌面与移动端<&#47;li>
-<li>很好的主题支持<&#47;li>
-<li>很多第三方的插件<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>对于移动设备来说，偏慢，并没有象App Framework或者Sencha &nbsp;Touch那样做优化<&#47;li>
-<li>中规中矩的UI，时间越长，我就越不喜欢，但是他很容易通过定制CSS来修复，没有定制每个应用就会感觉象是克隆出来的。iOS GUI风格在不是iOS的平台上看起来并不是很好<&#47;li>
-<li>官方文档缺少一样信息，特别是jQuery Mobile的架构是如何工作的。如果每个组件都详细的描述出来，你可能需要消耗不少脑力来理解他们是如何一起工作的。<&#47;li>
-<li>没有明确的MVC支持。但是有限的支持Backbone.js和Knockout.js<&#47;li>
-<li>与PhoneGap一起使用时会显得更慢，你真的需要对<strong><a href="http:&#47;&#47;www.gajotres.net&#47;secrets-of-a-good-jquery-mobile-page-architecture&#47;">jQuery Mobile架构<&#47;a><&#47;strong>有一个好的理解才能让它快速并正确的工作。如果开发者不做任何变动，他很快就会比App Framework和Sencha Touch慢了。<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>目前我最喜欢的框架，主要还是因为我是jQuery的粉丝。<&#47;div></p>
-<div><&#47;div></p>
-<div>
-<div>3. jQuery Touch<&#47;div><br />
-<&#47;div></p>
-<div><&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;jqTouch.jpg" width="500" height="250" &#47;></p>
-<div><&#47;div><br />
-一个Zepto&#47;jQuery插件，用于iPhone,Android, iPod Touch和其它向前考量的设备的移动Web开发。其本上他可以和Zepto.js与jQuery Mobile一起使用。同样，值得注意的是他不是一个框架，它原来是通过jQuery插件的方式构建的，虽然现在它也支持Zepto，它还是一个插件。</p>
-<div><&#47;div></p>
-<h4><strong>优点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>快、容易<&#47;li>
-<li>很好的主题支持<&#47;li>
-<li>基于HTML<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>只支持Webkit浏览器<&#47;li>
-<li>资源不是很充足<&#47;li>
-<li>开发4年多了还在Beta中，听起不是很好。<&#47;li>
-<li>内容不是很丰富相比于其它的框架来说<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>除了确实快，感觉前景不是很乐观<&#47;div><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<div>
-<div>4. Kendo UI<&#47;div><br />
-<&#47;div></p>
-<div><&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;kendo-ui.jpg" width="653" height="215" &#47;></p>
-<div><&#47;div></p>
-<div>我已经写了一个很详细的Kendo UI审查和示例，它可以在这里被找到：<a href="http:&#47;&#47;www.gajotres.net&#47;html5-frameworks-kendo-ui-from-a-jquery-mobile-perspective&#47;"><strong>http:&#47;&#47;www.gajotres.net&#47;html5-frameworks-kendo-ui-from-a-jquery-mobile-perspective&#47;<&#47;strong><&#47;a><&#47;div><br />
-另一个基于jQuery的框架。与其它三个不一样的是这个很美，支持MVVM并且我自己的服务器端通讯的支持。很不幸的是，如果你想创建一个商业的应用，Kendo UI会让你花掉几百美元的钱。在其它情况下，他是免费的。有很好的模板支持，每个模板的感觉都跟原生的很象。</p>
-<div><strong style="font-size: 1em;">优点<&#47;strong><&#47;div></p>
-<div><&#47;div></p>
-<ul>
-<li>完整的包，框架，UI和MVC，全套<&#47;li>
-<li>很快的SVG支持，同时也支持旧的浏览<&#47;li>
-<li>基于HTML<&#47;li>
-<li>很好的文档（还有改进的空间）<&#47;li>
-<li>根据平台不同提供原生的风格<&#47;li>
-<li>非常好的模板系统，主题是非常原生化<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>商业授权与支持<&#47;li>
-<li>缺少第三方的支持，主要源于商业授权，但是你还是会被它的开发者数量吓到<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>收费是唯一我不用这个框架的原因。并不是我不想值钱，而是我不想用两套商业的框架。不管如何，他是我的第三选择。<&#47;div><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<div>
-<div>5. Sencha Touch<&#47;div><br />
-<&#47;div></p>
-<div><&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;Sencha.jpg" width="554" height="322" &#47;></p>
-<div><&#47;div><br />
-这个框架就象是基于jQuery框架大海中的异类。它快，长的也好看，还支持MVC，并且可能是这里提到的框架中拥有最好的文档的框架。但是，跟Kendo UI一样，他是有商业授权和商业IDE的。但他不象基于jQuery的框架(象jQuery Mobile, Kendo UI， PhoneJS)他是纯js的框架。</p>
-<div><&#47;div></p>
-<h4><strong>优点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li><&#47;li>
-<li>完整的包，框架，UI和MVC，全套<&#47;li>
-<li>主观上感觉最快的移动应用框架<&#47;li>
-<li>所能找到的最好的SVG支持，可以用于游戏开发<&#47;li>
-<li>完美的文档<&#47;li>
-<li>根本平台不同支持原生的外观<&#47;li>
-<li>优秀的打包与封装系统<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>商业授权与支持<&#47;li>
-<li>商业IDE，你不知道用其它的IDE开发会有多不爽<&#47;li>
-<li>很难学，同之前的框架不同，这个是纯js的<&#47;li>
-<li>缺少第三方的支持，主要也是由于商业授权的原因<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>我第二选择的框架。它很复杂，这也是我喜欢它的原因。需要很长时间掌握，学习的曲线也很陡。我写了一个相当全面的关于下面jQuery Mobile和Sencha Touch的<strong><a href="http:&#47;&#47;www.gajotres.net&#47;sencha-touch-vs-jquery-mobile&#47;">文章<&#47;a><&#47;strong>&nbsp;，所以如果你想更深入的了解可以去看看.<&#47;div><br />
-&nbsp;</p>
-<div>6. Titanium Appcelerator<&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;appcelerator.png" width="570" height="194" &#47;></p>
-<div><&#47;div><br />
-这是另一个异类，并且这个还不是HTML5的框架。他跟Sencha Touch一样使用了纯的javascript方式实现，但是不同的时，这个将javascript转化成了原生的代码。</p>
-<div><&#47;div></p>
-<h4><strong>优点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>最终用的是原生代码，让他跟原生代码一样的快<&#47;li>
-<li>可以用于快速原型化<&#47;li>
-<li>跨平台，一套代码可以用于iOS,Android和其它的移动平台的应用上<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>不是很好的文档，有时候让人费解<&#47;li>
-<li>不是很灵活<&#47;li>
-<li>想用好需要原生的Android或者IOS开发技能<&#47;li>
-<li>跨平台也有一个负面的作用，复杂的界面需要针对Android和IOS写不同的代码<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4>作者提示<&#47;h4></p>
-<div>对于快速原型化来说是一个非常优秀的框架。但是开发复杂的应用时，会在跨平台时出现问题。更别提它还需要开发原生的Android&#47;IOS的知识。<&#47;div><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<div>
-<div>7. Zepto.js<&#47;div><br />
-<&#47;div><br />
-<img alt="Junior" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;zepto.jpg" width="620" height="260" &#47;></p>
-<div><&#47;div><br />
-第一批在这个领域的开拓者。旨在比jQuery更小，更快，但是保持类似的架构。很不幸的是它并没有比jQuery快多少，我说的更清楚点，就是他们的情况基本上差不多。不要把这个与jQuery Mobile混淆了，虽然它没有比jQuery快，但是他比跟jQuery与jQuery Mobile一起用时是要快的。</p>
-<div><&#47;div></p>
-<h4><strong>优点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>第一批中的一个，我们可以给一个机会<&#47;li>
-<li>轻量级<&#47;li>
-<li>比jQuery Mobile快，但是没有比其它的继承jQuery的框架快<&#47;li>
-<li>如果你学过jQuery,你就会用Zepto<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<div><&#47;div></p>
-<h4><strong>缺点<&#47;strong><&#47;h4></p>
-<div><&#47;div></p>
-<ul>
-<li>就象App Framework,这个少一些jQuery的功能<&#47;li>
-<li>处理DOM时更慢<&#47;li>
-<li>并没有象jQuery Mobile一样广泛的支持HTML5浏览，这个随着时间在变化 ，但是还是没有支持IE<&#47;li><br />
-<&#47;ul><br />
-&nbsp;</p>
-<h4>作者提示<&#47;h4></p>
-<div>差不多可以说是一个框架，不过个人认为它无法给我任何理由让我从jQuery Mobile切换过来使用他。它是一个受App Framework（在那里叫jqMoby)启发的框架。<&#47;div></p>
-<h4><&#47;h4></p>
-<div>
-<div>8. &nbsp;其它七个框架<&#47;div><br />
-<&#47;div><br />
-点击图象，会带你到这个文章的第二部分，或者在<a href="http:&#47;&#47;www.gajotres.net&#47;top-7-notable-less-known-mobile-html5-frameworks&#47;"><strong>这里<&#47;strong><&#47;a>找到。<a href="http:&#47;&#47;www.gajotres.net&#47;top-7-notable-less-known-mobile-html5-frameworks&#47;"><img alt="Next 7 articles" src="http:&#47;&#47;www.gajotres.net&#47;wp-content&#47;uploads&#47;2013&#47;09&#47;frameworks2.jpg" width="1024" height="400" &#47;><&#47;a></p>
-<div><&#47;div></p>
-<div>
-<div>框架使用情况统计<&#47;div></p>
-<div><&#47;div></p>
-<div><&#47;div></p>
-<div>现在官方的可以用于比较这些框架的用户统计数据并不存在，我相信它永远也不会存在。<&#47;div><br />
-<&#47;div><br />
-&nbsp;</p>
-<p>这里有一个非直接的收集这个数据的办法。正如你们大多数人知道的一样，Stackoverflow是Stack Exchange Network公司的旗舰网站，做的比一些论坛问答网站更加的开放。每个上述的框架都有一个组，每组都会有一个问题列表，并且每个列表是可以计算的。我们的想法就是用那个数据来表示框架的使用情况。</p>
-<p>当然，我们要理性的看待这个统计，很多问题也可能表明框架很复杂或者问题很多。但不管怎样，这个也算是最佳的可以得到的统计数据了。</p>
-<p>&nbsp;</p>
-<ul>
-<li>1. jQuery Mobile &ndash; 13,705<&#47;li>
-<li>2. Kendo UI &ndash; 3024<&#47;li>
-<li>3. Titanium &ndash; 2,397<&#47;li>
-<li>4. Sencha Touch &ndash; 2235&nbsp;*<&#47;li>
-<li>5. Zepto &ndash; 232<&#47;li>
-<li>6. jQTouch &ndash; 465<&#47;li>
-<li>7. App Framework &ndash; 68&nbsp;**<&#47;li><br />
-<&#47;ul></p>
-<div><&#47;div><br />
-*&nbsp;&ndash; 这个值基于对&nbsp;<strong><a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;tagged&#47;sencha-touch">Sencha Touch<&#47;a><&#47;strong>&nbsp;和<strong><a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;tagged&#47;sencha-touch-2">Sencha Touch 2<&#47;a>两个组统计和得到的<&#47;strong>. 只有将所有的都加上才能算公平。这个数如果加上extjs会更高，但是那样我们也得加上jQuery上关于jQuery Mobile的讨论，这样会让统计变的更加复杂</p>
-<p>**&nbsp;&ndash; App Framework的数据是通过计算&nbsp;<strong><a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;tagged&#47;appframework">App Framework<&#47;a><&#47;strong>&nbsp;和它的祖先<strong><a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;tagged&#47;jqmobi">jqMoby<&#47;a>的和得到的。<&#47;strong></p>
-<div><&#47;div></p>
-<div>
-<div>结语<&#47;div><br />
-<&#47;div><br />
-&nbsp;</p>
-<p>还有不少移动应用的HTML5框架值得一提，不过这个文章到此已经结束了，毕竟一时讲不了太多。如果你觉得我遗忘什么，或者你不同意某些观点（或者非常同意），又或者想了解其它的框架，你都可以给我留言。</p>
+
+&nbsp;
+
+#### **优点**
+
+*   最常用，意味着有很多第三方的资源
+*   非常易用，基于HTML，就象是一个应用框架
+*   不错的官方文档，但是可以更好，根据相关消息，jQM的开发者们正在不断的工作让它变的更好
+*   支持所有你可以想到的HTML5浏览器，这样可以很好的支持桌面与移动端
+*   很好的主题支持
+*   很多第三方的插件
+
+#### **缺点**
+
+
+*   对于移动设备来说，偏慢，并没有象App Framework或者Sencha &nbsp;Touch那样做优化
+*   中规中矩的UI，时间越长，我就越不喜欢，但是他很容易通过定制CSS来修复，没有定制每个应用就会感觉象是克隆出来的。iOS GUI风格在不是iOS的平台上看起来并不是很好
+*   官方文档缺少一样信息，特别是jQuery Mobile的架构是如何工作的。如果每个组件都详细的描述出来，你可能需要消耗不少脑力来理解他们是如何一起工作的。
+*   没有明确的MVC支持。但是有限的支持Backbone.js和Knockout.js
+*   与PhoneGap一起使用时会显得更慢，你真的需要对**[jQuery Mobile架构](http://www.gajotres.net/secrets-of-a-good-jquery-mobile-page-architecture/)**有一个好的理解才能让它快速并正确的工作。如果开发者不做任何变动，他很快就会比App Framework和Sencha Touch慢了。
+
+#### 作者提示
+
+目前我最喜欢的框架，主要还是因为我是jQuery的粉丝。
+
+3. jQuery Touch
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/jqTouch.jpg)
+
+一个Zepto/jQuery插件，用于iPhone,Android, iPod Touch和其它向前考量的设备的移动Web开发。其本上他可以和Zepto.js与jQuery Mobile一起使用。同样，值得注意的是他不是一个框架，它原来是通过jQuery插件的方式构建的，虽然现在它也支持Zepto，它还是一个插件。
+
+
+#### **优点**
+
+*   快、容易
+*   很好的主题支持
+*   基于HTML
+
+#### **缺点**
+
+*   只支持Webkit浏览器
+*   资源不是很充足
+*   开发4年多了还在Beta中，听起不是很好。
+*   内容不是很丰富相比于其它的框架来说
+
+#### 作者提示
+除了确实快，感觉前景不是很乐观
+
+4. Kendo UI
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/kendo-ui.jpg)
+我已经写了一个很详细的Kendo UI审查和示例，它可以在这里被找到：[**http://www.gajotres.net/html5-frameworks-kendo-ui-from-a-jquery-mobile-perspective/**](http://www.gajotres.net/html5-frameworks-kendo-ui-from-a-jquery-mobile-perspective/)
+
+另一个基于jQuery的框架。与其它三个不一样的是这个很美，支持MVVM并且我自己的服务器端通讯的支持。很不幸的是，如果你想创建一个商业的应用，Kendo UI会让你花掉几百美元的钱。在其它情况下，他是免费的。有很好的模板支持，每个模板的感觉都跟原生的很象。
+
+**优点**
+*   完整的包，框架，UI和MVC，全套
+*   很快的SVG支持，同时也支持旧的浏览
+*   基于HTML
+*   很好的文档（还有改进的空间）
+*   根据平台不同提供原生的风格
+*   非常好的模板系统，主题是非常原生化
+
+#### **缺点**
+*   商业授权与支持
+*   缺少第三方的支持，主要源于商业授权，但是你还是会被它的开发者数量吓到
+
+#### 作者提示
+
+收费是唯一我不用这个框架的原因。并不是我不想值钱，而是我不想用两套商业的框架。不管如何，他是我的第三选择。
+
+5. Sencha Touch
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/Sencha.jpg)
+
+这个框架就象是基于jQuery框架大海中的异类。它快，长的也好看，还支持MVC，并且可能是这里提到的框架中拥有最好的文档的框架。但是，跟Kendo UI一样，他是有商业授权和商业IDE的。但他不象基于jQuery的框架(象jQuery Mobile, Kendo UI， PhoneJS)他是纯js的框架。
+
+#### **优点**
+**   完整的包，框架，UI和MVC，全套
+*   主观上感觉最快的移动应用框架
+*   所能找到的最好的SVG支持，可以用于游戏开发
+*   完美的文档
+*   根本平台不同支持原生的外观
+*   优秀的打包与封装系统
+
+#### **缺点**
+
+*   商业授权与支持
+*   商业IDE，你不知道用其它的IDE开发会有多不爽
+*   很难学，同之前的框架不同，这个是纯js的
+*   缺少第三方的支持，主要也是由于商业授权的原因
+
+#### 作者提示
+
+我第二选择的框架。它很复杂，这也是我喜欢它的原因。需要很长时间掌握，学习的曲线也很陡。我写了一个相当全面的关于下面jQuery Mobile和Sencha Touch的**[文章](http://www.gajotres.net/sencha-touch-vs-jquery-mobile/)**，所以如果你想更深入的了解可以去看看.
+
+6. Titanium Appcelerator
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/appcelerator.png)
+
+
+这是另一个异类，并且这个还不是HTML5的框架。他跟Sencha Touch一样使用了纯的javascript方式实现，但是不同的时，这个将javascript转化成了原生的代码。
+
+#### **优点**
+*   最终用的是原生代码，让他跟原生代码一样的快
+*   可以用于快速原型化
+*   跨平台，一套代码可以用于iOS,Android和其它的移动平台的应用上
+
+#### **缺点**
+
+*   不是很好的文档，有时候让人费解
+*   不是很灵活
+*   想用好需要原生的Android或者IOS开发技能
+*   跨平台也有一个负面的作用，复杂的界面需要针对Android和IOS写不同的代码
+
+#### 作者提示
+
+对于快速原型化来说是一个非常优秀的框架。但是开发复杂的应用时，会在跨平台时出现问题。更别提它还需要开发原生的Android/IOS的知识。
+
+7. Zepto.js
+
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/zepto.jpg)
+
+第一批在这个领域的开拓者。旨在比jQuery更小，更快，但是保持类似的架构。很不幸的是它并没有比jQuery快多少，我说的更清楚点，就是他们的情况基本上差不多。不要把这个与jQuery Mobile混淆了，虽然它没有比jQuery快，但是他比跟jQuery与jQuery Mobile一起用时是要快的。
+
+
+#### **优点**
+
+*   第一批中的一个，我们可以给一个机会
+*   轻量级
+*   比jQuery Mobile快，但是没有比其它的继承jQuery的框架快
+*   如果你学过jQuery,你就会用Zepto
+
+
+#### **缺点**
+
+*   就象App Framework,这个少一些jQuery的功能
+*   处理DOM时更慢
+*   并没有象jQuery Mobile一样广泛的支持HTML5浏览，这个随着时间在变化 ，但是还是没有支持IE
+
+
+#### 作者提示
+
+差不多可以说是一个框架，不过个人认为它无法给我任何理由让我从jQuery Mobile切换过来使用他。它是一个受App Framework（在那里叫jqMoby)启发的框架。
+
+
+8. 其它七个框架
+
+点击图象，会带你到这个文章的第二部分，或者在[**这里**](http://www.gajotres.net/top-7-notable-less-known-mobile-html5-frameworks/)找到。[![Next 7 articles](http://www.gajotres.net/wp-content/uploads/2013/09/frameworks2.jpg)](http://www.gajotres.net/top-7-notable-less-known-mobile-html5-frameworks/)
+
+框架使用情况统计
+
+现在官方的可以用于比较这些框架的用户统计数据并不存在，我相信它永远也不会存在。
+
+
+
+这里有一个非直接的收集这个数据的办法。正如你们大多数人知道的一样，Stackoverflow是Stack Exchange Network公司的旗舰网站，做的比一些论坛问答网站更加的开放。每个上述的框架都有一个组，每组都会有一个问题列表，并且每个列表是可以计算的。我们的想法就是用那个数据来表示框架的使用情况。
+
+当然，我们要理性的看待这个统计，很多问题也可能表明框架很复杂或者问题很多。但不管怎样，这个也算是最佳的可以得到的统计数据了。
+
+*   1. jQuery Mobile &ndash; 13,705
+*   2. Kendo UI &ndash; 3024
+*   3. Titanium &ndash; 2,397
+*   4. Sencha Touch &ndash; 2235&nbsp;*
+*   5. Zepto &ndash; 232
+*   6. jQTouch &ndash; 465
+*   7. App Framework &ndash; 68&nbsp;**
+
+
+
+*&nbsp;&ndash; 这个值基于对&nbsp;**[Sencha Touch](http://stackoverflow.com/questions/tagged/sencha-touch)**&nbsp;和**[Sencha Touch 2](http://stackoverflow.com/questions/tagged/sencha-touch-2)两个组统计和得到的**. 只有将所有的都加上才能算公平。这个数如果加上extjs会更高，但是那样我们也得加上jQuery上关于jQuery Mobile的讨论，这样会让统计变的更加复杂</p>
+
+**&nbsp;&ndash; App Framework的数据是通过计算&nbsp;**[App Framework](http://stackoverflow.com/questions/tagged/appframework)**&nbsp;和它的祖先**[jqMoby](http://stackoverflow.com/questions/tagged/jqmobi)的和得到的。**
+
+结语
+
+
+
+还有不少移动应用的HTML5框架值得一提，不过这个文章到此已经结束了，毕竟一时讲不了太多。如果你觉得我遗忘什么，或者你不同意某些观点（或者非常同意），又或者想了解其它的框架，你都可以给我留言。

@@ -21,35 +21,66 @@ categories:
 tags: []
 comments: []
 ---
-<p>献给所有跟我一样学习jquery mobile并在api里找不到合适的dialog使用办法的同仁们。<br />
-代码如下：</p>
-<p>对于1.4.2新版本：</p>
-<pre name="code" language="js">
-function alert(message, time, text) {<br />
-  message = message || '';<br />
-  time = time ? time * 1000 : 1000;<br />
-  text = text || true;<br />
-  $.mobile.loading( "show", {<br />
-	  text: message,<br />
-	  textVisible: true,<br />
-	  theme: "z"<br />
+献给所有跟我一样学习jquery mobile并在api里找不到合适的dialog使用办法的同仁们。
+
+代码如下：
+
+对于1.4.2新版本：
+
+```
+
+function alert(message, time, text) {
+
+  message = message || '';
+
+  time = time ? time * 1000 : 1000;
+
+  text = text || true;
+
+  $.mobile.loading( "show", {
+
+	  text: message,
+
+	  textVisible: true,
+
+	  theme: "z"
+
 	});</p>
-<p>  &#47;&#47; Do your ajax call and processing here<br />
-  setTimeout(function() {<br />
-	  $.mobile.loading( "hide" );<br />
-  }, time);<br />
-}<br />
-<&#47;pre></p>
-<p>对于1.3.2或者之前的版本：</p>
-<pre name="code" language="js">
-function alert(message, time, text) {<br />
-  message = message || '';<br />
-  time = time || 1000;<br />
-  text = text || true;<br />
+
+  // Do your ajax call and processing here
+
+  setTimeout(function() {
+
+	  $.mobile.loading( "hide" );
+
+  }, time);
+
+}
+
+```
+
+对于1.3.2或者之前的版本：
+
+```
+
+function alert(message, time, text) {
+
+  message = message || '';
+
+  time = time || 1000;
+
+  text = text || true;
+
   $.mobile.showPageLoadingMsg("b", message, text);</p>
-<p>  &#47;&#47; Do your ajax call and processing here<br />
-  setTimeout(function() {<br />
-    $.mobile.hidePageLoadingMsg();<br />
-  }, time);<br />
-}<br />
-<&#47;pre></p>
+
+  // Do your ajax call and processing here
+
+  setTimeout(function() {
+
+    $.mobile.hidePageLoadingMsg();
+
+  }, time);
+
+}
+
+```

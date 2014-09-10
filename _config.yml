@@ -83,3 +83,5 @@ paginate_path: "blogs/page/:num"
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM

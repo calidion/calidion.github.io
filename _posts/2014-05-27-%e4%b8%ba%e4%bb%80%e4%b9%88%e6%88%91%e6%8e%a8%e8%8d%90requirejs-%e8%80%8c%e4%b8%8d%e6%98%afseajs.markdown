@@ -357,13 +357,3 @@ yeoman 还刚起步，还是有机会做的比yeoman更好的。
 ![](http://res.cloudinary.com/dawjytvkn/image/upload/v1402495042/5_n2ip7e.jpg)
 
 ![](http://res.cloudinary.com/dawjytvkn/image/upload/v1402495059/6_zsdaqf.jpg)
-
-<!--
-
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495031/1_seooga.jpg" class="alignnone wp-image-1739" width="779" height="567"><br />
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495029/2_kenyx5.jpg" class="alignnone wp-image-1741" width="777" height="807"><br />
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495035/3_qoadx0.jpg" class="alignnone wp-image-1742" width="713" height="979"><br />
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495038/4_slcnh2.jpg" class="alignnone wp-image-1743" width="789" height="532"><br />
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495042/5_n2ip7e.jpg" class="alignnone wp-image-1744" width="796" height="761"><br />
-<img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495059/6_zsdaqf.jpg" class="alignnone wp-image-1745" width="789" height="242">
--->
