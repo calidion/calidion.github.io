@@ -22,75 +22,146 @@ tags:
 - javascript
 comments: []
 ---
-<pre name="code" class="js">
-var Cookie = function(name, val, expires, path, domain, secure){<br />
-    path = path || null;<br />
-    domain = domain || null;<br />
-    secure = secure || false;<br />
-    function set(key, value){<br />
-      var str = key + "=" + escape(value);<br />
-      if(expires > 0){<br />
-        var date = new Date();<br />
-        var ms = expires * 60 * 1000;<br />
-        date.setTime(date.getTime() + ms);<br />
-        str += ";expires=" + date.toGMTString();<br />
-      }<br />
-      if(path) str += ";path=" + path;<br />
-      if(domain) str += ";domain=" + domain;<br />
-      if(secure) str += ";true";<br />
-      document.cookie = str;<br />
-      return str;<br />
-    }<br />
-    function get(key){<br />
-      key = key || name;<br />
-      var strArray = document.cookie.split(';');<br />
-      for(var i = 0; i < strArray.length; i++)<br />
-      {<br />
-        var tmp = strArray[i].split('=');<br />
-        if(trim(tmp[0]) == trim(key)){<br />
-          return unescape(tmp[1]);<br />
-        }<br />
-      }<br />
-      return "";<br />
-    }<br />
-    function remove(key){<br />
-      var date = new Date();<br />
-      var ms = 1000;<br />
-      date.setTime(date.getTime() - ms);<br />
-      var str = name + "=nothing;expires=" + date.toGMTString();<br />
-      document.cookie = str;<br />
-    }<br />
-    function setExt(key, value){<br />
-      switch(key){<br />
-        case 'path':<br />
-          path = value;<br />
-          break;<br />
-        case 'domain':<br />
-          domain = value;<br />
-          break;<br />
-        case 'secure':<br />
-          secure = value;<br />
-          break;<br />
-        case 'expires':<br />
-          expires = value;<br />
-          break;<br />
-        default:<br />
-          set(key, value);<br />
-          break;<br />
-      }<br />
-    }<br />
-    return {<br />
-      get: get,<br />
-      set: setExt,<br />
-      remove: remove<br />
-    }<br />
-}<br />
-<&#47;pre><br />
-调用方法：</p>
-<pre name="code" class="js">
-<p>var cookieName = 'my_cookie';<br />
-var cookie = Cookie(cookieName, 1);<br />
-cookie.set(cookieName, 1);<br />
-cookie.remove(cookieName);<br />
-cookie.get(cookieName)</p>
-<p><&#47;pre></p>
+```javascript
+
+var Cookie = function(name, val, expires, path, domain, secure){
+
+    path = path || null;
+
+    domain = domain || null;
+
+    secure = secure || false;
+
+    function set(key, value){
+
+      var str = key + "=" + escape(value);
+
+      if(expires > 0){
+
+        var date = new Date();
+
+        var ms = expires * 60 * 1000;
+
+        date.setTime(date.getTime() + ms);
+
+        str += ";expires=" + date.toGMTString();
+
+      }
+
+      if(path) str += ";path=" + path;
+
+      if(domain) str += ";domain=" + domain;
+
+      if(secure) str += ";true";
+
+      document.cookie = str;
+
+      return str;
+
+    }
+
+    function get(key){
+
+      key = key || name;
+
+      var strArray = document.cookie.split(';');
+
+      for(var i = 0; i < strArray.length; i++)
+
+      {
+
+        var tmp = strArray[i].split('=');
+
+        if(trim(tmp[0]) == trim(key)){
+
+          return unescape(tmp[1]);
+
+        }
+
+      }
+
+      return "";
+
+    }
+
+    function remove(key){
+
+      var date = new Date();
+
+      var ms = 1000;
+
+      date.setTime(date.getTime() - ms);
+
+      var str = name + "=nothing;expires=" + date.toGMTString();
+
+      document.cookie = str;
+
+    }
+
+    function setExt(key, value){
+
+      switch(key){
+
+        case 'path':
+
+          path = value;
+
+          break;
+
+        case 'domain':
+
+          domain = value;
+
+          break;
+
+        case 'secure':
+
+          secure = value;
+
+          break;
+
+        case 'expires':
+
+          expires = value;
+
+          break;
+
+        default:
+
+          set(key, value);
+
+          break;
+
+      }
+
+    }
+
+    return {
+
+      get: get,
+
+      set: setExt,
+
+      remove: remove
+
+    }
+
+}
+
+```
+
+调用方法：
+
+```
+
+var cookieName = 'my_cookie';
+
+var cookie = Cookie(cookieName, 1);
+
+cookie.set(cookieName, 1);
+
+cookie.remove(cookieName);
+
+cookie.get(cookieName)
+
+```

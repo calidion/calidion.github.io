@@ -115,113 +115,33 @@ public class MyServlet extends HttpServlet {
 我运行JMeter对这个servlet进行了不同并发的测试。下面的表示显示了并发数，平均影响时间，每秒请求数。
 
 <table>
-<tbody>
-<tr>
-<td>
-
-并发数</p>
-
-</td>
-
-<td>
-
-平均影响时间(ms)</p>
-
-</td>
-
-<td>
-
-每秒请求数</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-10</p>
-
-</td>
-
-<td>
-
-23</p>
-
-</td>
-
-<td>
-
-422</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-50</p>
-
-</td>
-
-<td>
-
-119</p>
-
-</td>
-
-<td>
-
-416</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-100</p>
-
-</td>
-
-<td>
-
-243</p>
-
-</td>
-
-<td>
-
-408</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-150</p>
-
-</td>
-
-<td>
-
-363</p>
-
-</td>
-
-<td>
-
-411</p></td>
-
-</tr>
-
-</tbody>
-
+    <tr>
+        <td>并发数</td>
+        <td>平均影响时间(ms)</td>
+        <td>每秒请求数</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>23</td>
+        <td>422</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>119</td>
+        <td>416</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>243</td>
+        <td>408</td>
+    </tr>
+    <tr>
+        <td>150</td>
+        <td>363</td>
+        <td>411</td>
+    </tr>
 </table>
+
 
 我们可以看到响应时间随着并发数的增长不断的恶性延长。在10个并发时是23毫秒，而在100个并发时变成是243毫秒。
 
@@ -241,13 +161,11 @@ var http = require ('http'),
 
   cradle = require('cradle'),
 
-  c = new(cradle.Connection)(
-
-          '127.0.0.1',5984,{cache: false, raw: false}),
+  c = new(cradle.Connection)('127.0.0.1',5984,{cache: false, raw: false}),
 
   db = c.database('testdb'),
 
-  port=8081;</p>
+  port = 8081;
 
 process.on('uncaughtException', function (err) {
 
@@ -290,112 +208,33 @@ http.createServer(function(req,res) {
 Node.js下得到的数字如下：
 
 <table>
-<tbody>
-<tr>
-<td>
-
-并发数</p>
-
-</td>
-
-<td>
-
-平均影响时间(ms)</p>
-
-</td>
-
-<td>
-
-每秒请求数</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-10</p>
-
-</td>
-
-<td>
-
-19</p>
-
-</td>
-
-<td>
-
-509</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-50</p>
-
-</td>
-
-<td>
-
-109</p>
-
-</td>
-
-<td>
-
-453</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-100</p>
-
-</td>
-
-<td>
-
-196</p>
-
-</td>
-
-<td>
-
-507</p>
-
-</td>
-
-</tr>
-
-<tr>
-<td>
-
-150</p>
-
-</td>
-
-<td>
-
-294</p>
-
-</td>
-
-<td>
-
-506</p></td>
-
-</tr>
-
-</tbody>
-
+    <tbody>
+    <tr>
+        <td>并发数</td>
+        <td>平均影响时间(ms)</td>
+        <td>每秒请求数</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>19</td>
+        <td>509</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>109</td>
+        <td>453</td>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>196</td>
+        <td>507</td>
+    </tr>
+    <tr>
+        <td>150</td>
+        <td>294</td>
+        <td>506</td>
+    </tr>
+    </tbody>
 </table>
 
 同之前的平均响应时间一样，它与并发数有一个线性的关系，证实了每分钟可以处理的请求数是一个相当恒定的值。Node.js约快出20%。 如在10个并发时，每秒请求数分别为509 vs 422。

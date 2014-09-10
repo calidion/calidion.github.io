@@ -22,43 +22,87 @@ tags:
 - sqlite
 comments: []
 ---
-<p>1.通过下面的语句得到表的创建语句</p>
-<pre class="sql">select sql from sqlite_master where type = 'table' and tbl_name = 'table_name';<&#47;pre><br />
-其中table_name是你要替换掉的表名<br />
-2.通过分析sql语句得到各列的名称.<br />
+1.通过下面的语句得到表的创建语句
+
+```sql
+select sql from sqlite_master where type = 'table' and tbl_name = 'table_name';
+```
+
+其中table_name是你要替换掉的表名
+
+2.通过分析sql语句得到各列的名称.
+
 下面是python下的一段分析代码:</p>
-<pre class="py">  def isTableExist(self, table_name):<br />
-    sql = """select name from sqlite_master where type = 'table' and<br />
-      name = '%s'""" % (table_name)<br />
-    h = self._cursor.execute(sql)<br />
-    ret = h.fetchall()<br />
+
+```
+
+  def isTableExist(self, table_name):
+
+    sql = """select name from sqlite_master where type = 'table' and
+
+      name = '%s'""" % (table_name)
+
+    h = self._cursor.execute(sql)
+
+    ret = h.fetchall()
+
     return len(ret) == 1</p>
-<p>  def isFieldsExist(self, table_name, fields):<br />
-    sql = """select sql from sqlite_master where type =<br />
-      'table' and tbl_name = '%s'""" % (table_name)<br />
-    h = self._cursor.execute(sql)<br />
-    row = h.fetchone()<br />
-    old_fields = re.findall("((.*))", row[0])[0].split(",")</p>
-<p>    tmp_fields = []<br />
-    for row in old_fields:<br />
-      tmp_fields.append(row.strip().replace("`", "").split(" ")[0])<br />
-    for field in fields:<br />
-      if field not in tmp_fields:<br />
-        return False<br />
-    return True</p>
-<p>  def isFieldsTypesMatch(self, table_name, fields, types):<br />
-    sql = """select sql from sqlite_master where type =<br />
-      'table' and tbl_name = '%s'""" % (table_name)<br />
-    h = self._cursor.execute(sql)<br />
-    row = h.fetchone()<br />
-    old_fields = re.findall("((.*))", row[0])[0].split(",")</p>
-<p>    tmp_fields = {}<br />
-    for row in old_fields:<br />
-      tmp = row.strip().replace("`", "").split(" ")<br />
-      tmp_fields[tmp[0].upper()] = tmp[1].upper()<br />
-    i = 0<br />
-    for field in fields:<br />
-      if tmp_fields[field.upper()] != types[i].upper():<br />
-        return False<br />
-      i += 1<br />
-    return True<&#47;pre></p>
+
+  def isFieldsExist(self, table_name, fields):
+
+    sql = """select sql from sqlite_master where type =
+
+      'table' and tbl_name = '%s'""" % (table_name)
+
+    h = self._cursor.execute(sql)
+
+    row = h.fetchone()
+
+    old_fields = re.findall("((.*))", row[0])[0].split(",")
+
+    tmp_fields = []
+
+    for row in old_fields:
+
+      tmp_fields.append(row.strip().replace("`", "").split(" ")[0])
+
+    for field in fields:
+
+      if field not in tmp_fields:
+
+        return False
+
+    return True
+
+  def isFieldsTypesMatch(self, table_name, fields, types):
+
+    sql = """select sql from sqlite_master where type =
+
+      'table' and tbl_name = '%s'""" % (table_name)
+
+    h = self._cursor.execute(sql)
+
+    row = h.fetchone()
+
+    old_fields = re.findall("((.*))", row[0])[0].split(",")
+
+    tmp_fields = {}
+
+    for row in old_fields:
+
+      tmp = row.strip().replace("`", "").split(" ")
+
+      tmp_fields[tmp[0].upper()] = tmp[1].upper()
+
+    i = 0
+
+    for field in fields:
+
+      if tmp_fields[field.upper()] != types[i].upper():
+
+        return False
+
+      i += 1
+
+    return True
+```

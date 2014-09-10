@@ -23,6 +23,6 @@ tags:
 - sqlite
 comments: []
 ---
-<pre name="code" class="sql">
-select name from sqlite_master where type = 'table' and name = 'table_name'<br />
-<&#47;pre></p>
+```sql
+select name from sqlite_master where type = 'table' and name = 'table_name'
+```

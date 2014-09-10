@@ -23,55 +23,106 @@ tags:
 - 模式
 comments: []
 ---
-<p>说明：<br />
-msg:对话框显示的消息<br />
-callbackOK:正确时调用的函数<br />
-callbackCancel: 取消时调用的函数<br />
-dom:绑定的DOM元素</p>
-<pre name="code" class="js">
-<p>          var iMessageBox = function(msg, callbackOk, callbackCancel, dom){<br />
-            var mask = document.createElement('div');<br />
-            var pop = document.createElement('div');<br />
-            var message = document.createElement('h4');<br />
-            var ok = document.createElement('input');<br />
-            ok.type = "button";<br />
-            ok.value = "__MSG_ok__";<br />
-            ok.__dom = dom;<br />
-            ok.__func = callbackOk;<br />
-            ok.__mask = mask;<br />
-            ok.__pop = pop;<br />
-            ok.onclick = function(){<br />
-              if(this.__func)<br />
-                this.__func.call(this.__dom);<br />
-              document.body.removeChild(this.__mask);<br />
-              document.body.removeChild(this.__pop);<br />
-            }<br />
-            message.innerHTML = msg;<br />
-            var cancel = document.createElement('input');<br />
-            cancel.type = "button";<br />
-            cancel.value = '__MSG_cancel__';<br />
-            cancel.__dom = dom;<br />
-            cancel.__mask = mask;<br />
-            cancel.__pop = pop;<br />
-            cancel.__func = callbackCancel;<br />
-            cancel.onclick = function(){<br />
-              if(this.__func)<br />
-                this.__func.call(this.__dom);<br />
-              document.body.removeChild(this.__mask);<br />
-              document.body.removeChild(this.__pop);<br />
-            }<br />
-            pop.appendChild(message);<br />
-            pop.appendChild(ok);<br />
-            pop.appendChild(cancel);<br />
-            document.body.appendChild(mask);<br />
-            document.body.appendChild(pop);<br />
-            mask.style.cssText = 'position:absolute;background:#000;opacity:.3;width:100%;*filter: Alpha(Opacity=30);top:0;left:0';<br />
-            mask.style.display = 'block';<br />
-            mask.style.height = document.body.clientHeight +document.body.scrollTop+ 'px';<br />
-            document.body.style.overflow = 'hidden';<br />
-            pop.style.cssText = 'position:absolute;width:200;padding:8px;background:#fff;border:2px solid #000;text-align:center';<br />
-            pop.style.display = 'block';<br />
-            pop.style.left =document.body.offsetWidth &#47; 2 - pop.offsetWidth &#47; 2 + 'px';<br />
-            pop.style.top = document.body.offsetHeight &#47; 2 - pop.offsetHeight &#47; 2 + 'px';<br />
-          }<br />
-<&#47;pre></p>
+说明：
+
+msg:对话框显示的消息
+
+callbackOK:正确时调用的函数
+
+callbackCancel: 取消时调用的函数
+
+dom:绑定的DOM元素
+
+```
+
+          var iMessageBox = function(msg, callbackOk, callbackCancel, dom){
+
+            var mask = document.createElement('div');
+
+            var pop = document.createElement('div');
+
+            var message = document.createElement('h4');
+
+            var ok = document.createElement('input');
+
+            ok.type = "button";
+
+            ok.value = "__MSG_ok__";
+
+            ok.__dom = dom;
+
+            ok.__func = callbackOk;
+
+            ok.__mask = mask;
+
+            ok.__pop = pop;
+
+            ok.onclick = function(){
+
+              if(this.__func)
+
+                this.__func.call(this.__dom);
+
+              document.body.removeChild(this.__mask);
+
+              document.body.removeChild(this.__pop);
+
+            }
+
+            message.innerHTML = msg;
+
+            var cancel = document.createElement('input');
+
+            cancel.type = "button";
+
+            cancel.value = '__MSG_cancel__';
+
+            cancel.__dom = dom;
+
+            cancel.__mask = mask;
+
+            cancel.__pop = pop;
+
+            cancel.__func = callbackCancel;
+
+            cancel.onclick = function(){
+
+              if(this.__func)
+
+                this.__func.call(this.__dom);
+
+              document.body.removeChild(this.__mask);
+
+              document.body.removeChild(this.__pop);
+
+            }
+
+            pop.appendChild(message);
+
+            pop.appendChild(ok);
+
+            pop.appendChild(cancel);
+
+            document.body.appendChild(mask);
+
+            document.body.appendChild(pop);
+
+            mask.style.cssText = 'position:absolute;background:#000;opacity:.3;width:100%;*filter: Alpha(Opacity=30);top:0;left:0';
+
+            mask.style.display = 'block';
+
+            mask.style.height = document.body.clientHeight +document.body.scrollTop+ 'px';
+
+            document.body.style.overflow = 'hidden';
+
+            pop.style.cssText = 'position:absolute;width:200;padding:8px;background:#fff;border:2px solid #000;text-align:center';
+
+            pop.style.display = 'block';
+
+            pop.style.left =document.body.offsetWidth / 2 - pop.offsetWidth / 2 + 'px';
+
+            pop.style.top = document.body.offsetHeight / 2 - pop.offsetHeight / 2 + 'px';
+
+          }
+
+```

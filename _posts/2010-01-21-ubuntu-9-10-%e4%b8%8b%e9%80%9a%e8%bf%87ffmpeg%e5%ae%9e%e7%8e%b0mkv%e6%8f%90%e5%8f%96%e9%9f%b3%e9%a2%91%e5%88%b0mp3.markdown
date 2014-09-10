@@ -21,15 +21,26 @@ categories:
 tags: []
 comments: []
 ---
-<pre name="code" class="shell">
+```shell
+  
   sudo apt-get build-dep ffmpeg</p>
-<p>   sudo apt-get install build-essential checkinstall</p>
-<p>   sudo apt-get install liblame-dev libfaad-dev libfaac-dev<br />
-    libxvidcore-dev liba52-*  libx264-dev libopenjpeg-dev</p>
-<p>   sudo apt-get source ffmpeg</p>
-<p>   cd ffmpeg-*</p>
-<p>    sudo .&#47;configure --enable-gpl --enable-nonfree --enable-libdc1394 --enable-libdirac --enable-libfaac --enable-libfaad --enable-libfaadbin --enable-libgsm --enable-libmp3lame --enable-libopenjpeg --enable-libschroedinger --enable-libspeex  --enable-libtheora --enable-libvorbis --enable-libx264</p>
-<p>sudo make</p>
-<p>sudo make install</p>
-<p>sudo ffmpeg -i input.ac3 -acodec libmp3lame -ar 44100 -ab 192k -ac 2 out.mp3<br />
-<&#47;pre></p>
+
+  sudo apt-get install build-essential checkinstall
+
+  sudo apt-get install liblame-dev libfaad-dev libfaac-dev
+
+  libxvidcore-dev liba52-*  libx264-dev libopenjpeg-dev
+
+  sudo apt-get source ffmpeg
+
+  cd ffmpeg-*
+
+  sudo ./configure --enable-gpl --enable-nonfree --enable-libdc1394 --enable-libdirac --enable-libfaac --enable-libfaad --enable-libfaadbin --enable-libgsm --enable-libmp3lame --enable-libopenjpeg --enable-libschroedinger --enable-libspeex  --enable-libtheora --enable-libvorbis --enable-libx264
+
+sudo make
+
+sudo make install
+
+sudo ffmpeg -i input.ac3 -acodec libmp3lame -ar 44100 -ab 192k -ac 2 out.mp3
+
+```

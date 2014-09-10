@@ -23,61 +23,119 @@ tags:
 - Google Map API
 comments: []
 ---
-<pre name="code" class="javascript">
- GTFS.Data.Trip.prototype.verify = function(callback, force){<br />
-if(this.programmedShapes && !force) {<br />
-if(callback) callback(true);<br />
-return;<br />
-}<br />
-var dir = new GDirections();<br />
-if(this.programmedShapes) this.programmedShapes.hide();<br />
-this.programmedShapes = new GTFS.Data.Shape();<br />
-this.programmedShapes.addStoptimes(this.stoptimes);<br />
-var idx = 0;<br />
-var self = this;<br />
-function onDirSuccess(){<br />
-var leg = new GTFS.Data.Leg();<br />
-var start = self.stoptimes[idx].marker.getLatLng();<br />
-var end = self.stoptimes[idx + 1].marker.getLatLng();<br />
-var points = [];<br />
-var pol = this.getPolyline();<br />
-var count = pol.getVertexCount();<br />
-points.push({'lat': start.lat(), 'lng': start.lng()});<br />
-for (var i = 0; i < count - 1; i++) {<br />
-var point = pol.getVertex(i);<br />
-points.push({'lat': point.lat(), 'lng': point.lng()});<br />
-}<br />
-points.push({'lat': end.lat(), 'lng': end.lng()});<br />
-var color = GTFS.Data.Trip.colors.programmed;<br />
-leg.setData(points, color);<br />
-leg.show();<br />
-self.stoptimes[idx + 1].preVerifyLeg = leg;<br />
-self.stoptimes[idx].sufVerifyLeg = leg;<br />
-self.programmedShapes.addLeg(leg);<br />
-if(idx == self.stoptimes.length - 2) {<br />
-if(callback) callback(true, idx);<br />
-}  else {<br />
-idx++;<br />
-setTimeout(startDir, 100);  &#47;&#47;发现不加上timeout很容易就出错<br />
-&#47;&#47;startDir();  </p>
-<p>}<br />
-}</p>
-<p>function onDirFailure(){<br />
-self.programmedShapes.hideLegs();<br />
-self.programmedShapes = null;<br />
-idx = 0;<br />
-if(callback) callback(false, idx);<br />
-}</p>
-<p>function startDir(){<br />
-var start = self.stoptimes[idx];<br />
-var end = self.stoptimes[idx + 1];<br />
-var query = "from: " + start.getQuery() + " to: " + end.getQuery();<br />
-dir.load(query, {<br />
-getPolyline: true<br />
-});</p>
-<p>}</p>
-<p>GEvent.addListener(dir, 'load', onDirSuccess);<br />
-GEvent.addListener(dir, 'error', onDirFailure);<br />
-startDir();<br />
-}<br />
-<&#47;pre></p>
+
+```javascript
+
+ GTFS.Data.Trip.prototype.verify = function(callback, force){
+
+if(this.programmedShapes && !force) {
+
+if(callback) callback(true);
+
+return;
+
+}
+
+var dir = new GDirections();
+
+if(this.programmedShapes) this.programmedShapes.hide();
+
+this.programmedShapes = new GTFS.Data.Shape();
+
+this.programmedShapes.addStoptimes(this.stoptimes);
+
+var idx = 0;
+
+var self = this;
+
+function onDirSuccess(){
+
+var leg = new GTFS.Data.Leg();
+
+var start = self.stoptimes[idx].marker.getLatLng();
+
+var end = self.stoptimes[idx + 1].marker.getLatLng();
+
+var points = [];
+
+var pol = this.getPolyline();
+
+var count = pol.getVertexCount();
+
+points.push({'lat': start.lat(), 'lng': start.lng()});
+
+for (var i = 0; i < count - 1; i++) {
+
+var point = pol.getVertex(i);
+
+points.push({'lat': point.lat(), 'lng': point.lng()});
+
+}
+
+points.push({'lat': end.lat(), 'lng': end.lng()});
+
+var color = GTFS.Data.Trip.colors.programmed;
+
+leg.setData(points, color);
+
+leg.show();
+
+self.stoptimes[idx + 1].preVerifyLeg = leg;
+
+self.stoptimes[idx].sufVerifyLeg = leg;
+
+self.programmedShapes.addLeg(leg);
+
+if(idx == self.stoptimes.length - 2) {
+
+if(callback) callback(true, idx);
+
+}  else {
+
+idx++;
+
+setTimeout(startDir, 100);  //发现不加上timeout很容易就出错
+
+//startDir();  </p>
+
+}
+
+}
+
+function onDirFailure(){
+
+self.programmedShapes.hideLegs();
+
+self.programmedShapes = null;
+
+idx = 0;
+
+if(callback) callback(false, idx);
+
+}
+
+function startDir(){
+
+var start = self.stoptimes[idx];
+
+var end = self.stoptimes[idx + 1];
+
+var query = "from: " + start.getQuery() + " to: " + end.getQuery();
+
+dir.load(query, {
+
+getPolyline: true
+
+});
+
+}
+
+GEvent.addListener(dir, 'load', onDirSuccess);
+
+GEvent.addListener(dir, 'error', onDirFailure);
+
+startDir();
+
+}
+
+```

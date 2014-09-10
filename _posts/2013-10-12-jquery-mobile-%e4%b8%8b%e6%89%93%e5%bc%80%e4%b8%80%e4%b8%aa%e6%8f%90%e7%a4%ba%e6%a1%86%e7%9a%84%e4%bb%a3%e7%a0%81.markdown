@@ -45,7 +45,7 @@ function alert(message, time, text) {
 
 	  theme: "z"
 
-	});</p>
+	});
 
   // Do your ajax call and processing here
 

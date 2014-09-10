@@ -24,59 +24,112 @@ tags:
 - 框架
 comments: []
 ---
-<p>作了一个APPENGINE的请求分派框架<br />
-这样就可以将不同的请求分派到不同的类里面去了。<br />
-很容易修改与维护</p>
-<pre name="code" class="py">
-#encoding=UTF-8<br />
-import wsgiref.handlers<br />
+
+作了一个APPENGINE的请求分派框架
+这样就可以将不同的请求分派到不同的类里面去了。
+很容易修改与维护
+
+```python
+
+#encoding=UTF-8
+
+import wsgiref.handlers
+
 import os</p>
-<p>from os import environ<br />
-from google.appengine.ext import webapp<br />
-from google.appengine.ext import db<br />
-from google.appengine.ext.webapp import template</p>
-<p>from appengine_utilities.sessions import Session</p>
-<p>import User<br />
-import PhoneBook</p>
-<p>class MainPage(webapp.RequestHandler):<br />
-tpath = os.path.dirname(__file__)<br />
-def get(self):<br />
-    self.response.out.write(template.render(os.path.dirname(__file__) + "&#47;template&#47;index.html",{'register': '&#47;user?act=register', 'login': '&#47;user?act=login'}))</p>
-<p>def post(self):<br />
-    self.response.out.write('Hello, webapp World! Post')<br />
-class UnaryPage(webapp.RequestHandler):<br />
-    def get(self, module):<br />
-      s = Session()<br />
-      if module == "user":<br />
-        user = User(self, "get", s)<br />
-      if module == "phonebook":<br />
-        phonebook = PhoneBook(self, "get", s)<br />
-    def post(self, module):<br />
-      s = Session()<br />
-      if module == "user":<br />
-        user = User(self, 'post', s)<br />
-      if module == "phonebook":<br />
-        phonebook = PhoneBook(self, "post", s)</p>
-<p>class BinaryPage(webapp.RequestHandler):<br />
-    def get(self, module, act):<br />
-      return<br />
-    def post(self, module, act):<br />
-      return<br />
-class TernaryPage(webapp.RequestHandler):<br />
-    def get(self, module, act, param):<br />
-      return<br />
-    def post(self):<br />
-      return<br />
-def main():<br />
-application = webapp.WSGIApplication(<br />
-    [<br />
-    ('&#47;', MainPage),<br />
-    ('&#47;(.*)&#47;(.*)&#47;(.*)', MainPage.TernaryPage),<br />
-    ('&#47;(.*)&#47;(.*)', MainPage.BinaryPage),<br />
-    ('&#47;(.*)', MainPage.UnaryPage),<br />
-    ],<br />
-      debug=True)<br />
-wsgiref.handlers.CGIHandler().run(application)</p>
-<p>if __name__ == "__main__":<br />
-main()<br />
-<&#47;pre></p>
+
+from os import environ
+
+from google.appengine.ext import webapp
+
+from google.appengine.ext import db
+
+from google.appengine.ext.webapp import template
+
+from appengine_utilities.sessions import Session
+
+import User
+
+import PhoneBook
+
+class MainPage(webapp.RequestHandler):
+
+tpath = os.path.dirname(__file__)
+
+def get(self):
+
+    self.response.out.write(template.render(os.path.dirname(__file__) + "/template/index.html",{'register': '/user?act=register', 'login': '/user?act=login'}))
+
+def post(self):
+
+    self.response.out.write('Hello, webapp World! Post')
+
+class UnaryPage(webapp.RequestHandler):
+
+    def get(self, module):
+
+      s = Session()
+
+      if module == "user":
+
+        user = User(self, "get", s)
+
+      if module == "phonebook":
+
+        phonebook = PhoneBook(self, "get", s)
+
+    def post(self, module):
+
+      s = Session()
+
+      if module == "user":
+
+        user = User(self, 'post', s)
+
+      if module == "phonebook":
+
+        phonebook = PhoneBook(self, "post", s)
+
+class BinaryPage(webapp.RequestHandler):
+
+    def get(self, module, act):
+
+      return
+
+    def post(self, module, act):
+
+      return
+
+class TernaryPage(webapp.RequestHandler):
+
+    def get(self, module, act, param):
+
+      return
+
+    def post(self):
+
+      return
+
+def main():
+
+application = webapp.WSGIApplication(
+
+    [
+
+    ('/', MainPage),
+
+    ('/(.*)/(.*)/(.*)', MainPage.TernaryPage),
+
+    ('/(.*)/(.*)', MainPage.BinaryPage),
+
+    ('/(.*)', MainPage.UnaryPage),
+
+    ],
+
+      debug=True)
+
+wsgiref.handlers.CGIHandler().run(application)
+
+if __name__ == "__main__":
+
+main()
+```

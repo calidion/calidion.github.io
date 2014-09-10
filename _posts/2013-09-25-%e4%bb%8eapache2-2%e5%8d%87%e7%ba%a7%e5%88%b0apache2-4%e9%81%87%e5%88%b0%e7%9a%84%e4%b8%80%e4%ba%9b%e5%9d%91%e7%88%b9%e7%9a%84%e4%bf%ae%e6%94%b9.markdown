@@ -64,7 +64,7 @@ Allow来控制访问权限的，但是新的2.4则是通过require指令来实�
 ```
     Order allow,deny
 
-    Allow from all</p>
+    Allow from all
 
 ```
 
