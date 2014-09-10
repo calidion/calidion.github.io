@@ -21,25 +21,48 @@ categories:
 tags: []
 comments: []
 ---
-<p>如何在CI中创建干净的链接地址以方便SEO或者直接使用index.php方便在没有配置rewrite规则的机器上调试呢？<br />
-下面我介绍一下我通过实践找到的在apache下面的办法。</p>
-<p>1、对于所有的输出地址统一采用site_url("controller&#47;method");这样的生成方式<br />
-2、修改config文件里的信息</p>
-<pre name=code language=php>
-<p>if ($_SERVER['PHP_SELF'] == $_SERVER['REQUEST_URI']) {<br />
-  $config['index_page'] = 'index.php';<br />
-} else {<br />
-  $config['index_page'] = '';<br />
-}<br />
-<&#47;pre></p>
-<p>3、修改rewrite规则</p>
-<pre name=code language=conf>
-<IfModule mod_rewrite.c><br />
-    RewriteEngine On<br />
-    RewriteBase &#47;</p>
-<p>    RewriteCond %{REQUEST_FILENAME} !-f<br />
-    RewriteCond %{REQUEST_FILENAME} !-d<br />
-    RewriteRule ^(.*)$ index.php?&#47;$1 [L]<br />
-<&#47;IfModule></p>
-<p><&#47;pre></p>
-<p>基本上完成以上的布置就可以在多个配置下灵活的切换，而不会产生问题了。</p>
+如何在CI中创建干净的链接地址以方便SEO或者直接使用index.php方便在没有配置rewrite规则的机器上调试呢？
+
+下面我介绍一下我通过实践找到的在apache下面的办法。
+
+1、对于所有的输出地址统一采用site_url("controller/method");这样的生成方式
+
+2、修改config文件里的信息
+
+```php
+
+if ($_SERVER['PHP_SELF'] == $_SERVER['REQUEST_URI']) {
+
+  $config['index_page'] = 'index.php';
+
+} else {
+
+  $config['index_page'] = '';
+
+}
+
+```
+
+
+3、修改rewrite规则
+
+
+```conf
+
+<IfModule mod_rewrite.c>
+
+    RewriteEngine On
+
+    RewriteBase /</p>
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+
+</IfModule>
+
+````
+
+基本上完成以上的布置就可以在多个配置下灵活的切换，而不会产生问题了。

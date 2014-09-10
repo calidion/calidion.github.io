@@ -35,15 +35,13 @@ comments: []
 
 介绍
 
-&nbsp;
-
 对于不知道混合应用开发的，可以了解一下它是原生应用概念与移动互联网应用概念的混合。通常原生代码由一个封装框架提供（例如Phonegap），这种框架是连接原生代码与Javascript API的桥梁。这样通过这个框架，应用就可以通过javascript代码执行原生代码才能执行的功能，比如用摄象头拍照。
 
-<div></div></p>
-<div>同传统的将源文件保存在服务器端的移动Web App不同的是，混合移动App将HMLT, Javascript和CSS文件存在本地(当然在相同的情况下，他们一样可以保存在服务器端)，所以不一定需要Internet的访问。</div>
+同传统的将源文件保存在服务器端的移动Web App不同的是，混合移动App将HMLT, Javascript和CSS文件存在本地(当然在相同的情况下，他们一样可以保存在服务器端)，所以不一定需要Internet的访问。
 
-在本文中，我将尽可能的做到客观。我先说明一下我的情况，我是一个jQuery Mobile和Sencha Touch的开发者。我在选择这两个框架前，我花了很多时间了解各种框架。但是这并不表示其它的框架不好或者不满足需求。正如你将会看到的一样，我的决定也是很艰难的，并且也花了很长时间。他们都很优秀，但是正如滚石乐队所唱那样：&ldquo;你不可能总得到你想要的&rdquo;.</p>
-<div>在开始之前，我们看一下我所选择的7个框架，他们按字母排序如下：</div></p>
+在本文中，我将尽可能的做到客观。我先说明一下我的情况，我是一个jQuery Mobile和Sencha Touch的开发者。我在选择这两个框架前，我花了很多时间了解各种框架。但是这并不表示其它的框架不好或者不满足需求。正如你将会看到的一样，我的决定也是很艰难的，并且也花了很长时间。他们都很优秀，但是正如滚石乐队所唱那样：&ldquo;你不可能总得到你想要的&rdquo;.
+
+在开始之前，我们看一下我所选择的7个框架，他们按字母排序如下：
 
 *   [**Intel App Framework &ndash; ex jQMoby**](http://app-framework-software.intel.com/)
 *   [**jQuery Mobile**](http://jquerymobile.com/)
@@ -52,23 +50,14 @@ comments: []
 *   [**Sencha Touch**](http://www.sencha.com/products/touch)
 *   [**Titanium Appcelerator**](http://www.appcelerator.com/)
 *   [**Zepto.js**](http://zeptojs.com/)
+1. Intel的应用框架 &ndash; ex jQMoby
 
-&nbsp;</p>
-<div></div></p>
-<div>
-<div>1. Intel的应用框架 &ndash; ex jQMoby</div>
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/JQMobi.jpg)
 
-</div></p>
-<div></div>
 
-![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/JQMobi.jpg)</p>
-<div></div>
-
-这个框架是一个睡美人。非常快，就象Sencha Touch一样，为Android和IOS平台做了优化。</p>
+这个框架是一个睡美人。非常快，就象Sencha Touch一样，为Android和IOS平台做了优化。
 
 **优点**
-
-<div></div></p>
 
 *   很快也很可靠，可能是单就这种类型的来说最快的，性能只比Sencha Touch差点。
 *   很小，很轻
@@ -76,42 +65,25 @@ comments: []
 *   很好的原生封方案，不需要再用PhoneGap了
 *   有MVC的支持，但是第三方的MVC框架也可以独立的使用
 
-&nbsp;</p>
-<div></div></p>
-
 #### **缺点**
-</p>
-<div></div></p>
 
 *   文档很恐怖，跟其它框架对比
 *   浏览器支持有限，这并不是很坏的情况，但是他的限制了桌面的使用
 *   并不是基于jQuery，不管它的旧名想说明什么。个人不喜欢使用一些错误的信息来吸引开发者。这个框架是对jQuery的重写。这个听起来不错，直到你发现有些东西没有了，或者有些跟你期待的不一样。
 *   它可以用更好的UI，不过你可以自定义。在第二版时用原生的主题进行了重新设计
 
-&nbsp;</p>
-<div></div></p>
-
 #### 作者提示
-</p>
-<div>如果他们能改进他们的文档，我可能会转到这个框架上去。我已经在我的另一个**[文章](http://www.gajotres.net/switching-from-a-jquery-mobile-to-appframework/)**里讨论过这个主题。不管如何，这是一个值得关注的框架。</div>
 
-&nbsp;</p>
-
-####
-</p>
-<div></div></p>
-<div>
-<div>2. jQuery Mobile</div>
-
-</div></p>
-<div></div>
-
-![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/jquery_mobile.jpg)</p>
-<div></div>
-
-这是一个最常用的移动应用HTML5框架。但不要被这点所愚弄，这并不表示它是最好的解决方案，大部分对他的关注来源于他的大哥jQuery。</p>
+如果他们能改进他们的文档，我可能会转到这个框架上去。我已经在我的另一个**[文章](http://www.gajotres.net/switching-from-a-jquery-mobile-to-appframework/)**里讨论过这个主题。不管如何，这是一个值得关注的框架。
 
 &nbsp;
+
+####
+2. jQuery Mobile
+
+![Junior](http://www.gajotres.net/wp-content/uploads/2013/09/jquery_mobile.jpg)
+
+这是一个最常用的移动应用HTML5框架。但不要被这点所愚弄，这并不表示它是最好的解决方案，大部分对他的关注来源于他的大哥jQuery。
 
 #### **优点**
 
@@ -281,7 +253,7 @@ comments: []
 
 
 
-*&nbsp;&ndash; 这个值基于对&nbsp;**[Sencha Touch](http://stackoverflow.com/questions/tagged/sencha-touch)**&nbsp;和**[Sencha Touch 2](http://stackoverflow.com/questions/tagged/sencha-touch-2)两个组统计和得到的**. 只有将所有的都加上才能算公平。这个数如果加上extjs会更高，但是那样我们也得加上jQuery上关于jQuery Mobile的讨论，这样会让统计变的更加复杂</p>
+*&nbsp;&ndash; 这个值基于对&nbsp;**[Sencha Touch](http://stackoverflow.com/questions/tagged/sencha-touch)**&nbsp;和**[Sencha Touch 2](http://stackoverflow.com/questions/tagged/sencha-touch-2)两个组统计和得到的**. 只有将所有的都加上才能算公平。这个数如果加上extjs会更高，但是那样我们也得加上jQuery上关于jQuery Mobile的讨论，这样会让统计变的更加复杂
 
 **&nbsp;&ndash; App Framework的数据是通过计算&nbsp;**[App Framework](http://stackoverflow.com/questions/tagged/appframework)**&nbsp;和它的祖先**[jqMoby](http://stackoverflow.com/questions/tagged/jqmobi)的和得到的。**
 

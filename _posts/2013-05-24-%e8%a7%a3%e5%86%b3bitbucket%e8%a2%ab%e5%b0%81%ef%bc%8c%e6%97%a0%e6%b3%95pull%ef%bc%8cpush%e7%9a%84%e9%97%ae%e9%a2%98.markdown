@@ -28,26 +28,44 @@ comments:
     MjAxMy0wNS0yOCAyMjozMzoyMCArMDgwMA==
   date_gmt: !binary |-
     MjAxMy0wNS0yOCAxNDozMzoyMCArMDgwMA==
-  content: 怪不得我今天没法pull&#47;push, 看了下确实用的是git协议， 即使开了VPN也无法提交，妹的。
+  content: 怪不得我今天没法pull/push, 看了下确实用的是git协议， 即使开了VPN也无法提交，妹的。
 ---
-<p>原文：<br />
-http:&#47;&#47;qing.blog.sina.com.cn&#47;1687779391&#47;6499783f33003s9u.html</p>
-<p>解决bitbucket被封，无法pull，push的问题<br />
-昨晚就发现bitbucket抽风，push很慢，根本无法pull，今天早上来验证，才发现被墙了。还有很多项目托管在上面，于是寻找google解决。解决办法如下：</p>
-<p>配置git pull和push都走https协议，不要走git或者ssh协议；</p>
-<pre name=code language=sh>
-git config --add http.proxy 127.0.0.1:8087<br />
-git config --add https.proxy 127.0.0.1:8087<br />
-git config --add https.sslVerify false<br />
-git config --global http.postBuffer 524288000   #非常重要，否则可能提交不成功。<br />
-<&#47;pre><br />
-8087为本地的goagent端口，sslVerify最好配置为false，否则会出现证书问题。<br />
-上面的操作也可以换成直接修改.git&#47;config文件，添加如下代码：<br />
-[http]<br />
-proxy = http:&#47;&#47;127.0.0.1:8087<br />
-sslVerify = false<br />
-[https]<br />
-proxy = http:&#47;&#47;127.0.0.1:8087<br />
+原文：
+
+http://qing.blog.sina.com.cn/1687779391/6499783f33003s9u.html
+
+解决bitbucket被封，无法pull，push的问题
+
+昨晚就发现bitbucket抽风，push很慢，根本无法pull，今天早上来验证，才发现被墙了。还有很多项目托管在上面，于是寻找google解决。解决办法如下：
+
+配置git pull和push都走https协议，不要走git或者ssh协议；
+
+```shell
+git config --add http.proxy 127.0.0.1:8087
+git config --add https.proxy 127.0.0.1:8087
+git config --add https.sslVerify false
+git config --global http.postBuffer 524288000   #非常重要，否则可能提交不成功。
+```
+
+8087为本地的goagent端口，sslVerify最好配置为false，否则会出现证书问题。
+
+上面的操作也可以换成直接修改.git/config文件，添加如下代码：
+
+```
+
+[http]
+
+proxy = http://127.0.0.1:8087
+
+sslVerify = false
+
+[https]
+
+proxy = http://127.0.0.1:8087
+
 sslVerify = false</p>
-<p>url = https:&#47;&#47;*****@bitbucket.org&#47;****.git<br />
-pushurl = https:&#47;&#47;****@bitbucket.org&#47;****.git</p>
+
+url = https://*****@bitbucket.org/****.git
+
+pushurl = https://****@bitbucket.org/****.git
+```

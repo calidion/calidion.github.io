@@ -24,6 +24,7 @@ categories:
 tags: []
 comments: []
 ---
+
 前端开发时经常需要判断是不是当前的值已经有Option了，如果有就将当前值的Option选中。
 
 下面的代码就是让你如何找到值为val的option，并选中它。
@@ -44,30 +45,24 @@ $('option[value=' + val + ']', node.__last).attr('selected', 'selected');
 
 3、所以合起来的代码：
 
-~~~javascript
-          if ($('option[value=' + val + ']', node.__last).length > 0) {
+```javascript
+    if ($('option[value=' + val + ']', node.__last).length > 0) {
+    
+    $('option[value=' + val + ']', node.__last).attr('selected', 'selected');
+    
+    }
 
-            $('option[value=' + val + ']', node.__last).attr('selected', 'selected');
-
-          }
-
-~~~
+```
 
 4、如何需要创建新的Option呢？
 
 node为select对应的jquery对象
 
 ```
-            var option = $('
-
-<option>');
-
-            option.html(text);
-
-            option.val(val);
-
-            option.attr('selected', 'selected');
-
-            node.append(option);
+    var option = $('<option>');
+    option.html(text);
+    option.val(val);
+    option.attr('selected', 'selected');
+    node.append(option);
 
 ```

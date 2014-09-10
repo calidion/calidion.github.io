@@ -22,7 +22,12 @@ tags: []
 comments: []
 ---
 首先安装：
+
 ```shell
 yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango-devel
 ```
-然后再npm install canvas
+然后再
+
+```shell
+npm install canvas
+```

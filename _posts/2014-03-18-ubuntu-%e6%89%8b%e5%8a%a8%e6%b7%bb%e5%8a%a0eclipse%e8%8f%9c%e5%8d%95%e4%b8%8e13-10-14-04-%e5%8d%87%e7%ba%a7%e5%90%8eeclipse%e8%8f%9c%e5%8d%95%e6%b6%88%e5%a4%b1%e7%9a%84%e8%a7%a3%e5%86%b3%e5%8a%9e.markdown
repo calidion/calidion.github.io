@@ -45,6 +45,7 @@ cp /usr/share/applications/eclipse.desktop ~/.local/share/applications/
 
 文件的内容如下：
 
+```
 [Desktop Entry]
 
 Type=Application
@@ -62,7 +63,7 @@ Terminal=false
 Categories=Development;IDE;Java;
 
 StartupWMClass=Eclipse
-
+```
 注意：
 
 [USER]是你用户名
@@ -75,14 +76,20 @@ StartupWMClass=Eclipse
 
 解决的办法是在Exec加上：
 
-env UBUNTU_MENUPROXY=0
+```
 
+env UBUNTU_MENUPROXY=0
+```
 即：
 
+```
+
 Exec=env UBUNTU_MENUPROXY=0 /home/eric/Program\ Files/eclipse/eclipse
+```
 
 最终的效果是：
 
+```
 [Desktop Entry]
 
 Type=Application
@@ -100,6 +107,7 @@ Terminal=false
 Categories=Development;IDE;Java;
 
 StartupWMClass=Eclipse
+```
 
 所有的内容最初来源于：
 
