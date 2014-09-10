@@ -21,6 +21,8 @@ categories:
 tags: []
 comments: []
 ---
+
+
 原文：http://socket.io/blog/introducing-socket-io-1-0/
 
 Socket.IO的第一个版本在Node.JS出现的不久就出来了。我之前很长时间里都在寻找方便地将数据从服务器端推到客户端的框架，也偿试了很多其它的服务器端的javascript方案。
@@ -28,16 +30,17 @@ Socket.IO的第一个版本在Node.JS出现的不久就出来了。我之前很�
 Socket.IO慢慢的就变成了Web上的事件发生器（EventEmitter)。今天我会介绍一下1.0上取得的工作成果并展望一下未来。
 Socket.IO 1.0里有不少需要说明的地方，如果你的时间宝贵，你可以选择一些你感兴趣的主题去了解：
 
-新引擎
-二进制的支持
-自动测试
-可规模化(Scalability)
-集成
-更好的测试
-流水化的API（精简，高效）
-CDN分发
-未来的创新
-感谢
+>新引擎
+>二进制的支持
+>自动测试
+>可规模化(Scalability)
+>集成
+>更好的测试
+>流水化的API（精简，高效）
+>CDN分发
+>未来的创新
+>感谢
+
 
 #新引擎
 
@@ -87,6 +90,7 @@ self.canvas.toBuffer(function(err, buf){
 下一个试验是运行一个QEMU的实例。这个实例里运行着一个Windows XP的镜像，以此来纪念XP的退休。每个玩家可以得到15秒的机会来控制这个机器。demo在这里http://socket.computer。这里有一段你通常可能会看到的场景的视频：
 将这个DEMO放到一起的关键部分在于连接QEMU的VNC服务器和实现RFB协议。跟NODE.JS平常的方式一样，这个方案也就是在npm里搜索rfb就能搞定的。
 实际上为了最好的性能，降低延时，最好只通知客户端屏幕变化的部分。比如，如果你移动鼠标，只有包含了鼠标的很小块屏幕会被通知。node-rfb2模块会给我们一个包含对象的矩形事件如下：
+```
 {
   x: 103,
   y: 150,
@@ -94,12 +98,14 @@ self.canvas.toBuffer(function(err, buf){
   height: 250,
   data: Buffer
 }
+```
 这时我就清楚的看到支持二进制数据的价值了。我只需要调用io.emit并将那个对象传进去，然后让Socket.IO来处理就行了。
 出于好玩，我也安装并运行了我最喜欢的第一人称射击游戏：
-自动测试
+
+#自动测试
 第个提交到Socket.IO的代码基线都会触发一个测试矩阵，覆盖25个浏览器，包括Android和iOS。我们通过在你的计算机上建立一个反向隧道到临时端口（这样外界就可以访问这个计算机）的方式来建立无缝的测试，然后将这些测试在Sauce Labs的云上执行，这云主要负责可视化和调用所有我们关心的环境下的浏览器。
 
-规模化
+#规模化
 我们对多房间与多节点规模化的处理已经作了相当程度的简化。Socket.IO不会在节点之间相互的存储或者复制数据，它现在只关心如何将事件进行传输。如果你想将Socket.IO扩大到多个节点上，那么只需要两个简单的步骤：
 开启粘性负载均衡(sticky load balancing)（比如通过原始IP地址)。这样可以保证象long-polling这样的连接可以将请求路由到同一个节点，这样消息缓存就可以被保存下来 。
 实现socket.io-redis适配器
@@ -114,16 +120,19 @@ io.adapter(redis({ host: 'localhost', port: 6379 }));
 很多时候，你已有应用的布署环境是由很多语言和框架写成的，并不是只有Node.JS.即使他是全部用Node.JS写的，你可能在什么时候也想将你的应用拆分成几个不同的进程。
 比如一个进程负责提供Socket.IO的服务，接收连接，处理身份验证等，而另一个后端可能会负责生产消息。
 对于那样的终端，我们引入了socket.io-emitter项目，他会把钩子挂进socket.io-redis里，然后你就可以很容易的在任何地方发起一个事件到浏览器了。
+```
 var io = require('socket.io-emitter')();
 setInterval(function(){
   io.emit('time', new Date);
 }, 5000);
-
+```
 Tony Kovanen已经创建了一个PHP的实现
+```
 <?php
 $emitter = new SocketIOEmitter(array('port' => '6379', 'host' => '127.0.0.1'));
 $emitter->emit('event', 'wow');
 ?>
+```
 这样就能很方便的让现有的应用转成一个实时的应用。
 更好的调试
 Socket.IO现在已经完全被TJ Holowaychuk创建的简约而又无比强大的叫做debug的工具所武装。
@@ -134,31 +143,36 @@ Socket.IO现在已经完全被TJ Holowaychuk创建的简约而又无比强大的
 流线行的API
 socket.io模块现在已经直接输出绑定函数了（之前是.listen）。
 现在绑定socket.io到一个HTTP服务器更加容易了。
-
+```
 var srv = require('http').Server();
 var io = require('socket.io')(srv);
-
+```
 或者让它侦听某个端口。
 var io = require('socket.io')(8080);
 之前，为了表达所有的连接，你不得不用io.sockets.现在你可以直接在io上调用：
+
+```
 io.on('connection', function(socket){
   socket.emit('hi');
 });
 io.emit('hi everyone');
+```
 
-CDN发布
+#CDN发布
 
 我们之前做出得最好的决定就是要实现一个Socket.IO服务器不但要让你能用上实时协议，同时自己也要服务好客户端。
 
 通常，你们所有人都会包含一个这样的代码片段：
 
+```
 <script src="/socket.io/socket.io.js"></script>
-
+```
 如果你想优化你的客户端体验，让你的用户访问离他最近的文件，同时提供最大的级别的gzip压缩（感谢Google的zopfli）和适当的缓存支持，你现在可以使用我们的CDN了。他是免费的，永久，同时原生支持SSL。
-
+```
 <script src="https://cdn.socket.io/socket.io-1.0.0.js"></script>
+```
 
-未来的创新
+#未来的创新
 
 Socket.IO项目的核心将会继续通过很多经常的发布来改进，主要的目标是提供可靠性，速度，降低代码量，更易维护。Socket.IO 2.0将可能会看到我们放弃支持一些老的浏览器，并去除一些模块，比如JSON串行化模块。
 
@@ -167,13 +181,14 @@ Socket.IO项目的核心将会继续通过很多经常的发布来改进，主�
 #socket.io-stream
 
 通过添加这个插件，你可以发送流对象，这样你可以编写一些内存高效的程序。在第一个例子中，我们在发送前加载了一个文件到内存中，但是下面的代码是可以工作的：
-
+```
 var fs = require('fs');
 var io = require('socket.io')(3000);
 require('socket.io-stream')(io);
 io.on('connection', function(socket){
   io.emit(fs.createReadStream('file.jpg'));
 });
+```
 
 这样在客户端你就会收到一个流对象并触发数据事件。
 
@@ -193,7 +208,7 @@ io.on('connection', function(socket){
 
 能够在更大的生态系统中提供这种互操作性是我们2014年以及之后的最大的目标。
 
-感谢
+#感谢
 
 这个版本是一个大团队的成果。特别感谢我们新的核心团队：
 
