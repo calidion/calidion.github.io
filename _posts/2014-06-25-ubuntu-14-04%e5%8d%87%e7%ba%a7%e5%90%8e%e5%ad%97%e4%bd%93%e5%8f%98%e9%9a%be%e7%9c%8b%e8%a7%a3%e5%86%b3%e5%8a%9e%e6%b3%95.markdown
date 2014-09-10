@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>sudo apt-get remove fonts-arphic-ukai fonts-arphic-uming</p>
+sudo apt-get remove fonts-arphic-ukai fonts-arphic-uming

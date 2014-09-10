@@ -22,38 +22,70 @@ categories:
 tags: []
 comments: []
 ---
-<p>nodejs的https请求如何不加以配置会出来很多错误。</p>
-<p>下面是经过测试的一段nodejs发送HTTPS请求的代码，主要是要注意Options里的几个参数的内容。</p>
-<pre name="code" language="js">
-<p>    var data = {<br />
-    };</p>
-<p>    var options = {<br />
-      host: serverHost,<br />
-      port: serverPort,<br />
-      method: 'POST',<br />
-      path: "&#47;",<br />
-      headers: {</p>
-<p>      },<br />
-      rejectUnauthorized: false,<br />
-      requestCert: true,<br />
-      agent: false,<br />
-      secureProtocol: 'SSLv3_method'<br />
-    };</p>
-<p>    var https = require('https');<br />
-    var req = https.request(options, function (res) {<br />
-      console.log("init request");<br />
-      console.log(res.statusCode);<br />
-      res.on('data', function (data) {<br />
-        try {<br />
-          console.log(data);<br />
-        } catch(e) {<br />
-          console.log(e)<br />
-        }<br />
-      });<br />
-    });<br />
-    req.write(JSON.stringify(data));<br />
-    req.end();</p>
-<p>    req.on('error', function (e) {<br />
-      console.error(e);<br />
-    });</p>
-<p><&#47;pre></p>
+nodejs的https请求如何不加以配置会出来很多错误。
+
+下面是经过测试的一段nodejs发送HTTPS请求的代码，主要是要注意Options里的几个参数的内容。
+
+```
+    var data = {
+
+    };
+
+    var options = {
+
+      host: serverHost,
+
+      port: serverPort,
+
+      method: 'POST',
+
+      path: "&#47;",
+
+      headers: {
+
+      },
+
+      rejectUnauthorized: false,
+
+      requestCert: true,
+
+      agent: false,
+
+      secureProtocol: 'SSLv3_method'
+
+    };
+
+    var https = require('https');
+
+    var req = https.request(options, function (res) {
+
+      console.log("init request");
+
+      console.log(res.statusCode);
+
+      res.on('data', function (data) {
+
+        try {
+
+          console.log(data);
+
+        } catch(e) {
+
+          console.log(e)
+
+        }
+
+      });
+
+    });
+
+    req.write(JSON.stringify(data));
+
+    req.end();
+
+    req.on('error', function (e) {
+
+      console.error(e);
+
+    });
+```

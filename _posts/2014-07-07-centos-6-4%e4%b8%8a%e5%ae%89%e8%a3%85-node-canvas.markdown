@@ -21,6 +21,8 @@ categories:
 tags: []
 comments: []
 ---
-<p>首先安装：<br />
-yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango-devel</p>
-<p>然后再npm install canvas</p>
+首先安装：
+
+yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango-devel
+
+然后再npm install canvas
