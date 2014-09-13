@@ -22,5 +22,6 @@ tags:
 - Google Maps API
 comments: []
 ---
-<p>只需要加上一句：<br />
-map.enableGoogleBar()</p>
+只需要加上一句：
+
+map.enableGoogleBar()

@@ -23,42 +23,80 @@ tags:
 - Linux
 comments: []
 ---
-<p>在Linux系统下面有一些进程无法用kill直接杀死。<br />
-这时你可以试一下kill -9 pid的方式来杀死进程<br />
-这里9实际上对应的是进程消息里的KILL消息。<br />
-会无阻塞的杀死一个LINUX进程。<br />
-Kill参数的对照表：<br />
-       Name     Num   Action    Description<br />
-       0          0   n&#47;a       exit code indicates if a signal may be sent<br />
-       ALRM      14   exit<br />
-       HUP        1   exit<br />
-       INT        2   exit<br />
-       KILL       9   exit      this signal may not be blocked<br />
-       PIPE      13   exit<br />
-       POLL           exit<br />
-       PROF           exit<br />
-       TERM      15   exit<br />
-       USR1           exit<br />
-       USR2           exit<br />
-       VTALRM         exit<br />
-       STKFLT         exit      may not be implemented<br />
-       PWR            ignore    may exit on some systems<br />
-       WINCH          ignore<br />
-       CHLD           ignore<br />
-       URG            ignore<br />
-       TSTP           stop      may interact with the shell<br />
-       TTIN           stop      may interact with the shell<br />
-       TTOU           stop      may interact with the shell<br />
-       STOP           stop      this signal may not be blocked<br />
-       CONT           restart   continue if stopped, otherwise ignore<br />
-       ABRT       6   core<br />
-       FPE        8   core<br />
-       ILL        4   core<br />
-       QUIT       3   core<br />
-       SEGV      11   core<br />
-       TRAP       5   core<br />
-       SYS            core      may not be implemented<br />
-       EMT            core      may not be implemented<br />
-       BUS            core      core dump may fail<br />
-       XCPU           core      core dump may fail<br />
-       XFSZ           core      core dump may fail</p>
+在Linux系统下面有一些进程无法用kill直接杀死。
+
+这时你可以试一下kill -9 pid的方式来杀死进程
+
+这里9实际上对应的是进程消息里的KILL消息。
+
+会无阻塞的杀死一个LINUX进程。
+
+Kill参数的对照表：
+
+       Name     Num   Action    Description
+
+       0          0   n&#47;a       exit code indicates if a signal may be sent
+
+       ALRM      14   exit
+
+       HUP        1   exit
+
+       INT        2   exit
+
+       KILL       9   exit      this signal may not be blocked
+
+       PIPE      13   exit
+
+       POLL           exit
+
+       PROF           exit
+
+       TERM      15   exit
+
+       USR1           exit
+
+       USR2           exit
+
+       VTALRM         exit
+
+       STKFLT         exit      may not be implemented
+
+       PWR            ignore    may exit on some systems
+
+       WINCH          ignore
+
+       CHLD           ignore
+
+       URG            ignore
+
+       TSTP           stop      may interact with the shell
+
+       TTIN           stop      may interact with the shell
+
+       TTOU           stop      may interact with the shell
+
+       STOP           stop      this signal may not be blocked
+
+       CONT           restart   continue if stopped, otherwise ignore
+
+       ABRT       6   core
+
+       FPE        8   core
+
+       ILL        4   core
+
+       QUIT       3   core
+
+       SEGV      11   core
+
+       TRAP       5   core
+
+       SYS            core      may not be implemented
+
+       EMT            core      may not be implemented
+
+       BUS            core      core dump may fail
+
+       XCPU           core      core dump may fail
+
+       XFSZ           core      core dump may fail
