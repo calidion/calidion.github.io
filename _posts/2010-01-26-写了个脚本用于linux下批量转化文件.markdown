@@ -23,12 +23,23 @@ tags:
 - shell
 comments: []
 ---
-<p>for i in `find . -name "*.js"`<br />
-do<br />
-iconv -f gbk -t utf-8 $i > $i.new | mv $i.new $i<br />
-done</p>
-<p>注意事项：<br />
-1。"*.js"是你所查找的文件正则。<br />
-2。确保你所转化的文件的格式是一致的。<br />
-3。-f是要转化的格式， -t是转化后的格式<br />
-4。做好备份工作。因为这个代码转化后的文件会直接覆盖原文件</p>
+
+```shell
+for i in `find . -name "*.js"`
+
+do
+
+iconv -f gbk -t utf-8 $i > $i.new | mv $i.new $i
+
+done
+```
+
+注意事项：
+
+1。"*.js"是你所查找的文件正则。
+
+2。确保你所转化的文件的格式是一致的。
+
+3。-f是要转化的格式， -t是转化后的格式
+
+4。做好备份工作。因为这个代码转化后的文件会直接覆盖原文件
