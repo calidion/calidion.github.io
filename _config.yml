@@ -25,7 +25,7 @@ author:
     email: calidion@gmail.com
     imageLink: http://tp4.sinaimg.cn/2344087443/180/5622386331/1
     simpleIntro: 关于IT技术的新闻，技术，感悟，交流，分享
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/wordpress" # the subpath of your site, e.g. /blog/
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
@@ -78,6 +78,7 @@ duoshuo:
 twitter_username: htc3000
 github_username:  calidion
 
+permalink: /:year/:month/:day/:title/
 paginate: 10
 paginate_path: "blogs/page/:num"
 
