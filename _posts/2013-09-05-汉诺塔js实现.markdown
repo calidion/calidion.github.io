@@ -37,7 +37,7 @@ comments: []
 
 要求，每次移动只能移动一个圆盘，而且大的圆盘不能放到小的圆盘上面。
 
-```
+```javascript
 
 var namespace = {};
 
