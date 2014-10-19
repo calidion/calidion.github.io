@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: python下GB2312&#47;GBK编码的问题解决
+title: python下GB2312/GBK编码的问题解决
 author:
   display_name: 北漂IT民工
   login: admin
@@ -26,7 +26,7 @@ tags:
 - 编码
 comments: []
 ---
-<p>如果你想在python的源文件里使用GBK&#47;GB2312那么在保证你的源文件的编码本身是GB2312外，<br />
+<p>如果你想在python的源文件里使用GBK/GB2312那么在保证你的源文件的编码本身是GB2312外，<br />
 还需要在文件首加上<br />
 #encoding=gb2312<br />
 这样的一句提示。<br />

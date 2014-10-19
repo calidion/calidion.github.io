@@ -29,9 +29,9 @@ comments: []
 然后输入cmd<br />
 打开控制台窗口<br />
 然后在窗口里输入下面的信息:<br />
-C:Documents and SettingsAdministrator>route -p add <span style="color: #ff0000;">60.190.105.7<&#47;span> mask 255.255.255.255 127.0.0.1</p>
+C:Documents and SettingsAdministrator>route -p add <span style="color: #ff0000;">60.190.105.7</span> mask 255.255.255.255 127.0.0.1</p>
 <p>针对Linux:</p>
 <p>[sudo] route add -host 60.190.105.7 reject</p>
 <p>（Ubuntu上测试通过）</p>
-<p>其中<span style="color: #ff0000;">60.190.105.7 <&#47;span>是广告的IP。<br />
+<p>其中<span style="color: #ff0000;">60.190.105.7 </span>是广告的IP。<br />
 你可以根本你的情况进行修改。</p>

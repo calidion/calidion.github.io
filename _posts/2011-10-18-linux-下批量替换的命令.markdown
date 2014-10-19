@@ -22,7 +22,7 @@ tags: []
 comments: []
 ---
 <p>将下面的代码放到一个shell文件a.sh里，</p>
-<p>sed -i "s&#47;$2&#47;$3&#47;g" `grep -rl $2 $1`</p>
+<p>sed -i "s/$2/$3/g" `grep -rl $2 $1`</p>
 <p>然后执行:<br />
 sh a.sh path param1 param2</p>
 <p>path是路径名,<br />

@@ -24,7 +24,7 @@ tags:
 comments: []
 ---
 <p>默认情况下<br />
-&#47;etc&#47;ssh&#47;ssh_config文件里的GSSAPIAuthentication被设置成了yes,这样会导致一个连接_kerberos.<hostname>的DNS请求。<br />
+/etc/ssh/ssh_config文件里的GSSAPIAuthentication被设置成了yes,这样会导致一个连接_kerberos.<hostname>的DNS请求。<br />
 除非对外界的请求被中断，否则ssh的会话直到DNS请求超时才会继续下去。不是一个什么问题，<br />
 只是会对内网访问造成一定的痛苦。</p>
 <p>所以解决的办法是把这个 GSSAPIAuthentication默认设置成 no就可以了。<br />

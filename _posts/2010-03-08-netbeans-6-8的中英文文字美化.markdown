@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: UBUNTU&#47;Linux 下Netbeans 6.8的中英文文字美化
+title: UBUNTU/Linux 下Netbeans 6.8的中英文文字美化
 author:
   display_name: 北漂IT民工
   login: admin
@@ -25,45 +25,45 @@ tags:
 - 美化
 comments: []
 ---
-<p>netbeans因为安装方便，对html&#47;css&#47;javascript的格式化超级强大，运行速度快一直是我的最爱，</p>
+<p>netbeans因为安装方便，对html/css/javascript的格式化超级强大，运行速度快一直是我的最爱，</p>
 <p>更因为上面的jVi插件非常好用，与项目管理能力非常好让我爱不释手，</p>
 <p>但netbeans的字体一直比较难看，所以我们不得不动手自己来配置。</p>
 <p>下面是我在Ubuntu下对Netbeans 6.8的字体配置的修改方法。</p>
 <p>1）先按下面地址的方法安装好字体。</p>
-<p><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;01&#47;26&#47;linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a&#47;" target="_blank">http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;01&#47;26&#47;linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a&#47;<&#47;a></p>
-<p>2）然后打开&#47;etc&#47;java-6-sun&#47;fontconfig.properties</p>
-<p>sudo vi &#47;etc&#47;java-6-sun&#47;fontconfig.properties</p>
+<p><a href="http://www.3gcnbeta.com/wordpress/2010/01/26/linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a/" target="_blank">http://www.3gcnbeta.com/wordpress/2010/01/26/linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a/</a></p>
+<p>2）然后打开/etc/java-6-sun/fontconfig.properties</p>
+<p>sudo vi /etc/java-6-sun/fontconfig.properties</p>
 <p>或者(如果你不熟悉vi)</p>
-<p>sudo gedit &#47;etc&#47;java-6-sun&#47;fontconfig.properties</p>
+<p>sudo gedit /etc/java-6-sun/fontconfig.properties</p>
 <p>3)查找Font File Names,</p>
 <p>将前两行替换成如下的任何一种方式</p>
 <p>a)宋体</p>
-<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;simsun.ttc<&#47;div></p>
-<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;simsun.ttc<&#47;div></p>
-<div>b)文泉译正黑<&#47;div></p>
-<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc<&#47;div></p>
-<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc<&#47;div></p>
-<div>添加后他们看起来象是下面这样子。<&#47;div></p>
-<div id="_mcePaste"># Font File Names<&#47;div></p>
-<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;simsun.ttc<&#47;div></p>
-<div id="_mcePaste">#filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc<&#47;div></p>
-<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc<&#47;div></p>
-<div id="_mcePaste">filename.-baekmuk-batang-medium-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;baekmuk&#47;batang.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-un-batang-medium-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;unfonts&#47;UnBatang.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-un-batang-bold-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;unfonts&#47;UnBatangBold.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-baekmuk-gulim-medium-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;baekmuk&#47;gulim.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-un-dotum-medium-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;unfonts&#47;UnDotum.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-un-dotum-bold-r-normal--*-%d-*-*-c-*-*-*=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;unfonts&#47;UnDotumBold.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-kochi-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;kochi&#47;kochi-gothic.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-sazanami-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;sazanami&#47;sazanami-gothic.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-kochi-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;kochi&#47;kochi-mincho.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-sazanami-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;sazanami&#47;sazanami-mincho.ttf<&#47;div></p>
-<div>4） 然后跑到最后一行，在下面添加如下的语句：<&#47;div></p>
-<div id="_mcePaste">#Monospaced font configure<&#47;div></p>
-<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-r-normal-sans-*-%d-*-*-m-*-iso8859-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;cour.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-r-normal-sans-*-%d-*-*-m-*-iso8859-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;courbd.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-i-normal-sans-*-%d-*-*-m-*-iso8859-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;couri.ttf<&#47;div></p>
-<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-i-normal-sans-*-%d-*-*-m-*-iso8859-1=&#47;usr&#47;share&#47;fonts&#47;truetype&#47;windows&#47;Fonts&#47;courbi.ttf<&#47;div></p>
-<div><&#47;div></p>
-<div><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-ipbook-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-396" title="Screenshot-ipbook - NetBeans IDE 6.8" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-ipbook-NetBeans-IDE-6.8.png" alt="" width="777" height="585" &#47;><&#47;a><&#47;div></p>
-<div><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-395" title="Screenshot-NetBeans IDE 6.8" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;03&#47;Screenshot-NetBeans-IDE-6.8.png" alt="" width="777" height="585" &#47;><&#47;a><&#47;div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div>b)文泉译正黑</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div>添加后他们看起来象是下面这样子。</div></p>
+<div id="_mcePaste"># Font File Names</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div id="_mcePaste">#filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-baekmuk-batang-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/baekmuk/batang.ttf</div></p>
+<div id="_mcePaste">filename.-un-batang-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnBatang.ttf</div></p>
+<div id="_mcePaste">filename.-un-batang-bold-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnBatangBold.ttf</div></p>
+<div id="_mcePaste">filename.-baekmuk-gulim-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/baekmuk/gulim.ttf</div></p>
+<div id="_mcePaste">filename.-un-dotum-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnDotum.ttf</div></p>
+<div id="_mcePaste">filename.-un-dotum-bold-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnDotumBold.ttf</div></p>
+<div id="_mcePaste">filename.-kochi-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/kochi/kochi-gothic.ttf</div></p>
+<div id="_mcePaste">filename.-sazanami-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/sazanami/sazanami-gothic.ttf</div></p>
+<div id="_mcePaste">filename.-kochi-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/kochi/kochi-mincho.ttf</div></p>
+<div id="_mcePaste">filename.-sazanami-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/sazanami/sazanami-mincho.ttf</div></p>
+<div>4） 然后跑到最后一行，在下面添加如下的语句：</div></p>
+<div id="_mcePaste">#Monospaced font configure</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-r-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/cour.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-r-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/courbd.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-i-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/couri.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-i-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/courbi.ttf</div></p>
+<div></div></p>
+<div><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-ipbook-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-396" title="Screenshot-ipbook - NetBeans IDE 6.8" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-ipbook-NetBeans-IDE-6.8.png" alt="" width="777" height="585" /></a></div></p>
+<div><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-395" title="Screenshot-NetBeans IDE 6.8" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-NetBeans-IDE-6.8.png" alt="" width="777" height="585" /></a></div></p>

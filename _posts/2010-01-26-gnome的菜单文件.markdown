@@ -23,10 +23,10 @@ tags:
 comments: []
 ---
 <p>官方的说明地址：</p>
-<p>http:&#47;&#47;library.gnome.org&#47;admin&#47;system-admin-guide&#47;stable&#47;menustructure-13.html.zh_CN</p>
+<p>http://library.gnome.org/admin/system-admin-guide/stable/menustructure-13.html.zh_CN</p>
 <p>一般来说在：<br />
-1.~&#47;.config&#47;menus&#47;applications.menu<br />
-2. &#47;etc&#47;xdg&#47; enus&#47;applications.menu</p>
+1.~/.config/menus/applications.menu<br />
+2. /etc/xdg/ enus/applications.menu</p>
 <p>首先会找1所在的目录，<br />
 然后找2所在的目录<br />
 使用第一个找到的applications.menu</p>

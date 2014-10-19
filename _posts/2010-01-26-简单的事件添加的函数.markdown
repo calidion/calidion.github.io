@@ -44,4 +44,4 @@ var addEvent = function(e, type, fn){<br />
       });<br />
     }<br />
 }<br />
-<&#47;pre></p>
+</pre></p>

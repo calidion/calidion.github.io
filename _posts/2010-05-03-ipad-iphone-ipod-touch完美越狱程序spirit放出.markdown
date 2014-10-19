@@ -21,7 +21,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>就在刚才，http:&#47;&#47;spiritjb.com&#47;上终于更新了iPad iPhone iPod touch的完美越狱程序Spirit。<br />
+<p>就在刚才，http://spiritjb.com/上终于更新了iPad iPhone iPod touch的完美越狱程序Spirit。<br />
 分为Windows和Mac两个版本。不过不带解锁，所以有锁版的砖头们依然悲剧。以下为原文：</p>
 <p>Spirit</p>
 <p>What's Spirit?<br />

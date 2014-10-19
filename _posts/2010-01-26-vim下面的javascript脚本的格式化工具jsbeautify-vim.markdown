@@ -29,7 +29,7 @@ comments: []
 在命令模式下打入&ldquo;ff" 就可以开始执行了。<br />
 但目前的速度有点慢。<br />
 你需要有耐心。<br />
-下载地址：http:&#47;&#47;www.vim.org&#47;scripts&#47;script.php?script_id=2727<br />
+下载地址：http://www.vim.org/scripts/script.php?script_id=2727<br />
 目前还没有绑定到vim的expandTab设置。<br />
 如果想将tab换成是空格，<br />
 需要将 295行:<br />

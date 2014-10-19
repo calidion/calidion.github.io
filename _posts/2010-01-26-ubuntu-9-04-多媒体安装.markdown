@@ -24,18 +24,18 @@ tags:
 comments: []
 ---
 <p>英文官方说明：</p>
-<p>https:&#47;&#47;help.ubuntu.com&#47;community&#47;Medibuntu</p>
+<p>https://help.ubuntu.com/community/Medibuntu</p>
 <p>对于各个版本选择下面的安装源：</p>
 <p>所有的Ubuntu 版本与钥匙环:</p>
-<p>sudo wget http:&#47;&#47;www.medibuntu.org&#47;sources.list.d&#47;`lsb_release -cs`.list --output-document=&#47;etc&#47;apt&#47;sources.list.d&#47;medibuntu.list && sudo apt-get -q update && sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring && sudo apt-get -q update<br />
+<p>sudo wget http://www.medibuntu.org/sources.list.d/`lsb_release -cs`.list --output-document=/etc/apt/sources.list.d/medibuntu.list && sudo apt-get -q update && sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring && sudo apt-get -q update<br />
 Ubuntu 9.04 "Jaunty Jackalope":</p>
-<p>sudo wget http:&#47;&#47;www.medibuntu.org&#47;sources.list.d&#47;jaunty.list --output-document=&#47;etc&#47;apt&#47;sources.list.d&#47;medibuntu.list<br />
+<p>sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
 Ubuntu 8.10 "Intrepid Ibex":</p>
-<p>sudo wget http:&#47;&#47;www.medibuntu.org&#47;sources.list.d&#47;intrepid.list --output-document=&#47;etc&#47;apt&#47;sources.list.d&#47;medibuntu.list<br />
+<p>sudo wget http://www.medibuntu.org/sources.list.d/intrepid.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
 Ubuntu 8.04 "Hardy Heron":</p>
-<p>sudo wget http:&#47;&#47;www.medibuntu.org&#47;sources.list.d&#47;hardy.list --output-document=&#47;etc&#47;apt&#47;sources.list.d&#47;medibuntu.list<br />
+<p>sudo wget http://www.medibuntu.org/sources.list.d/hardy.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
 Ubuntu 6.06 "Dapper Drake":</p>
-<p>sudo wget http:&#47;&#47;www.medibuntu.org&#47;sources.list.d&#47;dapper.list --output-document=&#47;etc&#47;apt&#47;sources.list.d&#47;medibuntu.list</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/dapper.list --output-document=/etc/apt/sources.list.d/medibuntu.list</p>
 <p>安装GPG密匙：<br />
 sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update<br />
 安装解码器：<br />

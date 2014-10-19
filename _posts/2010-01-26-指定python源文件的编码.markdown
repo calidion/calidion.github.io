@@ -25,15 +25,15 @@ tags:
 comments: []
 ---
 <p>根据pep 0263,<br />
-http:&#47;&#47;www.python.org&#47;dev&#47;peps&#47;pep-0263&#47;<br />
+http://www.python.org/dev/peps/pep-0263/<br />
 有下面三种写法:<br />
 1.<br />
 # coding=<encoding name></p>
 <p>2.<br />
-#!&#47;usr&#47;bin&#47;python<br />
+#!/usr/bin/python<br />
 # -*- coding: <encoding name> -*-<br />
 3.<br />
-#!&#47;usr&#47;bin&#47;python<br />
+#!/usr/bin/python<br />
 # vim: set fileencoding=<encoding name> :</p>
 <p>更准确的说是源文件的第一行或者第二行需要符合下面的正则:<br />
 "coding[:=]s*([-w.]+)"</p>

@@ -25,13 +25,13 @@ tags:
 comments: []
 ---
 <p>deb包的缓冲目录是<br />
-&#47;var&#47;cache&#47;apt&#47;archives,<br />
+/var/cache/apt/archives,<br />
 在这个目录下可以找到所有的apt-get install的包。</p>
 <p>包含了下面的一些命令：</p>
 <p>-b, --build directory [archive|directory]<br />
 编译一个deb包<br />
 -c, --contents archive<br />
-显示包的目录&#47;文件结构<br />
+显示包的目录/文件结构<br />
 -e, --control filename [directory]<br />
 解压控制信息<br />
 -x, --extract archive directory<br />
@@ -54,4 +54,4 @@ See dpkg-query(1) for more information about the following actions.</p>
 从安装的包里查找指定文件名<br />
 -p, --print-avail package-name...<br />
 显示在下面地址里找到的指定包名的详细信息<br />
-&#47;var&#47;lib&#47;dpkg&#47;available.</p>
+/var/lib/dpkg/available.</p>

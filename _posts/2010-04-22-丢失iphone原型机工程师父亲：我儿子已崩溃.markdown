@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100422&#47;1125350703984341.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100422&#47;1125350703984341.jpg" &#47;></p>
+<p><img src="http://img.cnbeta.com/newsimg/100422/1125350703984341.jpg" alt="http://img.cnbeta.com/newsimg/100422/1125350703984341.jpg" /></p>

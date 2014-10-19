@@ -23,4 +23,4 @@ tags:
 - python
 comments: []
 ---
-<p><a href="http:&#47;&#47;www.oreillynet.com&#47;onlamp&#47;blog&#47;2007&#47;12&#47;pymotw_basehttpserver_1.html">http:&#47;&#47;www.oreillynet.com&#47;onlamp&#47;blog&#47;2007&#47;12&#47;pymotw_basehttpserver_1.html<&#47;a></p>
+<p><a href="http://www.oreillynet.com/onlamp/blog/2007/12/pymotw_basehttpserver_1.html">http://www.oreillynet.com/onlamp/blog/2007/12/pymotw_basehttpserver_1.html</a></p>

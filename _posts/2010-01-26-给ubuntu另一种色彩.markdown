@@ -28,7 +28,7 @@ comments: []
 我因此寻找了很久。<br />
 不过工夫不负有心人，还真让我找到了。<br />
 并且这个主题还是Ubuntu官方支持的。<br />
-官方链接：https:&#47;&#47;wiki.ubuntu.com&#47;Artwork&#47;Incoming&#47;Blubuntu</p>
+官方链接：https://wiki.ubuntu.com/Artwork/Incoming/Blubuntu</p>
 <p>1.首先安装<br />
 sudo apt-get install gtk2-engines-ubuntulooks</p>
 <p>2.然后<br />
@@ -42,4 +42,4 @@ sudo apt-get install blubuntu-*</p>
 选中Blubuntu就可以体验新的Ubuntu风格了.<br />
 选后会提示你有一个背景,选择应用就可以得到下面的桌面效果了.</p>
 <p>无图无真相，上图了。<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747800.jpg"><img src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747800.jpg" alt="" title="4229724475032747800" width="1400" height="1050" class="aligncenter size-full wp-image-97" &#47;><&#47;a></p>
+<a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/4229724475032747800.jpg"><img src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/4229724475032747800.jpg" alt="" title="4229724475032747800" width="1400" height="1050" class="aligncenter size-full wp-image-97" /></a></p>

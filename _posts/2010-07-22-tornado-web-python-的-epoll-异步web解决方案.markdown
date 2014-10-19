@@ -23,5 +23,5 @@ comments: []
 ---
 <p>主站 tornadoweb.org已经被墙，<br />
 appengine地址：<br />
-http:&#47;&#47;facebook-tornadoweb.appspot.com&#47;<br />
+http://facebook-tornadoweb.appspot.com/<br />
 tornado是编写python下快速的web服务器的基础。</p>

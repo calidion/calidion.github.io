@@ -27,7 +27,7 @@ comments: []
 <p>在我的Ubuntu 9.04下面。想看一看我的摄象头是不是可以在Linux下面正常工作。<br />
 然后我开始google。<br />
 最后来到官方。<br />
-https:&#47;&#47;help.ubuntu.com&#47;community&#47;Webcam<br />
+https://help.ubuntu.com/community/Webcam<br />
 看到上面那个 Linux-UVC，再一看UVC的说明。<br />
 看到这一句<br />
 Linux 2.6.26 and newer includes the Linux UVC driver natively.<br />

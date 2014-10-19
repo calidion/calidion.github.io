@@ -26,9 +26,9 @@ comments: []
 <p>1.编码格式要统一。比如javascript要用gbk的,html页面要用gbk的<br />
 2.服务器端最好能产生一个header，指明Content-Type是GBK;<br />
 如php:<br />
-header("Content-Type: text&#47;html; charset=gbk;");</p>
+header("Content-Type: text/html; charset=gbk;");</p>
 <p>3.网页的META信息里也最好有一个指明是GBK的标签：<br />
-<meta content="text&#47;html; charset=gbk" http-equiv="Content-Type" &#47;></p>
+<meta content="text/html; charset=gbk" http-equiv="Content-Type" /></p>
 <p>4.最后也是最重要的。要指明oe=gbk<br />
 不是动态加载的时候需要在scr的链接上加上"&oe=gbk";<br />
 如果里动态加载的话，参照下面的形式加载：</p>
@@ -38,4 +38,4 @@ google.load("maps", "2", {<br />
     callback: initMap,<br />
     other_params: "oe=gbk"<br />
 });<br />
-<&#47;pre></p>
+</pre></p>

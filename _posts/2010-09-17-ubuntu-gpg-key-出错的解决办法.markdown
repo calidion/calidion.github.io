@@ -29,8 +29,8 @@ Signing Key</p>
 <p>执行下列代码,将可以解决您的问题:</p>
 <p>sudo bash<br />
 apt-get clean<br />
-cd &#47;var&#47;lib&#47;apt<br />
-mv lists&#47; lists.old<br />
-mkdir -p lists&#47;partial<br />
+cd /var/lib/apt<br />
+mv lists/ lists.old<br />
+mkdir -p lists/partial<br />
 apt-get clean<br />
 apt-get update</p>

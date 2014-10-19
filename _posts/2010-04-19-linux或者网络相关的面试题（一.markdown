@@ -36,7 +36,7 @@ comments: []
   4.链路断开</p>
 <p>3.如何确定网页的编码格式<br />
    1.通过HTTP响应头上Content-Type的信息。<br />
-	Content-Type: text&#47;html; charset=UTF-8<br />
+	Content-Type: text/html; charset=UTF-8<br />
    2.HTML页面上的<meta>标签所指定的Content-Type信息</p>
 <p>4.常用Linux命令<br />
    a） 查看当前shell所有变量的命令(set)<br />
@@ -45,7 +45,7 @@ comments: []
    d) 如何统计文件里的单词数(wc -w 文件)<br />
    e) 对文件进行排序的命令(sort 文件)<br />
    f) 得到文件所有的相同行的行数的命令(uniq -c 文件)</p>
-<p>5.TCP&#47;IP分几层，他们分别是什么？HTTP协议是那一层,各种层分别有那些主要的协议，各举一例。<br />
+<p>5.TCP/IP分几层，他们分别是什么？HTTP协议是那一层,各种层分别有那些主要的协议，各举一例。<br />
   分四层：分别是链接层（Link),互联层（Internet),传输层(Transport),应用层（Application).</p>
 <p>链接层（Link):ARP, RARP, OSPF<br />
 网际互联层（Internet):IP,ICMP<br />

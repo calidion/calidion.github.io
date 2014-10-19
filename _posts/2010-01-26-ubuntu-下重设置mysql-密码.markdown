@@ -24,30 +24,30 @@ tags:
 comments: []
 ---
 <p>官方解决办法链接:<br />
-https:&#47;&#47;help.ubuntu.com&#47;community&#47;MysqlPasswordReset<br />
+https://help.ubuntu.com/community/MysqlPasswordReset<br />
 主要分成下面几步:<br />
 1.关掉mysql</p>
 <pre name="code" class="shell">
-sudo &#47;etc&#47;init.d&#47;mysql stop<br />
-<&#47;pre><br />
+sudo /etc/init.d/mysql stop<br />
+</pre><br />
 2.开启无授权的方式</p>
 <pre name="code" class="shell">
-sudo &#47;usr&#47;sbin&#47;mysqld --skip-grant-tables --skip-networking &<br />
-<&#47;pre><br />
+sudo /usr/sbin/mysqld --skip-grant-tables --skip-networking &<br />
+</pre><br />
 3. 以root用户进入</p>
 <pre name="code" class="shell">
   mysql -u root<br />
-<&#47;pre><br />
+</pre><br />
 4.重置密码</p>
 <pre name="code" class="sql">
 UPDATE mysql.user SET Password=PASSWORD('newpwd') WHERE User='root';<br />
-<&#47;pre><br />
+</pre><br />
 5.保存改动</p>
 <pre name="code" class="sql">
 FLUSH PRIVILEGES;<br />
-<&#47;pre><br />
+</pre><br />
 6. 重启mysql</p>
 <pre name="code" class="shell">
-sudo &#47;etc&#47;init.d&#47;mysql stop<br />
-sudo &#47;etc&#47;init.d&#47;mysql start<br />
- <&#47;pre></p>
+sudo /etc/init.d/mysql stop<br />
+sudo /etc/init.d/mysql start<br />
+ </pre></p>

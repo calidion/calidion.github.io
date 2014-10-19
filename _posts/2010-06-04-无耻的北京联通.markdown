@@ -27,13 +27,13 @@ comments: []
 内容是京城时讯，这是联通这个脑残在继DNS截持后的又一次抢钱行动。<br />
 但我可以肯定它搞不成功。<br />
 下面是广告图：<br />
-<img class="aligncenter size-full wp-image-1142" title="未命名" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;06&#47;未命名.jpg" alt="" width="335" height="181" &#47;><br />
+<img class="aligncenter size-full wp-image-1142" title="未命名" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/06/未命名.jpg" alt="" width="335" height="181" /><br />
 祝北京联通不得好死。</p>
 <p>虽然我们没有办法让联通值入。但是我们有办法不让这个广告出现：<br />
 办法是修改hosts文件:<br />
 在windows下面:<br />
 C:WINDOWSsystem32driversetchosts<br />
 在Linux下面:<br />
-&#47;etc&#47;hosts<br />
+/etc/hosts<br />
 在最后一行加上：<br />
 0.0.0.0         www.jcxinxi.com</p>

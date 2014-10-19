@@ -57,8 +57,8 @@ JACK KNIFE KICK ==>> 任意必杀技或超必杀技<br />
 <p>神乐千鹤<br />
 中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 玉响之琴音(&darr;↘&rarr; + AorC)<br />
 中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 天神之理(&rarr;&darr;↘+ AorC)<br />
-中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 神速之祝词(&rarr;↘&darr;↙&larr; + A&#47;B&#47;C&#47;D)>> 天瑞(&darr;↙&larr;+A&#47;B&#47;C&#47;D)<br />
-中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 顶门之一针(&darr;&darr; + A&#47;B&#47;C&#47;D)<br />
+中跳跃 + C>> 立 C>> 錚錚(&rarr; + A)>> 神速之祝词(&rarr;↘&darr;↙&larr; + A/B/C/D)>> 天瑞(&darr;↙&larr;+A/B/C/D)<br />
+中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 顶门之一针(&darr;&darr; + A/B/C/D)<br />
 中跳跃 + D>> 下 A>> 下 A>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
 中跳跃 + D>> 立 C>> 錚錚(&rarr; + A)>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />
 超重击 出现COUNTER>> 零技之礎(&darr;↙&larr;↙&darr;↘&rarr;+ AorC)<br />

@@ -33,9 +33,9 @@ comments: []
 并进入MAC系统，应该是第二个启动项。</p>
 <p>1.这是在boot:提示后输入-s，然后回车<br />
 2. 然后进入提示后输入：<br />
-&#47;sbin&#47;mount -uw &#47;</p>
+/sbin/mount -uw /</p>
 <p>3. 然后<br />
-cd &#47;System&#47;Library&#47;Extensions</p>
+cd /System/Library/Extensions</p>
 <p>4. 然后<br />
 rm -rf NVDAResman.kext<br />
 5.然后<br />

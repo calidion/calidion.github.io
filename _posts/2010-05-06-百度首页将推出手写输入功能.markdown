@@ -21,9 +21,9 @@ categories:
 tags: []
 comments: []
 ---
-<p><strong>百度即将在首页推出&ldquo;手写输入&rdquo;功能。这一已功能上线之后，可以帮助不熟悉键盘输入法、不方便打字等特殊人群，更为顺利的使用搜索服务。此前这一功能已应 用在百度老年搜索频道，相关技术由汉王提供。<&#47;strong>从已获悉的截图来看，百度首页搜索框旁边将新增&ldquo;手写&rdquo;链接，点击即可启动手写输入功能。该服务不需要安装任何网页插件，直接调用即可。同时，这一输入功 能还将提供词条联想功能以及百度搜索自带的关键词联想功能。</p>
-<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100506&#47;1037320389131009.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100506&#47;1037320389131009.jpg" &#47;></p>
+<p><strong>百度即将在首页推出&ldquo;手写输入&rdquo;功能。这一已功能上线之后，可以帮助不熟悉键盘输入法、不方便打字等特殊人群，更为顺利的使用搜索服务。此前这一功能已应 用在百度老年搜索频道，相关技术由汉王提供。</strong>从已获悉的截图来看，百度首页搜索框旁边将新增&ldquo;手写&rdquo;链接，点击即可启动手写输入功能。该服务不需要安装任何网页插件，直接调用即可。同时，这一输入功 能还将提供词条联想功能以及百度搜索自带的关键词联想功能。</p>
+<p><img src="http://img.cnbeta.com/newsimg/100506/1037320389131009.jpg" alt="http://img.cnbeta.com/newsimg/100506/1037320389131009.jpg" /></p>
 <p>这一功能这在中文搜索领域为首次独家应用。据透露，百度将先采取小流量上线测试的方式，逐渐推出这一服务。</p>
 <p>另据百度内部人士证实，百度PC版本的中文输入法，目前正在百度公司内部工程师之间进行内测，该输入法目前被命名为&ldquo;在线拼音输入法&rdquo;，最大的特点是无需安装客户端，可以在线使用。百度方面尚未透露这一输入法何时向公众推出。</p>
-<p>体验地址：<a href="http:&#47;&#47;123.baidu.com&#47;">http:&#47;&#47;123.baidu.com&#47;<&#47;a></p>
-<p><a rel="attachment wp-att-970" href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;05&#47;06&#47;%e7%99%be%e5%ba%a6%e9%a6%96%e9%a1%b5%e5%b0%86%e6%8e%a8%e5%87%ba%e6%89%8b%e5%86%99%e8%be%93%e5%85%a5%e5%8a%9f%e8%83%bd&#47;attachment&#47;12&#47;"><img class="aligncenter size-thumbnail wp-image-970" title="12" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;12-150x150.jpg" alt="" width="150" height="150" &#47;><&#47;a></p>
+<p>体验地址：<a href="http://123.baidu.com/">http://123.baidu.com/</a></p>
+<p><a rel="attachment wp-att-970" href="http://www.3gcnbeta.com/wordpress/2010/05/06/%e7%99%be%e5%ba%a6%e9%a6%96%e9%a1%b5%e5%b0%86%e6%8e%a8%e5%87%ba%e6%89%8b%e5%86%99%e8%be%93%e5%85%a5%e5%8a%9f%e8%83%bd/attachment/12/"><img class="aligncenter size-thumbnail wp-image-970" title="12" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/05/12-150x150.jpg" alt="" width="150" height="150" /></a></p>

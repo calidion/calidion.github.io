@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 几步教你怎样从Ubuntu&#47;Debian包的源码编译出deb包
+title: 几步教你怎样从Ubuntu/Debian包的源码编译出deb包
 author:
   display_name: 北漂IT民工
   login: admin
@@ -35,4 +35,4 @@ cd src<br />
 5.最后编译你的包:<br />
      debuild -us -uc<br />
 6.如果没有出现错误,下面的命令就可以帮你实现这个包的安装，<br />
-     sudo dpkg -i ..&#47;*.deb</p>
+     sudo dpkg -i ../*.deb</p>

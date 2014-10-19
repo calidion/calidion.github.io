@@ -30,4 +30,4 @@ $db['default']['database'] = SAE_MYSQL_DB;<br />
 $db['default']['dbdriver'] = 'mysqli';<br />
 $db['default']['port'] = SAE_MYSQL_PORT;<br />
 $db['default']['pconnect'] = FALSE;<br />
-<&#47;pre></p>
+</pre></p>

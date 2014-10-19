@@ -30,22 +30,22 @@ comments: []
 <p>1.对于当前用户来讲,在命令行里输入:<br />
 gconf-editor<br />
 则会得到如下的图片<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;721420365310889234.jpg"><&#47;a><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;1931481290190170444.jpg"><img class="aligncenter size-full wp-image-81" title="1931481290190170444" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;1931481290190170444.jpg" alt="" width="700" height="550" &#47;><&#47;a></p>
-<p>2.然后选择apps->geditor-2&#47;preferences&#47;encodings.如下图。</p>
-<p><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;823314306880051668.jpg"><&#47;a><img title="721420365310889234" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;721420365310889234.jpg" alt="" width="700" height="550" &#47;></p>
+<a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/721420365310889234.jpg"></a><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/1931481290190170444.jpg"><img class="aligncenter size-full wp-image-81" title="1931481290190170444" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/1931481290190170444.jpg" alt="" width="700" height="550" /></a></p>
+<p>2.然后选择apps->geditor-2/preferences/encodings.如下图。</p>
+<p><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/823314306880051668.jpg"></a><img title="721420365310889234" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/721420365310889234.jpg" alt="" width="700" height="550" /></p>
 <p>3.双击第一个auto-detect键，则出现如下的界面：</p>
-<p><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;1948369788792509648.jpg"><&#47;a><a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;3212192434222392812.jpg"><img class="aligncenter size-full wp-image-80" title="3212192434222392812" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;3212192434222392812.jpg" alt="" width="345" height="400" &#47;><&#47;a></p>
+<p><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/1948369788792509648.jpg"></a><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/3212192434222392812.jpg"><img class="aligncenter size-full wp-image-80" title="3212192434222392812" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/3212192434222392812.jpg" alt="" width="345" height="400" /></a></p>
 <p>4.选择添加，则出来如下的对话框：</p>
-<p><img title="823314306880051668" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;823314306880051668.jpg" alt="" width="281" height="95" &#47;></p>
+<p><img title="823314306880051668" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/823314306880051668.jpg" alt="" width="281" height="95" /></p>
 <p>5.分别添加GBK， GB2312两个编码</p>
-<p><img title="1948369788792509648" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;1948369788792509648.jpg" alt="" width="281" height="95" &#47;></p>
+<p><img title="1948369788792509648" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/1948369788792509648.jpg" alt="" width="281" height="95" /></p>
 <p>并将GBK与GB2312放到最前面，如3所示。这样再打开GBK的文件就能自动识别了。</p>
 <p>是对于sudo的情况，则需要打入命令：<br />
 sudo gconf-editor<br />
 按上述方法再来一遍即可</p>
 <div><span style="color: #0000ee; -webkit-text-decorations-in-effect: underline;"><br />
-<&#47;span><&#47;div></p>
+</span></div></p>
 <div><span style="color: #0000ee; -webkit-text-decorations-in-effect: underline;"><br />
-<&#47;span><&#47;div></p>
+</span></div></p>
 <div><span style="color: #0000ee; -webkit-text-decorations-in-effect: underline;"><br />
-<&#47;span><&#47;div></p>
+</span></div></p>

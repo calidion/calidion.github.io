@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 联发科加入Android联盟 手机成本降低2&#47;3
+title: 联发科加入Android联盟 手机成本降低2/3
 author:
   display_name: 北漂IT民工
   login: admin
@@ -23,7 +23,7 @@ tags:
 - 联发科
 comments: []
 ---
-<p>　　本报讯 （记者张奕）记者昨日从联发科确认，该公司已于7月12日正式加入由谷歌为推广Android操作系统而发起的&ldquo;开放手机联盟&rdquo;，并将打造联发科&ldquo;专属的 Android智能型手机解决方案&rdquo;。分析认为，联发科的加盟，有望让Android系统智能手机成本降低2&#47;3。<br />
+<p>　　本报讯 （记者张奕）记者昨日从联发科确认，该公司已于7月12日正式加入由谷歌为推广Android操作系统而发起的&ldquo;开放手机联盟&rdquo;，并将打造联发科&ldquo;专属的 Android智能型手机解决方案&rdquo;。分析认为，联发科的加盟，有望让Android系统智能手机成本降低2/3。<br />
 　　将复制&ldquo;一揽子解决方案&rdquo;<br />
 　　联发科无线通讯事业部总经理朱尚祖表示，通过Android创新平台，可向用户提供绝佳的网络多媒体、服务与社群网络使用经验，联发科将与联盟一起推动Android平台的普及。<br />
 　　据了解，联发科将会把此前在山寨手机上大获成功的&ldquo;一揽子解决方案&rdquo;复制到Android智能手机上来。该公司表示这种整合芯片系统解决方案可大幅降低手机厂商的技术门槛以及缩短产品的上市时间。<br />

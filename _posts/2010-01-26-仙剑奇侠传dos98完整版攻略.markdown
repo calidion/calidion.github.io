@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: 仙剑奇侠传DOS&#47;98完整版攻略
+title: 仙剑奇侠传DOS/98完整版攻略
 author:
   display_name: 北漂IT民工
   login: admin

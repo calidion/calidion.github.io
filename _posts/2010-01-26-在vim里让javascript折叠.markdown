@@ -25,12 +25,12 @@ tags:
 comments: []
 ---
 <p>英文源于:</p>
-<p>http:&#47;&#47;verens.com&#47;archives&#47;2005&#47;04&#47;18&#47;using-javascript-folds-in-vim&#47;</p>
+<p>http://verens.com/archives/2005/04/18/using-javascript-folds-in-vim/</p>
 <p>1.修改vimrc文件, 添加下面一行:<br />
 let javaScript_fold=1</p>
-<p>2.de>编辑&#47;usr&#47;share&#47;vim&#47;vim(7.x)&#47;syntax&#47;javascript.vim<br />
+<p>2.de>编辑/usr/share/vim/vim(7.x)/syntax/javascript.vim<br />
 括号里的7.x要修改成自己相应的目录。我的目录是：<br />
-de>de>&#47;usr&#47;share&#47;vim&#47;vim72&#47;syntax&#47;javascript.vimde></p>
+de>de>/usr/share/vim/vim72/syntax/javascript.vimde></p>
 <p>找到这段话：</p>
 <p>if exists("javaScript_fold")<br />
     syn match   javaScriptFunction      "<function>"<br />

@@ -22,203 +22,203 @@ tags: []
 comments: []
 ---
 <p>原文:</p>
-<p>http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;benchmark.php?test=all&amp;lang=all<br />
+<p>http://shootout.alioth.debian.org/u32/benchmark.php?test=all&amp;lang=all<br />
 这里节选了几个主流的开发语言.<br />
 可以看出来,javascript在性能上超过了除java外的所有解释型语言.<br />
 python与php所显示出来的性能基本一致.<br />
 从图中可以看出来如果除去启动时间,php的执行时间比python要短<br />
 我想这里可以将大家对语言速度的误区有一个比较清楚的整理.<br />
-http:&#47;&#47;shootout.alioth.debian.org&#47;<br />
+http://shootout.alioth.debian.org/<br />
 下有不同的CPU下的各种语言的性能数据.</p>
 <table>
 <tbody>
 <tr>
-<td colspan="2"><input type="submit" name="calc" value="chart" &#47;><&#47;td><br />
-<&#47;tr></p>
+<td colspan="2"><input type="submit" name="calc" value="chart" /></td><br />
+</tr></p>
 <tr>
 <td>
 <table>
-<colgroup span="2"><&#47;colgroup><br />
-<colgroup span="1"><&#47;colgroup><br />
-<colgroup span="1"><&#47;colgroup></p>
+<colgroup span="2"></colgroup><br />
+<colgroup span="1"></colgroup><br />
+<colgroup span="1"></colgroup></p>
 <tbody>
 <tr>
-<th><&#47;th></p>
-<th>compare&nbsp;2<&#47;th></p>
-<th><a href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;which-language-is-best.php#about">GM<&#47;a><&#47;th></p>
-<th><a href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;which-language-is-best.php#about">missing<&#47;a><&#47;th><br />
-<&#47;tr></p>
+<th></th></p>
+<th>compare&nbsp;2</th></p>
+<th><a href="http://shootout.alioth.debian.org/u32/which-language-is-best.php#about">GM</a></th></p>
+<th><a href="http://shootout.alioth.debian.org/u32/which-language-is-best.php#about">missing</a></th><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="gcc" &#47;><&#47;td></p>
-<td><a title="Compare C GNU gcc speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;c.php"><strong>C<&#47;strong>&nbsp;GNU gcc<&#47;a><&#47;td></p>
-<td>1.32<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="gcc" /></td></p>
+<td><a title="Compare C GNU gcc speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/c.php"><strong>C</strong>&nbsp;GNU gcc</a></td></p>
+<td>1.32</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="gpp" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare C++ GNU g++ speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;cpp.php"><strong>C++<&#47;strong>&nbsp;GNU g++<&#47;a><&#47;td></p>
-<td>1.32<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="gpp" checked="checked" /></td></p>
+<td><a title="Compare C++ GNU g++ speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/cpp.php"><strong>C++</strong>&nbsp;GNU g++</a></td></p>
+<td>1.32</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="ifc" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Fortran Intel speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;fortran.php"><strong>Fortran<&#47;strong>&nbsp;Intel<&#47;a><&#47;td></p>
-<td>1.38<&#47;td></p>
-<td>3<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="ifc" checked="checked" /></td></p>
+<td><a title="Compare Fortran Intel speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/fortran.php"><strong>Fortran</strong>&nbsp;Intel</a></td></p>
+<td>1.38</td></p>
+<td>3</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="gnat" &#47;><&#47;td></p>
-<td><a title="Compare Ada 2005 GNAT speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;ada.php"><strong>Ada<&#47;strong>&nbsp;2005&nbsp;GNAT<&#47;a><&#47;td></p>
-<td>1.46<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="gnat" /></td></p>
+<td><a title="Compare Ada 2005 GNAT speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/ada.php"><strong>Ada</strong>&nbsp;2005&nbsp;GNAT</a></td></p>
+<td>1.46</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="ats" &#47;><&#47;td></p>
-<td><a title="Compare ATS speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;ats.php"><strong>ATS<&#47;strong><&#47;a><&#47;td></p>
-<td>1.60<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="ats" /></td></p>
+<td><a title="Compare ATS speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/ats.php"><strong>ATS</strong></a></td></p>
+<td>1.60</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="java" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Java 7 speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;java.php"><strong>Java<&#47;strong>&nbsp;7&nbsp;<&#47;a><&#47;td></p>
-<td>1.91<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="java" checked="checked" /></td></p>
+<td><a title="Compare Java 7 speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/java.php"><strong>Java</strong>&nbsp;7&nbsp;</a></td></p>
+<td>1.91</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="scala" &#47;><&#47;td></p>
-<td><a title="Compare Scala speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;scala.php"><strong>Scala<&#47;strong><&#47;a><&#47;td></p>
-<td>2.26<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="scala" /></td></p>
+<td><a title="Compare Scala speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/scala.php"><strong>Scala</strong></a></td></p>
+<td>2.26</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="fpascal" &#47;><&#47;td></p>
-<td><a title="Compare Pascal Free Pascal speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;pascal.php"><strong>Pascal<&#47;strong>&nbsp;Free&nbsp;Pascal<&#47;a><&#47;td></p>
-<td>2.46<&#47;td></p>
-<td>2<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="fpascal" /></td></p>
+<td><a title="Compare Pascal Free Pascal speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/pascal.php"><strong>Pascal</strong>&nbsp;Free&nbsp;Pascal</a></td></p>
+<td>2.46</td></p>
+<td>2</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="ghc" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Haskell GHC speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;haskell.php"><strong>Haskell<&#47;strong>&nbsp;GHC<&#47;a><&#47;td></p>
-<td>2.53<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="ghc" checked="checked" /></td></p>
+<td><a title="Compare Haskell GHC speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/haskell.php"><strong>Haskell</strong>&nbsp;GHC</a></td></p>
+<td>2.53</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="ocaml" &#47;><&#47;td></p>
-<td><a title="Compare OCaml speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;ocaml.php"><strong>OCaml<&#47;strong><&#47;a><&#47;td></p>
-<td>2.90<&#47;td></p>
-<td>1<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="ocaml" /></td></p>
+<td><a title="Compare OCaml speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/ocaml.php"><strong>OCaml</strong></a></td></p>
+<td>2.90</td></p>
+<td>1</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="sbcl" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Lisp SBCL speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;lisp.php"><strong>Lisp<&#47;strong>&nbsp;SBCL<&#47;a><&#47;td></p>
-<td>3.04<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="sbcl" checked="checked" /></td></p>
+<td><a title="Compare Lisp SBCL speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/lisp.php"><strong>Lisp</strong>&nbsp;SBCL</a></td></p>
+<td>3.04</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="clean" &#47;><&#47;td></p>
-<td><a title="Compare Clean speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;clean.php"><strong>Clean<&#47;strong><&#47;a><&#47;td></p>
-<td>3.28<&#47;td></p>
-<td>2<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="clean" /></td></p>
+<td><a title="Compare Clean speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/clean.php"><strong>Clean</strong></a></td></p>
+<td>3.28</td></p>
+<td>2</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="csharp" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare C# Mono speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;csharp.php"><strong>C#<&#47;strong>&nbsp;Mono<&#47;a><&#47;td></p>
-<td>3.53<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="csharp" checked="checked" /></td></p>
+<td><a title="Compare C# Mono speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/csharp.php"><strong>C#</strong>&nbsp;Mono</a></td></p>
+<td>3.53</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="fsharp" &#47;><&#47;td></p>
-<td><a title="Compare F# Mono speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;fsharp.php"><strong>F#<&#47;strong>&nbsp;Mono<&#47;a><&#47;td></p>
-<td>4.75<&#47;td></p>
-<td>1<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="fsharp" /></td></p>
+<td><a title="Compare F# Mono speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/fsharp.php"><strong>F#</strong>&nbsp;Mono</a></td></p>
+<td>4.75</td></p>
+<td>1</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="racket" &#47;><&#47;td></p>
-<td><a title="Compare Racket speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;racket.php"><strong>Racket<&#47;strong><&#47;a><&#47;td></p>
-<td>4.76<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="racket" /></td></p>
+<td><a title="Compare Racket speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/racket.php"><strong>Racket</strong></a></td></p>
+<td>4.76</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="go" &#47;><&#47;td></p>
-<td><a title="Compare Go speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;compare.php?lang=go"><strong>Go<&#47;strong><&#47;a><&#47;td></p>
-<td>4.93<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="go" /></td></p>
+<td><a title="Compare Go speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/compare.php?lang=go"><strong>Go</strong></a></td></p>
+<td>4.93</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="v8" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare JavaScript V8 speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;javascript.php"><strong>JavaScript<&#47;strong>&nbsp;V8<&#47;a><&#47;td></p>
-<td>5.67<&#47;td></p>
-<td>3<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="v8" checked="checked" /></td></p>
+<td><a title="Compare JavaScript V8 speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/javascript.php"><strong>JavaScript</strong>&nbsp;V8</a></td></p>
+<td>5.67</td></p>
+<td>3</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="clojure" &#47;><&#47;td></p>
-<td><a title="Compare Clojure speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;compare.php?lang=clojure"><strong>Clojure<&#47;strong><&#47;a><&#47;td></p>
-<td>7.65<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="clojure" /></td></p>
+<td><a title="Compare Clojure speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/compare.php?lang=clojure"><strong>Clojure</strong></a></td></p>
+<td>7.65</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="hipe" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Erlang HiPE speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;erlang.php"><strong>Erlang<&#47;strong>&nbsp;HiPE<&#47;a><&#47;td></p>
-<td>12.10<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="hipe" checked="checked" /></td></p>
+<td><a title="Compare Erlang HiPE speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/erlang.php"><strong>Erlang</strong>&nbsp;HiPE</a></td></p>
+<td>12.10</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="vw" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Smalltalk VisualWorks speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;smalltalk.php"><strong>Smalltalk<&#47;strong>&nbsp;VisualWorks<&#47;a><&#47;td></p>
-<td>19.09<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="vw" checked="checked" /></td></p>
+<td><a title="Compare Smalltalk VisualWorks speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/smalltalk.php"><strong>Smalltalk</strong>&nbsp;VisualWorks</a></td></p>
+<td>19.09</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="php" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare PHP speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;php.php"><strong>PHP<&#47;strong><&#47;a><&#47;td></p>
-<td>25.34<&#47;td></p>
-<td>2<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="php" checked="checked" /></td></p>
+<td><a title="Compare PHP speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/php.php"><strong>PHP</strong></a></td></p>
+<td>25.34</td></p>
+<td>2</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="python3" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Python 3 speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;python3.php"><strong>Python&nbsp;3<&#47;strong><&#47;a><&#47;td></p>
-<td>28.09<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="python3" checked="checked" /></td></p>
+<td><a title="Compare Python 3 speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/python3.php"><strong>Python&nbsp;3</strong></a></td></p>
+<td>28.09</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="lua" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Lua speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;lua.php"><strong>Lua<&#47;strong><&#47;a><&#47;td></p>
-<td>29.44<&#47;td></p>
-<td>1<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="lua" checked="checked" /></td></p>
+<td><a title="Compare Lua speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/lua.php"><strong>Lua</strong></a></td></p>
+<td>29.44</td></p>
+<td>1</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="perl" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Perl speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;perl.php"><strong>Perl<&#47;strong><&#47;a><&#47;td></p>
-<td>30.21<&#47;td></p>
-<td>1<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="perl" checked="checked" /></td></p>
+<td><a title="Compare Perl speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/perl.php"><strong>Perl</strong></a></td></p>
+<td>30.21</td></p>
+<td>1</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="jruby" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Ruby JRuby speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;jruby.php">Ruby&nbsp;JRuby<&#47;a><&#47;td></p>
-<td>30.31<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="jruby" checked="checked" /></td></p>
+<td><a title="Compare Ruby JRuby speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/jruby.php">Ruby&nbsp;JRuby</a></td></p>
+<td>30.31</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="yarv" checked="checked" &#47;><&#47;td></p>
-<td><a title="Compare Ruby 1.9 speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;ruby.php"><strong>Ruby<&#47;strong>&nbsp;1.9<&#47;a><&#47;td></p>
-<td>35.48<&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="yarv" checked="checked" /></td></p>
+<td><a title="Compare Ruby 1.9 speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/ruby.php"><strong>Ruby</strong>&nbsp;1.9</a></td></p>
+<td>35.48</td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="oz" &#47;><&#47;td></p>
-<td><a title="Compare Mozart&#47;Oz speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;oz.php"><strong>Mozart&#47;Oz<&#47;strong><&#47;a><&#47;td></p>
-<td>41.58<&#47;td></p>
-<td>3<&#47;td><br />
-<&#47;tr></p>
+<td><input type="checkbox" name="oz" /></td></p>
+<td><a title="Compare Mozart/Oz speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/oz.php"><strong>Mozart/Oz</strong></a></td></p>
+<td>41.58</td></p>
+<td>3</td><br />
+</tr></p>
 <tr>
-<td><input type="checkbox" name="cint" &#47;><&#47;td></p>
-<td><a title="Compare C CINT speed and size against one other programming language" href="http:&#47;&#47;shootout.alioth.debian.org&#47;u32&#47;compare.php?lang=cint"><strong>C<&#47;strong>&nbsp;CINT<&#47;a><&#47;td></p>
-<td>336.53<&#47;td></p>
-<td>6<&#47;td><br />
-<&#47;tr><br />
-<&#47;tbody><br />
-<&#47;table><br />
-<&#47;td><br />
-<&#47;tr><br />
-<&#47;tbody><br />
-<&#47;table></p>
+<td><input type="checkbox" name="cint" /></td></p>
+<td><a title="Compare C CINT speed and size against one other programming language" href="http://shootout.alioth.debian.org/u32/compare.php?lang=cint"><strong>C</strong>&nbsp;CINT</a></td></p>
+<td>336.53</td></p>
+<td>6</td><br />
+</tr><br />
+</tbody><br />
+</table><br />
+</td><br />
+</tr><br />
+</tbody><br />
+</table></p>

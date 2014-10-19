@@ -25,21 +25,21 @@ tags:
 comments: []
 ---
 <p>在高分的T43下运行MAC，需要修改分辨率以达到最佳显示效果，修改如下文件即可：<br />
-&#47;Library&#47;Preferences&#47;SystemConfiguration&#47;com.apple.Boot.plist</p>
+/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</p>
 <p>我的T43下该文件如下：</p>
 <pre name="code" class="xml">
 <?xml version="1.0" encoding="UTF-8"?><br />
-<!DOCTYPE plist PUBLIC "-&#47;&#47;Apple Computer&#47;&#47;DTD PLIST 1.0&#47;&#47;EN" "http:&#47;&#47;www.apple.com&#47;DTDs&#47;PropertyList-1.0.dtd"></p>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"></p>
 <plist version="1.0">
 <dict><br />
-<key>Kernel<&#47;key><br />
-<string>mach_kernel<&#47;string><br />
-<key>Kernel Flags<&#47;key><br />
-<string><&#47;string><br />
-<key>Boot Graphics<&#47;key><br />
-<string>Yes<&#47;string><br />
- <key>Graphics Mode<&#47;key><br />
-<string>1440x1050x32<&#47;string><br />
-<&#47;dict><br />
-<&#47;plist><br />
-<&#47;pre></p>
+<key>Kernel</key><br />
+<string>mach_kernel</string><br />
+<key>Kernel Flags</key><br />
+<string></string><br />
+<key>Boot Graphics</key><br />
+<string>Yes</string><br />
+ <key>Graphics Mode</key><br />
+<string>1440x1050x32</string><br />
+</dict><br />
+</plist><br />
+</pre></p>

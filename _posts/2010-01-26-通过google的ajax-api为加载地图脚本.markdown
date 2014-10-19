@@ -27,7 +27,7 @@ comments: []
  google.load("maps", "2", {"language" : "zh_CN", callback: init});</p>
 <p> google.load("maps", "2", {callback: init, base_domain: 'ditu.google.cn'});</p>
 <p> google.load("maps", "2", { "language" : "zh_CN", callback: initMap, other_params: "oe=gbk" });<br />
-<&#47;pre></p>
+</pre></p>
 <p>第一种只指定语言，适应性比较广泛。但是如果需要取服务器端的数据的话，可能会得不到所需要的中文数据<br />
 第二种只适用于中文地图。但可以得到中文数据。<br />
 如果你的网站是GBK编码的。<br />

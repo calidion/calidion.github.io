@@ -29,12 +29,12 @@ comments: []
 <pre name="code" class="python">
 sudo apt-get install build-essential gcc<br />
 cd Downloads<br />
-wget http:&#47;&#47;www.python.org&#47;ftp&#47;python&#47;2.5.5&#47;Python-2.5.5.tgz<br />
+wget http://www.python.org/ftp/python/2.5.5/Python-2.5.5.tgz<br />
 tar -xvzf Python-2.5.5.tgz<br />
 cd Python-2.5.5<br />
-.&#47;configure --prefix=&#47;usr&#47;local&#47;python2.5<br />
+./configure --prefix=/usr/local/python2.5<br />
 make<br />
 make test<br />
 sudo make install<br />
-sudo ln -s &#47;usr&#47;local&#47;python2.5&#47;bin&#47;python &#47;usr&#47;bin&#47;python2.5<br />
-<&#47;pre></p>
+sudo ln -s /usr/local/python2.5/bin/python /usr/bin/python2.5<br />
+</pre></p>

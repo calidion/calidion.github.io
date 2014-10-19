@@ -32,12 +32,12 @@ comments: []
 下面是它的基本使用方法：</p>
 <pre name="code" class="python">
 from jinja2 import Environment, FileSystemLoader<br />
-_TEMPLATE_DIR_ = 'res&#47;html'<br />
+_TEMPLATE_DIR_ = 'res/html'<br />
 file = 'index.html'</p>
 <p>env = Environment(loader = FileSystemLoader(_TEMPLATE_DIR_))<br />
 template = env.get_template(file)<br />
 content = template.render(params)<br />
-<&#47;pre><br />
+</pre><br />
 然后将content输出既可。<br />
 但这个时候还不行。<br />
 如果你使用了GBK的页面模板。</p>
@@ -53,13 +53,13 @@ content = template.render(params)<br />
 <p>言归正传，要支持GBK，你需要做一定的修改,代码如下：</p>
 <pre name="code" class="python">
 from jinja2 import Environment, FileSystemLoader<br />
-_TEMPLATE_DIR_ = 'res&#47;html'<br />
+_TEMPLATE_DIR_ = 'res/html'<br />
 file = 'index.html'<br />
 encoding = 'gbk'<br />
 params = {}</p>
 <p>env = Environment(loader = FileSystemLoader(_TEMPLATE_DIR_, encoding=encoding))<br />
 template = env.get_template(file) #这个时候的编辑又变成了内码（unicode）<br />
 content = template.render(params).encode(encoding)<br />
-<&#47;pre><br />
+</pre><br />
 这样就可以实现编码的统一了。<br />
 当然其它保证HTTP各处的编码统一的事情我就不细说了。</p>

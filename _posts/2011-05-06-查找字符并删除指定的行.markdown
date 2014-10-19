@@ -26,7 +26,7 @@ comments: []
 pattern=$1<br />
 repalcement=$2<br />
 lineNumber=$3<br />
-li=`cat $file | grep -n $pattern | sed s&#47;:&#47; &#47; | awk '{print$1}' | sed -n ${lineNumber}p`<br />
+li=`cat $file | grep -n $pattern | sed s/:/ / | awk '{print$1}' | sed -n ${lineNumber}p`<br />
 li2=$((li))<br />
 echo $li2<br />
-sed "$li,${li}s&#47;${pattern}&#47;${repalcement}&#47;" $file</p>
+sed "$li,${li}s/${pattern}/${repalcement}/" $file</p>

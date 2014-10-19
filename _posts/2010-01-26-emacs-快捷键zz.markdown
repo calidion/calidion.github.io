@@ -58,7 +58,7 @@ C-x s                  保存所有文件<br />
 C-x i                  插入其它文件的内容到当前缓冲<br />
 C-x C-v                用将要读取的文件替换当前文件<br />
 C-x C-w                将当前缓冲写入指定的文件<br />
-C-x C-q                Version control checkin&#47;checkout              </p>
+C-x C-q                Version control checkin/checkout              </p>
 <p>[错误恢复]<br />
 ---------------------------------------<br />
 C-g                    取消当前要执行的命令<br />

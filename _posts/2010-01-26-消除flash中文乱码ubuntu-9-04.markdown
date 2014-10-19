@@ -24,4 +24,4 @@ tags:
 comments: []
 ---
 <p>只需下面的句子:<br />
-sudo rm &#47;etc&#47;fonts&#47;conf.d&#47;49-sansserif.conf</p>
+sudo rm /etc/fonts/conf.d/49-sansserif.conf</p>

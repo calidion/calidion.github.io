@@ -21,9 +21,9 @@ categories:
 tags: []
 comments: []
 ---
-<p><img src="http:&#47;&#47;img1.gtimg.com&#47;tech&#47;pics&#47;32527&#47;32527455.jpg" alt="苹果iPhone 4G伪装术揭秘：采用特制塑料外壳" &#47;></p>
+<p><img src="http://img1.gtimg.com/tech/pics/32527/32527455.jpg" alt="苹果iPhone 4G伪装术揭秘：采用特制塑料外壳" /></p>
 <p>图为被泄密的iPhone 4G样机（腾讯科技配图）</p>
-<p><strong>腾讯科技讯<&#47;strong>（编译&#47;无忌）北京时间4月23日消息，据国外媒体报道，科技博客Gizmodo周四撰写文章，揭露新一代iPhone是如何伪装成普通iPhone而不被发现的。</p>
+<p><strong>腾讯科技讯</strong>（编译/无忌）北京时间4月23日消息，据国外媒体报道，科技博客Gizmodo周四撰写文章，揭露新一代iPhone是如何伪装成普通iPhone而不被发现的。</p>
 <p>文章指出，在苹果首席执行官史蒂夫&middot;乔布斯（Steve Jobs）正式发布新一代iPhone之前，很少会有人看到其真面目。因为新一代iPhone真机经过了一番精心的伪装。新iPhone与iPhone 3GS的外观大相径庭，被包裹在一个特制的塑料外壳中，所以即便是在公众场合使用也很难被发现。普通人都会认为，这只是一个普通的iPhone，只不过背面的文字被刮掉了。</p>
 <p>特制的塑料外壳看上去就像iPhone 3GS的外形，并且很容易拆卸。如果把塑料外壳取下，电源键、静音键和音量按钮都会随之脱落。奇怪的是，iPhone 3GS的上述按钮都为金属材质，而新一代iPhone却采用塑料材质。要重新组装塑料外壳，只需把以上三个小零件正确地安装至原位。这个伪装本身也体现了苹果的创新。整个外壳看上去就像是为老版本iPhone量身定制的外壳。由于iPhone的外壳实在太普通，所以普通人只会把这个外壳也看做一个普通廉价的外壳。可以说，苹果新一代iPhone的伪装是相当的聪明。</p>
-<p>Gizmodo这几天风头正劲。该网络花了5000美元，买到了苹果员工遗失在酒吧的新一代iPhone 4G原型机，随后在自己的网站上推出<a href="http:&#47;&#47;tech.qq.com&#47;zt&#47;index.htm" target="_blank">专题<&#47;a>独家披露新一代iPhone 4G细节。虽然Gizmodo买到的原型机已经被苹果远程锁死，而无法进入系统，但凭借这篇iPhone 4G的外观和拆解文章，在4月19日，Gizmodo的页面访问量还是出现了大幅的飙升。</p>
+<p>Gizmodo这几天风头正劲。该网络花了5000美元，买到了苹果员工遗失在酒吧的新一代iPhone 4G原型机，随后在自己的网站上推出<a href="http://tech.qq.com/zt/index.htm" target="_blank">专题</a>独家披露新一代iPhone 4G细节。虽然Gizmodo买到的原型机已经被苹果远程锁死，而无法进入系统，但凭借这篇iPhone 4G的外观和拆解文章，在4月19日，Gizmodo的页面访问量还是出现了大幅的飙升。</p>

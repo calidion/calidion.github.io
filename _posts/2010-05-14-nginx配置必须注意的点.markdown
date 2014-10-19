@@ -26,9 +26,9 @@ comments: []
 <p>http {</p>
 <p>server {</p>
 <p>server_name _;</p>
-<p>location &#47; {<br />
+<p>location / {<br />
 index index.html;<br />
-root  &#47;var&#47;www&#47;nginx-default&#47;;<br />
+root  /var/www/nginx-default/;<br />
 }</p>
 <p>}</p>
 <p>}</p>
@@ -41,9 +41,9 @@ root  &#47;var&#47;www&#47;nginx-default&#47;;<br />
 <p>}</p>
 <p>server {</p>
 <p>server_name domain.com www.domain.com;</p>
-<p>location &#47; {<br />
+<p>location / {<br />
 index index.html;<br />
-root &#47;var&#47;www&#47;nginx-default&#47;domain.com;<br />
+root /var/www/nginx-default/domain.com;<br />
 }</p>
 <p>}</p>
 <p>}</p>

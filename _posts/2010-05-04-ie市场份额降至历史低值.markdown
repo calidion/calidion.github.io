@@ -25,6 +25,6 @@ comments: []
 微软的IE浏览器抵挡不住来自Firefox和Google Chrome的凶猛攻势。Net Applications的统 计显示，IE 的浏览器市场份额11年来首次低于60%。 IE在2010年4月的市场份额为59.95%，比前一月下降了0.9%，降至了1999年初IE5发布之初的水平。Firefox上涨了0.07%至 24.59%，Chrome增加了0.6个百分点，达到了6.73%，Safari为4.72%，Opera失去了0.07%至2.30%，Opera Min则为0.79%。</p>
 <p>相比之下，StatCounter的统计显示，IE的市场份额为51.42%，Firefox占32.62%, Chrome占8.82%，Safari为4.27%，Opera为1.99%。</p>
 <p>Browser traffic share, April 2010</p>
-<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100504&#47;06584201575685017.jpg" alt="" &#47;></p>
+<p><img src="http://img.cnbeta.com/newsimg/100504/06584201575685017.jpg" alt="" /></p>
 <p>OS traffic share, April 2010</p>
-<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100504&#47;0658431274078457.jpg" alt="" &#47;></p>
+<p><img src="http://img.cnbeta.com/newsimg/100504/0658431274078457.jpg" alt="" /></p>

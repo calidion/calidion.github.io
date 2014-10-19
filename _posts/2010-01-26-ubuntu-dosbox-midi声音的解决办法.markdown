@@ -29,7 +29,7 @@ comments: []
 通过google找到bug<br />
 并有部分网友提供了解决办法。<br />
 原文链接：<br />
-https:&#47;&#47;bugs.launchpad.net&#47;ubuntu&#47;+source&#47;dosbox&#47;+bug&#47;429373<br />
+https://bugs.launchpad.net/ubuntu/+source/dosbox/+bug/429373<br />
 对于最新的ubuntu 9.10只需要<br />
 将alsa修改成esd即可。<br />
 执行命令：<br />

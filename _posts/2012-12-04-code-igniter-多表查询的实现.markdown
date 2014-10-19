@@ -60,4 +60,4 @@ comments:
     if ($error)<br />
       return -1;<br />
     return $query->result_array();</p>
-<p><&#47;pre></p>
+<p></pre></p>

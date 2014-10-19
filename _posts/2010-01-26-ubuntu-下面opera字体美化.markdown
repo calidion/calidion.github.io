@@ -22,7 +22,7 @@ tags:
 - Opera
 comments: []
 ---
-<p>找到~&#47;.opera&#47;operarefs.ini文件。<br />
+<p>找到~/.opera/operarefs.ini文件。<br />
 分别将CSS Generic Font Family与Fonts段替换成下面的形式。<br />
 马上你的Opera中文就有了一个好看的字体。</p>
 <p>[CSS Generic Font Family]<br />
@@ -52,4 +52,4 @@ Panel=12,4,0,0,0,0,文泉驿正黑 [unknown]<br />
 Toolbar=12,4,0,0,0,0,文泉驿正黑 [unknown]<br />
 Tooltip=12,4,0,0,0,0,文泉驿正黑 [unknown]</p>
 <p>效果图：<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747798.jpg"><img class="aligncenter size-full wp-image-94" title="4229724475032747798" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;01&#47;4229724475032747798.jpg" alt="" width="1041" height="845" &#47;><&#47;a></p>
+<a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/4229724475032747798.jpg"><img class="aligncenter size-full wp-image-94" title="4229724475032747798" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/01/4229724475032747798.jpg" alt="" width="1041" height="845" /></a></p>

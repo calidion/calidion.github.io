@@ -27,5 +27,5 @@ comments: []
 <p>如果出现这种问题。<br />
 可以这样处理。<br />
 打开终端，输入命令：<br />
-rm ~&#47;.gnome2&#47;keyrings&#47; -rf<br />
+rm ~/.gnome2/keyrings/ -rf<br />
 就可以了。</p>

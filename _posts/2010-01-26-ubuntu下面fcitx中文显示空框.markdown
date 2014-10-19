@@ -24,5 +24,5 @@ tags:
 comments: []
 ---
 <p>解决办法是：<br />
-将 .fcitx&#47;config文件的第2行修改成下面的样子：<br />
+将 .fcitx/config文件的第2行修改成下面的样子：<br />
     显示字体(中)=WenQuanYi Bitmap Song</p>

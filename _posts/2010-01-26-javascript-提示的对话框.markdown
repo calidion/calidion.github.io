@@ -51,10 +51,10 @@ var iMsgBox = function(msg, dom){<br />
     dom.style.overflow = 'hidden';<br />
     pop.style.cssText = 'position:absolute;width:200;padding:8px 20px;background:#fff;border:0px solid #ccc;text-align:center;z-index:10001;';<br />
     pop.style.display = 'block';<br />
-    pop.style.left = dom.offsetWidth &#47; 2 - pop.offsetWidth &#47; 2 + 'px';<br />
-    pop.style.top = dom.offsetHeight &#47; 2 - pop.offsetHeight &#47; 2 + 'px';<br />
+    pop.style.left = dom.offsetWidth / 2 - pop.offsetWidth / 2 + 'px';<br />
+    pop.style.top = dom.offsetHeight / 2 - pop.offsetHeight / 2 + 'px';<br />
     return {<br />
       close: close<br />
     };<br />
 }<br />
-<&#47;pre></p>
+</pre></p>

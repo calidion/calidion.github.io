@@ -24,42 +24,42 @@ tags:
 - Windows
 comments: []
 ---
-<p><a href="http:&#47;&#47;tortoisesvn.net&#47;downloads">http:&#47;&#47;tortoisesvn.net&#47;downloads<&#47;a></p>
+<p><a href="http://tortoisesvn.net/downloads">http://tortoisesvn.net/downloads</a></p>
 <table>
 <tbody>
 <tr>
-<td><&#47;td></p>
-<th colspan="2">客户端程序<&#47;th><br />
-<&#47;tr></p>
+<td></td></p>
+<th colspan="2">客户端程序</th><br />
+</tr></p>
 <tr>
-<th>32 位<&#47;th></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;TortoiseSVN-1.6.7.18415-win32-svn-1.6.9.msi?download">TortoiseSVN-1.6.7.18415-win32-svn-1.6.9.msi<&#47;a><&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr></p>
+<th>32 位</th></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/TortoiseSVN-1.6.7.18415-win32-svn-1.6.9.msi?download">TortoiseSVN-1.6.7.18415-win32-svn-1.6.9.msi</a></td></p>
+<td></td><br />
+</tr></p>
 <tr>
-<th>64 位<&#47;th></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;TortoiseSVN-1.6.7.18415-x64-svn-1.6.9.msi?download">TortoiseSVN-1.6.7.18415-x64-svn-1.6.9.msi<&#47;a><&#47;td></p>
-<td><&#47;td><br />
-<&#47;tr><br />
-<&#47;tbody><br />
-<&#47;table><br />
+<th>64 位</th></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/TortoiseSVN-1.6.7.18415-x64-svn-1.6.9.msi?download">TortoiseSVN-1.6.7.18415-x64-svn-1.6.9.msi</a></td></p>
+<td></td><br />
+</tr><br />
+</tbody><br />
+</table><br />
 中文语言包：</p>
 <table>
 <tbody>
 <tr>
-<th><&#47;th></p>
-<th><&#47;th></p>
-<th>32 位<&#47;th></p>
-<th>64 位<&#47;th></p>
-<th colspan="2">独立手朋(PDF)<&#47;th><br />
-<&#47;tr></p>
+<th></th></p>
+<th></th></p>
+<th>32 位</th></p>
+<th>64 位</th></p>
+<th colspan="2">独立手朋(PDF)</th><br />
+</tr></p>
 <tr>
-<td><&#47;td></p>
-<td><&#47;td></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;LanguagePack_1.6.7.18415-win32-zh_CN.msi?download">Setup<&#47;a><&#47;td></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;LanguagePack_1.6.7.18415-x64-zh_CN.msi?download">Setup<&#47;a><&#47;td></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;TortoiseSVN-1.6.7-zh_CN.pdf?download">TSVN<&#47;a><&#47;td></p>
-<td><a href="http:&#47;&#47;downloads.sourceforge.net&#47;tortoisesvn&#47;TortoiseMerge-1.6.7-zh_CN.pdf?download">TMerge<&#47;a><&#47;td><br />
-<&#47;tr><br />
-<&#47;tbody><br />
-<&#47;table></p>
+<td></td></p>
+<td></td></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/LanguagePack_1.6.7.18415-win32-zh_CN.msi?download">Setup</a></td></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/LanguagePack_1.6.7.18415-x64-zh_CN.msi?download">Setup</a></td></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/TortoiseSVN-1.6.7-zh_CN.pdf?download">TSVN</a></td></p>
+<td><a href="http://downloads.sourceforge.net/tortoisesvn/TortoiseMerge-1.6.7-zh_CN.pdf?download">TMerge</a></td><br />
+</tr><br />
+</tbody><br />
+</table></p>

@@ -26,10 +26,10 @@ comments: []
 确保你是一代iPhone，并且已经越狱；(必须是用pwned的机器，用redsn0w的不行)<br />
 最好有点Linux系统命令常识，本人不负责解答Linux命令相关问题，抱歉<br />
 下载我重新打包的文件：<br />
-http:&#47;&#47;www.rayfile.com&#47;files&#47;ede2a007-4e2a-11df-a065-0015c55db73d&#47;</p>
+http://www.rayfile.com/files/ede2a007-4e2a-11df-a065-0015c55db73d/</p>
 <p>安装步骤：<br />
 （1）WinRAR解压下载的android_by_tyllrxs.tar.bz2文件（不能解压的升级WinRAR 3.91）</p>
-<p>（2）用WinSCP或者91助手之类的把android.img.gz、cache.img、ramdisk.img、system.img、userdata.img、zImage一共6个文件放到iPhone的&#47;private&#47;var&#47; 目录下</p>
+<p>（2）用WinSCP或者91助手之类的把android.img.gz、cache.img、ramdisk.img、system.img、userdata.img、zImage一共6个文件放到iPhone的/private/var/ 目录下</p>
 <p>（3）重启电脑，断开数据线，关iphone</p>
 <p>（4）进入Ubuntu系统，插上数据线，同时按住iphone的Home键和开机键，等到iphone显示itunes和usb的图标后松开Home键；</p>
 <p>（5）在Ubuntu中打开应用程序=>附件=>终端，输入以下命令：(假设你把android_by_tyllrxs.tar.bz2文件解压到了主文件夹下的tttttt目录下)<br />
@@ -39,11 +39,11 @@ cd tttttt<br />
 安装所需要的库文件<br />
 sudo apt-get install libusb-1.0-* libreadline5<br />
 输入root用户的密码后，等待安装完成。<br />
-sudo .&#47;loadibec openiboot.img3<br />
+sudo ./loadibec openiboot.img3<br />
 此时iPhone显示双系统界面。<br />
 按下电源键，光标跳到下面的openiBoot图标上，按下Home键，出现一堆命令行</p>
 <p>(如果不是pwn破解的iPhone,不要继续,否则需要重刷机器)</p>
-<p>输入sudo .&#47;oibc<br />
+<p>输入sudo ./oibc<br />
 这时会出现<br />
 -------------------------------<br />
 WELCOME TO OPENIBOOT<br />
@@ -52,7 +52,7 @@ WELCOME TO OPENIBOOT<br />
 -------------------------------<br />
 WELCOME TO OPENIBOOT<br />
 -------------------------------<br />
-<span style="color: #ff0000;"> install<&#47;span></p>
+<span style="color: #ff0000;"> install</span></p>
 <p>稍等片刻。。。</p>
 <p>当出现&ldquo;Done with installation&rdquo;后就表示安装成功（一定要等到这个出现！）<br />
 输入reboot，等待重启。。。</p>

@@ -41,14 +41,14 @@ select.options[select.options.length] = new Option(name[i], val[i], def == val[i
 }<br />
 return select;<br />
 }<br />
-<&#47;pre><br />
+</pre><br />
 示例：</p>
 <pre name="code" class="js">
 var vals = [1, 2, 3, 4];<br />
 var names = ['春&lsquo;， &rsquo;夏', '秋&lsquo;， &rsquo;冬'];<br />
 var select = createSelect(vals, names, 1);<br />
 document.appendChild(select);<br />
-<&#47;pre><br />
+</pre><br />
 非常实用的创建select的办法。<br />
 绝对简单实用。不搞一些乱七八糟的花样。<br />
 一目了解，轻松使用。兼容性倍棒！<br />

@@ -25,7 +25,7 @@ tags:
 - Ubuntu
 comments: []
 ---
-<p><strong>Google公司CEO埃里克&middot;施密特(Eric Schmidt)日前表示，Chrome OS上网本将成为20多年来最具新意的计算机产品。<&#47;strong><br />
+<p><strong>Google公司CEO埃里克&middot;施密特(Eric Schmidt)日前表示，Chrome OS上网本将成为20多年来最具新意的计算机产品。</strong><br />
 在 日前举行的美国Atmosphere云计算论坛上，施密特称Chrome OS移动设备可以在2秒内启动，整合Web存储服务，使用HTML5技术以提升安全性，并融入输入、通信和数据共享功能。</p>
 <p>Chrome将达成甲骨文公司CEO 拉里-埃利森（Larry Ellison）在1995年提出的网络电脑梦想，Chrome将挑战微软在PC市场的统治地位。</p>
 <p>施密特称：&ldquo;20多年来，移动计算机领域并未诞生新的成功平台。随着云计算和HTML5技术的发展，网络电脑走向现实的条件目前已经成熟。&rdquo;</p>

@@ -23,7 +23,7 @@ tags:
 comments: []
 ---
 <p>原链接：<br />
-http:&#47;&#47;dlit.org&#47;index.php?n=Main.MacOSXOnPC%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E<br />
+http://dlit.org/index.php?n=Main.MacOSXOnPC%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E<br />
 Hackintosh 安装说明<br />
 Mac OS X 安装版本</p>
 <p>在非苹果机上安装Mac OS X，用原版（Mac OS零售版）的安装光盘若能安装成功，以后可以方便升级，建议首先尝试这种方法。不过采用原版安装，不仅需要破解的小技巧，若硬件与Mac电脑相差较大，还可能会遇到驱动方面的问题。</p>
@@ -66,7 +66,7 @@ tboot法</p>
 修改boot.ini文件，在[operating systems]节添加C:CHAIN0= "Mac OS X 10.5.6"<br />
 将分区和引导准备好之后，就可以插入破解光盘，从光盘启动电脑。以下分别说明不同破解版本的具体安装步骤。</p>
 <p>iDeneb v1.4 Leopard 10.5.6</p>
-<p>1) 将DVD光盘插入光驱启动，依照机器不同按F1&#47;F2&#47;F12等键从启动顺序菜单中选择DVD启动。</p>
+<p>1) 将DVD光盘插入光驱启动，依照机器不同按F1/F2/F12等键从启动顺序菜单中选择DVD启动。</p>
 <p>2) 按空格键从光盘启动。</p>
 <p>3) 在boot:提示符下，直接按回车。出现一个灰苹果，如下图</p>
 <p>4) 选择&ldquo;以简体中文作为主要语言&rdquo;，如下图</p>
@@ -80,7 +80,7 @@ tboot法</p>
 <p>12) 在&ldquo;安装摘要&rdquo;界面，一定要选择左下的&ldquo;自定义&rdquo;按钮，选择合适的选项，出现下图界面，否则，安装失败可能性非常高。而这里的选项，根据不同的机型，有着不同的选择。若机器型号与下文成功列表里一致，可点击相关机型来查看选项。各个选项定义或作用请参考Hackintosh系列教程#3-基本安装流程（基于iDeneb 1.4）</p>
 <p>13) 选择完毕后，回到&ldquo;安装摘要&rdquo;界面，点击&ldquo;继续&rdquo;按钮即可进行安装，重启后，我们就进入了一个全新的Mac世界！</p>
 <p>Mac OS X 在各个机型上成功安装的例子列表</p>
-<p>IBM&#47;Lenovo</p>
+<p>IBM/Lenovo</p>
 <p>Thinkpad T43 安装 iDeneb v1.4 Leopard 10.5.6</p>
 <p>Thinkpad X61 安装 iDeneb v1.4 Leopard 10.5.6</p>
 <p>华硕ASUS</p>

@@ -33,7 +33,7 @@ comments: []
 <p>switch(abc)</p>
 <p>{</p>
 <p>case 'abc':</p>
-<p>&#47;&#47; &nbsp;这里永远进不去</p>
+<p>// &nbsp;这里永远进不去</p>
 <p>break;</p>
 <p>}</p>
 <p>如果先执行一下:</p>

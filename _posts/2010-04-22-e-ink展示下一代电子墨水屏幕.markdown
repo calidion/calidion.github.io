@@ -23,8 +23,8 @@ tags:
 - 电子墨水
 comments: []
 ---
-<p><strong>来自国外媒体的报道，E-Ink营销副总裁Sriram Peruvemba近日在伦敦出席一次营销会议时接受了记者的采访，并展示了下一代电子墨水屏幕。 <&#47;strong>从该展示可以看到，新的电子墨水屏幕相比现有的产品，在对比度方面有大幅提升，刷新率也将有所提高。</p>
-<p><embed type="application&#47;x-shockwave-flash" width="480" height="400" src="http:&#47;&#47;player.youku.com&#47;player.php&#47;sid&#47;XMTY3MDQwMzQ0&#47;v.swf" align="middle" allowscriptaccess="sameDomain" quality="high"><&#47;embed></p>
-<p><embed type="application&#47;x-shockwave-flash" width="480" height="400" src="http:&#47;&#47;player.youku.com&#47;player.php&#47;sid&#47;XMTY3MDQwMzY4&#47;v.swf" align="middle" allowscriptaccess="sameDomain" quality="high"><&#47;embed></p>
+<p><strong>来自国外媒体的报道，E-Ink营销副总裁Sriram Peruvemba近日在伦敦出席一次营销会议时接受了记者的采访，并展示了下一代电子墨水屏幕。 </strong>从该展示可以看到，新的电子墨水屏幕相比现有的产品，在对比度方面有大幅提升，刷新率也将有所提高。</p>
+<p><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XMTY3MDQwMzQ0/v.swf" align="middle" allowscriptaccess="sameDomain" quality="high"></embed></p>
+<p><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XMTY3MDQwMzY4/v.swf" align="middle" allowscriptaccess="sameDomain" quality="high"></embed></p>
 <p>第二段视频展示了新显示屏的坚固性能，可以承受一定的弯曲而显示效果不受影响，使用寿命将会更长。这一特点对电子墨水屏幕用于学生使用的教科书非常 重要。</p>
 <p>新一代E-Ink屏幕预计将会于今年下半年提供给设备制造商，不过目前还没有消息透露使用新技术的电子阅读器产品将会于何时上市。</p>

@@ -23,10 +23,10 @@ tags: []
 comments: []
 ---
 <p>将目录里的文件中包括有print的行全打上<br />
-&#47;&#47;的开头的<br />
+//的开头的<br />
 linux命令是什么？</p>
 <p>答案：</p>
 <p>&nbsp;</p>
 <pre class="sh" name="code">
-grep -Rlns print . | xargs sed -i "s&#47;^(.*print.*)$&#47;&#47;&#47;1&#47;g"<br />
-<&#47;pre></p>
+grep -Rlns print . | xargs sed -i "s/^(.*print.*)$///1/g"<br />
+</pre></p>

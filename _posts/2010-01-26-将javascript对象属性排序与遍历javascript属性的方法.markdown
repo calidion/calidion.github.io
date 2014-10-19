@@ -51,7 +51,7 @@ var myobj = {'2007': {<br />
                                         }<br />
                                     }<br />
                     };</p>
-<p>&#47;&#47;delete obj['2009']['5']['1'];</p>
+<p>//delete obj['2009']['5']['1'];</p>
 <p>var sortObject = function(obj){<br />
 var tmpArr = [];</p>
 <p>    for(var key in obj){<br />
@@ -79,4 +79,4 @@ if(obj[i].constructor == Object){<br />
 }<br />
 }<br />
 listObject(newobj);<br />
-<&#47;pre></p>
+</pre></p>

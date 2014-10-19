@@ -27,7 +27,7 @@ comments: []
 <p>添加下面的内容到系统的hosts文件里:</p>
 <p>66.249.80.104 docs.google.com</p>
 <p>Linux:<br />
-&#47;etc&#47;hosts<br />
+/etc/hosts<br />
 Windows:<br />
 %WINDIR%system32driversetchosts</p>
 <p>要解决更多的地址问题，可以添加下面的内容</p>

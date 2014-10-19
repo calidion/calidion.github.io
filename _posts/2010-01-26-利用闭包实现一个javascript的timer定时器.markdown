@@ -47,6 +47,6 @@ this.repeat = repeat;<br />
    name: "timer1"<br />
 };</p>
 <p>var time = new Timer(obj);<br />
-&#47;&#47;time.start(1000, function(){ alert(this.name);});<br />
+//time.start(1000, function(){ alert(this.name);});<br />
 time.repeat(1000, function(){ alert(this.name);});<br />
-<&#47;pre></p>
+</pre></p>

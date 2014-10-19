@@ -25,8 +25,8 @@ comments: []
 谢谢对本博客的支持，<br />
 但不欢迎转载与剽窃。<br />
 本站更新后的3个小时后被剽窃：<br />
-<a href="http:&#47;&#47;www.google.com.hk&#47;search?q=Ubuntu+10.04+%E4%B8%8BThinkpad%E5%B0%8F%E7%BA%A2%E7%82%B9%E7%9A%84%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0">http:&#47;&#47;www.google.com.hk&#47;search?q=Ubuntu+10.04+%E4%B8%8BThinkpad%E5%B0%8F%E7%BA%A2%E7%82%B9%E7%9A%84%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0<&#47;a><br />
+<a href="http://www.google.com.hk/search?q=Ubuntu+10.04+%E4%B8%8BThinkpad%E5%B0%8F%E7%BA%A2%E7%82%B9%E7%9A%84%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0">http://www.google.com.hk/search?q=Ubuntu+10.04+%E4%B8%8BThinkpad%E5%B0%8F%E7%BA%A2%E7%82%B9%E7%9A%84%E9%85%8D%E7%BD%AE%E6%9B%B4%E6%96%B0</a><br />
 剽窃地址：<br />
-http:&#47;&#47;www.linuxidc.com&#47;Linux&#47;2010-06&#47;26561.htm<br />
+http://www.linuxidc.com/Linux/2010-06/26561.htm<br />
 原地址：<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;06&#47;10&#47;ubuntu-10-04&#47;">http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;06&#47;10&#47;ubuntu-10-04&#47;<&#47;a></p>
+<a href="http://www.3gcnbeta.com/wordpress/2010/06/10/ubuntu-10-04/">http://www.3gcnbeta.com/wordpress/2010/06/10/ubuntu-10-04/</a></p>

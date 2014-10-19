@@ -26,9 +26,9 @@ comments: []
 <p>在你的其他配置项基础之上还需要添加下面的代码:</p>
 <p>server {</p>
 <p>#用于管理界面的处理<br />
-rewrite &#47;wp-admin$ $scheme:&#47;&#47;$host$uri&#47; permanent;</p>
-<p>location &#47; {</p>
-<p>#&#47;wordpress是你的子目录名字,没有子目录就可以不用写<br />
-try_files $uri &#47;wordpress$uri&#47; &#47;wordpress&#47;index.php?q=uri&amp;$args;<br />
+rewrite /wp-admin$ $scheme://$host$uri/ permanent;</p>
+<p>location / {</p>
+<p>#/wordpress是你的子目录名字,没有子目录就可以不用写<br />
+try_files $uri /wordpress$uri/ /wordpress/index.php?q=uri&amp;$args;<br />
 }<br />
 }</p>

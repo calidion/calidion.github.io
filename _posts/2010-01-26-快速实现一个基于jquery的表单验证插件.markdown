@@ -25,14 +25,14 @@ comments: []
 代码如下:<br />
 (function($) {<br />
 var patterns = {<br />
-number: &#47;d+&#47;,<br />
-username: &#47;^[A-Za-z_]+[A-za-z_0-9]*$&#47;,<br />
-email: &#47;^w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*$&#47;,<br />
-password: &#47;^[x00-x7f]+$&#47;,<br />
-url: &#47;.*&#47;,<br />
-ascii: &#47;^[x00-x7f]+$&#47;,<br />
-string: &#47;.*&#47;,<br />
-chinese: &#47;.*&#47;<br />
+number: /d+/,<br />
+username: /^[A-Za-z_]+[A-za-z_0-9]*$/,<br />
+email: /^w+([-+.]w+)*@w+([-.]w+)*.w+([-.]w+)*$/,<br />
+password: /^[x00-x7f]+$/,<br />
+url: /.*/,<br />
+ascii: /^[x00-x7f]+$/,<br />
+string: /.*/,<br />
+chinese: /.*/<br />
 };</p>
 <p>var validator = function(options) {<br />
 options['type'] = options['type'] || 'string';<br />

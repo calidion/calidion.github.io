@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>http:&#47;&#47;marketshare.hitslink.com&#47;report.aspx?qprid=3#</p>
+<p>http://marketshare.hitslink.com/report.aspx?qprid=3#</p>

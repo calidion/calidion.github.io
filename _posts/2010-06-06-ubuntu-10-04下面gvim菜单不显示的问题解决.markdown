@@ -24,5 +24,5 @@ tags:
 - Vim
 comments: []
 ---
-<p>cd &#47;usr&#47;share&#47;vim&#47;vim72&#47;lang<br />
+<p>cd /usr/share/vim/vim72/lang<br />
 sudo ln -s menu_zh_cn.utf-8.vim menu_zh_cn.utf8.vim</p>

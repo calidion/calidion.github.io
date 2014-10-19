@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>http:&#47;&#47;ip13800.appspot.com&#47;?act=geo</p>
+<p>http://ip13800.appspot.com/?act=geo</p>

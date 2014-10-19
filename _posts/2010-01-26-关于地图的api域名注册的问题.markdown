@@ -49,4 +49,4 @@ comments: []
 
 官方的解释说明：
 
-http:&#47;&#47;code.google.com&#47;intl&#47;zh-CN&#47;apis&#47;maps&#47;faq.html#keysystem
+http://code.google.com/intl/zh-CN/apis/maps/faq.html#keysystem

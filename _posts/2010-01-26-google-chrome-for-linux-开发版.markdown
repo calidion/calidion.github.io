@@ -25,8 +25,8 @@ tags:
 comments: []
 ---
 <p>下载地址：<br />
-http:&#47;&#47;dl.google.com&#47;linux&#47;direct&#47;google-chrome-unstable_current_i386.deb</p>
-<p>http:&#47;&#47;dev.chromium.org&#47;getting-involved&#47;dev-channel#TOC-Linux</p>
+http://dl.google.com/linux/direct/google-chrome-unstable_current_i386.deb</p>
+<p>http://dev.chromium.org/getting-involved/dev-channel#TOC-Linux</p>
 <p>支持Debian包管理的Debian 5, Ubuntu 8.04及更晚的版本。</p>
 <p>目前对中文的输入法支持不好。</p>
 <p>打开网页的速度也不是很好。</p>

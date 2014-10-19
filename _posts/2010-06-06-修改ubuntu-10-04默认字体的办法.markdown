@@ -24,13 +24,13 @@ comments: []
 ---
 <p>1.首先要将avail里的文件创建软连接到conf.d目录下</p>
 <pre name="code" class="bash">
-cd &#47;etc&#47;fonts&#47;conf.d&#47;<br />
-sudo ln -s ..&#47;conf.avail&#47;69-language-selector-zh-cn.conf<br />
-<&#47;pre><br />
+cd /etc/fonts/conf.d/<br />
+sudo ln -s ../conf.avail/69-language-selector-zh-cn.conf<br />
+</pre><br />
 2.然后编译这个软连接过来的文件</p>
 <pre name="code" class="bash">
 sudo gedit 69-language-selector-zh-cn.conf<br />
-<&#47;pre><br />
+</pre><br />
 3. 这个时候你就可以根据自己的需要添加或者删除字体配置，<br />
 下面是我的字体配置，<br />
 我在这里重新配置了一下Sans字体：</p>
@@ -40,79 +40,79 @@ sudo gedit 69-language-selector-zh-cn.conf<br />
 <fontconfig></p>
 <p>	<match target="pattern"><br />
 		<test qual="any" name="family"><br />
-			<string>Sans<&#47;string><br />
-		<&#47;test><br />
+			<string>Sans</string><br />
+		</test><br />
 		<edit name="family" mode="prepend" binding="strong"><br />
-			<string>DejaVu Sans<&#47;string><br />
-			<string>Bitstream Vera Sans<&#47;string><br />
-			<string>WenQuanYi Micro Hei<&#47;string><br />
-			<string>WenQuanYi Zen Hei<&#47;string><br />
-			<string>HYSong<&#47;string><br />
-			<string>AR PL UMing CN<&#47;string><br />
-			<string>AR PL UMing HK<&#47;string><br />
-			<string>AR PL ShanHeiSun Uni<&#47;string><br />
-			<string>AR PL New Sung<&#47;string><br />
-			<string>WenQuanYi Bitmap Song<&#47;string><br />
-			<string>AR PL UKai CN<&#47;string><br />
-			<string>AR PL ZenKai Uni<&#47;string><br />
-		<&#47;edit><br />
-	<&#47;match> </p>
+			<string>DejaVu Sans</string><br />
+			<string>Bitstream Vera Sans</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>WenQuanYi Bitmap Song</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match> </p>
 <p>	<match target="pattern"><br />
 		<test qual="any" name="family"><br />
-			<string>serif<&#47;string><br />
-		<&#47;test><br />
+			<string>serif</string><br />
+		</test><br />
 		<edit name="family" mode="prepend" binding="strong"><br />
-			<string>DejaVu Serif<&#47;string><br />
-			<string>Bitstream Vera Serif<&#47;string><br />
-			<string>WenQuanYi Micro Hei<&#47;string><br />
-			<string>WenQuanYi Zen Hei<&#47;string><br />
-			<string>HYSong<&#47;string><br />
-			<string>AR PL UMing CN<&#47;string><br />
-			<string>AR PL UMing HK<&#47;string><br />
-			<string>AR PL ShanHeiSun Uni<&#47;string><br />
-			<string>AR PL New Sung<&#47;string><br />
-			<string>WenQuanYi Bitmap Song<&#47;string><br />
-			<string>AR PL UKai CN<&#47;string><br />
-			<string>AR PL ZenKai Uni<&#47;string><br />
-		<&#47;edit><br />
-	<&#47;match><br />
+			<string>DejaVu Serif</string><br />
+			<string>Bitstream Vera Serif</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>WenQuanYi Bitmap Song</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match><br />
 	<match target="pattern"><br />
 		<test qual="any" name="family"><br />
-			<string>sans-serif<&#47;string><br />
-		<&#47;test><br />
+			<string>sans-serif</string><br />
+		</test><br />
 		<edit name="family" mode="prepend" binding="strong"><br />
-			<string>DejaVu Sans<&#47;string><br />
-			<string>Bitstream Vera Sans<&#47;string><br />
-			<string>WenQuanYi Micro Hei<&#47;string><br />
-			<string>WenQuanYi Zen Hei<&#47;string><br />
-			<string>Droid Sans Fallback<&#47;string><br />
-			<string>HYSong<&#47;string><br />
-			<string>AR PL UMing CN<&#47;string><br />
-			<string>AR PL UMing HK<&#47;string><br />
-			<string>AR PL ShanHeiSun Uni<&#47;string><br />
-			<string>AR PL New Sung<&#47;string><br />
-			<string>AR PL UKai CN<&#47;string><br />
-			<string>AR PL ZenKai Uni<&#47;string><br />
-		<&#47;edit><br />
-	<&#47;match><br />
+			<string>DejaVu Sans</string><br />
+			<string>Bitstream Vera Sans</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>Droid Sans Fallback</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match><br />
 	<match target="pattern"><br />
 		<test qual="any" name="family"><br />
-			<string>monospace<&#47;string><br />
-		<&#47;test><br />
+			<string>monospace</string><br />
+		</test><br />
 		<edit name="family" mode="prepend" binding="strong"><br />
-			<string>DejaVu Sans Mono<&#47;string><br />
-			<string>Bitstream Vera Sans Mono<&#47;string><br />
-			<string>WenQuanYi Micro Hei Mono<&#47;string><br />
-			<string>WenQuanYi Zen Hei Mono<&#47;string><br />
-			<string>Droid Sans Fallback<&#47;string><br />
-			<string>HYSong<&#47;string><br />
-			<string>AR PL UMing CN<&#47;string><br />
-			<string>AR PL UMing HK<&#47;string><br />
-			<string>AR PL ShanHeiSun Uni<&#47;string><br />
-			<string>AR PL New Sung<&#47;string><br />
-			<string>AR PL UKai CN<&#47;string><br />
-			<string>AR PL ZenKai Uni<&#47;string><br />
-		<&#47;edit><br />
-	<&#47;match> </p>
-<p><&#47;fontconfig><br />
-<&#47;pre></p>
+			<string>DejaVu Sans Mono</string><br />
+			<string>Bitstream Vera Sans Mono</string><br />
+			<string>WenQuanYi Micro Hei Mono</string><br />
+			<string>WenQuanYi Zen Hei Mono</string><br />
+			<string>Droid Sans Fallback</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match> </p>
+<p></fontconfig><br />
+</pre></p>

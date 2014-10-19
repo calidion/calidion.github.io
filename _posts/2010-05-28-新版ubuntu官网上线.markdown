@@ -21,7 +21,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>据国外媒体报道，Canonical公司今天正式推出新版Ubuntu官方发布网站（http:&#47;&#47;www.ubuntu.com&#47;)。<br />
+<p>据国外媒体报道，Canonical公司今天正式推出新版Ubuntu官方发布网站（http://www.ubuntu.com/)。<br />
 4月29日，Canonical公司正式发布Ubuntu10.04 LTS(长期支持)。Ubuntu 10.0将融入了全新的浏览器，电子邮件客户端，即时通信客户端和音乐商店等功能。Ubuntu 10.04还大幅改进了用户界面。值得注意的是，Ubuntu 10.04还深度整合了社交功能。</p>
 <p>Ubuntu 10.04桌面整合全新的社交程序Gwibber。Gwibber 是一款支持包括Twitter、 Identi.ca、Facebook、Jaiku 等在内的微型博客服务客户端。Gwibber社交程序直接嵌入Ubuntu 10.04，因此用户可以快速便捷地使用社交数据。</p>
 <p>也许大家都已经注意到了，新版Ubuntu官方发布网站采用了与Ubuntu10.04相同的主题和logo。Ubuntu 10.04采用了全新的Light默认主题，取代了使用了近五年的&ldquo;Human&rdquo;主题。</p>

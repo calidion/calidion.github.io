@@ -86,15 +86,15 @@ import math, string</p>
     self.randLine(18)</p>
 <p>  def save(self, path):<br />
     self.image.save(path)<br />
-<&#47;pre><br />
+</pre><br />
 调用方法：</p>
 <pre class="py">
 ic = ImageChar(fontColor=(100,211, 90),<br />
-   fontPath='&#47;usr&#47;share&#47;fonts&#47;truetype&#47;wqy&#47;wqy-zenhei.ttc')<br />
+   fontPath='/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc')<br />
 ic.randChinese(4)<br />
 ic.save("1.jpeg")<br />
-<&#47;pre><br />
+</pre><br />
 效果图：<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;02&#47;11.jpeg"><img class="aligncenter size-full wp-image-358" title="1" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;02&#47;11.jpeg" alt="" width="100" height="40" &#47;><&#47;a><br />
+<a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/02/11.jpeg"><img class="aligncenter size-full wp-image-358" title="1" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/02/11.jpeg" alt="" width="100" height="40" /></a><br />
 注意需要保证：<br />
 fontPath所指定的中文字体文件是存在的</p>

@@ -24,7 +24,7 @@ tags:
 comments: []
 ---
 <p>原文链接:<br />
-http:&#47;&#47;bradkuo.spaces.live.com&#47;blog&#47;cns!BCED278316CF5F98!2882.entry?sa=165037715</p>
+http://bradkuo.spaces.live.com/blog/cns!BCED278316CF5F98!2882.entry?sa=165037715</p>
 <p>注意点是,</p>
 <p>1. 在设定了其它浏览器背景后,IE6下面一定要先将background-image设置成none</p>
 <p>2.加滤镜的元素的css不能包含relative, absolute的定位属性</p>
@@ -32,10 +32,10 @@ http:&#47;&#47;bradkuo.spaces.live.com&#47;blog&#47;cns!BCED278316CF5F98!2882.en
 <p>然后再添加滤镜(filter)</p>
 <p>正常的:<br />
 #KyArtSet{<br />
-background: url(images&#47;bg_kyart.png) no-repeat left 0px;<br />
+background: url(images/bg_kyart.png) no-repeat left 0px;<br />
 }<br />
 IE6下:</p>
 <p>#KyArtSet{<br />
 background-image: none;<br />
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images&#47;bg_kyart.png', sizingMethod='scale');<br />
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/bg_kyart.png', sizingMethod='scale');<br />
 }</p>

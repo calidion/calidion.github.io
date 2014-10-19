@@ -22,4 +22,4 @@ tags: []
 comments: []
 ---
 <p>sudo apt-get install bash-completion<br />
-debian&#47;ubuntu系有效</p>
+debian/ubuntu系有效</p>

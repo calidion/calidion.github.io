@@ -21,8 +21,8 @@ categories:
 tags: []
 comments: []
 ---
-<div id="_mcePaste">1. show columns from table<&#47;div></p>
+<div id="_mcePaste">1. show columns from table</div></p>
 <div>
-<div>2. mysql_fetch_field<&#47;div></p>
-<div>3. desc table<&#47;div><br />
-<&#47;div></p>
+<div>2. mysql_fetch_field</div></p>
+<div>3. desc table</div><br />
+</div></p>

@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>http:&#47;&#47;paginas.fe.up.pt&#47;~aaguiar&#47;as&#47;gof&#47;hires&#47;contfso.htm</p>
+<p>http://paginas.fe.up.pt/~aaguiar/as/gof/hires/contfso.htm</p>

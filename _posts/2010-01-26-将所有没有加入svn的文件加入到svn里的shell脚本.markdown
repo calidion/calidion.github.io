@@ -24,4 +24,4 @@ tags:
 - svn
 comments: []
 ---
-<p>svn stat | grep ? | sed 's&#47;?s*&#47;svn add &#47;g' | sh</p>
+<p>svn stat | grep ? | sed 's/?s*/svn add /g' | sh</p>

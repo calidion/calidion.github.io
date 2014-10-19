@@ -25,11 +25,11 @@ tags:
 comments: []
 ---
 <p>执行下面的语名:</p>
-<p>svn stat | grep ? | sed 's&#47;?s*&#47;rm -rf &#47;g' | sh</p>
+<p>svn stat | grep ? | sed 's/?s*/rm -rf /g' | sh</p>
 <p>ubuntu 9.04通过测试.</p>
 <p>如果不想删除目录.<br />
 可以写成:<br />
-svn stat | grep ? | sed 's&#47;?s*&#47;rm -f &#47;g' | sh</p>
+svn stat | grep ? | sed 's/?s*/rm -f /g' | sh</p>
 <p>那么可以看出来:<br />
 svn stat | grep ?<br />
 是查找所有不是版本控制的软件.</p>

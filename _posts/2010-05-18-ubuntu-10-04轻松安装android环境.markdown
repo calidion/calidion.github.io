@@ -26,12 +26,12 @@ comments: []
 ---
 <p>1.sudo apt-get install eclipse</p>
 <p>2.添加新的站点：</p>
-<p>https:&#47;&#47;dl-ssl.google.com&#47;android&#47;eclipse&#47;</p>
+<p>https://dl-ssl.google.com/android/eclipse/</p>
 <p>3.下载SDK：</p>
-<p><a href="http:&#47;&#47;androidappdocs.appspot.com&#47;sdk&#47;index.html">http:&#47;&#47;androidappdocs.appspot.com&#47;sdk&#47;index.html<&#47;a></p>
+<p><a href="http://androidappdocs.appspot.com/sdk/index.html">http://androidappdocs.appspot.com/sdk/index.html</a></p>
 <p>解压SDK，然后在prereferences里面添加解压的SDK的路径</p>
 <p>Linux下下载地址：</p>
-<p>http:&#47;&#47;dl.google.com&#47;android&#47;android-sdk_r10-linux_x86.tgz</p>
+<p>http://dl.google.com/android/android-sdk_r10-linux_x86.tgz</p>
 <p>4.选择Window->Android SDK and AVD Manager</p>
 <p>5.打开后选择Installed Packages</p>
 <p>6.选择Update All</p>

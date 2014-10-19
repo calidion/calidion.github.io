@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: ! 'A new approach to China: an update - The Official Google Blog（原文&#47;翻译)'
+title: ! 'A new approach to China: an update - The Official Google Blog（原文/翻译)'
 author:
   display_name: 北漂IT民工
   login: admin

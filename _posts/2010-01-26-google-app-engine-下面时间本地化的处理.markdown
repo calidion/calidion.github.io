@@ -27,14 +27,14 @@ comments: []
 ---
 <p>1.首先下载pytz </p>
 <p>pytz的下载地址：<br />
-http:&#47;&#47;sourceforge.net&#47;projects&#47;pytz&#47;</p>
+http://sourceforge.net/projects/pytz/</p>
 <p>2.然后使用下面的代码：<br />
 from datetime import datetime<br />
 from datetime import date as strdate<br />
 from pytz import timezone </p>
 <p>def now(tz = None):<br />
 if tz == None:<br />
-tz = timezone("Asia&#47;Shanghai")<br />
+tz = timezone("Asia/Shanghai")<br />
 time = datetime.now(tz)<br />
 ret = datetime(time.year, time.month, time.day, time.hour,<br />
 time.minute, time.second)<br />

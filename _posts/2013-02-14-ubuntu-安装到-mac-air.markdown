@@ -21,4 +21,4 @@ categories:
 tags: []
 comments: []
 ---
-<p>http:&#47;&#47;ubuntuforums.org&#47;showthread.php?t=2039799</p>
+<p>http://ubuntuforums.org/showthread.php?t=2039799</p>

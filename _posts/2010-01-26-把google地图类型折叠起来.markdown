@@ -31,4 +31,4 @@ map.addControl(new GMenuMapTypeControl());<br />
 然后调用:<br />
 addControl(new GMenuMapTypeControl());<br />
 即可.</p>
-<p>示例:http:&#47;&#47;mab2002.free.fr&#47;cartes&#47;03-interaction-control-GMenuMapTypeControl.html</p>
+<p>示例:http://mab2002.free.fr/cartes/03-interaction-control-GMenuMapTypeControl.html</p>

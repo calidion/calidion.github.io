@@ -26,7 +26,7 @@ comments: []
 ---
 <p>1.使用LiveCD进入桌面</p>
 <p>2.点开在菜单栏Places(位置)，然后选择安装了Ubuntu的分区</p>
-<p>3.这是你必须得看到这个硬盘上有&#47;boot&#47;grub这样的目录，硬盘加载后的目录名一般是这样的：<em> &#47;<strong>media&#47;7848138a-41a0-4eba-8aed-d1b625ac8759<&#47;strong><&#47;em></p>
+<p>3.这是你必须得看到这个硬盘上有/boot/grub这样的目录，硬盘加载后的目录名一般是这样的：<em> /<strong>media/7848138a-41a0-4eba-8aed-d1b625ac8759</strong></em></p>
 <p>4.这时打开终端（应用程序->附件->终端)，执行命令：</p>
-<p><em>sudo grub-setup -d &#47;<strong>media&#47;7848138a-41a0-4eba-8aed-d1b625ac8759<&#47;strong>&#47;boot&#47;grub &#47;dev&#47;sd<strong>a<&#47;strong><&#47;em></p>
-<p><em><strong>5.重启Ubuntu,就可以看到Grub2的菜单了<&#47;strong><&#47;em></p>
+<p><em>sudo grub-setup -d /<strong>media/7848138a-41a0-4eba-8aed-d1b625ac8759</strong>/boot/grub /dev/sd<strong>a</strong></em></p>
+<p><em><strong>5.重启Ubuntu,就可以看到Grub2的菜单了</strong></em></p>

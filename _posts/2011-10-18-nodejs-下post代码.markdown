@@ -37,16 +37,16 @@ comments:
     MjAxMS0xMi0xOCAyMTo1NDoxNiArMDgwMA==
   date_gmt: !binary |-
     MjAxMS0xMi0xOCAxMzo1NDoxNiArMDgwMA==
-  content: ! "看来你没有理解：'Content-Type': 'application&#47;x-www-form-urlencoded', \n这句的含义。\nurlencoded后的字符，是不可能存在中文字符的，全部是ascii码的字符。\n所以params.length不会有错误的。"
+  content: ! "看来你没有理解：'Content-Type': 'application/x-www-form-urlencoded', \n这句的含义。\nurlencoded后的字符，是不可能存在中文字符的，全部是ascii码的字符。\n所以params.length不会有错误的。"
 ---
 <pre class="js" name="code">
 	var options = {<br />
 		host: 'www.yourdomain.com',<br />
 		post: 80,<br />
 		method: 'POST',<br />
-		path: '&#47;',<br />
+		path: '/',<br />
 		headers: {<br />
-			'Content-Type': 'application&#47;x-www-form-urlencoded',<br />
+			'Content-Type': 'application/x-www-form-urlencoded',<br />
 			'Content-Length': params.length<br />
 		}<br />
 	};</p>
@@ -58,4 +58,4 @@ comments:
 	});</p>
 <p> request.write(params);<br />
  request.end();<br />
-<&#47;pre></p>
+</pre></p>

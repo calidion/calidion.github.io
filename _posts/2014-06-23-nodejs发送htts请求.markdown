@@ -39,7 +39,7 @@ nodejs的https请求如何不加以配置会出来很多错误。
 
       method: 'POST',
 
-      path: "&#47;",
+      path: "/",
 
       headers: {
 

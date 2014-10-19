@@ -31,4 +31,4 @@ path = os.path.dirname(abc.__file__)</p>
 <p>这样可以得到包含 abc的路径。<br />
 去掉abc就可以得到当前执行文件的路径。<br />
 Linux下面可以这样实现：</p>
-<p>path = path[0:path.rfind('&#47;')] </p>
+<p>path = path[0:path.rfind('/')] </p>

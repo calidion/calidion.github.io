@@ -23,4 +23,4 @@ comments: []
 ---
 <p>就在Google官方宣布38000个应用后，AndroLib的最新统计数据，Android的应用数量已经突破50000个。<br />
 即便具有如此之快的增长速度，Android对比苹果的18.5万个应用依然极为落后，并且从质量和使用率来看也有明显劣势。</p>
-<p><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100424&#47;1059240566341102.jpg" alt="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100424&#47;1059240566341102.jpg" &#47;></p>
+<p><img src="http://img.cnbeta.com/newsimg/100424/1059240566341102.jpg" alt="http://img.cnbeta.com/newsimg/100424/1059240566341102.jpg" /></p>

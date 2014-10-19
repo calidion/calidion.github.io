@@ -23,4 +23,4 @@ tags:
 - Windows
 comments: []
 ---
-<p>http:&#47;&#47;saung.igoscenter.org&#47;Linux_software_equivalent_to_Windows_software</p>
+<p>http://saung.igoscenter.org/Linux_software_equivalent_to_Windows_software</p>

@@ -24,7 +24,7 @@ comments: []
 ---
 <p>Google 的 Android 团队每隔几个星期更新他们的平台版本页面，基于官方 Android 市场的数据，揭示每个版本的 OS 的运行设备数。今天这个数据达到了一个重要的里程碑：正好有 50% 的 Android 手机正在运行 Android 最新发布的版本 OS 2.1（2.2 或者说 Froyo，上个月开始被一小部分用户使用，但还没有大规模正式部署）。</p>
 <p>这是自5月初以来一个巨大的变化，那时只有32.4%的手机运行OS 2.1。从那时起，一些老版本的手机完成更新，而新的 Sprint Evo 和其它一些较新的设备直接装载 OS 2.1。</p>
-<p><img src="http:&#47;&#47;articles.csdn.net&#47;uploads&#47;allimg&#47;100618&#47;1026425564-0.png" alt="" &#47;></p>
+<p><img src="http://articles.csdn.net/uploads/allimg/100618/1026425564-0.png" alt="" /></p>
 <p>那么，为什么这些很重要？我们已经写了大量关于 Android 分裂的文章，而事实也是有很多的手机运行着老版本的 OS。Android 团队都竞相使用&ldquo; fragmentation （分裂）&rdquo;一词。（一篇博文指出这个术语因被使用太多而没有用处。）</p>
 <p>但事实仍是近 50% 的手机运行着旧版本的操作系统，如果一个开发人员想利用最新的 Android 特性，就将抛弃一大块 Android 用户。相关案例：4月份官方 Twitter 应用程序发布时，它只能供 27.3% 的 Android 用户使用。</p>
 <p>然而，潮流似乎转向。</p>

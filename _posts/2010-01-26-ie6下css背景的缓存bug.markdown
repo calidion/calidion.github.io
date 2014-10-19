@@ -28,7 +28,7 @@ comments: []
 这样在一些情况下，会非常影响性能。<br />
 所以在为了让IE6可以达到更好的性能。我们可以通过javascript来解决IE6的这一个BUG。</p>
 <p>var isOpera = (navigator.userAgent.indexOf('opera') != -1);<br />
-var isIE = &#47;msie&#47;i.test(navigator.userAgent) && !isOpera;</p>
+var isIE = /msie/i.test(navigator.userAgent) && !isOpera;</p>
 <p>if (isIE) {<br />
     var version = parseFloat(navigator.appVersion.split("MSIE")[1]);<br />
       if(version == 6){<br />

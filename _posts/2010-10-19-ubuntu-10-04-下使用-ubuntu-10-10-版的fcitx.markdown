@@ -28,6 +28,6 @@ comments: []
 <p>根据下面的软件地址直接在Ubuntu 10.04里安装就OK。</p>
 <p>（打开下面的地址后点击下面的任何的镜象地址下载即可）</p>
 <p>i386：</p>
-<p><a href="http:&#47;&#47;packages.debian.org&#47;zh-cn&#47;sid&#47;i386&#47;fcitx&#47;download">http:&#47;&#47;packages.debian.org&#47;zh-cn&#47;sid&#47;i386&#47;fcitx&#47;download<&#47;a></p>
+<p><a href="http://packages.debian.org/zh-cn/sid/i386/fcitx/download">http://packages.debian.org/zh-cn/sid/i386/fcitx/download</a></p>
 <p>AMD64:</p>
-<p><a href="http:&#47;&#47;packages.debian.org&#47;zh-cn&#47;sid&#47;amd64&#47;fcitx&#47;download">http:&#47;&#47;packages.debian.org&#47;zh-cn&#47;sid&#47;amd64&#47;fcitx&#47;download<&#47;a></p>
+<p><a href="http://packages.debian.org/zh-cn/sid/amd64/fcitx/download">http://packages.debian.org/zh-cn/sid/amd64/fcitx/download</a></p>

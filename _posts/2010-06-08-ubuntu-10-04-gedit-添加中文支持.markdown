@@ -26,45 +26,45 @@ tags:
 comments: []
 ---
 <p>1. 打开配置文件<br />
-gvim .gconf&#47;apps&#47;gedit-2&#47;preferences&#47;encodings&#47;%gconf.xml</p>
+gvim .gconf/apps/gedit-2/preferences/encodings/%gconf.xml</p>
 <p>2.添加下面几行到 entry标签的最前面几行</p>
 <pre name="code" class="xml">
 <li type="string">
-			<stringvalue>GB2312<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>GB2312</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>GBK<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>GBK</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>GB18030<&#47;stringvalue><br />
-		<&#47;li><br />
-<&#47;pre></p>
+			<stringvalue>GB18030</stringvalue><br />
+		</li><br />
+</pre></p>
 <p>3.结果大概是这样的：</p>
 <pre name="code" class="xml">
 <?xml version="1.0"?><br />
 <gconf><br />
 	<entry name="auto_detected" mtime="1275974688" type="list" ltype="string"></p>
 <li type="string">
-			<stringvalue>GB2312<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>GB2312</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>GBK<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>GBK</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>GB18030<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>GB18030</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>UTF-8<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>UTF-8</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>CURRENT<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>CURRENT</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>ISO-8859-15<&#47;stringvalue><br />
-		<&#47;li></p>
+			<stringvalue>ISO-8859-15</stringvalue><br />
+		</li></p>
 <li type="string">
-			<stringvalue>UTF-16<&#47;stringvalue><br />
-		<&#47;li><br />
-	<&#47;entry><br />
-<&#47;gconf></p>
-<p><&#47;pre></p>
+			<stringvalue>UTF-16</stringvalue><br />
+		</li><br />
+	</entry><br />
+</gconf></p>
+<p></pre></p>

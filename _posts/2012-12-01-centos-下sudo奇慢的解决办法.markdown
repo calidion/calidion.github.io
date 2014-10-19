@@ -24,7 +24,7 @@ comments: []
 ---
 <p>
 进入root账号：</p>
-<p>echo "127.0.0.1 `hostname`" >> &#47;etc&#47;hosts</p>
+<p>echo "127.0.0.1 `hostname`" >> /etc/hosts</p>
 <p>注：<br />
 CentOS的用户友好性是比较差的一个系统。</p>
 <p>作为Lamp的主要平台，竟然存在着apache的mod php的解析问题。</p>

@@ -24,4 +24,4 @@ tags:
 - 王立群
 comments: []
 ---
-<p>http:&#47;&#47;v.youku.com&#47;v_playlist&#47;f3900629o1p0.html</p>
+<p>http://v.youku.com/v_playlist/f3900629o1p0.html</p>

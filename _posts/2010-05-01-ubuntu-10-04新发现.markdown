@@ -29,9 +29,9 @@ comments: []
 <p>点中iPhone,右击鼠标，上面就会出来一个删除选项，选择删除就可以删除掉不想要的歌曲了</p>
 <p>导出歌曲会比较烦麻，需要处接移动设备，并且会直接导出到根目录。但是导出功能非常实用，充许你用多种方法，包括蓝牙，邮件，光盘等等。</p>
 <p>c) rhythmbox的歌词插件打开后可以看到不少英文歌曲的歌词。中国需要有更多的人使用并参与提交歌词了。</p>
-<p><a rel="attachment wp-att-838" href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;05&#47;01&#47;ubuntu-10-04%e6%96%b0%e5%8f%91%e7%8e%b0&#47;screenshot-%e9%bb%84%e6%99%93%e6%98%8e-%e9%a3%8e%e5%a3%b0&#47;"><img class="aligncenter size-full wp-image-838" title="Screenshot-黄晓明 - 风声" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;Screenshot-黄晓明-风声.png" alt="" width="1108" height="762" &#47;><&#47;a></p>
+<p><a rel="attachment wp-att-838" href="http://www.3gcnbeta.com/wordpress/2010/05/01/ubuntu-10-04%e6%96%b0%e5%8f%91%e7%8e%b0/screenshot-%e9%bb%84%e6%99%93%e6%98%8e-%e9%a3%8e%e5%a3%b0/"><img class="aligncenter size-full wp-image-838" title="Screenshot-黄晓明 - 风声" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/05/Screenshot-黄晓明-风声.png" alt="" width="1108" height="762" /></a></p>
 <p>英文歌曲能有歌词:</p>
-<p><a rel="attachment wp-att-839" href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;05&#47;01&#47;ubuntu-10-04%e6%96%b0%e5%8f%91%e7%8e%b0&#47;screenshot-backstreet-boys-larger-than-life&#47;"><img class="aligncenter size-full wp-image-839" title="Screenshot-BackStreet boys -  Larger Than Life" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;Screenshot-BackStreet-boys-Larger-Than-Life.png" alt="" width="1108" height="762" &#47;><&#47;a></p>
+<p><a rel="attachment wp-att-839" href="http://www.3gcnbeta.com/wordpress/2010/05/01/ubuntu-10-04%e6%96%b0%e5%8f%91%e7%8e%b0/screenshot-backstreet-boys-larger-than-life/"><img class="aligncenter size-full wp-image-839" title="Screenshot-BackStreet boys -  Larger Than Life" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/05/Screenshot-BackStreet-boys-Larger-Than-Life.png" alt="" width="1108" height="762" /></a></p>
 <p>2.中文字体采用文泉驿微米黑，非常好看，并且也变的小了，比原来的正黑要实用。</p>
 <p>3.图标更加细腻，更加好看。</p>
 <p>4.我的T60上双屏仍然不正常。</p>

@@ -25,6 +25,6 @@ tags:
 comments: []
 ---
 <p>如图:<br />
-<a href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;04&#47;Screenshot-a.html-+-Desktop-GVIM1.png"><img class="aligncenter size-full wp-image-435" title="Screenshot-a.html + (~-Desktop) - GVIM1" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;04&#47;Screenshot-a.html-+-Desktop-GVIM1.png" alt="" width="670" height="507" &#47;><&#47;a></p>
-<p>请安装vimide: <a title="VIMIDE" href="http:&#47;&#47;code.google.com&#47;p&#47;vimide" target="_blank">http:&#47;&#47;code.google.com&#47;p&#47;vimide<&#47;a><br />
-<a href="http:&#47;&#47;code.google.com&#47;p&#47;vimide"><&#47;a></p>
+<a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/04/Screenshot-a.html-+-Desktop-GVIM1.png"><img class="aligncenter size-full wp-image-435" title="Screenshot-a.html + (~-Desktop) - GVIM1" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/04/Screenshot-a.html-+-Desktop-GVIM1.png" alt="" width="670" height="507" /></a></p>
+<p>请安装vimide: <a title="VIMIDE" href="http://code.google.com/p/vimide" target="_blank">http://code.google.com/p/vimide</a><br />
+<a href="http://code.google.com/p/vimide"></a></p>

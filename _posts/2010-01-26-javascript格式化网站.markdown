@@ -22,4 +22,4 @@ tags:
 - 格式化
 comments: []
 ---
-<p>http:&#47;&#47;jsbeautifier.org&#47;</p>
+<p>http://jsbeautifier.org/</p>

@@ -21,6 +21,6 @@ categories:
 tags: []
 comments: []
 ---
-<p>https:&#47;&#47;wiki.ubuntu.com&#47;PackagingGuide</p>
+<p>https://wiki.ubuntu.com/PackagingGuide</p>
 <p>打包中文的翻译(未完):<br />
-https:&#47;&#47;wiki.ubuntu.com&#47;PackagingGuide&#47;zh-CN</p>
+https://wiki.ubuntu.com/PackagingGuide/zh-CN</p>

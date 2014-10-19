@@ -23,4 +23,4 @@ tags:
 - 字体
 comments: []
 ---
-<p>sudo rm -rf &#47;etc&#47;fonts&#47;conf.d&#47;66-wqy-zenhei-sharp.conf</p>
+<p>sudo rm -rf /etc/fonts/conf.d/66-wqy-zenhei-sharp.conf</p>

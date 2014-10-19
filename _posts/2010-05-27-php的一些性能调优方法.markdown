@@ -27,21 +27,21 @@ comments: []
 首先需要确定PHP性能瓶颈在那里<br />
 我们可以通过XDebug+KCacheGrind来分析性能占用情况</p>
 <p>安装XDebug 和 KCacheGrind</p>
-<p>XDebug在ybsd的安装:：yinst i yphp_xdebug &#47; apt-get install xdebug</p>
+<p>XDebug在ybsd的安装:：yinst i yphp_xdebug / apt-get install xdebug</p>
 <p>KCacheGrind需要KDE的支持，在Unbuntu与Debian的安装命令：<br />
 sudo apt-get install kcachegrind</p>
 <p>Xdebug:<br />
-http:&#47;&#47;xdebug.org&#47;<br />
+http://xdebug.org/<br />
 KcacheGrind:<br />
-http:&#47;&#47;kcachegrind.sourceforge.net&#47;cgi&#47;bin&#47;</p>
+http://kcachegrind.sourceforge.net/cgi/bin/</p>
 <p>设置XDebug</p>
-<p>sudo vim &#47;home&#47;y&#47;etc&#47;php&#47;xdebug.ini</p>
+<p>sudo vim /home/y/etc/php/xdebug.ini</p>
 <p>xdebug.profiler_append=0<br />
 ;是否覆盖上次产生的文件<br />
 xdebug.profiler_enable=1<br />
 ;打开效能监测器。<br />
 xdebug.profiler_enable_trigger=0</p>
-<p>xdebug.profiler_output_dir=&#47;tmp</p>
+<p>xdebug.profiler_output_dir=/tmp</p>
 <p>通过KCacheGrind查看</p>
 <p>在xdebug.profiler_output_dir指定的目录里。会产生类似于cachegrind.out.xxxxx的一串数字的文件。</p>
 <p>用kCacheGrind打开就可以看到如下的界面了。</p>

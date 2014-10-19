@@ -29,10 +29,10 @@ comments: []
 2.打开terminal，即命令行窗口<br />
 3.sudo -i<br />
 4.grub<br />
-5.find &#47;boot&#47;grub&#47;stage1<br />
+5.find /boot/grub/stage1<br />
 这里系统会输出:(hd0, x)<br />
 6.root (hd0, x) #注意root后面一定要加上空格<br />
-7. setup (hd0) &#47; setup (hd0, x)<br />
+7. setup (hd0) / setup (hd0, x)<br />
 8.quit<br />
 9.reboot<br />
 10.这时就可以重新看到系统的选择项了。</p>

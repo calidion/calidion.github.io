@@ -16,7 +16,7 @@ ul, ol {
     list-style-type: none;
 }
 body {
-    background: #92b3a2 url(../images/bg.jpg) repeat 0 0;
+    background-color: #aaa;
     font-size: 14px;
     line-height: 1.5;
     font-family: Georgia, Hiragino Sans GB,\5b8b\4f53;
@@ -59,6 +59,8 @@ a         { color: #91736b; text-decoration: none; }
     width: 72px;
     height: 104px;
     text-align: center;
+    border-radius: 50px 500px 0px 500px;
+    box-shadow: 2px 2px 2px #ccc;
 }
 .logo a, .logo a:hover {
     display: block;
@@ -68,8 +70,8 @@ a         { color: #91736b; text-decoration: none; }
     line-height: 100px;
     vertical-align: middle;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.9);
-    background: url(../images/logo.jpg) no-repeat -72px 0;
+    color: rgba(255, 0, 0, 0.9);
+    color: #33f;
     -webkit-transition: color 200ms ease-in-out;
     -moz-transition: color 200ms ease-in-out;
     -ms-transition: color 200ms ease-in-out;
@@ -82,7 +84,11 @@ a         { color: #91736b; text-decoration: none; }
     left: 100px;
     top: 25px;
     font-size: 2em;
-    color: #333;
+    color: #fff;
+}
+
+.header > h2.title > span {
+    color: #aa638c;
 }
 
 
@@ -102,7 +108,7 @@ a         { color: #91736b; text-decoration: none; }
     margin: 0 0 0 20px;
 }
 .nav-item a {
-    color: #46635e;
+    color: #333;
     font-size: 14px;
     text-decoration: none;
 }
@@ -128,7 +134,7 @@ a         { color: #91736b; text-decoration: none; }
     width: 30px;
     height: 30px;
     line-height: 30px;
-    background: #496661;
+    background: #533820;
     display: inline-block;
     /* float: left; */
     font-size: 16px;
@@ -160,7 +166,8 @@ a         { color: #91736b; text-decoration: none; }
     min-height: 600px;
     height: auto;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
-    background: #e3ded8 url(../images/cnt-top.jpg) repeat-x 0 0;
+    background-color: #eee;
+    border-radius: 10px;
 }
 
 .main .article {
@@ -644,21 +651,21 @@ a         { color: #91736b; text-decoration: none; }
 
 .aside {
     padding: 20px 20px 40px 20px;
-    margin-top: -75px;
     position: absolute;
     right: 0px;
-    background: #f2eeec url(../images/aside-bg.jpg) no-repeat 0px 0px;
+    background-color: #eee;
     width: 240px;
     min-height: 500px;
     height: auto;
     box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.1), 1px 0 4px rgba(0, 0, 0, 0.3) inset;
+    border-radius: 10px;
 }
 .aside-contact {
     width: 220px;
     height: auto;
     padding: 10px 10px;
-    border-radius: 5px 5px;
-    background: rgba(110, 70, 60, 0.72);
+    border-radius: 50px 0px;
+    background: rgba(15, 150, 120, 0.8);
     text-align: left;
 }
 .aside-contact .title {
@@ -668,11 +675,14 @@ a         { color: #91736b; text-decoration: none; }
     line-height: 24px;
     font-family: 'Spirax', cursive;
     text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    padding-right: 20px;
 }
 .aside-contact .det {
     padding: 10px 0;
     line-height: 24px;
-    color: #232323;
+    color: #EEE;
     clear: both;
     height: auto;
 }
@@ -680,10 +690,12 @@ a         { color: #91736b; text-decoration: none; }
     width: 48px;
     height: 48px;
     float: left;
-    padding: 2px 2px;
+    /*padding: 2px 2px;*/
     background: #fff;
-    border: 1px solid #9d6156;
+/*    border: 1px solid #9d6156;*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 .aside-contact .det-image img {
     width: 48px;
@@ -691,6 +703,8 @@ a         { color: #91736b; text-decoration: none; }
     display: block;
     text-align: center;
     vertical-align: middle;
+    /*border-radius: 10px;*/
+
 }
 .aside-contact .det-text {
     width: 150px;
@@ -699,9 +713,12 @@ a         { color: #91736b; text-decoration: none; }
     font-size: 12px;
     line-height: 18px;
 }
-.aside-contact .det-text p {
+.aside-contact .det-text > p {
     padding-top: 0;
     margin-top: 0;
+    display: table-cell;
+    height: 48px;
+    vertical-align: middle;
 }
 .aside-contact .det-text p:last-child {
     padding-bottom: 0;

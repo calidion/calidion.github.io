@@ -73,7 +73,7 @@ Symbian是基于C++的面向对象方式构建的OS平台。<br />
 <p>3.封闭系统的失败<br />
 虽然现在SYMBIAN已经开源，但是他的本质是闭源的软件。<br />
 因为开源的手机OS在以android为首的阵营的带领下完胜。<br />
-Symbian虽然看到了方向，但是为时已经晚。 同时他不具备Unix&#47;Linux的通用性。<br />
+Symbian虽然看到了方向，但是为时已经晚。 同时他不具备Unix/Linux的通用性。<br />
 Android基于Linux系统。Linux上的应用将很方便的移植到手机上。 而Symbian并不能做到这一点。<br />
 在新一代手机系统的竞争上，Symbian已经完全失败了。<br />
 如果不出意料，iPhone, Android, Windows CE 将三分天下。<br />

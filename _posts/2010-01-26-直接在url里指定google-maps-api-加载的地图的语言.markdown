@@ -22,8 +22,8 @@ tags:
 - Google Maps API
 comments: []
 ---
-<div id="_mcePaste"><script src="http:&#47;&#47;maps.google.com&#47;maps?file=api&amp;amp;v=2&amp;amp;key=$mapapikey&amp;amp;oe=gbk&amp;amp;hl=zh-CN"><&#47;script><&#47;div></p>
-<div id="_mcePaste">其中hl后接的是语言,<&#47;div></p>
-<div id="_mcePaste">所有语言的列表:<&#47;div></p>
-<div id="_mcePaste">http:&#47;&#47;spreadsheets.google.com&#47;pub?key=p9pdwsai2hDMsLkXsoM05KQ&amp;gid=1<&#47;div></p>
-<div id="_mcePaste">oe是输出编码.<&#47;div></p>
+<div id="_mcePaste"><script src="http://maps.google.com/maps?file=api&amp;amp;v=2&amp;amp;key=$mapapikey&amp;amp;oe=gbk&amp;amp;hl=zh-CN"></script></div></p>
+<div id="_mcePaste">其中hl后接的是语言,</div></p>
+<div id="_mcePaste">所有语言的列表:</div></p>
+<div id="_mcePaste">http://spreadsheets.google.com/pub?key=p9pdwsai2hDMsLkXsoM05KQ&amp;gid=1</div></p>
+<div id="_mcePaste">oe是输出编码.</div></p>

@@ -24,35 +24,35 @@ tags: []
 comments: []
 ---
 <p>HTML和CSS是两个网页制作的核心技术。对于各种不同的设备，HTML给出的是页面的结构，而CSS给出的是布局。HTML和CSS再加上图片和脚本组成了网页制作与网站应用的基础。以下将进一步的说明：</p>
-<h2>什么是HTML？<&#47;h2><br />
+<h2>什么是HTML？</h2><br />
 HTML是用于描述页面结构的语言。HTML给网页制作者以下几个功能：</p>
 <ul>
-<li>发现包括标题，文本，表格，列表，照片等在内的在线的文档。<&#47;li>
-<li>通过超链接或者按钮的点击得到在线的信息。<&#47;li>
-<li>设计表单用于引导远程服务上的事务，比如用于搜索信息，预订服务，订购产品等。<&#47;li>
-<li>将电子表格，视频片段，声音片段和其它应用直接放在他们的文档里。<&#47;li><br />
-<&#47;ul><br />
+<li>发现包括标题，文本，表格，列表，照片等在内的在线的文档。</li>
+<li>通过超链接或者按钮的点击得到在线的信息。</li>
+<li>设计表单用于引导远程服务上的事务，比如用于搜索信息，预订服务，订购产品等。</li>
+<li>将电子表格，视频片段，声音片段和其它应用直接放在他们的文档里。</li><br />
+</ul><br />
 使用HTML，网页制作者用标记来描述页面的结构。多种语言元素用来标记内容里的多个部分，象段落，列表，表格等。</p>
-<h2>什么是XHTML<&#47;h2><br />
+<h2>什么是XHTML</h2><br />
 XHTML是HTML的一个变体，它使用了XML的语法。XHTML包含所有的HTML元素，但是语法有一点不同。由于XHTML是一个XML应用，你可以对它使用其它的XML工具。</p>
-<h2>什么是CSS？<&#47;h2><br />
+<h2>什么是CSS？</h2><br />
 CSS是用于描述网页展现的语言，包括颜色，布局，字体。它允许调节不同类型设备上的展现，比如大屏幕，小屏幕或者打印机。CSS是独立于HTML的，它还可以用于任何的基于XML的标记语言。HTML和CSS的分离让网站的维护，页面风格表的分享，和不同环境下页面的裁剪变的更加容易。这点经常被称为结构（内容）与展现的分离。</p>
-<h2>什么是WebFonts?<&#47;h2><br />
+<h2>什么是WebFonts?</h2><br />
 WebFonts是一种在网络上根据需要使用字体的技术，它并不需要操作系统安装该字体。W3C具有通过HTML，CSS2和SVG使用可下载字体的经验。由于缺少互操作的字体格式，到目前为止，可下载字体还没有在网页上普遍使用。WebFonts的计划表达了通过创建一个工业支持的网页开放字体格式努力。</p>
 <p>原文：</p>
-<p><a href="http:&#47;&#47;www.w3.org&#47;html&#47;">HTML<&#47;a> (the Hypertext Markup Language) and&nbsp;<a href="http:&#47;&#47;www.w3.org&#47;Style&#47;CSS&#47;">CSS<&#47;a> (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the&nbsp;<em>structure<&#47;em> of the page, CSS the (visual and aural)&nbsp;<em>layout,<&#47;em> for a variety of devices. Along with&nbsp;<a href="http:&#47;&#47;www.w3.org&#47;standards&#47;webdesign&#47;graphics">graphics<&#47;a> and&nbsp;<a href="http:&#47;&#47;www.w3.org&#47;standards&#47;webdesign&#47;script">scripting<&#47;a>, HTML and CSS are the basis of building Web pages and&nbsp;Web Applications. Learn more below about:</p>
-<h2 id="whathtml">What is HTML?<&#47;h2><br />
-<a href="http:&#47;&#47;www.w3.org&#47;html&#47;">HTML<&#47;a> is the language for describing the structure of Web pages. HTML gives authors the means to:</p>
+<p><a href="http://www.w3.org/html/">HTML</a> (the Hypertext Markup Language) and&nbsp;<a href="http://www.w3.org/Style/CSS/">CSS</a> (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the&nbsp;<em>structure</em> of the page, CSS the (visual and aural)&nbsp;<em>layout,</em> for a variety of devices. Along with&nbsp;<a href="http://www.w3.org/standards/webdesign/graphics">graphics</a> and&nbsp;<a href="http://www.w3.org/standards/webdesign/script">scripting</a>, HTML and CSS are the basis of building Web pages and&nbsp;Web Applications. Learn more below about:</p>
+<h2 id="whathtml">What is HTML?</h2><br />
+<a href="http://www.w3.org/html/">HTML</a> is the language for describing the structure of Web pages. HTML gives authors the means to:</p>
 <ul>
-<li>Publish online documents with headings, text, tables, lists, photos, etc.<&#47;li>
-<li>Retrieve online information via hypertext links, at the click of a button.<&#47;li>
-<li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.<&#47;li>
-<li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.<&#47;li><br />
-<&#47;ul><br />
-With HTML, authors describe the structure of pages using&nbsp;<em>markup.<&#47;em> The&nbsp;<em>elements<&#47;em> of the language label pieces of content such as &ldquo;paragraph,&rdquo; &ldquo;list,&rdquo; &ldquo;table,&rdquo; and so on.</p>
-<h3>What is XHTML?<&#47;h3><br />
-XHTML is a variant of HTML that uses the syntax of&nbsp;<a href="http:&#47;&#47;www.w3.org&#47;standards&#47;xml&#47;core">XML<&#47;a>, the Extensible Markup Language. XHTML has all the same elements (for paragraphs, etc.) as the HTML variant, but the syntax is slightly different. Because XHTML is an XML application, you can use other XML tools with it (such as&nbsp;<a href="http:&#47;&#47;www.w3.org&#47;standards&#47;xml&#47;transformation">XSLT,<&#47;a> a language for transforming XML content).</p>
-<h2 id="whatcss">What is CSS?<&#47;h2><br />
-<a href="http:&#47;&#47;www.w3.org&#47;Style&#47;CSS&#47;">CSS<&#47;a> is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the&nbsp;<em>separation of structure (or: content) from presentation.<&#47;em></p>
-<h2 id="whatwebfonts">What is WebFonts?<&#47;h2><br />
+<li>Publish online documents with headings, text, tables, lists, photos, etc.</li>
+<li>Retrieve online information via hypertext links, at the click of a button.</li>
+<li>Design forms for conducting transactions with remote services, for use in searching for information, making reservations, ordering products, etc.</li>
+<li>Include spread-sheets, video clips, sound clips, and other applications directly in their documents.</li><br />
+</ul><br />
+With HTML, authors describe the structure of pages using&nbsp;<em>markup.</em> The&nbsp;<em>elements</em> of the language label pieces of content such as &ldquo;paragraph,&rdquo; &ldquo;list,&rdquo; &ldquo;table,&rdquo; and so on.</p>
+<h3>What is XHTML?</h3><br />
+XHTML is a variant of HTML that uses the syntax of&nbsp;<a href="http://www.w3.org/standards/xml/core">XML</a>, the Extensible Markup Language. XHTML has all the same elements (for paragraphs, etc.) as the HTML variant, but the syntax is slightly different. Because XHTML is an XML application, you can use other XML tools with it (such as&nbsp;<a href="http://www.w3.org/standards/xml/transformation">XSLT,</a> a language for transforming XML content).</p>
+<h2 id="whatcss">What is CSS?</h2><br />
+<a href="http://www.w3.org/Style/CSS/">CSS</a> is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the&nbsp;<em>separation of structure (or: content) from presentation.</em></p>
+<h2 id="whatwebfonts">What is WebFonts?</h2><br />
 WebFonts is a technology use fonts on demand over the Web without requiring installation in the operating system. W3C has experience in downloadable fonts through HTML, CSS2, and SVG. Until recently, downloadable fonts have not been common on the Web due to the lack of an interoperable font format. The WebFonts effort plans to address that through the creation of an industry-supported, open font format for the Web (called "WOFF").</p>

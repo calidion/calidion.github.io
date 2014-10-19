@@ -32,4 +32,4 @@ No module named _multiprocessing<br />
 4.方法如下:<br />
 sudo apt-get install python2.5 optical amplifier</p>
 <p>打开dev_appserver.py. 将第一行的环境说明修改成python2.5,<br />
-#!&#47;usr&#47;bin&#47;env python2.5.</p>
+#!/usr/bin/env python2.5.</p>

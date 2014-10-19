@@ -21,10 +21,10 @@ categories:
 tags: []
 comments: []
 ---
-<p>1.先到http:&#47;&#47;pypi.python.org&#47;packages&#47;source&#47;s&#47;setuptools&#47;setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e<br />
+<p>1.先到http://pypi.python.org/packages/source/s/setuptools/setuptools-0.6c11.tar.gz#md5=7df2a529a074f613b509fb44feefe74e<br />
 下载setuptools<br />
 2.  tar -xf setuptools-0.6c11.tar.gz<br />
-3. cd setuptools-0.6c11&#47;<br />
+3. cd setuptools-0.6c11/<br />
 4. sudo python2.4 setup.py install<br />
 这样<br />
 easy_install-2.4就可以用了</p>

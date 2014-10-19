@@ -42,7 +42,7 @@ R.E.D.Kick（七百七式&middot;独乐屠） &larr;&darr;↙&middot;B或D<br />
 百拾五式&middot;毒咬 &darr;↘&rarr;&middot;C<br />
 四百壹式&middot;罪咏 毒咬动作中&rarr;↘&darr;↙&larr;A或C<br />
 四百贰式&middot;罚咏 罪咏动作中&rarr;A或C<br />
-九百拾式&middot;鹤摘（外式&middot;虎伏&#47;龙射） &darr;↙&larr;A或C<br />
+九百拾式&middot;鹤摘（外式&middot;虎伏/龙射） &darr;↙&larr;A或C<br />
 秘奥义 里百八式&middot;大蛇雉 &darr;↙&larr;↙&darr;↘&rarr;&middot;A或C<br />
 最终决战奥义"无式"（三神技之一） &darr;↘&rarr;&darr;↘&rarr;&middot;A或C</p>
 <p>二阶堂红丸</p>

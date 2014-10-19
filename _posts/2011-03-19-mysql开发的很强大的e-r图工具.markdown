@@ -21,8 +21,8 @@ categories:
 tags: []
 comments: []
 ---
-<h1>MySQL Workbench<&#47;h1><br />
+<h1>MySQL Workbench</h1><br />
 下载地址：</p>
-<p><a href="http:&#47;&#47;www.mysql.com&#47;downloads&#47;workbench&#47;">http:&#47;&#47;www.mysql.com&#47;downloads&#47;workbench&#47;<&#47;a></p>
+<p><a href="http://www.mysql.com/downloads/workbench/">http://www.mysql.com/downloads/workbench/</a></p>
 <p>操作很直观，很容易上手</p>
 <p>&nbsp;</p>

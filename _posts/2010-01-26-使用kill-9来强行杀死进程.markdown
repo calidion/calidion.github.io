@@ -35,7 +35,7 @@ Kill参数的对照表：
 
        Name     Num   Action    Description
 
-       0          0   n&#47;a       exit code indicates if a signal may be sent
+       0          0   n/a       exit code indicates if a signal may be sent
 
        ALRM      14   exit
 

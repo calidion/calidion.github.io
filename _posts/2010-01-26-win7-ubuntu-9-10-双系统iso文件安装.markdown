@@ -28,9 +28,9 @@ comments: []
 ---
 <p>1.首先安装好win7<br />
 2.下载ubuntu 9.10光盘<br />
-3.打开http:&#47;&#47;unetbootin.sourceforge.net&#47;<br />
+3.打开http://unetbootin.sourceforge.net/<br />
 4.单击windows的安装程序。这时会跑到下载页面。<br />
- 我得到的下载链接: http:&#47;&#47;downloads.sourceforge.net&#47;project&#47;unetbootin&#47;UNetbootin&#47;377&#47;unetbootin-windows-377.exe?use_mirror=ncu<br />
+ 我得到的下载链接: http://downloads.sourceforge.net/project/unetbootin/UNetbootin/377/unetbootin-windows-377.exe?use_mirror=ncu<br />
 5.安装unetbootin<br />
 6.选择使用ubuntu，指定ubuntu的iso文件目录。 </p>
 <p>这样重新后在菜单里就会出现unetbootin的选择项目，<br />

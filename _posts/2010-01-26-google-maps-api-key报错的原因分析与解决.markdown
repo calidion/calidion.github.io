@@ -37,11 +37,11 @@ senor主要用于表明网站是不是采用包含了一些定位的硬件设备
 主要的是检查得到的默认javascript代码里是否已经<br />
 把里面的sensor=true_or_false修改成sensor=false<br />
 其它的一般不会出什么问题。</p>
-<p><script src="http:&#47;&#47;maps.google.com&#47;maps?<br />
+<p><script src="http://maps.google.com/maps?<br />
 file=api&amp;v=2&amp;sensor=true_or_false </p>
 <p>&amp;key=ABQIAAAAWiwS8Thr2h3A0aAWbsVr6RRzDPQV0_EvaIz8UiE1dD2H9vB1ZRRZP7faFH Wd1db1q7J71LkydLdwkw"<br />
-type="text&#47;javascript"><br />
-<&#47;script><br />
+type="text/javascript"><br />
+</script><br />
 就是这段自动生成的代码，<br />
 他的sensor域的值是true_or_false<br />
 这个值是不对的。<br />

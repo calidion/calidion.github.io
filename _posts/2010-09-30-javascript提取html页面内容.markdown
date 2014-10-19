@@ -28,9 +28,9 @@ comments: []
 得到下面的代码。<br />
 能提取出来相应的HTML标签内的内容。</p>
 <pre name="code" class="js">
-var reg = &#47;<[^>]*?>([^>^<]+)<[^>]*?&#47;+[^>]*?>&#47;g;<br />
-var res = '<a href="forum-10-1.html" class="prev">&nbsp<&#47;a><a href="forum-10-1.html">1<&#47;a><strong>2<&#47;strong><a href="forum-10-3.html">3<&#47;a><a href="forum-10-4.html">4<&#47;a><a href="forum-10-5.html">5<&#47;a><a href="forum-10-6.html">6<&#47;a>'.replace(reg, "$1,");<br />
+var reg = /<[^>]*?>([^>^<]+)<[^>]*?/+[^>]*?>/g;<br />
+var res = '<a href="forum-10-1.html" class="prev">&nbsp</a><a href="forum-10-1.html">1</a><strong>2</strong><a href="forum-10-3.html">3</a><a href="forum-10-4.html">4</a><a href="forum-10-5.html">5</a><a href="forum-10-6.html">6</a>'.replace(reg, "$1,");<br />
 console.log(res);<br />
-<&#47;pre></p>
+</pre></p>
 <p>结果:<br />
 "&nbsp,1,2,3,4,5,6,"</p>

@@ -26,7 +26,7 @@ comments: []
 def randomChinese():<br />
   val = random.randint(0x4E00, 0x9FBF)<br />
   return unichr(val)<br />
-<&#47;pre></p>
+</pre></p>
 <p>实践表明上面的编码数量太多了。很多字不认识，无法输入。<br />
 所以下面提供常用的汉字的随机生成方法：</p>
 <pre name="code" class="py">
@@ -37,4 +37,4 @@ def randomGB2312():<br />
   val = ( head << 0x8 ) | (body << 0x4 ) | tail<br />
   str = "%x" % val<br />
   return str.decode('hex').decode('gb2312')<br />
-<&#47;pre></p>
+</pre></p>

@@ -21,7 +21,7 @@ categories:
 tags: []
 comments: []
 ---
-<p>早在Google发布Nexus One手机的时候，我们就曾发布过这款手机的拆解报道，其中一块 Broadcom BCM4329（BCM4329EKUBG CD0942 P21 937322 SEA）芯片将为用户提供包括蓝牙和802.11n无线连接功能，不过零售版的Nexus One并没有开启802.11n高速无线连接功能。<strong>因为现有的Android系统原因，没有支持802.11n和Broadcom BCM4329芯片的驱动程序，用户不能得到这项服务。不过Broadcom公司近日已经发布了该芯片的驱动程序更新，而且有网友已经将其编译并在 Nexus One上成功运行并开启802.11n网络。<&#47;strong></p>
-<p><a href="http:&#47;&#47;news.mydrivers.com&#47;Img&#47;20100425&#47;08531454.jpg" target="_blank"><img src="http:&#47;&#47;img.cnbeta.com&#47;newsimg&#47;100425&#47;09122201488778682.jpg" alt="Nexus One将解锁802.11n高速无线功能" width="550" height="413" &#47;><&#47;a></p>
+<p>早在Google发布Nexus One手机的时候，我们就曾发布过这款手机的拆解报道，其中一块 Broadcom BCM4329（BCM4329EKUBG CD0942 P21 937322 SEA）芯片将为用户提供包括蓝牙和802.11n无线连接功能，不过零售版的Nexus One并没有开启802.11n高速无线连接功能。<strong>因为现有的Android系统原因，没有支持802.11n和Broadcom BCM4329芯片的驱动程序，用户不能得到这项服务。不过Broadcom公司近日已经发布了该芯片的驱动程序更新，而且有网友已经将其编译并在 Nexus One上成功运行并开启802.11n网络。</strong></p>
+<p><a href="http://news.mydrivers.com/Img/20100425/08531454.jpg" target="_blank"><img src="http://img.cnbeta.com/newsimg/100425/09122201488778682.jpg" alt="Nexus One将解锁802.11n高速无线功能" width="550" height="413" /></a></p>
 <p>如果Broadcom和Google将新驱动集成在新版固件，则其有望随Android 2.2版系统问世，这也意味着Nexus One将会升级Android 2.2系统，届时用户可以享受802.11n带来的高速无线网络体验。</p>
-<p>802.11n是Wi－Fi联盟在802.11a&#47;b&#47;g后面的一个无线传输标准协议，在传输速率方面，802.11n可以将WLAN的传输速率由 目前802.11a及802.11g提供的54Mbps，提供到300Mbps甚至高达600Mbps。</p>
+<p>802.11n是Wi－Fi联盟在802.11a/b/g后面的一个无线传输标准协议，在传输速率方面，802.11n可以将WLAN的传输速率由 目前802.11a及802.11g提供的54Mbps，提供到300Mbps甚至高达600Mbps。</p>

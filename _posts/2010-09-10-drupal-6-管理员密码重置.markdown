@@ -26,5 +26,5 @@ comments: []
 <p>然后调用下面的代码:</p>
 <pre class=&rdquo;code&rdquo; name=&rdquo;sql&rdquo;>
 UPDATE users SET pass = md5(&lsquo;newpassword&rsquo;) WHERE uid = 1;<br />
-<&#47;pre></p>
-<p><&#47;pre></p>
+</pre></p>
+<p></pre></p>

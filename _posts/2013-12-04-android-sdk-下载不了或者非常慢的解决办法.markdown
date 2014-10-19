@@ -30,9 +30,9 @@ comments: []
 
 2、选择菜单栏里的Tools->Options...
 
-3、在打开的设置界面，选中Others下面的： Force https:&#47;&#47;... sources to be fetched using http:&#47;&#47;...
+3、在打开的设置界面，选中Others下面的： Force https://... sources to be fetched using http://...
 
-![](http:&#47;&#47;res.cloudinary.com&#47;dawjytvkn&#47;image&#47;upload&#47;v1386089566&#47;temp_rntpnx.jpg)
+![](http://res.cloudinary.com/dawjytvkn/image/upload/v1386089566/temp_rntpnx.jpg)
 
 如果上述的方法不能成功，说明http协议也被墙了，我们需要将连接请求转到代理上来。
 

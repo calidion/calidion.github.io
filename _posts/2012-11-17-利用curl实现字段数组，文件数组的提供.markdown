@@ -57,11 +57,11 @@ comments: []
     }<br />
     return $files;<br />
   }<br />
-<&#47;pre><br />
+</pre><br />
 对于文件数组来讲最重要的是如下使用方法:</p>
 <pre name='code' class="php">
 $files[$k. '[' . $k1 . ']'] = '@' . $file . ';type=' . $v['type'][$k1];<br />
-<&#47;pre><br />
+</pre><br />
 $k要转化成$k. '['<br />
 又一个数组<br />
 也就是<br />

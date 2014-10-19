@@ -32,7 +32,7 @@ comments: []
       }<br />
       self.display('user_modify.html', temp)<br />
       return<br />
-<&#47;pre><br />
+</pre><br />
 当我把 temp的}向外移动两格后，后面添加的两行竟然同样可以执行。<br />
 导致了一些莫名其妙的结果。。<br />
 而这个if又是写在最后的。<br />

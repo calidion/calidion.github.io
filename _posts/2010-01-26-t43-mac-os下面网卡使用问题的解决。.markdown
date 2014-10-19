@@ -27,7 +27,7 @@ comments: []
 <p>进入Mac OS X，打开finder -> system -> library -> extensions， 文件解压后，将AppleBCM5751Ethernet.kext放到extensions目录里，执行以下命令：</p>
 <p>1. open Terminal<br />
 2. sudo -s<br />
-3. chown -R root:wheel &#47;System&#47;Library&#47;Extensions&#47;<br />
-4. chmod -R 755 &#47;System&#47;Library&#47;Extensions&#47;AppleBCM5751Ethernet.kext<br />
+3. chown -R root:wheel /System/Library/Extensions/<br />
+4. chmod -R 755 /System/Library/Extensions/AppleBCM5751Ethernet.kext<br />
 5. reboot</p>
 <p>重启后就系统可识别出BROADCOM网卡。</p>

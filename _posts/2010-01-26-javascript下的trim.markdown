@@ -25,13 +25,13 @@ comments: []
 ---
 <p>实际上只要在string下面添加一下下面的语句：</p>
 <pre name="code" class="js">
-replace(&#47;^s+&#47;ig, '').replace(&#47;s+$&#47;ig, '')<br />
-<&#47;pre><br />
+replace(/^s+/ig, '').replace(/s+$/ig, '')<br />
+</pre><br />
 就可以了。</p>
 <p>如果 </p>
 <pre name="code" class="js">
 var str = "               hello    world               ";<br />
-str = str.replace(&#47;^s+&#47;ig, '').replace(&#47;s+$&#47;ig, '');<br />
+str = str.replace(/^s+/ig, '').replace(/s+$/ig, '');<br />
 alert(str);<br />
-<&#47;pre><br />
+</pre><br />
 str等于hello   world</p>

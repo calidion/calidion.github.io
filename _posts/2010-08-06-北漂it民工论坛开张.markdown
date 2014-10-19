@@ -22,4 +22,4 @@ tags: []
 comments: []
 ---
 <p>欢迎访问灌水:)<br />
-http:&#47;&#47;www.3gcnbeta.com&#47;bbs&#47;index.php</p>
+http://www.3gcnbeta.com/bbs/index.php</p>

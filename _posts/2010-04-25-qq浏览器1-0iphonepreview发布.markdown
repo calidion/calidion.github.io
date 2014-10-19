@@ -21,8 +21,8 @@ categories:
 tags: []
 comments: []
 ---
-<p>QQ浏览器1.0(iPhone)Preview是腾讯公司针对日渐增多的Apple用户，推出的基于iPhone&#47;iPod Touch平台的手机浏览器软件，很好的支持了WAP、WWW页面浏览，速度快，性能稳定，具备良好的交互体验及界面视觉，让您享受完美的手机上网新体验！</p>
-<p>下载:http:&#47;&#47;app.sj.91.com&#47;</p>
+<p>QQ浏览器1.0(iPhone)Preview是腾讯公司针对日渐增多的Apple用户，推出的基于iPhone/iPod Touch平台的手机浏览器软件，很好的支持了WAP、WWW页面浏览，速度快，性能稳定，具备良好的交互体验及界面视觉，让您享受完美的手机上网新体验！</p>
+<p>下载:http://app.sj.91.com/</p>
 <p>完美支持WAP和WWW网页<br />
 不仅能访问WAP，QQ浏览器领先的WEB页面转换技术，能让您享受更适合手机阅读的WWW 网页。</p>
 <p>极速的冲浪体验<br />
@@ -67,4 +67,4 @@ WAP压缩中转省流量：通过强大的后台服务器，QQ浏览器会对WAP
 移动GSM：cmwap或者cmnet<br />
 联通GSM：uniwap或者uninet<br />
 联通WCMDA：3gwap或者3gnet<br />
-5)、 如果用户使用GPRS&#47;EDGE连接网络，由于上网带宽限制，页面中的图片会下载较慢。如果用户使用wifi连接网络，仍出现打开缓慢现象，很可能是正在使用的wifi网络状况导致。</p>
+5)、 如果用户使用GPRS/EDGE连接网络，由于上网带宽限制，页面中的图片会下载较慢。如果用户使用wifi连接网络，仍出现打开缓慢现象，很可能是正在使用的wifi网络状况导致。</p>

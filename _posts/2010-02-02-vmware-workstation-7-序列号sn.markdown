@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: VMWare workstation 7 序列号&#47;SN
+title: VMWare workstation 7 序列号/SN
 author:
   display_name: 北漂IT民工
   login: admin
@@ -26,7 +26,7 @@ comments: []
 <table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td id="postmessage_817"><span style="color: #ff0000;"><span style="color: black;">YA51U-2YY00-481PZ-CDPXT-WZAY0<&#47;span><&#47;span><&#47;td><br />
-<&#47;tr><br />
-<&#47;tbody><br />
-<&#47;table></p>
+<td id="postmessage_817"><span style="color: #ff0000;"><span style="color: black;">YA51U-2YY00-481PZ-CDPXT-WZAY0</span></span></td><br />
+</tr><br />
+</tbody><br />
+</table></p>

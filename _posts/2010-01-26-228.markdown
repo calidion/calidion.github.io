@@ -25,5 +25,5 @@ tags:
 comments: []
 ---
 <p>WEB相关的RFC文件<br />
-http:&#47;&#47;www.w3.org&#47;TR&#47;2008&#47;REC-CSS2-20080411&#47;css2.txt<br />
-http:&#47;&#47;www.w3.org&#47;TR&#47;1999&#47;REC-html401-19991224&#47;html40.txt</p>
+http://www.w3.org/TR/2008/REC-CSS2-20080411/css2.txt<br />
+http://www.w3.org/TR/1999/REC-html401-19991224/html40.txt</p>

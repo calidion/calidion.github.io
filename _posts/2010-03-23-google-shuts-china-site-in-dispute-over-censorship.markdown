@@ -23,7 +23,7 @@ comments: []
 ---
 <p>SAN FRANCISCO &mdash; Just over two months after threatening to leave China because of censorship and intrusions from hackers, Google on Monday closed its Internet search service there and began directing users in that country to its uncensored search engine in Hong Kong.<br />
 Enlarge This Image</p>
-<p>Liu Jin&#47;Agence France-Presse &mdash; Getty Images<br />
+<p>Liu Jin/Agence France-Presse &mdash; Getty Images<br />
 A Chinese flag flies next to the Google company logo outside the Google China headquarters in Beijing on Monday.<br />
 Timeline: Web Companies in China</p>
 <p>Related</p>

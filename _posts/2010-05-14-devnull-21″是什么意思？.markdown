@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: true
-title: ! ' "> &#47;dev&#47;null 2>&1&Prime;是什么意思？'
+title: ! ' "> /dev/null 2>&1&Prime;是什么意思？'
 author:
   display_name: 北漂IT民工
   login: admin
@@ -22,18 +22,18 @@ tags:
 - shell
 comments: []
 ---
-<p>这个命令是Unix&#47;Linux下经常使用的命令，要解释这个命令需要将一些解释清楚。</p>
-<p>1.Linux&#47;Unix的标准设备。</p>
+<p>这个命令是Unix/Linux下经常使用的命令，要解释这个命令需要将一些解释清楚。</p>
+<p>1.Linux/Unix的标准设备。</p>
 <p>STDIN，STDOUT，STDERR</p>
 <p>他们分别对应了文件描述符(fd)的值是:0, 1, 2</p>
 <p>Shell上可以用0, 1, 2表示</p>
 <p>2. >是重定向指令</p>
 <p>3. 默认情况下，命令的输入设备是标准输出也就是1</p>
 <p>那么我们来看下这个命令：</p>
-<p>a) > &#47;dev&#47;null 将默认的标准输入重定向到空设备上</p>
+<p>a) > /dev/null 将默认的标准输入重定向到空设备上</p>
 <p>b) &nbsp;2 > &amp;1 将2重定向到1所对应的设备上</p>
 <p>c) 由于1已经被重定向到空设备上，所以2也被重定向到了空设备上</p>
 <p>所以从上面的分析我们可以看到</p>
-<p>> &#47;dev&#47;null &nbsp;2 > &amp;1与</p>
-<p>> &#47;dev&#47;null 2 > &#47;dev&#47;null</p>
+<p>> /dev/null &nbsp;2 > &amp;1与</p>
+<p>> /dev/null 2 > /dev/null</p>
 <p>是等价的。</p>

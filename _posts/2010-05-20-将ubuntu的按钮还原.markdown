@@ -30,8 +30,8 @@ comments: []
 <p>2.在打开的外观首选项->主题</p>
 <p>3.选择清爽主题</p>
 <p>4.点击自定义</p>
-<p>5. 然后选择Radiance风格的控件&#47;窗口边框&#47;</p>
+<p>5. 然后选择Radiance风格的控件/窗口边框/</p>
 <p>6.选择elementary的图标或者Humanity的图标。</p>
 <p>7.这样就可以体验Radiance的风格的同时，不用因为按钮左移而觉得憋屈了。</p>
 <p>enjoy!</p>
-<p><a rel="attachment wp-att-1049" href="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;2010&#47;05&#47;20&#47;%e5%b0%86ubuntu%e7%9a%84%e6%8c%89%e9%92%ae%e8%bf%98%e5%8e%9f&#47;screenshot-2&#47;"><img class="aligncenter size-large wp-image-1049" title="Screenshot" src="http:&#47;&#47;www.3gcnbeta.com&#47;wordpress&#47;wp-content&#47;uploads&#47;2010&#47;05&#47;Screenshot-1024x640.png" alt="" width="1024" height="640" &#47;><&#47;a></p>
+<p><a rel="attachment wp-att-1049" href="http://www.3gcnbeta.com/wordpress/2010/05/20/%e5%b0%86ubuntu%e7%9a%84%e6%8c%89%e9%92%ae%e8%bf%98%e5%8e%9f/screenshot-2/"><img class="aligncenter size-large wp-image-1049" title="Screenshot" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/05/Screenshot-1024x640.png" alt="" width="1024" height="640" /></a></p>
