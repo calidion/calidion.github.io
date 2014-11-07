@@ -78,7 +78,7 @@ npm install grunt --save-dev
 
 注意：一定要加上--save-dev，这样在package.json里就能自动的更新grunt的最新版本到devDependencies里面
 
-3、安装相关的grunt插件</p>
+3、安装相关的grunt插件
 ```
 npm install grunt-contrib-cssmin --save-dev
 
@@ -203,34 +203,40 @@ css:
 
 前
 
-```
+```html
 
 <link rel="stylesheet" href="styles/a.css" />
 <link rel="stylesheet" href="styles/b.css" />
 <link rel="stylesheet" href="styles/c.css" />
+
 ```
 
 后
-```
+
+```html
+
 <link rel="stylesheet" href="styles/packagename.min.css" />
+
 ```
 
 js:
 
 前
 
-```
+```html
 <script data-main="scripts/config/global" src="Library/require.js"></script>
 ```
 
 后
-```
+
+```html
 <script src="scripts/packagename.min.js"></script>
 ```
 
 6、完成上述步骤，我们的环境与配置就已经写好了，现在就可以通过在控制台下面执行以下代码实现打包了。
 
-```
+
+```bash
 >grunt
 
 ```
