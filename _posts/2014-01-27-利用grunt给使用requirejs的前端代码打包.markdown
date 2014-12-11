@@ -23,6 +23,7 @@ categories:
 tags: []
 comments: []
 ---
+
 javascript技术是最近几年最活跃的技术之一，不但创造了非常好用的nodejs,
 
 还基于nodejs产生了一堆非常好用的包机制，类库，web框架，还有就是项目集成与管理工具。
@@ -37,13 +38,16 @@ grunt打包的机制非常的简单，主要是分成以下几步：
 
 1、全局安装gruntjs
 
-```
+
+```shell
 npm install -g grunt-cli
 ```
 
+
 2、创建基于nodejs npm的package.json文件，用以明确当前目录下的打包信息：
 
-```
+
+```javascript
 {
 
   "name": "projectname",   //你的项目名
@@ -71,15 +75,19 @@ npm install -g grunt-cli
 }
 ```
 
-2、在package.json目录下安装grunt组件</p>
-```
+2、在package.json目录下安装grunt组件
+
+```shell
 npm install grunt --save-dev
 ```
 
 注意：一定要加上--save-dev，这样在package.json里就能自动的更新grunt的最新版本到devDependencies里面
 
+
 3、安装相关的grunt插件
-```
+
+
+```shell
 npm install grunt-contrib-cssmin --save-dev
 
 npm install grunt-contrib-requirejs --save-dev
@@ -92,7 +100,8 @@ npm install grunt-contrib-htmlmin --save-dev
 
 package.json的devDependencies将会变成是这样的：
 
-```
+
+```javascript
   "devDependencies": {
 
     "grunt": "~0.4.2",
@@ -107,6 +116,8 @@ package.json的devDependencies将会变成是这样的：
 ```
 
 4、编写Gruntfile.js文件
+
+
 
 ```
 module.exports = function(grunt) {

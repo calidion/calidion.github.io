@@ -14,17 +14,27 @@ nav:
     url: /categories.html
   - text: 文章归档
     url: /archives.html
-  - text: 联系我
-    url: /contact.html
-  - text: 友情链接
-    url: /links.html
+  - text: 关于
+    url: /about.html
 
 #Author config
 author:
     name: 北漂IT民工
     email: calidion@gmail.com
     imageLink: http://tp4.sinaimg.cn/2344087443/180/5622386331/1
-    simpleIntro: 关于IT技术的新闻，技术，感悟，交流，分享
+    simpleIntro: 关注IT技术的新闻，技术，感悟，交流，分享。
+    detailIntro:
+    qqQun:
+      - name: 高级前端开发框架群
+        no: 288791858
+      - name: Vim用户群
+        no: 40964276
+      - name: 互联网架构师群
+        no: 40935408
+      - name: PhoneGap移动技术研究群
+        no: 238035953
+
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand

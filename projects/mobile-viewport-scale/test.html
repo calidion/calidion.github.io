@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile viewport Toolkit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<style>
+    #submit {
+        display: inline-block;
+        width: 250px;
+        height: 50px;
+
+        text-align: center;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Mobile viewport Toolkit</h1>
+        <ul class="list-group">
+            <li class="list-group-item">User Agent: <span id="userAgent"></span><br/>
+                Screen Width: <span id="screenWidth"></span>px Screen Height: <span id="screenHeight"></span>px<br/>
+                Document Width: <span id="documentWidth"></span>px Document Height: <span
+                        id="documentHeight"></span>px<br/>
+                Window Width: <span id="windowWidth"></span>px Window Height: <span id="windowHeight"></span>px<br/>
+                Zoom Level: <span id="zoomLevel"></span>
+            </li>
+
+        </ul>
+        <h2>Set viewport</h2>
+
+        <form role="form" class="form-horizontal" method="post">
+            <div class="form-group">
+                <label for="width" class="col-sm-2 control-label">Width</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="width" id="width" placeholder="input viewport width"
+                           value="device-width">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">User Scalable</label>
+
+                <div class="col-sm-10">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="userScalable" value="yes" checked>
+                            Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="userScalable" value="no">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="initScale">Initial Scale</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="initScale" placeholder="Initial scale" value="1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="minScale">Minimum Scale</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="minScale" placeholder="Minimum scale" value="1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="maxScale">Maximum Scale</label>
+
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="maxScale" placeholder="Maximum scale" value="1">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="maxScale"></label>
+
+                <div class="col-sm-10">
+                    <a class="btn btn-default" id="submit">Update Viewport</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script data-main="test" src="bower_components/requirejs/require.js"></script>
+
+<script>
+/*
+    var keyPair = {
+        'userAgent': navigator.userAgent,
+        'screenWidth': screen.width,
+        'screenHeight': screen.height,
+        'documentWidth': document.documentElement.clientWidth,
+        'documentHeight': document.documentElement.clientHeight,
+        'windowWidth': innerWidth,
+        'windowHeight': innerHeight
+    }
+
+    for (var k in keyPair) {
+        document.getElementById(k).innerHTML = keyPair[k];
+    }
+
+    function initDevice() {
+        var keyPair = {
+            'userAgent': navigator.userAgent,
+            'screenWidth': screen.width,
+            'screenHeight': screen.height,
+            'documentWidth': document.documentElement.clientWidth,
+            'documentHeight': document.documentElement.clientHeight,
+            'windowWidth': innerWidth,
+            'windowHeight': innerHeight,
+            'zoomLevel': getZoomLevel
+        }
+
+        for (var k in keyPair) {
+            var value = keyPair[k] instanceof Function ? keyPair[k]() : keyPair[k];
+            document.getElementById(k).innerHTML = value;
+        }
+    }
+
+    initDevice();
+    window.onresize = function () {
+        initDevice();
+    }
+
+    document.getElementById('submit').addEventListener('click', function () {
+        console.log('clicked');
+
+        var width = document.getElementById('width').value;
+        var userScalable = document.getElementsByName('userScalable')[0].value;
+        var initScale = document.getElementById('initScale').value;
+        var minScale = document.getElementById('minScale').value;
+        var maxScale = document.getElementById('maxScale').value;
+        alert('set Viewport');
+        setViewport(width, userScalable, initScale, minScale, maxScale);
+        return false;
+    });
+
+    document.querySelector('form').addEventListener('submit', function () {
+        console.log("inside submit");
+        return false;
+    })
+
+*/
+</script>
+</body>
+</html>

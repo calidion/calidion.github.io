@@ -1,0 +1,89 @@
+---
+layout: post
+status: publish
+published: true
+title: ! '应用viewport进行移动网站开发'
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+categories:
+- 前端技术
+tags: ['viewport', '移动']
+comments: []
+---
+
+通常对于手机网页来讲最难解决的问题是在不同手机上的显示很难统一的问题。
+即没有办法只设计一个页面来适配所有的手机终端。
+但是设计一个页面适配所有终端的目标对于很多网站开发者来说是很重要的。
+这也是我的项目发起下面的项目的原因。
+
+[mobile-viewport-scale!](https://github.com/calidion/mobile-viewport-scale)
+
+项目旨在解决在不同的屏幕时移动手机端页面的缩放与适配的问题。
+
+这是一个相对比较麻烦的问题。
+在之前我们需要将问题明确了，并最终找出来的解决办法，同时还要做适配的问题。
+
+在阅读本文之前，如果你对于概念不是非常的清楚，可以阅读一下以下有关viewport的文章：
+[viewport1](http://www.quirksmode.org/mobile/viewports.html)
+[viewport2](http://www.quirksmode.org/mobile/viewports2.html)
+
+# 目标
+解决现代的智能手机，包括Android, iOS等手机终端的网页统一展示问题
+
+# 背景知识
+
+要解决这个问题，我们将会遇到以下一些概念：
+
+ - 分辨率(resolution): 一个屏幕的长宽所能显示的最大象素
+ - 像素(pixel): 图形或者显示元素的计量单位
+ - zoom level: 缩放等级
+
+象素相关的显示知识本身也是非常复杂的，对于Web开发者来说，最重要的就是下面两个概念
+
+ - CSS像素: 通过css脚本规定的像素
+ - 设备像素: 移动设备的实际像素
+然后还需要区分他们之间的差别
+
+## 设备像素(屏幕像素)
+  设备像素是屏幕分辨率所对应的像素，实际上就是硬件的像素。
+  在浏览器中可以通过 screen.width/height 获得
+
+## 窗口大小
+  网页在浏览器上显示的大小
+  可以通过window.innerWidth 得到 window.innerHeight.
+  值得注意的是这个大小是包含滚动条的
+
+## 桌面上的viewport
+  html元素理论上与viewport的宽度是一样的
+  viewport的宽度大小理论上是等于窗口的大小的
+  viewport一开始并不是HTML的结构，所以无法通过CSS来影响它
+
+
+## 移动端的两个viewport
+  * layout viewport: 整个页面的viewport
+  * visual viewport: 移动设备的浏览器窗口大小
+
+
+## Zoom Level
+  * 无法直接获得，可以通过公式 screen.width / window.innerWidth 获得
+
+## HTML文档的宽度
+  * document.documentElement.clientWidth
+
+## meta标签中的viewport
+  * 它是对layout viewport也就是对整个页面的大小的控制
+
+
+在本项目中主要使用了UserAgent来切换viewport的大小。
+
+使用方法主要是调用
+模块的setDevice(navigator.userAgent)方法
+这样整个网站就可以自动适配手机的终端大小
+
+[本完尚未完全完成，将会不断的细化相关的知识点]
+

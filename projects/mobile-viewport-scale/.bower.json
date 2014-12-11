@@ -1,0 +1,40 @@
+{
+  "name": "mobile-viewport-scale",
+  "homepage": "https://github.com/calidion/mobile-viewport-scale",
+  "authors": [
+    "calidion@gmail.com"
+  ],
+  "description": "A library for mobile web development, aim to auto scale a web page to fit a mobile device",
+  "main": "index.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "viewport",
+    "scale",
+    "meta",
+    "mobile",
+    "web"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15"
+  },
+  "_release": "fbcafc7e42",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fbcafc7e42d7a6924960457c17b02badb3a7f28a"
+  },
+  "_source": "git://github.com/calidion/mobile-viewport-scale.git",
+  "_target": "*",
+  "_originalSource": "mobile-viewport-scale",
+  "_direct": true
+}

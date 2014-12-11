@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Contact
+title: 关于
 comment: true
 ---
 
@@ -11,12 +11,32 @@ comment: true
         <div class="about-text">
             <p>{{ site.author.simpleIntro }}</p>
             {{ site.author.detailIntro }}
+            <ul>
+                <li>QQ群
+                    <ul>
+                        {%for qq in site.author.qqQun %}
+                        <li>{{qq.name}}: {{qq.no}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="about-image">
             <img src="{{ site.author.imageLink }}" />
         </div>
     </div>
     <div class="fn-clear"></div>
+    <h1>友情链接</h1>
+    <div class="links">
+        {% for i in site.customLinks %}
+        <h4 class="links-category fn-clear">{{ i.message }}</h4>
+        <ul class="links-list fn-clear">
+            {% for link in i.item %}
+            <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
     <div class="social">
         {% for link in site.follow %}
         <a href="{{ link.url }}" target="_blank"><i class="{{ link.class }}"></i></a>
@@ -26,6 +46,7 @@ comment: true
     <div class="contact">
         <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
     </div>
+
     <div class="comment">
         {% if site.disqus.config %}
         <div id="disqus_thread"></div>
