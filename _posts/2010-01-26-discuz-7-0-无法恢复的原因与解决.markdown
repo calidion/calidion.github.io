@@ -22,11 +22,11 @@ tags:
 - Discuz!
 comments: []
 ---
-<p>在ucenter恢复的过程中，使用tools.php恢复会<br />
-出现了&ldquo;数据非 Discuz! 分卷备份格式,无法恢复&rdquo;的提示。<br />
-经过测试发现原因是程序员把位置弄到了。<br />
-解决的办法如下：</p>
-<p>将tools.php文件200行的<br />
-    $volume = $identify[2];<br />
-修改成:<br />
-    $volume = $identify[4];</p>
+在ucenter恢复的过程中，使用tools.php恢复会
+出现了&ldquo;数据非 Discuz! 分卷备份格式,无法恢复&rdquo;的提示。
+经过测试发现原因是程序员把位置弄到了。
+解决的办法如下：
+将tools.php文件200行的
+    $volume = $identify[2];
+修改成:
+    $volume = $identify[4];
