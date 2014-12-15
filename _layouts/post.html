@@ -20,6 +20,17 @@ comment: true
         {% endif %}
     </nav>
     <div class="comment">
+        <div id="old">
+            <h1>原wordpress评论：</h1>
+            <ul>
+            {% for comment in page.comments %}
+            <li>
+                <a href="mailto:{{comment.author_email}}">作者：{{comment.author}}</a><br/>
+                {{comment.content}}:
+            </li>
+            {% endfor %}
+            </ul>
+        </div>
         {% if site.disqus.config %}
         <div id="disqus_thread"></div>
         {% else %}
