@@ -21,7 +21,7 @@ comments: []
 但是设计一个页面适配所有终端的目标对于很多网站开发者来说是很重要的。
 这也是我的项目发起下面的项目的原因。
 
-[mobile-viewport-scale!](https://github.com/calidion/mobile-viewport-scale)
+[mobile-viewport-scale](https://github.com/calidion/mobile-viewport-scale)
 
 项目旨在解决在不同的屏幕时移动手机端页面的缩放与适配的问题。
 
@@ -31,6 +31,9 @@ comments: []
 在阅读本文之前，如果你对于概念不是非常的清楚，可以阅读一下以下有关viewport的文章：
 [viewport1](http://www.quirksmode.org/mobile/viewports.html)
 [viewport2](http://www.quirksmode.org/mobile/viewports2.html)
+
+mozilla 社区的关于viewport的相关文章
+[viewport3](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag?redirectlocale=en-US&redirectslug=Mobile%2FViewport_meta_tag)
 
 # 目标
 解决现代的智能手机，包括Android, iOS等手机终端的网页统一展示问题
@@ -43,11 +46,21 @@ comments: []
  - 像素(pixel): 图形或者显示元素的计量单位
  - zoom level: 缩放等级
 
+
 象素相关的显示知识本身也是非常复杂的，对于Web开发者来说，最重要的就是下面两个概念
 
  - CSS像素: 通过css脚本规定的像素
  - 设备像素: 移动设备的实际像素
-然后还需要区分他们之间的差别
+ - scale: 缩放比例
+ - dpi: 每英尺的物理像素点个数
+
+   对于设备像素与CSS像素的比率ratio根据不同的分辨率与系统有所差别：
+   ratio                    像素密度(density)
+   1.0                          <   200dpi
+   1.5                      大于等于00，小于等于300
+   floor(desity/150dpi)     大于300
+   以上都是在scale为1时的值
+   所以对于我们来说，可以使scale变动来得到ratio的值为1：1
 
 ## 设备像素(屏幕像素)
   设备像素是屏幕分辨率所对应的像素，实际上就是硬件的像素。
@@ -81,8 +94,29 @@ comments: []
 
 在本项目中主要使用了UserAgent来切换viewport的大小。
 
-使用方法主要是调用
-模块的setDevice(navigator.userAgent)方法
+
+综上知识点，我们可以得到我们的基本原理是这样的：
+不同的手机有不同的dpi，不同的dpi在scale为1时，web页面的大小(CSS像素宽或者高)与设备大小(设备像素宽或者高)有不同的ratio
+所以而我们的方式时通过调整scale，将这个ratio保持在1.
+
+虽然我们只谈到了设备与页面的分辨率，但是由于页面的解释是通过浏览器实现的，对于不同的浏览器解释的方式是不同的，所以要保持这个ratio有时跟浏览器也会相关上。
+
+所以这个过程是这样实现的，根据
+1、设备信息得到专有的scale
+2、根据操作系统得到专有的scale
+3、根据浏览器得到专有的scale
+
+得到scale的方式应该是非常多样的，一般来讲按以上的优先级就可以得到正确的ratio。
+
+
+由于项目的发布方式还没有确定，所以以下内容将会随时修改。
+
+项目代码的使用方法：
+
+```javascript
+    [mvs.]setDevice(navigator.userAgent)
+```
+
 这样整个网站就可以自动适配手机的终端大小
 
 [本完尚未完全完成，将会不断的细化相关的知识点]
