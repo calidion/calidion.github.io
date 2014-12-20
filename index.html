@@ -10,7 +10,7 @@ layout: default
         <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> 发布于: </span>
-            <span class="info-date">{{ post.date }}</span>
+            <span class="info-date">{{ post.date | date: "%Y-%m-%d %T"}}</span>
         </div>
     </div>
 {% endfor %}

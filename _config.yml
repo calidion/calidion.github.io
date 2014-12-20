@@ -26,13 +26,13 @@ author:
     detailIntro:
     qqQun:
       - name: 高级前端开发框架群
-        no: 288791858
+        id: 288791858
       - name: Vim用户群
-        no: 40964276
+        id: 40964276
       - name: 互联网架构师群
-        no: 40935408
+        id: 40935408
       - name: PhoneGap移动技术研究群
-        no: 238035953
+        id: 238035953
 
 
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -61,7 +61,7 @@ customLinks:
       url: http://jekyllrb.com
     - text: 校长的博客
       url: http://phped.sinaapp.com/
-    message: 好友
+    message: 友情链接
   - item:
     - text: sailsjs
       url: http://sailsjs.org
@@ -69,7 +69,7 @@ customLinks:
       url: http://www.google.com/fonts/
     - text: jQuery
       url: http://jquery.com/
-    message: 其他相关链接
+    message: 相关资源链接
 
 #googleAnaly, your id link UA-12345678-X
 googleAnaly:
@@ -97,3 +97,6 @@ markdown: kramdown
 kramdown:
   input: GFM
 highlighter: pygments
+
+#Copy Rights
+copyRight: Copyright 2013. 北漂IT民工&trade; All rights reserved.

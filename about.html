@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 关于
+title: About
 comment: true
 ---
 
@@ -15,7 +15,7 @@ comment: true
                 <li>QQ群
                     <ul>
                         {%for qq in site.author.qqQun %}
-                        <li>{{qq.name}}: {{qq.no}}</li>
+                        <li>{{qq.name}}: {{qq.id}}</li>
                         {% endfor %}
                     </ul>
                 </li>
@@ -26,7 +26,6 @@ comment: true
         </div>
     </div>
     <div class="fn-clear"></div>
-    <h1>友情链接</h1>
     <div class="links">
         {% for i in site.customLinks %}
         <h4 class="links-category fn-clear">{{ i.message }}</h4>
