@@ -40,7 +40,7 @@ comments: []
 
 ## 标准与实现的差异
 
-  标准是一个规范，而用户所接触到的是一个实现。标准与实现总是会存在差异的。而有时候这种差异有时候特别大。这个差异主要发生在ie身上。
+  标准是一个规范，而用户所接触到的是一个实现。标准与实现总是会存在差异的。而有时候这种差异特别大。这个差异主要发生在ie身上。
   而最知名的就是盒模型(box model)与事件模型在ie上与标准存在明显的差异。
   盒模型造成的兼容问题，在早期是非常显著的，随着IE对标准的支持越来越好，标准与实现的差异问题有所减少。
   如果从实践开发来说，显然ie的盒模型比w3c的盒模型要方便的多，所以css3之后，盒模型也是一个可选的参数了。
@@ -66,12 +66,12 @@ comments: []
     按w3c标准进行解析
 
   2. 几乎模型模式(almost standard mode)
-    除了在下面的方面表示与怪异模式一样：
+    除了在下面的方面表示与标准模式一样：
     “the height calculations for line boxes and some of the inline elements in them.”
     也就是说在线性块高度的计算时，可能如果有一些inline的元素在的话，可能就会进入几乎标准模式。
-    但是这种标准模式也不是随便进的，具体的如何进，跟你的DTD版本与浏览器有关。
+    但是这种几平标准模式也不是随便进的，具体的如何进，跟你的DTD版本与浏览器有关。
     关于详细的为什么要进入几乎标准模式，参考[quirksmode](http://www.quirksmode.org/css/quirksmode.html)
-    关于什么是标准模式，如何进入，参考[Gecko's Almost Standards Mode](https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode)
+    关于什么是几乎标准模式，如何进入，参考[Gecko's Almost Standards Mode](https://developer.mozilla.org/en-US/docs/Gecko's_Almost_Standards_Mode)
 
   3. 怪异模式(quirks mode)
     实际上是早期的Web页面解释规则，现在的页面应该是避免进入这一个状态。
