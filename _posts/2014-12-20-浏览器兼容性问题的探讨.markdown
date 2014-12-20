@@ -61,7 +61,7 @@ comments: []
   在ie10里，会包括ie9,ie8,ie7的标准模式与部分的几乎标准模式，还会包括ie5怪异模式。
 
   对于大部分的浏览器来说，一般会包含三种渲染模式：
-  
+
   1. 标准模式(standard mode)
     按w3c标准进行解析
 
@@ -78,9 +78,13 @@ comments: []
     同时不同的浏览器的怪异模型的解释方式并不相同。
     当你的页面表现跟你的预期差别很大时，你要检查一下你所开发的网页是不是进入了这种模型。
 
-  而这种根据DOCTYPE切换模式的方式被叫做DOCTYPE switching或者DOCTYPE sniffing。
+  这种根据DOCTYPE切换模式的方式被叫做DOCTYPE switching或者DOCTYPE sniffing。
   由于之前的DOCTYPE种类繁多(XML化的副作用)，到了HTML5之后规定，只需要
-  <!DOCTYPE html>
+
+  ```html
+    <!DOCTYPE html>
+  ```
+
   就可以正常的触发标准模式了，并且对于大部分的浏览器都是适用的。
   这种表达方式一定程度上说明了HTML的XML化的失败。
 
