@@ -628,7 +628,7 @@ a         { color: #91736b; text-decoration: none; }
 }
 
 .main .article .comment {
-    margin: 30px 0 0 0;
+    margin: 0;
 }
 
 .main .article .categories {
@@ -765,4 +765,8 @@ a         { color: #91736b; text-decoration: none; }
     padding-top: 20px;
     height: 80px;
     margin: 0 auto;
+}
+
+#old > p {
+    margin: 0;
 }

@@ -35,7 +35,7 @@
         <div class="head fn-clear">
             <div class="header">
                 <h1 class="logo">
-                    <a href="{{ site.url }}{{ site.baseurl }}"><i class="icon-anchor"></i></a>
+                    <a><i class="icon-anchor"></i></a>
                 </h1>
                 <h2 class="title"><span>{{ site.title}}</span> 的博客</h2>
                 <nav class="nav">
@@ -87,7 +87,44 @@
                             {% endfor %}
                         </ul>
                     </div>
-
+                    <div class="aside-item">
+                        <h4 class="title">最新评论</h4>
+                        <!-- 多说最新评论 start -->
+                        <div class="ds-recent-comments" data-num-items="15" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+                        <!-- 多说最新评论 end -->
+                        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                        <script type="text/javascript">
+                            var duoshuoQuery = {short_name:"3gcnbeta"};
+                            (function() {
+                                var ds = document.createElement('script');
+                                ds.type = 'text/javascript';ds.async = true;
+                                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                                ds.charset = 'UTF-8';
+                                (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                            })();
+                        </script>
+                        <!-- 多说公共JS代码 end -->
+                    </div>
+                    <div class="aside-item">
+                        <h4 class="title">热评文章</h4>
+                        <!-- 多说热评文章 start -->
+                        <div class="ds-top-threads" data-range="monthly" data-num-items="15"></div>
+                        <!-- 多说热评文章 end -->
+                        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+                        <script type="text/javascript">
+                            var duoshuoQuery = {short_name:"3gcnbeta"};
+                            (function() {
+                                var ds = document.createElement('script');
+                                ds.type = 'text/javascript';ds.async = true;
+                                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+                                ds.charset = 'UTF-8';
+                                (document.getElementsByTagName('head')[0]
+                                || document.getElementsByTagName('body')[0]).appendChild(ds);
+                            })();
+                        </script>
+                        <!-- 多说公共JS代码 end -->
+                    </div>
                     <div class="aside-item">
                         <h4 class="title">友情链接</h4>
                         <ul class="list">
