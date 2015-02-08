@@ -33,7 +33,10 @@ author:
         id: 40935408
       - name: PhoneGap移动技术研究群
         id: 238035953
-
+      - name: nodejs/sailsjs开发群
+        id: 423652352
+      - name: 历史，哲学，文化，政治群
+        id: 297499692
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
