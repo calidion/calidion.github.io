@@ -1,0 +1,17 @@
+---
+layout: post
+status: publish
+published: false
+title: ! 'Ubuntu非root安装mysql'
+author:
+  display_name: 北漂IT民工
+author_email: calidion@gmail.com
+categories:
+- 数据库技术
+tags: ['数据库', 'MYSQL', 'root', 'UBUNTU']
+comments: []
+---
+
+对于任何的软件安装，本人都是比较推荐非root权限安装的。
+所以虽然ubuntu的apt包管理机制很方便，但是对于大部分软件，特别是开发软件最好还是通过源码安装，方便修改安装。
+下面
