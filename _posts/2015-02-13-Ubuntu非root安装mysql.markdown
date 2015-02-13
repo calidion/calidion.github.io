@@ -24,12 +24,30 @@ sudo apt-get install cmake libcurses-ocaml-dev
 #得到mysql-server源代码
 apt-get source mysql-server
 
+cd mysql-x.x.xx     #我的是mysql-5.5.41/
+
 #生成makefile，同时需要指定的连接库与库文件头的位置
 #同时指定好安装的位置，个人一般比较喜欢安装在~/local下面。
-cmake  -DCMAKE_INSTALL_PREFIX=~/local/mysql -DCURSES_LIBRARY=/usr/lib/libncurses.so -DCURSES_INCLUDE_PATH=/usr/include
+cmake  -DCMAKE_INSTALL_PREFIX=~/local/mysql -DMYSQL_DATADIR=~/local/mysql/data -DSYSCONFDIR=~/local/mysql/etc -DCURSES_LIBRARY=/usr/lib/libncurses.so -DCURSES_INCLUDE_PATH=/usr/include
 
+#编译代码
 make
 
+#安装
 make install
+
+#进入安装好的MYSQL目录
+cd ~/local/mysql
+
+#复制配置文件
+#选择一个support-files目录下面的配置文件，这里选择medium
+cp support-files/my-medium.cnf etc/my.cnf
+
+#安装MYSQL数据库
+scripts/mysql_install_db --user=$USER --basedir=. --datadir=data --defaults-file=etc/my.cnf
+
+
+
+
 
 ```
