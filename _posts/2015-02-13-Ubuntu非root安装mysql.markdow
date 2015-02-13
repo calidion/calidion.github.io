@@ -2,7 +2,7 @@
 layout: post
 status: publish
 published: false
-title: ! 'Ubuntu非root安装mysql'
+title: ! 'Ubuntu非root安装软件(mysql篇)'
 author:
   display_name: 北漂IT民工
 author_email: calidion@gmail.com
@@ -12,6 +12,23 @@ tags: ['数据库', 'MYSQL', 'root', 'UBUNTU']
 comments: []
 ---
 
-对于任何的软件安装，本人都是比较推荐非root权限安装的。
+对于任何的非系统软件的安装，本人都是比较推荐非root权限安装的。
 所以虽然ubuntu的apt包管理机制很方便，但是对于大部分软件，特别是开发软件最好还是通过源码安装，方便修改安装。
-下面
+下面是在Ubuntu下面非root安装mysql-server的步骤：
+
+```bash
+
+#保证必要的库文件包
+sudo apt-get install cmake libcurses-ocaml-dev
+
+#得到mysql-server源代码
+apt-get source mysql-server
+
+#生成makefile，同时需要指定的连接库与库文件头的位置
+#同时指定好安装的位置，个人一般比较喜欢安装在~/local下面。
+
+cmake  -DCMAKE_INSTALL_PREFIX=~/local/mysql -DCURSES_LIBRARY=/usr/lib/libncurses.so -DCURSES_INCLUDE_PATH=/usr/include
+
+make
+make install
+```
