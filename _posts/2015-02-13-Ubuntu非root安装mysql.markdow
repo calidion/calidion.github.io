@@ -1,7 +1,7 @@
 ---
 layout: post
 status: publish
-published: false
+published: true
 title: ! 'Ubuntu非root安装软件(mysql篇)'
 author:
   display_name: 北漂IT民工
