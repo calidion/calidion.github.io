@@ -19,7 +19,7 @@ comments: []
 
 ```bash
 #保证必要的库文件包
-sudo apt-get install cmake libcurses-ocaml-dev
+sudo apt-get install cmake libncurses5-dev
 
 #得到mysql-server源代码
 apt-get source mysql-server
@@ -29,6 +29,10 @@ cd mysql-x.x.xx     #我的是mysql-5.5.41/
 #生成makefile，同时需要指定的连接库与库文件头的位置
 #同时指定好安装的位置，个人一般比较喜欢安装在~/local下面。
 cmake  -DCMAKE_INSTALL_PREFIX=~/local/mysql -DMYSQL_DATADIR=~/local/mysql/data -DSYSCONFDIR=~/local/mysql/etc -DCURSES_LIBRARY=/usr/lib/libncurses.so -DCURSES_INCLUDE_PATH=/usr/include
+
+#或者，要明确好curses的位置
+
+cmake  -DCMAKE_INSTALL_PREFIX=~/local/mysql -DMYSQL_DATADIR=~/local/mysql/data -DSYSCONFDIR=~/local/mysql/etc -DCURSES_INCLUDE_PATH=/usr/include -DCURSES_LIBRARY=/usr/lib/x86_64-linux-gnu/libncurses.so
 
 #编译代码
 make
@@ -41,13 +45,20 @@ cd ~/local/mysql
 
 #复制配置文件
 #选择一个support-files目录下面的配置文件，这里选择medium
+#这里要注册清空其它地方的my.cnf文件，比如根目录下的etc/my.cnf
 cp support-files/my-medium.cnf etc/my.cnf
 
 #安装MYSQL数据库
-scripts/mysql_install_db --user=$USER --basedir=. --datadir=data --defaults-file=etc/my.cnf
+scripts/mysql_install_db --user=$USER --basedir=. --datadir=data --no-defaults 
 
+#启动mysql
+bin/mysqld_safe &
 
+#登录mysql
+mysql -uroot
 
-
+#如果需要修改密码
+bin/mysqladmin -u root password 'newpassword'
 
 ```
+安照上面的步骤这样mysql就安装完成了
