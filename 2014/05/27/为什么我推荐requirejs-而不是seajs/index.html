@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>为什么我推荐requirejs 而不是seajs? | 北漂IT民工</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、AMD比CMD更符合前端开发，为了实现所谓的CMD，在非node环境中增加exports变量，是一种不必要的负担。
+2、前端的模块化更关注的应该是模块化开发，自动发布，自动打包，自动压缩，而不是关注模块的加载。
+  并且将多个模块打包成一个文件的性能比加载多个小文件的性能本身要好很多。
+  原理同CSS Sprites。
+  requirejs 虽然是提前加载，但是打包压缩后一般都只会有一个文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么我推荐requirejs 而不是seajs?">
+<meta property="og:url" content="http://blog.3gcnbeta.com/2014/05/27/为什么我推荐requirejs-而不是seajs/index.html">
+<meta property="og:site_name" content="北漂IT民工">
+<meta property="og:description" content="1、AMD比CMD更符合前端开发，为了实现所谓的CMD，在非node环境中增加exports变量，是一种不必要的负担。
+2、前端的模块化更关注的应该是模块化开发，自动发布，自动打包，自动压缩，而不是关注模块的加载。
+  并且将多个模块打包成一个文件的性能比加载多个小文件的性能本身要好很多。
+  原理同CSS Sprites。
+  requirejs 虽然是提前加载，但是打包压缩后一般都只会有一个文">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495031/1_seooga.jpg">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495029/2_kenyx5.jpg">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495035/3_qoadx0.jpg">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495038/4_slcnh2.jpg">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495042/5_n2ip7e.jpg">
+<meta property="og:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495059/6_zsdaqf.jpg">
+<meta property="og:updated_time" content="2016-02-02T00:48:54.255Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为什么我推荐requirejs 而不是seajs?">
+<meta name="twitter:description" content="1、AMD比CMD更符合前端开发，为了实现所谓的CMD，在非node环境中增加exports变量，是一种不必要的负担。
+2、前端的模块化更关注的应该是模块化开发，自动发布，自动打包，自动压缩，而不是关注模块的加载。
+  并且将多个模块打包成一个文件的性能比加载多个小文件的性能本身要好很多。
+  原理同CSS Sprites。
+  requirejs 虽然是提前加载，但是打包压缩后一般都只会有一个文">
+<meta name="twitter:image" content="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495031/1_seooga.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="北漂IT民工" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+  <link rel="stylesheet" href="//imk2.qiniudn.com/css/prettify.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+          <li><a class=""
+                 href="/index.html">Home</a></li>
+        
+          <li><a class=""
+                 href="/archives/">Archives</a></li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-9 blog-main">
+          <div class="blog-header">
+  <h1 class="blog-title">北漂IT民工 <span>的博客</span></h1>
+  <!-- 
+    <p class="lead blog-description">的博客</p>
+   -->
+</div>
+
+          <article id="post-为什么我推荐requirejs-而不是seajs" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h1 class="article-title" itemprop="name">
+      为什么我推荐requirejs 而不是seajs?
+    </h1>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2014/05/27/为什么我推荐requirejs-而不是seajs/" class="article-date"><time datetime="2014-05-26T16:00:00.000Z" itemprop="datePublished">2014-05-27</time></a>
+</div>
+
+      
+        <div class="article-author">
+          北漂IT民工
+        </div>
+        
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/其它/">其它</a> / <a class="article-category-link" href="/categories/其它/WEB开发/">WEB开发</a> / <a class="article-category-link" href="/categories/其它/WEB开发/WEB前端技术/">WEB前端技术</a> / <a class="article-category-link" href="/categories/其它/WEB开发/WEB前端技术/Javascript/">Javascript</a>
+  </div>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+                <p>1、AMD比CMD更符合前端开发，为了实现所谓的CMD，在非node环境中增加exports变量，是一种不必要的负担。</p>
+<p>2、前端的模块化更关注的应该是模块化开发，自动发布，自动打包，自动压缩，而不是关注模块的加载。</p>
+<p>  并且将多个模块打包成一个文件的性能比加载多个小文件的性能本身要好很多。</p>
+<p>  原理同CSS Sprites。</p>
+<p>  requirejs 虽然是提前加载，但是打包压缩后一般都只会有一个文件，即使淘宝这样的大站，也完全可以将javascript合并成少数几个大的文件，这样引入后互不影响各自的执行。</p>
+<p>  如果说等到执行了再加载，显然是一种很可笑的方式。为了执行一个小动作，让用户再等你加载半天，这不是搞笑吗？</p>
+<p>  这种思维本身就不太符合前端模块化的意义。</p>
+<p>3、根据2的分析，我们可以这样认为：前端模块化实际上是在开发与调试的过程是最重要的。seajs将模块化与动态加载放在生产环境，显然不是太实际的做法。jQuery如果不打包，他本身的模块就有几十个。难道每个都动态加载吗？</p>
+<p>个人认为seajs作者对javascript的模块化的理解也是有限制的。所以才会将CMD当成是前端的一个模块化标准。前端代码的模块化与后端代码的模块化的意义是完全不同的。</p>
+<p>前端代码是运行于浏览器端的，每次执行都需要更新，探测原文的状态，而后端代码是常驻内存的。不需要探测，并且nodejs的代码是只加载一次的，不管模块化用了多少文件，他都会在执行时加载进来，并且常驻内存。所以在前端引入CMD是一种搞笑的做法。</p>
+<p>4、环境的支持</p>
+<p>requirejs跟很多js的相关环境有着很好的配合，无论是nodejs, grunt, yeoman， bower, uglify, 都对requirejs有很好的支持,</p>
+<p>seajs虽然也在支持grunt，但是由于很多东西自己搞了一套，浪费时间，重造轮子，测试不充分，不保证一定是方便或者高效的。 特别是打包后的问题非常多。这说明成熟度也不及requirejs.</p>
+<p>5、requirejs + grunt对于javascript source map有很好的支持。而seajs因为无力维护暂时已经去除这个功能了。而javascript 的source map是HTML5的一个最新的功能特征。</p>
+<p>6、seajs的推广方式让人恶心，一个出了中国就没有人用的东西，鼓吹自己有多好，中国的软件思维连国外的零头都没有，就学会了吹牛，这种风气不可取。</p>
+<p>除了一些主观的因素，无论从成熟度与应用的广度来说，seajs都不如requirejs，建议使requirejs保持与世界的连接。</p>
+<p>PS:最近跟阿里的seajs开发人员展开了争论，发现不但他们没有理解工程化是什么意思。</p>
+<p>还发了加载100个代表的测试。</p>
+<p>结果由于网络问题，速度反而低于requirejs，直接给自己打脸。</p>
+<p>纯属笑果特别好的事情。</p>
+<p>随后删除我反对他们的观念的帖子。</p>
+<p>下面我将他们还没有删除的内容复制过来防止被删除而丢失。</p>
+<p>1、</p>
+<p>@houchengli 你的理解是对的。</p>
+<p>作者对于AMD的价值都没有领会，还搞什么按需加载。</p>
+<p>显然是一种错误的前端开发的理念。</p>
+<p>真不知道为什么有人开发了这么多软件，反而不能理解现实。</p>
+<p>我只能呵呵这种按需要加载的可笑想法。</p>
+<p>我写了点对比，被你们团队说成是眼界不够。呵呵。</p>
+<p>眼界如果没有对应的理念与基础做支撑，那么看的再多，也只能是阿斗，做不了诸葛亮未出茅庐而知天下三分。</p>
+<p><a href="http://www.3gcnbeta.com/wordpress/2014/05/27/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%8E%A8%E8%8D%90requirejs-%E8%80%8C%E4%B8%8D%E6%98%AFseajs/" target="_blank" rel="external">http://www.3gcnbeta.com/wordpress/2014/05/27/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E6%8E%A8%E8%8D%90requirejs-%E8%80%8C%E4%B8%8D%E6%98%AFseajs/</a></p>
+<p>留言的那位对ES6很推崇，但是他忽略了现实。</p>
+<p>不是上了标准的东西就一定是好的东西。</p>
+<p>学会独立思考结合实际应用的便利性与人性才是一个技术产品的核心。</p>
+<p>HTML标准也好，CSS的标准也好，JS的标准也好，没有一次是将问题全部解决的。有些还引入新的问题。所以对标准的盲目崇拜是可笑的。混淆前后端的差异也是可笑的。一个全端程序员不是在于他能混淆前后端开发，而是在于他能清楚的区分前后端的开发。</p>
+<p>2、</p>
+<p>seajs只要满足你们自己的需求，你们发布，推广。</p>
+<p>我没有意见。</p>
+<p>但是希望不要扩展到AMD就不行了这种言论。</p>
+<p>技术好不好并不能决定技术的寿命，市场需求才是。</p>
+<p>AMD不一定最终笑到最后， CMD就能笑到最后？</p>
+<p>关于我的观点已经在我的博客里说的很清楚了。</p>
+<p>前端代码即使复杂也不过一个页面，你总不能放个几百M的js上去吧。</p>
+<p>能复杂到那里去？</p>
+<p>任何页面将一个页面的代码从分离的小文件打包成1个或者几个文件就足够了。</p>
+<p>并且AMD能让用户在看到内容后的空闲时间里加载js脚本。</p>
+<p>再加上服务器缓存与文件数的减少，不但前端压力减少，后端压力也明显的减少。</p>
+<p>所以希望你能给出除了运行时加载外的其它理由。至少从淘宝的主页来看，实践了很差的js加载。</p>
+<p>要是都象淘宝网首页那样动不动出来几十个这种js脚本的话。</p>
+<p><a href="http://p.tanx.com/ex?i=mm_12852562_1778064_13670999" target="_blank" rel="external">http://p.tanx.com/ex?i=mm_12852562_1778064_13670999</a></p>
+<p>确实还是需要运行时动态加载的。</p>
+<p>我真不知道为什么有ajax了，还这么需要javascript的运行时加载？</p>
+<p>即使是跨域，老外都给你弄好了jsonp了或者socket.io了。</p>
+<p>我想说服别人很简单，摆事实，讲道理。</p>
+<p>如果你能将seajs的场景说的很清楚，并且通过数据说明seajs确实比requirejs强很多。那么没有人会反对你的意见。</p>
+<p>最怕就是数据不充分，理由不充足，结论出来了。</p>
+<p>至少目前来看requirejs + grunt + source map我认为已经很好的解决了依赖，性能，调试，工程化的问题。</p>
+<p>对于ES6来说，没有任何迹象表明 AMD有什么问题。</p>
+<p>反而看到ES6后，你会觉得AMD多么干净可爱.</p>
+<p>技术不只是要可用，还要好用，性感。（当然这是主观的看法）</p>
+<p>这才是prototypejs与jQuery比落败的原因。</p>
+<p>你们也想想seajs有没有这种特点呢？</p>
+<p>我觉得你们写的一堆东西，自己用就行了。千万不要乱推广。</p>
+<p>国内历史上推广过很多错误或者理念错误的东西：</p>
+<p>比如DIV+CSS，</p>
+<p>比如RIA VS HTML5，</p>
+<p>比如自由软件就是免费软件</p>
+<p>我不否认你们的工作，但是希望不要忘记技术本源来自于国外，更不要拿错误的理解来当成是正确的。</p>
+<p>相比于国内，我相信国外的技术理念更先进。谢谢。</p>
+<p>3、</p>
+<p>看好国外的技术跟不用汉字是如何联系到一起的？</p>
+<p>这种逻辑水平难怪做的seajs这么坑。</p>
+<p>这也难怪开发了这么多前端应用，还理解不了前端工程化应该如何做。</p>
+<p>表面上是提供很多东西，实际上是将人引导到错误的方向。</p>
+<p>就象中国的地沟油，表面上是油，实际上是毒。</p>
+<p>有时候不做比做好。</p>
+<p>4、(已被删除，回忆补写）</p>
+<p><del>测试结果打脸，刚好说明异步加载很多js是脑残行为。 假设requirejs只会写一个茴字，seajs最多是会写四个茴字，没有任何意义。</del></p>
+<p></p>
+<p>5、</p>
+<p>发个测试，结果深度打脸，两个人测试的结果都是requirejs快。</p>
+<p>本周最佳笑点。</p>
+<p>6、</p>
+<p>@fundon 核心缺点在博客里已经点出来了。对js所谓的懒加载是我认为的愚蠢加载。 js作为功能的基础设施，首先在每个页面就应该控制他的大小，如果代码多到需要大量所谓的懒加载，一定是写的有问题。从淘宝的页面来看，不少地方写的挺烂的。你去看google的网站，大部分的页面的js都是100K左右的。而淘宝基本都是10几K，几十K。打个包会死人吗？明显浪费互联网资源。</p>
+<p>seajs从理念上看是一种非常糟糕的实践，说多了，会气死一批人。就到此为止。</p>
+<p>走上追求加载一堆js这条邪路是很危险的。</p>
+<p>7、</p>
+<p>@xufei 我说的当然也不限于一个小团队。其实没有必要一方面强调说一个系统不处于一个团队的掌握中，无法打包。难道一个页面不是多个团队或者个人协作共同完成的？ 强调团队不同，无法合作的说法本身就是不成立的。任何规则既然需要考虑团队合作，就应该是能让合作进行的。一方面强调协作困难，一方面又说是一个整体协作的结果，相互矛盾。所以js本质上不存在什么团队分散导致的无法整合问题。如果真的连加载什么如何加载都搞不清楚，那么用了seajs一样是搞不清楚的。</p>
+<p>技术产品的发布一定会有一个总控，并且所有的时候都是以多团队合作作为考虑的基本点的。</p>
+<p>js团队间的合作本身就是比其它的语言方便很多。象我们经常引用jQuery一样，连是什么团队都无需知道。只要这个js设计的合理，管他是谁写的。又怎么可能存在团队的问题？</p>
+<p>动态加载有其好处，但是绝对不是一个必须品。</p>
+<p>关于延时功能，本身意义就不大。</p>
+<p>首先任何javascript脚本都可以通过创建script节点实现动态的加载，跟有没有seajs没有关系。。</p>
+<p>其次就是这种动态加载没有太多意义。一方面无法静态化，一方面增加了交互时延时，还有一方面就是无法享用用户闲时的时间进行加载。特别是当这种加载很多时，还要消耗更多的执行栈，更多的内存，影响性能。</p>
+<p>我说打包意义大，可没说打包后不能再做模块加载。有些人的脑力有限，我就只能呵呵了。自己智商低，不要以为别人的智商跟你一样低。</p>
+<p>对于这种满口只会喷屎的人，我就不想多说了。</p>
+<p>套用李大师的话： 对于一个臭鸡蛋，我不需要吃完再下结论。</p>
+<p>8、</p>
+<p>@lifesinger 我觉得这些话送给你们的团队的人更加合适。如果这个seajs是我写的，我听到这些，估计我会更加开心。因为我的东西可以有更多的改进了。seajs这个项目本身是有意义的，但是当你们否认国外先进的理念时，你们的项目就可能成为地沟油项目。自大不自大我觉得我们自己各自清楚。</p>
+<p>js的模块化，工程化在前端还有很多需要完善的，而你们却没有发现，重复造轮子，可见先见性不足。</p>
+<p>我到建议有时间将前端工程化，多模块自动压缩，多页面自动打包发布这块整整，比seajs这种东西有价值多了。避免重复制做轮子，还解决了新的问题。</p>
+<p>特别是基于bower这类包管理机制增强自动打包功能。</p>
+<p>并且至少目前国外还没有人搞出来。</p>
+<p>(yeoman的思路有点跟我说的类似，但是功能还没有强大到我所说的那样）</p>
+<p>跟在别人屁股后面，然后想推翻别人有什么意思？</p>
+<p>9、</p>
+<p>对于spm3，我是不了解的。</p>
+<p>但是browserify之类的还是打包为主。</p>
+<p>并且browserify是将后端的代码前端化，个人不认为这个对前端开发有太多价值。</p>
+<p>我认为前端还是一个独立的体系。不要跟后端混合在一起。</p>
+<p>即使象socket.io这样一开始混合的很紧密的，现在也慢慢分离开了。</p>
+<p>前后合并的思维估计不会走太长久的路。</p>
+<p>我再重申一次，全端工程师不是将两端混起来，而是对将两端的事情很好的区分开。</p>
+<p>还有，我想说要弄好这些事情，并且是社区化的，最好直接对接现有的东西。</p>
+<p>用Unix的哲学来说就是：KISS</p>
+<p>我觉得打包的理念大家都已经很清楚了，也没有必要再说了。</p>
+<p>不管是browserify还是其它的，还是require,js seajs的打包。</p>
+<p>我不想多讲。</p>
+<p>我想说的主要是打包后的文件的发布与管理问题。</p>
+<p>一个是开发环境下文件模块化管理，另一个打包后的待发布文件的模块化管理。</p>
+<p>包括对HTML， CSS的整合。</p>
+<p>比如HTML前端模板调用机制，原来HTML都是后端的模板，那么如果要将模板都放到前端发布，又将是一个什么样的情况呢？</p>
+<p>将mustache, handlersbar之类整合进来，</p>
+<p>然后包括Sass, Less的整合。</p>
+<p>再加上js的模块化。</p>
+<p>这样再自动将这些东西拼装起来，</p>
+<p>然后再结合服务器自动发布出去。</p>
+<p>这样即能保证开发测试时，整套方案是通的，又能保证上线后整套方案也是通的。</p>
+<p>如果这样整套的东西出来，那么不管是大公司，小公司都可以受益很多。</p>
+<p>然后还可以再在这之上建设相关的运维机制，整合AWS, 阿里云之类的静态服务器，然后CDN功能。</p>
+<p>这样一个PAAS性质的前端开发框架就出来了。</p>
+<p>这种东西目前还没有看到那家公司在做或者已经发布出来。</p>
+<p>做这种东西最重要的是理念与技术，一个合理可行的理念，加一个合理的技术组织架构。</p>
+<p>文档当然是很重要的。</p>
+<p>如果你做一个东西别人不需要，又没有文档，显然不会有人用，</p>
+<p>但是你做的东西是希缺的，又是很有价值的，即使没有文档，也会有人愿意试用。</p>
+<p>重复造轮子没有必要。解决现在存在的问题然后不断的提升，比重复造轮子有价值。</p>
+<p>10、</p>
+<p>如果spm3只是学bower之类的，完全没有必要弄。</p>
+<p>如果spm3基于bower之上，做了更多完善的工作，那么意义还是有的。比如做更好的yeoman。</p>
+<p>yeoman 还刚起步，还是有机会做的比yeoman更好的。</p>
+<p>另起炉灶再弄个bower，完全没有必要。</p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495031/1_seooga.jpg" alt=""></p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495029/2_kenyx5.jpg" alt=""></p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495035/3_qoadx0.jpg" alt=""></p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495038/4_slcnh2.jpg" alt=""></p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495042/5_n2ip7e.jpg" alt=""></p>
+<p><img src="http://res.cloudinary.com/dawjytvkn/image/upload/v1402495059/6_zsdaqf.jpg" alt=""></p>
+
+                  
+    </div>
+
+    
+      
+
+        
+
+          <footer class="article-footer">
+            <a data-url="http://blog.3gcnbeta.com/2014/05/27/为什么我推荐requirejs-而不是seajs/" data-id="cim9m47ut01e8p982rcnvpjqo" class="article-share-link">
+              <i class="fa fa-share"></i> 分享
+            </a>
+            
+                
+
+          </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2014/03/18/ubuntu-手动添加eclipse菜单与13-10-14-04-升级后eclipse菜单消失的解决办/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">ubuntu 手动添加eclipse菜单与13.10 / 14.04 升级后eclipse菜单消失的解决办法</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2014/06/02/socket-io-1-0介绍/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">socket.io 1.0介绍</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+      
+</article>
+
+
+    <section class="comment">
+      <div class="ds-thread"></div>
+    </section>
+
+
+        </div>
+        <div class="col-sm-3 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4 class="title">
+    关于
+  </h4>
+  <div class="profile">
+    <div class="image">
+      <img src="http://tp4.sinaimg.cn/2344087443/180/5622386331/1">
+    </div>
+    <div class="text">
+      <p>
+        关注IT技术的新闻，技术，感悟，交流，分享。
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <!--
+
+  <div class="sidebar-module">
+    <h4>分类</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/3G资讯/">3G资讯</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Android/">Android</a><span class="sidebar-module-list-count">3</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Android/手机软件发布/">手机软件发布</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Android/民工翻译/">民工翻译</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Android/民工翻译/iPhone/">iPhone</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/CSS技术/">CSS技术</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/CSS技术/HTML/">HTML</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/CSS技术/HTML/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/">HTML</a><span class="sidebar-module-list-count">3</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/WEB开发/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/WEB开发/WEB前端技术/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/民工翻译/">民工翻译</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/HTML/民工翻译/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Javascript/">Javascript</a><span class="sidebar-module-list-count">20</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Linux/">Linux</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Mysql/">Mysql</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Python/">Python</a><span class="sidebar-module-list-count">8</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Python/Server-Push/">Server Push</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Python/WEB前沿/">WEB前沿</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Python/WEB前沿/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Python/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Shell/">Shell</a><span class="sidebar-module-list-count">7</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Shell/Linux/">Linux</a><span class="sidebar-module-list-count">3</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/">Ubuntu</a><span class="sidebar-module-list-count">64</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/Thinkpad/">Thinkpad</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/vim/">vim</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/新闻/">新闻</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/编程技术/">编程技术</a><span class="sidebar-module-list-count">2</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/Ubuntu/编程技术/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB前沿/">WEB前沿</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB前端技术/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB应用/">WEB应用</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">25</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB开发/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">2</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB开发/WEB前端技术/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/">WEB服务器技术</a><span class="sidebar-module-list-count">17</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/Python/">Python</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/WEB前端技术/WEB应用/">WEB应用</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/drupal/">drupal</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/nodejs/">nodejs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/php/">php</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/民工翻译/">民工翻译</a><span class="sidebar-module-list-count">4</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/民工翻译/noSQL/">noSQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/WEB服务器技术/民工翻译/php/">php</a><span class="sidebar-module-list-count">2</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/drupal/">drupal</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/drupal/php/">php</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/eclipse/">eclipse</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/nginx/">nginx</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/php/">php</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/wordpress/">wordpress</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/其它/">其它</a><span class="sidebar-module-list-count">11</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/其它/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/其它/WEB开发/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/其它/WEB开发/WEB前端技术/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/前端技术/">前端技术</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/操作系统/">操作系统</a><span class="sidebar-module-list-count">9</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/操作系统/Linux/">Linux</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/操作系统/新闻/">新闻</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/操作系统/新闻/民工观点/">民工观点</a><span class="sidebar-module-list-count">1</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/操作系统/新闻/民工观点/Linux/">Linux</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/数据库技术/">数据库技术</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/新闻/">新闻</a><span class="sidebar-module-list-count">156</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/新闻/3G资讯/">3G资讯</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/新闻/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/新闻/移动开发技术/">移动开发技术</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/新闻/编程技术/">编程技术</a><span class="sidebar-module-list-count">3</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/杂谈/">杂谈</a><span class="sidebar-module-list-count">13</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/杂谈/民工观点/">民工观点</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/杂谈/编程技术/">编程技术</a><span class="sidebar-module-list-count">3</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/民工翻译/">民工翻译</a><span class="sidebar-module-list-count">4</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/民工翻译/Javascript/">Javascript</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/民工观点/">民工观点</a><span class="sidebar-module-list-count">6</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/民工观点/架构/">架构</a><span class="sidebar-module-list-count">1</span></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/游戏/">游戏</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/移动开发技术/">移动开发技术</a><span class="sidebar-module-list-count">2</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/移动开发技术/Android/">Android</a><span class="sidebar-module-list-count">2</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/移动开发技术/Android/Cordova-PhoneGap/">Cordova/PhoneGap</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/">编程技术</a><span class="sidebar-module-list-count">28</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/Python/">Python</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/WEB开发/">WEB开发</a><span class="sidebar-module-list-count">5</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/WEB开发/WEB前端技术/">WEB前端技术</a><span class="sidebar-module-list-count">2</span><ul class="sidebar-module-list-child"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/WEB开发/WEB前端技术/Javascript/">Javascript</a><span class="sidebar-module-list-count">2</span></li></ul></li></ul></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/categories/编程技术/移动开发技术/">移动开发技术</a><span class="sidebar-module-list-count">1</span></li></ul></li></ul>
+  </div>
+
+-->
+
+
+  <!--
+
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/10-04/">10.04</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/3D/">3D</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/APP/">APP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/AT-amp-T/">AT&amp;T</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/AdMob/">AdMob</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Android/">Android</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Apple/">Apple</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Baidu/">Baidu</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Blog/">Blog</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Blubuntu/">Blubuntu</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CMNET/">CMNET</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CMWAP/">CMWAP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/CSS/">CSS</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/China/">China</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Chrome/">Chrome</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Comet/">Comet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DOCTYPE/">DOCTYPE</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Debian/">Debian</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Deepin/">Deepin</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Discuz/">Discuz!</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Drupal/">Drupal</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/E-ink/">E-ink</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Eclipse/">Eclipse</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Elixir/">Elixir</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Emacs/">Emacs</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/FTP/">FTP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/FileZilla/">FileZilla</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Flash/">Flash</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/FlashGet/">FlashGet</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GAE/">GAE</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GB2312/">GB2312</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GBK/">GBK</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDirections/">GDirections</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Geo/">Geo</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gnome/">Gnome</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Google/">Google</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Google-App-Engine/">Google App Engine</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Google-Map-API/">Google Map API</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Google-Maps/">Google Maps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Google-Maps-API/">Google Maps API</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Goolge-Maps-API/">Goolge Maps API</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Grub/">Grub</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Grub2/">Grub2</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gvim/">Gvim</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/H-264/">H.264</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTC/">HTC</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML/">HTML</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTML5/">HTML5</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/HTTP/">HTTP</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Hackintosh/">Hackintosh</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/IE6/">IE6</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/IE7/">IE7</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/IP/">IP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/IT民工/">IT民工</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LTS/">LTS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/LePhone/">LePhone</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Linux/">Linux</a><span class="sidebar-module-list-count">17</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MBR/">MBR</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MIME/">MIME</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MYSQL/">MYSQL</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mac/">Mac</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mac-OS/">Mac OS</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Msyql/">Msyql</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Mysql/">Mysql</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Netbeans/">Netbeans</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Nokia/">Nokia</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/N连跳/">N连跳</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/OPPO/">OPPO</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Opera/">Opera</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Ophone/">Ophone</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PDF/">PDF</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PHONEGAP/">PHONEGAP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PHP/">PHP</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/PHP扩展/">PHP扩展</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Patterns/">Patterns</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/QQ/">QQ</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/RFC/">RFC</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/RIA/">RIA</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/RIM/">RIM</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/SN/">SN</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Safari/">Safari</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Server-Push/">Server Push</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Smoke/">Smoke</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Subersion/">Subersion</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Symbian/">Symbian</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/T43/">T43</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/T61/">T61</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/TD/">TD</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/TD-LTE/">TD-LTE</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Thinkpad/">Thinkpad</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Timer/">Timer</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/TrackPoint/">TrackPoint</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UBUNTU/">UBUNTU</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/UML/">UML</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Ubuntu/">Ubuntu</a><span class="sidebar-module-list-count">41</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Ubuntu-10-04-python2-5/">Ubuntu 10.04 python2.5</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VMWare/">VMWare</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VPN/">VPN</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/VPS/">VPS</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Vim/">Vim</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Virtual-Box/">Virtual Box</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/W3C/">W3C</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web标准/">Web标准</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Win7/">Win7</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Windows/">Windows</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Woredpress/">Woredpress</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/XHTML/">XHTML</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/XML/">XML</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/XP/">XP</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ajax/">ajax</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/canvas/">canvas</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/captcha/">captcha</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/code/">code</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/darwin/">darwin</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/deb/">deb</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/deb包/">deb包</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/docs/">docs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/dosbox/">dosbox</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/epoll/">epoll</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/fcitx/">fcitx</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/firebug/">firebug</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/firefox/">firefox</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/framebuffer/">framebuffer</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/gaphor/">gaphor</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/gedit/">gedit</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/gtfp/">gtfp</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/https/">https</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iDroid/">iDroid</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iPad/">iPad</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iPhone/">iPhone</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iTunes/">iTunes</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ide/">ide</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ideneb/">ideneb</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/inline-block/">inline-block</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/iso/">iso</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jQuery-Mobile/">jQuery Mobile</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/javascript/">javascript</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/jinja2/">jinja2</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/kill/">kill</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/kof/">kof</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/linux/">linux</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/meld/">meld</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/midi/">midi</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/nginx/">nginx</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/node/">node</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/nodejs/">nodejs</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/nvm/">nvm</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/plugin/">plugin</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ptyhon/">ptyhon</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/python/">python</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/pytz/">pytz</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/redsn0w/">redsn0w</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/root/">root</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/shell/">shell</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/sql/">sql</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/sqlite/">sqlite</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ssh/">ssh</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/stardict/">stardict</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/static/">static</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/subversion/">subversion</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/svn/">svn</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/tornado/">tornado</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/trim/">trim</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/viewport/">viewport</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/wordpress/">wordpress</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/zhcon/">zhcon</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/三国志/">三国志</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/中国/">中国</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/中国移动/">中国移动</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/中文/">中文</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/乐Phone/">乐Phone</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/乔布斯/">乔布斯</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/乱码/">乱码</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/事件/">事件</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/优化/">优化</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/函数/">函数</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/前端/">前端</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/双系统/">双系统</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/史记/">史记</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/同步/">同步</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/后端/">后端</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/命令/">命令</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/地图/">地图</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/地址解析/">地址解析</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/声音/">声音</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/多媒体/">多媒体</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/多线程/">多线程</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/多进程/">多进程</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/字体/">字体</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/定时器/">定时器</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/富士康/">富士康</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/对框/">对框</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/对齐/">对齐</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/小红点/">小红点</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/属性/">属性</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/山寨/">山寨</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/平板电脑/">平板电脑</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/异步/">异步</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/微软/">微软</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/快捷键/">快捷键</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/戴尔/">戴尔</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/投影/">投影</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/折叠/">折叠</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/拳皇/">拳皇</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/按钮/">按钮</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/排序/">排序</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/控件/">控件</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/摄象头/">摄象头</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/数据库/">数据库</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/本地化/">本地化</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/李彦宏/">李彦宏</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/架构/">架构</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/标准化/">标准化</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/格式化/">格式化</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/框架/">框架</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/桌面/">桌面</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/梁父吟/">梁父吟</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/植物大战僵尸/">植物大战僵尸</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/模式/">模式</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/正则/">正则</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/汉武帝/">汉武帝</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/浏览器/">浏览器</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/状态码/">状态码</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/王立群/">王立群</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/电子墨水/">电子墨水</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/白送/">白送</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/百度/">百度</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/移动/">移动</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/缓存/">缓存</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/编码/">编码</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/缩进/">缩进</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/网卡/">网卡</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/美化/">美化</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/联发科/">联发科</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/联想/">联想</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/联通/">联通</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/脚本/">脚本</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/自动提示/">自动提示</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/苹果/">苹果</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/菜单/">菜单</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/虚拟机/">虚拟机</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/蚁族/">蚁族</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/被黑/">被黑</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/诸葛亮/">诸葛亮</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/谷歌/">谷歌</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/账号/">账号</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/输入法/">输入法</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/过渡性/">过渡性</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/透明/">透明</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/遍历/">遍历</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/重装/">重装</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/闭包/">闭包</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/阻塞/">阻塞</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/隆中对/">隆中对</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/需求/">需求</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/非阻塞/">非阻塞</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/面试/">面试</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/飞信/">飞信</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/驱动/">驱动</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/高分/">高分</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/黑莓/">黑莓</a><span class="sidebar-module-list-count">1</span></li></ul>
+  </div>
+
+-->
+
+
+  <!--
+
+  <div class="sidebar-module">
+    <h4>标签云</h4>
+    <p class="tagcloud">
+      <a href="/tags/10-04/" style="font-size: 13.08px;">10.04</a> <a href="/tags/3D/" style="font-size: 10px;">3D</a> <a href="/tags/APP/" style="font-size: 10px;">APP</a> <a href="/tags/AT-amp-T/" style="font-size: 10px;">AT&amp;T</a> <a href="/tags/AdMob/" style="font-size: 10px;">AdMob</a> <a href="/tags/Android/" style="font-size: 18.46px;">Android</a> <a href="/tags/Apple/" style="font-size: 10.77px;">Apple</a> <a href="/tags/Baidu/" style="font-size: 10px;">Baidu</a> <a href="/tags/Blog/" style="font-size: 10px;">Blog</a> <a href="/tags/Blubuntu/" style="font-size: 10px;">Blubuntu</a> <a href="/tags/CMNET/" style="font-size: 10px;">CMNET</a> <a href="/tags/CMWAP/" style="font-size: 10px;">CMWAP</a> <a href="/tags/CSS/" style="font-size: 11.54px;">CSS</a> <a href="/tags/China/" style="font-size: 10px;">China</a> <a href="/tags/Chrome/" style="font-size: 13.85px;">Chrome</a> <a href="/tags/Comet/" style="font-size: 10px;">Comet</a> <a href="/tags/DOCTYPE/" style="font-size: 10px;">DOCTYPE</a> <a href="/tags/Debian/" style="font-size: 12.31px;">Debian</a> <a href="/tags/Deepin/" style="font-size: 10px;">Deepin</a> <a href="/tags/Discuz/" style="font-size: 10px;">Discuz!</a> <a href="/tags/Drupal/" style="font-size: 10px;">Drupal</a> <a href="/tags/E-ink/" style="font-size: 10px;">E-ink</a> <a href="/tags/Eclipse/" style="font-size: 10.77px;">Eclipse</a> <a href="/tags/Elixir/" style="font-size: 10px;">Elixir</a> <a href="/tags/Emacs/" style="font-size: 10.77px;">Emacs</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/FileZilla/" style="font-size: 10px;">FileZilla</a> <a href="/tags/Flash/" style="font-size: 10.77px;">Flash</a> <a href="/tags/FlashGet/" style="font-size: 10px;">FlashGet</a> <a href="/tags/GAE/" style="font-size: 10px;">GAE</a> <a href="/tags/GB2312/" style="font-size: 10px;">GB2312</a> <a href="/tags/GBK/" style="font-size: 10px;">GBK</a> <a href="/tags/GDirections/" style="font-size: 10px;">GDirections</a> <a href="/tags/Geo/" style="font-size: 10px;">Geo</a> <a href="/tags/Gnome/" style="font-size: 11.54px;">Gnome</a> <a href="/tags/Google/" style="font-size: 13.85px;">Google</a> <a href="/tags/Google-App-Engine/" style="font-size: 15.38px;">Google App Engine</a> <a href="/tags/Google-Map-API/" style="font-size: 10px;">Google Map API</a> <a href="/tags/Google-Maps/" style="font-size: 10px;">Google Maps</a> <a href="/tags/Google-Maps-API/" style="font-size: 16.15px;">Google Maps API</a> <a href="/tags/Goolge-Maps-API/" style="font-size: 10.77px;">Goolge Maps API</a> <a href="/tags/Grub/" style="font-size: 10px;">Grub</a> <a href="/tags/Grub2/" style="font-size: 10px;">Grub2</a> <a href="/tags/Gvim/" style="font-size: 10px;">Gvim</a> <a href="/tags/H-264/" style="font-size: 10px;">H.264</a> <a href="/tags/HTC/" style="font-size: 10px;">HTC</a> <a href="/tags/HTML/" style="font-size: 10.77px;">HTML</a> <a href="/tags/HTML5/" style="font-size: 14.62px;">HTML5</a> <a href="/tags/HTTP/" style="font-size: 13.85px;">HTTP</a> <a href="/tags/Hackintosh/" style="font-size: 10px;">Hackintosh</a> <a href="/tags/IE6/" style="font-size: 10.77px;">IE6</a> <a href="/tags/IE7/" style="font-size: 10px;">IE7</a> <a href="/tags/IP/" style="font-size: 10px;">IP</a> <a href="/tags/IT民工/" style="font-size: 10px;">IT民工</a> <a href="/tags/LTS/" style="font-size: 10px;">LTS</a> <a href="/tags/LePhone/" style="font-size: 10px;">LePhone</a> <a href="/tags/Linux/" style="font-size: 19.23px;">Linux</a> <a href="/tags/MBR/" style="font-size: 10px;">MBR</a> <a href="/tags/MIME/" style="font-size: 10.77px;">MIME</a> <a href="/tags/MYSQL/" style="font-size: 10px;">MYSQL</a> <a href="/tags/Mac/" style="font-size: 11.54px;">Mac</a> <a href="/tags/Mac-OS/" style="font-size: 12.31px;">Mac OS</a> <a href="/tags/Msyql/" style="font-size: 10px;">Msyql</a> <a href="/tags/Mysql/" style="font-size: 11.54px;">Mysql</a> <a href="/tags/Netbeans/" style="font-size: 10.77px;">Netbeans</a> <a href="/tags/Nokia/" style="font-size: 11.54px;">Nokia</a> <a href="/tags/N连跳/" style="font-size: 10px;">N连跳</a> <a href="/tags/OPPO/" style="font-size: 10px;">OPPO</a> <a href="/tags/Opera/" style="font-size: 11.54px;">Opera</a> <a href="/tags/Ophone/" style="font-size: 10px;">Ophone</a> <a href="/tags/PDF/" style="font-size: 10.77px;">PDF</a> <a href="/tags/PHONEGAP/" style="font-size: 10px;">PHONEGAP</a> <a href="/tags/PHP/" style="font-size: 13.85px;">PHP</a> <a href="/tags/PHP扩展/" style="font-size: 10px;">PHP扩展</a> <a href="/tags/Patterns/" style="font-size: 10px;">Patterns</a> <a href="/tags/QQ/" style="font-size: 10px;">QQ</a> <a href="/tags/RFC/" style="font-size: 10px;">RFC</a> <a href="/tags/RIA/" style="font-size: 10px;">RIA</a> <a href="/tags/RIM/" style="font-size: 10px;">RIM</a> <a href="/tags/SN/" style="font-size: 10px;">SN</a> <a href="/tags/Safari/" style="font-size: 10px;">Safari</a> <a href="/tags/Server-Push/" style="font-size: 10px;">Server Push</a> <a href="/tags/Smoke/" style="font-size: 10px;">Smoke</a> <a href="/tags/Subersion/" style="font-size: 10px;">Subersion</a> <a href="/tags/Symbian/" style="font-size: 11.54px;">Symbian</a> <a href="/tags/T43/" style="font-size: 13.08px;">T43</a> <a href="/tags/T61/" style="font-size: 10.77px;">T61</a> <a href="/tags/TD/" style="font-size: 10px;">TD</a> <a href="/tags/TD-LTE/" style="font-size: 10px;">TD-LTE</a> <a href="/tags/Thinkpad/" style="font-size: 10px;">Thinkpad</a> <a href="/tags/Timer/" style="font-size: 10px;">Timer</a> <a href="/tags/TrackPoint/" style="font-size: 10.77px;">TrackPoint</a> <a href="/tags/UBUNTU/" style="font-size: 10px;">UBUNTU</a> <a href="/tags/UML/" style="font-size: 11.54px;">UML</a> <a href="/tags/Ubuntu/" style="font-size: 20px;">Ubuntu</a> <a href="/tags/Ubuntu-10-04-python2-5/" style="font-size: 10px;">Ubuntu 10.04 python2.5</a> <a href="/tags/VMWare/" style="font-size: 10.77px;">VMWare</a> <a href="/tags/VPN/" style="font-size: 10.77px;">VPN</a> <a href="/tags/VPS/" style="font-size: 10px;">VPS</a> <a href="/tags/Vim/" style="font-size: 17.69px;">Vim</a> <a href="/tags/Virtual-Box/" style="font-size: 10px;">Virtual Box</a> <a href="/tags/W3C/" style="font-size: 10px;">W3C</a> <a href="/tags/Web/" style="font-size: 11.54px;">Web</a> <a href="/tags/Web标准/" style="font-size: 10.77px;">Web标准</a> <a href="/tags/Win7/" style="font-size: 10px;">Win7</a> <a href="/tags/Windows/" style="font-size: 12.31px;">Windows</a> <a href="/tags/Woredpress/" style="font-size: 10px;">Woredpress</a> <a href="/tags/XHTML/" style="font-size: 10px;">XHTML</a> <a href="/tags/XML/" style="font-size: 10px;">XML</a> <a href="/tags/XP/" style="font-size: 10px;">XP</a> <a href="/tags/ajax/" style="font-size: 10px;">ajax</a> <a href="/tags/canvas/" style="font-size: 10px;">canvas</a> <a href="/tags/captcha/" style="font-size: 10px;">captcha</a> <a href="/tags/code/" style="font-size: 10px;">code</a> <a href="/tags/darwin/" style="font-size: 10px;">darwin</a> <a href="/tags/deb/" style="font-size: 10px;">deb</a> <a href="/tags/deb包/" style="font-size: 10px;">deb包</a> <a href="/tags/docs/" style="font-size: 10px;">docs</a> <a href="/tags/dosbox/" style="font-size: 10px;">dosbox</a> <a href="/tags/epoll/" style="font-size: 10px;">epoll</a> <a href="/tags/fcitx/" style="font-size: 10.77px;">fcitx</a> <a href="/tags/firebug/" style="font-size: 10px;">firebug</a> <a href="/tags/firefox/" style="font-size: 10px;">firefox</a> <a href="/tags/framebuffer/" style="font-size: 10px;">framebuffer</a> <a href="/tags/gaphor/" style="font-size: 10px;">gaphor</a> <a href="/tags/gedit/" style="font-size: 10.77px;">gedit</a> <a href="/tags/gtfp/" style="font-size: 10px;">gtfp</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/iDroid/" style="font-size: 10px;">iDroid</a> <a href="/tags/iPad/" style="font-size: 11.54px;">iPad</a> <a href="/tags/iPhone/" style="font-size: 16.92px;">iPhone</a> <a href="/tags/iTunes/" style="font-size: 10px;">iTunes</a> <a href="/tags/ide/" style="font-size: 10px;">ide</a> <a href="/tags/ideneb/" style="font-size: 10px;">ideneb</a> <a href="/tags/inline-block/" style="font-size: 10px;">inline-block</a> <a href="/tags/iso/" style="font-size: 10px;">iso</a> <a href="/tags/jQuery-Mobile/" style="font-size: 10px;">jQuery Mobile</a> <a href="/tags/javascript/" style="font-size: 17.69px;">javascript</a> <a href="/tags/jinja2/" style="font-size: 10px;">jinja2</a> <a href="/tags/kill/" style="font-size: 10px;">kill</a> <a href="/tags/kof/" style="font-size: 11.54px;">kof</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/meld/" style="font-size: 10px;">meld</a> <a href="/tags/midi/" style="font-size: 10px;">midi</a> <a href="/tags/nginx/" style="font-size: 10.77px;">nginx</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/nvm/" style="font-size: 10px;">nvm</a> <a href="/tags/plugin/" style="font-size: 10px;">plugin</a> <a href="/tags/ptyhon/" style="font-size: 10px;">ptyhon</a> <a href="/tags/python/" style="font-size: 15.38px;">python</a> <a href="/tags/pytz/" style="font-size: 10px;">pytz</a> <a href="/tags/redsn0w/" style="font-size: 10px;">redsn0w</a> <a href="/tags/root/" style="font-size: 10.77px;">root</a> <a href="/tags/shell/" style="font-size: 13.08px;">shell</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/sqlite/" style="font-size: 10.77px;">sqlite</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/stardict/" style="font-size: 10px;">stardict</a> <a href="/tags/static/" style="font-size: 10px;">static</a> <a href="/tags/subversion/" style="font-size: 10.77px;">subversion</a> <a href="/tags/svn/" style="font-size: 11.54px;">svn</a> <a href="/tags/tornado/" style="font-size: 10px;">tornado</a> <a href="/tags/trim/" style="font-size: 10px;">trim</a> <a href="/tags/viewport/" style="font-size: 10px;">viewport</a> <a href="/tags/wordpress/" style="font-size: 10px;">wordpress</a> <a href="/tags/zhcon/" style="font-size: 10px;">zhcon</a> <a href="/tags/三国志/" style="font-size: 10px;">三国志</a> <a href="/tags/中国/" style="font-size: 10px;">中国</a> <a href="/tags/中国移动/" style="font-size: 10px;">中国移动</a> <a href="/tags/中文/" style="font-size: 12.31px;">中文</a> <a href="/tags/乐Phone/" style="font-size: 10px;">乐Phone</a> <a href="/tags/乔布斯/" style="font-size: 10px;">乔布斯</a> <a href="/tags/乱码/" style="font-size: 10px;">乱码</a> <a href="/tags/事件/" style="font-size: 10px;">事件</a> <a href="/tags/优化/" style="font-size: 10px;">优化</a> <a href="/tags/函数/" style="font-size: 10px;">函数</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/双系统/" style="font-size: 10px;">双系统</a> <a href="/tags/史记/" style="font-size: 10px;">史记</a> <a href="/tags/同步/" style="font-size: 10px;">同步</a> <a href="/tags/后端/" style="font-size: 10px;">后端</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/地图/" style="font-size: 11.54px;">地图</a> <a href="/tags/地址解析/" style="font-size: 10px;">地址解析</a> <a href="/tags/声音/" style="font-size: 10px;">声音</a> <a href="/tags/多媒体/" style="font-size: 10px;">多媒体</a> <a href="/tags/多线程/" style="font-size: 10px;">多线程</a> <a href="/tags/多进程/" style="font-size: 10px;">多进程</a> <a href="/tags/字体/" style="font-size: 14.62px;">字体</a> <a href="/tags/定时器/" style="font-size: 10px;">定时器</a> <a href="/tags/富士康/" style="font-size: 10px;">富士康</a> <a href="/tags/对框/" style="font-size: 10px;">对框</a> <a href="/tags/对齐/" style="font-size: 10px;">对齐</a> <a href="/tags/小红点/" style="font-size: 10px;">小红点</a> <a href="/tags/属性/" style="font-size: 10px;">属性</a> <a href="/tags/山寨/" style="font-size: 10px;">山寨</a> <a href="/tags/平板电脑/" style="font-size: 10px;">平板电脑</a> <a href="/tags/异步/" style="font-size: 10px;">异步</a> <a href="/tags/微软/" style="font-size: 10px;">微软</a> <a href="/tags/快捷键/" style="font-size: 10px;">快捷键</a> <a href="/tags/戴尔/" style="font-size: 10px;">戴尔</a> <a href="/tags/投影/" style="font-size: 10px;">投影</a> <a href="/tags/折叠/" style="font-size: 10.77px;">折叠</a> <a href="/tags/拳皇/" style="font-size: 11.54px;">拳皇</a> <a href="/tags/按钮/" style="font-size: 10px;">按钮</a> <a href="/tags/排序/" style="font-size: 10px;">排序</a> <a href="/tags/控件/" style="font-size: 10px;">控件</a> <a href="/tags/摄象头/" style="font-size: 10px;">摄象头</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/本地化/" style="font-size: 10px;">本地化</a> <a href="/tags/李彦宏/" style="font-size: 10px;">李彦宏</a> <a href="/tags/架构/" style="font-size: 10px;">架构</a> <a href="/tags/标准化/" style="font-size: 10px;">标准化</a> <a href="/tags/格式化/" style="font-size: 11.54px;">格式化</a> <a href="/tags/框架/" style="font-size: 10px;">框架</a> <a href="/tags/桌面/" style="font-size: 10px;">桌面</a> <a href="/tags/梁父吟/" style="font-size: 10px;">梁父吟</a> <a href="/tags/植物大战僵尸/" style="font-size: 10px;">植物大战僵尸</a> <a href="/tags/模式/" style="font-size: 10px;">模式</a> <a href="/tags/正则/" style="font-size: 10px;">正则</a> <a href="/tags/汉武帝/" style="font-size: 10px;">汉武帝</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a> <a href="/tags/状态码/" style="font-size: 10px;">状态码</a> <a href="/tags/王立群/" style="font-size: 10px;">王立群</a> <a href="/tags/电子墨水/" style="font-size: 10px;">电子墨水</a> <a href="/tags/白送/" style="font-size: 10px;">白送</a> <a href="/tags/百度/" style="font-size: 10px;">百度</a> <a href="/tags/移动/" style="font-size: 10.77px;">移动</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/编码/" style="font-size: 13.85px;">编码</a> <a href="/tags/缩进/" style="font-size: 10px;">缩进</a> <a href="/tags/网卡/" style="font-size: 10px;">网卡</a> <a href="/tags/美化/" style="font-size: 10px;">美化</a> <a href="/tags/联发科/" style="font-size: 10px;">联发科</a> <a href="/tags/联想/" style="font-size: 10.77px;">联想</a> <a href="/tags/联通/" style="font-size: 10px;">联通</a> <a href="/tags/脚本/" style="font-size: 10px;">脚本</a> <a href="/tags/自动提示/" style="font-size: 10px;">自动提示</a> <a href="/tags/苹果/" style="font-size: 13.85px;">苹果</a> <a href="/tags/菜单/" style="font-size: 10px;">菜单</a> <a href="/tags/虚拟机/" style="font-size: 10px;">虚拟机</a> <a href="/tags/蚁族/" style="font-size: 10px;">蚁族</a> <a href="/tags/被黑/" style="font-size: 10px;">被黑</a> <a href="/tags/诸葛亮/" style="font-size: 10px;">诸葛亮</a> <a href="/tags/谷歌/" style="font-size: 13.08px;">谷歌</a> <a href="/tags/账号/" style="font-size: 10px;">账号</a> <a href="/tags/输入法/" style="font-size: 10px;">输入法</a> <a href="/tags/过渡性/" style="font-size: 10px;">过渡性</a> <a href="/tags/透明/" style="font-size: 10px;">透明</a> <a href="/tags/遍历/" style="font-size: 10px;">遍历</a> <a href="/tags/重装/" style="font-size: 10.77px;">重装</a> <a href="/tags/闭包/" style="font-size: 10px;">闭包</a> <a href="/tags/阻塞/" style="font-size: 10px;">阻塞</a> <a href="/tags/隆中对/" style="font-size: 10px;">隆中对</a> <a href="/tags/需求/" style="font-size: 10px;">需求</a> <a href="/tags/非阻塞/" style="font-size: 10px;">非阻塞</a> <a href="/tags/面试/" style="font-size: 10px;">面试</a> <a href="/tags/飞信/" style="font-size: 10px;">飞信</a> <a href="/tags/驱动/" style="font-size: 11.54px;">驱动</a> <a href="/tags/高分/" style="font-size: 10px;">高分</a> <a href="/tags/黑莓/" style="font-size: 10px;">黑莓</a>
+    </p>
+  </div>
+
+-->
+
+
+  <!--
+
+  <div class="sidebar-module">
+    <h4>归档</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/07/">July 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/06/">June 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/02/">February 2015</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2015/01/">January 2015</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/12/">December 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/11/">November 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/07/">July 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/06/">June 2014</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/05/">May 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/03/">March 2014</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2014/01/">January 2014</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/12/">December 2013</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/11/">November 2013</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/10/">October 2013</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/09/">September 2013</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/07/">July 2013</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/06/">June 2013</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/05/">May 2013</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2013/02/">February 2013</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2012/12/">December 2012</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2012/11/">November 2012</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2012/09/">September 2012</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/10/">October 2011</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/08/">August 2011</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/05/">May 2011</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/04/">April 2011</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/03/">March 2011</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2011/02/">February 2011</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/12/">December 2010</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/10/">October 2010</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/09/">September 2010</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/08/">August 2010</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/07/">July 2010</a><span class="sidebar-module-list-count">20</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/06/">June 2010</a><span class="sidebar-module-list-count">26</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/05/">May 2010</a><span class="sidebar-module-list-count">65</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/04/">April 2010</a><span class="sidebar-module-list-count">79</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/03/">March 2010</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/02/">February 2010</a><span class="sidebar-module-list-count">11</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/archives/2010/01/">January 2010</a><span class="sidebar-module-list-count">121</span></li></ul>
+  </div>
+
+-->
+
+
+  
+  <div class="sidebar-module">
+    <h4>最近更新</h4>
+    <ul class="sidebar-module-list">
+      
+        <li>
+          <a href="/2015/07/13/在Linux下正确安装nodejs的姿势/">
+            在Linux下正确安装nodejs的姿势
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2015/06/20/nodejs验证码生成与环境配置/">
+            nodejs验证码生成与环境配置
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2015/02/24/Web开发的前端与后端的界线在那里？/">
+            Web开发的前端与后端的界线在那里？
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2015/02/13/Ubuntu非root安装mysql/">
+            Ubuntu非root安装软件(mysql篇)
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2015/01/12/异步IO一定需要异步编程？异步编程是个什么概念？/">
+            异步IO一定需要异步编程？异步编程是个什么概念？
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2014/12/20/浏览器兼容性问题的探讨/">
+            浏览器兼容性问题的探讨
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2014/12/10/应用viewport进行移动网站开发/">
+            应用viewport进行移动网站开发
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2014/11/07/利用font-size等于0来实现inline-block的任意格式化/">
+            利用font-size等于0来实现inline-block的任意格式化
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2014/07/07/centos-6-4上安装-node-canvas/">
+            Centos 6.4上安装 node canvas 
+          </a>
+        </li>
+        
+        <li>
+          <a href="/2014/06/25/ubuntu-14-04升级后字体变难看解决办法/">
+            Ubuntu 14.04升级后字体变难看解决办法
+          </a>
+        </li>
+        
+    </ul>
+  </div>
+  
+  <div class="sidebar-module">
+    <h4 class="title">最新评论</h4>
+<!-- 多说最新评论 start -->
+<div class="ds-recent-comments" data-num-items="15" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+<!-- 多说最新评论 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"3gcnbeta"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+  </div>
+    <div class="sidebar-module">
+      <a style="text-align:center;height:80px;" target="_blank" href="http://www3.clustrmaps.com/counter/maps.php?url=http://3gcnbeta.com" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://3gcnbeta.com" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" />
+      </a>
+      <script type="text/javascript">
+        function cantload() {
+          img = document.getElementById("clustrMapsImg");
+          img.onerror = null;
+          img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
+          document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
+        }
+        img = document.getElementById("clustrMapsImg");
+        img.onerror = cantload;
+      </script>
+    </div>
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      <script src="http://s133.cnzz.com/stat.php?id=1947534&web_id=1947534&show=pic1" language="JavaScript"></script>
+      <br/>
+      &copy;
+      2016
+        北漂IT民工
+          <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+  <script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//imk2.qiniudn.com/js/prettify.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('pre code').parent().addClass('prettyprint');
+      prettyPrint();
+    });
+  </script>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
