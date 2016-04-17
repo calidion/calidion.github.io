@@ -97,6 +97,7 @@
   cursor: pointer;
   float: right;
   margin-left: 20px;
+  color: #5CB85C;
 }
 
 /* prev/next navigation between articles */
@@ -160,12 +161,14 @@
 
 .archive-year-wrap {
   border-bottom: 1px solid #eee;
-  font-size: 2em;
+  font-size: 20px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 .archive-article {
-  margin: 30px 0;
+  margin: 5px 0;
 }
 .archive-article h1 {
   margin: 0;
-  font-size: 1.3em;
+  font-size: 14px;
 }
