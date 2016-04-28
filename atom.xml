@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.3gcnbeta.com/"/>
-  <updated>2016-04-17T17:14:15.649Z</updated>
+  <updated>2016-04-28T01:21:16.148Z</updated>
   <id>http://blog.3gcnbeta.com/</id>
   
   <author>
@@ -14,6 +14,67 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm自建服务器</title>
+    <link href="http://blog.3gcnbeta.com/2016/04/28/%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84npm%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://blog.3gcnbeta.com/2016/04/28/轻松搭建自己的npm服务器/</id>
+    <published>2016-04-28T00:54:00.000Z</published>
+    <updated>2016-04-28T01:21:16.148Z</updated>
+    
+    <content type="html">&lt;p&gt;nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的npm了。&lt;/p&gt;
+&lt;p&gt;除了上面讲到的开放包，npmjs.com也提供私有包管理方案，每个月只要交10几美元就可以轻松建立自己的私有npm库了。&lt;/p&gt;
+&lt;p&gt;在了解了这么多npm的好处之后，其实我们发现还是有不太满意的地方。比如需要每月交钱，比如npmjs.com有时候会被GFW墙掉，速度非常慢。&lt;/p&gt;
+&lt;p&gt;特别的，如果我们有私有的包，不想公开，也不想交钱，那么这个时候我们就可以通过自建私有的服务器来实现。&lt;/p&gt;
+&lt;p&gt;实现的过程很简单，就是通过sinopia包搭建一个服务器。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rlidwka/sinopia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sinopia&lt;/a&gt;项目地址：&lt;a href=&quot;https://github.com/rlidwka/sinopia&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/rlidwka/sinopia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装sinopia&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g sinopia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;启动运行sinopia&lt;br&gt;可以默认启动&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;也可以指定IP与端口&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; 0.0.0.0:8080 &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;访问sinopia&lt;br&gt;浏览器打开： &lt;a href=&quot;http://localhost:4873/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4873/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加用户  &lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm adduser --registry http://localhost:4873/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;登录npm服务器  &lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm login --registry http://localhost:4873/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;发布npm包  &lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm publish --registry http://localhost:4873/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;下载npm包&lt;br&gt;xxx是你发布的包名。  &lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install xxx --registry http://localhost:4873/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;通过以上几个命令你就可以在你的服务器上玩起来了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的
+    
+    </summary>
+    
+      <category term="nodejs" scheme="http://blog.3gcnbeta.com/categories/nodejs/"/>
+    
+      <category term="服务器" scheme="http://blog.3gcnbeta.com/categories/nodejs/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="nodejs" scheme="http://blog.3gcnbeta.com/tags/nodejs/"/>
+    
+      <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="npm" scheme="http://blog.3gcnbeta.com/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>Python vs Node.js</title>
@@ -76,9 +137,11 @@
     <link href="http://blog.3gcnbeta.com/2016/04/04/Cookie%E4%B8%8ESession%E4%B9%8B%E8%BE%A8%E6%9E%90/"/>
     <id>http://blog.3gcnbeta.com/2016/04/04/Cookie与Session之辨析/</id>
     <published>2016-04-04T09:28:00.000Z</published>
-    <updated>2016-04-16T00:07:19.146Z</updated>
+    <updated>2016-04-28T00:07:02.624Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;a href=&quot;#Cookie与Session目标接近，服务对象不同&quot; class=&quot;headerlink&quot; title=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;/a&gt;Cookie与Session目标接近，服务对象不同&lt;/h3&gt;&lt;p&gt;Cookie与Session是两个目的类似，但面对的对象有所差异的东西。&lt;br&gt;特别是他们经常相互作用，实现各自的目标，因为有没有真正的理清理他们的实际意义与使用方式前，人们还是非常容易混淆他们之间的区别的。&lt;/p&gt;
+    <content type="html">&lt;p&gt;Cookie与Session是所有Web开发中最基本的概念，是用户认识用户验证最基本的手段。自从RESTful的概念提出来之后，不断有人提出削弱Cookie与Session进行身份认识的作用。尽管如此，Cookie与Session仍作为最基础的身份认识手段而被广泛的应用。&lt;/p&gt;
+&lt;p&gt;所以在我们的Web开发中，Cookie与Session的区分是非常重要的。&lt;/p&gt;
+&lt;h3 id=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;a href=&quot;#Cookie与Session目标接近，服务对象不同&quot; class=&quot;headerlink&quot; title=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;/a&gt;Cookie与Session目标接近，服务对象不同&lt;/h3&gt;&lt;p&gt;Cookie与Session是两个目的类似，但面向的对象有所差异的东西。&lt;br&gt;特别是他们经常相互作用，从而实现各自的目标。因些在没有真正的理清楚他们的实际意义与使用方式前，人们还是非常容易混淆他们之间的区别的。本文从他们的实现方式入手，尝试将Cookie与Session的本质特征说清楚。&lt;/p&gt;
 &lt;p&gt;Cookie的服务对象是：浏览器，用于记录浏览器端用户信息或者相应的状态&lt;br&gt;Session的服务对象是：服务器，用于记录服务器端用户信息或者相应的状态&lt;/p&gt;
 &lt;h3 id=&quot;混淆的原因：Session经常借Cookie来实现&quot;&gt;&lt;a href=&quot;#混淆的原因：Session经常借Cookie来实现&quot; class=&quot;headerlink&quot; title=&quot;混淆的原因：Session经常借Cookie来实现&quot;&gt;&lt;/a&gt;混淆的原因：Session经常借Cookie来实现&lt;/h3&gt;&lt;p&gt;容易混淆他们的原因是：Session经常借助Cookie来实现。&lt;br&gt;因为Cookie是HTTP的标准头字段。所以经常我们只要在Cookie里加上一串&lt;br&gt;XXXsessionid=xxx就可以标志一个session。&lt;br&gt;比如：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -108,7 +171,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;a href=&quot;#Cookie与Session目标接近，服务对象不同&quot; class=&quot;headerlink&quot; title=&quot;Cookie与Session目标接近，服务对象不同&quot;&gt;&lt;/a&gt;Cookie与Sess
+      &lt;p&gt;Cookie与Session是所有Web开发中最基本的概念，是用户认识用户验证最基本的手段。自从RESTful的概念提出来之后，不断有人提出削弱Cookie与Session进行身份认识的作用。尽管如此，Cookie与Session仍作为最基础的身份认识手段而被广泛的应用。&lt;
     
     </summary>
     
@@ -2256,31 +2319,6 @@
     
       <category term="Android" scheme="http://blog.3gcnbeta.com/categories/Android/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx 下Wordpress是配置,包括子目录时的配置</title>
-    <link href="http://blog.3gcnbeta.com/2011/05/17/nginx-%E4%B8%8Bwordpress%E6%98%AF%E9%85%8D%E7%BD%AE%E5%8C%85%E6%8B%AC%E5%AD%90%E7%9B%AE%E5%BD%95%E6%97%B6%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
-    <id>http://blog.3gcnbeta.com/2011/05/17/nginx-下wordpress是配置包括子目录时的配置/</id>
-    <published>2011-05-16T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;在你的其他配置项基础之上还需要添加下面的代码:&lt;/p&gt;&lt;br&gt;&lt;p&gt;server {&lt;/p&gt;&lt;br&gt;&lt;p&gt;#用于管理界面的处理&lt;br&gt;&lt;br&gt;rewrite /wp-admin$ $scheme://$host$uri/ permanent;&lt;/p&gt;&lt;br&gt;&lt;p&gt;location / {&lt;/p&gt;&lt;br&gt;&lt;p&gt;#/wordpress是你的子目录名字,没有子目录就可以不用写&lt;br&gt;&lt;br&gt;try_files $uri /wordpress$uri/ /wordpress/index.php?q=uri&amp;amp;$args;&lt;br&gt;&lt;br&gt;}&lt;br&gt;&lt;br&gt;}&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在你的其他配置项基础之上还需要添加下面的代码:&lt;/p&gt;&lt;br&gt;&lt;p&gt;server {&lt;/p&gt;&lt;br&gt;&lt;p&gt;#用于管理界面的处理&lt;br&gt;&lt;br&gt;rewrite /wp-admin$ $scheme://$host$uri/ permanent;&lt;/p&gt;&lt;br&gt;&lt;p&gt;locat
-    
-    </summary>
-    
-      <category term="wordpress" scheme="http://blog.3gcnbeta.com/categories/wordpress/"/>
-    
-    
-      <category term="nginx" scheme="http://blog.3gcnbeta.com/tags/nginx/"/>
-    
-      <category term="Woredpress" scheme="http://blog.3gcnbeta.com/tags/Woredpress/"/>
     
   </entry>
   
