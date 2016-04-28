@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.3gcnbeta.com/"/>
-  <updated>2016-04-28T01:21:16.148Z</updated>
+  <updated>2016-04-28T01:48:07.560Z</updated>
   <id>http://blog.3gcnbeta.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.3gcnbeta.com/2016/04/28/%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84npm%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://blog.3gcnbeta.com/2016/04/28/轻松搭建自己的npm服务器/</id>
     <published>2016-04-28T00:54:00.000Z</published>
-    <updated>2016-04-28T01:21:16.148Z</updated>
+    <updated>2016-04-28T01:48:07.560Z</updated>
     
     <content type="html">&lt;p&gt;nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的npm了。&lt;/p&gt;
 &lt;p&gt;除了上面讲到的开放包，npmjs.com也提供私有包管理方案，每个月只要交10几美元就可以轻松建立自己的私有npm库了。&lt;/p&gt;
@@ -34,11 +34,8 @@
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g sinopia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;启动运行sinopia&lt;br&gt;可以默认启动&lt;/p&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;也可以指定IP与端口&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; 0.0.0.0:8080 &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;也可以指定IP与端口&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; 0.0.0.0:8080 &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;访问sinopia&lt;br&gt;浏览器打开： &lt;a href=&quot;http://localhost:4873/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4873/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;添加用户  &lt;/p&gt;
@@ -70,9 +67,9 @@
     
       <category term="nodejs" scheme="http://blog.3gcnbeta.com/tags/nodejs/"/>
     
-      <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="npm" scheme="http://blog.3gcnbeta.com/tags/npm/"/>
+    
+      <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
@@ -180,9 +177,9 @@
     
       <category term="浏览器" scheme="http://blog.3gcnbeta.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
-      <category term="http" scheme="http://blog.3gcnbeta.com/tags/http/"/>
-    
       <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="http" scheme="http://blog.3gcnbeta.com/tags/http/"/>
     
       <category term="Cookie" scheme="http://blog.3gcnbeta.com/tags/Cookie/"/>
     
@@ -2259,6 +2256,27 @@
   </entry>
   
   <entry>
+    <title>Linux 下批量替换的命令</title>
+    <link href="http://blog.3gcnbeta.com/2011/10/18/linux-%E4%B8%8B%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.3gcnbeta.com/2011/10/18/linux-下批量替换的命令/</id>
+    <published>2011-10-17T16:00:00.000Z</published>
+    <updated>2016-02-02T00:48:54.243Z</updated>
+    
+    <content type="html">&lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br&gt;&lt;p&gt;path是路径名,&lt;br&gt;&lt;br&gt;param1是要替换的内容&lt;br&gt;&lt;br&gt;param2是替换后的内容&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br
+    
+    </summary>
+    
+      <category term="Shell" scheme="http://blog.3gcnbeta.com/categories/Shell/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>nodejs 下post代码</title>
     <link href="http://blog.3gcnbeta.com/2011/10/18/nodejs-%E4%B8%8Bpost%E4%BB%A3%E7%A0%81/"/>
     <id>http://blog.3gcnbeta.com/2011/10/18/nodejs-下post代码/</id>
@@ -2276,27 +2294,6 @@
     </summary>
     
       <category term="新闻" scheme="http://blog.3gcnbeta.com/categories/%E6%96%B0%E9%97%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 下批量替换的命令</title>
-    <link href="http://blog.3gcnbeta.com/2011/10/18/linux-%E4%B8%8B%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.3gcnbeta.com/2011/10/18/linux-下批量替换的命令/</id>
-    <published>2011-10-17T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br&gt;&lt;p&gt;path是路径名,&lt;br&gt;&lt;br&gt;param1是要替换的内容&lt;br&gt;&lt;br&gt;param2是替换后的内容&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br
-    
-    </summary>
-    
-      <category term="Shell" scheme="http://blog.3gcnbeta.com/categories/Shell/"/>
     
     
   </entry>

@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="北漂IT民工">
 <meta property="og:description" content="nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的npm了。
 除了上面讲到的开放包，npmjs.com也提供私有包管理方案，每个月只要交10几美元就可以轻松建立自己的私有npm">
-<meta property="og:updated_time" content="2016-04-28T01:21:16.148Z">
+<meta property="og:updated_time" content="2016-04-28T01:48:07.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm自建服务器">
 <meta name="twitter:description" content="nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的npm了。
@@ -139,11 +139,8 @@ ga('send', 'pageview');
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g sinopia</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>启动运行sinopia<br>可以默认启动</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sinopia &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sinopia &gt; /dev/null 2&gt;&amp;1</span><br><span class="line">``` </span><br><span class="line">也可以指定IP与端口</span><br><span class="line">```sh</span><br><span class="line">$ sinopia <span class="_">-l</span> 0.0.0.0:8080 &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<p>也可以指定IP与端口<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sinopia <span class="_">-l</span> 0.0.0.0:8080 &gt; /dev/null 2&gt;&amp;1</span><br></pre></td></tr></table></figure></p>
-<ol>
 <li><p>访问sinopia<br>浏览器打开： <a href="http://localhost:4873/" target="_blank" rel="external">http://localhost:4873/</a></p>
 </li>
 <li><p>添加用户  </p>
@@ -170,7 +167,7 @@ ga('send', 'pageview');
         
 
           <footer class="article-footer">
-            <a data-url="http://blog.3gcnbeta.com/2016/04/28/轻松搭建自己的npm服务器/" data-id="cinjlw1b701h20n82t5w89q1s" class="article-share-link">
+            <a data-url="http://blog.3gcnbeta.com/2016/04/28/轻松搭建自己的npm服务器/" data-id="cinjmsxxx01fn8p82qari88im" class="article-share-link">
               <i class="fa fa-share"></i> 分享
             </a>
             
