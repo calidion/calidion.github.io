@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.3gcnbeta.com/"/>
-  <updated>2016-06-07T06:00:22.312Z</updated>
+  <updated>2016-06-07T12:48:40.204Z</updated>
   <id>http://blog.3gcnbeta.com/</id>
   
   <author>
@@ -14,6 +14,328 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>那些事后可能会让你感到羞耻的Web词汇？</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E9%82%A3%E4%BA%9B%E4%BA%8B%E5%90%8E%E5%8F%AF%E8%83%BD%E4%BC%9A%E8%AE%A9%E4%BD%A0%E6%84%9F%E5%88%B0%E7%BE%9E%E8%80%BB%E7%9A%84Web%E8%AF%8D%E6%B1%87%EF%BC%9F/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/那些事后可能会让你感到羞耻的Web词汇？/</id>
+    <published>2016-06-07T12:47:27.000Z</published>
+    <updated>2016-06-07T12:48:40.204Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;经常会有这样一种场景，就是在你想表达某种意思时，不能确定这个词是不是能正确的表达，而又没有别的选择时，你使用了这个不确定的词，并且最后发现这个词用错了。这时我们通常会产生一种羞耻感，而这种羞耻感会让你很不舒服。所以在这里我介绍几个比较常见的会被误用的Web词汇，并且通常使用者还比较理直气壮的词汇，避免未来可能的尴尬。&lt;/p&gt;
+&lt;p&gt;所有认识与知识的传播都是可能出错的，所以出现错误是很正常的。&lt;br&gt;但是出现错误的时候，我们的态度则是很重要的。&lt;br&gt;“知错能改，善莫大焉”，每个人都是会出错的，而客观公正的讨论错误，改进错误，则是一个社会进步的必由之路。&lt;br&gt;本文尽量在客观的态度下，指出错误的原因，并提供正确的参考。当然本文本身可能就是有错误，也欢迎反馈交流。&lt;br&gt;所以下面我们来一起看看都有那些可能用错或者本身就是错误的词汇。&lt;/p&gt;
+&lt;h3 id=&quot;DIV-CSS&quot;&gt;&lt;a href=&quot;#DIV-CSS&quot; class=&quot;headerlink&quot; title=&quot;DIV+CSS&quot;&gt;&lt;/a&gt;DIV+CSS&lt;/h3&gt;&lt;p&gt;DIV+CSS的错误已经有近十年的历史了，误导了无数开发人员。而错误的根本原因是将不同层次的东西放在一起。正确的说法当然是HTML+CSS。至于究竟谁是始作俑者，目前已经不可考了。&lt;/p&gt;
+&lt;h3 id=&quot;div解决了滥用table的问题&quot;&gt;&lt;a href=&quot;#div解决了滥用table的问题&quot; class=&quot;headerlink&quot; title=&quot;div解决了滥用table的问题&quot;&gt;&lt;/a&gt;div解决了滥用table的问题&lt;/h3&gt;&lt;p&gt;由于之前浏览器并不支持CSS或者CSS的功能很弱，所以通过会使用table进行布局，从而导致了网页非常大，解析速度非常慢。而引入CSS与DIV后，可以让DIV结合CSS承担了原来的table布局的功能，所以div是一个非常重要的元素。&lt;/p&gt;
+&lt;h4 id=&quot;div只是众多HTML元素里的一种&quot;&gt;&lt;a href=&quot;#div只是众多HTML元素里的一种&quot; class=&quot;headerlink&quot; title=&quot;div只是众多HTML元素里的一种&quot;&gt;&lt;/a&gt;div只是众多HTML元素里的一种&lt;/h4&gt;&lt;p&gt;table, li, p等所有的元素通过CSS可以实现跟DIV完全相同的表现效果，所以DIV在表现上并不特殊。&lt;br&gt;所以div无非是一个语义是结构的元素，跟其它HTML并没有特殊性。并且在使用上DIV也不应该过于占优势。而错误的理解div会导致divitiies，并且曾经有一度出现过认为ul应该取代table的错误风向。&lt;/p&gt;
+&lt;h4 id=&quot;​HTML元素通常包含四种属性&quot;&gt;&lt;a href=&quot;#​HTML元素通常包含四种属性&quot; class=&quot;headerlink&quot; title=&quot;​HTML元素通常包含四种属性&quot;&gt;&lt;/a&gt;​HTML元素通常包含四种属性&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;结构&lt;/li&gt;
+&lt;li&gt;表现&lt;/li&gt;
+&lt;li&gt;语义&lt;/li&gt;
+&lt;li&gt;数据&lt;br&gt;虽然CSS主要是用来负责表现的，但是HTML还是保留了很多的默认表现，而div是默认表现比较少的元素之一。因为特别适合作为布局元素使用。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以DIV+CSS的说法完全是一个错误，而这种错误可以这样广泛而肆无忌惮的传播，我们还是有很多需要反思的地方的。&lt;/p&gt;
+&lt;h3 id=&quot;前后端分离&quot;&gt;&lt;a href=&quot;#前后端分离&quot; class=&quot;headerlink&quot; title=&quot;前后端分离&quot;&gt;&lt;/a&gt;前后端分离&lt;/h3&gt;&lt;p&gt;前后端分离的说法的误导已经有超越DIV+CSS之势。前后端分离的事情本身是不存在的。因为前后端本身就是分离的，所以提前后端分离是没有意义的，那么为什么还会有人提前后端分离呢？&lt;br&gt;原因有几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;混淆了MVC分离与前后端分离&lt;/li&gt;
+&lt;li&gt;没有搞清楚前端与后端分别是什么&lt;/li&gt;
+&lt;li&gt;他们所认为的前后端分离本身就是错误的&lt;/li&gt;
+&lt;li&gt;不知道前后端的代码同构已经是一个趋势&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我还为此特地写了几篇文章，将前后端，MVC等各个内容分析了一遍，终于将问题论述清楚。&lt;br&gt;我估计前后端分离的始作俑者们，他们应该没有仔细分析过，否则不会提出来前后端分离的概念。&lt;br&gt;因为过程确实也并没有那么容易，所以出现错误也是很正常的。  &lt;/p&gt;
+&lt;p&gt;但是我希望更多的应该看到不是前后端分离是趋势，而是前后端同构是趋势。因为前后端本身就是分离的，所以唯一能变化的是代码。  &lt;/p&gt;
+&lt;p&gt;前后端分离的错误在于代码本身就是要MVC化的，就是要模块化的，这个过程并不是前后端分离的过程。特别是有人认为将模板放在nodejs上是前后端分离，则是完全没有概念的表现。&lt;br&gt;而目前来讲更多的实际上是前后端共享代码，也就是前后端代码的同构化。&lt;/p&gt;
+&lt;p&gt;因为相信未来前后端分离的错误提法会不断的减少，直到消失。&lt;/p&gt;
+&lt;h3 id=&quot;Socket&quot;&gt;&lt;a href=&quot;#Socket&quot; class=&quot;headerlink&quot; title=&quot;Socket&quot;&gt;&lt;/a&gt;Socket&lt;/h3&gt;&lt;p&gt;Socket这个单词本身是没有问题的。但是问题在于很多人在使用Socket时想表达tcp的意思。在他们的意识里socket代表的就是TCP，而实际上socket是一种连接方式，并不是协议。因为目前的TCP/IP协议栈是基于Socket这种连接方式的，所以所有的协议都是Socket协议。当然如果有一天真将socket当成是tcp我也不会奇怪，谁叫人多力量大呢？但是错误终归是错误，他无法逃过逻辑的检验。&lt;/p&gt;
+&lt;h3 id=&quot;WAP&quot;&gt;&lt;a href=&quot;#WAP&quot; class=&quot;headerlink&quot; title=&quot;WAP&quot;&gt;&lt;/a&gt;WAP&lt;/h3&gt;&lt;p&gt;WAP一词跟Socket一词差不多。本身这个名词是没有问题的，问题也是在于表达的人想表达的意思上存在错误。&lt;br&gt;WAP是一种协议，是Wireless Application Protocol的缩写。是一种跟TCP/IP协议栈类似的一个网络协议，他规定了无线网络的数据传输。他所对应的标记语言是WML(Wireless Markup Language)。通常人们将基于WAP，并使用WML的网站称为WAP网站。&lt;br&gt;WAP 2.0后出现了与HTML合并的趋势，所以WAP 2.0实际上对应的是XHTML 的 MP(Mobile Profile)版本。&lt;br&gt;基于WAP1.0, 2.0网站称为WAP站是没有任何问题的。&lt;br&gt;但是后来由于移动OS的发展，以及Web技术放弃了XHTML化，转向了HTML5，并且兴起了多屏合一的理念，要求网页要能响应不同屏的变化。同时由于移动OS与桌面OS在解析能力上的差别越来越小，无线带宽进一步的提升，从2G升级到3G，4G，导致了WML为主导的移动网页发生了巨大的变化。所有的网站从WML全面转向了HTML5。所以现在这个时候WAP站点已经很难找到了。随着Symbian的倒掉，智能OS手机基本上也没有几个浏览器还在支持WML了。所以WAP实际上已经基本消灭了，但是由于很多业务人员对技术不敏感，还在沿用WAP这个术语来表达移动页面，导致了很技术人员跟着使用WAP表达移动站。但是很显然，这是错误的。&lt;/p&gt;
+&lt;h2 id=&quot;结论&quot;&gt;&lt;a href=&quot;#结论&quot; class=&quot;headerlink&quot; title=&quot;结论&quot;&gt;&lt;/a&gt;结论&lt;/h2&gt;&lt;p&gt;最后希望所有人在讨论时不会因为概念不统一而产生交流的错误与障碍。&lt;br&gt;子曾经曰过：“名不正，则言不顺”。&lt;br&gt;所以正确的定义名字，也就是正确的定义一个东西在任何时候都是非常重要的，也是社会进步的唯一体现。社会的进步就是各种名词的增加与概念多义性的消除。&lt;/p&gt;
+&lt;p&gt;如果你认可文章作者的观点，想继续了解作者新的观点以及Web开发相关的知识，欢迎关注微信公共号：frontend-guru&lt;br&gt;或者扫描下面的图片&lt;br&gt;&lt;img src=&quot;http://res.cloudinary.com/dawjytvkn/image/upload/v1464858605/qrcode_for_gh_6f66da401fef_430_b1rr96.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;引子&quot;&gt;&lt;a href=&quot;#引子&quot; class=&quot;headerlink&quot; title=&quot;引子&quot;&gt;&lt;/a&gt;引子&lt;/h2&gt;&lt;p&gt;经常会有这样一种场景，就是在你想表达某种意思时，不能确定这个词是不是能正确的表达，而又没有别的选择时，你使用了这个不确定的词，并且最后发现这
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何在开发React Native时快速启动Android模拟器?</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%BC%80%E5%8F%91React-Native%E6%97%B6%E5%BF%AB%E9%80%9F%E5%90%AF%E5%8A%A8Android%E6%A8%A1%E6%8B%9F%E5%99%A8/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/如何在开发React-Native时快速启动Android模拟器/</id>
+    <published>2016-06-07T12:25:39.000Z</published>
+    <updated>2016-06-07T12:26:35.952Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;通常我们配置好了Android的开发环境后都需要打入android命令启动SDK管理器，然后再点到AVD管理器中才能启动一个模拟器。&lt;br&gt;或者我们在IDE里启动模拟器。&lt;br&gt;这些都不算麻烦，但是偶尔我们也会想通过命令行启动命令。&lt;br&gt;一方面习惯于Linux下工作的同学会更加习惯于命令行工作，&lt;br&gt;另一方面对于react native的开发的同学来说也需要不断的打开不同的android模拟器进行测试。&lt;br&gt;通常开发react native是不需要打开IDE的。&lt;/p&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;p&gt;所以我查找了相关资料，找到了几个解决方法。&lt;/p&gt;
+&lt;h3 id=&quot;列出所有的avd&quot;&gt;&lt;a href=&quot;#列出所有的avd&quot; class=&quot;headerlink&quot; title=&quot;列出所有的avd&quot;&gt;&lt;/a&gt;列出所有的avd&lt;/h3&gt;&lt;p&gt;下面的命令列表出所有的avd&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;emulator -list-avds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;处理一个avd&quot;&gt;&lt;a href=&quot;#处理一个avd&quot; class=&quot;headerlink&quot; title=&quot;处理一个avd&quot;&gt;&lt;/a&gt;处理一个avd&lt;/h3&gt;&lt;p&gt;一开始我们只有一个avd，所以只要打入如下的命令就可以了。&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;emulator @`emulator -list-avds`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;多个AVD的处理&quot;&gt;&lt;a href=&quot;#多个AVD的处理&quot; class=&quot;headerlink&quot; title=&quot;多个AVD的处理&quot;&gt;&lt;/a&gt;多个AVD的处理&lt;/h3&gt;&lt;p&gt;但是实际上我们通常会有2个或者更多的AVD。所以能够必须多处多个AVD方法才是我们真正需要的。相对来说多个AVD的处理办法要复杂一点。&lt;br&gt;主要思路就是先列出所有的avd，然后选择一个。&lt;br&gt;代码如下：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;IFS=&lt;span class=&quot;string&quot;&gt;&#39;  &#39;&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;read&lt;/span&gt; -r &lt;span class=&quot;_&quot;&gt;-a&lt;/span&gt; avds &amp;lt;&amp;lt;&amp;lt; `emulator -list-avds | xargs`   &lt;span class=&quot;comment&quot;&gt;#列出所有的&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;emulator @&lt;span class=&quot;variable&quot;&gt;$&amp;#123;avds[0]&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;其中avds[0]就是用来选择的。0表示第一个，1表示第二个。根据实际的情况选择你想要的index就可以了。&lt;/p&gt;
+&lt;h3 id=&quot;成为一个命令&quot;&gt;&lt;a href=&quot;#成为一个命令&quot; class=&quot;headerlink&quot; title=&quot;成为一个命令&quot;&gt;&lt;/a&gt;成为一个命令&lt;/h3&gt;&lt;p&gt;为了更加方便的使用，我们需要将上面的内容变成是一个命令。&lt;br&gt;方法很简单：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将这面的内容放到一个文件&lt;/li&gt;
+&lt;li&gt;再将这个文件放在PATH变里所在目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于我的情况来说，我将它命名成&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;lavd   # 即launch avd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后放在了&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;～/Android/Sdk/tools&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;目录下面，这样只要Android配置好，这个命令就是可用的。&lt;br&gt;文件的内容如下：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#!/usr/bin/env bash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;IFS=&lt;span class=&quot;string&quot;&gt;&#39; &#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;read&lt;/span&gt; -r &lt;span class=&quot;_&quot;&gt;-a&lt;/span&gt; avds &amp;lt;&amp;lt;&amp;lt; `emulator -list-avds | xargs`&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;show avds&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; avd &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;&lt;span class=&quot;variable&quot;&gt;$&amp;#123;avds[@]&amp;#125;&lt;/span&gt;&quot;&lt;/span&gt;; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$avd&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;done&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;show selected avd: &quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$&amp;#123;avds[$1]&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;running emulator...&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;emulator @&lt;span class=&quot;variable&quot;&gt;$&amp;#123;avds[$1]&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;emulator stop.&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后执行&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;chmod +x lavd&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;emulator -list-avds&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;./lavd 1   # 或 lavd 1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;就可以快速启动你的AVD映像了。&lt;/p&gt;
+&lt;p&gt;效果图如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/131776/15779680/4851fcf0-29d0-11e6-83cf-14d4dba111a1.png&quot; alt=&quot;2016-06-03 21 12 34&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;信息来源&quot;&gt;&lt;a href=&quot;#信息来源&quot; class=&quot;headerlink&quot; title=&quot;信息来源&quot;&gt;&lt;/a&gt;信息来源&lt;/h2&gt;&lt;p&gt;本文来自于微信公共号：frontend-guru。&lt;br&gt;想阅读到更多的关于React Native，移动开发相关，移动互联网，Nodejs，全栈Web开发，开源项目等相关文章，&lt;br&gt;欢迎搜索公共号：frontend-guru或者扫描下面的图片关注&lt;br&gt;&lt;img src=&quot;http://res.cloudinary.com/dawjytvkn/image/upload/v1464858605/qrcode_for_gh_6f66da401fef_430_b1rr96.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;同时文章作者也是一个开源爱好者，目前主要关注nodejs开发源。&lt;br&gt;主导的项目地址如下：&lt;br&gt;&lt;a href=&quot;https://github.com/calidion/projects&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/calidion/projects&lt;/a&gt;&lt;br&gt;同时也开通了QQ交流群：&lt;br&gt;nodejs开源项目交流QQ群：312685910&lt;br&gt;也欢迎有更多的nodejs开发的同学一起加入开源项目中来。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;缘起&quot;&gt;&lt;a href=&quot;#缘起&quot; class=&quot;headerlink&quot; title=&quot;缘起&quot;&gt;&lt;/a&gt;缘起&lt;/h2&gt;&lt;p&gt;通常我们配置好了Android的开发环境后都需要打入android命令启动SDK管理器，然后再点到AVD管理器中才能启动一个模拟器。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Web开发人员必须了解的科学上网工具</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/Web%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%BF%85%E9%A1%BB%E4%BA%86%E8%A7%A3%E7%9A%84%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%B7%A5%E5%85%B7/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/Web开发人员必须了解的科学上网工具/</id>
+    <published>2016-06-07T12:24:29.000Z</published>
+    <updated>2016-06-07T12:25:01.412Z</updated>
+    
+    <content type="html">&lt;p&gt;由于众所周知的原因，我们的网络环境是相对受限的。这样导致我们无法获得足够的信息作出比较全面的价值判断。&lt;/p&gt;
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;而对于技术人员来讲，则是我们无法获得一手的资料，从而产生各种传播的错误。&lt;br&gt;其中传播最为广泛的错误是DIV+CSS的错误，正确的表述应该是HTML+CSS。&lt;br&gt;同时最近又出现前后端分离这种国外基本没有人提的错误，严重影响着国内的技术圈的认知。  &lt;/p&gt;
+&lt;p&gt;特别是最近百度魏则西事件的曝光，突显了国内搜索引擎误导性。因此有条件的要使用谷歌，没条件创造条件也要使用谷歌对于我们Web开发人员来说是至关重要的技术能力。当然，还有bing.com可以作为临时性的搜索引擎。毕竟折腾是需要时间的。&lt;/p&gt;
+&lt;p&gt;在这里我将向大家介绍一些常用的免费科学上网工具，助力你更好的获取你所需要的知识。&lt;/p&gt;
+&lt;h2 id=&quot;Lantern&quot;&gt;&lt;a href=&quot;#Lantern&quot; class=&quot;headerlink&quot; title=&quot;Lantern&quot;&gt;&lt;/a&gt;Lantern&lt;/h2&gt;&lt;p&gt; &lt;img src=&quot;http://webfullstack.me/images/lantern.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;首先是最简单易用的上网软件lantern。&lt;/p&gt;
+&lt;h3 id=&quot;项目地址&quot;&gt;&lt;a href=&quot;#项目地址&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;  &lt;a href=&quot;https://github.com/getlantern/lantern&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/getlantern/lantern&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装方法&quot;&gt;&lt;a href=&quot;#安装方法&quot; class=&quot;headerlink&quot; title=&quot;安装方法&quot;&gt;&lt;/a&gt;安装方法&lt;/h3&gt;&lt;p&gt;  直接下载安装&lt;/p&gt;
+&lt;h3 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;  它是最简单易用的上网软件，通过自动代理系统的网络访问请求，从而实现无逢科学上网。门槛最低&lt;/p&gt;
+&lt;h3 id=&quot;缺点&quot;&gt;&lt;a href=&quot;#缺点&quot; class=&quot;headerlink&quot; title=&quot;缺点&quot;&gt;&lt;/a&gt;缺点&lt;/h3&gt;&lt;p&gt;  有时候网络会比较慢，同时存在错误代理网站，导致访问极慢的情况。&lt;/p&gt;
+&lt;h3 id=&quot;适合人群&quot;&gt;&lt;a href=&quot;#适合人群&quot; class=&quot;headerlink&quot; title=&quot;适合人群&quot;&gt;&lt;/a&gt;适合人群&lt;/h3&gt;&lt;p&gt;   对网络相对不是很熟悉，使用国外网站需求相对比较少的人群&lt;/p&gt;
+&lt;h2 id=&quot;XX-Net&quot;&gt;&lt;a href=&quot;#XX-Net&quot; class=&quot;headerlink&quot; title=&quot;XX-Net&quot;&gt;&lt;/a&gt;XX-Net&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://webfullstack.me/images/xx-net.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;XX-Net是一个基于Google Appengine的Web代理，是goagent的升级版。&lt;/p&gt;
+&lt;h3 id=&quot;项目地址-1&quot;&gt;&lt;a href=&quot;#项目地址-1&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;  &lt;a href=&quot;https://github.com/XX-net/XX-Net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/XX-net/XX-Net&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装方法-1&quot;&gt;&lt;a href=&quot;#安装方法-1&quot; class=&quot;headerlink&quot; title=&quot;安装方法&quot;&gt;&lt;/a&gt;安装方法&lt;/h3&gt;&lt;p&gt;  见项目地址。相对于lantern来说复杂了很多。需要申请appengine与创建appengine的项目。由于近期google appengine似乎已经无法注册了，这个项目的可用性在未来将会受到考验。但是目前公共帐号应该是有一些可以使用的。&lt;/p&gt;
+&lt;h3 id=&quot;优点-1&quot;&gt;&lt;a href=&quot;#优点-1&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;  单个APPENGINE 项目可用的流量每天有1G，只要注册足够多的帐号，基本上不用担心流量的问题。比如我有10个左右的帐号，因此观看Youtube视频是足够的。对于经常要看Youtube的同学来说拥有XX-Net是至关重要的。&lt;/p&gt;
+&lt;h3 id=&quot;缺点-1&quot;&gt;&lt;a href=&quot;#缺点-1&quot; class=&quot;headerlink&quot; title=&quot;缺点&quot;&gt;&lt;/a&gt;缺点&lt;/h3&gt;&lt;p&gt;  配置相对复杂，要注册帐号（这个可能会卡住很多人，并且现在Google的App Engine已经不再继续了），同时访问时带有appengine的id或者项目信息，容易暴露自己的隐然信息，并不是一个安全的科学上网工具&lt;/p&gt;
+&lt;h3 id=&quot;适合人群-1&quot;&gt;&lt;a href=&quot;#适合人群-1&quot; class=&quot;headerlink&quot; title=&quot;适合人群&quot;&gt;&lt;/a&gt;适合人群&lt;/h3&gt;&lt;p&gt;  爱折腾的IT开发人员或者其它有能力解决问题的人员&lt;/p&gt;
+&lt;h2 id=&quot;Tor&quot;&gt;&lt;a href=&quot;#Tor&quot; class=&quot;headerlink&quot; title=&quot;Tor&quot;&gt;&lt;/a&gt;Tor&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;http://webfullstack.me/images/tor-logo.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;Tor是一个浏览器应用，使用Tor可以很好的隐藏你的网络访问行踪，是一个安全级别很高的浏览器。&lt;/p&gt;
+&lt;h3 id=&quot;项目地址-2&quot;&gt;&lt;a href=&quot;#项目地址-2&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;  &lt;a href=&quot;https://www.torproject.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.torproject.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装方法-2&quot;&gt;&lt;a href=&quot;#安装方法-2&quot; class=&quot;headerlink&quot; title=&quot;安装方法&quot;&gt;&lt;/a&gt;安装方法&lt;/h3&gt;&lt;p&gt;  同lantern，下载安装即可。针对不同的OS有很多的版本，可以根据自己的OS选择一个适合的版本。&lt;/p&gt;
+&lt;h3 id=&quot;优点-2&quot;&gt;&lt;a href=&quot;#优点-2&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;  有效的保护你的访问位置等隐私，配置相对于XX-Net要简单很多&lt;/p&gt;
+&lt;h3 id=&quot;缺点-2&quot;&gt;&lt;a href=&quot;#缺点-2&quot; class=&quot;headerlink&quot; title=&quot;缺点&quot;&gt;&lt;/a&gt;缺点&lt;/h3&gt;&lt;p&gt;  由于采用了很多安全措施，导致访问时的速度不高，但是新版本已经有所改善。&lt;/p&gt;
+&lt;h3 id=&quot;适合人群-2&quot;&gt;&lt;a href=&quot;#适合人群-2&quot; class=&quot;headerlink&quot; title=&quot;适合人群&quot;&gt;&lt;/a&gt;适合人群&lt;/h3&gt;&lt;p&gt;  对隐私敏感，服务于安全机构的工作人员&lt;/p&gt;
+&lt;h2 id=&quot;SoftEther&quot;&gt;&lt;a href=&quot;#SoftEther&quot; class=&quot;headerlink&quot; title=&quot;SoftEther&quot;&gt;&lt;/a&gt;SoftEther&lt;/h2&gt;&lt;p&gt; &lt;img src=&quot;http://webfullstack.me/images/softether.ico&quot; alt=&quot;&quot;&gt;&lt;br&gt;SoftEther顾名思义就是软网，软件实现的以太网，也就是通常的VPN。只不过这个VPN是开源的，是公共的。任何人都可以构建一个VPN服务器供其它的VPN客户端访问，并且开放用户名与密码。&lt;/p&gt;
+&lt;h3 id=&quot;项目地址-3&quot;&gt;&lt;a href=&quot;#项目地址-3&quot; class=&quot;headerlink&quot; title=&quot;项目地址&quot;&gt;&lt;/a&gt;项目地址&lt;/h3&gt;&lt;p&gt;  &lt;a href=&quot;https://www.softether.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.softether.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;安装方法-3&quot;&gt;&lt;a href=&quot;#安装方法-3&quot; class=&quot;headerlink&quot; title=&quot;安装方法&quot;&gt;&lt;/a&gt;安装方法&lt;/h3&gt;&lt;p&gt;  Windows用户直接下载安装。&lt;br&gt;这个项目的软件分成服务器与客户端，服务器用来建设一个公共VPN网络，客户端用来连接一个公共VPN网络。对于要科学上网的我们来说，只需要客户端就可以了。&lt;br&gt;目前SoftEther的最方便的使用环境是Windows环境，在Linux/Mac下，由于更新机制不完善，所以不是很推荐使用。&lt;br&gt;在Windows下面，客户可以自动刷新公共VPN服务器，并且点击就可以连接VPN，所以很方便找到可用的VPN服务器。&lt;/p&gt;
+&lt;h3 id=&quot;优点-3&quot;&gt;&lt;a href=&quot;#优点-3&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h3&gt;&lt;p&gt;  跟Tor类似，客户端与服务器之间有安全的信道。支持包括HTTP协议的所有的协议，所以对于被禁的其它协议也有很强的抵抗能力。这是其它上述3个软件所无法实现的。同时速度非常快，正常情况下比XX-NET要快很多，所以看Youtube一点也不卡。同时可以很好的保护自己的上网位置。&lt;/p&gt;
+&lt;h3 id=&quot;缺点-3&quot;&gt;&lt;a href=&quot;#缺点-3&quot; class=&quot;headerlink&quot; title=&quot;缺点&quot;&gt;&lt;/a&gt;缺点&lt;/h3&gt;&lt;p&gt;  不是非常稳定，由于众所周知的原因，有时候一个IP可能会随时被断掉。这种方法同时会让HTTP代理显得没有意义。跟HTTP代理比，缺少灵活性。&lt;/p&gt;
+&lt;h1 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h1&gt;&lt;p&gt;上述的科学上网工具都是免费或者开源免费的，他们有着不尽相同的属性与难易程度，你可以根据你的实际情况选择一个使用，让自己可以更加自由地获取知识与思想。&lt;/p&gt;
+&lt;p&gt;对于比较健忘的同学，可以记住下面的网站:&lt;br&gt;&lt;a href=&quot;http://webfullstack.me&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://webfullstack.me&lt;/a&gt;&lt;br&gt;上面有全部这四个工具导航地址，方便你随时找到你想要的网站。并且提供了很多全栈开发工程师必备的网址。&lt;/p&gt;
+&lt;p&gt;更多关于网络或者Web的知识欢迎关注微信公共号：frontend-guru&lt;br&gt;或者扫描下面的图片&lt;br&gt;&lt;img src=&quot;http://res.cloudinary.com/dawjytvkn/image/upload/v1464858605/qrcode_for_gh_6f66da401fef_430_b1rr96.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于众所周知的原因，我们的网络环境是相对受限的。这样导致我们无法获得足够的信息作出比较全面的价值判断。&lt;/p&gt;
+&lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;而对于技术人员来讲，则
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在Ubuntu下面轻松运行一个基于Android的React Native程序</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E5%9C%A8Ubuntu%E4%B8%8B%E9%9D%A2%E8%BD%BB%E6%9D%BE%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8EAndroid%E7%9A%84React-Native%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/在Ubuntu下面轻松运行一个基于Android的React-Native程序/</id>
+    <published>2016-06-07T12:22:51.000Z</published>
+    <updated>2016-06-07T12:23:09.524Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;废话&quot;&gt;&lt;a href=&quot;#废话&quot; class=&quot;headerlink&quot; title=&quot;废话&quot;&gt;&lt;/a&gt;废话&lt;/h2&gt;&lt;p&gt;React Native火遍大江南北，五湖四海。基于React的组件化思想，通过JS就可以轻松的制作出来界面精良，体验真实的移动应用，对于开发Web应用为主的广大js开发人员来说还是非常有吸引力的。&lt;br&gt;同时React让界面变动大的移动应用变的更加的自如。所以作为一个移动+Web开发者，没有理由不上上手实作一下。&lt;/p&gt;
+&lt;h2 id=&quot;主体&quot;&gt;&lt;a href=&quot;#主体&quot; class=&quot;headerlink&quot; title=&quot;主体&quot;&gt;&lt;/a&gt;主体&lt;/h2&gt;&lt;p&gt;在实作的过程中也遇到了点小问题，不过克服起来还是比较容易的。&lt;br&gt;下面我将我如何成功运行React Native的过程记录下来，希望给对React Native感兴趣的同学一个借鉴，少走些弯路。&lt;/p&gt;
+&lt;h3 id=&quot;过程&quot;&gt;&lt;a href=&quot;#过程&quot; class=&quot;headerlink&quot; title=&quot;过程&quot;&gt;&lt;/a&gt;过程&lt;/h3&gt;&lt;p&gt;由于我的开发环境是Ubuntu，所以我基于Ubuntu来介绍我的实现过程。&lt;/p&gt;
+&lt;p&gt;对于英语熟练的同学可以直接访问：&lt;br&gt;&lt;a href=&quot;http://facebook.github.io/react-native/docs/getting-started.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://facebook.github.io/react-native/docs/getting-started.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我在这里不再详细介绍上面页面已经有的内容。&lt;br&gt;只将步骤列出来，方便新手连贯起来走完全程。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先是安装基本的支持包&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt-get install -y build-essential default-jdk git-all lib32stdc++6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后是安装nodejs&lt;br&gt;由于本人特别反感nodejs通过root权限安装，所以强烈推荐使用nvm安装。&lt;br&gt;如果你现在坚持要使用root安装，请确保你能应对所有可能出现的安全问题。&lt;br&gt;如果你现在是root用户，建议马上创建非root用户，可以适当的加上sudo权限。&lt;br&gt;安装nodejs的过程详细见：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;http://blog.3gcnbeta.com/2015/07/13/%E5%9C%A8Linux%E4%B8%8B%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85nodejs%E7%9A%84%E5%A7%BF%E5%8A%BF/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我只在这里按步骤列出命令：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;. ~/.nvm/nvm.sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nvm ls-remote&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nvm install v4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;nvm &lt;span class=&quot;built_in&quot;&gt;alias&lt;/span&gt; default v4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样你的nodejs就安装好了。&lt;br&gt;打入npm如下：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;应该会出现一堆提示，表明你已经安装成功。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;安装react native 命令行工具&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install -g react-native-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装Android Studio&lt;br&gt;下载&lt;a href=&quot;http://developer.android.com/sdk/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android Studio&lt;/a&gt;&lt;br&gt;地址：&lt;a href=&quot;http://developer.android.com/sdk/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://developer.android.com/sdk/index.html&lt;/a&gt;&lt;br&gt;详细安装见官方链接&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;配置下环境变量ANDROID_HOME与路径&lt;br&gt;在 ~/.bashrc, ~/.bash_profile, ~/.profile其中一个里加&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; ANDROID_HOME=~/Android/Sdk&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;PATH=&lt;span class=&quot;string&quot;&gt;&quot;~/Android/Sdk/tools:~/Android/Sdk/platform-tools:&lt;span class=&quot;variable&quot;&gt;$&amp;#123;PATH&amp;#125;&lt;/span&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;export&lt;/span&gt; PATH&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;即可。&lt;br&gt;source 一下刚才的文件，然后打入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;variable&quot;&gt;$ANDROID_HOME&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这时如果出现路径，说明配置成功！&lt;br&gt;比如&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;home/eric/Android/Sdk&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后再打入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;android&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这时会出来Android的SDK配置对话框，说明你的android路径配置正确。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;创建React Native项目&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;react-native init AwesomeProject&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; AwesomeProject&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;运行开发服务器&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;react-native start&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;运行程序&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;react-native run-android&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;问题解决&quot;&gt;&lt;a href=&quot;#问题解决&quot; class=&quot;headerlink&quot; title=&quot;问题解决&quot;&gt;&lt;/a&gt;问题解决&lt;/h3&gt;&lt;p&gt;React Native启动后可能会出现红屏。&lt;br&gt;就目前我遇到的情况来说都比较容易解决。  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个问题是开发服务器找不到。&lt;br&gt;需要晃动手机调出选项，对于不支持晃动的手机，可以通过命令：&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;adb shell input keyevent 82&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;调用。&lt;br&gt;然后进入Dev Settings =&amp;gt; BEBUGGING =&amp;gt; Debug server host &amp;amp; port for devices&lt;/p&gt;
+&lt;p&gt;这时输入你启动react-native start所在的机器的IP与端口即可解决问题。&lt;br&gt;通常是 IP:8081这样的格式&lt;br&gt;参考start的提示，一般提示会包含这样的文字&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Running packager on port 8081&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;这样重新加载，这个问题服务器的问题就没有了。  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;热加载的问题。&lt;br&gt;问题提示是：&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;locales[0] does not appear to be a `module`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可以考虑暂时禁用。&lt;br&gt;方法还是晃动手机调出选项。然后点击Disable Hot Reloading&lt;br&gt;这样这个问题就解决了。&lt;/p&gt;
+&lt;h3 id=&quot;成功&quot;&gt;&lt;a href=&quot;#成功&quot; class=&quot;headerlink&quot; title=&quot;成功&quot;&gt;&lt;/a&gt;成功&lt;/h3&gt;&lt;p&gt;通过解决两个问题， 我就看到了：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Welcome to React Native!&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;的字样.&lt;/p&gt;
+&lt;p&gt;然后就可以轻松的边修改，边看结果了。&lt;/p&gt;
+&lt;h2 id=&quot;结束&quot;&gt;&lt;a href=&quot;#结束&quot; class=&quot;headerlink&quot; title=&quot;结束&quot;&gt;&lt;/a&gt;结束&lt;/h2&gt;&lt;p&gt;React Native的安装与使用总体是很简单的，但是需要有一定的Android和Nodejs的开发经验，然后能理解基本的网络开发原理，否则初次安装还是有比较大的理解困难。&lt;br&gt;希望本文能帮助更多的初学者快速的安装React Native并速度的使用起来。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;废话&quot;&gt;&lt;a href=&quot;#废话&quot; class=&quot;headerlink&quot; title=&quot;废话&quot;&gt;&lt;/a&gt;废话&lt;/h2&gt;&lt;p&gt;React Native火遍大江南北，五湖四海。基于React的组件化思想，通过JS就可以轻松的制作出来界面精良，体验真实的移动应用，对于开
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>为什么我不建议使用npm做前端包管理？</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%8D%E5%BB%BA%E8%AE%AE%E4%BD%BF%E7%94%A8npm%E5%81%9A%E5%89%8D%E7%AB%AF%E5%8C%85%E7%AE%A1%E7%90%86%EF%BC%9F/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/为什么我不建议使用npm做前端包管理？/</id>
+    <published>2016-06-07T12:21:51.000Z</published>
+    <updated>2016-06-07T12:22:04.572Z</updated>
+    
+    <content type="html">&lt;p&gt;前一阵子听说bower团队有意找维护人员，于是我就发了个申请。没几天就收到了bower的官方邀请，同意后就正式成为bower成员。虽然刚成为bower的维护人员，还没有太多权限，也还没有提交过代码。但是我也有义务将bower吹一吹，让更多的人了解使用bower作为前端的包管理工具是必要的，也是正确的选择。&lt;/p&gt;
+&lt;p&gt;由于bower的一些设计缺陷，导致很多用户鼓吹使用npm取代bower，但是口号喊了好多年，却并没有产生多大的作用。原因是npm连node自己的问题都没有能很好的解决，更别说解决什么前端的版本管理问题了。&lt;/p&gt;
+&lt;h2 id=&quot;npm3引入的问题&quot;&gt;&lt;a href=&quot;#npm3引入的问题&quot; class=&quot;headerlink&quot; title=&quot;npm3引入的问题&quot;&gt;&lt;/a&gt;npm3引入的问题&lt;/h2&gt;&lt;p&gt;我们来看看npm升级后产生的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;从npm3之后，npm从nested转向了flat，结果一堆软件无法工作。&lt;/li&gt;
+&lt;li&gt;即使是全面支持flat的包，不同的版本也无法实现一致化。&lt;br&gt;比如一个包A的版本是1.2.xx，支持基于npm3发布的。如果有两个包引用了这个包A，分别是版本，1.2.xx，跟1.3.xx，那么npm3就会安装两个版本的npm包。从而无法实现A包在一个系统里的一致性，从而产生与npm2时代一样的问题。所以用一句网络流行语评价npm3：“然而并没有什么卵用”。&lt;/li&gt;
+&lt;li&gt;包灾难。使用npm3之后，本来你只是引用了2个包，结果node_modules目录下面出来上百个包，让你找个包都困难死了。完全没有npm2时代引入多少包就产生多少个目录的整洁。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以npm的升级完全没有解决node自己的问题，反而引入了一堆新的问题。&lt;br&gt;有些问题甚至还不如npm2时代解决的好。&lt;/p&gt;
+&lt;p&gt;npm解决node问题都自顾不睱，还好意思来管前端的事情吗？&lt;/p&gt;
+&lt;h2 id=&quot;前端与后端不宜混合在一起&quot;&gt;&lt;a href=&quot;#前端与后端不宜混合在一起&quot; class=&quot;headerlink&quot; title=&quot;前端与后端不宜混合在一起&quot;&gt;&lt;/a&gt;前端与后端不宜混合在一起&lt;/h2&gt;&lt;h3 id=&quot;会产生冗余问题&quot;&gt;&lt;a href=&quot;#会产生冗余问题&quot; class=&quot;headerlink&quot; title=&quot;会产生冗余问题&quot;&gt;&lt;/a&gt;会产生冗余问题&lt;/h3&gt;&lt;p&gt;前端与后端使用同一套包管理软件可以减少公共部分的耦合，但是会导致不必要的冗余。&lt;br&gt;比如一个bootstrap包，是不可能被后端使用的。但是如果统一使用npm管理，每次npm install都会安装bootstrap包，而后端一辈子都用不倒，完全是浪费带宽、存储空间、时间。并且你在运行后端前，每次都安装个bootstrap，你不觉得恶心吗？&lt;/p&gt;
+&lt;h3 id=&quot;运行环境完全不同&quot;&gt;&lt;a href=&quot;#运行环境完全不同&quot; class=&quot;headerlink&quot; title=&quot;运行环境完全不同&quot;&gt;&lt;/a&gt;运行环境完全不同&lt;/h3&gt;&lt;p&gt;前端与后端的运行环境是完全不同的，前端运行于浏览器内（即主要是DOM与BOM环境，相对受限），后端则运行于OS内（有无限的API与可能性）。所以这两种开发环境是完全不同的。不同的开发环境使用同一个包管理文件显然是不合时宜的，也不符合模块化的理念。&lt;/p&gt;
+&lt;h3 id=&quot;开发人员也可能不同&quot;&gt;&lt;a href=&quot;#开发人员也可能不同&quot; class=&quot;headerlink&quot; title=&quot;开发人员也可能不同&quot;&gt;&lt;/a&gt;开发人员也可能不同&lt;/h3&gt;&lt;p&gt;前端与后端通常是不同的开发团队，因些前端关注的是HTML，CSS，DOM，BOM， js的UI库与动作库。而后端关注的是性能，安全，效率，数据，缓存，用户管理。他们可能都会用到gulp/grunt，而后端通常不会用到webpack，wiredep，bootstrap, jQuery这类纯前端的包。所以强行将他们捆绑在一起是没有必要的。&lt;/p&gt;
+&lt;h3 id=&quot;同构包可以分开打包&quot;&gt;&lt;a href=&quot;#同构包可以分开打包&quot; class=&quot;headerlink&quot; title=&quot;同构包可以分开打包&quot;&gt;&lt;/a&gt;同构包可以分开打包&lt;/h3&gt;&lt;p&gt;由于isomorphic js的流行，同构包也会越来越多。但是其实你会发现，不管如何同构，前后端的运行环境还是不同的。所以同构包的调用环境还是不一样的。前端的包通常需要通过browserify，webpack或者gulp等工具发布成前端可用的包。跟npm包直接通过package.json决定从什么地方接入是不同的。即使npm可以为前端包提供字段供前端接入，也会显得非常混乱。&lt;/p&gt;
+&lt;h3 id=&quot;Do-one-thing-and-do-it-well&quot;&gt;&lt;a href=&quot;#Do-one-thing-and-do-it-well&quot; class=&quot;headerlink&quot; title=&quot;Do one thing and do it well&quot;&gt;&lt;/a&gt;Do one thing and do it well&lt;/h3&gt;&lt;p&gt;Unix的一个很重要的原则是:Write programs that do one thing and do it well. 如果npm想搞前后端，则违反了这个基本的原则，所以我不会看好。虽然unix原则并非所有的时候都是对的。但是他经历了千万次的考验。&lt;/p&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;bower存在不少问题，但是只要改进，一定会比npm更加符合前端对于包管理的需求。bower也仍在不断的演进之中，未来可能会带来更多便利的功能来促进前端的发展。所以它仍是一个可信的前端包管理解决方案。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前一阵子听说bower团队有意找维护人员，于是我就发了个申请。没几天就收到了bower的官方邀请，同意后就正式成为bower成员。虽然刚成为bower的维护人员，还没有太多权限，也还没有提交过代码。但是我也有义务将bower吹一吹，让更多的人了解使用bower作为前端的包管
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一次良好的API设计的尝试：蛋蛋API</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E4%B8%80%E6%AC%A1%E8%89%AF%E5%A5%BD%E7%9A%84API%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%B0%9D%E8%AF%95%EF%BC%9A%E8%9B%8B%E8%9B%8BAPI/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/一次良好的API设计的尝试：蛋蛋API/</id>
+    <published>2016-06-07T12:19:32.000Z</published>
+    <updated>2016-06-07T12:21:15.304Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;RESTful-APIs存在的问题&quot;&gt;&lt;a href=&quot;#RESTful-APIs存在的问题&quot; class=&quot;headerlink&quot; title=&quot;RESTful APIs存在的问题&quot;&gt;&lt;/a&gt;RESTful APIs存在的问题&lt;/h2&gt;&lt;p&gt;基于上次我们对良好API的设计的讨论，我们发现RESTful APIs存在一些问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;以描述资源为主，而API的设计并非只是描述资源的&lt;/li&gt;
+&lt;li&gt;接口是无状态的，而实际的业务都是有状态的。HTTP协议最终通过引入cookies或者session来维持状态，也引入了更多的安全问题。，所以无状态，会增加接口的不安全性。&lt;/li&gt;
+&lt;li&gt;只支持HTTP协议，无法支持Websocket协议或者其它的协议。&lt;/li&gt;
+&lt;li&gt;将协议与应用混合起来， 同时协议动作数量又有限。可以感受明显的耦合与冲突，与良好的API设计是相悖的。&lt;/li&gt;
+&lt;li&gt;过于学术化，不够亲民&lt;/li&gt;
+&lt;li&gt;无法简单的描述清楚&lt;/li&gt;
+&lt;li&gt;同时将所有的接口当成资源不符合实际的互联网业务实际。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;实用的，良好的，明确的，面向业务的，新的API规范的需求&quot;&gt;&lt;a href=&quot;#实用的，良好的，明确的，面向业务的，新的API规范的需求&quot; class=&quot;headerlink&quot; title=&quot;实用的，良好的，明确的，面向业务的，新的API规范的需求&quot;&gt;&lt;/a&gt;实用的，良好的，明确的，面向业务的，新的API规范的需求&lt;/h2&gt;&lt;p&gt;所以基于这个问题，我们需要设计一个更加实用的API。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将RESTful APIs独立出来成为专门的文件资源的表达&lt;/li&gt;
+&lt;li&gt;将所有业务资源API独立出来，通过一个专门的API规范来定义，我们将这个规范定义成蛋蛋API（egg api）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;蛋蛋API&quot;&gt;&lt;a href=&quot;#蛋蛋API&quot; class=&quot;headerlink&quot; title=&quot;蛋蛋API&quot;&gt;&lt;/a&gt;蛋蛋API&lt;/h2&gt;&lt;p&gt;基于上面的讨论，我们认为将文件资源与业务资源分离会是一个更好的选择。&lt;br&gt;文件资源可以直接基于文件服务器或者基于RESTful APIs的接口，而业务资源通过蛋蛋API来描述。&lt;br&gt;所以我们要明确蛋蛋API要解决的问题。&lt;/p&gt;
+&lt;h3 id=&quot;面向业务资源&quot;&gt;&lt;a href=&quot;#面向业务资源&quot; class=&quot;headerlink&quot; title=&quot;面向业务资源&quot;&gt;&lt;/a&gt;面向业务资源&lt;/h3&gt;&lt;p&gt;由于蛋蛋API解决的是业务资源的操作与获取，所以需要像RESTful APIs具备很强的自描述性的，从而也不需要基于MIME的文件类型描述。所以我们的返回文件格式只有一种：JSON。&lt;br&gt;通过JSON可以很好的表达业务资源的数据与业务的操作。&lt;br&gt;也就是我们不再是Represtative了，而是DATA ONLY。&lt;br&gt;也就是不再关注如何表达，表示，只关注数据与业务的传递。  &lt;/p&gt;
+&lt;h3 id=&quot;错误处理&quot;&gt;&lt;a href=&quot;#错误处理&quot; class=&quot;headerlink&quot; title=&quot;错误处理&quot;&gt;&lt;/a&gt;错误处理&lt;/h3&gt;&lt;p&gt;在RESTful API里错误是基于HTTP Code的方式来表达的。&lt;br&gt;但是HTTP Code的方式有两个缺点：  &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;code数量有限  &lt;/li&gt;
+&lt;li&gt;错误面向的是协议，与业务的关系性较弱  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以蛋蛋API规定了基于的错误与返回数据格式&lt;/p&gt;
+&lt;h3 id=&quot;API风格与规范&quot;&gt;&lt;a href=&quot;#API风格与规范&quot; class=&quot;headerlink&quot; title=&quot;API风格与规范&quot;&gt;&lt;/a&gt;API风格与规范&lt;/h3&gt;&lt;p&gt;在蛋蛋API中吸收RESTful APIs资源定位的理念，初步建立以下一些基本规范：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将业务资源通过URI进行定位&lt;/li&gt;
+&lt;li&gt;通过类HTTP方法实行对资源的操作&lt;/li&gt;
+&lt;li&gt;GET方法用于获取业务资源数据，不影响数据变化&lt;/li&gt;
+&lt;li&gt;POST方法用于操作数据，可能会导致数据生成，变更，消失。&lt;/li&gt;
+&lt;li&gt;API可不限于HTTP协议，也可以适合于可能的HTTP的变种协议&lt;/li&gt;
+&lt;li&gt;明确所有的操作以名词开始。在URI中，不包含可发生资源变更的动词&lt;/li&gt;
+&lt;li&gt;所有变更通过POST提交，并将变更的动词放在action参数下面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;URI的query参数规范&quot;&gt;&lt;a href=&quot;#URI的query参数规范&quot; class=&quot;headerlink&quot; title=&quot;URI的query参数规范&quot;&gt;&lt;/a&gt;URI的query参数规范&lt;/h2&gt;&lt;p&gt;在蛋蛋API里完全将Query当成是查询，但是除去了ID查询。&lt;br&gt;因为通过URI就可以定位ID查询的结果。  &lt;/p&gt;
+&lt;p&gt;在URI中第一个?号后的参数称为query参数，一般的形式是name=value&amp;amp;name1=value1这样的。&lt;br&gt;在这里，我们基于HTTP的query，实现对数据的查询。  &lt;/p&gt;
+&lt;h3 id=&quot;分页&quot;&gt;&lt;a href=&quot;#分页&quot; class=&quot;headerlink&quot; title=&quot;分页&quot;&gt;&lt;/a&gt;分页&lt;/h3&gt;&lt;p&gt;参数名page表示页码，limit表示每页数据量。&lt;/p&gt;
+&lt;p&gt;所以获取第5页，每页50个数据的query是这样的：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;uri?page=5&amp;amp;limit=50&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;默认值： page=1, limit=20。&lt;/p&gt;
+&lt;h3 id=&quot;会话&quot;&gt;&lt;a href=&quot;#会话&quot; class=&quot;headerlink&quot; title=&quot;会话&quot;&gt;&lt;/a&gt;会话&lt;/h3&gt;&lt;p&gt;如果蛋蛋API的会话是基于token的。token将会被放在query里。&lt;/p&gt;
+&lt;p&gt;代码示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;uri?token=xxx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;状态查询&quot;&gt;&lt;a href=&quot;#状态查询&quot; class=&quot;headerlink&quot; title=&quot;状态查询&quot;&gt;&lt;/a&gt;状态查询&lt;/h3&gt;&lt;p&gt;每个业务资源都是可以有状态的，所以我们提供了state来表示状态。&lt;br&gt;建议所有的状态都使用state来表达。同时状态值使用大写字符串来表达。&lt;/p&gt;
+&lt;p&gt;代码示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;uri?state=GOOD&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;时间段匹配&quot;&gt;&lt;a href=&quot;#时间段匹配&quot; class=&quot;headerlink&quot; title=&quot;时间段匹配&quot;&gt;&lt;/a&gt;时间段匹配&lt;/h3&gt;&lt;p&gt;在query里面提供了时间查询字串：from, to。&lt;br&gt;可以单独使用，也可以混合使用。查询格式是 YYYY-MM-DD HH:MM:SS。&lt;br&gt;可以不断减少精确度，直到只有年。&lt;br&gt;所以可以是&lt;br&gt;YYYY-MM-DD HH:MM,  YYYY-MM-DD HH,  YYYY-MM-DD,  YYYY-MM,  YYYY&lt;br&gt;这几种格式。&lt;br&gt;月日不足10时需要使用0补足。&lt;br&gt;小时采用24小时制。  &lt;/p&gt;
+&lt;p&gt;代码示例：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;uri?from=1998-09-01&amp;amp;to=2000-01-20 20:10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;URI的POST参数规范&quot;&gt;&lt;a href=&quot;#URI的POST参数规范&quot; class=&quot;headerlink&quot; title=&quot;URI的POST参数规范&quot;&gt;&lt;/a&gt;URI的POST参数规范&lt;/h2&gt;&lt;p&gt;由于蛋蛋API采用POST来改变数据，所以我们对POST数据作出如下规范&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;提交的数据要与HTTP的表单提交一致&lt;/li&gt;
+&lt;li&gt;以action字段取代RESTful APIs里面的HTTP方法&lt;/li&gt;
+&lt;li&gt;所以业务变更必须通过类HTTP的表单提交。&lt;/li&gt;
+&lt;li&gt;不能将业务逻辑写在文件里，通过文件提交。比如将业务逻辑写到JSON文件里提交到服务器。&lt;/li&gt;
+&lt;li&gt;所有的变更参数必须通过POST提交。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;一个POST示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;POST   /users&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;action=register&amp;amp;name=aaa&amp;amp;password=asdfsf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h3&gt;&lt;p&gt;至此我们已经将蛋蛋API与RESTful APIs的一些特点与优缺点描述完整。&lt;br&gt;我们在文件资源表示时，可以采用RESTful，而在业务表示时，使用蛋蛋API的规范会让你更加的得心应手。所以对于不同的情况采用不同的策略也许是一个更加可行的办法，不拘泥于RESTful APIs还是蛋蛋APIs。也许，你可以发展出来一套更加有效的API。  &lt;/p&gt;
+&lt;p&gt;蛋蛋API的出发点是实现一套更加实用的，不受HTTP约束，更加面向业务的API规范，所以方向与RESTful APIs是不同的。蛋蛋API面向的更多的是业务资源，而REST将所有的内容都当成是资源表达，并不是我们所同意的看法，所以我们有意将蛋蛋API定位于面向业务资源而不是文件资源，从而可以让我们的API变的更加简单，从而不需要Representive，也不需要MIME。&lt;/p&gt;
+&lt;p&gt;我们遵从常识大于配置的观念，希望通过固化一些共同的属性，达到最大的一致化API。&lt;/p&gt;
+&lt;p&gt;目前蛋蛋API仍处于早期阶段，仍有很多可以改进与可以规范的地方。&lt;br&gt;所以非常欢迎对于优化API，改进规范，促成更好的API协作感兴趣的同仁一起参与改进。&lt;/p&gt;
+&lt;p&gt;egg api规范地址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/calidion/egg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/calidion/egg&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;RESTful-APIs存在的问题&quot;&gt;&lt;a href=&quot;#RESTful-APIs存在的问题&quot; class=&quot;headerlink&quot; title=&quot;RESTful APIs存在的问题&quot;&gt;&lt;/a&gt;RESTful APIs存在的问题&lt;/h2&gt;&lt;p&gt;基于上次我们对良好A
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>什么样的API才是好的API以及如何评价RESTful APIs？</title>
@@ -2361,161 +2683,6 @@
     </summary>
     
       <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>利用FormData与jquery实现ajax上传文件</title>
-    <link href="http://blog.3gcnbeta.com/2013/05/03/%E5%88%A9%E7%94%A8formdata%E4%B8%8Ejquery%E5%AE%9E%E7%8E%B0ajax%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
-    <id>http://blog.3gcnbeta.com/2013/05/03/利用formdata与jquery实现ajax上传文件/</id>
-    <published>2013-05-02T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.247Z</updated>
-    
-    <content type="html">&lt;p&gt;由于新的技术进步，上传文件这样的事情已经可以轻松的通过ajax实现&lt;/p&gt;
-&lt;p&gt;下面的代码是通过我的调试与验证的，基本是已经可以用了，现在分享一下。&lt;/p&gt;
-&lt;p&gt;也将我遇到的问题抛出来，希望有人可以帮助解答。&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; form = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; FormData($(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;).parents(&lt;span class=&quot;string&quot;&gt;&quot;form&quot;&lt;/span&gt;).get(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;));&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//这段注释的代码用来实现添加文件（但是根据测试的结果来看，不是非常可靠）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//建议在form里编写文件上传的内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;form.append(&lt;span class=&quot;string&quot;&gt;&#39;file&#39;&lt;/span&gt;, $(&lt;span class=&quot;string&quot;&gt;&#39;input[type=file]&#39;&lt;/span&gt;)[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;].files[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;form.append(&lt;span class=&quot;string&quot;&gt;&#39;image&#39;&lt;/span&gt;, $(&lt;span class=&quot;string&quot;&gt;&#39;input[type=file]&#39;&lt;/span&gt;)[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;].files[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//这里有一个很奇怪的问题，没有初始化FormData时，我只append image时发不出来文件，添加了file再添加image,就能将image发出来了。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//这里可以添加字段，对于中文或者非ASCCI码，记得转码转送，这样不会出现乱码，也符合HTTP的规范。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;form.append(&lt;span class=&quot;string&quot;&gt;&#39;act&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;update&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;form.append(&lt;span class=&quot;string&quot;&gt;&#39;name&#39;&lt;/span&gt;, &lt;span class=&quot;built_in&quot;&gt;encodeURIComponent&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&#39;input[type=text]&#39;&lt;/span&gt;).val()));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;form.append(&lt;span class=&quot;string&quot;&gt;&#39;id&#39;&lt;/span&gt;, &lt;span class=&quot;built_in&quot;&gt;encodeURIComponent&lt;/span&gt;($(&lt;span class=&quot;string&quot;&gt;&#39;input[type=hidden]&#39;&lt;/span&gt;).val()));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;然后通过jquery发送。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$.ajax(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  url: &amp;quot;stash.php&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  type: &amp;quot;POST&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  data: form,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  processData: false,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  contentType: false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;两个flase很重要，processData=false告诉jquery不要处理数据，contentType=false告诉jquery不要再设contentType类型。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由于新的技术进步，上传文件这样的事情已经可以轻松的通过ajax实现&lt;/p&gt;
-&lt;p&gt;下面的代码是通过我的调试与验证的，基本是已经可以用了，现在分享一下。&lt;/p&gt;
-&lt;p&gt;也将我遇到的问题抛出来，希望有人可以帮助解答。&lt;/p&gt;
-&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;figure class
-    
-    </summary>
-    
-      <category term="编程技术" scheme="http://blog.3gcnbeta.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="WEB开发" scheme="http://blog.3gcnbeta.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/WEB%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="WEB前端技术" scheme="http://blog.3gcnbeta.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/WEB%E5%BC%80%E5%8F%91/WEB%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Javascript" scheme="http://blog.3gcnbeta.com/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF/WEB%E5%BC%80%E5%8F%91/WEB%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/Javascript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一段HTML图片上传前显示图片的代码</title>
-    <link href="http://blog.3gcnbeta.com/2013/02/18/%E4%B8%80%E6%AE%B5html%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0%E5%89%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E7%9A%84%E4%BB%A3%E7%A0%81/"/>
-    <id>http://blog.3gcnbeta.com/2013/02/18/一段html图片上传前显示图片的代码/</id>
-    <published>2013-02-17T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.247Z</updated>
-    
-    <content type="html">&lt;p&gt;一段使用jquery图片上传前显示图片的代码，来源：&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;一般情况下，javascript无法直接获取本地图片的地址，所以需要利用FileReader里的readAsDataURL读取隐藏的文件地址。&lt;br&gt;&lt;br&gt;并在加载完文件后通过访问e.target.result显示出来。&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; language=&quot;javascript&quot;&gt;&lt;br&gt;//Image show on change input file&lt;br&gt;&lt;br&gt;    if ($(‘input[type=file]’).length &amp;gt; 0) {&lt;br&gt;&lt;br&gt;        $(‘input[type=file]’).change(function() {&lt;br&gt;&lt;br&gt;            if (this.files &amp;amp;&amp;amp; this.files[0]) {&lt;br&gt;&lt;br&gt;                var reader = new FileReader();&lt;br&gt;&lt;br&gt;                reader.onload = function(e) {&lt;br&gt;&lt;br&gt;                    $(‘ul li a img’).attr(‘src’, e.target.result).width(90).height(90);&lt;br&gt;&lt;br&gt;                };&lt;br&gt;&lt;br&gt;                reader.readAsDataURL(this.files[0]);&lt;br&gt;&lt;br&gt;            }&lt;br&gt;&lt;br&gt;        });&lt;br&gt;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一段使用jquery图片上传前显示图片的代码，来源：&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded&quot; target=&quot;_bl
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://blog.3gcnbeta.com/categories/HTML/"/>
-    
-      <category term="WEB开发" scheme="http://blog.3gcnbeta.com/categories/HTML/WEB%E5%BC%80%E5%8F%91/"/>
-    
-      <category term="WEB前端技术" scheme="http://blog.3gcnbeta.com/categories/HTML/WEB%E5%BC%80%E5%8F%91/WEB%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Javascript" scheme="http://blog.3gcnbeta.com/categories/HTML/WEB%E5%BC%80%E5%8F%91/WEB%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/Javascript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 安装到 Mac Air</title>
-    <link href="http://blog.3gcnbeta.com/2013/02/14/ubuntu-%E5%AE%89%E8%A3%85%E5%88%B0-mac-air/"/>
-    <id>http://blog.3gcnbeta.com/2013/02/14/ubuntu-安装到-mac-air/</id>
-    <published>2013-02-13T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.247Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://ubuntuforums.org/showthread.php?t=2039799&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ubuntuforums.org/showthread.php?t=2039799&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://ubuntuforums.org/showthread.php?t=2039799&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://ubuntuforums.org/showthread.php?t=203979
-    
-    </summary>
-    
-      <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hadoop不是什么(What Hadoop is Not)?</title>
-    <link href="http://blog.3gcnbeta.com/2012/12/12/hadoop%E4%B8%8D%E6%98%AF%E4%BB%80%E4%B9%88what-hadoop-is-not/"/>
-    <id>http://blog.3gcnbeta.com/2012/12/12/hadoop不是什么what-hadoop-is-not/</id>
-    <published>2012-12-11T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.247Z</updated>
-    
-    <content type="html">&lt;p&gt;原文：&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://wiki.apache.org/hadoop/HadoopIsNot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wiki.apache.org/hadoop/HadoopIsNot&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Hadoop不是什么？&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;我们现在可以从很多电子邮件(西方人在互联网上的交流很多是基于邮件的)获取关于Hadoop的信息,从而会认为hadoop可以解决所有的应用/数据中心的问题。但是，事实不是这样的。他为一些公司和组织解决了特定的问题，但是只是在他们理解了这项技术之后，并且是在适当的地方。如果你是抱着替换你的数据库或者SAN文件系统的思路来开始使用Hadoop的话，你将会失望。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Apache Haddop不是对数据库的替换&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;数据库是伟大的东西。发起一个SELECT的SQL调用，就可以利用数据库的索引/优化产生毫秒级的响应。想改变数据？执行一个UPDATE然后数据就变了。但是Hadoop并不是做这个的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;Hadoop保存数据在文件里面，并且不建立索引。如果你想要查找一些东西，你必须运行一个MapReduce的作业来跑完所有的数据。这个需要花费一些时间，也就是说，你不能直接用Hadoop来替换database。Hadoop工作的地方是那些对于数据来讲，数据太大的地方(比如：你达到了技术的极限，而不是你不想为数据库付费)。对于非常大的数据库来说，产生索引的代价太大以至于你不能简单的对变更数据产生索引。当很多机器在向这个数据库执行写操作时，你就无法对这个数据库进行锁操作。但这个时候一个关联不直接的分布式文件系统的思路是可行的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;这里有一个运行在Hadoop HDFS之上的高性能的基于列表的数据库：Apache HBase。这是一个很好的将你抽取出来的数据保存下来的地方。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;MapReduce并不总是最好的算法&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;MapReduce是一个深奥的想法：通过一个简单的函数式编程的操作，然后应用它，用并行计算的方式，针对Gb或者Tb级的数据。但是这是有代价的。对于那个并行性来说，你需要让所有的MR操作与其它的操作是独立的。如果你需要知道之前所有的事情的进行情况，你就会遇到问题。这些问题可以通过使用：&lt;br&gt;&lt;br&gt;Iteration(迭代): 运行多个MR作业，前一个的输出，作为下一个的输入。&lt;br&gt;&lt;br&gt;共享状态信息: Hbase在这里一个可以考虑的选项，或者一些象memcache这样的也是一个选项。&lt;br&gt;&lt;br&gt;得到帮助。&lt;/p&gt;&lt;br&gt;&lt;p&gt;不要试图记住共享变量里的信息，因为他们是只记录在一个JVM里的。在大量并行计算的环境下，这是一种错误的方式。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Hadoop和MapReduce不是一个学习java编程的地方&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;现在的Hadoop API和文档里有很多的预设条件，假设你有java编程的基础，与解决Hadoop不能工作时的常见的错误消息的基础。如果你不懂classpath, 怎么编译与调试java代码，先从hadoop里抽出来，回去学习一些关于java的更多的知识后再跟进。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Hadoop 不是一个学习网络错误消息的理想场所。&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;如果你对网络与相关的错误消息已经很熟悉，你会发现事情就会更加容易的工作。比如：&amp;ldquo;连接拒绝&amp;rdquo;是什么意思，和它与&amp;ldquo;没有连接到主机的路由&amp;rdquo;的差别怎样的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;很多人发送了与&amp;ldquo;连接拒绝&amp;rdquo;、&amp;ldquo;没有连接到主机的路由&amp;rdquo;和其它常见的TCP-IP层次相关的问题到用户列表上。这些通常是由无效的集群配置引起的现象，集群的某些部分没有运行或者机器不能在内网互相通讯。邮件列表上的人不能帮助你调试你的网络配置，因为这是你的网络，不是他们的。他们可以帮你点出一些工具和测试方法，但是因为每个邮件的来回时间可能会花上一天，所以你会发现这并不是一个很快的得到帮助的方法。&lt;/p&gt;&lt;br&gt;&lt;p&gt;Hadoop小组的人员并不会故意的让事情变的困难，只是一个大型的分布式系统如果不能很好的工作，你肯定会得到一些有意思的错误信息。如果你可以帮助改进这些网络消息或者诊断方法，我们会很想得到这些代码。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;Hadoop集群不是一个学习Unix/Linux系统管理的地方&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;你自己需要知道在Unix/Linux系统下怎么玩。怎么装？在/etc/下面的各种文件是做什么用的？怎么建立网络？什么样的hosts配置是好的？如何调试DNS的问题？为什么把日志放在独立的盘上，而不是根盘？等等。如果你一个单机都照顾不过来，你不可能处理由80个这种机器组成的一个集群。也就是说不要试图用手动编辑/etc/hosts那样的方法来维护80个以上这样的单元，因为这种方法是不能规模化的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;你需要了解的事情：&lt;/p&gt;&lt;br&gt;&lt;p&gt;SSH，他是什么，怎么样搭建authorized_keys,怎样使用ssh/scp命令&lt;br&gt;&lt;br&gt;ifconfig, nslookup和其它一些网络配置/诊断工具&lt;br&gt;&lt;br&gt;你的平台是如何保持他的更新的。&lt;br&gt;&lt;br&gt;你的机器产生的各种日志文件，以及他们的意义。&lt;br&gt;&lt;br&gt;如果建立原生的文件系统，并且挂载他们。&lt;/p&gt;&lt;br&gt;&lt;p&gt;这个是非常重要的。如果你不懂这些，说明你的程度还不够。在你对如何让Linux系统启动和运行有一些基本的了解前，在你能用ssh不输入密码就可以相互登陆不同的机器前，在这些机器能相互找到各自的主机名等等问题解决前，你不应该开始安装Hadoop。Hadoop的文档默认你是能做这些事情的，并且也不会解释他们是如何动作的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;HDFS并不是POSIX文件系统&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;POSIX文件系统模型的文件可以追加，得到调用时的位置，锁定的文件等信息。但是你不能无缝的将针对所有的POSIX兼容的文件系统的代码直接映射到HDFS上。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;原文：&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://wiki.apache.org/hadoop/HadoopIsNot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://wiki.apache.org/hadoop/HadoopIsNot&lt;/
-    
-    </summary>
-    
-      <category term="WEB服务器技术" scheme="http://blog.3gcnbeta.com/categories/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="民工翻译" scheme="http://blog.3gcnbeta.com/categories/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/%E6%B0%91%E5%B7%A5%E7%BF%BB%E8%AF%91/"/>
-    
-      <category term="noSQL" scheme="http://blog.3gcnbeta.com/categories/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/%E6%B0%91%E5%B7%A5%E7%BF%BB%E8%AF%91/noSQL/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Code igniter 多表查询的实现</title>
-    <link href="http://blog.3gcnbeta.com/2012/12/04/code-igniter-%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
-    <id>http://blog.3gcnbeta.com/2012/12/04/code-igniter-多表查询的实现/</id>
-    <published>2012-12-03T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;网上关于Code Igniter的多表查询的例子比较少。&lt;br&gt;&lt;br&gt;大家大部分使用的是join。&lt;/p&gt;&lt;br&gt;&lt;p&gt;但是这不表示ci不能多表查询。&lt;/p&gt;&lt;br&gt;&lt;p&gt;下面给一个ci的多表查询的示例代码，摘自一个函数&lt;br&gt;&lt;br&gt;希望能对新人会有帮助。&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; class=&quot;php&quot;&gt;&lt;br&gt;    $this-&amp;gt;db-&amp;gt;select(‘&lt;br&gt;&lt;br&gt;        bu_g_l.alias as name,&lt;br&gt;&lt;br&gt;        bu_g_l.info as intro,&lt;br&gt;&lt;br&gt;        bu_g_l.code,&lt;br&gt;&lt;br&gt;        ‘);&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;    $this-&amp;gt;db-&amp;gt;from(&lt;br&gt;&lt;br&gt;        $this-&amp;gt;_table_name . ‘ as u_t_g_l,’ .&lt;br&gt;&lt;br&gt;        $this-&amp;gt;_table_name_user_tag . ‘ as u_t,’ .&lt;br&gt;&lt;br&gt;        $this-&amp;gt;_table_name_business_unit_goods . ‘ as bu_g,’ .&lt;br&gt;&lt;br&gt;        $this-&amp;gt;_table_name_business_unit_goods_list . ‘ as bu_g_l,’ .&lt;br&gt;&lt;br&gt;    );&lt;/p&gt;&lt;br&gt;&lt;p&gt;    $this-&amp;gt;db-&amp;gt;where(‘u_t.user_id’, $user_id);&lt;br&gt;&lt;br&gt;    $this-&amp;gt;db-&amp;gt;where(‘u_t.tag_id’, $tag_id);&lt;br&gt;&lt;br&gt;    $this-&amp;gt;db-&amp;gt;where(‘(u_t_g_l.user_tag_id = u_t.user_tag_id)’);&lt;br&gt;&lt;br&gt;    $this-&amp;gt;db-&amp;gt;where(‘(u_t_g_l.business_unit_goods_id = bu_g.id)’);&lt;br&gt;&lt;br&gt;    $this-&amp;gt;db-&amp;gt;where(‘(bu.id = bu_g.business_unit_id)’);&lt;/p&gt;&lt;br&gt;&lt;p&gt;    if($limit) {&lt;br&gt;&lt;br&gt;      $this-&amp;gt;db-&amp;gt;limit($limit, $offset);&lt;br&gt;&lt;br&gt;    }&lt;/p&gt;&lt;br&gt;&lt;p&gt;    $query = $this-&amp;gt;db-&amp;gt;get();&lt;br&gt;&lt;br&gt;    $error = $this-&amp;gt;db-&amp;gt;_error_message();&lt;br&gt;&lt;br&gt;    if ($error)&lt;br&gt;&lt;br&gt;      return -1;&lt;br&gt;&lt;br&gt;    return $query-&amp;gt;result_array();&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;网上关于Code Igniter的多表查询的例子比较少。&lt;br&gt;&lt;br&gt;大家大部分使用的是join。&lt;/p&gt;&lt;br&gt;&lt;p&gt;但是这不表示ci不能多表查询。&lt;/p&gt;&lt;br&gt;&lt;p&gt;下面给一个ci的多表查询的示例代码，摘自一个函数&lt;br&gt;&lt;br&gt;希望能对新人会有帮助。&lt;/p&gt;&lt;br
-    
-    </summary>
-    
-      <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Centos 下sudo奇慢的解决办法</title>
-    <link href="http://blog.3gcnbeta.com/2012/12/01/centos-%E4%B8%8Bsudo%E5%A5%87%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://blog.3gcnbeta.com/2012/12/01/centos-下sudo奇慢的解决办法/</id>
-    <published>2012-11-30T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;br&gt;进入root账号：&lt;/p&gt;&lt;br&gt;&lt;p&gt;echo “127.0.0.1 &lt;code&gt;hostname&lt;/code&gt;“ &amp;gt;&amp;gt; /etc/hosts&lt;/p&gt;&lt;br&gt;&lt;p&gt;注：&lt;br&gt;&lt;br&gt;CentOS的用户友好性是比较差的一个系统。&lt;/p&gt;&lt;br&gt;&lt;p&gt;作为Lamp的主要平台，竟然存在着apache的mod php的解析问题。&lt;/p&gt;&lt;br&gt;&lt;p&gt;同时还有一堆不合理的设置。&lt;/p&gt;&lt;br&gt;&lt;p&gt;他成为服务器的主流Os让我非常不解。&lt;/p&gt;&lt;br&gt;&lt;p&gt;欢迎高人来帮助我理解。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;br&gt;进入root账号：&lt;/p&gt;&lt;br&gt;&lt;p&gt;echo “127.0.0.1 &lt;code&gt;hostname&lt;/code&gt;“ &amp;gt;&amp;gt; /etc/hosts&lt;/p&gt;&lt;br&gt;&lt;p&gt;注：&lt;br&gt;&lt;br&gt;CentOS的用户友好性是比较差的一个系统。&lt;/p&gt;&lt;br&gt;&lt;p&gt;作
-    
-    </summary>
-    
-      <category term="操作系统" scheme="http://blog.3gcnbeta.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="Linux" scheme="http://blog.3gcnbeta.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/"/>
     
     
   </entry>
