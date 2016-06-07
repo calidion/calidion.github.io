@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.3gcnbeta.com/"/>
-  <updated>2016-04-28T01:48:07.560Z</updated>
+  <updated>2016-06-07T06:00:22.312Z</updated>
   <id>http://blog.3gcnbeta.com/</id>
   
   <author>
@@ -16,11 +16,379 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>什么样的API才是好的API以及如何评价RESTful APIs？</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84API%E6%89%8D%E6%98%AF%E5%A5%BD%E7%9A%84API%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7RESTful-APIs%EF%BC%9F/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/什么样的API才是好的API以及如何评价RESTful-APIs？/</id>
+    <published>2016-06-07T05:58:59.000Z</published>
+    <updated>2016-06-07T06:00:22.312Z</updated>
+    
+    <content type="html">&lt;p&gt;对于如何设计好一个API，不同的人有不同的看法。&lt;br&gt;但是不管怎样，我们还是可以找到一些基本的切入点的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;易理解性&lt;br&gt;看到API很容易理解他是做什么的&lt;/li&gt;
+&lt;li&gt;易实现性&lt;br&gt;通过各种语言都可以很容易的实现&lt;/li&gt;
+&lt;li&gt;稳定性&lt;br&gt;对于业务的不断升级，API能保持稳定&lt;/li&gt;
+&lt;li&gt;通用性&lt;br&gt;能与当前已经存在的系统方便的对接&lt;/li&gt;
+&lt;li&gt;扩展性&lt;br&gt;能够很容易的扩展现在的API，并且不影响已经存在的API&lt;/li&gt;
+&lt;li&gt;可描述性&lt;br&gt;就是对现实世界的描述能力&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以基于上述几个点我们来分析一下现在流行的RESTful APIs。&lt;/p&gt;
+&lt;h3 id=&quot;易理解性&quot;&gt;&lt;a href=&quot;#易理解性&quot; class=&quot;headerlink&quot; title=&quot;易理解性&quot;&gt;&lt;/a&gt;易理解性&lt;/h3&gt;&lt;p&gt;首先，我们看一下一下易理解性。&lt;br&gt;RESTful APIs的接口一般是这样的.&lt;/p&gt;
+&lt;p&gt;/users&lt;br&gt;/users/1&lt;br&gt;它简单，但是意义并不明确。&lt;br&gt;在没有了解RESTful APIs的情况下，并不容易理解。&lt;br&gt;那么相比较而言&lt;br&gt;/users/list&lt;br&gt;/users/item/1&lt;br&gt;会显得更加的语义明确&lt;br&gt;同时RESTful APIs的动作是基于HTTP方法的，让应用开发人员理解API的难度加大。&lt;br&gt;所以在易理解性方面，RESTful APIs的风格并不占优。&lt;/p&gt;
+&lt;h3 id=&quot;实用性&quot;&gt;&lt;a href=&quot;#实用性&quot; class=&quot;headerlink&quot; title=&quot;实用性&quot;&gt;&lt;/a&gt;实用性&lt;/h3&gt;&lt;p&gt;我们再来看看易实现性&lt;br&gt;RESTful APIs 的方法是基于HTTP方法的，所以要对HTTP协议有深刻的理解，并且理解如何正确的使用HTTP的方法。而大多数API是给应用使用的，这无形中增加了编写应用API的难度，增加了实现成本，也增加了出错的机率。虽然RESTful APIs的创始人是HTTP规范的推进者，但是我们应用开发者不宜跟进这种复杂，低效的设计理念，而值得学习的应该是TCP/IP的分层理念  。&lt;br&gt;RESTful APIs将网络层协议与应用层API结合的过于紧密，将会导致主次不分，增加问题的复杂度。&lt;/p&gt;
+&lt;h3 id=&quot;稳定性&quot;&gt;&lt;a href=&quot;#稳定性&quot; class=&quot;headerlink&quot; title=&quot;稳定性&quot;&gt;&lt;/a&gt;稳定性&lt;/h3&gt;&lt;p&gt;RESTful APIs在稳定性方法还是比较好的。因为通过规范我们知道RESTful APIs主要用于资源描述，所以他能很好的保持资源与APIs的对应&lt;/p&gt;
+&lt;h3 id=&quot;通用性&quot;&gt;&lt;a href=&quot;#通用性&quot; class=&quot;headerlink&quot; title=&quot;通用性&quot;&gt;&lt;/a&gt;通用性&lt;/h3&gt;&lt;p&gt;如果RESTful APIs的操作是基于HTTP的方法的，但是RESTful APIs就没有任何的通用性可言。因此通用性是很差的。但是由于大部分的应用都是基于HTTP/HTTPS的，所以这个问题到显得并不突出。但是如果是游戏或者是流的协议呢？所以RESTful APIs并不具有较强的通用性&lt;/p&gt;
+&lt;h3 id=&quot;扩展性&quot;&gt;&lt;a href=&quot;#扩展性&quot; class=&quot;headerlink&quot; title=&quot;扩展性&quot;&gt;&lt;/a&gt;扩展性&lt;/h3&gt;&lt;p&gt;RESTful APIs的APIs主要是用于描述资源的，所以扩展性基本上就无从谈起。因为资源本身是不具备扩展性的。但是因为单个API本身具有很强的独立性，所以对于新的资源具备一定的扩展性。&lt;/p&gt;
+&lt;p&gt;同时由于方法是基于HTTP的方法的，所以不具备快速扩展HTTP方法的可能性。&lt;/p&gt;
+&lt;h3 id=&quot;描述性&quot;&gt;&lt;a href=&quot;#描述性&quot; class=&quot;headerlink&quot; title=&quot;描述性&quot;&gt;&lt;/a&gt;描述性&lt;/h3&gt;&lt;p&gt;由于RESTful APIs是基于资源的表达的，而不是对现实业务的表达的。所以RESTful APIs不具备很强的描述性。&lt;br&gt;比如我们描述这样的场景：&lt;br&gt;用户登录&lt;br&gt;用户退出&lt;br&gt;对于RESTful APIs来讲，需要使用HTTP AUTH或者是OAUTH来实现，&lt;br&gt;显然是一个很搞笑的方法。&lt;br&gt;所以大多数情况，我们会看到很多的API是这样的：&lt;br&gt;user/login&lt;br&gt;user/logout.  &lt;/p&gt;
+&lt;h2 id=&quot;结论&quot;&gt;&lt;a href=&quot;#结论&quot; class=&quot;headerlink&quot; title=&quot;结论&quot;&gt;&lt;/a&gt;结论&lt;/h2&gt;&lt;p&gt;所以我们基于对上述几个要点的分析，我们可以看到：  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;针对于资源的操作，RESTful APIs相对适用，但是能力受限。&lt;br&gt;针对业务的操作，RESTful APIs力不从心，并不能很好的胜任。&lt;br&gt;Stateless 看上去很美，但是代价不小。  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因此我们不能盲目的赞美RESTful APIs，要从实际出发，针对不同的业务场景，选择设计一个适合自己的API规范。&lt;/p&gt;
+&lt;p&gt;后面我们将进一步探讨如果实现一个良好的API，并且向大家推荐蛋蛋API规范。&lt;br&gt;也欢迎对API设计感兴趣的同学一起参加讨论。&lt;/p&gt;
+&lt;p&gt;如果对文章存在异议或者，欢迎点击阅读原文参加讨论。&lt;/p&gt;
+&lt;p&gt;Egg API规范地址： &lt;a href=&quot;https://github.com/calidion/egg&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/calidion/egg&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于如何设计好一个API，不同的人有不同的看法。&lt;br&gt;但是不管怎样，我们还是可以找到一些基本的切入点的。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;易理解性&lt;br&gt;看到API很容易理解他是做什么的&lt;/li&gt;
+&lt;li&gt;易实现性&lt;br&gt;通过各种语言都可以很容易的实现&lt;/li&gt;
+&lt;li&gt;稳定性
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微信nodejs开发模块指南</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E5%BE%AE%E4%BF%A1nodejs%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9D%97%E6%8C%87%E5%8D%97/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/微信nodejs开发模块指南/</id>
+    <published>2016-06-07T05:57:56.000Z</published>
+    <updated>2016-06-07T05:58:06.652Z</updated>
+    
+    <content type="html">&lt;p&gt;1、微信消息处理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-message&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-message&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-webot/wechat&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wechat&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2、微信加密&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-crypto&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-crypto&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-webot/wechat-crypto&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wechat-crypto&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3、微信支付&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-pay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-pay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/supersheep/wechat-pay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wechat-pay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;4、微信oauth&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-oauth&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-oauth&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/wechat-oauth&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wechat-oauth&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;5、微信企业&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-webot/wechat-enterprise&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wechat-enterprise&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;6、微信红包&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tvrcgo/weixin-redpack&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;weixin-redpack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ityao/weixin-enterprisepay&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;weixin-enterprisepay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;7、微信服务器校验&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-auth&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-auth&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;8、微信JSSDK&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-auth&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-jssdk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;9、微信菜单处理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-menu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-menu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;10、微信机器人&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-webot/weixin-robot&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;weixin-robot&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;11、微信用户管理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-user&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-user&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;12、微信多媒体&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-media&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-media&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;13、微信二维码或者链接&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-link&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1、微信消息处理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/node-weixin/node-weixin-message&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node-weixin-message&lt;/a&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>利用QQ浏览器与nginx配置微信支付服务器</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E5%88%A9%E7%94%A8QQ%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8Enginx%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/利用QQ浏览器与nginx配置微信支付服务器/</id>
+    <published>2016-06-07T05:56:42.000Z</published>
+    <updated>2016-06-07T05:57:19.172Z</updated>
+    
+    <content type="html">&lt;p&gt;在微信支付开发的过程中，最困难的部分是对微信支付的调试。&lt;br&gt;由于微信支付对支付域名与目录都有严格的要求,并且微信支付的测试域名基本上是没有用的，所以一般在本地调试微信支付基本不可能。&lt;/p&gt;
+&lt;p&gt;之后QQ浏览器中自带了穿透软件，可以实现本地的公共号测试。&lt;br&gt;详细内容可以参考：&lt;br&gt;&lt;a href=&quot;http://blog.qqbrowser.cc/wei-xin-gong-zhong-hao-ben-di-diao-shi/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.qqbrowser.cc/wei-xin-gong-zhong-hao-ben-di-diao-shi/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;有了这个工具后，我们可以很方便的将本地服务器API或者本地的网页展示给远程使用了。   &lt;/p&gt;
+&lt;p&gt;但是这时访问的地址并不是我们自己的服务器。  &lt;/p&gt;
+&lt;p&gt;目前访问地址的格式是：&lt;br&gt;&lt;a href=&quot;http:///xxxxx.wechat.qq.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http:///xxxxx.wechat.qq.com&lt;/a&gt;&lt;br&gt;这样的。&lt;/p&gt;
+&lt;p&gt;所以我们在调试支付时还是不能直接调试，但是我们可以通过web服务器的代理功能实现。  &lt;/p&gt;
+&lt;p&gt;代码示例如下，我们可以设定一个目录当成是测试目录，在这里的目录名是test，&lt;br&gt;通过这段代码，我们就可以将对test的访问引入到本地服务器，从而实现对微信支付的测试。  &lt;/p&gt;
+&lt;figure class=&quot;highlight nginx&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;location&lt;/span&gt; /test &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;access_log&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;off&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;rewrite&lt;/span&gt; /test/(.*)$ /&lt;span class=&quot;variable&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;proxy_pass&lt;/span&gt; http://xxxx.wechat.qq.com;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;proxy_set_header&lt;/span&gt;   X-Real-IP        &lt;span class=&quot;variable&quot;&gt;$remote_addr&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attribute&quot;&gt;proxy_set_header&lt;/span&gt;   X-Forwarded-For  &lt;span class=&quot;variable&quot;&gt;$proxy_add_x_forwarded_for&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在微信支付开发的过程中，最困难的部分是对微信支付的调试。&lt;br&gt;由于微信支付对支付域名与目录都有严格的要求,并且微信支付的测试域名基本上是没有用的，所以一般在本地调试微信支付基本不可能。&lt;/p&gt;
+&lt;p&gt;之后QQ浏览器中自带了穿透软件，可以实现本地的公共号测试。&lt;br&gt;详细内
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>移动技术发展史与以及移动新技术的决策思考</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E7%A7%BB%E5%8A%A8%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E5%8F%B2%E4%B8%8E%E4%BB%A5%E5%8F%8A%E7%A7%BB%E5%8A%A8%E6%96%B0%E6%8A%80%E6%9C%AF%E7%9A%84%E5%86%B3%E7%AD%96%E6%80%9D%E8%80%83/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/移动技术发展史与以及移动新技术的决策思考/</id>
+    <published>2016-06-07T05:35:45.000Z</published>
+    <updated>2016-06-07T05:56:15.208Z</updated>
+    
+    <content type="html">&lt;p&gt;随着移动设置的不断增加与占有人们的时间越来越多，移动应用与移动Web的技术已经显得越来越重要。&lt;br&gt;我在这里梳理一下这些年来移动领域相关技术的发展，并分享一些我的观察，希望能帮助还没有做出决策的你更好的做出决策。  &lt;/p&gt;
+&lt;p&gt;首先我们来看看移动技术的几个时代  &lt;/p&gt;
+&lt;h2 id=&quot;移动发展的几个时期&quot;&gt;&lt;a href=&quot;#移动发展的几个时期&quot; class=&quot;headerlink&quot; title=&quot;移动发展的几个时期&quot;&gt;&lt;/a&gt;移动发展的几个时期&lt;/h2&gt;&lt;p&gt;移动技术大概可以分成以下几个时期：  &lt;/p&gt;
+&lt;h3 id=&quot;非智能机时期，私有SDK时期，WAP时期&quot;&gt;&lt;a href=&quot;#非智能机时期，私有SDK时期，WAP时期&quot; class=&quot;headerlink&quot; title=&quot;非智能机时期，私有SDK时期，WAP时期&quot;&gt;&lt;/a&gt;非智能机时期，私有SDK时期，WAP时期&lt;/h3&gt;&lt;p&gt;这个时期智能手机尚未出现或者刚刚有出现的迹象。并没有对应的大规模的移动开发公司，手机OS的接口相对于开发者来说是不开放的。手机基本都是灰屏的，只有短信与GSM通话功能。&lt;br&gt;但是可喜的是这个时期定义了WAP与WML，WML实现在统一的移动网页规范。&lt;br&gt;具体可以参考：&lt;a href=&quot;https://en.wikipedia.org/wiki/Wireless_Application_Protocol&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://en.wikipedia.org/wiki/Wireless_Application_Protocol&lt;/a&gt;&lt;br&gt;WAP协议只在最初的时期有过应用，之后的大部分时间直到WAP消失前都是被HTTP协议的。&lt;br&gt;因为基于TCP/IP的HTTP更加的成熟稳定，并且有很多历史保留的重要资产。&lt;br&gt;所以WAP作为协议来说并不是一个成功的协议，但是WML生存了10多年的时间，相对于WAP来说是更加成功技术  &lt;/p&gt;
+&lt;h3 id=&quot;智能机时期，开放SDK时期，WAP2-0时期&quot;&gt;&lt;a href=&quot;#智能机时期，开放SDK时期，WAP2-0时期&quot; class=&quot;headerlink&quot; title=&quot;智能机时期，开放SDK时期，WAP2.0时期&quot;&gt;&lt;/a&gt;智能机时期，开放SDK时期，WAP2.0时期&lt;/h3&gt;&lt;p&gt;这个时期的主要特征是：手机进入到智能机时代，开启了彩屏，MP3，MP4等，技术升级到了2.5G;&lt;br&gt;Symbian SDK, J2ME，WIN CE SDK成为了手机应用开发的主要开发环境。&lt;br&gt;是WAP 2.0作为HTML标准的一个子集合并入了HTML的mobile profile.&lt;/p&gt;
+&lt;h3 id=&quot;手机OS时期，更加强大的SDK，-HTML-5-取代WAP成为移动Web的主流技术&quot;&gt;&lt;a href=&quot;#手机OS时期，更加强大的SDK，-HTML-5-取代WAP成为移动Web的主流技术&quot; class=&quot;headerlink&quot; title=&quot;手机OS时期，更加强大的SDK， HTML(5)取代WAP成为移动Web的主流技术&quot;&gt;&lt;/a&gt;手机OS时期，更加强大的SDK， HTML(5)取代WAP成为移动Web的主流技术&lt;/h3&gt;&lt;p&gt;这个时期的出现是以苹果的iPhone的发布为代表的。显著的特征是手机键盘开始消失，大的彩色屏成为主流，3G，4G技术兴起。ios, android成为开发的主流OS。&lt;br&gt;HTML5取代了WAP成为移动Web的主流。&lt;br&gt;而随着手机设置的变化，手机屏幕的大小变化也变得更加的显著与重要。&lt;br&gt;网页更多的变得可以根据屏幕大小而进行响应变化。&lt;br&gt;从而导致了设计风格的变化，现在主流的设计风格是响应式设计与材料设计。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;随着移动设置的不断增加与占有人们的时间越来越多，移动应用与移动Web的技术已经显得越来越重要。&lt;br&gt;我在这里梳理一下这些年来移动领域相关技术的发展，并分享一些我的观察，希望能帮助还没有做出决策的你更好的做出决策。  &lt;/p&gt;
+&lt;p&gt;首先我们来看看移动技术的几个时代  &lt;/
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是RESTful APIs?</title>
+    <link href="http://blog.3gcnbeta.com/2016/06/07/%E4%BB%80%E4%B9%88%E6%98%AFRESTful-APIs/"/>
+    <id>http://blog.3gcnbeta.com/2016/06/07/什么是RESTful-APIs/</id>
+    <published>2016-06-07T05:33:10.000Z</published>
+    <updated>2016-06-07T05:34:55.256Z</updated>
+    
+    <content type="html">&lt;p&gt;REST的概念从提出到现在已经10年多了，它对互联网的企业级计算产生了非常重大的影响。&lt;/p&gt;
+&lt;p&gt;REST是从WDSL，SOAP等架构发展而来的，是目前企业级开发中使用最广泛的架构之一。&lt;/p&gt;
+&lt;p&gt;下面我们来考查一下什么是REST。&lt;/p&gt;
+&lt;h2 id=&quot;什么是REST&quot;&gt;&lt;a href=&quot;#什么是REST&quot; class=&quot;headerlink&quot; title=&quot;什么是REST?&quot;&gt;&lt;/a&gt;什么是REST?&lt;/h2&gt;&lt;p&gt;参考： &lt;a href=&quot;https://en.wikipedia.org/wiki/Representational_state_transfer&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;wiki&lt;/a&gt;&lt;br&gt;下面我将基于对WIKI的翻译，阐述REST相关的概念。如有错误，欢迎指正。&lt;/p&gt;
+&lt;p&gt;REST是指Representational State Transfer，中文意义是可重新表达的状态转移。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;个人认为其它的翻译比如：表征状态转移，表现层状态转移都是不准确或者是错误的. Representional表达的是一个RE的概念，即可以重新或者重复表达。有了可或者重，其它的如何翻译反而不重要。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以你可以翻译成可重现状态转移或者可重现状态转换,中文翻译成表现，实际上英语里隐含有重新，重现的意思，即对原物理的一个复制表达。&lt;br&gt;在这里是对计算机存储的资源的重复表达。所以翻译成可重现状态转移或者可重现的状态转换更加准确。&lt;/p&gt;
+&lt;p&gt;通常对于术语我不建议翻译成汉语，因为很多时候翻译会缺失原文的意思，特别是复杂的词组。&lt;/p&gt;
+&lt;p&gt;REST是一种指对WWW的软件架构的风格。就是你的体系架构是面向资源来表达的。&lt;br&gt;对于目前的互联网很多接口确实都是可以用资源来表达的。因为这种软件架构风格是受到欢迎的。&lt;/p&gt;
+&lt;p&gt;REST架关注的点有：&lt;br&gt;性能(Performance),&lt;br&gt;可规模化(Scalability),&lt;br&gt;简单性(Simplicity)，//指API&lt;br&gt;可修改(Modifiability)，&lt;br&gt;可见性(Visibility)，&lt;br&gt;可移植性(Portability)，&lt;br&gt;可靠性(Reliability).&lt;/p&gt;
+&lt;p&gt;除此之外，REST有一些核心的约束：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;客户端-服务器模式(Client–server)&lt;br&gt;通过统一的API分开客户端与服务器，即我们通常说的RESTful APIs.从而提高客户端的移植性。&lt;/li&gt;
+&lt;li&gt;无状态(Stateless)&lt;br&gt;不为请求的客户端保存数据，客户端所有访问性数据，session数据由客户端自己保存&lt;/li&gt;
+&lt;li&gt;可缓存(Cacheable)，&lt;br&gt;返回数据可缓存。对于提高性能很有好处&lt;/li&gt;
+&lt;li&gt;可层级化系统(Layered system)&lt;br&gt;客户端可以访问最终服务器，也可以访问中间服务器。同时方便了在中间添加代理服务器或者缓存服务器。&lt;/li&gt;
+&lt;li&gt;统一接口(Uniform interface)&lt;br&gt;统一接口是REST里面非常重要的一个部分。他用于简单化并且解耦整个架构，让每个部分可以独立的演进。统一接口包含以下几个重要部分：&lt;ol&gt;
+&lt;li&gt;资源识别(Identification of resources)&lt;br&gt;资源通过请求识别。对于Web来说就是通过URI来识别。资源与他的表达之间是分离的。服务器的资源与服务器发送的数据格式之间没有关联。&lt;/li&gt;
+&lt;li&gt;通过资源的表示者来操控资源(Manipulation of resources through these representations)&lt;br&gt;当客户端拥有一个资源的表达，包括附带的metadata时，它就有充分的信息修改并删除一个资源。&lt;/li&gt;
+&lt;li&gt;可以自描述的消息(Self-descriptive messages)&lt;br&gt;返回中包含了对足够多的信息告诉客户端如何处理。比如MIME信息。&lt;/li&gt;
+&lt;li&gt;将超媒体当成是应用状态的引擎(Hypermedia as the engine of application state (HATEOAS))&lt;br&gt;客户端只能通过在超媒体(hypermedia)中被服务器动态识别的动作来实现状态转换。比如，通过超文本(hypermedia)里的超链接。 也就是说返回的数据就是一个资源的状态，同时也可以看成是一个应用的状态。而这个状态信息就在返回的超媒体内。通常对于API来说我们会使用JSON表示。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以满足上述风格的软件架构系统可以称之为RESTful。通常RESTful系统的沟通是基于HTTP协议与HTTP的动作(verbs)来实现的。&lt;br&gt;因为他的创始人是Roy Fielding，他使用REST来设计HTTP 1.1协议和URI，是HTTP协议的主要维护者之一。&lt;/p&gt;
+&lt;h2 id=&quot;什么是RESTful-APIs？&quot;&gt;&lt;a href=&quot;#什么是RESTful-APIs？&quot; class=&quot;headerlink&quot; title=&quot;什么是RESTful APIs？&quot;&gt;&lt;/a&gt;什么是RESTful APIs？&lt;/h2&gt;&lt;p&gt;遵从跟REST约束的Web服务的API就称为RESTful APIs.&lt;br&gt;基于HTTP协议的API从下面几个方面进行了定义：&lt;br&gt;1.基URI，比如&lt;a href=&quot;http://example.com/resources/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://example.com/resources/&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;数据媒体类型，通常是JSON，但是也可以是其它媒体&lt;/li&gt;
+&lt;li&gt;标准的HTTP方法，(比如，OPTIONS, GET, PUT, POST, and DELETE)&lt;/li&gt;
+&lt;li&gt;一个参考状态的链接&lt;br&gt;(个人理解：比如 &lt;a href=&quot;http://example.com/resources/?age&amp;gt;1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://example.com/resources/?age&amp;gt;1&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;一个参考相关的资源的链接&lt;br&gt;(个人理解： 比如 &lt;a href=&quot;http://example.com/resources/item100?age&amp;gt;1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://example.com/resources/item100?age&amp;gt;1&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;URI与HTTP方法之间的关系&quot;&gt;&lt;a href=&quot;#URI与HTTP方法之间的关系&quot; class=&quot;headerlink&quot; title=&quot;URI与HTTP方法之间的关系&quot;&gt;&lt;/a&gt;URI与HTTP方法之间的关系&lt;/h2&gt;&lt;p&gt;URI分成Collection与Element&lt;br&gt;作用于Collection时，会成批的变更&lt;br&gt;作用于Element时，只会变更一个  &lt;/p&gt;
+&lt;p&gt;HTTP方法：&lt;br&gt;PUT/DELETE操作会导致完全相同的结果，无论作用多少次。&lt;br&gt;GET作用后不会产生任何状态变化&lt;br&gt; POST会创建新的数据。&lt;br&gt;PUT会替换数据或者创建数据&lt;/p&gt;
+&lt;h2 id=&quot;RESTful-APIs没有标准&quot;&gt;&lt;a href=&quot;#RESTful-APIs没有标准&quot; class=&quot;headerlink&quot; title=&quot;RESTful APIs没有标准&quot;&gt;&lt;/a&gt;RESTful APIs没有标准&lt;/h2&gt;&lt;p&gt;REST是架构，所以并没有出来相关的标准。&lt;br&gt;但是RESTful APIs使用了HTTP，JSON，XML，URI等标准。&lt;/p&gt;
+&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;RESTful架构对于构建大型的互联网服务来说已经表现出了很多优越性，但是同时带来了一些困难。&lt;br&gt;下一篇我将将继续讨论REST给开发者带的困难。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;REST的概念从提出到现在已经10年多了，它对互联网的企业级计算产生了非常重大的影响。&lt;/p&gt;
+&lt;p&gt;REST是从WDSL，SOAP等架构发展而来的，是目前企业级开发中使用最广泛的架构之一。&lt;/p&gt;
+&lt;p&gt;下面我们来考查一下什么是REST。&lt;/p&gt;
+&lt;h2 id=&quot;什么是R
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于MVC、前端、后端、前后端分离、前后端同构的那些事</title>
+    <link href="http://blog.3gcnbeta.com/2016/05/03/%E5%85%B3%E4%BA%8EMVC%E3%80%81%E5%89%8D%E7%AB%AF%E3%80%81%E5%90%8E%E7%AB%AF%E3%80%81%E5%89%8D%E5%90%8E%E7%AB%AF%E5%88%86%E7%A6%BB%E3%80%81%E5%89%8D%E5%90%8E%E7%AB%AF%E5%90%8C%E6%9E%84%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>http://blog.3gcnbeta.com/2016/05/03/关于MVC、前端、后端、前后端分离、前后端同构的那些事/</id>
+    <published>2016-05-03T15:00:30.000Z</published>
+    <updated>2016-06-07T06:01:56.144Z</updated>
+    
+    <content type="html">&lt;p&gt;关于MVC，前后端，以及前后端分离，还有前后端同构的问题其实我已经分析的非常清楚了。&lt;br&gt;但是为了能够让所有人更加系统的从各个角度理解他们之间的关系，我在这边再重新总结，并提合并成一篇文章。&lt;/p&gt;
+&lt;p&gt;理解所有这些问题，首先要搞清楚的是：&lt;/p&gt;
+&lt;h3 id=&quot;前后端是Web前后端&quot;&gt;&lt;a href=&quot;#前后端是Web前后端&quot; class=&quot;headerlink&quot; title=&quot;前后端是Web前后端&quot;&gt;&lt;/a&gt;前后端是Web前后端&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;不是项目前后端&lt;/li&gt;
+&lt;li&gt;也不是服务器前后端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我们通常所说的前后端是特指Web的前后端。&lt;br&gt;他不是项目的前后端，也不是服务器的前后端。&lt;br&gt;因为对于Web来讲，前后端是确定的。&lt;br&gt;前端就是前端，后端就是后端，并不存在分离的问题。&lt;br&gt;所以我们得到第二个重点。&lt;/p&gt;
+&lt;h3 id=&quot;不存在前后端分离的问题。如果有，那都是MVC分离&quot;&gt;&lt;a href=&quot;#不存在前后端分离的问题。如果有，那都是MVC分离&quot; class=&quot;headerlink&quot; title=&quot;不存在前后端分离的问题。如果有，那都是MVC分离&quot;&gt;&lt;/a&gt;不存在前后端分离的问题。如果有，那都是MVC分离&lt;/h3&gt;&lt;p&gt;同时大多数的所谓前后端分离，实际上都是错误的。&lt;br&gt;而本质上这些所谓分离都是MVC的分离。&lt;/p&gt;
+&lt;h3 id=&quot;前后端存在着同构化，而不是分离&quot;&gt;&lt;a href=&quot;#前后端存在着同构化，而不是分离&quot; class=&quot;headerlink&quot; title=&quot;前后端存在着同构化，而不是分离&quot;&gt;&lt;/a&gt;前后端存在着同构化，而不是分离&lt;/h3&gt;&lt;p&gt;对于以后的Web来说，不需要分离，而是需要合并的。这种趋势在Nodejs出来后显得越来越显著。目前已经有很多Nodejs的库是前后端共通的，也就是所谓的前后端统一或者同构（即英文里的isomorphic js）。&lt;/p&gt;
+&lt;p&gt;当有象JS这种前后端两栖的语言出现时就促成了前后端的同构。&lt;/p&gt;
+&lt;p&gt;所以我们可以看到并不存在前后端分离，但是存在MVC的分离。&lt;br&gt;前后端存在的现象是代码共享，即前后端同构。&lt;/p&gt;
+&lt;h3 id=&quot;Web-Assembly将会进一步促进前后端同构&quot;&gt;&lt;a href=&quot;#Web-Assembly将会进一步促进前后端同构&quot; class=&quot;headerlink&quot; title=&quot;Web Assembly将会进一步促进前后端同构&quot;&gt;&lt;/a&gt;Web Assembly将会进一步促进前后端同构&lt;/h3&gt;&lt;p&gt;由于新技术Web Assembly的推出，未来会有更多的语言可以在浏览器端执行，所以支持前后端同构的方案与语言将会越来越丰富。&lt;/p&gt;
+&lt;p&gt;下面列举出一些相关文章，用于深入的理解这个问题：&lt;/p&gt;
+&lt;h4 id=&quot;前端与后端是如何区分的？&quot;&gt;&lt;a href=&quot;#前端与后端是如何区分的？&quot; class=&quot;headerlink&quot; title=&quot;前端与后端是如何区分的？&quot;&gt;&lt;/a&gt;前端与后端是如何区分的？&lt;/h4&gt;&lt;p&gt;讨论文章：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.3gcnbeta.com/2015/02/24/Web开发的前端与后端的界线在那里？/&quot;&gt;Web开发的前端与后端的界线在那里？&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结论：通过运行环境区分：浏览器端运行的内容是前端，服务器端运行的内容是后端&lt;/p&gt;
+&lt;p&gt;结论：通过运行环境区分：浏览器端运行的内容是前端，服务器端运行的内容是后端&lt;/p&gt;
+&lt;h4 id=&quot;MVC与前后端有什么关系？&quot;&gt;&lt;a href=&quot;#MVC与前后端有什么关系？&quot; class=&quot;headerlink&quot; title=&quot;MVC与前后端有什么关系？&quot;&gt;&lt;/a&gt;MVC与前后端有什么关系？&lt;/h4&gt;&lt;p&gt;讨论文章： &lt;a href=&quot;https://github.com/calidion/calidion.github.io/issues/3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/calidion/calidion.github.io/issues/3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结论： MVC可以存在于前端，也可以存在于后端。 &lt;/p&gt;
+&lt;h4 id=&quot;前后端分离的问题存在吗？&quot;&gt;&lt;a href=&quot;#前后端分离的问题存在吗？&quot; class=&quot;headerlink&quot; title=&quot;前后端分离的问题存在吗？&quot;&gt;&lt;/a&gt;前后端分离的问题存在吗？&lt;/h4&gt;&lt;p&gt;讨论文章：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.3gcnbeta.com/2016/03/31/不存在前后端分离的问题/&quot;&gt;并不存在前后端分离的问题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;结论：并不存在前后端分离的问题，因为前后端是天然分离的，基于结论1,。引出一个新的话题，那就是前后端同构。未来的Web技术更多的是合并，而不是分离。&lt;/p&gt;
+&lt;p&gt;注：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. 分离是神话时代就已经确立的，没有必要再说前后端分离了。
+2. 目前的所有分离都是基于MVC的分离。
+3. 现在所谓的将模板放到node而称为前后端分离的说法是完全错误的
+4. 目前前后端都有很多强大的MVC框架，而拆分MVC是永恒的话题。
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;前后端同构&quot;&gt;&lt;a href=&quot;#前后端同构&quot; class=&quot;headerlink&quot; title=&quot;前后端同构&quot;&gt;&lt;/a&gt;前后端同构&lt;/h4&gt;&lt;p&gt;说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JS是目前唯一的可进行前后端同构的语言&lt;/li&gt;
+&lt;li&gt;Web Assembly可以导致更多的可实现前后端同构的语言出现&lt;/li&gt;
+&lt;li&gt;目前主张前后同异的框架有: reactjs, angular2, meteor以及很多模板类，通用类库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;结论：前后端同构是未来的一个方向，至于最终能不能成为主流，还有得时间的考验。个人预测同构与异构会长期共存，那些通用的功能将会越来越多的采用同构。&lt;/p&gt;
+&lt;h4 id=&quot;关于项目的前后端与Web的前后端&quot;&gt;&lt;a href=&quot;#关于项目的前后端与Web的前后端&quot; class=&quot;headerlink&quot; title=&quot;关于项目的前后端与Web的前后端&quot;&gt;&lt;/a&gt;关于项目的前后端与Web的前后端&lt;/h4&gt;&lt;p&gt;说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我对很多人的逻辑是很无语的&lt;/li&gt;
+&lt;li&gt;已经不止有一次有人跟我说项目的前后端了&lt;/li&gt;
+&lt;li&gt;我想说项目的前后端你爱怎么划分就怎么划分，但是跟我们这里讨论的Web前后端没有半毛钱关系。&lt;/li&gt;
+&lt;li&gt;在你的项目里，你就是将MYSQL当成是项目的前端，也不关我的事。&lt;/li&gt;
+&lt;li&gt;但是，如果你想把MYSQL当成是Web的前端，那就别怪我批你，骂你。你的逻辑是体育老师教的？&lt;/li&gt;
+&lt;li&gt;再跟我提如果是项目的前后端呢的问题的，请你好好考虑你的智商是不是要充充值了？&lt;/li&gt;
+&lt;li&gt;最后请你好好区分清楚什么是Web的前后端，什么是项目的前后端。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于MVC，前后端，以及前后端分离，还有前后端同构的问题其实我已经分析的非常清楚了。&lt;br&gt;但是为了能够让所有人更加系统的从各个角度理解他们之间的关系，我在这边再重新总结，并提合并成一篇文章。&lt;/p&gt;
+&lt;p&gt;理解所有这些问题，首先要搞清楚的是：&lt;/p&gt;
+&lt;h3 id=&quot;前后
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MVC及其递归性和MVC变种</title>
+    <link href="http://blog.3gcnbeta.com/2016/05/02/MVC%E5%8F%8A%E5%85%B6%E9%80%92%E5%BD%92%E6%80%A7%E5%92%8CMVC%E5%8F%98%E7%A7%8D/"/>
+    <id>http://blog.3gcnbeta.com/2016/05/02/MVC及其递归性和MVC变种/</id>
+    <published>2016-05-02T10:59:00.000Z</published>
+    <updated>2016-06-07T06:01:56.144Z</updated>
+    
+    <content type="html">&lt;p&gt;MVC是一种很古老的软件架构模式。这种模式对于计算机刚出来时是一种比较完备或者比较适用的描述。&lt;/p&gt;
+&lt;p&gt;但是随着时间的流逝，软件变得越来越复杂，MVC这种结构就会看上去显得不准确。但是我们只要能基于巨人的肩膀跳出来看问题，我们就能更好的理解MVC结构的价值。&lt;/p&gt;
+&lt;h3 id=&quot;首先我们来看看什么是MVC。&quot;&gt;&lt;a href=&quot;#首先我们来看看什么是MVC。&quot; class=&quot;headerlink&quot; title=&quot;首先我们来看看什么是MVC。&quot;&gt;&lt;/a&gt;首先我们来看看什么是MVC。&lt;/h3&gt;&lt;p&gt;简单来说&lt;/p&gt;
+&lt;p&gt;M：就是模型，英文原文是Model。&lt;br&gt;他的意思就是对基本业务单元的抽象。但是这种业务更多是指对可存储的数据模型的抽象。&lt;br&gt;C：就是控制，英文原文是Controller。&lt;br&gt;他的意思就是对基本业务处理的抽象。但是更多的偏向于非存储的业务模型的抽象&lt;br&gt;V：就是视图，英文原文是View。&lt;br&gt;他的意思就是对于人机界面交互处理的抽象。但是更多的是偏向于如何展示的人类可见的界面。&lt;/p&gt;
+&lt;p&gt;M，V，C三者是对计算机系统或者软件最简单的抽象，而实际的计算机系统或者软件往往是对这三块的丰富，所以本质是要比MVC复杂的。&lt;/p&gt;
+&lt;p&gt;所以我们在这里再深入的讨论MVC模型下面的子模型。&lt;/p&gt;
+&lt;h3 id=&quot;首先是M这个部分。&quot;&gt;&lt;a href=&quot;#首先是M这个部分。&quot; class=&quot;headerlink&quot; title=&quot;首先是M这个部分。&quot;&gt;&lt;/a&gt;首先是M这个部分。&lt;/h3&gt;&lt;p&gt;M作为数据部分，&lt;br&gt;我们可以想象的到的实物产品有：&lt;br&gt;1.磁盘或者存储盘（包括光盘，U盘，硬盘，存储阵列等）&lt;br&gt;2.内存&lt;br&gt;3.网络（包括有线，无线的数据传输介质）&lt;br&gt;我们可以想象到的软件产品有：&lt;br&gt;1.数据库(Mongodb, Mysql, Oracle等）&lt;br&gt;2.文件&lt;br&gt;3.管道&lt;br&gt;4.共享数据&lt;br&gt;5.缓存等(CPU缓存，Session缓存，加速缓存等)&lt;br&gt;所以我们可以看出来M这个概念本身就是非常广泛的。我们列出来的都是概念上的M，而在实现M的过程中，必然会同样涉及到M里的MVC。&lt;br&gt;比如我们的Msql数据库，&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先Mysql必然有文件作为存储媒体保存数据库的信息，我们可以将文件当成是Mysql的M&lt;/li&gt;
+&lt;li&gt;同时Mysql具备自己的SQL语言，可以将对SQL语言的解析当成是C&lt;/li&gt;
+&lt;li&gt;而Mysql是有命令行的操作界面的，这个界面可以称为V。当然Mysql也推出了基于图形的界面工具Mysql workbench，还有一些其它的图形工具比如navicat之类的，都可以称为Mysql产品的View端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;所以我们可以看到在一个M产品里，仍有一个完整的MVC链&lt;/p&gt;
+&lt;h3 id=&quot;然后我们再看看V这个部分&quot;&gt;&lt;a href=&quot;#然后我们再看看V这个部分&quot; class=&quot;headerlink&quot; title=&quot;然后我们再看看V这个部分&quot;&gt;&lt;/a&gt;然后我们再看看V这个部分&lt;/h3&gt;&lt;p&gt;软件领域的V我们大概可以看到以下三类V&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;手机端的V&lt;/li&gt;
+&lt;li&gt;桌面端的V&lt;/li&gt;
+&lt;li&gt;Web的V&lt;br&gt;那么这么View里一般会包含有&lt;/li&gt;
+&lt;li&gt;视窗( window)&lt;/li&gt;
+&lt;li&gt;菜单&lt;/li&gt;
+&lt;li&gt;按钮&lt;/li&gt;
+&lt;li&gt;进度条&lt;/li&gt;
+&lt;li&gt;文本框&lt;br&gt;…&lt;br&gt;等等&lt;br&gt;我们可以看到大部分的菜单，按钮，都是包括&lt;/li&gt;
+&lt;li&gt;文字（M）&lt;/li&gt;
+&lt;li&gt;控件能力（C）&lt;/li&gt;
+&lt;li&gt;外观设计（V）&lt;br&gt;这三个部分的。&lt;br&gt;那么从MVC的角度来看，这三者组成了一个完整的MVC。&lt;br&gt;所以V也是递归的MVC结构&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;最后我们看看C的部分&quot;&gt;&lt;a href=&quot;#最后我们看看C的部分&quot; class=&quot;headerlink&quot; title=&quot;最后我们看看C的部分&quot;&gt;&lt;/a&gt;最后我们看看C的部分&lt;/h3&gt;&lt;p&gt;C的部分相对来讲更加的广泛一点。因为C的部分除了通用的部分外，还有很多专用的内容。&lt;br&gt;所有的软件从本质来讲都是C。&lt;br&gt;也就是所有的软件都是为了达成某一种控制目标而存在的。&lt;br&gt;C就是控制器，我们可以想象到的最常见的物理上的控制器就是CPU，键盘，鼠标。&lt;br&gt;而软件上最常见的就是协议，指令，信号，业务逻辑等。&lt;br&gt;他的作用是让我们的所有信号按照预定的方式执行。&lt;br&gt;那么C部分有没有MVC的递归性呢？C部分的MVC递归性看上去要显的弱很多。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先我们可以看到的是C部分所处理的所有内容都是数据，我们可以将他看成是M。&lt;/li&gt;
+&lt;li&gt;C部分天然拥有很多的控制代码与业务处理，将他们理解成C也是没有任何问题的&lt;br&gt;3.那么View在MVC的C里有没有呢？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果单纯从可视化来讲，C是可以没有V的。&lt;br&gt;但是C的View是可以表现在接口上的，也就是通常我们理解的API或者SOAP等。&lt;br&gt;这是一个机器的View。人类理解它们会有文档，会有对这个接口的描述。 &lt;/p&gt;
+&lt;p&gt;但是C里也是可以有可视的V的。目前来讲大部分的运行监控都是针对C的处理能力的监控。&lt;br&gt;比如处理了多少的用户，调用了多少次API，使用了多少的内存，完成了多少次请求等等。&lt;/p&gt;
+&lt;p&gt;因些我们可以发现，除了我们在C部分遇到了一点点困难外，我们很轻松的将MVC递归的拆分成功了。&lt;/p&gt;
+&lt;p&gt;并且当我们将MVC的递归性应用到更多的领域时，我们就很容易理解真正的MVC的意义是什么。&lt;/p&gt;
+&lt;p&gt;比如在Web领域。&lt;br&gt;后端可以更加明确成一个MVC的变种： RRRMVC&lt;br&gt;RRR =&amp;gt; (Request Route Response)&lt;/p&gt;
+&lt;p&gt;目前Web Component就是一个MVC组件，将MVC全部包装在一起然后供上层MVC调用。&lt;/p&gt;
+&lt;p&gt;还有一种是MVVM变种：&lt;br&gt;将V与M通过C绑定，让其它的C独立出来不再做绑定的工作。&lt;/p&gt;
+&lt;h3 id=&quot;结论&quot;&gt;&lt;a href=&quot;#结论&quot; class=&quot;headerlink&quot; title=&quot;结论&quot;&gt;&lt;/a&gt;结论&lt;/h3&gt;&lt;p&gt;MVC是一种对基本的计算模型的抽象，他会随着时间的变化而变化，但是当你回到最小数据集去描述一个程序或者软件时，MVC还是最适用的一个模型，我们去理解MVC时，不应该直接去否定MVC的价值，而是找到MVC的本质，理解新的变种与MVC本身之间的关系，这样我们才能更要的利用MVC模型，达成我们自己的需要。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;MVC是一种很古老的软件架构模式。这种模式对于计算机刚出来时是一种比较完备或者比较适用的描述。&lt;/p&gt;
+&lt;p&gt;但是随着时间的流逝，软件变得越来越复杂，MVC这种结构就会看上去显得不准确。但是我们只要能基于巨人的肩膀跳出来看问题，我们就能更好的理解MVC结构的价值。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="软件工程" scheme="http://blog.3gcnbeta.com/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    
+    
+      <category term="MVC" scheme="http://blog.3gcnbeta.com/tags/MVC/"/>
+    
+      <category term="递归性" scheme="http://blog.3gcnbeta.com/tags/%E9%80%92%E5%BD%92%E6%80%A7/"/>
+    
+      <category term="变种" scheme="http://blog.3gcnbeta.com/tags/%E5%8F%98%E7%A7%8D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>npm自建服务器</title>
     <link href="http://blog.3gcnbeta.com/2016/04/28/%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84npm%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     <id>http://blog.3gcnbeta.com/2016/04/28/轻松搭建自己的npm服务器/</id>
     <published>2016-04-28T00:54:00.000Z</published>
-    <updated>2016-04-28T01:48:07.560Z</updated>
+    <updated>2016-06-07T06:01:56.148Z</updated>
     
     <content type="html">&lt;p&gt;nodejs开发给开发者带来的最大的好处是丰富多彩的各种npm包。我们经常会很高兴某个包已经被其他的开发者开发完成，并且质量也很高，我们直接拿过来用就可以了。这也是很多开发者喜欢nodejs的原因。即使是曾经包机制最完善的ruby语言，也会发展他已经远远落后于nodejs的npm了。&lt;/p&gt;
 &lt;p&gt;除了上面讲到的开放包，npmjs.com也提供私有包管理方案，每个月只要交10几美元就可以轻松建立自己的私有npm库了。&lt;/p&gt;
@@ -34,8 +402,11 @@
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install -g sinopia&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;启动运行sinopia&lt;br&gt;可以默认启动&lt;/p&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;``` &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;也可以指定IP与端口&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```sh&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; 0.0.0.0:8080 &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;也可以指定IP与端口&lt;br&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sinopia &lt;span class=&quot;_&quot;&gt;-l&lt;/span&gt; 0.0.0.0:8080 &amp;gt; /dev/null 2&amp;gt;&amp;amp;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;访问sinopia&lt;br&gt;浏览器打开： &lt;a href=&quot;http://localhost:4873/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://localhost:4873/&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;添加用户  &lt;/p&gt;
@@ -67,9 +438,9 @@
     
       <category term="nodejs" scheme="http://blog.3gcnbeta.com/tags/nodejs/"/>
     
-      <category term="npm" scheme="http://blog.3gcnbeta.com/tags/npm/"/>
-    
       <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="npm" scheme="http://blog.3gcnbeta.com/tags/npm/"/>
     
   </entry>
   
@@ -177,9 +548,9 @@
     
       <category term="浏览器" scheme="http://blog.3gcnbeta.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
-      <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="http" scheme="http://blog.3gcnbeta.com/tags/http/"/>
+    
+      <category term="服务器" scheme="http://blog.3gcnbeta.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="Cookie" scheme="http://blog.3gcnbeta.com/tags/Cookie/"/>
     
@@ -1186,29 +1557,6 @@
   </entry>
   
   <entry>
-    <title>Openshift git push 过程过慢的解决办法</title>
-    <link href="http://blog.3gcnbeta.com/2013/12/29/openshift-git-push-%E8%BF%87%E7%A8%8B%E8%BF%87%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://blog.3gcnbeta.com/2013/12/29/openshift-git-push-过程过慢的解决办法/</id>
-    <published>2013-12-28T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.251Z</updated>
-    
-    <content type="html">&lt;p&gt;使用Open shift hot deploy 加速应用的启动。代码如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ cd applicationName/.openshift/markers&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ touch hot_deploy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git add hot_deploy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git commit -m &amp;quot;Adding hot deployment marker&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git push&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用Open shift hot deploy 加速应用的启动。代码如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;
-    
-    </summary>
-    
-      <category term="Shell" scheme="http://blog.3gcnbeta.com/categories/Shell/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>关于加速jQuery Mobile的思考</title>
     <link href="http://blog.3gcnbeta.com/2013/12/29/%E5%85%B3%E4%BA%8E%E5%8A%A0%E9%80%9Fjquery-mobile%E7%9A%84%E6%80%9D%E8%80%83/"/>
     <id>http://blog.3gcnbeta.com/2013/12/29/关于加速jquery-mobile的思考/</id>
@@ -1261,6 +1609,29 @@
       <category term="APP" scheme="http://blog.3gcnbeta.com/tags/APP/"/>
     
       <category term="jQuery Mobile" scheme="http://blog.3gcnbeta.com/tags/jQuery-Mobile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Openshift git push 过程过慢的解决办法</title>
+    <link href="http://blog.3gcnbeta.com/2013/12/29/openshift-git-push-%E8%BF%87%E7%A8%8B%E8%BF%87%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://blog.3gcnbeta.com/2013/12/29/openshift-git-push-过程过慢的解决办法/</id>
+    <published>2013-12-28T16:00:00.000Z</published>
+    <updated>2016-02-02T00:48:54.251Z</updated>
+    
+    <content type="html">&lt;p&gt;使用Open shift hot deploy 加速应用的启动。代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ cd applicationName/.openshift/markers&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ touch hot_deploy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git add hot_deploy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git commit -m &amp;quot;Adding hot deployment marker&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git push&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用Open shift hot deploy 加速应用的启动。代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;
+    
+    </summary>
+    
+      <category term="Shell" scheme="http://blog.3gcnbeta.com/categories/Shell/"/>
+    
     
   </entry>
   
@@ -1765,34 +2136,6 @@
   </entry>
   
   <entry>
-    <title>js实现的快速排序</title>
-    <link href="http://blog.3gcnbeta.com/2013/09/05/js%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
-    <id>http://blog.3gcnbeta.com/2013/09/05/js实现的快速排序/</id>
-    <published>2013-09-04T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.247Z</updated>
-    
-    <content type="html">&lt;p&gt;快速排序是一种平均性能非常优秀的排序算法，在很多场合都会应用到他。&lt;/p&gt;
-&lt;p&gt;了解快速排序于对开放高效率的软件有很重要的作用。&lt;/p&gt;
-&lt;p&gt;但是有不少的书本讲得并不是很清楚，而且不同的教材的实现方式也不尽相同，&lt;/p&gt;
-&lt;p&gt;我这里将最简单的快速排序的思路写出来供大家参考。&lt;/p&gt;
-&lt;p&gt;希望不管是使用什么语言都能从这个简单的代码里很方便的掌握快排思路与编写方式&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function quick_sort(list, start, end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  if (start &amp;lt; end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var pivotpos = partition(list, start, end);   //找出快排的基数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    quick_sort(list, start, pivotpos - 1);        //将左边的快排一次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    quick_sort(list, pivotpos + 1, end);          //将右边的快排一次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//将一个序列调整成以基数为分割的两个区域，一边全都不小于基数，一边全都不大于基数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function partition(list, start, end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var pivotpos = start;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var pivot = list[start];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  for(var i = start + 1; i &amp;lt;= end; i ++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if (list[i] &amp;lt; pivot) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      tmp = list[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      pivotpos += 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      list[i] = list[pivotpos];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      list[pivotpos] = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  tmp = list[start];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  list[start] = list[pivotpos];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  list[pivotpos] = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  return pivotpos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var list = [8,2,4,65,2,4,7,1,9,0,2,34,12];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;quick_sort(list, 0, list.length);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;快速排序是一种平均性能非常优秀的排序算法，在很多场合都会应用到他。&lt;/p&gt;
-&lt;p&gt;了解快速排序于对开放高效率的软件有很重要的作用。&lt;/p&gt;
-&lt;p&gt;但是有不少的书本讲得并不是很清楚，而且不同的教材的实现方式也不尽相同，&lt;/p&gt;
-&lt;p&gt;我这里将最简单的快速排序的思路写出来供大家
-    
-    </summary>
-    
-      <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>汉诺塔JS实现</title>
     <link href="http://blog.3gcnbeta.com/2013/09/05/%E6%B1%89%E8%AF%BA%E5%A1%94js%E5%AE%9E%E7%8E%B0/"/>
     <id>http://blog.3gcnbeta.com/2013/09/05/汉诺塔js实现/</id>
@@ -1820,6 +2163,34 @@
     </summary>
     
       <category term="Javascript" scheme="http://blog.3gcnbeta.com/categories/Javascript/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>js实现的快速排序</title>
+    <link href="http://blog.3gcnbeta.com/2013/09/05/js%E5%AE%9E%E7%8E%B0%E7%9A%84%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/"/>
+    <id>http://blog.3gcnbeta.com/2013/09/05/js实现的快速排序/</id>
+    <published>2013-09-04T16:00:00.000Z</published>
+    <updated>2016-02-02T00:48:54.247Z</updated>
+    
+    <content type="html">&lt;p&gt;快速排序是一种平均性能非常优秀的排序算法，在很多场合都会应用到他。&lt;/p&gt;
+&lt;p&gt;了解快速排序于对开放高效率的软件有很重要的作用。&lt;/p&gt;
+&lt;p&gt;但是有不少的书本讲得并不是很清楚，而且不同的教材的实现方式也不尽相同，&lt;/p&gt;
+&lt;p&gt;我这里将最简单的快速排序的思路写出来供大家参考。&lt;/p&gt;
+&lt;p&gt;希望不管是使用什么语言都能从这个简单的代码里很方便的掌握快排思路与编写方式&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function quick_sort(list, start, end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  if (start &amp;lt; end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var pivotpos = partition(list, start, end);   //找出快排的基数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    quick_sort(list, start, pivotpos - 1);        //将左边的快排一次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    quick_sort(list, pivotpos + 1, end);          //将右边的快排一次&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//将一个序列调整成以基数为分割的两个区域，一边全都不小于基数，一边全都不大于基数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function partition(list, start, end) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var pivotpos = start;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var pivot = list[start];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  var tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  for(var i = start + 1; i &amp;lt;= end; i ++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if (list[i] &amp;lt; pivot) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      tmp = list[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      pivotpos += 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      list[i] = list[pivotpos];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      list[pivotpos] = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  tmp = list[start];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  list[start] = list[pivotpos];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  list[pivotpos] = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  return pivotpos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var list = [8,2,4,65,2,4,7,1,9,0,2,34,12];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;quick_sort(list, 0, list.length);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;快速排序是一种平均性能非常优秀的排序算法，在很多场合都会应用到他。&lt;/p&gt;
+&lt;p&gt;了解快速排序于对开放高效率的软件有很重要的作用。&lt;/p&gt;
+&lt;p&gt;但是有不少的书本讲得并不是很清楚，而且不同的教材的实现方式也不尽相同，&lt;/p&gt;
+&lt;p&gt;我这里将最简单的快速排序的思路写出来供大家
+    
+    </summary>
+    
+      <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
     
     
   </entry>
@@ -2145,176 +2516,6 @@
       <category term="操作系统" scheme="http://blog.3gcnbeta.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
       <category term="Linux" scheme="http://blog.3gcnbeta.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>利用curl实现字段数组，文件数组的提供</title>
-    <link href="http://blog.3gcnbeta.com/2012/11/17/%E5%88%A9%E7%94%A8curl%E5%AE%9E%E7%8E%B0%E5%AD%97%E6%AE%B5%E6%95%B0%E7%BB%84%EF%BC%8C%E6%96%87%E4%BB%B6%E6%95%B0%E7%BB%84%E7%9A%84%E6%8F%90%E4%BE%9B/"/>
-    <id>http://blog.3gcnbeta.com/2012/11/17/利用curl实现字段数组，文件数组的提供/</id>
-    <published>2012-11-16T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;最近在公司一直忙于开发测试平台来满足各种程序测试需求，&lt;br&gt;&lt;br&gt;这些需求中就包含有对多字段数组与文件数组的提供的需求。&lt;br&gt;&lt;br&gt;我采用的方法最先想到的当然是使用curl.&lt;br&gt;&lt;br&gt;于是一个能将字段数组与文件上传的curl很快就产生了。&lt;br&gt;&lt;br&gt;然后发给其他的同事测试。&lt;br&gt;&lt;br&gt;结果反映都是无法使用。&lt;br&gt;&lt;br&gt;后来发现php5.3以下的版本不能支持文件上传。&lt;/p&gt;&lt;br&gt;&lt;p&gt;于是更新到5.3后curl文件上传功能就可以用了。&lt;/p&gt;&lt;br&gt;&lt;p&gt;但是这时的curl还是无法上传文件数组的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;于是我通过调试完成了下面的代码：&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; class=&quot;php&quot;&gt;&lt;br&gt;  private function  generate_file_array() {&lt;br&gt;&lt;br&gt;    $files = array();&lt;br&gt;&lt;br&gt;    $tmpdir = sys_get_temp_dir();&lt;br&gt;&lt;br&gt;    foreach($_FILES as $k =&amp;gt; $v) {&lt;br&gt;&lt;br&gt;      if (is_array($v[‘name’])) {&lt;br&gt;&lt;br&gt;        foreach($v[‘name’] as $k1 =&amp;gt; $v1) {&lt;br&gt;&lt;br&gt;          $file = $tmpdir . DIRECTORY_SEPARATOR . $v1;&lt;br&gt;&lt;br&gt;            if (move_uploaded_file($_FILES[$k][‘tmp_name’][$k1], $file)) {&lt;br&gt;&lt;br&gt;              $files[$k. ‘[‘ . $k1 . ‘]’] = ‘@’ . $file . ‘;type=’ . $v[‘type’][$k1];&lt;br&gt;&lt;br&gt;            } else {&lt;br&gt;&lt;br&gt;            echo “Possible file upload attack!n”;&lt;br&gt;&lt;br&gt;            }&lt;br&gt;&lt;br&gt;        }&lt;br&gt;&lt;br&gt;        continue;&lt;br&gt;&lt;br&gt;      }&lt;br&gt;&lt;br&gt;      $file = $tmpdir . DIRECTORY_SEPARATOR . $v[‘name’];&lt;br&gt;&lt;br&gt;      if (move_uploaded_file($_FILES[$k][‘tmp_name’], $file)) {&lt;br&gt;&lt;br&gt;        $files[$k] = ‘@’ . $file . ‘;type=’ . $v[‘type’];&lt;br&gt;&lt;br&gt;      } else {&lt;br&gt;&lt;br&gt;        echo “Possible file upload attack!n”;&lt;br&gt;&lt;br&gt;      }&lt;br&gt;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;    return $files;&lt;br&gt;&lt;br&gt;  }&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;对于文件数组来讲最重要的是如下使用方法:&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; class=&quot;php&quot;&gt;&lt;br&gt;$files[$k. ‘[‘ . $k1 . ‘]’] = ‘@’ . $file . ‘;type=’ . $v[‘type’][$k1];&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;br&gt;&lt;br&gt;$k要转化成$k. ‘[‘&lt;br&gt;&lt;br&gt;又一个数组&lt;br&gt;&lt;br&gt;也就是&lt;br&gt;&lt;br&gt;key[0], key[1]的形式。&lt;br&gt;&lt;br&gt;这样通过set_opt_array&lt;br&gt;&lt;br&gt;就可以直接上传文件数组了。&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在公司一直忙于开发测试平台来满足各种程序测试需求，&lt;br&gt;&lt;br&gt;这些需求中就包含有对多字段数组与文件数组的提供的需求。&lt;br&gt;&lt;br&gt;我采用的方法最先想到的当然是使用curl.&lt;br&gt;&lt;br&gt;于是一个能将字段数组与文件上传的curl很快就产生了。&lt;br&gt;&lt;br&gt;然后发
-    
-    </summary>
-    
-      <category term="WEB服务器技术" scheme="http://blog.3gcnbeta.com/categories/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="php" scheme="http://blog.3gcnbeta.com/categories/WEB%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8A%80%E6%9C%AF/php/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>将Code Igniter导入sina app的数据库配置</title>
-    <link href="http://blog.3gcnbeta.com/2012/09/16/%E5%B0%86code-igniter%E5%AF%BC%E5%85%A5sina-app%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE/"/>
-    <id>http://blog.3gcnbeta.com/2012/09/16/将code-igniter导入sina-app的数据库配置/</id>
-    <published>2012-09-15T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;这个东西要是没有弄好，还真愁人.&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; class=&quot;php&quot;&gt;&lt;br&gt;$db[‘default’][‘hostname’] = SAE_MYSQL_HOST_M;&lt;br&gt;&lt;br&gt;$db[‘default’][‘username’] = SAE_MYSQL_USER;&lt;br&gt;&lt;br&gt;$db[‘default’][‘password’] = SAE_MYSQL_PASS;&lt;br&gt;&lt;br&gt;$db[‘default’][‘database’] = SAE_MYSQL_DB;&lt;br&gt;&lt;br&gt;$db[‘default’][‘dbdriver’] = ‘mysqli’;&lt;br&gt;&lt;br&gt;$db[‘default’][‘port’] = SAE_MYSQL_PORT;&lt;br&gt;&lt;br&gt;$db[‘default’][‘pconnect’] = FALSE;&lt;br&gt;&lt;br&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这个东西要是没有弄好，还真愁人.&lt;/p&gt;&lt;br&gt;&lt;pre name=&quot;code&quot; class=&quot;php&quot;&gt;&lt;br&gt;$db[‘default’][‘hostname’] = SAE_MYSQL_HOST_M;&lt;br&gt;&lt;br&gt;$db[‘default’][‘username’]
-    
-    </summary>
-    
-      <category term="php" scheme="http://blog.3gcnbeta.com/categories/php/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>eval is evil, 驳老赵性能无损说</title>
-    <link href="http://blog.3gcnbeta.com/2012/09/02/eval-is-evil-%E9%A9%B3%E8%80%81%E8%B5%B5%E6%80%A7%E8%83%BD%E6%97%A0%E6%8D%9F%E8%AF%B4/"/>
-    <id>http://blog.3gcnbeta.com/2012/09/02/eval-is-evil-驳老赵性能无损说/</id>
-    <published>2012-09-01T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;a href=&quot;http://blog.zhaojie.me/2012/08/js-code-from-eval-benchmark.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.zhaojie.me/2012/08/js-code-from-eval-benchmark.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;原文把一个固定值传给了eval,&lt;/p&gt;
-&lt;p&gt;那么经过js的解释器一分析后，由于字符串是固定的，所以优化过的js引擎就会直接解析成函数返回。&lt;/p&gt;
-&lt;p&gt;因为这里eval不eval根本没有区别。将这个来测试eval性能，只能说是一种行为艺术。&lt;/p&gt;
-&lt;p&gt;那么如何证明eval在实际上对于性的损失影响很大呢？&lt;/p&gt;
-&lt;p&gt;方法很简单，两行代码，一个浏览器Chrome:&lt;/p&gt;
-&lt;p&gt;在Chrome下Ctrl+i打开调试界面，点入console：&lt;/p&gt;
-&lt;p&gt;复制下面的代码执行：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var sum = 0, a = 0, b = 0, i = 0, c = 0; a = new Date(); for(; i &amp;lt; 1000 ; i++) &amp;#123; sum = eval( &amp;apos;sum + i&amp;apos;); &amp;#125;; b = new Date(); c = b - a; &amp;lt;/em&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;118//结果&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var sum = 0, a = 0, b = 0, i = 0, c = 0; a = new Date(); for(; i &amp;lt; 1000 ; i++) &amp;#123; sum = sum + i; &amp;#125;; b = new Date(); c = b - a;&amp;lt;/em&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3//结果&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;在这里相关了118 / 3 ~ 40倍&amp;hellip;&amp;hellip;&lt;/p&gt;
-&lt;p&gt;还有几次的结果是&lt;/p&gt;
-&lt;p&gt;119 / 2 ~ 60倍&lt;/p&gt;
-&lt;p&gt;如果这样是无性能损失的话，那60个人就等于是一个人。&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;受@老赵的错误引导，有下面的结论：&lt;/p&gt;
-&lt;p&gt;october 2012-08-20 16:26:12&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;eval并没有什么性能损失吧. eval只是可以让程序员人为控制编译时机, 但编译消耗的时间还是一样的. 比如某一js文件有10000行代码, 假设需要编译x秒 把后5000行代码用eval包起来后,&lt;br&gt;js文件:&lt;br&gt;1    … 此处5000行js代码 …&lt;br&gt;2    eval(“…此处5000行js代码…”)&lt;br&gt;那么过程就变成了: 编译前5000行 -&amp;gt; 运行前5000行 -&amp;gt; 运行到eval() -&amp;gt; 编译后5000行&lt;br&gt;看的出来,只是编译人为置后了, 应该没有性能损失….拙见….&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;http://blog.zhaojie.me/2012/08/js-code-from-eval-benchmark.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.zhaojie.me/2012/08/j
-    
-    </summary>
-    
-      <category term="Javascript" scheme="http://blog.3gcnbeta.com/categories/Javascript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>各类语言的基准测试后得出的最好性能的语言结果对比表</title>
-    <link href="http://blog.3gcnbeta.com/2012/09/01/%E5%90%84%E7%B1%BB%E8%AF%AD%E8%A8%80%E7%9A%84%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95%E6%80%A7%E8%83%BD%E6%AD%A3%E5%A4%AA%E5%88%86%E5%B8%83%E7%BB%93%E6%9E%9C%E6%AF%94%E8%BE%83%E8%A1%A8/"/>
-    <id>http://blog.3gcnbeta.com/2012/09/01/各类语言的基准测试性能正太分布结果比较表/</id>
-    <published>2012-08-31T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;原文:&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;http://shootout.alioth.debian.org/u32/benchmark.php?test=all&amp;amp;lang=all&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shootout.alioth.debian.org/u32/benchmark.php?test=all&amp;amp;lang=all&lt;/a&gt;&lt;br&gt;&lt;br&gt;这里节选了几个主流的开发语言.&lt;br&gt;&lt;br&gt;可以看出来,javascript在性能上超过了除java外的所有解释型语言.&lt;br&gt;&lt;br&gt;python与php所显示出来的性能基本一致.&lt;br&gt;&lt;br&gt;从图中可以看出来如果除去启动时间,php的执行时间比python要短&lt;br&gt;&lt;br&gt;我想这里可以将大家对语言速度的误区有一个比较清楚的整理.&lt;br&gt;&lt;br&gt;&lt;a href=&quot;http://shootout.alioth.debian.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://shootout.alioth.debian.org/&lt;/a&gt;&lt;br&gt;&lt;br&gt;下有不同的CPU下的各种语言的性能数据.&lt;/p&gt;&lt;br&gt;&lt;table&gt;&lt;br&gt;&lt;tbody&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td colspan=&quot;2&quot;&gt;&lt;input type=&quot;submit&quot; name=&quot;calc&quot; value=&quot;chart&quot;&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;br&gt;&lt;table&gt;&lt;br&gt;&lt;colgroup span=&quot;2&quot;&gt;&lt;/colgroup&gt;&lt;br&gt;&lt;br&gt;&lt;colgroup span=&quot;1&quot;&gt;&lt;/colgroup&gt;&lt;br&gt;&lt;br&gt;&lt;colgroup span=&quot;1&quot;&gt;&lt;/colgroup&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tbody&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;th&gt;&lt;/th&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;th&gt;compare&amp;nbsp;2&lt;/th&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;th&gt;&lt;a href=&quot;http://shootout.alioth.debian.org/u32/which-language-is-best.php#about&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GM&lt;/a&gt;&lt;/th&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;th&gt;&lt;a href=&quot;http://shootout.alioth.debian.org/u32/which-language-is-best.php#about&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;missing&lt;/a&gt;&lt;/th&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;gcc&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare C GNU gcc speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/c.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&amp;nbsp;GNU gcc&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.32&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;gpp&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare C++ GNU g++ speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/cpp.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;C++&lt;/strong&gt;&amp;nbsp;GNU g++&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.32&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;ifc&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Fortran Intel speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/fortran.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Fortran&lt;/strong&gt;&amp;nbsp;Intel&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.38&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;gnat&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Ada 2005 GNAT speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/ada.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Ada&lt;/strong&gt;&amp;nbsp;2005&amp;nbsp;GNAT&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.46&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;ats&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare ATS speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/ats.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;ATS&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.60&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;java&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Java 7 speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/java.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Java&lt;/strong&gt;&amp;nbsp;7&amp;nbsp;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1.91&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;scala&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Scala speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/scala.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Scala&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2.26&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fpascal&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Pascal Free Pascal speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/pascal.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Pascal&lt;/strong&gt;&amp;nbsp;Free&amp;nbsp;Pascal&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2.46&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;ghc&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Haskell GHC speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/haskell.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Haskell&lt;/strong&gt;&amp;nbsp;GHC&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2.53&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;ocaml&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare OCaml speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/ocaml.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;OCaml&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2.90&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;sbcl&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Lisp SBCL speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/lisp.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Lisp&lt;/strong&gt;&amp;nbsp;SBCL&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3.04&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;clean&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Clean speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/clean.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Clean&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3.28&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;csharp&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare C# Mono speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/csharp.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;C#&lt;/strong&gt;&amp;nbsp;Mono&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3.53&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fsharp&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare F# Mono speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/fsharp.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;F#&lt;/strong&gt;&amp;nbsp;Mono&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;4.75&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;racket&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Racket speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/racket.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Racket&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;4.76&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;go&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Go speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/compare.php?lang=go&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Go&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;4.93&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;v8&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare JavaScript V8 speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/javascript.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;JavaScript&lt;/strong&gt;&amp;nbsp;V8&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;5.67&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;clojure&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Clojure speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/compare.php?lang=clojure&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Clojure&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;7.65&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;hipe&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Erlang HiPE speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/erlang.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Erlang&lt;/strong&gt;&amp;nbsp;HiPE&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;12.10&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;vw&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Smalltalk VisualWorks speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/smalltalk.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Smalltalk&lt;/strong&gt;&amp;nbsp;VisualWorks&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;19.09&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;php&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare PHP speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/php.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;25.34&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;2&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;python3&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Python 3 speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/python3.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Python&amp;nbsp;3&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;28.09&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;lua&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Lua speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/lua.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Lua&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;29.44&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;perl&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Perl speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/perl.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Perl&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;30.21&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;1&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;jruby&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Ruby JRuby speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/jruby.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Ruby&amp;nbsp;JRuby&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;30.31&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;yarv&quot; checked=&quot;checked&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Ruby 1.9 speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/ruby.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Ruby&lt;/strong&gt;&amp;nbsp;1.9&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;35.48&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;oz&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare Mozart/Oz speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/oz.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;Mozart/Oz&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;41.58&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;3&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;tr&gt;&lt;br&gt;&lt;td&gt;&lt;input type=&quot;checkbox&quot; name=&quot;cint&quot;&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;&lt;a title=&quot;Compare C CINT speed and size against one other programming language&quot; href=&quot;http://shootout.alioth.debian.org/u32/compare.php?lang=cint&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&lt;strong&gt;C&lt;/strong&gt;&amp;nbsp;CINT&lt;/a&gt;&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;336.53&lt;/td&gt;&lt;p&gt;&lt;/p&gt;&lt;br&gt;&lt;td&gt;6&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;br&gt;&lt;br&gt;&lt;/tbody&gt;&lt;br&gt;&lt;br&gt;&lt;/table&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;br&gt;&lt;br&gt;&lt;/tr&gt;&lt;br&gt;&lt;br&gt;&lt;/tbody&gt;&lt;br&gt;&lt;br&gt;&lt;/table&gt;&lt;p&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;原文:&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;http://shootout.alioth.debian.org/u32/benchmark.php?test=all&amp;amp;lang=all&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://s
-    
-    </summary>
-    
-      <category term="其它" scheme="http://blog.3gcnbeta.com/categories/%E5%85%B6%E5%AE%83/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 下批量替换的命令</title>
-    <link href="http://blog.3gcnbeta.com/2011/10/18/linux-%E4%B8%8B%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.3gcnbeta.com/2011/10/18/linux-下批量替换的命令/</id>
-    <published>2011-10-17T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br&gt;&lt;p&gt;path是路径名,&lt;br&gt;&lt;br&gt;param1是要替换的内容&lt;br&gt;&lt;br&gt;param2是替换后的内容&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;将下面的代码放到一个shell文件a.sh里，&lt;/p&gt;&lt;br&gt;&lt;p&gt;sed -i “s/$2/$3/g” &lt;code&gt;grep -rl $2 $1&lt;/code&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后执行:&lt;br&gt;&lt;br&gt;sh a.sh path param1 param2&lt;/p&gt;&lt;br
-    
-    </summary>
-    
-      <category term="Shell" scheme="http://blog.3gcnbeta.com/categories/Shell/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>nodejs 下post代码</title>
-    <link href="http://blog.3gcnbeta.com/2011/10/18/nodejs-%E4%B8%8Bpost%E4%BB%A3%E7%A0%81/"/>
-    <id>http://blog.3gcnbeta.com/2011/10/18/nodejs-下post代码/</id>
-    <published>2011-10-17T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;&lt;pre class=&quot;js&quot; name=&quot;code&quot;&gt;&lt;br&gt;    var options = {&lt;br&gt;&lt;br&gt;        host: ‘www.yourdomain.com’,&lt;br&gt;&lt;br&gt;        post: 80,&lt;br&gt;&lt;br&gt;        method: ‘POST’,&lt;br&gt;&lt;br&gt;        path: ‘/‘,&lt;br&gt;&lt;br&gt;        headers: {&lt;br&gt;&lt;br&gt;            ‘Content-Type’: ‘application/x-www-form-urlencoded’,&lt;br&gt;&lt;br&gt;            ‘Content-Length’: params.length&lt;br&gt;&lt;br&gt;        }&lt;br&gt;&lt;br&gt;    };&lt;/pre&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;    var request = http.request(options, function(response) {&lt;br&gt;&lt;br&gt;        response.setEncoding(‘utf8’);&lt;br&gt;&lt;br&gt;        response.on(‘data’, function(chunk) {&lt;br&gt;&lt;br&gt;            console.log(chunk);&lt;br&gt;&lt;br&gt;        });&lt;br&gt;&lt;br&gt;    });&lt;/p&gt;&lt;br&gt;&lt;p&gt; request.write(params);&lt;br&gt;&lt;br&gt; request.end();&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;pre class=&quot;js&quot; name=&quot;code&quot;&gt;&lt;br&gt;    var options = {&lt;br&gt;&lt;br&gt;        host: ‘www.yourdomain.com’,&lt;br&gt;&lt;br&gt;        post: 80,&lt;br&gt;&lt;br&gt;        me
-    
-    </summary>
-    
-      <category term="新闻" scheme="http://blog.3gcnbeta.com/categories/%E6%96%B0%E9%97%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Android的getSharedPreferences所具备的坑爹行为</title>
-    <link href="http://blog.3gcnbeta.com/2011/08/27/android%E7%9A%84getsharedpreferences%E6%89%80%E5%85%B7%E5%A4%87%E7%9A%84%E5%9D%91%E7%88%B9%E8%A1%8C%E4%B8%BA/"/>
-    <id>http://blog.3gcnbeta.com/2011/08/27/android的getsharedpreferences所具备的坑爹行为/</id>
-    <published>2011-08-26T16:00:00.000Z</published>
-    <updated>2016-02-02T00:48:54.243Z</updated>
-    
-    <content type="html">&lt;p&gt;坑爹的SharedPreferences&lt;/p&gt;&lt;br&gt;&lt;p&gt;现象描述：&lt;/p&gt;&lt;br&gt;&lt;p&gt;通过提供给js的接口来读取存在SharedPreferences里的字符串。&lt;/p&gt;&lt;br&gt;&lt;p&gt;在JS里调用接口读出来一个字符:&lt;/p&gt;&lt;br&gt;&lt;p&gt;abc &amp;nbsp;= ‘abc’;&lt;/p&gt;&lt;br&gt;&lt;p&gt;在js里执行:&lt;/p&gt;&lt;br&gt;&lt;p&gt;abc == ‘abc’&lt;/p&gt;&lt;br&gt;&lt;p&gt;返回true&lt;/p&gt;&lt;br&gt;&lt;p&gt;然后用&lt;/p&gt;&lt;br&gt;&lt;p&gt;switch(abc)&lt;/p&gt;&lt;br&gt;&lt;p&gt;{&lt;/p&gt;&lt;br&gt;&lt;p&gt;case ‘abc’:&lt;/p&gt;&lt;br&gt;&lt;p&gt;// &amp;nbsp;这里永远进不去&lt;/p&gt;&lt;br&gt;&lt;p&gt;break;&lt;/p&gt;&lt;br&gt;&lt;p&gt;}&lt;/p&gt;&lt;br&gt;&lt;p&gt;如果先执行一下:&lt;/p&gt;&lt;br&gt;&lt;p&gt;abc = “” + abc&lt;/p&gt;&lt;br&gt;&lt;p&gt;前面的switch就能进去。&lt;/p&gt;&lt;br&gt;&lt;p&gt;坑爹！&lt;/p&gt;&lt;br&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;坑爹的SharedPreferences&lt;/p&gt;&lt;br&gt;&lt;p&gt;现象描述：&lt;/p&gt;&lt;br&gt;&lt;p&gt;通过提供给js的接口来读取存在SharedPreferences里的字符串。&lt;/p&gt;&lt;br&gt;&lt;p&gt;在JS里调用接口读出来一个字符:&lt;/p&gt;&lt;br&gt;&lt;p&gt;abc &amp;nbsp;= ‘a
-    
-    </summary>
-    
-      <category term="Android" scheme="http://blog.3gcnbeta.com/categories/Android/"/>
     
     
   </entry>
